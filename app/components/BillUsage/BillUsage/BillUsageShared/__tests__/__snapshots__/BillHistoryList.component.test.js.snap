@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BillHistoryList component renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flexGrow": 1,
+      },
+      Object {},
+    ]
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "alignSelf": "center",
+        "backgroundColor": "transparent",
+        "color": "#B9C1C9",
+        "fontFamily": "SukhumvitSet-Bold",
+      }
+    }
+  >
+    No overdue bills
+  </Text>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    collapsable={undefined}
+    hitSlop={undefined}
+    isTVSelectable={true}
+    nativeID={undefined}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignSelf": "stretch",
+        "backgroundColor": "transparent",
+        "borderRadius": 50,
+        "borderWidth": 0,
+        "opacity": 1,
+        "padding": 5,
+      }
+    }
+    testID={undefined}
+    tvParallaxProperties={undefined}
+  >
+    <View
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "alignSelf": "stretch",
+            "flexDirection": "row",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#303C46",
+              },
+              Array [
+                Object {
+                  "color": "#F93E60",
+                  "fontSize": 16,
+                },
+                Object {},
+              ],
+              Object {
+                "fontFamily": "SukhumvitSet-Bold",
+              },
+            ]
+          }
+        >
+          View payment history
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

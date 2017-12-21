@@ -1,0 +1,43 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1rlr80ol0j=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/TVPackageDetails/TVPackageDetails.component.js',hash='d3079e08786bfef029b47468ce7899179f5e7994',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/TVPackageDetails/TVPackageDetails.component.js',statementMap:{'0':{start:{line:16,column:144},end:{line:16,column:154}},'1':{start:{line:17,column:29},end:{line:17,column:86}},'2':{start:{line:18,column:4},end:{line:30,column:6}},'3':{start:{line:26,column:48},end:{line:26,column:96}},'4':{start:{line:33,column:0},end:{line:37,column:2}},'5':{start:{line:38,column:0},end:{line:42,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:15,column:2},end:{line:15,column:3}},loc:{start:{line:15,column:12},end:{line:31,column:3}},line:15},'1':{name:'(anonymous_1)',decl:{start:{line:26,column:30},end:{line:26,column:31}},loc:{start:{line:26,column:48},end:{line:26,column:96}},line:26}},branchMap:{'0':{loc:{start:{line:21,column:118},end:{line:21,column:177}},type:'cond-expr',locations:[{start:{line:21,column:134},end:{line:21,column:170}},{start:{line:21,column:173},end:{line:21,column:177}}],line:21},'1':{loc:{start:{line:24,column:9},end:{line:24,column:80}},type:'binary-expr',locations:[{start:{line:24,column:9},end:{line:24,column:18}},{start:{line:24,column:22},end:{line:24,column:80}}],line:24},'2':{loc:{start:{line:25,column:9},end:{line:25,column:74}},type:'binary-expr',locations:[{start:{line:25,column:9},end:{line:25,column:16}},{start:{line:25,column:20},end:{line:25,column:74}}],line:25}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0},f:{'0':0,'1':0},b:{'0':[0,0],'1':[0,0],'2':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _DetailCardRow=require('../BillUsage/BillUsageShared/DetailCardRow.component');var _DetailCardRow2=_interopRequireDefault(_DetailCardRow);
+var _HeaderWithCaret=require('../BillUsage/BillUsageShared/HeaderWithCaret.component');var _HeaderWithCaret2=_interopRequireDefault(_HeaderWithCaret);
+var _PackageDetailHeader=require('../BillUsage/BillUsageShared/PackageDetailHeader/PackageDetailHeader.component');var _PackageDetailHeader2=_interopRequireDefault(_PackageDetailHeader);
+var _PackageOverview=require('../BillUsage/BillUsageShared/PackageOverview/PackageOverview.component');var _PackageOverview2=_interopRequireDefault(_PackageOverview);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _TVPackageDetails=require('./TVPackageDetails.style');var _TVPackageDetails2=_interopRequireDefault(_TVPackageDetails);
+var _WrapperCard=require('../BillUsage/BillUsageShared/WrapperCard.component');var _WrapperCard2=_interopRequireDefault(_WrapperCard);
+var _Shared=require('../../Shared');
+var _helper=require('../../../language/i18n/helper');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+TVPackageDetails=function(_Component){_inherits(TVPackageDetails,_Component);function TVPackageDetails(){_classCallCheck(this,TVPackageDetails);return _possibleConstructorReturn(this,(TVPackageDetails.__proto__||Object.getPrototypeOf(TVPackageDetails)).apply(this,arguments));}_createClass(TVPackageDetails,[{key:'render',value:function render()
+
+{cov_1rlr80ol0j.f[0]++;var _ref=(cov_1rlr80ol0j.s[0]++,
+this.props),_ref$userDetails=_ref.userDetails,phoneNumber=_ref$userDetails.phoneNumber,name=_ref$userDetails.name,_ref$packageDetails=_ref.packageDetails,endMonth=_ref$packageDetails.endMonth,endDate=_ref$packageDetails.endDate,planOverView=_ref$packageDetails.planOverView,planOffer=_ref$packageDetails.planOffer,hdChannel=_ref$packageDetails.hdChannel,channel=_ref$packageDetails.channel,isConvergence=_ref.isConvergence;
+var additionalOffers=(cov_1rlr80ol0j.s[1]++,(0,_result2.default)(this.props.packageDetails,'additionalOffers',[]));cov_1rlr80ol0j.s[2]++;
+return(
+_react2.default.createElement(_WrapperCard2.default,null,
+_react2.default.createElement(_HeaderWithCaret2.default,{headerColor:_TVPackageDetails2.default.headerColor,customIconStyle:_TVPackageDetails2.default.iconStyle,style:_TVPackageDetails2.default.headerStyle},
+_react2.default.createElement(_PackageDetailHeader2.default,{isConvergence:isConvergence,phoneNumber:phoneNumber,endDate:endDate,name:isConvergence?(cov_1rlr80ol0j.b[0][0]++,(0,_helper.translate)('BILLS_USAGE_TRUEVISIONS')):(cov_1rlr80ol0j.b[0][1]++,name),endMonth:endMonth})),
+
+_react2.default.createElement(_PackageOverview2.default,{title:planOverView,subTitle:planOffer}),
+(cov_1rlr80ol0j.b[1][0]++,hdChannel)&&(cov_1rlr80ol0j.b[1][1]++,_react2.default.createElement(_DetailCardRow2.default,{rowData:hdChannel,type:'hdChannel'})),
+(cov_1rlr80ol0j.b[2][0]++,channel)&&(cov_1rlr80ol0j.b[2][1]++,_react2.default.createElement(_DetailCardRow2.default,{rowData:channel,type:'channel'})),
+additionalOffers.map(function(Offer,index){cov_1rlr80ol0j.f[1]++;cov_1rlr80ol0j.s[3]++;return _react2.default.createElement(_DetailCardRow2.default,{key:index,rowData:Offer});}),
+_react2.default.createElement(_Shared.ISText,{type:'SEMIBOLD',style:_TVPackageDetails2.default.footerText},'*Equipment deposite 1,000 Baht')));
+
+
+
+}}]);return TVPackageDetails;}(_react.Component);cov_1rlr80ol0j.s[4]++;
+
+TVPackageDetails.defaultProps={
+packageDetails:{},
+userDetails:{},
+isConvergence:false};cov_1rlr80ol0j.s[5]++;
+
+TVPackageDetails.propTypes={
+packageDetails:_propTypes2.default.object.isRequired,
+userDetails:_propTypes2.default.object.isRequired,
+isConvergence:_propTypes2.default.bool};exports.default=
+
+TVPackageDetails;

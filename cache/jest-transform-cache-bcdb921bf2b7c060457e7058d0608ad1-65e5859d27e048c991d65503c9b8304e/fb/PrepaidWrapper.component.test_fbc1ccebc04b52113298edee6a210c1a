@@ -1,0 +1,33 @@
+var _PrepaidWrapper=require('../PrepaidWrapper.component');var _PrepaidWrapper2=_interopRequireDefault(_PrepaidWrapper);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);
+var _enzyme=require('enzyme');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+describe('PrepaidWrapper component',function(){
+it('renders correctly',function(){
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_PrepaidWrapper2.default,null)).toJSON();
+expect(component).toMatchSnapshot();
+});
+it('should shallow render with default props',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_PrepaidWrapper2.default,null));
+expect(wrapper).toBeDefined();
+});
+it('should have initial state for amount and selectedPhoneNumber ',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_PrepaidWrapper2.default,null));
+expect(wrapper.state().selectedPhoneNumber).toBe('');
+expect(wrapper.state().amount).toBe(0);
+});
+it('should have update the state on radioSelect ',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_PrepaidWrapper2.default,null));
+wrapper.instance().onRadioSelect('0000-0000')();
+expect(wrapper.state().selectedPhoneNumber).toBe('0000-0000');
+});
+it('should have update the state on radioGroupSelect ',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_PrepaidWrapper2.default,null));
+wrapper.instance().onRadioGroupSelect(123);
+expect(wrapper.state().amount).toBe(123);
+});
+});

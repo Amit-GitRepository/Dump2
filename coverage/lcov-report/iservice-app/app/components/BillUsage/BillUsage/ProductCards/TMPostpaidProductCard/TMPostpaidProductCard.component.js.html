@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/components/BillUsage/BillUsage/ProductCards/TMPostpaidProductCard/TMPostpaidProductCard.component.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../../../index.html">All files</a> / <a href="index.html">iservice-app/app/components/BillUsage/BillUsage/ProductCards/TMPostpaidProductCard</a> TMPostpaidProductCard.component.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">52.38% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>11/21</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">40.63% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>13/32</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">33.33% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>2/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">52.38% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>11/21</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">43x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">43x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import BaseProductCard from '../BaseProductCard/BaseProductCard.component';
+import BaseProductCollapsibleBar from '../BaseProductCollapsibleBar/BaseProductCollapsibleBar.component';
+import isEmpty from 'lodash/isEmpty';
+import noop from 'lodash/noop';
+import Proptypes from 'prop-types';
+import React from 'react';
+import result from 'lodash/result';
+import styles from './TMPostpaidProductCard.style.js';
+import {BillHistoryList, CurrentUsageTM, ProductCardTitle} from '../../BillUsageShared';
+import {CaretTabs} from '../../../../../components/Shared';
+import {translate} from '../../../../../language/i18n/helper';
+import {View} from 'react-native';
+&nbsp;
+class TMPostpaidProductCard extends BaseProductCard {
+  state = {
+    selectedTabIndex: this.props.defaultSelectedTab,
+    totalAmount: this.props.amount
+  }
+  componentWillMount () {
+    const {dueBills, statusCode} = this.props;
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (!dueBills &amp;&amp; statusCode === 'CANCEL') {
+<span class="cstat-no" title="statement not covered" >      this.props.getDueBills();</span>
+    }
+  }
+  componentWillReceiveProps = <span class="fstat-no" title="function not covered" >(n</span>extProps) =&gt; {
+<span class="cstat-no" title="statement not covered" >    if (nextProps.validateOTPStatus &amp;&amp; isEmpty(this.props.productDetail)) {</span>
+<span class="cstat-no" title="statement not covered" >      if (nextProps.navigateToExtraPackage) {</span>
+<span class="cstat-no" title="statement not covered" >        this.props.onTrueMoveHNavigatetoExtraPackage();</span>
+      } else {
+<span class="cstat-no" title="statement not covered" >        this.props.getCurrentUsage();</span>
+      }
+    }
+  }
+  onTabPress = <span class="fstat-no" title="function not covered" >(s</span>electedTabIndex) =&gt; {
+<span class="cstat-no" title="statement not covered" >    if (selectedTabIndex === 1 &amp;&amp; !this.props.dueBills) {</span>
+<span class="cstat-no" title="statement not covered" >      this.props.getDueBills();</span>
+    }
+<span class="cstat-no" title="statement not covered" >    if (selectedTabIndex === 0 &amp;&amp; isEmpty(this.props.productDetail)) {</span>
+<span class="cstat-no" title="statement not covered" >      this.props.getCurrentUsage();</span>
+    }
+<span class="cstat-no" title="statement not covered" >    this.setState({selectedTabIndex});</span>
+  }
+&nbsp;
+  navigateToBuyExtraPackage = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+    // TODO navigate to buy Buy Extra Package screen when implemented
+  }
+  navigateToPaymentHistory = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+    // TODO navigate to payment history
+  }
+  render () {
+    const {phone, statusCode, productDetail, dueBills, isOthers, isCollapsed, onCollapseToggle, onChecked, isChecked, onTrueMoveHNavigatetoExtraPackage, onBillDetailsClick} = this.props;
+    const {totalAmount, selectedTabIndex} = this.state;
+    const headerList = [{text: translate('BILLS_USAGE_CURRENT_USAGE')}, {text: translate('BILLS_USAGE_BILL_DETAILS')}];
+    const planInfo = result(productDetail, 'PRICE_PLAN_INFO', {});
+    const noOfExtraPackages = result(productDetail, 'BUNDLE_USAGE.EXTRA_PACKAGE', []).length;
+    const subtitle = noOfExtraPackages &gt; 0  ? <span class="branch-0 cbranch-no" title="branch not covered" >`(${noOfExtraPackages} Extra Packages)` </span>: null;
+    return (
+      &lt;BaseProductCollapsibleBar checkboxDisabled={!totalAmount} statusCode={statusCode} type={'POSTPAID'} leftTitleText={phone} leftDetailText={translate('BILLS_USAGE_TRUEMOVE')} amountText={totalAmount} isCollapsed={isCollapsed} onCollapseToggle={onCollapseToggle} onChecked={onChecked} isChecked={isChecked}&gt;
+        &lt;View style={styles.container}&gt;
+          {!isOthers &amp;&amp; &lt;View style={styles.productTitle}&gt;
+            &lt;ProductCardTitle text={planInfo.name} navigate={onTrueMoveHNavigatetoExtraPackage} subtext={subtitle}/&gt;
+          &lt;/View&gt;}
+          {(dueBills &amp;&amp; statusCode === 'CANCEL' || dueBills &amp;&amp; isOthers) ?
+<span class="branch-0 cbranch-no" title="branch not covered" >            &lt;View style={styles.billDetailContainer}&gt;</span>
+              &lt;BillHistoryList onBillDetailsClick={onBillDetailsClick} dueBills={dueBills} onPaymentHistoryClick={this.navigateToPaymentHistory}
+                onBillToggle={this.onBillToggle} isCancelled/&gt;
+            &lt;/View&gt; :
+            &lt;CaretTabs onTabPress={this.onTabPress} selectedIndex={selectedTabIndex} headerList={headerList}&gt;
+              { (selectedTabIndex === 0) ?
+                &lt;CurrentUsageTM usageData={productDetail.BUNDLE_USAGE} navigateToBuyExtraPackage={this.navigateToBuyExtraPackage} sharedNumbers={productDetail.SHARED_PLAN_INFO} multiSimNumbers={productDetail.MULTI_SIM_INFO}/&gt;
+                : <span class="branch-1 cbranch-no" title="branch not covered" >null</span>
+              }
+&nbsp;
+              {
+                (selectedTabIndex === 1) ?
+<span class="branch-0 cbranch-no" title="branch not covered" >                  &lt;BillHistoryList onBillDetailsClick={onBillDetailsClick} dueBills={dueBills} onPaymentHistoryClick={this.navigateToPaymentHistory}</span>
+                    onBillToggle={this.onBillToggle}/&gt;
+                  : null
+              }
+&nbsp;
+            &lt;/CaretTabs&gt;
+          }
+        &lt;/View&gt;
+      &lt;/BaseProductCollapsibleBar&gt;
+    );
+  }
+}
+&nbsp;
+TMPostpaidProductCard.defaultProps = {
+  phone: '',
+  amount: 0,
+  goToScreen: noop,
+  statusCode: 'ACTIVE',
+  productDetail: {},
+  dueBills: null,
+  isCollapsed: true,
+  onCollapseToggle: noop,
+  onChecked: noop,
+  isChecked: false,
+  getDueBills: noop,
+  toggleBillDetailCheck: noop,
+  onBillDetailsClick: noop,
+  onTrueMoveHNavigatetoExtraPackage: noop,
+  defaultSelectedTab: 0,
+  getCurrentUsage: noop,
+  isOthers: false,
+  validateOTPStatus: false
+};
+&nbsp;
+TMPostpaidProductCard.propTypes = {
+  phone: Proptypes.string,
+  amount: Proptypes.number,
+  goToScreen: Proptypes.func,
+  dueBills: Proptypes.array,
+  productDetail: Proptypes.object,
+  statusCode: Proptypes.string,
+  onCollapseToggle: Proptypes.func,
+  isCollapsed: Proptypes.bool,
+  onChecked: Proptypes.func,
+  isChecked: Proptypes.bool,
+  getDueBills: Proptypes.func,
+  toggleBillDetailCheck: Proptypes.func,
+  onBillDetailsClick: Proptypes.func,
+  onTrueMoveHNavigatetoExtraPackage: Proptypes.func,
+  defaultSelectedTab: Proptypes.number,
+  getCurrentUsage: Proptypes.func,
+  isOthers: Proptypes.bool,
+  validateOTPStatus: Proptypes.bool
+};
+&nbsp;
+export default TMPostpaidProductCard;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../../../sorter.js"></script>
+</body>
+</html>

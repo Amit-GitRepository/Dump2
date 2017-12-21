@@ -1,0 +1,20 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_28udfo6xmp=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/Payment/PaymentStatus.page.js',hash='8ff8548acfbecde1fcabd075160435082800f0d4',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/Payment/PaymentStatus.page.js',statementMap:{'0':{start:{line:9,column:19},end:{line:9,column:71}},'1':{start:{line:10,column:4},end:{line:13,column:15}},'2':{start:{line:16,column:0},end:{line:17,column:2}},'3':{start:{line:18,column:0},end:{line:19,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:8,column:2},end:{line:8,column:3}},loc:{start:{line:8,column:12},end:{line:14,column:3}},line:8}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0},f:{'0':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();
+
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+PaymentStatus=function(_Component){_inherits(PaymentStatus,_Component);function PaymentStatus(){_classCallCheck(this,PaymentStatus);return _possibleConstructorReturn(this,(PaymentStatus.__proto__||Object.getPrototypeOf(PaymentStatus)).apply(this,arguments));}_createClass(PaymentStatus,[{key:'render',value:function render()
+{cov_28udfo6xmp.f[0]++;
+var status=(cov_28udfo6xmp.s[0]++,(0,_result2.default)(this.props,'navigation.state.params.status'));cov_28udfo6xmp.s[1]++;
+return(
+_react2.default.createElement(_reactNative.View,null,
+_react2.default.createElement(_reactNative.Text,null,'PaymentStatus: ',status)));
+
+}}]);return PaymentStatus;}(_react.Component);cov_28udfo6xmp.s[2]++;
+
+PaymentStatus.defaultProps={};cov_28udfo6xmp.s[3]++;
+
+PaymentStatus.propTypes={};exports.default=
+
+PaymentStatus;

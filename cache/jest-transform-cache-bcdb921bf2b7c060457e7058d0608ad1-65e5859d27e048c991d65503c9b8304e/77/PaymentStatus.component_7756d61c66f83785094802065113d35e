@@ -1,0 +1,60 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_13yopf4c37=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Payment/PaymentStatus/PaymentStatus.component.js',hash='be20b9fff6a52d397d3186c174fb91a474e38bd8',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Payment/PaymentStatus/PaymentStatus.component.js',statementMap:{'0':{start:{line:13,column:53},end:{line:13,column:63}},'1':{start:{line:15,column:6},end:{line:23,column:13}},'2':{start:{line:26,column:6},end:{line:32,column:13}},'3':{start:{line:34,column:4},end:{line:42,column:6}},'4':{start:{line:46,column:0},end:{line:51,column:2}},'5':{start:{line:53,column:0},end:{line:58,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:12,column:2},end:{line:12,column:3}},loc:{start:{line:12,column:12},end:{line:43,column:3}},line:12}},branchMap:{'0':{loc:{start:{line:36,column:52},end:{line:36,column:180}},type:'cond-expr',locations:[{start:{line:36,column:88},end:{line:36,column:134}},{start:{line:36,column:137},end:{line:36,column:180}}],line:36},'1':{loc:{start:{line:38,column:12},end:{line:38,column:73}},type:'cond-expr',locations:[{start:{line:38,column:48},end:{line:38,column:59}},{start:{line:38,column:62},end:{line:38,column:73}}],line:38}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0},f:{'0':0},b:{'0':[0,0],'1':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _PaymentStatus=require('./PaymentStatus.style');var _PaymentStatus2=_interopRequireDefault(_PaymentStatus);
+var _Shared=require('../../Shared');
+var _payment=require('../../../config/payment.config');
+var _helper=require('../../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+PaymentStatus=function(_Component){_inherits(PaymentStatus,_Component);function PaymentStatus(){_classCallCheck(this,PaymentStatus);return _possibleConstructorReturn(this,(PaymentStatus.__proto__||Object.getPrototypeOf(PaymentStatus)).apply(this,arguments));}_createClass(PaymentStatus,[{key:'render',value:function render()
+{cov_13yopf4c37.f[0]++;var _ref=(cov_13yopf4c37.s[0]++,
+this.props),details=_ref.details,status=_ref.status,goToHome=_ref.goToHome,goToDetails=_ref.goToDetails;
+var successView=(cov_13yopf4c37.s[1]++,
+_react2.default.createElement(_reactNative.View,{style:_PaymentStatus2.default.statusDetails},
+_react2.default.createElement(_reactNative.View,{style:_PaymentStatus2.default.successLogo},
+_react2.default.createElement(_Shared.Icon,{name:'check',style:_PaymentStatus2.default.icon})),
+
+_react2.default.createElement(_reactNative.View,{style:_PaymentStatus2.default.amount},
+_react2.default.createElement(_Shared.AmountText,{value:(0,_result2.default)(details,'amount',0),isTotalText:true})),
+
+_react2.default.createElement(_Shared.Button,{text:(0,_helper.translate)('PAYMENT_STATUS__VIEW_DETAIL'),onPress:goToDetails,type:'secondary',style:_PaymentStatus2.default.viewDetailButton,textStyle:_PaymentStatus2.default.viewDetailText})));
+
+
+var failureView=(cov_13yopf4c37.s[2]++,
+_react2.default.createElement(_reactNative.View,{style:_PaymentStatus2.default.statusDetails},
+_react2.default.createElement(_reactNative.View,{style:_PaymentStatus2.default.failureLogo},
+_react2.default.createElement(_Shared.Icon,{name:'cross',style:_PaymentStatus2.default.icon})),
+
+_react2.default.createElement(_Shared.ISText,{type:'BOLD',style:_PaymentStatus2.default.paymentFailInfo},(0,_helper.translate)('PAYMENT_STATUS__TRY_AGAIN')),
+_react2.default.createElement(_Shared.Button,{text:(0,_helper.translate)('PAYMENT_STATUS__OK'),onPress:goToHome,style:_PaymentStatus2.default.okButtonStyle})));cov_13yopf4c37.s[3]++;
+
+
+return(
+_react2.default.createElement(_reactNative.View,{style:_PaymentStatus2.default.mainContainer},
+_react2.default.createElement(_Shared.Card,{containerStyles:_PaymentStatus2.default.card,header:status===_payment.PAYMENT_STATUS.SUCCESS?(cov_13yopf4c37.b[0][0]++,(0,_helper.translate)('PAYMENT_STATUS__PAYMENT_COMPLETED')):(cov_13yopf4c37.b[0][1]++,(0,_helper.translate)('PAYMENT_STATUS__PAYMENT_FAILED'))},
+
+status===_payment.PAYMENT_STATUS.SUCCESS?(cov_13yopf4c37.b[1][0]++,successView):(cov_13yopf4c37.b[1][1]++,failureView))));
+
+
+
+
+}}]);return PaymentStatus;}(_react.Component);cov_13yopf4c37.s[4]++;
+
+
+PaymentStatus.defaultProps={
+status:'',
+details:{},
+goToHome:_noop2.default,
+goToDetails:_noop2.default};cov_13yopf4c37.s[5]++;
+
+
+PaymentStatus.propTypes={
+status:_propTypes2.default.string,
+details:_propTypes2.default.object,
+goToHome:_propTypes2.default.func,
+goToDetails:_propTypes2.default.func};exports.default=
+
+
+PaymentStatus;

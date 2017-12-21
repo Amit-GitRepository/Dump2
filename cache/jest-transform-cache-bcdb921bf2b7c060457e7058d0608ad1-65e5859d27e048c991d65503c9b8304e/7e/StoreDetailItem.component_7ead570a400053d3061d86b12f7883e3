@@ -1,0 +1,34 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_2g4dh5l6r4=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/StoreLocator/StoreDetailItem/StoreDetailItem.component.js',hash='a64252b580bc4a6ee7bcc726953a8d940705c963',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/StoreLocator/StoreDetailItem/StoreDetailItem.component.js',statementMap:{'0':{start:{line:11,column:61},end:{line:11,column:71}},'1':{start:{line:12,column:4},end:{line:14,column:5}},'2':{start:{line:13,column:6},end:{line:13,column:18}},'3':{start:{line:15,column:4},end:{line:19,column:15}},'4':{start:{line:22,column:0},end:{line:27,column:2}},'5':{start:{line:28,column:0},end:{line:33,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:10,column:2},end:{line:10,column:3}},loc:{start:{line:10,column:12},end:{line:20,column:3}},line:10}},branchMap:{'0':{loc:{start:{line:12,column:4},end:{line:14,column:5}},type:'if',locations:[{start:{line:12,column:4},end:{line:14,column:5}},{start:{line:12,column:4},end:{line:14,column:5}}],line:12},'1':{loc:{start:{line:12,column:8},end:{line:12,column:26}},type:'binary-expr',locations:[{start:{line:12,column:8},end:{line:12,column:16}},{start:{line:12,column:20},end:{line:12,column:26}}],line:12}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0},f:{'0':0},b:{'0':[0,0],'1':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();
+
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _StoreDetailItem=require('./StoreDetailItem.style');var _StoreDetailItem2=_interopRequireDefault(_StoreDetailItem);
+var _Shared=require('../../Shared');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+StoreDetailItem=function(_Component){_inherits(StoreDetailItem,_Component);function StoreDetailItem(){_classCallCheck(this,StoreDetailItem);return _possibleConstructorReturn(this,(StoreDetailItem.__proto__||Object.getPrototypeOf(StoreDetailItem)).apply(this,arguments));}_createClass(StoreDetailItem,[{key:'render',value:function render()
+{cov_2g4dh5l6r4.f[0]++;var _ref=(cov_2g4dh5l6r4.s[0]++,
+this.props),heading=_ref.heading,label=_ref.label,fontWeight=_ref.fontWeight,accessibilityLabel=_ref.accessibilityLabel;cov_2g4dh5l6r4.s[1]++;
+if((cov_2g4dh5l6r4.b[1][0]++,!heading)||(cov_2g4dh5l6r4.b[1][1]++,!label)){cov_2g4dh5l6r4.b[0][0]++;cov_2g4dh5l6r4.s[2]++;
+return null;
+}else{cov_2g4dh5l6r4.b[0][1]++;}cov_2g4dh5l6r4.s[3]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:_StoreDetailItem2.default.detailItem},
+_react2.default.createElement(_Shared.ISText,{style:_StoreDetailItem2.default.detailText,type:fontWeight,accessibilityLabel:accessibilityLabel+'_heading',testID:accessibilityLabel+'_heading'},this.props.heading),
+_react2.default.createElement(_Shared.ISText,{style:_StoreDetailItem2.default.detailText,type:fontWeight,accessibilityLabel:accessibilityLabel+'_value',testID:accessibilityLabel+'_value'},this.props.label)));
+
+}}]);return StoreDetailItem;}(_react.Component);cov_2g4dh5l6r4.s[4]++;
+
+StoreDetailItem.defaultProps={
+heading:'',
+label:'',
+fontWeight:'REGULAR',
+accessibilityLabel:''};cov_2g4dh5l6r4.s[5]++;
+
+StoreDetailItem.propTypes={
+fontWeight:_propTypes2.default.string,
+heading:_propTypes2.default.oneOfType([_propTypes2.default.string,_propTypes2.default.number]),
+label:_propTypes2.default.oneOfType([_propTypes2.default.string,_propTypes2.default.number]),
+accessibilityLabel:_propTypes2.default.string};exports.default=
+
+StoreDetailItem;

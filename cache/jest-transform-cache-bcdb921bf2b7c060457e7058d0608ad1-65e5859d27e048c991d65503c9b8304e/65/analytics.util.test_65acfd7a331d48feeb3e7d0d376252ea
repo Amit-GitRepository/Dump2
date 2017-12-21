@@ -1,0 +1,90 @@
+var _analytics=require('../analytics.util');
+
+
+var _index=require('../../routes/index.routes');
+
+var customDimensions={
+SSOID:'anonymous',
+APP_NAME:'iService',
+CLIENT_ID:'',
+LAT_LONG:'',
+FB_ID:'',
+DEVICE_ID:''};
+
+
+describe('Google analytics tracker methods',function(){
+it('setUserId should call tracker.setUser',function(){
+var userId='111';
+(0,_analytics.setUser)(userId);
+expect(_analytics.tracker.setUser).toBeCalledWith(userId);
+});
+it('setAppName should call tracker.setAppName',function(){
+var appName='Dummy Name';
+(0,_analytics.setAppName)(appName);
+expect(_analytics.tracker.setAppName).toBeCalledWith(appName);
+});
+it('setAppVersion should call tracker.setAppVersion',function(){
+var appVersion='v.0.0';
+(0,_analytics.setAppVersion)(appVersion);
+expect(_analytics.tracker.setAppVersion).toBeCalledWith(appVersion);
+});
+it('setTrackUncaughtExceptions should call tracker.setTrackUncaughtExceptions',function(){
+(0,_analytics.setTrackUncaughtExceptions)();
+expect(_analytics.tracker.setTrackUncaughtExceptions).toBeCalledWith(true);
+});
+it('trackEvent should call tracker.trackEvent',function(){
+(0,_analytics.trackEvent)('testcategory','testaction',{label:'v1.0.3',value:22});
+expect(_analytics.tracker.trackEventWithCustomDimensionValues).toBeCalledWith('testcategory','testaction',{label:'v1.0.3',value:22},customDimensions);
+});
+it('trackException should call tracker.trackEvent',function(){
+var error='error message';
+(0,_analytics.trackException)(error,true);
+expect(_analytics.tracker.trackException).toBeCalledWith(error,true);
+});
+it('trackPurchaseEvent should call tracker.trackEvent',function(){
+var purchase={
+id:'xx11',
+name:'Top up',
+price:50,
+quantity:1};
+
+var transaction={
+id:'xx22',
+revenue:60};
+
+(0,_analytics.trackPurchaseEvent)(purchase,transaction);
+expect(_analytics.tracker.trackPurchaseEvent).toBeCalledWith(purchase,transaction,'Ecommerce','Purchase');
+});
+});
+
+describe('getScreenTrackingConfig should return config object',function(){
+var screenTrackingConfig=(0,_analytics.getScreenTrackingConfig)();
+var navAction=['Navigation/NAVIGATE','Navigation/BACK','Navigation/RESET'];
+var gaRouteMap=(0,_analytics.getRouteMap)(_index.routeConfig);
+it('should have a tracker object',function(){
+expect(screenTrackingConfig.tracker).toMatchObject(_analytics.tracker);
+});
+it('should have Navigation Store Key',function(){
+expect(screenTrackingConfig.navStoreKey).toMatch('nav');
+});
+it('should have Navigation actions',function(){
+expect(screenTrackingConfig.navActions).toMatchObject(navAction);
+});
+it('should have routeConfig',function(){
+expect(screenTrackingConfig.gaRouteMap).toMatchObject(gaRouteMap);
+});
+it('should have custom dimension',function(){
+expect(screenTrackingConfig.customDimensions).toMatchObject(customDimensions);
+});
+});
+
+describe('getRouteConfig should return map between gaScreenName and screenName',function(){
+var gaRouteMap=(0,_analytics.getRouteMap)(_index.routeConfig);
+it('should return an object with screen name mapping',function(){
+expect(gaRouteMap).toBeDefined();
+});
+it('should have screenName for a defined route',function(){
+var routeInfo=Object.keys(_index.routeConfig)[0];
+expect(gaRouteMap[routeInfo]).toEqual(_index.routeConfig[routeInfo].gaScreenName);
+});
+});

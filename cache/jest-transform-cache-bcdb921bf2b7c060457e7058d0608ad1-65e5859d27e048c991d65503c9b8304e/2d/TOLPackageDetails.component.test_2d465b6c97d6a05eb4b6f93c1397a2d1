@@ -1,0 +1,49 @@
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);
+var _TOLPackageDetails=require('../TOLPackageDetails.component');var _TOLPackageDetails2=_interopRequireDefault(_TOLPackageDetails);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('TOLPackageDetails component',function(){
+it('renders correctly',function(){
+var mockData={
+planDetail:{planName:'ultra hgh speed internet',
+endMonth:'may',
+endDate:12,
+planOverView:'Ultra hi-speed Internet 50M  2,799',
+planOffer:'รับส่วนลดค่าบริการ 50%  12 รอบบิล (ก.ย.59 - ส.ค.60)',
+download:{
+consumedValue:'50',unit:'MB'},
+upload:{
+consumedValue:'5',unit:'MB'},
+wifi:{
+consumedValue:'30',subtext:'hrs / month'}},
+
+
+userDetail:{
+phoneNumber:'9629770174',
+name:'pulkit Juneja'}};
+
+
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_TOLPackageDetails2.default,{planDetails:mockData.planDetail,userDetails:mockData.userDetail}));
+expect(component).toMatchSnapshot();
+});
+
+it('renders correctly with missing items in the planDetails section',function(){
+var mockData={
+planDetail:{planName:'ultra hgh speed internet',
+endMonth:'may',
+endDate:12,
+planOverView:'Ultra hi-speed Internet 50M  2,799',
+planOffer:'รับส่วนลดค่าบริการ 50%  12 รอบบิล (ก.ย.59 - ส.ค.60)',
+wifi:{
+consumedValue:'30',subtext:'hrs / month'}},
+
+
+userDetail:{
+phoneNumber:'9629770174',
+name:'pulkit Juneja'}};
+
+
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_TOLPackageDetails2.default,{planDetails:mockData.planDetail,userDetails:mockData.userDetail}));
+expect(component).toMatchSnapshot();
+});
+});

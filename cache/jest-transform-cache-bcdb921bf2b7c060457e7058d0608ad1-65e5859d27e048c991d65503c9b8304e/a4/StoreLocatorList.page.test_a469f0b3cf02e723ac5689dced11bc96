@@ -1,0 +1,45 @@
+
+
+
+
+
+
+
+
+
+
+
+jest.mock('../../../utils/location.util.js');
+jest.mock('../../../config/storeInfo.config.js',function(){return{
+data:[{
+latitude:'1',
+longitude:'2'}]};});var _react=require('react');var _react2=_interopRequireDefault(_react);var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);var _StoreLocatorList=require('../StoreLocatorList.page');var _StoreLocatorList2=_interopRequireDefault(_StoreLocatorList);var _enzyme=require('enzyme');var _redux=require('redux');var _reactNavigation=require('react-navigation');var _reactRedux=require('react-redux');var _helper=require('../../../language/i18n/helper');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+
+
+var store=(0,_redux.createStore)(function(){return{};});
+
+describe('StoreLocatorListPage page',function(){
+it('should render',function(){
+var wrapper=(0,_enzyme.shallow)(
+_react2.default.createElement(_reactRedux.Provider,{store:store},
+_react2.default.createElement(_StoreLocatorList2.default,null)));
+
+expect(wrapper).toBeDefined();
+});
+it('mapStateToProps: should return nearByStores with subheading',function(){
+var state={storeLocator:{nearByStores:[{name:{'en':'someStoreName'},distance:1.1}]},user:{language:'en'}};
+var subheading=(0,_helper.translate)('STORE_LOCATOR__DETAILS_DISTANCE')+' '+(0,_helper.translate)('STORE_LOCATOR__DETAILS_DISTANCE_VAL',{distance:'1.1'});
+var expected={nearByStores:[{name:{'en':'someStoreName'},distance:1.1,subheading:subheading}],language:'en'};
+expect((0,_StoreLocatorList.mapStateToProps)(state)).toEqual(expected);
+});
+
+it('mapDispatchToProps: onStorePress =>  should navigate to StoreDetails with storedate passing as navparams',function(){
+var mockDispatch=jest.fn();
+var dummyStoreData={name:'someStoreName'};var _mapDispatchToProps=
+(0,_StoreLocatorList.mapDispatchToProps)(mockDispatch),onStorePress=_mapDispatchToProps.onStorePress;
+var storePressHandler=onStorePress(dummyStoreData);
+storePressHandler();
+expect(mockDispatch).toHaveBeenCalledWith(_reactNavigation.NavigationActions.navigate({routeName:'StoreDetails',params:dummyStoreData}));
+});
+});

@@ -1,0 +1,58 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_ti3sn6274=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/OTPPrompt/OTPPrompt.component.js',hash='0ee6f4df6d09697b1d7e61cc9fe00a2d696c2e18',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/OTPPrompt/OTPPrompt.component.js',statementMap:{'0':{start:{line:13,column:83},end:{line:13,column:93}},'1':{start:{line:14,column:14},end:{line:14,column:16}},'2':{start:{line:15,column:19},end:{line:15,column:43}},'3':{start:{line:15,column:31},end:{line:15,column:43}},'4':{start:{line:16,column:23},end:{line:16,column:43}},'5':{start:{line:16,column:29},end:{line:16,column:43}},'6':{start:{line:17,column:4},end:{line:36,column:6}},'7':{start:{line:40,column:0},end:{line:47,column:2}},'8':{start:{line:49,column:0},end:{line:56,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:12,column:2},end:{line:12,column:3}},loc:{start:{line:12,column:12},end:{line:37,column:3}},line:12},'1':{name:'(anonymous_1)',decl:{start:{line:15,column:19},end:{line:15,column:20}},loc:{start:{line:15,column:31},end:{line:15,column:43}},line:15},'2':{name:'(anonymous_2)',decl:{start:{line:16,column:23},end:{line:16,column:24}},loc:{start:{line:16,column:29},end:{line:16,column:43}},line:16}},branchMap:{'0':{loc:{start:{line:23,column:69},end:{line:23,column:132}},type:'cond-expr',locations:[{start:{line:23,column:101},end:{line:23,column:127}},{start:{line:23,column:130},end:{line:23,column:132}}],line:23}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0},f:{'0':0,'1':0,'2':0},b:{'0':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _otp=require('../../../config/otp.config');var _otp2=_interopRequireDefault(_otp);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ResendOTPCounter=require('./ResendOTPCounter.component');var _ResendOTPCounter2=_interopRequireDefault(_ResendOTPCounter);
+var _OTPPrompt=require('./OTPPrompt.style');var _OTPPrompt2=_interopRequireDefault(_OTPPrompt);
+var _Shared=require('../../Shared');
+var _helper=require('../../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+OTPPrompt=function(_Component){_inherits(OTPPrompt,_Component);function OTPPrompt(){_classCallCheck(this,OTPPrompt);return _possibleConstructorReturn(this,(OTPPrompt.__proto__||Object.getPrototypeOf(OTPPrompt)).apply(this,arguments));}_createClass(OTPPrompt,[{key:'render',value:function render()
+{cov_ti3sn6274.f[0]++;var _ref=(cov_ti3sn6274.s[0]++,
+this.props),msisdn=_ref.msisdn,onLogin=_ref.onLogin,onConfirm=_ref.onConfirm,onClosePress=_ref.onClosePress,validateOTPStatus=_ref.validateOTPStatus,sendOTP=_ref.sendOTP;
+var otp=(cov_ti3sn6274.s[1]++,'');cov_ti3sn6274.s[2]++;
+var setOTP=function setOTP(newOTP){cov_ti3sn6274.f[1]++;cov_ti3sn6274.s[3]++;return otp=newOTP;};cov_ti3sn6274.s[4]++;
+var confirmOTP=function confirmOTP(){cov_ti3sn6274.f[2]++;cov_ti3sn6274.s[5]++;return onConfirm(otp);};cov_ti3sn6274.s[6]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:_OTPPrompt2.default.container},
+_react2.default.createElement(_Shared.Card,{containerStyles:_OTPPrompt2.default.cardContainer,header:(0,_helper.translate)('OTP_VERIFY'),closeIcon:true,onClosePress:onClosePress},
+_react2.default.createElement(_reactNative.View,{style:_OTPPrompt2.default.content},
+_react2.default.createElement(_Shared.ISText,{type:'SEMIBOLD',style:_OTPPrompt2.default.otpText},(0,_helper.translate)('OTP_MESSAGE')),
+_react2.default.createElement(_Shared.ISText,{type:'BOLD',style:_OTPPrompt2.default.otpText},msisdn),
+_react2.default.createElement(_Shared.ISText,{type:'SEMIBOLD',style:_OTPPrompt2.default.incorrectText},validateOTPStatus===false?(cov_ti3sn6274.b[0][0]++,(0,_helper.translate)('OTP_INCORRECT')):(cov_ti3sn6274.b[0][1]++,'')),
+_react2.default.createElement(_Shared.IconTextInput,{type:'SECONDARY',onChangeText:setOTP}),
+_react2.default.createElement(_reactNative.View,{style:_OTPPrompt2.default.bottomText},
+_react2.default.createElement(_Shared.ISText,{type:'SEMIBOLD'},(0,_helper.translate)('OTP_REF')),
+_react2.default.createElement(_ResendOTPCounter2.default,{time:_otp2.default.resendOTPTime,sendOTP:sendOTP})),
+
+_react2.default.createElement(_Shared.Button,{onPress:confirmOTP,text:(0,_helper.translate)('OTP_CONFIRM'),touchableStyle:_OTPPrompt2.default.button,textStyle:_OTPPrompt2.default.loginButtonText}),
+_react2.default.createElement(_Shared.ISText,{type:'SEMIBOLD'},(0,_helper.translate)('OTP_OR')),
+_react2.default.createElement(_Shared.Button,{onPress:onLogin,text:(0,_helper.translate)('LANDING__LOGIN_TRUEID_BUTTON_TEXT'),
+type:'secondary',touchableStyle:_OTPPrompt2.default.button,style:_OTPPrompt2.default.cancelButtonContainer,textStyle:_OTPPrompt2.default.cancelButtonText})))));
+
+
+
+
+}}]);return OTPPrompt;}(_react.Component);cov_ti3sn6274.s[7]++;
+
+
+OTPPrompt.defaultProps={
+msisdn:'',
+validateOTPStatus:false,
+onLogin:_noop2.default,
+onConfirm:_noop2.default,
+onClosePress:_noop2.default,
+sendOTP:_noop2.default};cov_ti3sn6274.s[8]++;
+
+
+OTPPrompt.propTypes={
+msisdn:_propTypes2.default.string,
+validateOTPStatus:_propTypes2.default.bool,
+onLogin:_propTypes2.default.func,
+onConfirm:_propTypes2.default.func,
+onClosePress:_propTypes2.default.func,
+sendOTP:_propTypes2.default.func};exports.default=
+
+
+OTPPrompt;

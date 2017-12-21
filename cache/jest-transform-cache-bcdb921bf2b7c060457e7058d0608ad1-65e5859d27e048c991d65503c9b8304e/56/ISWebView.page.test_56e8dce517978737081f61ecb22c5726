@@ -1,0 +1,20 @@
+var _ISWebView=require('../ISWebView.page');var _ISWebView2=_interopRequireDefault(_ISWebView);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _enzyme=require('enzyme');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+var navigation={
+state:{
+params:{
+url:'http://google.com'}}};
+
+
+
+
+describe('ISWebViewPage',function(){
+it('renders ',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_ISWebView2.default,{navigation:navigation}));
+expect(wrapper).toBeDefined();
+});
+});

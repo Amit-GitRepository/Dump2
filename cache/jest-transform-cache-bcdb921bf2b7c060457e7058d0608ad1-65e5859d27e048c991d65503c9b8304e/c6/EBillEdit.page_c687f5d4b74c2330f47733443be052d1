@@ -1,0 +1,83 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.mapDispatchToProps=undefined;var cov_wcaqvng8x=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/BillingMethods/EBillEdit.page.js',hash='3f2ac08fe655cc8d5a205969ba6980c2950b2288',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/BillingMethods/EBillEdit.page.js',statementMap:{'0':{start:{line:15,column:20},end:{line:18,column:6}},'1':{start:{line:20,column:17},end:{line:20,column:63}},'2':{start:{line:21,column:15},end:{line:21,column:63}},'3':{start:{line:23,column:4},end:{line:40,column:5}},'4':{start:{line:25,column:6},end:{line:25,column:58}},'5':{start:{line:26,column:6},end:{line:26,column:58}},'6':{start:{line:27,column:6},end:{line:27,column:12}},'7':{start:{line:30,column:6},end:{line:30,column:56}},'8':{start:{line:31,column:6},end:{line:31,column:12}},'9':{start:{line:34,column:6},end:{line:34,column:58}},'10':{start:{line:35,column:6},end:{line:35,column:12}},'11':{start:{line:42,column:20},end:{line:55,column:5}},'12':{start:{line:56,column:4},end:{line:56,column:34}},'13':{start:{line:59,column:4},end:{line:68,column:6}},'14':{start:{line:72,column:0},end:{line:75,column:2}},'15':{start:{line:77,column:24},end:{line:77,column:34}},'16':{start:{line:77,column:31},end:{line:77,column:33}},'17':{start:{line:79,column:34},end:{line:81,column:2}},'18':{start:{line:79,column:49},end:{line:81,column:1}},'19':{start:{line:80,column:24},end:{line:80,column:58}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:14,column:21},end:{line:14,column:22}},loc:{start:{line:14,column:31},end:{line:57,column:3}},line:14},'1':{name:'(anonymous_1)',decl:{start:{line:58,column:2},end:{line:58,column:3}},loc:{start:{line:58,column:12},end:{line:69,column:3}},line:58},'2':{name:'(anonymous_2)',decl:{start:{line:77,column:24},end:{line:77,column:25}},loc:{start:{line:77,column:31},end:{line:77,column:33}},line:77},'3':{name:'(anonymous_3)',decl:{start:{line:79,column:34},end:{line:79,column:35}},loc:{start:{line:79,column:49},end:{line:81,column:1}},line:79},'4':{name:'(anonymous_4)',decl:{start:{line:80,column:13},end:{line:80,column:14}},loc:{start:{line:80,column:24},end:{line:80,column:58}},line:80}},branchMap:{'0':{loc:{start:{line:23,column:4},end:{line:40,column:5}},type:'switch',locations:[{start:{line:24,column:4},end:{line:28,column:5}},{start:{line:29,column:4},end:{line:32,column:5}},{start:{line:33,column:4},end:{line:36,column:5}},{start:{line:37,column:4},end:{line:39,column:5}}],line:23},'1':{loc:{start:{line:63,column:19},end:{line:63,column:53}},type:'binary-expr',locations:[{start:{line:63,column:19},end:{line:63,column:47}},{start:{line:63,column:51},end:{line:63,column:53}}],line:63},'2':{loc:{start:{line:64,column:23},end:{line:64,column:190}},type:'cond-expr',locations:[{start:{line:64,column:68},end:{line:64,column:99}},{start:{line:64,column:103},end:{line:64,column:189}}],line:64},'3':{loc:{start:{line:64,column:103},end:{line:64,column:189}},type:'cond-expr',locations:[{start:{line:64,column:154},end:{line:64,column:182}},{start:{line:64,column:185},end:{line:64,column:189}}],line:64},'4':{loc:{start:{line:65,column:22},end:{line:65,column:107}},type:'cond-expr',locations:[{start:{line:65,column:69},end:{line:65,column:100}},{start:{line:65,column:103},end:{line:65,column:107}}],line:65}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0,'19':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0},b:{'0':[0,0,0,0],'1':[0,0],'2':[0,0],'3':[0,0],'4':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _assign=require('lodash/assign');var _assign2=_interopRequireDefault(_assign);
+var _EBillEdit=require('../../components/BillingMethods/EBillEdit/EBillEdit.component');var _EBillEdit2=_interopRequireDefault(_EBillEdit);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _reactRedux=require('react-redux');
+var _helper=require('../../language/i18n/helper');
+var _index=require('../../redux/actions/index.actions');var actions=_interopRequireWildcard(_index);function _interopRequireWildcard(obj){if(obj&&obj.__esModule){return obj;}else{var newObj={};if(obj!=null){for(var key in obj){if(Object.prototype.hasOwnProperty.call(obj,key))newObj[key]=obj[key];}}newObj.default=obj;return newObj;}}function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+EBillEditPage=function(_Component){_inherits(EBillEditPage,_Component);function EBillEditPage(){var _ref;var _temp,_this,_ret;_classCallCheck(this,EBillEditPage);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=EBillEditPage.__proto__||Object.getPrototypeOf(EBillEditPage)).call.apply(_ref,[this].concat(args))),_this),_this.
+state={
+account:(0,_result2.default)(_this.props.navigation,'state.params.account',{})},_this.
+
+saveEbillAccount=function(data){cov_wcaqvng8x.f[0]++;
+var account=(cov_wcaqvng8x.s[0]++,(0,_assign2.default)({},data,{
+accountID:_this.state.account.accountID,
+accountType:_this.state.account.accountType}));
+
+
+var header=(cov_wcaqvng8x.s[1]++,(0,_helper.translate)('BILLING_METHODS__ADD_GO_PAPERLESS'));
+var body=(cov_wcaqvng8x.s[2]++,(0,_helper.translate)('BILLING_METHODS__ADD_BODY_PAPERLESS'));cov_wcaqvng8x.s[3]++;
+
+switch(account.ebillFormat){
+case'paper':cov_wcaqvng8x.b[0][0]++;{cov_wcaqvng8x.s[4]++;
+header=(0,_helper.translate)('BILLING_METHODS__ADD_GO_PAPER');cov_wcaqvng8x.s[5]++;
+body=(0,_helper.translate)('BILLING_METHODS__ADD_BODY_PAPER');cov_wcaqvng8x.s[6]++;
+break;
+}
+case'sms':cov_wcaqvng8x.b[0][1]++;{cov_wcaqvng8x.s[7]++;
+body=(0,_helper.translate)('BILLING_METHODS__ADD_BODY_SMS');cov_wcaqvng8x.s[8]++;
+break;
+}
+case'email':cov_wcaqvng8x.b[0][2]++;{cov_wcaqvng8x.s[9]++;
+body=(0,_helper.translate)('BILLING_METHODS__ADD_BODY_EMAIL');cov_wcaqvng8x.s[10]++;
+break;
+}
+default:cov_wcaqvng8x.b[0][3]++;{
+
+}}
+
+
+var message=(cov_wcaqvng8x.s[11]++,{
+title:header,
+body:body,
+buttons:[
+{
+title:(0,_helper.translate)('BILLING_METHODS__ADD_CANCEL')},
+
+{
+title:(0,_helper.translate)('BILLING_METHODS__ADD_CONFIRM'),
+actionType:actions.APPLY_FOR_EBILL,
+nextAction:[account]}]});cov_wcaqvng8x.s[12]++;
+
+
+
+_this.props.showPopup(message);
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(EBillEditPage,[{key:'render',value:function render()
+{cov_wcaqvng8x.f[1]++;cov_wcaqvng8x.s[13]++;
+return(
+_react2.default.createElement(_EBillEdit2.default,{
+accountType:this.state.account.accountType,
+billingFormat:this.state.account.billingFormat,
+serviceID:(cov_wcaqvng8x.b[1][0]++,this.state.account.productId)||(cov_wcaqvng8x.b[1][1]++,''),
+defaultMSISDN:this.state.account.billingFormat==='sms'?(cov_wcaqvng8x.b[2][0]++,this.state.account.billingValue):(cov_wcaqvng8x.b[2][1]++,this.state.account.accountType==='tmhPostpaid'?(cov_wcaqvng8x.b[3][0]++,this.state.account.productId):(cov_wcaqvng8x.b[3][1]++,null)),
+defaultEmail:this.state.account.billingFormat==='email'?(cov_wcaqvng8x.b[4][0]++,this.state.account.billingValue):(cov_wcaqvng8x.b[4][1]++,null),
+onSaveAction:this.saveEbillAccount}));
+
+
+}}]);return EBillEditPage;}(_react.Component);cov_wcaqvng8x.s[14]++;
+
+
+EBillEditPage.propTypes={
+navigation:_propTypes2.default.object.isRequired,
+showPopup:_propTypes2.default.func};cov_wcaqvng8x.s[15]++;
+
+
+var mapStateToProps=function mapStateToProps(){cov_wcaqvng8x.f[2]++;cov_wcaqvng8x.s[16]++;return{};};cov_wcaqvng8x.s[17]++;
+
+var mapDispatchToProps=exports.mapDispatchToProps=function mapDispatchToProps(dispatch){cov_wcaqvng8x.f[3]++;cov_wcaqvng8x.s[18]++;return{
+showPopup:function showPopup(value){cov_wcaqvng8x.f[4]++;cov_wcaqvng8x.s[19]++;return dispatch(actions.showPopup(value));}};
+};exports.default=
+
+(0,_reactRedux.connect)(mapStateToProps,mapDispatchToProps)(EBillEditPage);

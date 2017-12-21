@@ -1,0 +1,63 @@
+var _api=require('../api/api.saga');var _api2=_interopRequireDefault(_api);
+var _msisdn=require('../msisdn.saga');var _msisdn2=_interopRequireDefault(_msisdn);
+var _reduxSagaTesting=require('redux-saga-testing');var _reduxSagaTesting2=_interopRequireDefault(_reduxSagaTesting);
+var _index=require('../../actions/index.actions');
+var _effects=require('redux-saga/effects');
+var _apiHelper=require('../../../redux/sagas/api/apiHelper');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('Testing the root saga',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_msisdn2.default)());
+it('should take AUTO_DETECT_MSISDN_REQUEST action',function(result){
+expect(result).toEqual((0,_effects.takeLatest)(_index.AUTO_DETECT_MSISDN_REQUEST,_msisdn.detectMSISDN));
+});
+it('should call nothing after this',function(result){
+expect(result).toBeUndefined();
+});
+});
+
+describe('detectMSISDN success with msisdn detected',function(){
+var dummyResponseWithMSISDN={
+body:{
+msisdn:123456789,
+'x-forwarded-for':'10.10.1.0'}};
+
+
+
+var it=(0,_reduxSagaTesting2.default)((0,_msisdn.detectMSISDN)());
+it('should return the expected response',function(result){
+
+expect(result).toEqual((0,_effects.call)(_api2.default,(0,_apiHelper.msisdnRequest)()));
+return dummyResponseWithMSISDN;
+});
+it('On success, dispatch success action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.autoDetectMSISDNSuccess)(dummyResponseWithMSISDN.body)));
+});
+});
+
+describe('detectMSISDN success with msisdn not detected',function(){
+var dummyResponseWithNoMSISDN={
+body:{
+msisdn:'null'}};
+
+
+var it=(0,_reduxSagaTesting2.default)((0,_msisdn.detectMSISDN)());
+it('should return the expected response',function(result){
+expect(result).toEqual((0,_effects.call)(_api2.default,(0,_apiHelper.msisdnRequest)()));
+return dummyResponseWithNoMSISDN;
+});
+it('On success, dispatch success action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.autoDetectMSISDNSuccess)(dummyResponseWithNoMSISDN.body)));
+});
+});
+
+describe('detectMSISDN fail',function(){
+var errorResponse='Some api error';
+var it=(0,_reduxSagaTesting2.default)((0,_msisdn.detectMSISDN)());
+it('should return the expected response',function(result){
+expect(result).toEqual((0,_effects.call)(_api2.default,(0,_apiHelper.msisdnRequest)()));
+return new Error(errorResponse);
+});
+it('On failure, dispatch failure action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.autoDetectMSISDNFail)(errorResponse)));
+});
+});

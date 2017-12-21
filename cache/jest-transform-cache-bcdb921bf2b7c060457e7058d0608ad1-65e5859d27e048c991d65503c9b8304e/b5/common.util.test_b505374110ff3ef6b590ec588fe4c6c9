@@ -1,0 +1,38 @@
+var _common=require('../common.util');
+
+describe('get selector: returns a selector function that selects a variable from the state',function(){
+var state={
+test:{
+abc:'def'}};
+
+
+it('Should select correct state variable when path is provided',function(){
+var selector=(0,_common.getSelector)('test.abc');
+expect(selector(state)).toBe('def');
+});
+
+it('Should return null id incorrect state variable path is provided',function(){
+var selector=(0,_common.getSelector)('test.abc.uvf');
+expect(selector(state)).toBe(null);
+});
+});
+
+describe('throwException: should throw error',function(){
+it('should throw the passed error',function(){
+var testError={message:'dummy'};
+expect(function(){
+(0,_common.throwException)(testError);
+}).toThrow(testError);
+});
+});
+
+describe('phoneNumberFormatter: should format phone number',function(){
+it('should return formatted phone number',function(){
+var phoneNumber=(0,_common.phoneNumberFormatter)('0123456789');
+expect((0,_common.phoneNumberFormatter)(phoneNumber)).toBe('012-345-6789');
+});
+it('should return formatted phone number',function(){
+var phoneNumber=(0,_common.phoneNumberFormatter)('012345678');
+expect((0,_common.phoneNumberFormatter)(phoneNumber)).toBe('012345678');
+});
+});

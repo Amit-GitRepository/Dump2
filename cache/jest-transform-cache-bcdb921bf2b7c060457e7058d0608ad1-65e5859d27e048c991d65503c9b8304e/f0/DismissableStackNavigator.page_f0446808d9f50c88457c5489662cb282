@@ -1,0 +1,33 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1qm3di9i99=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/DismissableStackNavigator/DismissableStackNavigator.page.js',hash='a6a16235c40de8e4d20ac75cbe334218b198c08b',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/DismissableStackNavigator/DismissableStackNavigator.page.js',statementMap:{'0':{start:{line:8,column:19},end:{line:8,column:50}},'1':{start:{line:10,column:2},end:{line:32,column:4}},'2':{start:{line:14,column:30},end:{line:14,column:51}},'3':{start:{line:15,column:6},end:{line:15,column:24}},'4':{start:{line:16,column:6},end:{line:16,column:57}},'5':{start:{line:20,column:40},end:{line:20,column:50}},'6':{start:{line:21,column:20},end:{line:24,column:7}},'7':{start:{line:25,column:6},end:{line:30,column:8}}},fnMap:{'0':{name:'DismissableStackNavigator',decl:{start:{line:7,column:24},end:{line:7,column:49}},loc:{start:{line:7,column:68},end:{line:33,column:1}},line:7},'1':{name:'(anonymous_1)',decl:{start:{line:13,column:21},end:{line:13,column:22}},loc:{start:{line:13,column:27},end:{line:17,column:5}},line:13},'2':{name:'(anonymous_2)',decl:{start:{line:19,column:4},end:{line:19,column:5}},loc:{start:{line:19,column:14},end:{line:31,column:5}},line:19}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0},f:{'0':0,'1':0,'2':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();exports.default=
+
+
+
+
+
+DismissableStackNavigator;var _react=require('react');var _react2=_interopRequireDefault(_react);var _index=require('../../redux/actions/index.actions');var _reactNavigation=require('react-navigation');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}function DismissableStackNavigator(routes,options){var _class,_temp2;cov_1qm3di9i99.f[0]++;
+var StackNav=(cov_1qm3di9i99.s[0]++,(0,_reactNavigation.StackNavigator)(routes,options));cov_1qm3di9i99.s[1]++;
+
+return _temp2=_class=function(_Component){_inherits(DismissableStackNav,_Component);function DismissableStackNav(){var _ref;var _temp,_this,_ret;_classCallCheck(this,DismissableStackNav);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=DismissableStackNav.__proto__||Object.getPrototypeOf(DismissableStackNav)).call.apply(_ref,[this].concat(args))),_this),_this.
+
+
+dismissPayment=function(){cov_1qm3di9i99.f[1]++;var _ref2=(cov_1qm3di9i99.s[2]++,
+_this.props.navigation),state=_ref2.state,goBack=_ref2.goBack;cov_1qm3di9i99.s[3]++;
+goBack(state.key);cov_1qm3di9i99.s[4]++;
+_this.props.navigation.dispatch((0,_index.clearPaymentData)());
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(DismissableStackNav,[{key:'render',value:function render()
+
+{cov_1qm3di9i99.f[2]++;var _ref3=(cov_1qm3di9i99.s[5]++,
+this.props),screenProps=_ref3.screenProps,navigation=_ref3.navigation;
+var props=(cov_1qm3di9i99.s[6]++,_extends({},
+screenProps,{
+dismiss:this.dismissPayment}));cov_1qm3di9i99.s[7]++;
+
+return(
+_react2.default.createElement(StackNav,{
+navigation:navigation,
+screenProps:props}));
+
+
+}}]);return DismissableStackNav;}(_react.Component),_class.router=StackNav.router,_temp2;
+
+}

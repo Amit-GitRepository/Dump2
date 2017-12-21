@@ -1,0 +1,41 @@
+
+
+
+
+
+
+
+
+
+jest.mock('resolveAssetSource',function(){return function(){return{
+width:20,
+height:10};};});var _lodash=require('lodash');var _lodash2=_interopRequireDefault(_lodash);var _Banner=require('../Banner.component');var _Banner2=_interopRequireDefault(_Banner);var _react=require('react');var _react2=_interopRequireDefault(_react);var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);var _enzyme=require('enzyme');var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+describe('Banner component',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_Banner2.default,null));
+
+it('renders correctly',function(){
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_Banner2.default,null)).toJSON();
+expect(component).toMatchSnapshot();
+});
+
+it('renders correctly when isBackground image with children component',function(){
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_Banner2.default,{isBackground:true},_react2.default.createElement(_reactNative.Text,null,'TEST'))).toJSON();
+expect(component).toMatchSnapshot();
+});
+
+it('renders correctly',function(){
+expect(wrapper).toBeDefined();
+});
+
+it('calculatesStyles: the style for imageView',function(){
+wrapper.setState({viewWidth:30,viewHeight:30,ratio:1.5});
+expect(wrapper.instance().calculateStyle()).toEqual({'height':15,'width':'100%'});
+});
+
+it('onLayout: should set the state with viewWidth on layout',function(){
+var event=_lodash2.default.set({},'nativeEvent.layout.width',10);
+wrapper.instance().onLayout(event);
+expect(wrapper.instance().state.viewWidth).toEqual(10);
+});
+});

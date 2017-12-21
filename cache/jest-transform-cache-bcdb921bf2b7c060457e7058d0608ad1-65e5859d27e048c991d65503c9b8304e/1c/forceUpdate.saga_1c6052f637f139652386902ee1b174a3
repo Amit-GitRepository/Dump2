@@ -1,0 +1,41 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_xtnjfw6lz=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/sagas/forceUpdate.saga.js',hash='d58c6606ab19a5784e30dad3f5f45ceb895cfe13',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/sagas/forceUpdate.saga.js',statementMap:{'0':{start:{line:10,column:2},end:{line:37,column:3}},'1':{start:{line:11,column:4},end:{line:11,column:42}},'2':{start:{line:12,column:32},end:{line:12,column:87}},'3':{start:{line:13,column:21},end:{line:13,column:50}},'4':{start:{line:14,column:21},end:{line:17,column:5}},'5':{start:{line:18,column:35},end:{line:18,column:59}},'6':{start:{line:19,column:4},end:{line:34,column:5}},'7':{start:{line:23,column:6},end:{line:23,column:62}},'8':{start:{line:24,column:6},end:{line:24,column:49}},'9':{start:{line:25,column:6},end:{line:25,column:37}},'10':{start:{line:26,column:11},end:{line:34,column:5}},'11':{start:{line:30,column:6},end:{line:30,column:63}},'12':{start:{line:31,column:6},end:{line:31,column:87}},'13':{start:{line:32,column:6},end:{line:32,column:50}},'14':{start:{line:33,column:6},end:{line:33,column:37}},'15':{start:{line:36,column:4},end:{line:36,column:29}},'16':{start:{line:41,column:2},end:{line:41,column:58}}},fnMap:{'0':{name:'checkForUpdate',decl:{start:{line:9,column:17},end:{line:9,column:31}},loc:{start:{line:9,column:35},end:{line:38,column:1}},line:9},'1':{name:'forceUpdate',decl:{start:{line:40,column:25},end:{line:40,column:36}},loc:{start:{line:40,column:40},end:{line:42,column:1}},line:40}},branchMap:{'0':{loc:{start:{line:19,column:4},end:{line:34,column:5}},type:'if',locations:[{start:{line:19,column:4},end:{line:34,column:5}},{start:{line:19,column:4},end:{line:34,column:5}}],line:19},'1':{loc:{start:{line:20,column:6},end:{line:21,column:83}},type:'binary-expr',locations:[{start:{line:20,column:6},end:{line:20,column:64}},{start:{line:21,column:6},end:{line:21,column:83}}],line:20},'2':{loc:{start:{line:26,column:11},end:{line:34,column:5}},type:'if',locations:[{start:{line:26,column:11},end:{line:34,column:5}},{start:{line:26,column:11},end:{line:34,column:5}}],line:26},'3':{loc:{start:{line:27,column:6},end:{line:28,column:69}},type:'binary-expr',locations:[{start:{line:27,column:6},end:{line:27,column:68}},{start:{line:28,column:6},end:{line:28,column:69}}],line:27}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0},f:{'0':0,'1':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();exports.
+
+
+
+
+
+
+
+checkForUpdate=checkForUpdate;exports.default=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+forceUpdate;var _localStorage=require('../../utils/localStorage.util');var _localStorage2=_interopRequireDefault(_localStorage);var _reactNativeVersionNumber=require('react-native-version-number');var _reactNativeVersionNumber2=_interopRequireDefault(_reactNativeVersionNumber);var _effects=require('redux-saga/effects');var _firebase=require('../../utils/firebase.util');var _index=require('../actions/index.actions');var _forceUpdate=require('../../utils/forceUpdate.util');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var _marked=regeneratorRuntime.mark(checkForUpdate),_marked2=regeneratorRuntime.mark(forceUpdate);function checkForUpdate(){var notificationRetries,snapshot,appLinks,currentVersionOnDevice;return regeneratorRuntime.wrap(function checkForUpdate$(_context){while(1){switch(_context.prev=_context.next){case 0:cov_xtnjfw6lz.f[0]++;cov_xtnjfw6lz.s[0]++;_context.prev=2;cov_xtnjfw6lz.s[1]++;_context.next=6;return(0,_effects.call)(_forceUpdate.updateNotificationRetries);case 6:cov_xtnjfw6lz.s[2]++;_context.next=9;return(0,_effects.call)(_localStorage2.default.getItem,'notificationRetries');case 9:notificationRetries=_context.sent;cov_xtnjfw6lz.s[3]++;_context.next=13;return(0,_effects.call)(_firebase.fetchRemoteConfig);case 13:snapshot=_context.sent;appLinks=(cov_xtnjfw6lz.s[4]++,{playStoreUrl:snapshot.FORCE_UPDATE_PLAY_STORE_URL,appStoreUrl:snapshot.FORCE_UPDATE_APP_STORE_URL});currentVersionOnDevice=(cov_xtnjfw6lz.s[5]++,_reactNativeVersionNumber2.default.appVersion);cov_xtnjfw6lz.s[6]++;if(!((cov_xtnjfw6lz.b[1][0]++,snapshot.FORCE_UPDATE_MIN_VERSION>currentVersionOnDevice)||(cov_xtnjfw6lz.b[1][1]++,snapshot.FORCE_UPDATE_BLACKLIST_VERSIONS.indexOf(currentVersionOnDevice)>-1))){_context.next=30;break;}cov_xtnjfw6lz.b[0][0]++;cov_xtnjfw6lz.s[7]++;_context.next=22;return(0,_effects.put)((0,_index.notifyAlertVisible)({forced:true,appLinks:appLinks}));case 22:cov_xtnjfw6lz.s[8]++;_context.next=25;return(0,_effects.call)(_forceUpdate.getAlertConfig,appLinks,true);case 25:cov_xtnjfw6lz.s[9]++;_context.next=28;return(0,_effects.put)((0,_index.notifyAlertHidden)());case 28:_context.next=49;break;case 30:cov_xtnjfw6lz.b[0][1]++;cov_xtnjfw6lz.s[10]++;if(!((cov_xtnjfw6lz.b[3][0]++,snapshot.FORCE_UPDATE_CURRENT_VERSION>currentVersionOnDevice)&&(cov_xtnjfw6lz.b[3][1]++,notificationRetries<=snapshot.FORCE_UPDATE_NOTIFICATION_RETRY))){_context.next=48;break;}cov_xtnjfw6lz.b[2][0]++;cov_xtnjfw6lz.s[11]++;_context.next=37;return(0,_effects.put)((0,_index.notifyAlertVisible)({forced:false,appLinks:appLinks}));case 37:cov_xtnjfw6lz.s[12]++;_context.next=40;return(0,_effects.call)(_localStorage2.default.setItem,'notificationRetries',notificationRetries+1);case 40:cov_xtnjfw6lz.s[13]++;_context.next=43;return(0,_effects.call)(_forceUpdate.getAlertConfig,appLinks,false);case 43:cov_xtnjfw6lz.s[14]++;_context.next=46;return(0,_effects.put)((0,_index.notifyAlertHidden)());case 46:_context.next=49;break;case 48:cov_xtnjfw6lz.b[2][1]++;case 49:_context.next=55;break;case 51:_context.prev=51;_context.t0=_context['catch'](2);cov_xtnjfw6lz.s[15]++;(0,_effects.put)((0,_index.forceUpdateFailed)());case 55:case'end':return _context.stop();}}},_marked,this,[[2,51]]);}function forceUpdate(){return regeneratorRuntime.wrap(function forceUpdate$(_context2){while(1){switch(_context2.prev=_context2.next){case 0:cov_xtnjfw6lz.f[1]++;cov_xtnjfw6lz.s[16]++;_context2.next=4;return(
+(0,_effects.takeLatest)(_index.STARTUP_SAGA_COMPLETE,checkForUpdate));case 4:case'end':return _context2.stop();}}},_marked2,this);}

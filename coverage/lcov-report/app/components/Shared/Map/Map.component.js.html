@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/components/Shared/Map/Map.component.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">app/components/Shared/Map</a> Map.component.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">68.18% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>15/22</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>8/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>6/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">68.18% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>15/22</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import Icon from '../Icon/Icon.component';
+import isEqual from 'lodash/isEqual';
+import mapConfig from '../../../config/map.config';
+import MapView from 'react-native-map-markerclustering';
+import noop from 'lodash/noop';
+import pinLocation from '../../../assets/pinLocation.png';
+import PropTypes from 'prop-types';
+import React, {Component} from 'react';
+import shopMarker from '../../../assets/shopMarker.png';
+import styles from './Map.style';
+import Touchable from '../Touchable/Touchable.component';
+import {colors} from '../../../themes/constants.styles';
+import {Marker} from 'react-native-maps';
+import {View} from 'react-native';
+&nbsp;
+class Map extends Component {
+&nbsp;
+  state = {
+    markerId: 1,
+    initialRegion: this.props.initialRegion
+  }
+&nbsp;
+  componentDidUpdate (prevProps) {
+    const {initialRegion} = this.props;
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (initialRegion !== prevProps.initialRegion) {
+      this.map._root.animateToRegion(initialRegion, 500);
+    }
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  co</span>mponentWillReceiveProps (nextProps) {
+    const {initialRegion} = <span class="cstat-no" title="statement not covered" >this.props;</span>
+    const {markerId} = <span class="cstat-no" title="statement not covered" >this.state;</span>
+<span class="cstat-no" title="statement not covered" >    if (initialRegion !== nextProps.initialRegion) {</span>
+<span class="cstat-no" title="statement not covered" >      this.setState({markerId: markerId + 1});</span>
+    }
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  sh</span>ouldComponentUpdate (nextProps) {
+<span class="cstat-no" title="statement not covered" >    if (isEqual(nextProps, this.props)) {</span>
+<span class="cstat-no" title="statement not covered" >      return false;</span>
+    }
+<span class="cstat-no" title="statement not covered" >    return true;</span>
+  }
+&nbsp;
+  addMarker = (markerList) =&gt; markerList.map((store, index) =&gt; {
+    const storeName = store.name[this.props.language] || <span class="branch-1 cbranch-no" title="branch not covered" >store.name['en'];</span>
+    return (&lt;Marker key={index} coordinate={store} image={shopMarker} title={storeName} onCalloutPress={this.props.onCalloutPress(store)}/&gt;);
+  })
+&nbsp;
+  showCurrentLocation = () =&gt; {
+    const {currentLocation, initialRegion, onPressCurrLocation} = this.props;
+    this.map._root.animateToRegion(currentLocation ? currentLocation : <span class="branch-1 cbranch-no" title="branch not covered" >initialRegion,</span> 500);
+    onPressCurrLocation();
+  }
+&nbsp;
+  setRef = (map) =&gt; {
+    this.map = map;
+  }
+&nbsp;
+  render () {
+    const {markerList, currentLocation} = this.props;
+    const {markerId, initialRegion} = this.state;
+    return (
+      &lt;View style={styles.container}&gt;
+        &lt;MapView style={styles.map} ref={this.setRef} region={initialRegion}
+          clusterColor={colors.MAPCLUSTER} clusterTextColor={colors.PRIMARY_BG_TEXT_CONTRAST}
+          clusterBorderColor={colors.PRIMARY_BG_TEXT_CONTRAST}&gt;
+          {currentLocation
+            ? &lt;Marker key={`currentMarker_${markerId}`} coordinate={currentLocation} image={pinLocation} disableClustering={true}/&gt;
+            : null}
+          {markerList ? this.addMarker(markerList) : <span class="branch-1 cbranch-no" title="branch not covered" >null}</span>
+        &lt;/MapView&gt;
+        &lt;View style={styles.buttonList}&gt;
+          &lt;Touchable style={styles.buttonWrapper} onPress={this.props.onSearchPress}&gt;
+            &lt;Icon name='map-search' style={styles.button}/&gt;
+          &lt;/Touchable&gt;
+          {currentLocation
+            ? &lt;Touchable style={styles.buttonWrapper} onPress={this.showCurrentLocation}&gt;
+              &lt;Icon name='current-position' style={styles.button}/&gt;
+            &lt;/Touchable&gt;
+            : null}
+          {/* The remark is currently commented out as clustering of markers is still not decided */}
+          {/* &lt;Touchable style={styles.buttonWrapper} onPress={null}&gt;
+            &lt;Icon name='remark' style={styles.button}/&gt;
+          &lt;/Touchable&gt; */}
+        &lt;/View&gt;
+      &lt;/View&gt;
+    );
+  }
+}
+&nbsp;
+Map.defaultProps = {
+  markerList: [],
+  initialRegion: mapConfig.initialRegion,
+  currentLocation: null,
+  onPressCurrLocation: noop,
+  onCalloutPress: noop,
+  onSearchPress: noop
+};
+&nbsp;
+Map.propTypes = {
+  markerList: PropTypes.array,
+  initialRegion: PropTypes.object,
+  currentLocation: PropTypes.object,
+  onPressCurrLocation: PropTypes.func,
+  onCalloutPress: PropTypes.func,
+  onSearchPress: PropTypes.func,
+  language: PropTypes.string
+};
+&nbsp;
+export default Map;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Oct 31 2017 11:24:42 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

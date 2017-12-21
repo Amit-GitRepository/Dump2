@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideMenuSection component renders correctly 1`] = `
+<View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "backgroundColor": "#000000",
+        "color": "#FFFFFF",
+        "fontFamily": "SukhumvitSet-Bold",
+        "fontSize": 14,
+        "paddingHorizontal": 15,
+      }
+    }
+  >
+    [missing "en." translation]
+  </Text>
+</View>
+`;

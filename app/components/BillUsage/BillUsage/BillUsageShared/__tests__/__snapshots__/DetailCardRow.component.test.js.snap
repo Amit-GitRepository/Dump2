@@ -1,0 +1,313 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailCardRow Component renders correctly when all values are passed to it 1`] = `
+<View
+  style={
+    Object {
+      "paddingHorizontal": 5,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "height": 57,
+        "justifyContent": "space-between",
+        "paddingHorizontal": 5,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#303C46",
+            "fontFamily": "SukhumvitSet-Bold",
+            "fontSize": 18,
+            "marginBottom": -4,
+          }
+        }
+      >
+        voice
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#303C46",
+            "fontFamily": "SukhumvitSet-Text",
+            "textAlign": "right",
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#E9E9EA",
+        "borderBottomWidth": 1,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`DetailCardRow Component renders correctly when no values are passed to the component 1`] = `
+<View
+  style={
+    Object {
+      "paddingHorizontal": 5,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "height": 57,
+        "justifyContent": "space-between",
+        "paddingHorizontal": 5,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#303C46",
+            "fontFamily": "SukhumvitSet-Bold",
+            "fontSize": 18,
+            "marginBottom": -4,
+          }
+        }
+      >
+        
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#303C46",
+            "fontFamily": "SukhumvitSet-Text",
+            "textAlign": "right",
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#E9E9EA",
+        "borderBottomWidth": 1,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`DetailCardRow Component renders correctly when partial values are passed to the component 1`] = `
+<View
+  style={
+    Object {
+      "paddingHorizontal": 5,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "height": 57,
+        "justifyContent": "space-between",
+        "paddingHorizontal": 5,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#303C46",
+            "fontFamily": "SukhumvitSet-Bold",
+            "fontSize": 18,
+            "marginBottom": -4,
+          }
+        }
+      >
+        voice
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#303C46",
+            "fontFamily": "SukhumvitSet-Text",
+            "textAlign": "right",
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#E9E9EA",
+        "borderBottomWidth": 1,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`DetailCardRow Component renders correctly with different styles passed to the component 1`] = `
+<View
+  style={
+    Object {
+      "paddingHorizontal": 5,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "height": 57,
+        "justifyContent": "space-between",
+        "paddingHorizontal": 5,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#303C46",
+            "fontFamily": "SukhumvitSet-Bold",
+            "fontSize": 18,
+            "marginBottom": -4,
+          }
+        }
+      >
+        voice
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "column",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#303C46",
+            "fontFamily": "SukhumvitSet-Text",
+            "textAlign": "right",
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#E9E9EA",
+        "borderBottomWidth": 1,
+      }
+    }
+  />
+</View>
+`;

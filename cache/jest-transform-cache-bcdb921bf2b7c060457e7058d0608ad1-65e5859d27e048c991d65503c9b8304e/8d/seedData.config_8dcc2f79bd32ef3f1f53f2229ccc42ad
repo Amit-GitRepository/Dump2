@@ -1,0 +1,9 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_62tddhg66=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/config/seedData.config.js',hash='6ab5284e795ff0b8343c73141599c40d80333a2f',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/config/seedData.config.js',statementMap:{'0':{start:{line:1,column:23},end:{line:3,column:1}},'1':{start:{line:5,column:17},end:{line:7,column:1}}},fnMap:{},branchMap:{},s:{'0':0,'1':0},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var userPreference=(cov_62tddhg66.s[0]++,{
+language:'th'});
+
+
+var seedData=(cov_62tddhg66.s[1]++,{
+userPreference:userPreference});exports.default=
+
+
+seedData;

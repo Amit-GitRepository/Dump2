@@ -1,0 +1,23 @@
+var _store=require('../../../redux/store');var _store2=_interopRequireDefault(_store);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _TOLPackageDetails=require('../TOLPackageDetails.page');var _TOLPackageDetails2=_interopRequireDefault(_TOLPackageDetails);
+var _enzyme=require('enzyme');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+var store=(0,_store2.default)();
+
+describe('TOLPackageDetailsPage',function(){
+it('renders ',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_TOLPackageDetails2.default,{store:store}));
+expect(wrapper).toBeDefined();
+});
+});
+
+describe('TOLPackageDetailsPage: mapStateToProps',function(){
+var props=(0,_TOLPackageDetails.mapStateToProps)(store.getState());
+it('productDetail prop to be defined',function(){
+expect(props.productDetail).toBeDefined();
+});
+});

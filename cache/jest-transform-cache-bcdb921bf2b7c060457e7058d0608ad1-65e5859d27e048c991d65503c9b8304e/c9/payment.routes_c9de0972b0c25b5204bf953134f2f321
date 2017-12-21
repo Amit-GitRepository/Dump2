@@ -1,0 +1,36 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.paymentRouteConfig=undefined;var cov_t6d3ca2x8=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/routes/payment.routes.js',hash='889115b4e4043edbfe84703c6a5414b1dc72ac20',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/routes/payment.routes.js',statementMap:{'0':{start:{line:8,column:34},end:{line:34,column:1}}},fnMap:{},branchMap:{},s:{'0':0},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _CardDetails=require('../pages/Payment/CardDetails.page');var _CardDetails2=_interopRequireDefault(_CardDetails);
+var _DismissableStackNavigator=require('../pages/DismissableStackNavigator/DismissableStackNavigator.page');var _DismissableStackNavigator2=_interopRequireDefault(_DismissableStackNavigator);
+var _PaymentOptions=require('../pages/Payment/PaymentOptions.page');var _PaymentOptions2=_interopRequireDefault(_PaymentOptions);
+var _PaymentStatus=require('../pages/Payment/PaymentStatus.page');var _PaymentStatus2=_interopRequireDefault(_PaymentStatus);
+var _PaymentStatusDetails=require('../pages/Payment/PaymentStatusDetails.page');var _PaymentStatusDetails2=_interopRequireDefault(_PaymentStatusDetails);
+var _route=require('./helpers/route.helper');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+var paymentRouteConfig=exports.paymentRouteConfig=(cov_t6d3ca2x8.s[0]++,{
+PaymentOptions:{
+screen:_PaymentOptions2.default,
+navigationOptions:_route.getPaymentStatusHeader,
+title:'PAYMENT__PAYMENT_OPTIONS_TITLE',
+showBack:false,
+gaScreenName:'Payment Options Page'},
+
+CardDetails:{
+screen:_CardDetails2.default,
+navigationOptions:_route.getPaymentStatusHeader,
+title:'PAYMENT__PAYMENT_OPTIONS_TITLE'},
+
+PaymentStatus:{
+screen:_PaymentStatus2.default,
+navigationOptions:_route.getPaymentStatusHeader,
+title:'PAYMENT__PAYMENT_OPTIONS_TITLE',
+showBack:false,
+gaScreenName:'Payment Status Page'},
+
+PaymentStatusDetails:{
+screen:_PaymentStatusDetails2.default,
+navigationOptions:_route.getPaymentStatusHeader,
+title:'PAYMENT__PAYMENT_OPTIONS_TITLE',
+gaScreenName:'Payment Status Details Page'}});exports.default=
+
+
+
+(0,_DismissableStackNavigator2.default)(paymentRouteConfig);

@@ -1,0 +1,70 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.mapDispatchToProps=undefined;var cov_ujp3tp59n=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/Payment/PaymentMethods.page.js',hash='edb5851df2e08c9696be4ef8372432dd456090e2',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/Payment/PaymentMethods.page.js',statementMap:{'0':{start:{line:25,column:32},end:{line:25,column:84}},'1':{start:{line:25,column:45},end:{line:25,column:84}},'2':{start:{line:26,column:23},end:{line:26,column:80}},'3':{start:{line:29,column:4},end:{line:46,column:11}},'4':{start:{line:48,column:91},end:{line:55,column:9}},'5':{start:{line:58,column:22},end:{line:58,column:81}},'6':{start:{line:59,column:4},end:{line:59,column:90}},'7':{start:{line:63,column:0},end:{line:66,column:2}},'8':{start:{line:67,column:34},end:{line:69,column:2}},'9':{start:{line:67,column:49},end:{line:69,column:1}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:25,column:15},end:{line:25,column:16}},loc:{start:{line:25,column:32},end:{line:25,column:84}},line:25},'1':{name:'(anonymous_1)',decl:{start:{line:25,column:32},end:{line:25,column:33}},loc:{start:{line:25,column:45},end:{line:25,column:84}},line:25},'2':{name:'(anonymous_2)',decl:{start:{line:26,column:17},end:{line:26,column:18}},loc:{start:{line:26,column:23},end:{line:26,column:80}},line:26},'3':{name:'(anonymous_3)',decl:{start:{line:28,column:19},end:{line:28,column:20}},loc:{start:{line:29,column:4},end:{line:46,column:11}},line:29},'4':{name:'(anonymous_4)',decl:{start:{line:48,column:22},end:{line:48,column:23}},loc:{start:{line:48,column:91},end:{line:55,column:9}},line:48},'5':{name:'(anonymous_5)',decl:{start:{line:57,column:2},end:{line:57,column:3}},loc:{start:{line:57,column:12},end:{line:60,column:3}},line:57},'6':{name:'(anonymous_6)',decl:{start:{line:67,column:34},end:{line:67,column:35}},loc:{start:{line:67,column:49},end:{line:69,column:1}},line:67}},branchMap:{'0':{loc:{start:{line:59,column:11},end:{line:59,column:89}},type:'cond-expr',locations:[{start:{line:59,column:32},end:{line:59,column:53}},{start:{line:59,column:56},end:{line:59,column:89}}],line:59}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0},b:{'0':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();
+
+var _Button=require('../../components/Shared/Button/Button.component');var _Button2=_interopRequireDefault(_Button);
+var _IconTextInput=require('../../components/Shared/IconTextInput/IconTextInput.component');var _IconTextInput2=_interopRequireDefault(_IconTextInput);
+var _isEmpty=require('lodash/isEmpty');var _isEmpty2=_interopRequireDefault(_isEmpty);
+var _ISText=require('../../components/Shared/ISText/ISText.component');var _ISText2=_interopRequireDefault(_ISText);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _redux=require('redux');
+var _reactRedux=require('react-redux');
+var _index=require('../../redux/actions/index.actions');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _defineProperty(obj,key,value){if(key in obj){Object.defineProperty(obj,key,{value:value,enumerable:true,configurable:true,writable:true});}else{obj[key]=value;}return obj;}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+PaymentMethods=function(_Component){_inherits(PaymentMethods,_Component);function PaymentMethods(){var _ref;var _temp,_this,_ret;_classCallCheck(this,PaymentMethods);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=PaymentMethods.__proto__||Object.getPrototypeOf(PaymentMethods)).call.apply(_ref,[this].concat(args))),_this),_this.
+state={
+name:'JOHN DOE',
+city:'Bangkok',
+postal_code:'10320',
+number:'4242424242424242',
+security_code:'123',
+expiration_month:'10',
+expiration_year:'2019'},_this.
+
+setFormVal=function(keyToChange){cov_ujp3tp59n.f[0]++;cov_ujp3tp59n.s[0]++;return function(newText){cov_ujp3tp59n.f[1]++;cov_ujp3tp59n.s[1]++;return _this.setState(_defineProperty({},keyToChange,newText));};},_this.
+onFormSubmit=function(){cov_ujp3tp59n.f[2]++;cov_ujp3tp59n.s[2]++;return _this.props.addCard({card:_this.state},_this.props.amount);},_this.
+
+creditcardForm=function()
+{cov_ujp3tp59n.f[3]++;cov_ujp3tp59n.s[3]++;return _react2.default.createElement(_reactNative.View,null,
+_react2.default.createElement(_ISText2.default,null,'Please add a card'),
+_react2.default.createElement(_ISText2.default,null,'Cardholder Name'),
+_react2.default.createElement(_IconTextInput2.default,{iconName:'pay-for-others',defaultValue:_this.state.name,placeholder:'Cardholder Name',onChangeText:_this.setFormVal('name')}),
+_react2.default.createElement(_ISText2.default,null,'Card Number'),
+_react2.default.createElement(_IconTextInput2.default,{iconName:'pay-for-others',defaultValue:_this.state.number,placeholder:'Card Number',onChangeText:_this.setFormVal('number')}),
+_react2.default.createElement(_ISText2.default,null,'City'),
+_react2.default.createElement(_IconTextInput2.default,{iconName:'pay-for-others',defaultValue:_this.state.city,placeholder:'City',onChangeText:_this.setFormVal('city')}),
+_react2.default.createElement(_ISText2.default,null,'Postal Code'),
+_react2.default.createElement(_IconTextInput2.default,{iconName:'pay-for-others',defaultValue:_this.state.postal_code,placeholder:'Postal Code',onChangeText:_this.setFormVal('postal_code')}),
+_react2.default.createElement(_ISText2.default,null,'Security Code'),
+_react2.default.createElement(_IconTextInput2.default,{iconName:'pay-for-others',defaultValue:_this.state.security_code,placeholder:'Security Code',onChangeText:_this.setFormVal('security_code')}),
+_react2.default.createElement(_ISText2.default,null,'Expiration Month'),
+_react2.default.createElement(_IconTextInput2.default,{iconName:'pay-for-others',defaultValue:_this.state.expiration_month,placeholder:'Expiration Month',onChangeText:_this.setFormVal('expiration_month')}),
+_react2.default.createElement(_ISText2.default,null,'Expiration Year'),
+_react2.default.createElement(_IconTextInput2.default,{iconName:'pay-for-others',defaultValue:_this.state.expiration_year,placeholder:'Expiration Year',onChangeText:_this.setFormVal('expiration_year')}),
+_react2.default.createElement(_Button2.default,{text:'Add a card',onPress:_this.onFormSubmit}));
+},_this.
+
+creditCardDetails=function(_ref2){var brand=_ref2.brand,expirationMonth=_ref2.expirationMonth,expirationYear=_ref2.expirationYear,name=_ref2.name,id=_ref2.id,lastDigits=_ref2.lastDigits;cov_ujp3tp59n.f[4]++;cov_ujp3tp59n.s[4]++;return _react2.default.createElement(_reactNative.View,null,
+_react2.default.createElement(_ISText2.default,null,'brand: ',brand),
+_react2.default.createElement(_ISText2.default,null,'expirationMonth: ',expirationMonth),
+_react2.default.createElement(_ISText2.default,null,'expirationYear: ',expirationYear),
+_react2.default.createElement(_ISText2.default,null,'name: ',name),
+_react2.default.createElement(_ISText2.default,null,'id: ',id),
+_react2.default.createElement(_ISText2.default,null,'lastDigits: ',lastDigits));
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(PaymentMethods,[{key:'render',value:function render()
+
+{cov_ujp3tp59n.f[5]++;
+var savedCard=(cov_ujp3tp59n.s[5]++,(0,_result2.default)(this.props,'navigation.state.params.savedCard',{}));cov_ujp3tp59n.s[6]++;
+return(0,_isEmpty2.default)(savedCard)?(cov_ujp3tp59n.b[0][0]++,this.creditcardForm()):(cov_ujp3tp59n.b[0][1]++,this.creditCardDetails(savedCard));
+}}]);return PaymentMethods;}(_react.Component);cov_ujp3tp59n.s[7]++;
+
+
+PaymentMethods.propTypes={
+addCard:_propTypes2.default.func,
+amount:_propTypes2.default.number};cov_ujp3tp59n.s[8]++;
+
+var mapDispatchToProps=exports.mapDispatchToProps=function mapDispatchToProps(dispatch){cov_ujp3tp59n.f[6]++;cov_ujp3tp59n.s[9]++;return{
+addCard:(0,_redux.bindActionCreators)(_index.payNewCustomer,dispatch)};
+};exports.default=
+(0,_reactRedux.connect)(null,mapDispatchToProps)(PaymentMethods);

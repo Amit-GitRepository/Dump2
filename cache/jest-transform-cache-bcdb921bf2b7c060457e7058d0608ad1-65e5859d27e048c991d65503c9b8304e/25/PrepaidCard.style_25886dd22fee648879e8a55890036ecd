@@ -1,0 +1,36 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_15huhfzmrk=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/ProductCards/PrepaidCard/PrepaidCard.style.js',hash='26a0cb4258af3b2ee1d65450aa8cc4fd262d80ba',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/ProductCards/PrepaidCard/PrepaidCard.style.js',statementMap:{},fnMap:{},branchMap:{},s:{},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _constants=require('../../../../../themes/constants.styles');
+var _application=require('../../../../../themes/application.styles');exports.default=
+
+{
+container:{
+justifyContent:'center',
+alignItems:'center',
+backgroundColor:_constants.colors.PRIMARY_BG_SEPARATOR,
+padding:10},
+
+subContainer:_extends({
+alignSelf:'stretch',
+paddingTop:5,
+backgroundColor:_constants.colors.PRIMARY_BG_TEXT_CONTRAST,
+borderRadius:8},_application.shadowActiveStyle),
+
+
+productTitle:{
+paddingBottom:10},
+
+title:{
+fontSize:_constants.fonts.FONT_SIZE_NORMAL,
+paddingVertical:5,
+textAlign:'center'},
+
+buttonStyle:{
+paddingHorizontal:20,
+alignSelf:'center',
+borderRadius:22},
+
+horizontalLine:{
+borderWidth:1,
+borderColor:_constants.colors.PRIMARY_BG_SEPARATOR,
+marginHorizontal:5,
+marginTop:20,
+marginBottom:10}};

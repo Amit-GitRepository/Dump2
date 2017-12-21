@@ -1,0 +1,86 @@
+var _echoServer=require('../../../__helpers__/echoServer.helper');var _echoServer2=_interopRequireDefault(_echoServer);
+var _request=require('../request.util');var _request2=_interopRequireDefault(_request);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('the client performs a get request to echo server',function(){
+
+beforeAll(function(done){return _echoServer2.default.listen(3008,function(err){
+if(err){
+done.fail(err);
+}
+done();
+});});
+
+afterAll(function(done){return _echoServer2.default.close(done);});
+
+it('should send a get request with query parameters',function(done){
+var apiConfig={path:'/',baseUrl:'http://localhost:3008',method:'GET',query:{name:'hello'}};
+(0,_request2.default)(apiConfig).then(function(_ref){var body=_ref.body;var
+method=body.method,query=body.query;
+expect(method).toEqual('GET');
+expect(query).toEqual({name:'hello'});
+done();
+}).catch(function(err){return done.fail(err);});
+});
+
+it('should go the catch block if a request fails (non 2xx status code)',function(done){
+var apiConfig={path:'/',baseUrl:'http://localhost:3008',method:'GET',headers:{status:404},query:{name:'hello'}};
+(0,_request2.default)(apiConfig).
+then(function(){
+done.fail('Non 2xx status code should fail');
+}).catch(function(errResponse){
+expect(errResponse.status).toBe(404);
+done();
+});
+});
+
+it('should send a post request with body parameters',function(done){
+var apiConfig={path:'/',baseUrl:'http://localhost:3008',data:{name:'hello'},method:'POST'};
+(0,_request2.default)(apiConfig).
+then(function(_ref2){var body=_ref2.body;
+expect(body.method).toEqual('POST');
+expect(JSON.parse(body.body)).toEqual({name:'hello'});
+done();
+}).catch(function(err){return done.fail(err);});
+});
+
+it('should send a put request with body parameters',function(done){
+var apiConfig={path:'/',baseUrl:'http://localhost:3008',data:{name:'hello'},method:'PUT'};
+(0,_request2.default)(apiConfig).
+then(function(_ref3){var body=_ref3.body;
+expect(body.method).toEqual('PUT');
+expect(JSON.parse(body.body)).toEqual({name:'hello'});
+done();
+}).catch(function(err){return done.fail(err);});
+});
+
+it('should send a delete request with body parameters',function(done){
+var apiConfig={path:'/',baseUrl:'http://localhost:3008',query:{product:'1'},method:'DELETE'};
+(0,_request2.default)(apiConfig).
+then(function(_ref4){var body=_ref4.body;
+expect(body.method).toEqual('DELETE');
+expect(body.query).toEqual({product:'1'});
+done();
+}).catch(function(err){return done.fail(err);});
+});
+
+it('should fail get request when hitting wrong requests',function(done){
+var apiConfig={path:'/',baseUrl:'WRONG_URL',method:'GET',query:{name:'hello'}};
+(0,_request2.default)(apiConfig).
+then(function(){
+done.fail('Should not succeed');
+}).catch(function(){return done();});
+});
+
+it('should have the ability to cancel requests',function(done){
+var apiConfig={path:'/hang',baseUrl:'http://localhost:3008',method:'GET'};
+var reqPromise=(0,_request2.default)(apiConfig);
+reqPromise.then(function(){
+done.fail('Promise didnt cancel');
+}).catch(function(err){
+expect(err).toEqual({message:'ABORTED'});
+done();
+});
+reqPromise.abort();
+});
+
+});

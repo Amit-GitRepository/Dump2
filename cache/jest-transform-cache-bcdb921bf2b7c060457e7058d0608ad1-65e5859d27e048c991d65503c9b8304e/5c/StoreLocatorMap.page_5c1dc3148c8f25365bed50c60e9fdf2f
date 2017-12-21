@@ -1,0 +1,152 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.mapDispatchToProps=exports.mapStateToProps=undefined;var cov_s67ad6rb=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/StoreLocator/StoreLocatorMap.page.js',hash='6b7f0b5c4d5a259d15c8afd562631f7ed33126db',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/StoreLocator/StoreLocatorMap.page.js',statementMap:{'0':{start:{line:22,column:26},end:{line:22,column:70}},'1':{start:{line:24,column:4},end:{line:24,column:37}},'2':{start:{line:25,column:4},end:{line:25,column:50}},'3':{start:{line:29,column:20},end:{line:29,column:68}},'4':{start:{line:30,column:4},end:{line:30,column:41}},'5':{start:{line:33,column:4},end:{line:35,column:5}},'6':{start:{line:34,column:6},end:{line:34,column:13}},'7':{start:{line:36,column:22},end:{line:36,column:71}},'8':{start:{line:38,column:4},end:{line:38,column:45}},'9':{start:{line:39,column:4},end:{line:39,column:31}},'10':{start:{line:40,column:4},end:{line:40,column:30}},'11':{start:{line:41,column:4},end:{line:41,column:27}},'12':{start:{line:42,column:24},end:{line:46,column:5}},'13':{start:{line:47,column:4},end:{line:47,column:48}},'14':{start:{line:51,column:4},end:{line:53,column:5}},'15':{start:{line:52,column:6},end:{line:52,column:49}},'16':{start:{line:57,column:31},end:{line:57,column:41}},'17':{start:{line:58,column:4},end:{line:71,column:5}},'18':{start:{line:59,column:26},end:{line:62,column:7}},'19':{start:{line:63,column:6},end:{line:63,column:34}},'20':{start:{line:65,column:6},end:{line:70,column:11}},'21':{start:{line:67,column:10},end:{line:67,column:44}},'22':{start:{line:69,column:10},end:{line:69,column:57}},'23':{start:{line:75,column:77},end:{line:75,column:87}},'24':{start:{line:76,column:24},end:{line:76,column:110}},'25':{start:{line:77,column:26},end:{line:81,column:5}},'26':{start:{line:82,column:25},end:{line:82,column:80}},'27':{start:{line:83,column:4},end:{line:83,column:37}},'28':{start:{line:84,column:4},end:{line:86,column:5}},'29':{start:{line:85,column:6},end:{line:85,column:43}},'30':{start:{line:87,column:4},end:{line:87,column:50}},'31':{start:{line:91,column:102},end:{line:91,column:112}},'32':{start:{line:92,column:28},end:{line:92,column:67}},'33':{start:{line:93,column:4},end:{line:99,column:5}},'34':{start:{line:94,column:6},end:{line:94,column:22}},'35':{start:{line:95,column:6},end:{line:95,column:38}},'36':{start:{line:96,column:27},end:{line:96,column:91}},'37':{start:{line:97,column:6},end:{line:97,column:39}},'38':{start:{line:98,column:6},end:{line:98,column:54}},'39':{start:{line:103,column:51},end:{line:103,column:61}},'40':{start:{line:104,column:96},end:{line:104,column:106}},'41':{start:{line:105,column:31},end:{line:105,column:69}},'42':{start:{line:106,column:4},end:{line:109,column:129}},'43':{start:{line:113,column:0},end:{line:119,column:2}},'44':{start:{line:120,column:0},end:{line:129,column:2}},'45':{start:{line:131,column:31},end:{line:140,column:2}},'46':{start:{line:131,column:43},end:{line:140,column:1}},'47':{start:{line:142,column:34},end:{line:151,column:2}},'48':{start:{line:142,column:49},end:{line:151,column:1}},'49':{start:{line:150,column:29},end:{line:150,column:115}},'50':{start:{line:150,column:35},end:{line:150,column:115}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:22,column:20},end:{line:22,column:21}},loc:{start:{line:22,column:26},end:{line:22,column:70}},line:22},'1':{name:'(anonymous_1)',decl:{start:{line:23,column:20},end:{line:23,column:21}},loc:{start:{line:23,column:26},end:{line:26,column:3}},line:23},'2':{name:'(anonymous_2)',decl:{start:{line:28,column:23},end:{line:28,column:24}},loc:{start:{line:28,column:37},end:{line:31,column:3}},line:28},'3':{name:'(anonymous_3)',decl:{start:{line:32,column:19},end:{line:32,column:20}},loc:{start:{line:32,column:30},end:{line:48,column:3}},line:32},'4':{name:'(anonymous_4)',decl:{start:{line:50,column:2},end:{line:50,column:3}},loc:{start:{line:50,column:40},end:{line:54,column:3}},line:50},'5':{name:'(anonymous_5)',decl:{start:{line:56,column:2},end:{line:56,column:3}},loc:{start:{line:56,column:24},end:{line:72,column:3}},line:56},'6':{name:'(anonymous_6)',decl:{start:{line:66,column:14},end:{line:66,column:15}},loc:{start:{line:66,column:31},end:{line:68,column:9}},line:66},'7':{name:'(anonymous_7)',decl:{start:{line:68,column:17},end:{line:68,column:18}},loc:{start:{line:68,column:23},end:{line:70,column:9}},line:68},'8':{name:'(anonymous_8)',decl:{start:{line:74,column:14},end:{line:74,column:15}},loc:{start:{line:74,column:61},end:{line:88,column:3}},line:74},'9':{name:'(anonymous_9)',decl:{start:{line:90,column:24},end:{line:90,column:25}},loc:{start:{line:90,column:30},end:{line:100,column:3}},line:90},'10':{name:'(anonymous_10)',decl:{start:{line:102,column:2},end:{line:102,column:3}},loc:{start:{line:102,column:19},end:{line:110,column:3}},line:102},'11':{name:'(anonymous_11)',decl:{start:{line:131,column:31},end:{line:131,column:32}},loc:{start:{line:131,column:43},end:{line:140,column:1}},line:131},'12':{name:'(anonymous_12)',decl:{start:{line:142,column:34},end:{line:142,column:35}},loc:{start:{line:142,column:49},end:{line:151,column:1}},line:142},'13':{name:'(anonymous_13)',decl:{start:{line:150,column:18},end:{line:150,column:19}},loc:{start:{line:150,column:29},end:{line:150,column:115}},line:150},'14':{name:'(anonymous_14)',decl:{start:{line:150,column:29},end:{line:150,column:30}},loc:{start:{line:150,column:35},end:{line:150,column:115}},line:150}},branchMap:{'0':{loc:{start:{line:33,column:4},end:{line:35,column:5}},type:'if',locations:[{start:{line:33,column:4},end:{line:35,column:5}},{start:{line:33,column:4},end:{line:35,column:5}}],line:33},'1':{loc:{start:{line:33,column:8},end:{line:33,column:43}},type:'binary-expr',locations:[{start:{line:33,column:8},end:{line:33,column:23}},{start:{line:33,column:27},end:{line:33,column:43}}],line:33},'2':{loc:{start:{line:51,column:4},end:{line:53,column:5}},type:'if',locations:[{start:{line:51,column:4},end:{line:53,column:5}},{start:{line:51,column:4},end:{line:53,column:5}}],line:51},'3':{loc:{start:{line:51,column:8},end:{line:51,column:110}},type:'binary-expr',locations:[{start:{line:51,column:9},end:{line:51,column:45}},{start:{line:51,column:51},end:{line:51,column:109}}],line:51},'4':{loc:{start:{line:58,column:4},end:{line:71,column:5}},type:'if',locations:[{start:{line:58,column:4},end:{line:71,column:5}},{start:{line:58,column:4},end:{line:71,column:5}}],line:58},'5':{loc:{start:{line:74,column:28},end:{line:74,column:56}},type:'default-arg',locations:[{start:{line:74,column:51},end:{line:74,column:56}}],line:74},'6':{loc:{start:{line:76,column:24},end:{line:76,column:110}},type:'cond-expr',locations:[{start:{line:76,column:47},end:{line:76,column:77}},{start:{line:76,column:80},end:{line:76,column:110}}],line:76},'7':{loc:{start:{line:84,column:4},end:{line:86,column:5}},type:'if',locations:[{start:{line:84,column:4},end:{line:86,column:5}},{start:{line:84,column:4},end:{line:86,column:5}}],line:84},'8':{loc:{start:{line:93,column:4},end:{line:99,column:5}},type:'if',locations:[{start:{line:93,column:4},end:{line:99,column:5}},{start:{line:93,column:4},end:{line:99,column:5}}],line:93}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0,'19':0,'20':0,'21':0,'22':0,'23':0,'24':0,'25':0,'26':0,'27':0,'28':0,'29':0,'30':0,'31':0,'32':0,'33':0,'34':0,'35':0,'36':0,'37':0,'38':0,'39':0,'40':0,'41':0,'42':0,'43':0,'44':0,'45':0,'46':0,'47':0,'48':0,'49':0,'50':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0],'4':[0,0],'5':[0],'6':[0,0],'7':[0,0],'8':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _ComponentWithTab2=require('../../components/ComponentWithTab/ComponentWithTab.component');var _ComponentWithTab3=_interopRequireDefault(_ComponentWithTab2);
+var _debounce=require('lodash/debounce');var _debounce2=_interopRequireDefault(_debounce);
+var _isEmpty=require('lodash/isEmpty');var _isEmpty2=_interopRequireDefault(_isEmpty);
+var _map=require('../../config/map.config');var _map2=_interopRequireDefault(_map);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _StoreLocatorMap=require('../../components/StoreLocator/StoreLocatorMap/StoreLocatorMap.component');var _StoreLocatorMap2=_interopRequireDefault(_StoreLocatorMap);
+var _redux=require('redux');
+var _reactRedux=require('react-redux');
+var _location=require('../../utils/location.util');
+var _reactNavigation=require('react-navigation');
+var _index=require('../../redux/actions/index.actions');var actions=_interopRequireWildcard(_index);function _interopRequireWildcard(obj){if(obj&&obj.__esModule){return obj;}else{var newObj={};if(obj!=null){for(var key in obj){if(Object.prototype.hasOwnProperty.call(obj,key))newObj[key]=obj[key];}}newObj.default=obj;return newObj;}}function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+StoreLocatorMapPage=function(_ComponentWithTab){_inherits(StoreLocatorMapPage,_ComponentWithTab);function StoreLocatorMapPage(){var _ref;var _temp,_this,_ret;_classCallCheck(this,StoreLocatorMapPage);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=StoreLocatorMapPage.__proto__||Object.getPrototypeOf(StoreLocatorMapPage)).call.apply(_ref,[this].concat(args))),_this),_this.
+state={
+initialRegion:_map2.default.initialRegion,
+searchModalVisibility:false},_this.
+
+
+showSearchModal=function(){cov_s67ad6rb.f[0]++;cov_s67ad6rb.s[0]++;return _this.setState({searchModalVisibility:true});},_this.
+hideSearchModal=function(){cov_s67ad6rb.f[1]++;cov_s67ad6rb.s[1]++;
+_this.props.clearFilteredStores();cov_s67ad6rb.s[2]++;
+_this.setState({searchModalVisibility:false});
+},_this.
+
+onSearchTextChange=function(newValue){cov_s67ad6rb.f[2]++;
+var payload=(cov_s67ad6rb.s[3]++,{input:newValue,language:_this.props.language});cov_s67ad6rb.s[4]++;
+_this.props.changeSearchText(payload);
+},_this.
+addStoreMarker=function(store){cov_s67ad6rb.f[3]++;cov_s67ad6rb.s[5]++;
+if((cov_s67ad6rb.b[1][0]++,!store.latitude)||(cov_s67ad6rb.b[1][1]++,!store.longitude)){cov_s67ad6rb.b[0][0]++;cov_s67ad6rb.s[6]++;
+return;
+}else{cov_s67ad6rb.b[0][1]++;}
+var newStores=(cov_s67ad6rb.s[7]++,(0,_location.sortByDistance)(_this.state.initialRegion,[store]));cov_s67ad6rb.s[8]++;
+
+_this.props.updateNearByStores(newStores);cov_s67ad6rb.s[9]++;
+_this.props.clearProvince();cov_s67ad6rb.s[10]++;
+_this.props.clearService();cov_s67ad6rb.s[11]++;
+_this.hideSearchModal();
+var storeMarker=(cov_s67ad6rb.s[12]++,_extends({},
+_map2.default.initialRegion,{
+latitude:store.latitude,
+longitude:store.longitude}));cov_s67ad6rb.s[13]++;
+
+_this.setState({initialRegion:storeMarker});
+},_this.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+updateMap=function(coordinates){var shouldUpdateLocation=arguments.length>1&&arguments[1]!==undefined?arguments[1]:(cov_s67ad6rb.b[5][0]++,false);cov_s67ad6rb.f[8]++;var _ref2=(cov_s67ad6rb.s[23]++,
+_this.props),allStores=_ref2.allStores,changeCurrentLocation=_ref2.changeCurrentLocation,radiusKM=_ref2.radiusKM,updateNearByStores=_ref2.updateNearByStores;
+var defaultZoom=(cov_s67ad6rb.s[24]++,shouldUpdateLocation?(cov_s67ad6rb.b[6][0]++,_map2.default.defaultZoom.location):(cov_s67ad6rb.b[6][1]++,_map2.default.defaultZoom.province));
+var initialRegion=(cov_s67ad6rb.s[25]++,_extends({},
+defaultZoom,{
+latitude:coordinates.latitude,
+longitude:coordinates.longitude}));
+
+var nearByStores=(cov_s67ad6rb.s[26]++,(0,_location.sortByDistance)(initialRegion,allStores.data,radiusKM));cov_s67ad6rb.s[27]++;
+updateNearByStores(nearByStores);cov_s67ad6rb.s[28]++;
+if(shouldUpdateLocation){cov_s67ad6rb.b[7][0]++;cov_s67ad6rb.s[29]++;
+changeCurrentLocation(initialRegion);
+}else{cov_s67ad6rb.b[7][1]++;}cov_s67ad6rb.s[30]++;
+_this.setState({initialRegion:initialRegion});
+},_this.
+
+onPressCurrLocation=function(){cov_s67ad6rb.f[9]++;var _ref3=(cov_s67ad6rb.s[31]++,
+_this.props),radiusKM=_ref3.radiusKM,currentLocation=_ref3.currentLocation,updateKMRadius=_ref3.updateKMRadius,updateNearByStores=_ref3.updateNearByStores,allStores=_ref3.allStores,clearProvince=_ref3.clearProvince;
+var currLocRadiusKM=(cov_s67ad6rb.s[32]++,_map2.default.distanceLimit.currentLocation);cov_s67ad6rb.s[33]++;
+if(radiusKM!==currLocRadiusKM){cov_s67ad6rb.b[8][0]++;cov_s67ad6rb.s[34]++;
+clearProvince();cov_s67ad6rb.s[35]++;
+updateKMRadius(currLocRadiusKM);
+var nearByStores=(cov_s67ad6rb.s[36]++,(0,_location.sortByDistance)(currentLocation,allStores.data,currLocRadiusKM));cov_s67ad6rb.s[37]++;
+updateNearByStores(nearByStores);cov_s67ad6rb.s[38]++;
+_this.setState({initialRegion:currentLocation});
+}else{cov_s67ad6rb.b[8][1]++;}
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(StoreLocatorMapPage,[{key:'componentWillReceiveProps',value:function componentWillReceiveProps(nextProps){cov_s67ad6rb.f[4]++;cov_s67ad6rb.s[14]++;if((cov_s67ad6rb.b[3][0]++,!(0,_isEmpty2.default)(nextProps.selectedProvince))&&(cov_s67ad6rb.b[3][1]++,nextProps.selectedProvince!==this.props.selectedProvince)){cov_s67ad6rb.b[2][0]++;cov_s67ad6rb.s[15]++;this.updateMap(nextProps.selectedProvince);}else{cov_s67ad6rb.b[2][1]++;}}},{key:'componentWillMount',value:function componentWillMount(){var _this2=this;cov_s67ad6rb.f[5]++;var _ref4=(cov_s67ad6rb.s[16]++,this.props),selectedProvince=_ref4.selectedProvince;cov_s67ad6rb.s[17]++;if(selectedProvince){cov_s67ad6rb.b[4][0]++;var coordinates=(cov_s67ad6rb.s[18]++,{latitude:selectedProvince.lat,longitude:selectedProvince.long});cov_s67ad6rb.s[19]++;this.updateMap(coordinates);}else{cov_s67ad6rb.b[4][1]++;cov_s67ad6rb.s[20]++;return(0,_location.getCurrentPosition)().then(function(coordinates){cov_s67ad6rb.f[6]++;cov_s67ad6rb.s[21]++;_this2.updateMap(coordinates,true);}).catch(function(){cov_s67ad6rb.f[7]++;cov_s67ad6rb.s[22]++;_this2.updateMap(_this2.state.initialRegion,true);});}}},{key:'renderWithTab',value:function renderWithTab()
+
+{cov_s67ad6rb.f[10]++;var _ref5=(cov_s67ad6rb.s[39]++,
+this.state),initialRegion=_ref5.initialRegion,searchModalVisibility=_ref5.searchModalVisibility;var _ref6=(cov_s67ad6rb.s[40]++,
+this.props),currentLocation=_ref6.currentLocation,nearByStores=_ref6.nearByStores,filteredStores=_ref6.filteredStores,onCalloutPress=_ref6.onCalloutPress,radiusKM=_ref6.radiusKM,language=_ref6.language;
+var onSearchTextChange=(cov_s67ad6rb.s[41]++,(0,_debounce2.default)(this.onSearchTextChange,500));cov_s67ad6rb.s[42]++;
+return _react2.default.createElement(_StoreLocatorMap2.default,{radiusKM:radiusKM,onSearchPress:this.showSearchModal,initialRegion:initialRegion,currentLocation:currentLocation,
+markerList:nearByStores,searchModalVisibility:searchModalVisibility,onPressCurrLocation:this.onPressCurrLocation,
+hideSearchModal:this.hideSearchModal,onSearchTextChange:onSearchTextChange,
+filteredStores:filteredStores,addStoreMarker:this.addStoreMarker,onCalloutPress:onCalloutPress,language:language});
+}}]);return StoreLocatorMapPage;}(_ComponentWithTab3.default);cov_s67ad6rb.s[43]++;
+
+
+StoreLocatorMapPage.defaultProps={
+currentLocation:null,
+updateKMRadius:_noop2.default,
+changeCurrentLocation:_noop2.default,
+updateNearByStores:_noop2.default,
+radiusKM:_map2.default.distanceLimit.currentLocation};cov_s67ad6rb.s[44]++;
+
+StoreLocatorMapPage.propTypes={
+currentLocation:_propTypes2.default.object,
+changeCurrentLocation:_propTypes2.default.func,
+updateNearByStores:_propTypes2.default.func,
+updateKMRadius:_propTypes2.default.func,
+selectedProvince:_propTypes2.default.object,
+selectedService:_propTypes2.default.string,
+radiusKM:_propTypes2.default.number,
+nearByStores:_propTypes2.default.array};cov_s67ad6rb.s[45]++;
+
+
+var mapStateToProps=exports.mapStateToProps=function mapStateToProps(state){cov_s67ad6rb.f[11]++;cov_s67ad6rb.s[46]++;return{
+currentLocation:(0,_result2.default)(state,'user.currentLocation',null),
+selectedProvince:(0,_result2.default)(state,'storeLocator.selectedProvince',null),
+selectedService:(0,_result2.default)(state,'storeLocator.selectedService',null),
+radiusKM:(0,_result2.default)(state,'storeLocator.radiusKM',null),
+nearByStores:(0,_result2.default)(state,'storeLocator.nearByStores',[]),
+filteredStores:(0,_result2.default)(state,'storeLocator.filteredStores',[]),
+allStores:(0,_result2.default)(state,'storeLocator.allStores',{data:[]}),
+language:(0,_result2.default)(state,'user.language')};
+};cov_s67ad6rb.s[47]++;
+
+var mapDispatchToProps=exports.mapDispatchToProps=function mapDispatchToProps(dispatch){cov_s67ad6rb.f[12]++;cov_s67ad6rb.s[48]++;return{
+changeCurrentLocation:(0,_redux.bindActionCreators)(actions.changeCurrentLocation,dispatch),
+updateNearByStores:(0,_redux.bindActionCreators)(actions.updateNearByStores,dispatch),
+updateKMRadius:(0,_redux.bindActionCreators)(actions.updateKMRadius,dispatch),
+clearProvince:(0,_redux.bindActionCreators)(actions.clearProvince,dispatch),
+clearService:(0,_redux.bindActionCreators)(actions.clearService,dispatch),
+changeSearchText:(0,_redux.bindActionCreators)(actions.changeSearchText,dispatch),
+clearFilteredStores:(0,_redux.bindActionCreators)(actions.clearFilteredStores,dispatch),
+onCalloutPress:function onCalloutPress(store){cov_s67ad6rb.f[13]++;cov_s67ad6rb.s[49]++;return function(){cov_s67ad6rb.f[14]++;cov_s67ad6rb.s[50]++;return dispatch(_reactNavigation.NavigationActions.navigate({routeName:'StoreDetails',params:store}));};}};
+};exports.default=
+(0,_reactRedux.connect)(mapStateToProps,mapDispatchToProps)(StoreLocatorMapPage);

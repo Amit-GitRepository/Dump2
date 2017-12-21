@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PackageDetailHeader component renders correctly with props 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        false,
+        Object {},
+      ]
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#303C46",
+          },
+          Array [
+            Object {
+              "color": "#FFFFFF",
+              "fontSize": 14,
+              "marginBottom": -5,
+            },
+            Object {},
+          ],
+          Object {
+            "fontFamily": "SukhumvitSet-Bold",
+          },
+        ]
+      }
+    >
+      test
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "backgroundColor": "transparent",
+          "color": "#FFFFFF",
+          "fontFamily": "SukhumvitSet-Bold",
+          "fontSize": 22,
+          "marginBottom": -5,
+        }
+      }
+    >
+      9629770174
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`PackageDetailHeader component renders correctly without props 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+      "justifyContent": "space-between",
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        false,
+        Object {},
+      ]
+    }
+  />
+</View>
+`;

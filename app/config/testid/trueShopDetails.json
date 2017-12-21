@@ -1,0 +1,27 @@
+{
+  "LABEL_SHOPNAMEHEADER": "trueShopDetails_label_shopNameHeader",
+  "LABEL_DISTANCEHEADED": "trueShopDetails_label_distanceHeader",
+  "LABEL_DISTANCEVALUE": "trueShopDetails_label_distanceValue",
+
+  "LABEL_ADDRESSHEADER": "trueShopDetails_label_addressHeader",
+  "LABEL_ADDRESSVALUE": "trueShopDetails_label_addressValue",
+
+  "LABEL_LANDMARKHEADER": "trueShopDetails_label_landmarkHeader",
+  "LABEL_LANDMARKVALUE": "trueShopDetails_label_landmarkValue",
+
+  "LABEL_CALLHEADER": "trueShopDetails_label_callHeader",
+  "LABEL_CALLVALUE": "trueShopDetails_label_callValue",
+
+  "BUTTON_CALL": "trueShopDetails_button_call",
+  "BUTTON_GETDIRECTION": "trueShopDetails_button_getDirection",
+
+  "LABEL_TYPEOFSERVICE": "trueShopDetails_label_typeOfService",
+  "ICON_CHEVRON_AFTERSALESSERVICE": "trueShopDetails_iconChevron_afterSalesService",
+
+  "LABEL_PAYMENTSERVICE": "trueShopDetails_label_paymentService",
+  "ICON_CHEVRON_PAYMENTSERVICE": "trueShopDetails_iconChevron_paymentService",
+
+  "LABEL_PRODUCTORDERSERVICE": "trueShopDetails_label_productOrderService",
+  "ICON_CHEVRON_PRODUCTORDERSERVICE": "trueShopDetails_iconChevron_productOderService"
+
+}

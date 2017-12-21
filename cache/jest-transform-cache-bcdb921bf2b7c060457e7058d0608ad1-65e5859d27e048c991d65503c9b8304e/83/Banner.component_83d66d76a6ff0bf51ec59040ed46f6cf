@@ -1,0 +1,65 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_b1u1fqdb3=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/Banner/Banner.component.js',hash='998eb719efd9e07782c4035151977ce52f87c69f',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/Banner/Banner.component.js',statementMap:{'0':{start:{line:14,column:4},end:{line:23,column:5}},'1':{start:{line:15,column:6},end:{line:18,column:9}},'2':{start:{line:16,column:27},end:{line:16,column:65}},'3':{start:{line:17,column:8},end:{line:17,column:91}},'4':{start:{line:20,column:25},end:{line:20,column:51}},'5':{start:{line:21,column:25},end:{line:21,column:85}},'6':{start:{line:22,column:6},end:{line:22,column:89}},'7':{start:{line:27,column:4},end:{line:29,column:5}},'8':{start:{line:28,column:6},end:{line:28,column:63}},'9':{start:{line:33,column:20},end:{line:33,column:44}},'10':{start:{line:34,column:28},end:{line:34,column:38}},'11':{start:{line:35,column:4},end:{line:35,column:46}},'12':{start:{line:39,column:36},end:{line:39,column:46}},'13':{start:{line:40,column:25},end:{line:40,column:35}},'14':{start:{line:41,column:4},end:{line:45,column:6}},'15':{start:{line:49,column:0},end:{line:53,column:2}},'16':{start:{line:55,column:0},end:{line:63,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:13,column:19},end:{line:13,column:20}},loc:{start:{line:13,column:49},end:{line:24,column:3}},line:13},'1':{name:'(anonymous_1)',decl:{start:{line:15,column:32},end:{line:15,column:33}},loc:{start:{line:15,column:51},end:{line:18,column:7}},line:15},'2':{name:'(anonymous_2)',decl:{start:{line:26,column:2},end:{line:26,column:3}},loc:{start:{line:26,column:46},end:{line:30,column:3}},line:26},'3':{name:'(anonymous_3)',decl:{start:{line:32,column:13},end:{line:32,column:14}},loc:{start:{line:32,column:24},end:{line:36,column:3}},line:32},'4':{name:'(anonymous_4)',decl:{start:{line:38,column:2},end:{line:38,column:3}},loc:{start:{line:38,column:12},end:{line:46,column:3}},line:38}},branchMap:{'0':{loc:{start:{line:14,column:4},end:{line:23,column:5}},type:'if',locations:[{start:{line:14,column:4},end:{line:23,column:5}},{start:{line:14,column:4},end:{line:23,column:5}}],line:14},'1':{loc:{start:{line:27,column:4},end:{line:29,column:5}},type:'if',locations:[{start:{line:27,column:4},end:{line:29,column:5}},{start:{line:27,column:4},end:{line:29,column:5}}],line:27}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0},b:{'0':[0,0],'1':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _resolveAssetSource=require('resolveAssetSource');var _resolveAssetSource2=_interopRequireDefault(_resolveAssetSource);
+var _Banner=require('./Banner.styles');var _Banner2=_interopRequireDefault(_Banner);
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _objectWithoutProperties(obj,keys){var target={};for(var i in obj){if(keys.indexOf(i)>=0)continue;if(!Object.prototype.hasOwnProperty.call(obj,i))continue;target[i]=obj[i];}return target;}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+Banner=function(_Component){_inherits(Banner,_Component);function Banner(){var _ref;var _temp,_this,_ret;_classCallCheck(this,Banner);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=Banner.__proto__||Object.getPrototypeOf(Banner)).call.apply(_ref,[this].concat(args))),_this),_this.
+state={
+viewWidth:null,
+imageStyle:{}},_this.
+
+
+calculateStyle=function(source,viewWidth,style){cov_b1u1fqdb3.f[0]++;cov_b1u1fqdb3.s[0]++;
+if(typeof source==='object'){cov_b1u1fqdb3.b[0][0]++;cov_b1u1fqdb3.s[1]++;
+_reactNative.Image.getSize(source.uri,function(width,height){cov_b1u1fqdb3.f[1]++;
+var imageStyle=(cov_b1u1fqdb3.s[2]++,{height:height/width*viewWidth});cov_b1u1fqdb3.s[3]++;
+_this.setState({imageStyle:_extends({},_Banner2.default.image,imageStyle,style),viewWidth:viewWidth});
+});
+}else{cov_b1u1fqdb3.b[0][1]++;
+var imageProps=(cov_b1u1fqdb3.s[4]++,(0,_resolveAssetSource2.default)(source));
+var imageStyle=(cov_b1u1fqdb3.s[5]++,{height:imageProps.height/imageProps.width*viewWidth});cov_b1u1fqdb3.s[6]++;
+_this.setState({imageStyle:_extends({},_Banner2.default.image,imageStyle,style),viewWidth:viewWidth});
+}
+},_this.
+
+
+
+
+
+
+
+onLayout=function(event){cov_b1u1fqdb3.f[3]++;var _ref2=(cov_b1u1fqdb3.s[9]++,
+event.nativeEvent.layout),width=_ref2.width;var _ref3=(cov_b1u1fqdb3.s[10]++,
+_this.props),style=_ref3.style,source=_ref3.source;cov_b1u1fqdb3.s[11]++;
+_this.calculateStyle(source,width,style);
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(Banner,[{key:'componentWillReceiveProps',value:function componentWillReceiveProps(_ref4){var source=_ref4.source,style=_ref4.style;cov_b1u1fqdb3.f[2]++;cov_b1u1fqdb3.s[7]++;if(this.props.source!==source){cov_b1u1fqdb3.b[1][0]++;cov_b1u1fqdb3.s[8]++;this.calculateStyle(source,this.state.viewWidth,style);}else{cov_b1u1fqdb3.b[1][1]++;}}},{key:'render',value:function render()
+
+{cov_b1u1fqdb3.f[4]++;var _ref5=(cov_b1u1fqdb3.s[12]++,
+this.props),source=_ref5.source,extraProps=_objectWithoutProperties(_ref5,['source']);var _ref6=(cov_b1u1fqdb3.s[13]++,
+this.state),imageStyle=_ref6.imageStyle;cov_b1u1fqdb3.s[14]++;
+return(
+_react2.default.createElement(_reactNative.ImageBackground,_extends({onLayout:this.onLayout,resizeMode:'contain'},extraProps,{getSize:this.calculateStyle,style:imageStyle,source:source}),
+this.props.children));
+
+
+}}]);return Banner;}(_react.Component);cov_b1u1fqdb3.s[15]++;
+
+
+Banner.defaultProps={
+style:{},
+source:0,
+isBackground:false};cov_b1u1fqdb3.s[16]++;
+
+
+Banner.propTypes={
+style:_propTypes2.default.object,
+source:_propTypes2.default.oneOfType([
+_propTypes2.default.object,
+_propTypes2.default.number]),
+
+isBackground:_propTypes2.default.bool,
+children:_propTypes2.default.node};exports.default=
+
+
+Banner;

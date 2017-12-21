@@ -1,0 +1,17 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_bjooa56u6=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/ProductCards/TMPostpaidProductCard/TMPostpaidProductCard.style.js',hash='ec2d97adecb347b9093aba8031564d58649c0803',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/ProductCards/TMPostpaidProductCard/TMPostpaidProductCard.style.js',statementMap:{},fnMap:{},branchMap:{},s:{},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _constants=require('../../../../../themes/constants.styles');exports.default=
+
+{
+container:{
+justifyContent:'center',
+alignItems:'center',
+backgroundColor:_constants.colors.PRIMARY_BG_SEPARATOR,
+padding:10,
+flexGrow:1},
+
+productTitle:{
+paddingBottom:10},
+
+billDetailContainer:{
+alignSelf:'stretch',
+backgroundColor:_constants.colors.PRIMARY_BG_TEXT_CONTRAST,
+borderRadius:10}};

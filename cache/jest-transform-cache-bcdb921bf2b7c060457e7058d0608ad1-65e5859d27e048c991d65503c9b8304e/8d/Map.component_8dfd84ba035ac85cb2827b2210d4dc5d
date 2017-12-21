@@ -1,0 +1,111 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1u5tbcax7m=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/Map/Map.component.js',hash='533205332c1b60291b63337519516c24d13af601',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/Map/Map.component.js',statementMap:{'0':{start:{line:24,column:28},end:{line:24,column:38}},'1':{start:{line:25,column:4},end:{line:27,column:5}},'2':{start:{line:26,column:6},end:{line:26,column:57}},'3':{start:{line:31,column:28},end:{line:31,column:38}},'4':{start:{line:32,column:23},end:{line:32,column:33}},'5':{start:{line:33,column:4},end:{line:35,column:5}},'6':{start:{line:34,column:6},end:{line:34,column:46}},'7':{start:{line:39,column:4},end:{line:41,column:5}},'8':{start:{line:40,column:6},end:{line:40,column:19}},'9':{start:{line:42,column:4},end:{line:42,column:16}},'10':{start:{line:45,column:30},end:{line:48,column:4}},'11':{start:{line:46,column:22},end:{line:46,column:73}},'12':{start:{line:47,column:4},end:{line:47,column:141}},'13':{start:{line:51,column:66},end:{line:51,column:76}},'14':{start:{line:52,column:4},end:{line:52,column:91}},'15':{start:{line:53,column:4},end:{line:53,column:26}},'16':{start:{line:57,column:4},end:{line:57,column:19}},'17':{start:{line:61,column:42},end:{line:61,column:52}},'18':{start:{line:62,column:38},end:{line:62,column:48}},'19':{start:{line:63,column:4},end:{line:88,column:6}},'20':{start:{line:92,column:0},end:{line:99,column:2}},'21':{start:{line:101,column:0},end:{line:109,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:23,column:2},end:{line:23,column:3}},loc:{start:{line:23,column:33},end:{line:28,column:3}},line:23},'1':{name:'(anonymous_1)',decl:{start:{line:30,column:2},end:{line:30,column:3}},loc:{start:{line:30,column:40},end:{line:36,column:3}},line:30},'2':{name:'(anonymous_2)',decl:{start:{line:38,column:2},end:{line:38,column:3}},loc:{start:{line:38,column:36},end:{line:43,column:3}},line:38},'3':{name:'(anonymous_3)',decl:{start:{line:45,column:14},end:{line:45,column:15}},loc:{start:{line:45,column:30},end:{line:48,column:4}},line:45},'4':{name:'(anonymous_4)',decl:{start:{line:45,column:45},end:{line:45,column:46}},loc:{start:{line:45,column:63},end:{line:48,column:3}},line:45},'5':{name:'(anonymous_5)',decl:{start:{line:50,column:24},end:{line:50,column:25}},loc:{start:{line:50,column:30},end:{line:54,column:3}},line:50},'6':{name:'(anonymous_6)',decl:{start:{line:56,column:11},end:{line:56,column:12}},loc:{start:{line:56,column:20},end:{line:58,column:3}},line:56},'7':{name:'(anonymous_7)',decl:{start:{line:60,column:2},end:{line:60,column:3}},loc:{start:{line:60,column:12},end:{line:89,column:3}},line:60}},branchMap:{'0':{loc:{start:{line:25,column:4},end:{line:27,column:5}},type:'if',locations:[{start:{line:25,column:4},end:{line:27,column:5}},{start:{line:25,column:4},end:{line:27,column:5}}],line:25},'1':{loc:{start:{line:33,column:4},end:{line:35,column:5}},type:'if',locations:[{start:{line:33,column:4},end:{line:35,column:5}},{start:{line:33,column:4},end:{line:35,column:5}}],line:33},'2':{loc:{start:{line:39,column:4},end:{line:41,column:5}},type:'if',locations:[{start:{line:39,column:4},end:{line:41,column:5}},{start:{line:39,column:4},end:{line:41,column:5}}],line:39},'3':{loc:{start:{line:46,column:22},end:{line:46,column:73}},type:'binary-expr',locations:[{start:{line:46,column:22},end:{line:46,column:53}},{start:{line:46,column:57},end:{line:46,column:73}}],line:46},'4':{loc:{start:{line:52,column:35},end:{line:52,column:84}},type:'cond-expr',locations:[{start:{line:52,column:53},end:{line:52,column:68}},{start:{line:52,column:71},end:{line:52,column:84}}],line:52},'5':{loc:{start:{line:68,column:11},end:{line:70,column:18}},type:'cond-expr',locations:[{start:{line:69,column:14},end:{line:69,column:131}},{start:{line:70,column:14},end:{line:70,column:18}}],line:68},'6':{loc:{start:{line:71,column:11},end:{line:71,column:57}},type:'cond-expr',locations:[{start:{line:71,column:24},end:{line:71,column:50}},{start:{line:71,column:53},end:{line:71,column:57}}],line:71},'7':{loc:{start:{line:77,column:11},end:{line:81,column:18}},type:'cond-expr',locations:[{start:{line:78,column:14},end:{line:80,column:24}},{start:{line:81,column:14},end:{line:81,column:18}}],line:77}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0,'19':0,'20':0,'21':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0],'4':[0,0],'5':[0,0],'6':[0,0],'7':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _Icon=require('../Icon/Icon.component');var _Icon2=_interopRequireDefault(_Icon);
+var _isEqual=require('lodash/isEqual');var _isEqual2=_interopRequireDefault(_isEqual);
+var _map=require('../../../config/map.config');var _map2=_interopRequireDefault(_map);
+var _reactNativeMapMarkerclustering=require('react-native-map-markerclustering');var _reactNativeMapMarkerclustering2=_interopRequireDefault(_reactNativeMapMarkerclustering);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _pinLocation=require('../../../assets/pinLocation.png');var _pinLocation2=_interopRequireDefault(_pinLocation);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _shopMarker=require('../../../assets/shopMarker.png');var _shopMarker2=_interopRequireDefault(_shopMarker);
+var _Map=require('./Map.style');var _Map2=_interopRequireDefault(_Map);
+var _Touchable=require('../Touchable/Touchable.component');var _Touchable2=_interopRequireDefault(_Touchable);
+var _constants=require('../../../themes/constants.styles');
+var _reactNativeMaps=require('react-native-maps');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+Map=function(_Component){_inherits(Map,_Component);function Map(){var _ref;var _temp,_this,_ret;_classCallCheck(this,Map);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=Map.__proto__||Object.getPrototypeOf(Map)).call.apply(_ref,[this].concat(args))),_this),_this.
+
+state={
+markerId:1,
+initialRegion:_this.props.initialRegion},_this.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+addMarker=function(markerList){cov_1u5tbcax7m.f[3]++;cov_1u5tbcax7m.s[10]++;return markerList.map(function(store,index){cov_1u5tbcax7m.f[4]++;
+var storeName=(cov_1u5tbcax7m.s[11]++,(cov_1u5tbcax7m.b[3][0]++,store.name[_this.props.language])||(cov_1u5tbcax7m.b[3][1]++,store.name['en']));cov_1u5tbcax7m.s[12]++;
+return _react2.default.createElement(_reactNativeMaps.Marker,{key:index,coordinate:store,image:_shopMarker2.default,title:storeName,onCalloutPress:_this.props.onCalloutPress(store)});
+});},_this.
+
+showCurrentLocation=function(){cov_1u5tbcax7m.f[5]++;var _ref2=(cov_1u5tbcax7m.s[13]++,
+_this.props),currentLocation=_ref2.currentLocation,initialRegion=_ref2.initialRegion,onPressCurrLocation=_ref2.onPressCurrLocation;cov_1u5tbcax7m.s[14]++;
+_this.map._root.animateToRegion(currentLocation?(cov_1u5tbcax7m.b[4][0]++,currentLocation):(cov_1u5tbcax7m.b[4][1]++,initialRegion),500);cov_1u5tbcax7m.s[15]++;
+onPressCurrLocation();
+},_this.
+
+setRef=function(map){cov_1u5tbcax7m.f[6]++;cov_1u5tbcax7m.s[16]++;
+_this.map=map;
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(Map,[{key:'componentDidUpdate',value:function componentDidUpdate(prevProps){cov_1u5tbcax7m.f[0]++;var _ref3=(cov_1u5tbcax7m.s[0]++,this.props),initialRegion=_ref3.initialRegion;cov_1u5tbcax7m.s[1]++;if(initialRegion!==prevProps.initialRegion){cov_1u5tbcax7m.b[0][0]++;cov_1u5tbcax7m.s[2]++;this.map._root.animateToRegion(initialRegion,500);}else{cov_1u5tbcax7m.b[0][1]++;}}},{key:'componentWillReceiveProps',value:function componentWillReceiveProps(nextProps){cov_1u5tbcax7m.f[1]++;var _ref4=(cov_1u5tbcax7m.s[3]++,this.props),initialRegion=_ref4.initialRegion;var _ref5=(cov_1u5tbcax7m.s[4]++,this.state),markerId=_ref5.markerId;cov_1u5tbcax7m.s[5]++;if(initialRegion!==nextProps.initialRegion){cov_1u5tbcax7m.b[1][0]++;cov_1u5tbcax7m.s[6]++;this.setState({markerId:markerId+1});}else{cov_1u5tbcax7m.b[1][1]++;}}},{key:'shouldComponentUpdate',value:function shouldComponentUpdate(nextProps){cov_1u5tbcax7m.f[2]++;cov_1u5tbcax7m.s[7]++;if((0,_isEqual2.default)(nextProps,this.props)){cov_1u5tbcax7m.b[2][0]++;cov_1u5tbcax7m.s[8]++;return false;}else{cov_1u5tbcax7m.b[2][1]++;}cov_1u5tbcax7m.s[9]++;return true;}},{key:'render',value:function render()
+
+{cov_1u5tbcax7m.f[7]++;var _ref6=(cov_1u5tbcax7m.s[17]++,
+this.props),markerList=_ref6.markerList,currentLocation=_ref6.currentLocation;var _ref7=(cov_1u5tbcax7m.s[18]++,
+this.state),markerId=_ref7.markerId,initialRegion=_ref7.initialRegion;cov_1u5tbcax7m.s[19]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:_Map2.default.container},
+_react2.default.createElement(_reactNativeMapMarkerclustering2.default,{style:_Map2.default.map,ref:this.setRef,region:initialRegion,
+clusterColor:_constants.colors.MAPCLUSTER,clusterTextColor:_constants.colors.PRIMARY_BG_TEXT_CONTRAST,
+clusterBorderColor:_constants.colors.PRIMARY_BG_TEXT_CONTRAST},
+currentLocation?(cov_1u5tbcax7m.b[5][0]++,
+_react2.default.createElement(_reactNativeMaps.Marker,{key:'currentMarker_'+markerId,coordinate:currentLocation,image:_pinLocation2.default,disableClustering:true})):(cov_1u5tbcax7m.b[5][1]++,
+null),
+markerList?(cov_1u5tbcax7m.b[6][0]++,this.addMarker(markerList)):(cov_1u5tbcax7m.b[6][1]++,null)),
+
+_react2.default.createElement(_reactNative.View,{style:_Map2.default.buttonList},
+_react2.default.createElement(_Touchable2.default,{style:_Map2.default.buttonWrapper,onPress:this.props.onSearchPress},
+_react2.default.createElement(_Icon2.default,{name:'map-search',style:_Map2.default.button})),
+
+currentLocation?(cov_1u5tbcax7m.b[7][0]++,
+_react2.default.createElement(_Touchable2.default,{style:_Map2.default.buttonWrapper,onPress:this.showCurrentLocation},
+_react2.default.createElement(_Icon2.default,{name:'current-position',style:_Map2.default.button}))):(cov_1u5tbcax7m.b[7][1]++,
+
+null))));
+
+
+
+
+
+
+
+}}]);return Map;}(_react.Component);cov_1u5tbcax7m.s[20]++;
+
+
+Map.defaultProps={
+markerList:[],
+initialRegion:_map2.default.initialRegion,
+currentLocation:null,
+onPressCurrLocation:_noop2.default,
+onCalloutPress:_noop2.default,
+onSearchPress:_noop2.default};cov_1u5tbcax7m.s[21]++;
+
+
+Map.propTypes={
+markerList:_propTypes2.default.array,
+initialRegion:_propTypes2.default.object,
+currentLocation:_propTypes2.default.object,
+onPressCurrLocation:_propTypes2.default.func,
+onCalloutPress:_propTypes2.default.func,
+onSearchPress:_propTypes2.default.func,
+language:_propTypes2.default.string};exports.default=
+
+
+Map;

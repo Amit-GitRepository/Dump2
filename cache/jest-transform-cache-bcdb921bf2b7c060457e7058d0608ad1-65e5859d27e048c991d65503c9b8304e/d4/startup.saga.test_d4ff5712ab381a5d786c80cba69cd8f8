@@ -1,0 +1,49 @@
+var _reduxSagaTesting=require('redux-saga-testing');var _reduxSagaTesting2=_interopRequireDefault(_reduxSagaTesting);
+var _startup=require('../startup.saga');var _startup2=_interopRequireDefault(_startup);
+var _effects=require('redux-saga/effects');
+var _index=require('../../actions/index.actions');
+var _translations=require('../translations.saga');
+var _auth=require('../auth.saga');
+var _firebase=require('../firebase.saga');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('startupSaga: Testing the root Saga',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_startup2.default)());
+it('Should show spinner when a startup saga is called',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.showSpinner)()));
+});
+it('Should should call initialize data saga',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.initializeData)()));
+});
+it('Should wait until the initialization in succeeded',function(result){
+expect(result).toEqual((0,_effects.take)(_index.INITIALIZE_DATA_SUCCEEDED));
+});
+it('Should should call initializeAuth saga',function(result){
+expect(result).toEqual((0,_effects.call)(_auth.initializeAuth));
+return'initializeAuth';
+});
+it('Should should call fetchTranslations saga',function(result){
+expect(result).toEqual((0,_effects.call)(_translations.fetchTranslations));
+return'fetchTranslations';
+});
+it('Should should call initializeFirebase saga',function(result){
+expect(result).toEqual((0,_effects.call)(_firebase.initializeFirebase));
+return'initializeFirebase';
+});
+it('Should dispatch the detect msisdn',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.autoDetectMSISDN)()));
+return'autoDetectMSISDN';
+});
+it('Should should call the fetch translations saga',function(result){
+expect(result).toEqual(
+(0,_effects.all)([
+'initializeAuth',
+'fetchTranslations',
+'initializeFirebase',
+'autoDetectMSISDN']));
+
+
+});
+it('Should hide spinner when the saga is completed',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.hideSpinner)()));
+});
+});

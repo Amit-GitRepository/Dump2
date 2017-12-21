@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/amitkumar/.android/build-cache/0ef00a90abcf9e20e36833c0983a3c43f72ef5cf/output/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/amitkumar/.android/build-cache/0ef00a90abcf9e20e36833c0983a3c43f72ef5cf/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/amitkumar/.android/build-cache/0ef00a90abcf9e20e36833c0983a3c43f72ef5cf/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
+        "source": "/Users/amitkumar/.android/build-cache/0ef00a90abcf9e20e36833c0983a3c43f72ef5cf/output/res/drawable-v21/notification_action_background.xml"
+    }
+]

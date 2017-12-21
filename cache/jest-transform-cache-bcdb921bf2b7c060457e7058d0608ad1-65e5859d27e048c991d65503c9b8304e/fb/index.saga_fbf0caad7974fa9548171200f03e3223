@@ -1,0 +1,31 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1ge4uf44lq=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/sagas/index.saga.js',hash='358f7b4a36bc58c261ddc107290e36a8a9f95ec2',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/sagas/index.saga.js',statementMap:{'0':{start:{line:18,column:2},end:{line:18,column:26}},'1':{start:{line:19,column:2},end:{line:19,column:32}},'2':{start:{line:20,column:2},end:{line:20,column:30}},'3':{start:{line:21,column:2},end:{line:21,column:23}},'4':{start:{line:22,column:2},end:{line:22,column:25}},'5':{start:{line:23,column:2},end:{line:23,column:22}},'6':{start:{line:24,column:2},end:{line:24,column:23}},'7':{start:{line:25,column:2},end:{line:25,column:30}},'8':{start:{line:26,column:2},end:{line:26,column:27}},'9':{start:{line:27,column:2},end:{line:27,column:28}},'10':{start:{line:28,column:2},end:{line:28,column:24}},'11':{start:{line:29,column:2},end:{line:29,column:26}},'12':{start:{line:30,column:2},end:{line:30,column:29}},'13':{start:{line:31,column:2},end:{line:31,column:24}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:17,column:15},end:{line:17,column:16}},loc:{start:{line:17,column:28},end:{line:32,column:1}},line:17}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0},f:{'0':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();exports.default=_callee;var _auth=require('./auth.saga');var _auth2=_interopRequireDefault(_auth);
+var _billUsage=require('./billUsage.saga');var _billUsage2=_interopRequireDefault(_billUsage);
+var _dbInitializer=require('./dbInitializer.saga');var _dbInitializer2=_interopRequireDefault(_dbInitializer);
+var _deeplink=require('./deeplink.saga');var _deeplink2=_interopRequireDefault(_deeplink);
+var _ebill=require('./ebill.saga');var _ebill2=_interopRequireDefault(_ebill);
+var _forceUpdate=require('./forceUpdate.saga');var _forceUpdate2=_interopRequireDefault(_forceUpdate);
+var _invoicePdf=require('./invoicePdf.saga');var _invoicePdf2=_interopRequireDefault(_invoicePdf);
+var _msisdn=require('./msisdn.saga');var _msisdn2=_interopRequireDefault(_msisdn);
+var _otp=require('./otp.saga');var _otp2=_interopRequireDefault(_otp);
+var _payment=require('./payment.saga');var _payment2=_interopRequireDefault(_payment);
+var _popup=require('./popup.saga');var _popup2=_interopRequireDefault(_popup);
+var _startup=require('./startup.saga');var _startup2=_interopRequireDefault(_startup);
+var _translations=require('./translations.saga');var _translations2=_interopRequireDefault(_translations);
+var _user=require('./user.saga');var _user2=_interopRequireDefault(_user);
+var _effects=require('redux-saga/effects');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var _marked=regeneratorRuntime.mark(_callee);
+
+function _callee(){return regeneratorRuntime.wrap(function _callee$(_context){while(1){switch(_context.prev=_context.next){case 0:cov_1ge4uf44lq.f[0]++;cov_1ge4uf44lq.s[0]++;_context.next=4;return(
+(0,_effects.fork)(_startup2.default));case 4:cov_1ge4uf44lq.s[1]++;_context.next=7;return(
+(0,_effects.fork)(_dbInitializer2.default));case 7:cov_1ge4uf44lq.s[2]++;_context.next=10;return(
+(0,_effects.fork)(_translations2.default));case 10:cov_1ge4uf44lq.s[3]++;_context.next=13;return(
+(0,_effects.fork)(_user2.default));case 13:cov_1ge4uf44lq.s[4]++;_context.next=16;return(
+(0,_effects.fork)(_msisdn2.default));case 16:cov_1ge4uf44lq.s[5]++;_context.next=19;return(
+(0,_effects.fork)(_otp2.default));case 19:cov_1ge4uf44lq.s[6]++;_context.next=22;return(
+(0,_effects.fork)(_auth2.default));case 22:cov_1ge4uf44lq.s[7]++;_context.next=25;return(
+(0,_effects.fork)(_forceUpdate2.default));case 25:cov_1ge4uf44lq.s[8]++;_context.next=28;return(
+(0,_effects.fork)(_deeplink2.default));case 28:cov_1ge4uf44lq.s[9]++;_context.next=31;return(
+(0,_effects.fork)(_billUsage2.default));case 31:cov_1ge4uf44lq.s[10]++;_context.next=34;return(
+(0,_effects.fork)(_ebill2.default));case 34:cov_1ge4uf44lq.s[11]++;_context.next=37;return(
+(0,_effects.fork)(_payment2.default));case 37:cov_1ge4uf44lq.s[12]++;_context.next=40;return(
+(0,_effects.fork)(_invoicePdf2.default));case 40:cov_1ge4uf44lq.s[13]++;_context.next=43;return(
+(0,_effects.fork)(_popup2.default));case 43:case'end':return _context.stop();}}},_marked,this);}

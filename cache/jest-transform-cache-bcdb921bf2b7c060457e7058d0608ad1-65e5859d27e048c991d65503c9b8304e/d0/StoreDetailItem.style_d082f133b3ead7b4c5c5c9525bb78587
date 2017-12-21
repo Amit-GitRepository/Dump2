@@ -1,0 +1,12 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_28jjrdnsna=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/StoreLocator/StoreDetailItem/StoreDetailItem.style.js',hash='b8d18d643f75e7c69e8f473c408f9083a8f4a430',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/StoreLocator/StoreDetailItem/StoreDetailItem.style.js',statementMap:{},fnMap:{},branchMap:{},s:{},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _constants=require('../../../themes/constants.styles');exports.default=
+
+{
+detailItem:{
+flexDirection:'row',
+padding:15,
+borderBottomWidth:1,
+borderBottomColor:_constants.colors.PRIMARY_BG_SEPARATOR},
+
+detailText:{
+flex:1,
+fontSize:_constants.fonts.FONT_SIZE_MEDIUM}};

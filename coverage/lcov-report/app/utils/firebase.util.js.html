@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/utils/firebase.util.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">app/utils</a> firebase.util.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">47.37% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>9/19</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">15.38% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>2/13</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">47.37% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>9/19</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import Config from 'react-native-config';
+import firebase from 'react-native-firebase';
+import {versionControlConfig} from '../config/versionControl.config';
+&nbsp;
+// TODO change based on env
+firebase.crash().setCrashCollectionEnabled(false);
+&nbsp;
+async function <span class="fstat-no" title="function not covered" >signInAnonymously </span>() {
+<span class="cstat-no" title="statement not covered" >  return firebase.auth().signInAnonymously();</span>
+}
+&nbsp;
+firebase.messaging().requestPermissions();
+&nbsp;
+firebase.messaging().subscribeToTopic(Config.BROADCAST_TOPIC);
+&nbsp;
+firebase.messaging().getToken()
+  .then((/* token */) =&gt; {
+    // TODO
+  }).catch(<span class="fstat-no" title="function not covered" >(/</span>* err */) =&gt; {
+    // TODO
+  });
+&nbsp;
+firebase.messaging().onTokenRefresh(<span class="fstat-no" title="function not covered" >(/</span>* token */) =&gt; {
+  // TODO
+});
+&nbsp;
+firebase.messaging().onMessage(<span class="fstat-no" title="function not covered" >(/</span>* message */) =&gt; {
+  // TODO
+});
+&nbsp;
+firebase.messaging().getInitialNotification()
+  .then((/* notification */) =&gt; {
+    // TODO
+  });
+&nbsp;
+export async function <span class="fstat-no" title="function not covered" >setupFirebase </span>() {
+<span class="cstat-no" title="statement not covered" >  await signInAnonymously(); </span>// returns user
+<span class="cstat-no" title="statement not covered" >  return new Promise(<span class="fstat-no" title="function not covered" >(r</span>esolve) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    firebase</span>
+      .database()
+      .ref()
+      .on('value', <span class="fstat-no" title="function not covered" >(s</span>napshot) =&gt; {
+        const value = <span class="cstat-no" title="statement not covered" >snapshot.val();</span>
+<span class="cstat-no" title="statement not covered" >        return resolve(value);</span>
+      });
+  });
+}
+&nbsp;
+firebase.config().setDefaults(versionControlConfig);
+&nbsp;
+export const fetchRemoteConfig = <span class="fstat-no" title="function not covered" >()</span> =&gt;
+<span class="cstat-no" title="statement not covered" >  firebase</span>
+    .config()
+    .fetch()
+    .then(<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >firebase.config().activateFetched())</span>
+    .then(<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >firebase.config().getValues(Object.keys(versionControlConfig)))</span>
+    .then(<span class="fstat-no" title="function not covered" >(s</span>napshot) =&gt; (<span class="cstat-no" title="statement not covered" >{</span>
+      FORCE_UPDATE_MIN_VERSION: snapshot.FORCE_UPDATE_MIN_VERSION.val(),
+      FORCE_UPDATE_BLACKLIST_VERSIONS: snapshot.FORCE_UPDATE_BLACKLIST_VERSIONS.val().split(','),
+      FORCE_UPDATE_CURRENT_VERSION: snapshot.FORCE_UPDATE_CURRENT_VERSION.val(),
+      FORCE_UPDATE_PLAY_STORE_URL: snapshot.FORCE_UPDATE_PLAY_STORE_URL.val(),
+      FORCE_UPDATE_APP_STORE_URL: snapshot.FORCE_UPDATE_APP_STORE_URL.val(),
+      FORCE_UPDATE_NOTIFICATION_RETRY: snapshot.FORCE_UPDATE_NOTIFICATION_RETRY.val()
+    }));
+&nbsp;
+export default firebase;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Oct 31 2017 11:24:42 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

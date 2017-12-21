@@ -1,0 +1,97 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_biyb85qni=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/StoreLocator/StoreLocatorMap/StoreLocatorMap.component.js',hash='039a9d2dae86ecb9871f12a3497f1af84ba45aea',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/StoreLocator/StoreLocatorMap/StoreLocatorMap.component.js',statementMap:{'0':{start:{line:16,column:30},end:{line:16,column:68}},'1':{start:{line:16,column:36},end:{line:16,column:68}},'2':{start:{line:19,column:4},end:{line:35,column:5}},'3':{start:{line:20,column:6},end:{line:24,column:8}},'4':{start:{line:26,column:24},end:{line:29,column:8}},'5':{start:{line:27,column:8},end:{line:27,column:78}},'6':{start:{line:28,column:8},end:{line:28,column:21}},'7':{start:{line:30,column:6},end:{line:34,column:8}},'8':{start:{line:40,column:113},end:{line:40,column:123}},'9':{start:{line:41,column:24},end:{line:41,column:82}},'10':{start:{line:42,column:4},end:{line:64,column:6}},'11':{start:{line:68,column:0},end:{line:79,column:2}},'12':{start:{line:81,column:0},end:{line:95,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:16,column:19},end:{line:16,column:20}},loc:{start:{line:16,column:30},end:{line:16,column:68}},line:16},'1':{name:'(anonymous_1)',decl:{start:{line:16,column:30},end:{line:16,column:31}},loc:{start:{line:16,column:36},end:{line:16,column:68}},line:16},'2':{name:'(anonymous_2)',decl:{start:{line:18,column:23},end:{line:18,column:24}},loc:{start:{line:18,column:43},end:{line:36,column:3}},line:18},'3':{name:'(anonymous_3)',decl:{start:{line:26,column:43},end:{line:26,column:44}},loc:{start:{line:26,column:54},end:{line:29,column:7}},line:26},'4':{name:'(anonymous_4)',decl:{start:{line:38,column:2},end:{line:38,column:3}},loc:{start:{line:38,column:12},end:{line:65,column:3}},line:38}},branchMap:{'0':{loc:{start:{line:19,column:4},end:{line:35,column:5}},type:'if',locations:[{start:{line:19,column:4},end:{line:35,column:5}},{start:{line:19,column:4},end:{line:35,column:5}}],line:19},'1':{loc:{start:{line:27,column:26},end:{line:27,column:77}},type:'binary-expr',locations:[{start:{line:27,column:26},end:{line:27,column:57}},{start:{line:27,column:61},end:{line:27,column:77}}],line:27},'2':{loc:{start:{line:57,column:13},end:{line:58,column:60}},type:'cond-expr',locations:[{start:{line:58,column:14},end:{line:58,column:53}},{start:{line:58,column:56},end:{line:58,column:60}}],line:57}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0},b:{'0':[0,0],'1':[0,0],'2':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _Button=require('../../Shared/Button/Button.component');var _Button2=_interopRequireDefault(_Button);
+var _IconTextInput=require('../../Shared/IconTextInput/IconTextInput.component');var _IconTextInput2=_interopRequireDefault(_IconTextInput);
+var _InfoBar=require('../../Shared/InfoBar/InfoBar.component');var _InfoBar2=_interopRequireDefault(_InfoBar);
+var _List=require('../../Shared/List/List.component');var _List2=_interopRequireDefault(_List);
+var _Map=require('../../Shared/Map/Map.component');var _Map2=_interopRequireDefault(_Map);
+var _Modal=require('../../Shared/Modal/Modal.component');var _Modal2=_interopRequireDefault(_Modal);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _StoreLocatorMap=require('../StoreLocatorMap/StoreLocatorMap.style');var _StoreLocatorMap2=_interopRequireDefault(_StoreLocatorMap);
+var _helper=require('../../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+StoreLocatorMap=function(_Component){_inherits(StoreLocatorMap,_Component);function StoreLocatorMap(){var _ref;var _temp,_this,_ret;_classCallCheck(this,StoreLocatorMap);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=StoreLocatorMap.__proto__||Object.getPrototypeOf(StoreLocatorMap)).call.apply(_ref,[this].concat(args))),_this),_this.
+addStoreMarker=function(store){cov_biyb85qni.f[0]++;cov_biyb85qni.s[0]++;return function(){cov_biyb85qni.f[1]++;cov_biyb85qni.s[1]++;return _this.props.addStoreMarker(store);};},_this.
+
+listFilteredStores=function(filteredStores){cov_biyb85qni.f[2]++;cov_biyb85qni.s[2]++;
+if((0,_result2.default)(filteredStores,'[0].storeName')===(0,_helper.translate)('STORE_LOCATOR_STORE_NOT_FOUND')){cov_biyb85qni.b[0][0]++;cov_biyb85qni.s[3]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:_StoreLocatorMap2.default.listContainer},
+_react2.default.createElement(_List2.default,{data:filteredStores,headingKey:'storeName'})));
+
+
+}else{cov_biyb85qni.b[0][1]++;
+var storeList=(cov_biyb85qni.s[4]++,filteredStores.map(function(store){cov_biyb85qni.f[3]++;cov_biyb85qni.s[5]++;
+store.storeName=(cov_biyb85qni.b[1][0]++,store.name[_this.props.language])||(cov_biyb85qni.b[1][1]++,store.name['en']);cov_biyb85qni.s[6]++;
+return store;
+}));cov_biyb85qni.s[7]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:_StoreLocatorMap2.default.listContainer},
+_react2.default.createElement(_List2.default,{onPress:_this.addStoreMarker,data:storeList,headingKey:'storeName'})));
+
+
+}
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(StoreLocatorMap,[{key:'render',value:function render()
+
+{cov_biyb85qni.f[4]++;var _ref2=(cov_biyb85qni.s[8]++,
+
+this.props),initialRegion=_ref2.initialRegion,searchModalVisibility=_ref2.searchModalVisibility,onSearchTextChange=_ref2.onSearchTextChange,markerList=_ref2.markerList,currentLocation=_ref2.currentLocation,onPressCurrLocation=_ref2.onPressCurrLocation,onSearchPress=_ref2.onSearchPress,filteredStores=_ref2.filteredStores,hideSearchModal=_ref2.hideSearchModal,onCalloutPress=_ref2.onCalloutPress,radiusKM=_ref2.radiusKM,language=_ref2.language;
+var infoBarText=(cov_biyb85qni.s[9]++,(0,_helper.translate)('STORE_LOCATOR__COVERAGE',{distance:radiusKM}));cov_biyb85qni.s[10]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:_StoreLocatorMap2.default.container},
+_react2.default.createElement(_InfoBar2.default,{text:infoBarText,style:_StoreLocatorMap2.default.infoBar}),
+_react2.default.createElement(_Map2.default,{onSearchPress:onSearchPress,initialRegion:initialRegion,markerList:markerList,
+currentLocation:currentLocation,onPressCurrLocation:onPressCurrLocation,onCalloutPress:onCalloutPress,language:language}),
+_react2.default.createElement(_Modal2.default,{animationIn:'fadeInDown',animationOut:'fadeOutUp',style:_StoreLocatorMap2.default.modal,onBackButtonPress:hideSearchModal,isVisible:searchModalVisibility},
+_react2.default.createElement(_reactNative.View,{style:_StoreLocatorMap2.default.modalContent},
+_react2.default.createElement(_reactNative.View,{style:_StoreLocatorMap2.default.searchBar},
+_react2.default.createElement(_reactNative.View,{style:_StoreLocatorMap2.default.searchInput},
+_react2.default.createElement(_IconTextInput2.default,{containerStyle:_StoreLocatorMap2.default.inputBar,placeholder:(0,_helper.translate)('STORE_LOCATOR__SEARCH'),onChangeText:onSearchTextChange,iconName:'search',iconSize:15})),
+
+_react2.default.createElement(_reactNative.View,{style:_StoreLocatorMap2.default.buttonWrapper},
+_react2.default.createElement(_Button2.default,{type:'inline',text:(0,_helper.translate)('STORE_LOCATOR__CANCEL'),onPress:hideSearchModal}))),
+
+
+filteredStores.length>0?(cov_biyb85qni.b[2][0]++,
+this.listFilteredStores(filteredStores)):(cov_biyb85qni.b[2][1]++,null)))));
+
+
+
+
+
+
+}}]);return StoreLocatorMap;}(_react.Component);cov_biyb85qni.s[11]++;
+
+
+StoreLocatorMap.defaultProps={
+initialRegion:null,
+markerList:[],
+filteredStores:[],
+currentLocation:null,
+addStoreMarker:_noop2.default,
+hideSearchModal:_noop2.default,
+onPressCurrLocation:_noop2.default,
+onSearchTextChange:_noop2.default,
+onCalloutPress:_noop2.default,
+onSearchPress:_noop2.default};cov_biyb85qni.s[12]++;
+
+
+StoreLocatorMap.propTypes={
+initialRegion:_propTypes2.default.object,
+markerList:_propTypes2.default.array,
+filteredStores:_propTypes2.default.array,
+currentLocation:_propTypes2.default.object,
+onPressCurrLocation:_propTypes2.default.func,
+hideSearchModal:_propTypes2.default.func,
+onSearchTextChange:_propTypes2.default.func,
+addStoreMarker:_propTypes2.default.func,
+onSearchPress:_propTypes2.default.func,
+onCalloutPress:_propTypes2.default.func,
+searchModalVisibility:_propTypes2.default.bool,
+radiusKM:_propTypes2.default.number,
+language:_propTypes2.default.string};exports.default=
+
+
+StoreLocatorMap;

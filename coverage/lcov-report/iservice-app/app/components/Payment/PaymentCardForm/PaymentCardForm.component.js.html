@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/components/Payment/PaymentCardForm/PaymentCardForm.component.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../index.html">All files</a> / <a href="index.html">iservice-app/app/components/Payment/PaymentCardForm</a> PaymentCardForm.component.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">54.55% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>6/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>2/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">33.33% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">60% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>6/10</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">39x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">39x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">39x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* PaymentCardForm: */
+/* eslint-disable camelcase */
+import CardTypes from '../CardTypes/CardTypes.component';
+import CreditCardConfig from '../../../config/creditCard.config';
+import PropTypes from 'prop-types';
+import React, {Component} from 'react';
+import styles from './PaymentCardForm.style';
+import {Checkbox, IconTextInput, ISText} from '../../Shared';
+import {MAXIMUM_SAVE_CARD_COUNT} from '../../../config/payment.config';
+import {noop} from 'lodash';
+import {translate} from '../../../language/i18n/helper';
+import {View} from 'react-native';
+&nbsp;
+const generateSaveCardMessage = <span class="fstat-no" title="function not covered" >()</span> =&gt; (<span class="cstat-no" title="statement not covered" >{</span>
+  title: translate('PAYMENT__SAVE_CARD_MODAL_HEADER'),
+  body: translate('PAYMENT__SAVE_CARD_MODAL_DESC'),
+  buttons: [
+    {
+      title: translate('BUTTON__OK')
+    }
+  ]
+});
+&nbsp;
+class PaymentCardForm extends Component {
+&nbsp;
+  saveCard = <span class="fstat-no" title="function not covered" >(i</span>sSaved) =&gt; {
+    const {noOfSavedCards, onDataChanged, showPopup} = <span class="cstat-no" title="statement not covered" >this.props;</span>
+<span class="cstat-no" title="statement not covered" >    if (noOfSavedCards &lt; MAXIMUM_SAVE_CARD_COUNT) {</span>
+<span class="cstat-no" title="statement not covered" >      onDataChanged('saveCard')(isSaved);</span>
+    } else {
+<span class="cstat-no" title="statement not covered" >      showPopup(generateSaveCardMessage());</span>
+    }
+  }
+&nbsp;
+  render () {
+    const {maxLength} = CreditCardConfig;
+    const {canSaveCards, cardLimit, formData, onDataChanged} = this.props;
+    return (
+      &lt;View &gt;
+        &lt;View style={styles.rowContainer}&gt;
+          &lt;ISText type='SEMIBOLD' style={styles.text}&gt;{translate('PAYMENT__CARD_NUMBER')}&lt;/ISText&gt;
+          &lt;CardTypes /&gt;
+        &lt;/View&gt;
+        &lt;IconTextInput keyboardType={'numeric'} type='SECONDARY' defaultValue={formData.number} placeholder={'Card Number'}
+          onChangeText={onDataChanged('number')} maxLength={maxLength.cardNo}/&gt;
+        &lt;ISText type='SEMIBOLD' style={styles.text}&gt;{translate('PAYMENT__CARD_NAME')}&lt;/ISText&gt;
+        &lt;IconTextInput type='SECONDARY' defaultValue={formData.name} placeholder={'Cardholder Name'}
+          onChangeText={onDataChanged('name')} maxLength={maxLength.name}/&gt;
+        &lt;View style={styles.rowContainer}&gt;
+          &lt;View style={styles.expiryContainer}&gt;
+            &lt;ISText type='SEMIBOLD' style={styles.text}&gt;{translate('PAYMENT__CARD_EXPIRY')}&lt;/ISText&gt;
+            {/* TODO Expiry date validation */}
+            &lt;IconTextInput type='SECONDARY' defaultValue={formData.expirationDate}
+              placeholder={'Date (MM/YYYY)'} onChangeText={onDataChanged('expirationDate')} maxLength={maxLength.date}/&gt;
+          &lt;/View&gt;
+          &lt;View style={styles.fullFlex}&gt;
+            &lt;ISText type='SEMIBOLD' style={styles.text}&gt;{translate('PAYMENT__CARD_SECURITY')}&lt;/ISText&gt;
+            &lt;IconTextInput keyboardType={'numeric'} containerStyle={styles.fullFlex} type='SECONDARY' defaultValue={formData.securityCode}
+              placeholder={'Security Code'} onChangeText={onDataChanged('securityCode')} secureTextEntry={true}  maxLength={maxLength.cvv}/&gt;
+          &lt;/View&gt;
+        &lt;/View&gt;
+        {canSaveCards &amp;&amp; &lt;View style={styles.saveCardContainer}&gt;
+          &lt;Checkbox style={styles.checkbox} onChange={this.saveCard} isChecked={formData.saveCard}/&gt;
+          &lt;ISText type='SEMIBOLD' style={styles.text}&gt;{translate('PAYMENT__SAVE_CARD')}&lt;/ISText&gt;
+          &lt;ISText type='REGULAR' style={styles.subtext}&gt;{translate('PAYMENT__MAX_CARDS_LIMIT', {limit: cardLimit})}&lt;/ISText&gt;
+        &lt;/View&gt;}
+      &lt;/View&gt;
+    );
+  }
+}
+PaymentCardForm.defaultProps = {
+  noOfSavedCards: 0,
+  cardLimit: 0,
+  formData: {},
+  onDataChanged: noop,
+  showPopup: noop,
+  canSaveCards: true
+};
+PaymentCardForm.propTypes = {
+  noOfSavedCards: PropTypes.number,
+  cardLimit: PropTypes.number,
+  formData: PropTypes.object,
+  showPopup: PropTypes.func,
+  onDataChanged: PropTypes.func,
+  canSaveCards: PropTypes.bool
+};
+export default PaymentCardForm;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../sorter.js"></script>
+</body>
+</html>

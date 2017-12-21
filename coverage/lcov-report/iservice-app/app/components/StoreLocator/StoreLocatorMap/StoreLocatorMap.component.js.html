@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/components/StoreLocator/StoreLocatorMap/StoreLocatorMap.component.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../index.html">All files</a> / <a href="index.html">iservice-app/app/components/StoreLocator/StoreLocatorMap</a> StoreLocatorMap.component.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">53.85% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>7/13</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">16.67% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>1/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">60% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>6/12</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">38x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">38x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import noop from 'lodash/noop';
+import PropTypes from 'prop-types';
+import React, {Component} from 'react';
+import result from 'lodash/result';
+import styles from '../StoreLocatorMap/StoreLocatorMap.style';
+import trueShopMapViewTestIDs from '../../../config/testid/trueShopMapViewPage';
+import {Button, IconTextInput, InfoBar, List, Map, Modal} from '../../Shared';
+import {translate} from '../../../language/i18n/helper';
+import {View} from 'react-native';
+&nbsp;
+class StoreLocatorMap extends Component {
+  addStoreMarker = (store) =&gt; () =&gt; this.props.addStoreMarker(store)
+&nbsp;
+  listFilteredStores = <span class="fstat-no" title="function not covered" >(f</span>ilteredStores) =&gt; {
+<span class="cstat-no" title="statement not covered" >    if (result(filteredStores, '[0].storeName') === translate('STORE_LOCATOR_STORE_NOT_FOUND')) {</span>
+<span class="cstat-no" title="statement not covered" >      return (</span>
+        &lt;View style={styles.listContainer}&gt;
+          &lt;List data={filteredStores} headingKey='storeName'/&gt;
+        &lt;/View&gt;
+      );
+    } else {
+      const storeList = <span class="cstat-no" title="statement not covered" >filteredStores.map(<span class="fstat-no" title="function not covered" >(s</span>tore) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        store.storeName = store.name[this.props.language] || store.name['en'];</span>
+<span class="cstat-no" title="statement not covered" >        return store;</span>
+      });
+<span class="cstat-no" title="statement not covered" >      return (</span>
+        &lt;View style={styles.listContainer}&gt;
+          &lt;List onPress={this.addStoreMarker} data={storeList} headingKey='storeName'/&gt;
+        &lt;/View&gt;
+      );
+    }
+  }
+&nbsp;
+  render () {
+    const {initialRegion, searchModalVisibility, onSearchTextChange, markerList, currentLocation,
+      onPressCurrLocation, onSearchPress, filteredStores, hideSearchModal, onCalloutPress, radiusKM, language} = this.props;
+    const infoBarText = translate('STORE_LOCATOR__COVERAGE', {distance: radiusKM});
+    return (
+      &lt;View style={styles.container}&gt;
+        &lt;InfoBar text={infoBarText} style={styles.infoBar} accessibilityLabel={trueShopMapViewTestIDs.LABEL__INFOBAR_COVERAGE} testID={trueShopMapViewTestIDs.LABEL__INFOBAR_COVERAGE}/&gt;
+        &lt;Map onSearchPress={onSearchPress} initialRegion={initialRegion} markerList={markerList}
+          currentLocation={currentLocation} onPressCurrLocation={onPressCurrLocation} onCalloutPress={onCalloutPress} language={language}/&gt;
+        &lt;Modal animationIn='fadeInDown' animationOut='fadeOutUp' style={styles.modal} onBackButtonPress={hideSearchModal} isVisible={searchModalVisibility} &gt;
+          &lt;View style={styles.modalContent}&gt;
+            &lt;View style={styles.searchBar}&gt;
+              &lt;View style={styles.searchInput}&gt;
+                &lt;IconTextInput containerStyle={styles.inputBar} style={styles.inputText}
+                  placeholder={translate('STORE_LOCATOR__SEARCH')} onChangeText={onSearchTextChange}
+                  iconName={'search'} iconSize={20} autoFocus/&gt;
+              &lt;/View&gt;
+              &lt;View style={styles.buttonWrapper}&gt;
+                &lt;Button type='inline' text={translate('STORE_LOCATOR__CANCEL')} onPress={hideSearchModal}/&gt;
+              &lt;/View&gt;
+            &lt;/View&gt;
+            {filteredStores.length &gt; 0 ?
+<span class="branch-0 cbranch-no" title="branch not covered" >              this.listFilteredStores(filteredStores) </span>: null
+            }
+          &lt;/View&gt;
+&nbsp;
+        &lt;/Modal&gt;
+      &lt;/View&gt;
+    );
+  }
+}
+&nbsp;
+StoreLocatorMap.defaultProps = {
+  initialRegion: null,
+  markerList: [],
+  filteredStores: [],
+  currentLocation: null,
+  addStoreMarker: noop,
+  hideSearchModal: noop,
+  onPressCurrLocation: noop,
+  onSearchTextChange: noop,
+  onCalloutPress: noop,
+  onSearchPress: noop
+};
+&nbsp;
+StoreLocatorMap.propTypes = {
+  initialRegion: PropTypes.object,
+  markerList: PropTypes.array,
+  filteredStores: PropTypes.array,
+  currentLocation: PropTypes.object,
+  onPressCurrLocation: PropTypes.func,
+  hideSearchModal: PropTypes.func,
+  onSearchTextChange: PropTypes.func,
+  addStoreMarker: PropTypes.func,
+  onSearchPress: PropTypes.func,
+  onCalloutPress: PropTypes.func,
+  searchModalVisibility: PropTypes.bool,
+  radiusKM: PropTypes.number,
+  language: PropTypes.string
+};
+&nbsp;
+export default StoreLocatorMap;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../sorter.js"></script>
+</body>
+</html>

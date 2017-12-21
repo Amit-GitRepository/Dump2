@@ -1,0 +1,121 @@
+var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _api=require('../api.saga');var _api2=_interopRequireDefault(_api);
+var _reactNativeConfig=require('react-native-config');var _reactNativeConfig2=_interopRequireDefault(_reactNativeConfig);
+var _reduxSagaTesting=require('redux-saga-testing');var _reduxSagaTesting2=_interopRequireDefault(_reduxSagaTesting);
+var _apiErrorHandler=require('../../../sagas/api/apiErrorHandler.saga');
+var _effects=require('redux-saga/effects');
+var _common=require('../../../../utils/common.util');
+var _auth=require('../../auth.saga');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('api error handler: shouldn\'t intercept if the intercept flag is false',function(){
+var errorResponse={
+status:401,
+error:{message:'A dummy error response'}};
+
+var apiConfigWithNoIntercept={
+endpoint:'/test',
+query:{},
+method:'GET',
+intercept:false,
+loader:true,
+retryCount:0};
+
+var it=(0,_reduxSagaTesting2.default)((0,_apiErrorHandler.apiErrorHandler)(errorResponse,apiConfigWithNoIntercept));
+it('should throw the error back to caller',function(result){
+expect(result).toEqual((0,_effects.call)(_common.throwException,errorResponse.error));
+});
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});
+
+describe('api error handler: should intercept error response',function(){
+var errorResponse={
+status:401,
+error:{message:'A dummy error response'}};
+
+var apiConfig={
+endpoint:'/test',
+query:{},
+method:'GET',
+intercept:true,
+loader:true,
+retryCount:0};
+
+var it=(0,_reduxSagaTesting2.default)((0,_apiErrorHandler.apiErrorHandler)(errorResponse,apiConfig));
+it('should call the verifyExistingLogin',function(result){
+expect(result).toEqual((0,_effects.call)(_auth.verifyExistingLogin));
+});
+it('should call retryApi',function(result){
+expect(result).toEqual((0,_effects.call)(_apiErrorHandler.retryApi,apiConfig,errorResponse));
+});
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});
+
+describe('api error handler: fallback if couldnt make a decision',function(){
+var errorResponse={
+status:null,
+error:{message:'A dummy error response'}};
+
+var apiConfig={
+endpoint:'/test',
+query:{},
+method:'GET',
+intercept:true,
+loader:true,
+retryCount:0};
+
+var it=(0,_reduxSagaTesting2.default)((0,_apiErrorHandler.apiErrorHandler)(errorResponse,apiConfig));
+it('should throw the error response',function(result){
+expect(result).toEqual((0,_effects.call)(_common.throwException,errorResponse.error));
+});
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});
+
+describe('retry apis: should retry the api call',function(){
+var errorResponse={
+status:null,
+error:{message:'A dummy error response'}};
+
+var apiConfig={
+endpoint:'/test',
+query:{},
+method:'GET',
+intercept:true,
+loader:true,
+retryCount:0};
+
+var it=(0,_reduxSagaTesting2.default)((0,_apiErrorHandler.retryApi)(apiConfig,errorResponse));
+it('should call the api saga again with retry count 1',function(result){
+var newApiConfig=_extends({},apiConfig,{retryCount:1});
+expect(result).toEqual((0,_effects.call)(_api2.default,newApiConfig));
+});
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});
+
+describe('retry apis: should throw back the exception when MAX_RETRIES reach',function(){
+var errorResponse={
+status:null,
+error:{message:'A dummy error response'}};
+
+var apiConfig={
+endpoint:'/test',
+query:{},
+method:'GET',
+intercept:true,
+loader:true,
+retryCount:_reactNativeConfig2.default.API_MAX_RETRIES};
+
+var it=(0,_reduxSagaTesting2.default)((0,_apiErrorHandler.retryApi)(apiConfig,errorResponse));
+it('should call the api saga again with retry count 1',function(result){
+expect(result).toEqual((0,_effects.call)(_common.throwException,errorResponse));
+});
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});

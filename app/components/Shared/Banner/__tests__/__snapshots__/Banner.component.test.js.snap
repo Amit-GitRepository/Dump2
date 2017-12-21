@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Banner component renders correctly 1`] = `
+<View
+  style={Object {}}
+>
+  <Image
+    getSize={[Function]}
+    isBackground={false}
+    onLayout={[Function]}
+    resizeMode="contain"
+    source={0}
+    style={
+      Array [
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        undefined,
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`Banner component renders correctly when isBackground image with children component 1`] = `
+<View
+  style={Object {}}
+>
+  <Image
+    getSize={[Function]}
+    isBackground={true}
+    onLayout={[Function]}
+    resizeMode="contain"
+    source={0}
+    style={
+      Array [
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        Object {
+          "height": undefined,
+          "width": undefined,
+        },
+        undefined,
+      ]
+    }
+  />
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+  >
+    TEST
+  </Text>
+</View>
+`;

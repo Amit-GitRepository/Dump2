@@ -1,0 +1,54 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_ibi0y7i2d=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/Checkbox/Checkbox.component.js',hash='1327a5d258d8100114bcd063899e4a0f6e5ea9cd',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/Checkbox/Checkbox.component.js',statementMap:{'0':{start:{line:14,column:30},end:{line:14,column:40}},'1':{start:{line:15,column:22},end:{line:15,column:32}},'2':{start:{line:16,column:4},end:{line:16,column:39}},'3':{start:{line:17,column:4},end:{line:17,column:29}},'4':{start:{line:20,column:55},end:{line:20,column:65}},'5':{start:{line:21,column:22},end:{line:21,column:32}},'6':{start:{line:22,column:22},end:{line:22,column:138}},'7':{start:{line:23,column:24},end:{line:23,column:142}},'8':{start:{line:24,column:4},end:{line:30,column:6}},'9':{start:{line:33,column:0},end:{line:41,column:2}},'10':{start:{line:42,column:0},end:{line:53,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:13,column:12},end:{line:13,column:13}},loc:{start:{line:13,column:18},end:{line:18,column:3}},line:13},'1':{name:'(anonymous_1)',decl:{start:{line:19,column:2},end:{line:19,column:3}},loc:{start:{line:19,column:12},end:{line:31,column:3}},line:19}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0},f:{'0':0,'1':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _Icon=require('../Icon/Icon.component');var _Icon2=_interopRequireDefault(_Icon);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _reactNativeCheckBox=require('react-native-check-box');var _reactNativeCheckBox2=_interopRequireDefault(_reactNativeCheckBox);
+var _Checkbox=require('./Checkbox.style');var _Checkbox2=_interopRequireDefault(_Checkbox);
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+CheckBox=function(_Component){_inherits(CheckBox,_Component);function CheckBox(){var _ref;var _temp,_this,_ret;_classCallCheck(this,CheckBox);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=CheckBox.__proto__||Object.getPrototypeOf(CheckBox)).call.apply(_ref,[this].concat(args))),_this),_this.
+state={
+checked:_this.props.isChecked},_this.
+
+onClick=function(){cov_ibi0y7i2d.f[0]++;var _ref2=(cov_ibi0y7i2d.s[0]++,
+_this.props),onChange=_ref2.onChange,value=_ref2.value;var _ref3=(cov_ibi0y7i2d.s[1]++,
+_this.state),checked=_ref3.checked;cov_ibi0y7i2d.s[2]++;
+_this.setState({checked:!checked});cov_ibi0y7i2d.s[3]++;
+onChange(checked,value);
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(CheckBox,[{key:'render',value:function render()
+{cov_ibi0y7i2d.f[1]++;var _ref4=(cov_ibi0y7i2d.s[4]++,
+this.props),disabled=_ref4.disabled,iconSize=_ref4.iconSize,checkIconName=_ref4.checkIconName,style=_ref4.style;var _ref5=(cov_ibi0y7i2d.s[5]++,
+this.state),checked=_ref5.checked;
+var checkIcon=(cov_ibi0y7i2d.s[6]++,_react2.default.createElement(_reactNative.View,{style:_Checkbox2.default.checkedContainer},_react2.default.createElement(_Icon2.default,{name:checkIconName,size:iconSize,style:_Checkbox2.default.checkedIcon})));
+var uncheckIcon=(cov_ibi0y7i2d.s[7]++,_react2.default.createElement(_reactNative.View,{style:_Checkbox2.default.unCheckedContainer},_react2.default.createElement(_Icon2.default,{name:checkIconName,size:iconSize,style:_Checkbox2.default.uncheckIcon})));cov_ibi0y7i2d.s[8]++;
+return(
+_react2.default.createElement(_reactNativeCheckBox2.default,{checkedImage:checkIcon,unCheckedImage:uncheckIcon,
+isChecked:checked,disabled:disabled,
+onClick:this.onClick,style:style}));
+
+
+
+}}]);return CheckBox;}(_react.Component);cov_ibi0y7i2d.s[9]++;
+
+CheckBox.defaultProps={
+disabled:false,
+iconSize:12,
+isChecked:false,
+onChange:_noop2.default,
+checkIconName:'check',
+value:'',
+style:{}};cov_ibi0y7i2d.s[10]++;
+
+CheckBox.propTypes={
+disabled:_propTypes2.default.bool,
+iconSize:_propTypes2.default.number,
+isChecked:_propTypes2.default.bool,
+onChange:_propTypes2.default.func,
+checkIconName:_propTypes2.default.string,
+value:_propTypes2.default.oneOfType([
+_propTypes2.default.string,
+_propTypes2.default.number]),
+
+style:_propTypes2.default.object};exports.default=
+
+CheckBox;

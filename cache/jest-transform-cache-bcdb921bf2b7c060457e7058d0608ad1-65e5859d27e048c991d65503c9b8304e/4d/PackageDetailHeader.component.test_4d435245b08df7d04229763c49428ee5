@@ -1,0 +1,15 @@
+var _PackageDetailHeader=require('../PackageDetailHeader.component');var _PackageDetailHeader2=_interopRequireDefault(_PackageDetailHeader);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('PackageDetailHeader component',function(){
+it('renders correctly with props',function(){
+var mockData={name:'test',phoneNumber:'9629770174',billCycle:{code:'10'}};
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_PackageDetailHeader2.default,{phoneNumber:mockData.phoneNumber,endDate:mockData.endDate,name:mockData.name}));
+expect(component).toMatchSnapshot();
+});
+it('renders correctly without props',function(){
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_PackageDetailHeader2.default,null));
+expect(component).toMatchSnapshot();
+});
+});

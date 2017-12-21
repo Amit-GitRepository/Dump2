@@ -1,0 +1,51 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_19frm50rry=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/RadioGroup.component.js',hash='b148e793b119ca546e42812b036da8eaec30be36',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/RadioGroup.component.js',statementMap:{'0':{start:{line:16,column:4},end:{line:18,column:5}},'1':{start:{line:17,column:6},end:{line:17,column:59}},'2':{start:{line:22,column:4},end:{line:22,column:37}},'3':{start:{line:23,column:4},end:{line:23,column:31}},'4':{start:{line:26,column:23},end:{line:26,column:33}},'5':{start:{line:27,column:36},end:{line:27,column:46}},'6':{start:{line:28,column:23},end:{line:31,column:94}},'7':{start:{line:29,column:6},end:{line:31,column:93}},'8':{start:{line:32,column:4},end:{line:35,column:15}},'9':{start:{line:38,column:0},end:{line:44,column:2}},'10':{start:{line:45,column:0},end:{line:50,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:15,column:30},end:{line:15,column:31}},loc:{start:{line:15,column:45},end:{line:19,column:3}},line:15},'1':{name:'(anonymous_1)',decl:{start:{line:21,column:16},end:{line:21,column:17}},loc:{start:{line:21,column:27},end:{line:24,column:3}},line:21},'2':{name:'(anonymous_2)',decl:{start:{line:25,column:2},end:{line:25,column:3}},loc:{start:{line:25,column:12},end:{line:36,column:3}},line:25},'3':{name:'(anonymous_3)',decl:{start:{line:28,column:43},end:{line:28,column:44}},loc:{start:{line:29,column:6},end:{line:31,column:93}},line:29}},branchMap:{'0':{loc:{start:{line:16,column:4},end:{line:18,column:5}},type:'if',locations:[{start:{line:16,column:4},end:{line:18,column:5}},{start:{line:16,column:4},end:{line:18,column:5}}],line:16},'1':{loc:{start:{line:16,column:8},end:{line:16,column:120}},type:'binary-expr',locations:[{start:{line:16,column:8},end:{line:16,column:34}},{start:{line:16,column:38},end:{line:16,column:58}},{start:{line:16,column:62},end:{line:16,column:120}}],line:16},'2':{loc:{start:{line:29,column:43},end:{line:29,column:106}},type:'binary-expr',locations:[{start:{line:29,column:43},end:{line:29,column:73}},{start:{line:29,column:77},end:{line:29,column:106}}],line:29}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0},f:{'0':0,'1':0,'2':0,'3':0},b:{'0':[0,0],'1':[0,0,0],'2':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _map=require('lodash/map');var _map2=_interopRequireDefault(_map);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _RadioGroup=require('./RadioGroup.style');var _RadioGroup2=_interopRequireDefault(_RadioGroup);
+var _TopUpRadioButton=require('./TopUpRadioButton.component');var _TopUpRadioButton2=_interopRequireDefault(_TopUpRadioButton);
+var _helper=require('../../../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+RadioGroup=function(_Component){_inherits(RadioGroup,_Component);function RadioGroup(){var _ref;var _temp,_this,_ret;_classCallCheck(this,RadioGroup);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=RadioGroup.__proto__||Object.getPrototypeOf(RadioGroup)).call.apply(_ref,[this].concat(args))),_this),_this.
+state={
+selected:''},_this.
+
+componentWillReceiveProps=function(nextProps){cov_19frm50rry.f[0]++;cov_19frm50rry.s[0]++;
+if((cov_19frm50rry.b[1][0]++,nextProps.showDefaultValue)&&(cov_19frm50rry.b[1][1]++,!_this.state.selected)&&(cov_19frm50rry.b[1][2]++,_this.props.showDefaultValue!==nextProps.showDefaultValue)){cov_19frm50rry.b[0][0]++;cov_19frm50rry.s[1]++;
+_this.radioSelect(_this.props.radioGroupData[0].value);
+}else{cov_19frm50rry.b[0][1]++;}
+},_this.
+
+radioSelect=function(value){cov_19frm50rry.f[1]++;cov_19frm50rry.s[2]++;
+_this.setState({selected:value});cov_19frm50rry.s[3]++;
+_this.props.onChange(value);
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(RadioGroup,[{key:'render',value:function render()
+{var _this2=this;cov_19frm50rry.f[2]++;var _ref2=(cov_19frm50rry.s[4]++,
+this.state),selected=_ref2.selected;var _ref3=(cov_19frm50rry.s[5]++,
+this.props),radioGroupData=_ref3.radioGroupData,style=_ref3.style;
+var radioGroup=(cov_19frm50rry.s[6]++,(0,_map2.default)(radioGroupData,function(radiocomp,index)
+{cov_19frm50rry.f[3]++;cov_19frm50rry.s[7]++;return _react2.default.createElement(_TopUpRadioButton2.default,{key:index,label:(cov_19frm50rry.b[2][0]++,(0,_result2.default)(radiocomp,'label',''))||(cov_19frm50rry.b[2][1]++,(0,_helper.translate)('BILLS_USAGE_MORE')),
+value:(0,_result2.default)(radiocomp,'value',''),index:index,
+radioSelect:_this2.radioSelect,active:selected===(0,_result2.default)(radiocomp,'value','')});}));cov_19frm50rry.s[8]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:[_RadioGroup2.default.container,style]},
+radioGroup));
+
+}}]);return RadioGroup;}(_react.Component);cov_19frm50rry.s[9]++;
+
+RadioGroup.defaultProps={
+radioGroupData:[],
+onChange:_noop2.default,
+showDefaultValue:false,
+style:{}};cov_19frm50rry.s[10]++;
+
+
+RadioGroup.propTypes={
+radioGroupData:_propTypes2.default.array,
+onChange:_propTypes2.default.func,
+showDefaultValue:_propTypes2.default.bool,
+style:_propTypes2.default.object};exports.default=
+
+RadioGroup;

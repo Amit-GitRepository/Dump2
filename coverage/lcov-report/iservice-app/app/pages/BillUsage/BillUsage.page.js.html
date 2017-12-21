@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/pages/BillUsage/BillUsage.page.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">iservice-app/app/pages/BillUsage</a> BillUsage.page.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">29.41% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>5/17</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>3/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">16.67% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>2/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">20% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>3/15</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">37x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">37x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">37x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import BillUsage from '../../components/BillUsage/BillUsage/BillUsage.component';
+import ComponentWithTab from '../../components/ComponentWithTab/ComponentWithTab.component';
+import Proptypes from 'prop-types';
+import React from 'react';
+import result from 'lodash/result';
+import {connect} from 'react-redux';
+import {NavigationActions} from 'react-navigation';
+import * as actions from '../../redux/actions/index.actions';
+&nbsp;
+class BillUsagePage extends ComponentWithTab {
+<span class="fstat-no" title="function not covered" >  re</span>nderWithTab () {
+    const {username, productList, toggleBillDetailCheck, productDetail, billDetail, getProductBillDetails, goToScreen, toggleProductCheck, toggleProductCollapse, setPaymentItems, onBillDetailsClick, getProductCurrentUsage} = <span class="cstat-no" title="statement not covered" >this.props;</span>
+<span class="cstat-no" title="statement not covered" >    return (</span>
+      &lt;BillUsage productList={productList} productDetail={productDetail} billDetail={billDetail}  username={username} goToScreen={goToScreen}
+        toggleProductCheck={toggleProductCheck} toggleProductCollapse={toggleProductCollapse} getProductBillDetails={getProductBillDetails} toggleBillDetailCheck = {toggleBillDetailCheck}
+        setPaymentItems={setPaymentItems} onBillDetailsClick={onBillDetailsClick} getProductCurrentUsage={getProductCurrentUsage}
+      /&gt;
+    );
+  }
+}
+&nbsp;
+BillUsagePage.propTypes = {
+  username: Proptypes.string,
+  goToScreen: Proptypes.func,
+  productList: Proptypes.object,
+  productDetail: Proptypes.object,
+  billDetail: Proptypes.object,
+  toggleProductCheck: Proptypes.func,
+  toggleProductCollapse: Proptypes.func,
+  toggleBillDetailCheck: Proptypes.func,
+  setPaymentItems: Proptypes.func,
+  getProductCurrentUsage: Proptypes.func
+};
+&nbsp;
+export const mapStateToProps = (state) =&gt; ({
+  username: result(state, 'user.profile.first_name', '') + result(state, 'user.profile.last_name', '')
+    || result(state, 'user.profile.display_name', '') ||  result(state, 'user.profile.name', ''),
+  productList: result(state, 'billUsage.productList', {}),
+  productDetail: result(state, 'billUsage.productDetail', {}),
+  billDetail: result(state, 'billUsage.billDetail', {})
+});
+&nbsp;
+// TODO REMOVE HARDCODING : Nav params will come from mock data
+export const mapDispatchToProps = (dispatch) =&gt; ({
+  goToScreen: <span class="fstat-no" title="function not covered" >(s</span>creenName, params = <span class="branch-0 cbranch-no" title="branch not covered" >{})</span> =&gt; <span class="cstat-no" title="statement not covered" >dispatch(NavigationActions.navigate({routeName: screenName, params})),</span>
+  getProductCurrentUsage: <span class="fstat-no" title="function not covered" >(p</span>roductType, subscriberId, convBundleName, productId, productTypePayload, subscriptionType) =&gt; <span class="cstat-no" title="statement not covered" >dispatch(actions.getBillUsageProductDetail({subscriberId, productType, productTypePayload, subscriptionType, productId, convBundleName})),</span>
+  getProductBillDetails: <span class="fstat-no" title="function not covered" >(p</span>roductType, payload) =&gt; <span class="cstat-no" title="statement not covered" >dispatch(actions.getBillUsageProductBillDetail({productType, ...payload})),</span>
+  toggleProductCheck: <span class="fstat-no" title="function not covered" >(p</span>roductType, payload) =&gt; <span class="cstat-no" title="statement not covered" >dispatch(actions.toggleBillUsageProductCheckStatus({productType, ...payload})),</span>
+  toggleBillDetailCheck: <span class="fstat-no" title="function not covered" >(p</span>roductType, payload) =&gt; <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(i</span>nvoiceNos, isChecked, checkedBillSum) =&gt; {</span>
+    const obj = <span class="cstat-no" title="statement not covered" >{productType, invoiceNos, isChecked, checkedBillSum, ...payload};</span>
+<span class="cstat-no" title="statement not covered" >    dispatch(actions.toggleBillDetailCheckStatus(obj));</span>
+  },
+  toggleProductCollapse: <span class="fstat-no" title="function not covered" >(p</span>roductType, subscriberId, convBundleName, productId, productTypePayload, subscriptionType, accountId, selectedTabNumber) =&gt;
+<span class="cstat-no" title="statement not covered" >    dispatch(actions.toggleBillUsageProductCollapseStatus({productType, subscriberId, convBundleName, productId, productTypePayload, subscriptionType, accountId, selectedTabNumber})),</span>
+  setPaymentItems: <span class="fstat-no" title="function not covered" >(i</span>tems) =&gt; <span class="cstat-no" title="statement not covered" >dispatch(actions.setPaymentItems(items)),</span>
+  onBillDetailsClick: <span class="fstat-no" title="function not covered" >(i</span>nvoiceNo) =&gt; <span class="cstat-no" title="statement not covered" >dispatch(actions.getInvoicePdf(invoiceNo))</span>
+});
+&nbsp;
+export default connect(mapStateToProps, mapDispatchToProps)(BillUsagePage);
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

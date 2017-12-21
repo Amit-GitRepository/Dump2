@@ -1,0 +1,28 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_2q2gtyb4af=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/__helpers__/echoServer.helper.js',hash='38b44cb0e7a55cf69e751e318e798c992bc8da20',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/__helpers__/echoServer.helper.js',statementMap:{'0':{start:{line:6,column:2},end:{line:11,column:3}},'1':{start:{line:7,column:4},end:{line:9,column:13}},'2':{start:{line:8,column:6},end:{line:8,column:16}},'3':{start:{line:10,column:4},end:{line:10,column:59}},'4':{start:{line:13,column:16},end:{line:13,column:52}},'5':{start:{line:14,column:21},end:{line:14,column:23}},'6':{start:{line:15,column:2},end:{line:15,column:47}},'7':{start:{line:15,column:27},end:{line:15,column:45}},'8':{start:{line:16,column:2},end:{line:27,column:7}},'9':{start:{line:16,column:27},end:{line:16,column:45}},'10':{start:{line:18,column:6},end:{line:18,column:29}},'11':{start:{line:20,column:19},end:{line:20,column:49}},'12':{start:{line:21,column:6},end:{line:21,column:56}},'13':{start:{line:22,column:42},end:{line:22,column:45}},'14':{start:{line:23,column:6},end:{line:23,column:45}},'15':{start:{line:24,column:22},end:{line:24,column:57}},'16':{start:{line:25,column:6},end:{line:25,column:41}},'17':{start:{line:26,column:6},end:{line:26,column:16}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:5,column:39},end:{line:5,column:40}},loc:{start:{line:5,column:53},end:{line:28,column:1}},line:5},'1':{name:'(anonymous_1)',decl:{start:{line:7,column:15},end:{line:7,column:16}},loc:{start:{line:7,column:21},end:{line:9,column:5}},line:7},'2':{name:'(anonymous_2)',decl:{start:{line:15,column:18},end:{line:15,column:19}},loc:{start:{line:15,column:27},end:{line:15,column:45}},line:15},'3':{name:'(anonymous_3)',decl:{start:{line:16,column:18},end:{line:16,column:19}},loc:{start:{line:16,column:27},end:{line:16,column:45}},line:16},'4':{name:'(anonymous_4)',decl:{start:{line:17,column:16},end:{line:17,column:17}},loc:{start:{line:17,column:27},end:{line:19,column:5}},line:17},'5':{name:'(anonymous_5)',decl:{start:{line:19,column:17},end:{line:19,column:18}},loc:{start:{line:19,column:23},end:{line:27,column:5}},line:19}},branchMap:{'0':{loc:{start:{line:6,column:2},end:{line:11,column:3}},type:'if',locations:[{start:{line:6,column:2},end:{line:11,column:3}},{start:{line:6,column:2},end:{line:11,column:3}}],line:6},'1':{loc:{start:{line:22,column:13},end:{line:22,column:25}},type:'default-arg',locations:[{start:{line:22,column:23},end:{line:22,column:25}}],line:22},'2':{loc:{start:{line:23,column:23},end:{line:23,column:44}},type:'binary-expr',locations:[{start:{line:23,column:23},end:{line:23,column:37}},{start:{line:23,column:41},end:{line:23,column:44}}],line:23}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0},b:{'0':[0,0],'1':[0],'2':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();
+var _http=require('http');var _http2=_interopRequireDefault(_http);
+var _url=require('url');var _url2=_interopRequireDefault(_url);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=
+
+_http2.default.createServer(function(req,res){cov_2q2gtyb4af.f[0]++;cov_2q2gtyb4af.s[0]++;
+if(req.url==='/hang'){cov_2q2gtyb4af.b[0][0]++;cov_2q2gtyb4af.s[1]++;
+setTimeout(function(){cov_2q2gtyb4af.f[1]++;cov_2q2gtyb4af.s[2]++;
+res.end();
+},1000);cov_2q2gtyb4af.s[3]++;
+console.log('hanging...not returning a res for 1 sec');
+}else{cov_2q2gtyb4af.b[0][1]++;}
+
+var query=(cov_2q2gtyb4af.s[4]++,_url2.default.parse(req.url,true).query);
+var bodyChunks=(cov_2q2gtyb4af.s[5]++,[]);cov_2q2gtyb4af.s[6]++;
+res.on('error',function(err){cov_2q2gtyb4af.f[2]++;cov_2q2gtyb4af.s[7]++;return console.error(err);});cov_2q2gtyb4af.s[8]++;
+req.on('error',function(err){cov_2q2gtyb4af.f[3]++;cov_2q2gtyb4af.s[9]++;return console.error(err);}).
+on('data',function(chunk){cov_2q2gtyb4af.f[4]++;cov_2q2gtyb4af.s[10]++;
+bodyChunks.push(chunk);
+}).on('end',function(){cov_2q2gtyb4af.f[5]++;
+var body=(cov_2q2gtyb4af.s[11]++,bodyChunks.concat().toString());cov_2q2gtyb4af.s[12]++;
+res.setHeader('Content-Type','application/json');var _ref=(cov_2q2gtyb4af.s[13]++,
+req),_ref$headers=_ref.headers,headers=_ref$headers===undefined?(cov_2q2gtyb4af.b[1][0]++,{}):_ref$headers,method=_ref.method,url=_ref.url;cov_2q2gtyb4af.s[14]++;
+res.statusCode=(cov_2q2gtyb4af.b[2][0]++,headers.status)||(cov_2q2gtyb4af.b[2][1]++,200);
+var resBody=(cov_2q2gtyb4af.s[15]++,{headers:headers,method:method,url:url,body:body,query:query});cov_2q2gtyb4af.s[16]++;
+res.write(JSON.stringify(resBody));cov_2q2gtyb4af.s[17]++;
+res.end();
+});
+});

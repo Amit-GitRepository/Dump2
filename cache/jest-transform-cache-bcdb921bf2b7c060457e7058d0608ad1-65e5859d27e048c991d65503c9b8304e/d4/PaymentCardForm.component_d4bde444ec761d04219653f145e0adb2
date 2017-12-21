@@ -1,0 +1,87 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1yba7wgx78=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Payment/PaymentCardForm/PaymentCardForm.component.js',hash='47d5a0bd034f5cc5e8827e0bcddbf7c5f6e8e892',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Payment/PaymentCardForm/PaymentCardForm.component.js',statementMap:{'0':{start:{line:14,column:32},end:{line:22,column:2}},'1':{start:{line:14,column:39},end:{line:22,column:1}},'2':{start:{line:27,column:55},end:{line:27,column:65}},'3':{start:{line:28,column:4},end:{line:32,column:5}},'4':{start:{line:29,column:6},end:{line:29,column:41}},'5':{start:{line:31,column:6},end:{line:31,column:43}},'6':{start:{line:36,column:24},end:{line:36,column:40}},'7':{start:{line:37,column:63},end:{line:37,column:73}},'8':{start:{line:38,column:4},end:{line:68,column:6}},'9':{start:{line:71,column:0},end:{line:78,column:2}},'10':{start:{line:79,column:0},end:{line:86,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:14,column:32},end:{line:14,column:33}},loc:{start:{line:14,column:39},end:{line:22,column:1}},line:14},'1':{name:'(anonymous_1)',decl:{start:{line:26,column:13},end:{line:26,column:14}},loc:{start:{line:26,column:26},end:{line:33,column:3}},line:26},'2':{name:'(anonymous_2)',decl:{start:{line:35,column:2},end:{line:35,column:3}},loc:{start:{line:35,column:12},end:{line:69,column:3}},line:35}},branchMap:{'0':{loc:{start:{line:28,column:4},end:{line:32,column:5}},type:'if',locations:[{start:{line:28,column:4},end:{line:32,column:5}},{start:{line:28,column:4},end:{line:32,column:5}}],line:28},'1':{loc:{start:{line:62,column:9},end:{line:66,column:15}},type:'binary-expr',locations:[{start:{line:62,column:9},end:{line:62,column:21}},{start:{line:62,column:25},end:{line:66,column:15}}],line:62}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0},f:{'0':0,'1':0,'2':0},b:{'0':[0,0],'1':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();
+
+var _CardTypes=require('../CardTypes/CardTypes.component');var _CardTypes2=_interopRequireDefault(_CardTypes);
+var _creditCard=require('../../../config/creditCard.config');var _creditCard2=_interopRequireDefault(_creditCard);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _PaymentCardForm=require('./PaymentCardForm.style');var _PaymentCardForm2=_interopRequireDefault(_PaymentCardForm);
+var _Shared=require('../../Shared');
+var _payment=require('../../../config/payment.config');
+var _lodash=require('lodash');
+var _helper=require('../../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}cov_1yba7wgx78.s[0]++;
+
+var generateSaveCardMessage=function generateSaveCardMessage(){cov_1yba7wgx78.f[0]++;cov_1yba7wgx78.s[1]++;return{
+title:(0,_helper.translate)('PAYMENT__SAVE_CARD_MODAL_HEADER'),
+body:(0,_helper.translate)('PAYMENT__SAVE_CARD_MODAL_DESC'),
+buttons:[
+{
+title:(0,_helper.translate)('BUTTON__OK')}]};
+
+
+};var
+
+PaymentCardForm=function(_Component){_inherits(PaymentCardForm,_Component);function PaymentCardForm(){var _ref;var _temp,_this,_ret;_classCallCheck(this,PaymentCardForm);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=PaymentCardForm.__proto__||Object.getPrototypeOf(PaymentCardForm)).call.apply(_ref,[this].concat(args))),_this),_this.
+
+saveCard=function(isSaved){cov_1yba7wgx78.f[1]++;var _ref2=(cov_1yba7wgx78.s[2]++,
+_this.props),noOfSavedCards=_ref2.noOfSavedCards,onDataChanged=_ref2.onDataChanged,showPopup=_ref2.showPopup;cov_1yba7wgx78.s[3]++;
+if(noOfSavedCards<_payment.MAXIMUM_SAVE_CARD_COUNT){cov_1yba7wgx78.b[0][0]++;cov_1yba7wgx78.s[4]++;
+onDataChanged('saveCard')(isSaved);
+}else{cov_1yba7wgx78.b[0][1]++;cov_1yba7wgx78.s[5]++;
+showPopup(generateSaveCardMessage());
+}
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(PaymentCardForm,[{key:'render',value:function render()
+
+{cov_1yba7wgx78.f[2]++;var _ref3=(cov_1yba7wgx78.s[6]++,_creditCard2.default),
+maxLength=_ref3.maxLength;var _ref4=(cov_1yba7wgx78.s[7]++,
+this.props),canSaveCards=_ref4.canSaveCards,cardLimit=_ref4.cardLimit,formData=_ref4.formData,onDataChanged=_ref4.onDataChanged;cov_1yba7wgx78.s[8]++;
+return(
+_react2.default.createElement(_reactNative.View,null,
+_react2.default.createElement(_reactNative.View,{style:_PaymentCardForm2.default.rowContainer},
+_react2.default.createElement(_Shared.ISText,{type:'SEMIBOLD',style:_PaymentCardForm2.default.text},(0,_helper.translate)('PAYMENT__CARD_NUMBER')),
+_react2.default.createElement(_CardTypes2.default,null)),
+
+_react2.default.createElement(_Shared.IconTextInput,{keyboardType:'numeric',type:'SECONDARY',defaultValue:formData.number,placeholder:'Card Number',
+onChangeText:onDataChanged('number'),maxLength:maxLength.cardNo}),
+_react2.default.createElement(_Shared.ISText,{type:'SEMIBOLD',style:_PaymentCardForm2.default.text},(0,_helper.translate)('PAYMENT__CARD_NAME')),
+_react2.default.createElement(_Shared.IconTextInput,{type:'SECONDARY',defaultValue:formData.name,placeholder:'Cardholder Name',
+onChangeText:onDataChanged('name'),maxLength:maxLength.name}),
+_react2.default.createElement(_reactNative.View,{style:_PaymentCardForm2.default.rowContainer},
+_react2.default.createElement(_reactNative.View,{style:_PaymentCardForm2.default.expiryContainer},
+_react2.default.createElement(_Shared.ISText,{type:'SEMIBOLD',style:_PaymentCardForm2.default.text},(0,_helper.translate)('PAYMENT__CARD_EXPIRY')),
+
+_react2.default.createElement(_Shared.IconTextInput,{type:'SECONDARY',defaultValue:formData.expirationDate,
+placeholder:'Date (MM/YYYY)',onChangeText:onDataChanged('expirationDate'),maxLength:maxLength.date})),
+
+_react2.default.createElement(_reactNative.View,{style:_PaymentCardForm2.default.fullFlex},
+_react2.default.createElement(_Shared.ISText,{type:'SEMIBOLD',style:_PaymentCardForm2.default.text},(0,_helper.translate)('PAYMENT__CARD_SECURITY')),
+_react2.default.createElement(_Shared.IconTextInput,{keyboardType:'numeric',containerStyle:_PaymentCardForm2.default.fullFlex,type:'SECONDARY',defaultValue:formData.securityCode,
+placeholder:'Security Code',onChangeText:onDataChanged('securityCode'),secureTextEntry:true,maxLength:maxLength.cvv}))),
+
+
+(cov_1yba7wgx78.b[1][0]++,canSaveCards)&&(cov_1yba7wgx78.b[1][1]++,_react2.default.createElement(_reactNative.View,{style:_PaymentCardForm2.default.saveCardContainer},
+_react2.default.createElement(_Shared.Checkbox,{style:_PaymentCardForm2.default.checkbox,onChange:this.saveCard,isChecked:formData.saveCard}),
+_react2.default.createElement(_Shared.ISText,{type:'SEMIBOLD',style:_PaymentCardForm2.default.text},(0,_helper.translate)('PAYMENT__SAVE_CARD')),
+_react2.default.createElement(_Shared.ISText,{type:'REGULAR',style:_PaymentCardForm2.default.subtext},(0,_helper.translate)('PAYMENT__MAX_CARDS_LIMIT',{limit:cardLimit}))))));
+
+
+
+}}]);return PaymentCardForm;}(_react.Component);cov_1yba7wgx78.s[9]++;
+
+PaymentCardForm.defaultProps={
+noOfSavedCards:0,
+cardLimit:0,
+formData:{},
+onDataChanged:_lodash.noop,
+showPopup:_lodash.noop,
+canSaveCards:true};cov_1yba7wgx78.s[10]++;
+
+PaymentCardForm.propTypes={
+noOfSavedCards:_propTypes2.default.number,
+cardLimit:_propTypes2.default.number,
+formData:_propTypes2.default.object,
+showPopup:_propTypes2.default.func,
+onDataChanged:_propTypes2.default.func,
+canSaveCards:_propTypes2.default.bool};exports.default=
+
+PaymentCardForm;

@@ -1,0 +1,47 @@
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);
+var _TOnlineProductCard=require('../TOnlineProductCard.component');var _TOnlineProductCard2=_interopRequireDefault(_TOnlineProductCard);
+var _enzyme=require('enzyme');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+describe('TOnlineProductCard component',function(){
+it('renders correctly',function(){
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_TOnlineProductCard2.default,null)).toJSON();
+expect(component).toMatchSnapshot();
+});
+it('should shallow render with default props',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_TOnlineProductCard2.default,null));
+expect(wrapper).toBeDefined();
+});
+});
+
+describe('onBillToggle function',function(){
+it('should set the totalAmount in state to the sum of all due bills',function(){
+var mockBill={
+invoiceNo:'1234',
+dueDate:'2018-04-04T00:00:00.000+07:00',
+billAmount:2461,
+unpaidAmount:1230.5,
+invoiceStatus:'O',
+invoiceCycle:'10/3/2018',
+isChecked:true};
+
+var mockDueBills=[
+{
+invoiceNo:'1234',
+dueDate:'2018-04-04T00:00:00.000+07:00',
+billAmount:2461,
+unpaidAmount:1230.5,
+invoiceStatus:'O',
+invoiceCycle:'10/3/2018',
+isChecked:true}];
+
+
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_TOnlineProductCard2.default,{amount:200,dueBills:mockDueBills}));
+var instance=wrapper.instance();
+instance.onBillToggle(mockBill)(true);
+expect(instance.state.totalAmount).toEqual(1430.5);
+});
+});

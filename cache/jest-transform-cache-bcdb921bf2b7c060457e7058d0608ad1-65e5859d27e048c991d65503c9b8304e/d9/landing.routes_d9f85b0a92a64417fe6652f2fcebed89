@@ -1,0 +1,50 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.landingRouteConfig=undefined;var cov_ayhptekfz=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/routes/landing.routes.js',hash='82b9ff16956c6c5617fb1032ec1644feb8d706c3',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/routes/landing.routes.js',statementMap:{'0':{start:{line:10,column:34},end:{line:48,column:1}}},fnMap:{},branchMap:{},s:{'0':0},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _CreditCard=require('../pages/Payment/CreditCard.page');var _CreditCard2=_interopRequireDefault(_CreditCard);
+var _Landing=require('../pages/Landing/Landing.page');var _Landing2=_interopRequireDefault(_Landing);
+var _Launch=require('../pages/Launch/Launch.page');var _Launch2=_interopRequireDefault(_Launch);
+var _Payment=require('../pages/Payment/Payment.page');var _Payment2=_interopRequireDefault(_Payment);
+var _PaymentMethods=require('../pages/Payment/PaymentMethods.page');var _PaymentMethods2=_interopRequireDefault(_PaymentMethods);
+var _PaymentStatus=require('../pages/Payment/PaymentStatus.page');var _PaymentStatus2=_interopRequireDefault(_PaymentStatus);
+var _route=require('./helpers/route.helper');
+var _reactNavigation=require('react-navigation');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+var landingRouteConfig=exports.landingRouteConfig=(cov_ayhptekfz.s[0]++,{
+LaunchPage:{
+screen:_Launch2.default,
+requireLogin:false,
+gaScreenName:'Launch Page'},
+
+Landing:{
+screen:_Landing2.default,
+navigationOptions:_route.getStackNavOption,
+requireLogin:false,
+title:'SIDE_MENU__LANDING',
+showHamburger:true,
+gaScreenName:'Landing Page'},
+
+PaymentStatus:{
+screen:_PaymentStatus2.default,
+navigationOptions:_route.getStackNavOption,
+requireLogin:true,
+title:'LANDING__PAY_OTHERS_TITLE'},
+
+PaymentMethods:{
+screen:_PaymentMethods2.default,
+navigationOptions:_route.getStackNavOption,
+requireLogin:true,
+title:'LANDING__PAY_OTHERS_TITLE'},
+
+Payment:{
+screen:_Payment2.default,
+navigationOptions:_route.getStackNavOption,
+requireLogin:true,
+title:'LANDING__PAY_OTHERS_TITLE'},
+
+CreditCard:{
+screen:_CreditCard2.default,
+navigationOptions:_route.getStackNavOption,
+requireLogin:true,
+title:'LANDING__PAY_OTHERS_TITLE'}});exports.default=
+
+
+
+(0,_reactNavigation.StackNavigator)(landingRouteConfig);

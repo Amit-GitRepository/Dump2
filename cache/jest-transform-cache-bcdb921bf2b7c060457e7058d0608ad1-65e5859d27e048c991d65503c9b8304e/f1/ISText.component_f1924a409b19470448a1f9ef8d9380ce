@@ -1,0 +1,33 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_18slsyv801=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/ISText/ISText.component.js',hash='a758731de0a089841cb88e17a1286c129f7fc628',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/ISText/ISText.component.js',statementMap:{'0':{start:{line:9,column:51},end:{line:9,column:61}},'1':{start:{line:10,column:28},end:{line:10,column:70}},'2':{start:{line:11,column:22},end:{line:11,column:131}},'3':{start:{line:12,column:4},end:{line:14,column:6}},'4':{start:{line:18,column:0},end:{line:22,column:2}},'5':{start:{line:24,column:0},end:{line:31,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:8,column:2},end:{line:8,column:3}},loc:{start:{line:8,column:12},end:{line:15,column:3}},line:8}},branchMap:{'0':{loc:{start:{line:11,column:22},end:{line:11,column:131}},type:'cond-expr',locations:[{start:{line:11,column:45},end:{line:11,column:82}},{start:{line:11,column:85},end:{line:11,column:131}}],line:11}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0},f:{'0':0},b:{'0':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ISText=require('./ISText.style');var _ISText2=_interopRequireDefault(_ISText);
+var _constants=require('../../../themes/constants.styles');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _objectWithoutProperties(obj,keys){var target={};for(var i in obj){if(keys.indexOf(i)>=0)continue;if(!Object.prototype.hasOwnProperty.call(obj,i))continue;target[i]=obj[i];}return target;}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+ISText=function(_Component){_inherits(ISText,_Component);function ISText(){_classCallCheck(this,ISText);return _possibleConstructorReturn(this,(ISText.__proto__||Object.getPrototypeOf(ISText)).apply(this,arguments));}_createClass(ISText,[{key:'render',value:function render()
+{cov_18slsyv801.f[0]++;var _ref=(cov_18slsyv801.s[0]++,
+this.props),type=_ref.type,style=_ref.style,children=_ref.children,extraProps=_objectWithoutProperties(_ref,['type','style','children']);
+var fontFamilyStyle=(cov_18slsyv801.s[1]++,{fontFamily:_constants.fonts['FONT_FAMILY_'+type]});
+var textStyle=(cov_18slsyv801.s[2]++,Array.isArray(style)?(cov_18slsyv801.b[0][0]++,[_ISText2.default.text,style,fontFamilyStyle]):(cov_18slsyv801.b[0][1]++,_extends({},_ISText2.default.text,style,fontFamilyStyle)));cov_18slsyv801.s[3]++;
+return(
+_react2.default.createElement(_reactNative.Text,_extends({style:textStyle},extraProps),children));
+
+}}]);return ISText;}(_react.Component);cov_18slsyv801.s[4]++;
+
+
+ISText.defaultProps={
+type:'REGULAR',
+style:{},
+children:null};cov_18slsyv801.s[5]++;
+
+
+ISText.propTypes={
+type:_propTypes2.default.oneOf(['REGULAR','BOLD','LIGHT','MEDIUM','SEMIBOLD','THIN']),
+style:_propTypes2.default.oneOfType([
+_propTypes2.default.object,
+_propTypes2.default.array]),
+
+children:_propTypes2.default.node};exports.default=
+
+
+ISText;

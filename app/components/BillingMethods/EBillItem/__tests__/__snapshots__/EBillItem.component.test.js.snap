@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EBillItem component renders correctly with SMS option 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": 1,
+        "padding": 15,
+      },
+      Object {
+        "borderBottomColor": "#E9E9EA",
+        "borderBottomWidth": 1,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "marginBottom": 5,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "backgroundColor": "transparent",
+          "color": "#303C46",
+          "fontFamily": "SukhumvitSet-Bold",
+          "fontSize": 22,
+        }
+      }
+    >
+      9876543210
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "backgroundColor": "transparent",
+          "color": "#E82E8A",
+          "fontFamily": "SukhumvitSet-Bold",
+        }
+      }
+    >
+      True Vision
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "backgroundColor": "transparent",
+          "color": "#303C46",
+          "fontFamily": "SukhumvitSet-Bold",
+          "fontSize": 18,
+          "paddingTop": 4,
+        }
+      }
+    >
+      SMS
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "backgroundColor": "transparent",
+          "color": "#303C46",
+          "fontFamily": "SukhumvitSet-Text",
+          "fontSize": 16,
+          "paddingTop": 4,
+        }
+      }
+    >
+      9876543210
+    </Text>
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      collapsable={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      nativeID={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignSelf": "stretch",
+          "backgroundColor": "transparent",
+          "borderRadius": 50,
+          "borderWidth": 0,
+          "opacity": 1,
+          "padding": 5,
+        }
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <View
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "#303C46",
+                },
+                Array [
+                  Object {
+                    "color": "#F93E60",
+                    "fontSize": 16,
+                  },
+                  Object {},
+                ],
+                Object {
+                  "fontFamily": "SukhumvitSet-SemiBold",
+                },
+              ]
+            }
+          >
+            Edit
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

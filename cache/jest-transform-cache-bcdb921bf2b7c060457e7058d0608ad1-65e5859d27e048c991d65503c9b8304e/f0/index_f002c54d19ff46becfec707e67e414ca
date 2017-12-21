@@ -1,0 +1,30 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.setNativeExceptionHandler=exports.getJSExceptionHandler=exports.setJSExceptionHandler=undefined;
+var _reactNative=require('react-native');var
+
+ReactNativeExceptionHandler=_reactNative.NativeModules.ReactNativeExceptionHandler;
+
+var noop=function noop(){};
+
+var setJSExceptionHandler=exports.setJSExceptionHandler=function setJSExceptionHandler(){var customHandler=arguments.length>0&&arguments[0]!==undefined?arguments[0]:noop;var allowedInDevMode=arguments.length>1&&arguments[1]!==undefined?arguments[1]:false;
+var allowed=allowedInDevMode?true:!__DEV__;
+if(allowed){
+global.ErrorUtils.setGlobalHandler(customHandler);
+console.error=function(message,error){return global.ErrorUtils.reportError(error);};
+}else{
+console.log('Skipping setJSExceptionHandler: Reason: In DEV mode and allowedInDevMode = false');
+}
+};
+
+var getJSExceptionHandler=exports.getJSExceptionHandler=function getJSExceptionHandler(){return global.ErrorUtils.getGlobalHandler();};
+
+var setNativeExceptionHandler=exports.setNativeExceptionHandler=function setNativeExceptionHandler(){var customErrorHandler=arguments.length>0&&arguments[0]!==undefined?arguments[0]:noop;
+if(typeof customErrorHandler!=='function'){
+customErrorHandler=noop;
+}
+ReactNativeExceptionHandler.setHandlerforNativeException(customErrorHandler);
+};exports.default=
+
+{
+setJSExceptionHandler:setJSExceptionHandler,
+getJSExceptionHandler:getJSExceptionHandler,
+setNativeExceptionHandler:setNativeExceptionHandler};

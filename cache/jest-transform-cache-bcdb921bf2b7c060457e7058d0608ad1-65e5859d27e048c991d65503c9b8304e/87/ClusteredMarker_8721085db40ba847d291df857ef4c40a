@@ -1,0 +1,149 @@
+Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _reactNative=require('react-native');
+var _reactNativeMaps=require('react-native-maps');
+var _reactNativeDimension=require('react-native-dimension');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}
+
+var height=(0,_reactNativeDimension.height)(100);
+var width=(0,_reactNativeDimension.width)(100);var
+
+CustomMarker=function(_Component){_inherits(CustomMarker,_Component);
+
+function CustomMarker(props){_classCallCheck(this,CustomMarker);var _this=_possibleConstructorReturn(this,(CustomMarker.__proto__||Object.getPrototypeOf(CustomMarker)).call(this,
+props));
+_this.state={
+isLoaded:false,
+props:{},
+value:0,
+clusterColor:'#F5F5F5',
+clusterTextColor:'#FF5252',
+clusterBorderColor:'#FF5252',
+clusterBorderWidth:1};return _this;
+
+}_createClass(CustomMarker,[{key:'shouldComponentUpdate',value:function shouldComponentUpdate(
+
+nextProps,nextState){
+
+
+
+
+
+
+return true;
+}},{key:'render',value:function render()
+
+{var _this2=this;
+
+this.state.value=this.props.value;
+this.state.props=this.props.props;
+
+this.state.clusterColor=this.props.clusterColor;
+this.state.clusterTextColor=this.props.clusterTextColor;
+this.state.clusterBorderColor=this.props.clusterBorderColor;
+this.state.clusterBorderWidth=this.props.clusterBorderWidth;
+
+if(this.state.clusterColor===undefined||this.state.clusterColor==''){
+this.state.clusterColor='#F5F5F5';
+}if(this.state.clusterTextColor===undefined||this.state.clusterTextColor==''){
+this.state.clusterTextColor='#FF5252';
+}if(this.state.clusterBorderColor===undefined||this.state.clusterBorderColor==''){
+this.state.clusterBorderColor='#FF5252';
+}if(this.state.clusterBorderWidth===undefined||this.state.clusterBorderWidth==''){
+this.state.clusterBorderWidth=1;
+}
+
+var textForCluster='';
+var markerWidth=void 0,markerHeight=void 0,textSize=void 0;
+var value=this.state.value;
+
+if(value>=2&&value<=10){
+textForCluster=value.toString();
+markerWidth=width*2/15;
+markerHeight=width*2/15;
+textSize=height/40;
+}if(value>10&&value<=25){
+textForCluster='10+';
+markerWidth=width/7;
+markerHeight=width/7;
+textSize=height/40;
+}if(value>25&&value<=50){
+textForCluster='25+';
+markerWidth=width*2/13;
+markerHeight=width*2/13;
+textSize=height/40;
+}if(value>50&&value<=100){
+textForCluster='50+';
+markerWidth=width/6;
+markerHeight=width/6;
+textSize=height/38;
+}if(value>100){
+textForCluster='100+';
+markerWidth=width*2/11;
+markerHeight=width*2/11;
+textSize=height/38;
+}
+
+var htmlElement=void 0;
+var isCluster=void 0;
+if(textForCluster!==''){
+isCluster=1;
+if(this.props.customClusterMarkerDesign&&typeof this.props.customClusterMarkerDesign==="object"){
+htmlElement=_react2.default.createElement(_reactNative.View,{style:{width:markerWidth,height:markerHeight,justifyContent:'center',alignItems:'center'}},
+_react2.default.createElement(_reactNative.Text,{style:{width:markerWidth,textAlign:'center',position:'absolute',
+fontSize:textSize,backgroundColor:'transparent',color:this.state.clusterTextColor,fontWeight:'bold'},
+children:textForCluster}),
+this.props.customClusterMarkerDesign);
+
+}else{
+htmlElement=
+_react2.default.createElement(_reactNative.View,{style:{borderRadius:markerWidth,position:'relative',backgroundColor:this.state.clusterColor,width:markerWidth,height:markerHeight,
+borderWidth:this.state.clusterBorderWidth,borderColor:this.state.clusterBorderColor,justifyContent:'center',alignItems:'center'}},
+_react2.default.createElement(_reactNative.Text,{
+style:{width:markerWidth,textAlign:'center',
+fontSize:textSize,backgroundColor:'transparent',color:this.state.clusterTextColor,fontWeight:'bold'}},
+textForCluster));
+
+}
+}else{
+isCluster=0;
+if(this.props.children!==undefined){
+htmlElement=this.props.children;
+}else{
+htmlElement=null;
+}
+}
+
+if(isCluster===1){
+if(this.props.onClusterPress){
+return(
+_react2.default.createElement(_reactNativeMaps.Marker,_extends({
+key:isCluster},
+this.state.props,{
+onPress:function onPress(){
+_this2.props.onClusterPress(_this2.state.props.coordinate);
+},
+title:null}),
+
+htmlElement));
+
+
+}else{
+return(
+_react2.default.createElement(_reactNativeMaps.Marker,_extends({
+key:isCluster},
+this.state.props,{
+title:null}),
+
+htmlElement));
+
+
+}
+}else{
+return(
+_react2.default.createElement(_reactNativeMaps.Marker,_extends({
+key:isCluster},
+this.state.props),
+htmlElement));
+
+
+}
+}}]);return CustomMarker;}(_react.Component);exports.default=CustomMarker;

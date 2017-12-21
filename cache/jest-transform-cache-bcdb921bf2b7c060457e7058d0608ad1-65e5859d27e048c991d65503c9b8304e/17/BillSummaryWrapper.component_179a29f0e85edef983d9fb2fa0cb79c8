@@ -1,0 +1,191 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1qsfqe7n26=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/TopLevelCards/BillSummaryWrapper/BillSummaryWrapper.component.js',hash='2f5cdd16fa3228bd8e94c243826e84ec4de87804',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/TopLevelCards/BillSummaryWrapper/BillSummaryWrapper.component.js',statementMap:{'0':{start:{line:15,column:42},end:{line:15,column:64}},'1':{start:{line:16,column:22},end:{line:16,column:93}},'2':{start:{line:16,column:39},end:{line:16,column:93}},'3':{start:{line:17,column:4},end:{line:17,column:114}},'4':{start:{line:20,column:67},end:{line:20,column:77}},'5':{start:{line:21,column:26},end:{line:21,column:28}},'6':{start:{line:22,column:4},end:{line:33,column:7}},'7':{start:{line:23,column:22},end:{line:31,column:12}},'8':{start:{line:24,column:63},end:{line:24,column:70}},'9':{start:{line:25,column:8},end:{line:29,column:9}},'10':{start:{line:26,column:33},end:{line:26,column:87}},'11':{start:{line:27,column:32},end:{line:27,column:109}},'12':{start:{line:28,column:10},end:{line:28,column:119}},'13':{start:{line:30,column:8},end:{line:30,column:25}},'14':{start:{line:32,column:6},end:{line:32,column:37}},'15':{start:{line:34,column:4},end:{line:34,column:35}},'16':{start:{line:35,column:4},end:{line:35,column:26}},'17':{start:{line:39,column:281},end:{line:39,column:291}},'18':{start:{line:40,column:42},end:{line:40,column:53}},'19':{start:{line:41,column:28},end:{line:57,column:6}},'20':{start:{line:42,column:33},end:{line:42,column:51}},'21':{start:{line:43,column:24},end:{line:43,column:87}},'22':{start:{line:43,column:69},end:{line:43,column:86}},'23':{start:{line:44,column:36},end:{line:44,column:65}},'24':{start:{line:45,column:6},end:{line:49,column:7}},'25':{start:{line:46,column:8},end:{line:46,column:76}},'26':{start:{line:48,column:8},end:{line:48,column:39}},'27':{start:{line:50,column:44},end:{line:50,column:77}},'28':{start:{line:51,column:43},end:{line:51,column:85}},'29':{start:{line:51,column:49},end:{line:51,column:85}},'30':{start:{line:52,column:46},end:{line:52,column:306}},'31':{start:{line:52,column:141},end:{line:52,column:306}},'32':{start:{line:52,column:147},end:{line:52,column:306}},'33':{start:{line:53,column:43},end:{line:53,column:99}},'34':{start:{line:53,column:49},end:{line:53,column:99}},'35':{start:{line:54,column:6},end:{line:56,column:8}},'36':{start:{line:59,column:22},end:{line:82,column:6}},'37':{start:{line:60,column:82},end:{line:60,column:94}},'38':{start:{line:61,column:26},end:{line:61,column:57}},'39':{start:{line:62,column:38},end:{line:62,column:94}},'40':{start:{line:63,column:39},end:{line:63,column:91}},'41':{start:{line:64,column:37},end:{line:64,column:92}},'42':{start:{line:64,column:43},end:{line:64,column:92}},'43':{start:{line:65,column:37},end:{line:65,column:92}},'44':{start:{line:65,column:43},end:{line:65,column:92}},'45':{start:{line:66,column:48},end:{line:73,column:7}},'46':{start:{line:67,column:8},end:{line:72,column:9}},'47':{start:{line:68,column:10},end:{line:68,column:70}},'48':{start:{line:70,column:10},end:{line:70,column:77}},'49':{start:{line:71,column:10},end:{line:71,column:110}},'50':{start:{line:74,column:38},end:{line:77,column:7}},'51':{start:{line:75,column:8},end:{line:76,column:110}},'52':{start:{line:78,column:40},end:{line:78,column:175}},'53':{start:{line:78,column:46},end:{line:78,column:175}},'54':{start:{line:79,column:6},end:{line:81,column:8}},'55':{start:{line:84,column:23},end:{line:109,column:6}},'56':{start:{line:85,column:82},end:{line:85,column:96}},'57':{start:{line:86,column:39},end:{line:86,column:87}},'58':{start:{line:87,column:40},end:{line:87,column:84}},'59':{start:{line:88,column:38},end:{line:88,column:85}},'60':{start:{line:88,column:44},end:{line:88,column:85}},'61':{start:{line:89,column:41},end:{line:89,column:168}},'62':{start:{line:89,column:47},end:{line:89,column:168}},'63':{start:{line:90,column:38},end:{line:90,column:85}},'64':{start:{line:90,column:44},end:{line:90,column:85}},'65':{start:{line:91,column:49},end:{line:98,column:7}},'66':{start:{line:92,column:8},end:{line:97,column:9}},'67':{start:{line:93,column:10},end:{line:93,column:70}},'68':{start:{line:95,column:10},end:{line:95,column:37}},'69':{start:{line:96,column:10},end:{line:96,column:95}},'70':{start:{line:99,column:39},end:{line:102,column:7}},'71':{start:{line:100,column:8},end:{line:101,column:102}},'72':{start:{line:103,column:6},end:{line:108,column:8}},'73':{start:{line:111,column:23},end:{line:134,column:6}},'74':{start:{line:112,column:82},end:{line:112,column:96}},'75':{start:{line:113,column:39},end:{line:113,column:87}},'76':{start:{line:114,column:40},end:{line:114,column:84}},'77':{start:{line:115,column:38},end:{line:115,column:85}},'78':{start:{line:115,column:44},end:{line:115,column:85}},'79':{start:{line:116,column:41},end:{line:116,column:168}},'80':{start:{line:116,column:47},end:{line:116,column:168}},'81':{start:{line:117,column:38},end:{line:117,column:85}},'82':{start:{line:117,column:44},end:{line:117,column:85}},'83':{start:{line:118,column:50},end:{line:125,column:7}},'84':{start:{line:119,column:8},end:{line:124,column:9}},'85':{start:{line:120,column:10},end:{line:120,column:70}},'86':{start:{line:122,column:10},end:{line:122,column:37}},'87':{start:{line:123,column:10},end:{line:123,column:98}},'88':{start:{line:126,column:39},end:{line:129,column:7}},'89':{start:{line:127,column:8},end:{line:128,column:102}},'90':{start:{line:130,column:6},end:{line:133,column:8}},'91':{start:{line:136,column:24},end:{line:136,column:51}},'92':{start:{line:137,column:4},end:{line:150,column:22}},'93':{start:{line:154,column:0},end:{line:170,column:2}},'94':{start:{line:172,column:0},end:{line:189,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:14,column:25},end:{line:14,column:26}},loc:{start:{line:14,column:31},end:{line:18,column:3}},line:14},'1':{name:'(anonymous_1)',decl:{start:{line:16,column:22},end:{line:16,column:23}},loc:{start:{line:16,column:39},end:{line:16,column:93}},line:16},'2':{name:'(anonymous_2)',decl:{start:{line:19,column:23},end:{line:19,column:24}},loc:{start:{line:19,column:29},end:{line:36,column:3}},line:19},'3':{name:'(anonymous_3)',decl:{start:{line:22,column:40},end:{line:22,column:41}},loc:{start:{line:22,column:69},end:{line:33,column:5}},line:22},'4':{name:'(anonymous_4)',decl:{start:{line:23,column:38},end:{line:23,column:39}},loc:{start:{line:23,column:62},end:{line:31,column:7}},line:23},'5':{name:'(anonymous_5)',decl:{start:{line:38,column:2},end:{line:38,column:3}},loc:{start:{line:38,column:12},end:{line:151,column:3}},line:38},'6':{name:'(anonymous_6)',decl:{start:{line:41,column:38},end:{line:41,column:39}},loc:{start:{line:41,column:69},end:{line:57,column:5}},line:41},'7':{name:'(anonymous_7)',decl:{start:{line:43,column:56},end:{line:43,column:57}},loc:{start:{line:43,column:69},end:{line:43,column:86}},line:43},'8':{name:'(anonymous_8)',decl:{start:{line:51,column:43},end:{line:51,column:44}},loc:{start:{line:51,column:49},end:{line:51,column:85}},line:51},'9':{name:'(anonymous_9)',decl:{start:{line:52,column:46},end:{line:52,column:47}},loc:{start:{line:52,column:141},end:{line:52,column:306}},line:52},'10':{name:'(anonymous_10)',decl:{start:{line:52,column:141},end:{line:52,column:142}},loc:{start:{line:52,column:147},end:{line:52,column:306}},line:52},'11':{name:'(anonymous_11)',decl:{start:{line:53,column:43},end:{line:53,column:44}},loc:{start:{line:53,column:49},end:{line:53,column:99}},line:53},'12':{name:'(anonymous_12)',decl:{start:{line:59,column:39},end:{line:59,column:40}},loc:{start:{line:59,column:64},end:{line:82,column:5}},line:59},'13':{name:'(anonymous_13)',decl:{start:{line:64,column:37},end:{line:64,column:38}},loc:{start:{line:64,column:43},end:{line:64,column:92}},line:64},'14':{name:'(anonymous_14)',decl:{start:{line:65,column:37},end:{line:65,column:38}},loc:{start:{line:65,column:43},end:{line:65,column:92}},line:65},'15':{name:'(anonymous_15)',decl:{start:{line:66,column:48},end:{line:66,column:49}},loc:{start:{line:66,column:54},end:{line:73,column:7}},line:66},'16':{name:'(anonymous_16)',decl:{start:{line:74,column:38},end:{line:74,column:39}},loc:{start:{line:74,column:44},end:{line:77,column:7}},line:74},'17':{name:'(anonymous_17)',decl:{start:{line:78,column:40},end:{line:78,column:41}},loc:{start:{line:78,column:46},end:{line:78,column:175}},line:78},'18':{name:'(anonymous_18)',decl:{start:{line:84,column:32},end:{line:84,column:33}},loc:{start:{line:84,column:59},end:{line:109,column:5}},line:84},'19':{name:'(anonymous_19)',decl:{start:{line:88,column:38},end:{line:88,column:39}},loc:{start:{line:88,column:44},end:{line:88,column:85}},line:88},'20':{name:'(anonymous_20)',decl:{start:{line:89,column:41},end:{line:89,column:42}},loc:{start:{line:89,column:47},end:{line:89,column:168}},line:89},'21':{name:'(anonymous_21)',decl:{start:{line:90,column:38},end:{line:90,column:39}},loc:{start:{line:90,column:44},end:{line:90,column:85}},line:90},'22':{name:'(anonymous_22)',decl:{start:{line:91,column:49},end:{line:91,column:50}},loc:{start:{line:91,column:55},end:{line:98,column:7}},line:91},'23':{name:'(anonymous_23)',decl:{start:{line:99,column:39},end:{line:99,column:40}},loc:{start:{line:99,column:45},end:{line:102,column:7}},line:99},'24':{name:'(anonymous_24)',decl:{start:{line:111,column:32},end:{line:111,column:33}},loc:{start:{line:111,column:59},end:{line:134,column:5}},line:111},'25':{name:'(anonymous_25)',decl:{start:{line:115,column:38},end:{line:115,column:39}},loc:{start:{line:115,column:44},end:{line:115,column:85}},line:115},'26':{name:'(anonymous_26)',decl:{start:{line:116,column:41},end:{line:116,column:42}},loc:{start:{line:116,column:47},end:{line:116,column:168}},line:116},'27':{name:'(anonymous_27)',decl:{start:{line:117,column:38},end:{line:117,column:39}},loc:{start:{line:117,column:44},end:{line:117,column:85}},line:117},'28':{name:'(anonymous_28)',decl:{start:{line:118,column:50},end:{line:118,column:51}},loc:{start:{line:118,column:56},end:{line:125,column:7}},line:118},'29':{name:'(anonymous_29)',decl:{start:{line:126,column:39},end:{line:126,column:40}},loc:{start:{line:126,column:45},end:{line:129,column:7}},line:126}},branchMap:{'0':{loc:{start:{line:16,column:39},end:{line:16,column:93}},type:'cond-expr',locations:[{start:{line:16,column:63},end:{line:16,column:89}},{start:{line:16,column:92},end:{line:16,column:93}}],line:16},'1':{loc:{start:{line:25,column:8},end:{line:29,column:9}},type:'if',locations:[{start:{line:25,column:8},end:{line:29,column:9}},{start:{line:25,column:8},end:{line:29,column:9}}],line:25},'2':{loc:{start:{line:25,column:12},end:{line:25,column:43}},type:'binary-expr',locations:[{start:{line:25,column:12},end:{line:25,column:21}},{start:{line:25,column:25},end:{line:25,column:43}}],line:25},'3':{loc:{start:{line:27,column:32},end:{line:27,column:109}},type:'cond-expr',locations:[{start:{line:27,column:57},end:{line:27,column:97}},{start:{line:27,column:100},end:{line:27,column:109}}],line:27},'4':{loc:{start:{line:45,column:6},end:{line:49,column:7}},type:'if',locations:[{start:{line:45,column:6},end:{line:49,column:7}},{start:{line:45,column:6},end:{line:49,column:7}}],line:45},'5':{loc:{start:{line:67,column:8},end:{line:72,column:9}},type:'if',locations:[{start:{line:67,column:8},end:{line:72,column:9}},{start:{line:67,column:8},end:{line:72,column:9}}],line:67},'6':{loc:{start:{line:67,column:12},end:{line:67,column:87}},type:'binary-expr',locations:[{start:{line:67,column:12},end:{line:67,column:30}},{start:{line:67,column:34},end:{line:67,column:52}},{start:{line:67,column:56},end:{line:67,column:87}}],line:67},'7':{loc:{start:{line:70,column:10},end:{line:70,column:76}},type:'cond-expr',locations:[{start:{line:70,column:44},end:{line:70,column:69}},{start:{line:70,column:72},end:{line:70,column:76}}],line:70},'8':{loc:{start:{line:75,column:8},end:{line:76,column:109}},type:'cond-expr',locations:[{start:{line:75,column:53},end:{line:75,column:113}},{start:{line:76,column:10},end:{line:76,column:109}}],line:75},'9':{loc:{start:{line:75,column:9},end:{line:75,column:49}},type:'binary-expr',locations:[{start:{line:75,column:9},end:{line:75,column:27}},{start:{line:75,column:31},end:{line:75,column:49}}],line:75},'10':{loc:{start:{line:92,column:8},end:{line:97,column:9}},type:'if',locations:[{start:{line:92,column:8},end:{line:97,column:9}},{start:{line:92,column:8},end:{line:97,column:9}}],line:92},'11':{loc:{start:{line:92,column:12},end:{line:92,column:88}},type:'binary-expr',locations:[{start:{line:92,column:12},end:{line:92,column:30}},{start:{line:92,column:34},end:{line:92,column:52}},{start:{line:92,column:56},end:{line:92,column:88}}],line:92},'12':{loc:{start:{line:100,column:8},end:{line:101,column:101}},type:'cond-expr',locations:[{start:{line:100,column:53},end:{line:100,column:113}},{start:{line:101,column:10},end:{line:101,column:101}}],line:100},'13':{loc:{start:{line:100,column:9},end:{line:100,column:49}},type:'binary-expr',locations:[{start:{line:100,column:9},end:{line:100,column:27}},{start:{line:100,column:31},end:{line:100,column:49}}],line:100},'14':{loc:{start:{line:119,column:8},end:{line:124,column:9}},type:'if',locations:[{start:{line:119,column:8},end:{line:124,column:9}},{start:{line:119,column:8},end:{line:124,column:9}}],line:119},'15':{loc:{start:{line:119,column:12},end:{line:119,column:88}},type:'binary-expr',locations:[{start:{line:119,column:12},end:{line:119,column:30}},{start:{line:119,column:34},end:{line:119,column:52}},{start:{line:119,column:56},end:{line:119,column:88}}],line:119},'16':{loc:{start:{line:127,column:8},end:{line:128,column:101}},type:'cond-expr',locations:[{start:{line:127,column:53},end:{line:127,column:113}},{start:{line:128,column:10},end:{line:128,column:101}}],line:127},'17':{loc:{start:{line:127,column:9},end:{line:127,column:49}},type:'binary-expr',locations:[{start:{line:127,column:9},end:{line:127,column:27}},{start:{line:127,column:31},end:{line:127,column:49}}],line:127}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0,'19':0,'20':0,'21':0,'22':0,'23':0,'24':0,'25':0,'26':0,'27':0,'28':0,'29':0,'30':0,'31':0,'32':0,'33':0,'34':0,'35':0,'36':0,'37':0,'38':0,'39':0,'40':0,'41':0,'42':0,'43':0,'44':0,'45':0,'46':0,'47':0,'48':0,'49':0,'50':0,'51':0,'52':0,'53':0,'54':0,'55':0,'56':0,'57':0,'58':0,'59':0,'60':0,'61':0,'62':0,'63':0,'64':0,'65':0,'66':0,'67':0,'68':0,'69':0,'70':0,'71':0,'72':0,'73':0,'74':0,'75':0,'76':0,'77':0,'78':0,'79':0,'80':0,'81':0,'82':0,'83':0,'84':0,'85':0,'86':0,'87':0,'88':0,'89':0,'90':0,'91':0,'92':0,'93':0,'94':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0,'19':0,'20':0,'21':0,'22':0,'23':0,'24':0,'25':0,'26':0,'27':0,'28':0,'29':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0],'4':[0,0],'5':[0,0],'6':[0,0,0],'7':[0,0],'8':[0,0],'9':[0,0],'10':[0,0],'11':[0,0,0],'12':[0,0],'13':[0,0],'14':[0,0],'15':[0,0,0],'16':[0,0],'17':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _slicedToArray=function(){function sliceIterator(arr,i){var _arr=[];var _n=true;var _d=false;var _e=undefined;try{for(var _i=arr[typeof Symbol==='function'?Symbol.iterator:'@@iterator'](),_s;!(_n=(_s=_i.next()).done);_n=true){_arr.push(_s.value);if(i&&_arr.length===i)break;}}catch(err){_d=true;_e=err;}finally{try{if(!_n&&_i["return"])_i["return"]();}finally{if(_d)throw _e;}}return _arr;}return function(arr,i){if(Array.isArray(arr)){return arr;}else if((typeof Symbol==='function'?Symbol.iterator:'@@iterator')in Object(arr)){return sliceIterator(arr,i);}else{throw new TypeError("Invalid attempt to destructure non-iterable instance");}};}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _BillSummaryWrapper=require('./BillSummaryWrapper.style');var _BillSummaryWrapper2=_interopRequireDefault(_BillSummaryWrapper);
+var _sumBy=require('lodash/sumBy');var _sumBy2=_interopRequireDefault(_sumBy);
+var _Shared=require('../../../../Shared');
+var _lodash=require('lodash');
+var _common=require('../../../../../utils/common.util');
+var _billUsage=require('../../../../../config/billUsage.config');
+var _ProductCards=require('../../ProductCards');
+var _helper=require('../../../../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _toConsumableArray(arr){if(Array.isArray(arr)){for(var i=0,arr2=Array(arr.length);i<arr.length;i++){arr2[i]=arr[i];}return arr2;}else{return Array.from(arr);}}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+BillSummaryWrapper=function(_Component){_inherits(BillSummaryWrapper,_Component);function BillSummaryWrapper(){var _ref;var _temp,_this,_ret;_classCallCheck(this,BillSummaryWrapper);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=BillSummaryWrapper.__proto__||Object.getPrototypeOf(BillSummaryWrapper)).call.apply(_ref,[this].concat(args))),_this),_this.
+calculateTotalAmount=function(){cov_1qsfqe7n26.f[0]++;var _ref2=(cov_1qsfqe7n26.s[0]++,
+_this.props.productList),conv=_ref2.conv,tmhPostpaid=_ref2.tmhPostpaid,tol=_ref2.tol,tvs=_ref2.tvs;cov_1qsfqe7n26.s[1]++;
+var condition=function condition(eachProduct){cov_1qsfqe7n26.f[1]++;cov_1qsfqe7n26.s[2]++;return eachProduct.isChecked?(cov_1qsfqe7n26.b[0][0]++,eachProduct.checkedBillSum):(cov_1qsfqe7n26.b[0][1]++,0);};cov_1qsfqe7n26.s[3]++;
+return(0,_sumBy2.default)(tmhPostpaid,condition)+(0,_sumBy2.default)(tol,condition)+(0,_sumBy2.default)(tvs,condition)+(0,_sumBy2.default)(conv,condition);
+},_this.
+navigateToPayments=function(){cov_1qsfqe7n26.f[2]++;var _ref3=(cov_1qsfqe7n26.s[4]++,
+_this.props),productList=_ref3.productList,goToScreen=_ref3.goToScreen,setPaymentItems=_ref3.setPaymentItems,billDetail=_ref3.billDetail;
+var productsToPay=(cov_1qsfqe7n26.s[5]++,[]);cov_1qsfqe7n26.s[6]++;
+Object.entries(productList).forEach(function(_ref4){var _ref5=_slicedToArray(_ref4,2),productType=_ref5[0],products=_ref5[1];cov_1qsfqe7n26.f[3]++;
+var payload=(cov_1qsfqe7n26.s[7]++,products.reduce(function(aggregate,product){cov_1qsfqe7n26.f[4]++;var _ref6=(cov_1qsfqe7n26.s[8]++,
+product),accountId=_ref6.accountId,bundle=_ref6.bundle,isChecked=_ref6.isChecked,checkedBillSum=_ref6.checkedBillSum;cov_1qsfqe7n26.s[9]++;
+if((cov_1qsfqe7n26.b[2][0]++,isChecked)&&(cov_1qsfqe7n26.b[2][1]++,checkedBillSum>0)){cov_1qsfqe7n26.b[1][0]++;
+var invoiceBcBanId=(cov_1qsfqe7n26.s[10]++,(0,_lodash.result)(billDetail.conv,bundle+'[0].invoiceBcBanId'));
+var accountNumber=(cov_1qsfqe7n26.s[11]++,productType==='conv'?(cov_1qsfqe7n26.b[3][0]++,(0,_lodash.result)(product,'products[0].accountId')):(cov_1qsfqe7n26.b[3][1]++,accountId));cov_1qsfqe7n26.s[12]++;
+aggregate.push({service:productType,amount:checkedBillSum,accountNumber:accountNumber,invoiceBcBanId:invoiceBcBanId});
+}else{cov_1qsfqe7n26.b[1][1]++;}cov_1qsfqe7n26.s[13]++;
+return aggregate;
+},[]));cov_1qsfqe7n26.s[14]++;
+productsToPay.push.apply(productsToPay,_toConsumableArray(payload));
+});cov_1qsfqe7n26.s[15]++;
+setPaymentItems(productsToPay);cov_1qsfqe7n26.s[16]++;
+goToScreen('Payment');
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(BillSummaryWrapper,[{key:'render',value:function render()
+
+{var _this2=this;cov_1qsfqe7n26.f[5]++;var _ref7=(cov_1qsfqe7n26.s[17]++,
+this.props),productList=_ref7.productList,goToScreen=_ref7.goToScreen,billDetail=_ref7.billDetail,productDetail=_ref7.productDetail,onBillDetailsClick=_ref7.onBillDetailsClick,getProductBillDetails=_ref7.getProductBillDetails,toggleBillDetailCheck=_ref7.toggleBillDetailCheck,toggleProductCheck=_ref7.toggleProductCheck,toggleProductCollapse=_ref7.toggleProductCollapse,getProductCurrentUsage=_ref7.getProductCurrentUsage,defaultSelectedTab=_ref7.defaultSelectedTab,validateOTPStatus=_ref7.validateOTPStatus,fromPreLoginScreen=_ref7.fromPreLoginScreen,navigateToExtraPackage=_ref7.navigateToExtraPackage;var _ref8=(cov_1qsfqe7n26.s[18]++,
+productList),tmhPostpaid=_ref8.tmhPostpaid,tol=_ref8.tol,tvs=_ref8.tvs,conv=_ref8.conv;
+var trueConvergence=(cov_1qsfqe7n26.s[19]++,(0,_lodash.map)(conv,function(convergenceProduct,index){cov_1qsfqe7n26.f[6]++;var _ref9=(cov_1qsfqe7n26.s[20]++,
+convergenceProduct),bundle=_ref9.bundle,products=_ref9.products;
+var accountId=(cov_1qsfqe7n26.s[21]++,convergenceProduct.products.map(function(product){cov_1qsfqe7n26.f[7]++;cov_1qsfqe7n26.s[22]++;return product.accountId;}));
+var trueConvergenceDueBills=(cov_1qsfqe7n26.s[23]++,(0,_lodash.pick)(billDetail.conv,bundle));cov_1qsfqe7n26.s[24]++;
+if(!(0,_lodash.isEmpty)(trueConvergenceDueBills)){cov_1qsfqe7n26.b[4][0]++;cov_1qsfqe7n26.s[25]++;
+trueConvergenceDueBills=(0,_lodash.flatten)((0,_lodash.toArray)(trueConvergenceDueBills));
+}else{cov_1qsfqe7n26.b[4][1]++;cov_1qsfqe7n26.s[26]++;
+trueConvergenceDueBills=null;
+}
+var trueConvergenceProductDetail=(cov_1qsfqe7n26.s[27]++,(0,_lodash.result)(productDetail,'conv',{}));cov_1qsfqe7n26.s[28]++;
+var onTrueConvergenceCheckToggle=function onTrueConvergenceCheckToggle(){cov_1qsfqe7n26.f[8]++;cov_1qsfqe7n26.s[29]++;return toggleProductCheck('conv',{bundle:bundle});};cov_1qsfqe7n26.s[30]++;
+var onTrueConvergenceCollapseToggle=function onTrueConvergenceCollapseToggle(productType,subscriberId,productId,productTypeAsInPayload,subscriptionType,accountId){cov_1qsfqe7n26.f[9]++;cov_1qsfqe7n26.s[31]++;return function(){cov_1qsfqe7n26.f[10]++;cov_1qsfqe7n26.s[32]++;return toggleProductCollapse(productType,subscriberId,convergenceProduct.bundle,productId,productTypeAsInPayload,subscriptionType,accountId,defaultSelectedTab);};};cov_1qsfqe7n26.s[33]++;
+var onTrueConvergenceGetDueBills=function onTrueConvergenceGetDueBills(){cov_1qsfqe7n26.f[11]++;cov_1qsfqe7n26.s[34]++;return getProductBillDetails('conv',{accountId:accountId,bundle:bundle});};cov_1qsfqe7n26.s[35]++;
+return(
+_react2.default.createElement(_ProductCards.TConvergenceCard,{amount:Number(convergenceProduct.balance),status:convergenceProduct.state,plan:convergenceProduct.bundle,key:index,products:products,goToScreen:goToScreen,dueBills:trueConvergenceDueBills,productDetail:trueConvergenceProductDetail,onCollapseToggle:onTrueConvergenceCollapseToggle,onChecked:onTrueConvergenceCheckToggle,isChecked:convergenceProduct.isChecked,getDueBills:onTrueConvergenceGetDueBills,toggleBillDetailCheck:toggleBillDetailCheck('conv',{bundle:bundle}),onBillDetailsClick:onBillDetailsClick,defaultSelectedTab:defaultSelectedTab}));
+
+}));
+
+var trueMoveH=(cov_1qsfqe7n26.s[36]++,(0,_lodash.map)(tmhPostpaid,function(postpaidInfo,index){cov_1qsfqe7n26.f[12]++;var _ref10=(cov_1qsfqe7n26.s[37]++,
+postpaidInfo),accountId=_ref10.accountId,subscriberId=_ref10.subscriberId,productId=_ref10.productId,productType=_ref10.productType,subscriptionType=_ref10.subscriptionType;
+var phoneNumber=(cov_1qsfqe7n26.s[38]++,(0,_common.phoneNumberFormatter)(productId));
+var trueMoveHProductDetail=(cov_1qsfqe7n26.s[39]++,(0,_lodash.result)(productDetail,'tmhPostpaid.'+subscriberId,{}));
+var trueMoveHProductDueBills=(cov_1qsfqe7n26.s[40]++,(0,_lodash.result)(billDetail,'tmhPostpaid.'+accountId,null));cov_1qsfqe7n26.s[41]++;
+var onTrueMoveHCheckToggle=function onTrueMoveHCheckToggle(){cov_1qsfqe7n26.f[13]++;cov_1qsfqe7n26.s[42]++;return toggleProductCheck('tmhPostpaid',{subscriberId:subscriberId});};cov_1qsfqe7n26.s[43]++;
+var onTrueMoveHGetDueBills=function onTrueMoveHGetDueBills(){cov_1qsfqe7n26.f[14]++;cov_1qsfqe7n26.s[44]++;return getProductBillDetails('tmhPostpaid',{accountId:accountId});};cov_1qsfqe7n26.s[45]++;
+var onTrueMoveHNavigatetoExtraPackage=function onTrueMoveHNavigatetoExtraPackage(){cov_1qsfqe7n26.f[15]++;cov_1qsfqe7n26.s[46]++;
+if((cov_1qsfqe7n26.b[6][0]++,fromPreLoginScreen)&&(cov_1qsfqe7n26.b[6][1]++,!validateOTPStatus)&&(cov_1qsfqe7n26.b[6][2]++,(0,_lodash.isEmpty)(trueMoveHProductDetail))){cov_1qsfqe7n26.b[5][0]++;cov_1qsfqe7n26.s[47]++;
+_this2.props.viewCurrentUsage({navigateToExtraPackage:true});
+}else{cov_1qsfqe7n26.b[5][1]++;cov_1qsfqe7n26.s[48]++;
+(0,_lodash.isEmpty)(trueMoveHProductDetail)?(cov_1qsfqe7n26.b[7][0]++,onTrueMoveHCurrentUsage()):(cov_1qsfqe7n26.b[7][1]++,_lodash.noop);cov_1qsfqe7n26.s[49]++;
+goToScreen('TMPackageDetailsExtra',{title:phoneNumber,productType:'tmhPostpaid',subscriberId:subscriberId});
+}
+};cov_1qsfqe7n26.s[50]++;
+var onTrueMoveHCurrentUsage=function onTrueMoveHCurrentUsage(){cov_1qsfqe7n26.f[16]++;cov_1qsfqe7n26.s[51]++;
+(cov_1qsfqe7n26.b[9][0]++,fromPreLoginScreen)&&(cov_1qsfqe7n26.b[9][1]++,!validateOTPStatus)?(cov_1qsfqe7n26.b[8][0]++,_this2.props.viewCurrentUsage({navigateToExtraPackage:false})):(cov_1qsfqe7n26.b[8][1]++,
+getProductCurrentUsage('tmhPostpaid',subscriberId,null,productId,productType,subscriptionType));
+};cov_1qsfqe7n26.s[52]++;
+var onTrueMoveHCollapseToggle=function onTrueMoveHCollapseToggle(){cov_1qsfqe7n26.f[17]++;cov_1qsfqe7n26.s[53]++;return toggleProductCollapse('tmhPostpaid',subscriberId,null,productId,productType,subscriptionType,accountId,defaultSelectedTab);};cov_1qsfqe7n26.s[54]++;
+return(
+_react2.default.createElement(_ProductCards.TMPostpaidProductCard,{phone:phoneNumber,amount:Number(postpaidInfo.balance),statusCode:postpaidInfo.statusCode,key:index,goToScreen:goToScreen,dueBills:trueMoveHProductDueBills,productDetail:trueMoveHProductDetail,isCollapsed:postpaidInfo.isCollapsed,onCollapseToggle:onTrueMoveHCollapseToggle,onChecked:onTrueMoveHCheckToggle,isChecked:postpaidInfo.isChecked,getDueBills:onTrueMoveHGetDueBills,toggleBillDetailCheck:toggleBillDetailCheck('tmhPostpaid',{accountId:accountId}),onTrueMoveHNavigatetoExtraPackage:onTrueMoveHNavigatetoExtraPackage,onBillDetailsClick:onBillDetailsClick,defaultSelectedTab:defaultSelectedTab,getCurrentUsage:onTrueMoveHCurrentUsage,validateOTPStatus:validateOTPStatus,navigateToExtraPackage:navigateToExtraPackage}));
+
+}));
+
+var trueOnline=(cov_1qsfqe7n26.s[55]++,(0,_lodash.map)(tol,function(trueOnlineInfo,index){cov_1qsfqe7n26.f[18]++;var _ref11=(cov_1qsfqe7n26.s[56]++,
+trueOnlineInfo),accountId=_ref11.accountId,subscriberId=_ref11.subscriberId,productId=_ref11.productId,productType=_ref11.productType,subscriptionType=_ref11.subscriptionType;
+var trueOnlineProductDetail=(cov_1qsfqe7n26.s[57]++,(0,_lodash.result)(productDetail,'tol.'+subscriberId,{}));
+var trueOnlineProductDueBills=(cov_1qsfqe7n26.s[58]++,(0,_lodash.result)(billDetail,'tol.'+accountId,null));cov_1qsfqe7n26.s[59]++;
+var onTrueOnlineCheckToggle=function onTrueOnlineCheckToggle(){cov_1qsfqe7n26.f[19]++;cov_1qsfqe7n26.s[60]++;return toggleProductCheck('tol',{subscriberId:subscriberId});};cov_1qsfqe7n26.s[61]++;
+var onTrueOnlineCollapseToggle=function onTrueOnlineCollapseToggle(){cov_1qsfqe7n26.f[20]++;cov_1qsfqe7n26.s[62]++;return toggleProductCollapse('tol',subscriberId,null,productId,productType,subscriptionType,accountId,defaultSelectedTab);};cov_1qsfqe7n26.s[63]++;
+var onTrueOnlineGetDueBills=function onTrueOnlineGetDueBills(){cov_1qsfqe7n26.f[21]++;cov_1qsfqe7n26.s[64]++;return getProductBillDetails('tol',{accountId:accountId});};cov_1qsfqe7n26.s[65]++;
+var onTrueOnlineNavigatetoExtraPackage=function onTrueOnlineNavigatetoExtraPackage(){cov_1qsfqe7n26.f[22]++;cov_1qsfqe7n26.s[66]++;
+if((cov_1qsfqe7n26.b[11][0]++,fromPreLoginScreen)&&(cov_1qsfqe7n26.b[11][1]++,!validateOTPStatus)&&(cov_1qsfqe7n26.b[11][2]++,(0,_lodash.isEmpty)(trueOnlineProductDetail))){cov_1qsfqe7n26.b[10][0]++;cov_1qsfqe7n26.s[67]++;
+_this2.props.viewCurrentUsage({navigateToExtraPackage:true});
+}else{cov_1qsfqe7n26.b[10][1]++;cov_1qsfqe7n26.s[68]++;
+onTrueOnlineCurrentUsage();cov_1qsfqe7n26.s[69]++;
+goToScreen('TOLPackageDetail',{title:productId,productType:'tol',subscriberId:subscriberId});
+}
+};cov_1qsfqe7n26.s[70]++;
+var onTrueOnlineCurrentUsage=function onTrueOnlineCurrentUsage(){cov_1qsfqe7n26.f[23]++;cov_1qsfqe7n26.s[71]++;
+(cov_1qsfqe7n26.b[13][0]++,fromPreLoginScreen)&&(cov_1qsfqe7n26.b[13][1]++,!validateOTPStatus)?(cov_1qsfqe7n26.b[12][0]++,_this2.props.viewCurrentUsage({navigateToExtraPackage:false})):(cov_1qsfqe7n26.b[12][1]++,
+getProductCurrentUsage('tol',subscriberId,null,productId,productType,subscriptionType));
+};cov_1qsfqe7n26.s[72]++;
+return(
+_react2.default.createElement(_ProductCards.TOnlineProductCard,{key:index,plan:trueOnlineInfo.productId,productDetail:trueOnlineProductDetail,dueBills:trueOnlineProductDueBills,amount:Number(trueOnlineInfo.balance),statusCode:trueOnlineInfo.statusCode,goToScreen:goToScreen,
+isCollapsed:trueOnlineInfo.isCollapsed,onCollapseToggle:onTrueOnlineCollapseToggle,onChecked:onTrueOnlineCheckToggle,isChecked:trueOnlineInfo.isChecked,getDueBills:onTrueOnlineGetDueBills,onBillDetailsClick:onBillDetailsClick,
+toggleBillDetailCheck:toggleBillDetailCheck('tol',{accountId:accountId}),defaultSelectedTab:defaultSelectedTab,getCurrentUsage:onTrueOnlineCurrentUsage,onTrueOnlineNavigatetoExtraPackage:onTrueOnlineNavigatetoExtraPackage}));
+
+
+}));
+
+var trueVision=(cov_1qsfqe7n26.s[73]++,(0,_lodash.map)(tvs,function(trueVisionInfo,index){cov_1qsfqe7n26.f[24]++;var _ref12=(cov_1qsfqe7n26.s[74]++,
+trueVisionInfo),accountId=_ref12.accountId,subscriberId=_ref12.subscriberId,productId=_ref12.productId,productType=_ref12.productType,subscriptionType=_ref12.subscriptionType;
+var trueVisionProductDetail=(cov_1qsfqe7n26.s[75]++,(0,_lodash.result)(productDetail,'tvs.'+subscriberId,{}));
+var trueVisionProductDueBills=(cov_1qsfqe7n26.s[76]++,(0,_lodash.result)(billDetail,'tvs.'+accountId,null));cov_1qsfqe7n26.s[77]++;
+var onTrueVisionCheckToggle=function onTrueVisionCheckToggle(){cov_1qsfqe7n26.f[25]++;cov_1qsfqe7n26.s[78]++;return toggleProductCheck('tvs',{subscriberId:subscriberId});};cov_1qsfqe7n26.s[79]++;
+var onTrueVisionCollapseToggle=function onTrueVisionCollapseToggle(){cov_1qsfqe7n26.f[26]++;cov_1qsfqe7n26.s[80]++;return toggleProductCollapse('tvs',subscriberId,null,productId,productType,subscriptionType,accountId,defaultSelectedTab);};cov_1qsfqe7n26.s[81]++;
+var onTrueVisionGetDueBills=function onTrueVisionGetDueBills(){cov_1qsfqe7n26.f[27]++;cov_1qsfqe7n26.s[82]++;return getProductBillDetails('tvs',{accountId:accountId});};cov_1qsfqe7n26.s[83]++;
+var onTrueVisionNavigatetoPackageDetail=function onTrueVisionNavigatetoPackageDetail(){cov_1qsfqe7n26.f[28]++;cov_1qsfqe7n26.s[84]++;
+if((cov_1qsfqe7n26.b[15][0]++,fromPreLoginScreen)&&(cov_1qsfqe7n26.b[15][1]++,!validateOTPStatus)&&(cov_1qsfqe7n26.b[15][2]++,(0,_lodash.isEmpty)(trueVisionProductDetail))){cov_1qsfqe7n26.b[14][0]++;cov_1qsfqe7n26.s[85]++;
+_this2.props.viewCurrentUsage({navigateToExtraPackage:true});
+}else{cov_1qsfqe7n26.b[14][1]++;cov_1qsfqe7n26.s[86]++;
+onTrueVisionCurrentUsage();cov_1qsfqe7n26.s[87]++;
+goToScreen('TVPackageDetail',{productId:productId,productType:'tvs',subscriberId:subscriberId});
+}
+};cov_1qsfqe7n26.s[88]++;
+var onTrueVisionCurrentUsage=function onTrueVisionCurrentUsage(){cov_1qsfqe7n26.f[29]++;cov_1qsfqe7n26.s[89]++;
+(cov_1qsfqe7n26.b[17][0]++,fromPreLoginScreen)&&(cov_1qsfqe7n26.b[17][1]++,!validateOTPStatus)?(cov_1qsfqe7n26.b[16][0]++,_this2.props.viewCurrentUsage({navigateToExtraPackage:false})):(cov_1qsfqe7n26.b[16][1]++,
+getProductCurrentUsage('tvs',subscriberId,null,productId,productType,subscriptionType));
+};cov_1qsfqe7n26.s[90]++;
+return(
+_react2.default.createElement(_ProductCards.TVisionProductCard,{key:index,plan:trueVisionInfo.productId,productDetail:trueVisionProductDetail,dueBills:trueVisionProductDueBills,amount:Number(trueVisionInfo.balance),statusCode:trueVisionInfo.statusCode,goToScreen:goToScreen,isCollapsed:trueVisionInfo.isCollapsed,onCollapseToggle:onTrueVisionCollapseToggle,onChecked:onTrueVisionCheckToggle,isChecked:trueVisionInfo.isChecked,getDueBills:onTrueVisionGetDueBills,toggleBillDetailCheck:toggleBillDetailCheck('tvs',{accountId:accountId}),onBillDetailsClick:onBillDetailsClick,defaultSelectedTab:defaultSelectedTab,getCurrentUsage:onTrueVisionCurrentUsage,onTrueVisionNavigatetoPackageDetail:onTrueVisionNavigatetoPackageDetail}));
+
+
+}));
+
+var totalAmount=(cov_1qsfqe7n26.s[91]++,this.calculateTotalAmount());cov_1qsfqe7n26.s[92]++;
+return(
+_react2.default.createElement(_Shared.WrapperCard,{header:(0,_helper.translate)('BILLS_USAGE_BILLING_SUMMARY'),style:_BillSummaryWrapper2.default.container,contentContainerStyles:_BillSummaryWrapper2.default.contentContainer},
+_react2.default.createElement(_reactNative.View,{style:_BillSummaryWrapper2.default.totalBillSection},
+_react2.default.createElement(_reactNative.View,null,
+_react2.default.createElement(_Shared.ISText,{style:_BillSummaryWrapper2.default.postpaidTitleText},(0,_helper.translate)('BILLS_USAGE_TOTAL')),
+_react2.default.createElement(_Shared.AmountText,{style:_BillSummaryWrapper2.default.totalAmount,value:totalAmount,isTotalText:true})),
+
+_react2.default.createElement(_Shared.Button,{text:(0,_helper.translate)('BILLS_USAGE_PAY'),disabled:!totalAmount,textStyle:_BillSummaryWrapper2.default.buttonText,style:_BillSummaryWrapper2.default.buttonStyle,onPress:this.navigateToPayments})),
+
+trueConvergence,
+trueMoveH,
+trueOnline,
+trueVision));
+
+}}]);return BillSummaryWrapper;}(_react.Component);cov_1qsfqe7n26.s[93]++;
+
+
+BillSummaryWrapper.defaultProps={
+goToScreen:_lodash.noop,
+productList:{},
+productDetail:{},
+billDetail:{},
+toggleProductCheck:_lodash.noop,
+toggleProductCollapse:_lodash.noop,
+getProductBillDetails:_lodash.noop,
+toggleBillDetailCheck:_lodash.noop,
+onBillDetailsClick:_lodash.noop,
+setPaymentItems:_lodash.noop,
+getProductCurrentUsage:_lodash.noop,
+defaultSelectedTab:_billUsage.PRODUCT_TABS.CURRENT_USAGE,
+validateOTPStatus:false,
+fromPreLoginScreen:false,
+navigateToExtraPackage:false};cov_1qsfqe7n26.s[94]++;
+
+
+BillSummaryWrapper.propTypes={
+goToScreen:_propTypes2.default.func,
+productList:_propTypes2.default.object,
+productDetail:_propTypes2.default.object,
+billDetail:_propTypes2.default.object,
+toggleProductCheck:_propTypes2.default.func,
+toggleProductCollapse:_propTypes2.default.func,
+getProductBillDetails:_propTypes2.default.func,
+toggleBillDetailCheck:_propTypes2.default.func,
+onBillDetailsClick:_propTypes2.default.func,
+setPaymentItems:_propTypes2.default.func,
+getProductCurrentUsage:_propTypes2.default.func,
+defaultSelectedTab:_propTypes2.default.number,
+viewCurrentUsage:_propTypes2.default.func,
+validateOTPStatus:_propTypes2.default.bool,
+fromPreLoginScreen:_propTypes2.default.bool,
+navigateToExtraPackage:_propTypes2.default.bool};exports.default=
+
+
+BillSummaryWrapper;

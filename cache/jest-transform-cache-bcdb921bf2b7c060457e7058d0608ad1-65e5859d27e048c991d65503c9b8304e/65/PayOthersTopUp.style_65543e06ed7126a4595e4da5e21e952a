@@ -1,0 +1,23 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.styles=undefined;var cov_2rc7ynsk6f=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Payment/PayOthersTopUp/PayOthersTopUp.style.js',hash='e4dfeb05a8c4f3eefb38e28269928273d32b5981',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Payment/PayOthersTopUp/PayOthersTopUp.style.js',statementMap:{'0':{start:{line:3,column:22},end:{line:25,column:1}}},fnMap:{},branchMap:{},s:{'0':0},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _constants=require('../../../themes/constants.styles');
+
+var styles=exports.styles=(cov_2rc7ynsk6f.s[0]++,{
+container:{
+padding:15},
+
+card:{
+flex:0},
+
+textTitle:{
+fontSize:_constants.fonts.FONT_SIZE_MEDIUM},
+
+horizontalLine:{
+padding:10,
+borderBottomWidth:1,
+borderBottomColor:_constants.colors.PRIMARY_BG_SEPARATOR},
+
+bottomView:{
+padding:10},
+
+topUpButton:{
+alignSelf:'center',
+paddingHorizontal:40}});

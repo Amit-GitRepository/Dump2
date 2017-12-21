@@ -1,0 +1,15 @@
+var _floatingPoint=require('../floatingPoint.util');
+
+describe('add function',function(){
+it('should return the sum of the two floats',function(){
+var val1=5.38,val2=4.62;
+expect((0,_floatingPoint.add)(val1,val2)).toEqual(10);
+});
+});
+
+describe('subtract function',function(){
+it('should return the difference of the two floats',function(){
+var val1=5.38,val2=4.62;
+expect((0,_floatingPoint.subtract)(val1,val2)).toEqual(0.76);
+});
+});

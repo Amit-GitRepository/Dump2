@@ -1,0 +1,61 @@
+var _BillingMethods=require('../BillingMethods.component');var _BillingMethods2=_interopRequireDefault(_BillingMethods);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('EBillAdd component',function(){
+it('renders correctly',function(){
+var billPreferences={
+'paper':[
+{
+'accountID':'10100949',
+'billingFormat':'paper',
+'billingValue':{
+'country':'',
+'zipCode':'10170',
+'roomNo':'',
+'city':'กรุงเทพมหานคร',
+'addressType':'I',
+'moo':'',
+'soi':'ซอยพุทธมณฑลสาย 2 ซอย 24',
+'building':'',
+'street':'-',
+'district':'เขตทวีวัฒนา',
+'addressLine1':'11/9 * * ซอยพุทธมณฑลสาย 2 ซอย 24 *',
+'houseNo':'11/9',
+'addressLine2':'* * * * -',
+'timeAtAddress':'0101',
+'addressLine3':'* แขวงศาลาธรรมสพน์ * เขตทวีวัฒนา',
+'addressLine4':'กรุงเทพมหานคร 10170',
+'floor':'',
+'subDistrict':'แขวงศาลาธรรมสพน์'},
+
+'productId':'0968730312',
+'subscriberId':'193510',
+'accountId':'10100949',
+'balance':'0.0',
+'subscriptionType':'POSTPAID',
+'statusCode':'ACTIVE',
+'productType':'TrueMoveH',
+'accountType':'tmhPostpaid'}],
+
+
+'sms':[
+{
+'accountID':'10101029',
+'billingFormat':'sms',
+'billingValue':'0855469856',
+'productId':'0968730313',
+'subscriberId':'193591',
+'accountId':'10101029',
+'balance':'0.0',
+'subscriptionType':'POSTPAID',
+'statusCode':'ACTIVE',
+'productType':'TrueMoveH',
+'accountType':'tmhPostpaid'}]};
+
+
+
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_BillingMethods2.default,{ebillContent:billPreferences.sms,paperBillContent:billPreferences.paper})).toJSON();
+expect(component).toMatchSnapshot();
+});
+});

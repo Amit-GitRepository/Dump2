@@ -1,0 +1,40 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1vslz58qcw=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/BottomCaretView/BottomCaretView.component.js',hash='9cf67dfde592f64ec141a374054d3cb61290c78a',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/BottomCaretView/BottomCaretView.component.js',statementMap:{'0':{start:{line:11,column:59},end:{line:11,column:69}},'1':{start:{line:12,column:22},end:{line:12,column:116}},'2':{start:{line:13,column:4},end:{line:20,column:6}},'3':{start:{line:24,column:0},end:{line:28,column:2}},'4':{start:{line:30,column:0},end:{line:39,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:10,column:2},end:{line:10,column:3}},loc:{start:{line:10,column:12},end:{line:21,column:3}},line:10}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0},f:{'0':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _Icon=require('../Icon/Icon.component');var _Icon2=_interopRequireDefault(_Icon);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _BottomCaretView=require('./BottomCaretView.styles');var _BottomCaretView2=_interopRequireDefault(_BottomCaretView);
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+
+
+BottomCaretView=function(_React$Component){_inherits(BottomCaretView,_React$Component);function BottomCaretView(){_classCallCheck(this,BottomCaretView);return _possibleConstructorReturn(this,(BottomCaretView.__proto__||Object.getPrototypeOf(BottomCaretView)).apply(this,arguments));}_createClass(BottomCaretView,[{key:'render',value:function render()
+{cov_1vslz58qcw.f[0]++;var _ref=(cov_1vslz58qcw.s[0]++,
+this.props),iconSize=_ref.iconSize,style=_ref.style,caretColor=_ref.caretColor,customIconStyle=_ref.customIconStyle;
+var iconStyle=(cov_1vslz58qcw.s[1]++,[_BottomCaretView2.default.iconStyle,{bottom:iconSize/2.5,marginBottom:-(iconSize/2.5)},customIconStyle]);cov_1vslz58qcw.s[2]++;
+return(
+_react2.default.createElement(_reactNative.View,null,
+_react2.default.createElement(_reactNative.View,{style:style},
+this.props.children),
+
+_react2.default.createElement(_Icon2.default,{size:iconSize,color:caretColor,style:iconStyle,name:'caret-down'})));
+
+
+}}]);return BottomCaretView;}(_react2.default.Component);cov_1vslz58qcw.s[3]++;
+
+
+BottomCaretView.defaultProps={
+iconSize:15,
+customIconStyle:{},
+style:{}};cov_1vslz58qcw.s[4]++;
+
+
+BottomCaretView.propTypes={
+customIconStyle:_propTypes2.default.object,
+children:_propTypes2.default.node,
+iconSize:_propTypes2.default.number,
+style:_propTypes2.default.PropTypes.oneOfType([
+_propTypes2.default.array,
+_propTypes2.default.object]),
+
+caretColor:_propTypes2.default.string};exports.default=
+
+BottomCaretView;

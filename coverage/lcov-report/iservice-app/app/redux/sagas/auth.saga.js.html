@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/redux/sagas/auth.saga.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">iservice-app/app/redux/sagas</a> auth.saga.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">98.08% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>51/52</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">77.78% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>14/18</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>7/7</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">98.08% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>51/52</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">25x</span>
+<span class="cline-any cline-yes">25x</span>
+<span class="cline-any cline-yes">25x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import auth, {handleAuthErrors} from '../../utils/auth.util';
+import result from 'lodash/result';
+import {call, fork, put, select, takeLatest} from 'redux-saga/effects';
+import {fetchProductList} from './billUsage.saga';
+import {getSelector} from '../../utils/common.util';
+import {NavigationActions} from 'react-navigation';
+import {setDimension} from '../../utils/analytics.util';
+import * as actions from '../actions/index.actions';
+&nbsp;
+// Action specific SAGAs
+export function* login (action) {
+  const nextAction = action &amp;&amp; action.payload;
+  try {
+    const userProfile = yield call(auth.login);
+    yield put(actions.loginSuccess(userProfile));
+    yield put(actions.registerFCMToken());
+    // set dimension values for SSOID and FB_ID based on user profile
+    yield call(setDimension,
+      {SSOID: result(userProfile, 'uid', ''), FB_ID: result(userProfile, 'facebook_id', '')});
+    yield fork(fetchProductList);
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (nextAction) {
+      yield put(nextAction);
+    }
+  } catch (e) {
+    handleAuthErrors(e, 'LOGIN');
+    yield put(actions.loginFailure());
+  }
+}
+&nbsp;
+export function* register (action) {
+  const nextAction = action &amp;&amp; action.payload;
+  try {
+    const userProfile = yield call(auth.register);
+    yield put(actions.registerSuccess(userProfile));
+    yield call(setDimension,
+      {SSOID: result(userProfile, 'uid', ''), FB_ID: result(userProfile, 'facebook_id', '')});
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (nextAction) {
+      yield put(nextAction);
+    }
+  } catch (e) {
+    handleAuthErrors(e, 'REGISTER');
+    yield put(actions.registerFailure());
+  }
+}
+&nbsp;
+export function* logout (action) {
+  const nextAction = action &amp;&amp; action.payload;
+  try {
+    yield call(auth.logout);
+    yield put(actions.logoutSuccess());
+    yield put(actions.deregisterFCMToken());
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (nextAction) {
+      yield put(nextAction);
+    }
+  } catch (e) {
+    handleAuthErrors(e);
+    yield put(actions.logoutFailure());
+  }
+}
+&nbsp;
+export function* updateAuthLanguage (action) {
+  const language = result(action, 'payload.language');
+  yield call(auth.updateLanguage, language);
+}
+&nbsp;
+export const networkSelector = getSelector('networkStatus.isConnected');
+&nbsp;
+export function* verifyExistingLogin (action) {
+  // TODO: refactor it in v4, as call for networkStatus is async
+  const isConnected = yield select(networkSelector);
+  const nextAction = action &amp;&amp; action.payload;
+  // check for existing login only if there is internet connection
+  // PS: SDK onResume method hangs in case if there is no internet connection
+  if (isConnected) {
+    const accessTokenAndProfile = yield call(auth.checkExistingLogin);
+    yield put(actions.setAccessTokenAndProfile(accessTokenAndProfile));
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (nextAction) {
+      yield put(nextAction);
+    }
+  }
+}
+&nbsp;
+export const languageSelector = getSelector('user.language');
+&nbsp;
+// TODO: refactor the auth initialization
+export function* initializeAuth () {
+  try {
+    const language = yield select(languageSelector);
+    yield call(auth.init, language);
+    yield call(verifyExistingLogin, {payload: NavigationActions.navigate({routeName: 'BillUsage'})});
+    // Requesting product list upon login.
+<span class="cstat-no" title="statement not covered" >    yield fork(fetchProductList);</span>
+  } catch (e) {
+    handleAuthErrors(e);
+    // Handle auth exceptions
+    yield put(
+      NavigationActions.reset({
+        index: 0,
+        actions: [NavigationActions.navigate({routeName: 'Landing'})]
+      })
+    );
+  }
+}
+&nbsp;
+// Root SAGA
+export default function* authSaga () {
+  yield takeLatest(actions.CHECK_EXISTING_LOGIN, verifyExistingLogin);
+  yield takeLatest(actions.LOGIN_REQUEST, login);
+  yield takeLatest(actions.REGISTER_REQUEST, register);
+  yield takeLatest(actions.LOGOUT_REQUEST, logout);
+  yield takeLatest(actions.CHANGE_LANGUAGE, updateAuthLanguage);
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

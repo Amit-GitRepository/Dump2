@@ -1,0 +1,28 @@
+var cov_2bi7bbj43l=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/utils/reactNative.util.js',hash='470d29f3bb47525d7adc230bde5b7ade5149dc86',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/utils/reactNative.util.js',statementMap:{'0':{start:{line:9,column:19},end:{line:13,column:1}},'1':{start:{line:15,column:16},end:{line:21,column:2}},'2':{start:{line:15,column:25},end:{line:21,column:2}},'3':{start:{line:16,column:2},end:{line:20,column:3}},'4':{start:{line:17,column:4},end:{line:17,column:71}},'5':{start:{line:19,column:4},end:{line:19,column:32}},'6':{start:{line:23,column:0},end:{line:29,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:15,column:16},end:{line:15,column:17}},loc:{start:{line:15,column:25},end:{line:21,column:2}},line:15},'1':{name:'(anonymous_1)',decl:{start:{line:15,column:54},end:{line:15,column:55}},loc:{start:{line:15,column:69},end:{line:21,column:1}},line:15}},branchMap:{'0':{loc:{start:{line:16,column:2},end:{line:20,column:3}},type:'if',locations:[{start:{line:16,column:2},end:{line:20,column:3}},{start:{line:16,column:2},end:{line:20,column:3}}],line:16}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0},f:{'0':0,'1':0},b:{'0':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();
+
+
+
+var _reactNativeDeviceInfo=require('react-native-device-info');var _reactNativeDeviceInfo2=_interopRequireDefault(_reactNativeDeviceInfo);
+var _reactNativeSimpleToast=require('react-native-simple-toast');var _reactNativeSimpleToast2=_interopRequireDefault(_reactNativeSimpleToast);
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+var deviceInfo=(cov_2bi7bbj43l.s[0]++,{
+id:_reactNativeDeviceInfo2.default.getUniqueID(),
+name:_reactNativeDeviceInfo2.default.getBrand(),
+model:_reactNativeDeviceInfo2.default.getModel()});cov_2bi7bbj43l.s[1]++;
+
+
+var openUrl=function openUrl(url){cov_2bi7bbj43l.f[0]++;cov_2bi7bbj43l.s[2]++;return _reactNative.Linking.canOpenURL(url).then(function(supported){cov_2bi7bbj43l.f[1]++;cov_2bi7bbj43l.s[3]++;
+if(!supported){cov_2bi7bbj43l.b[0][0]++;cov_2bi7bbj43l.s[4]++;
+return Promise.reject(new Error('Could not open the url: '+url));
+}else{cov_2bi7bbj43l.b[0][1]++;cov_2bi7bbj43l.s[5]++;
+return _reactNative.Linking.openURL(url);
+}
+});};cov_2bi7bbj43l.s[6]++;
+
+module.exports={
+Toast:_reactNativeSimpleToast2.default,
+Alert:_reactNative.Alert,
+Platform:_reactNative.Platform,
+deviceInfo:deviceInfo,
+openUrl:openUrl};

@@ -1,0 +1,22 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1g0nklxeva=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/reducers/preLoginPay.reducer.js',hash='651398d82eda940f0b76db46aecbe2e7a3cc3b70',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/reducers/preLoginPay.reducer.js',statementMap:{'0':{start:{line:3,column:21},end:{line:7,column:1}},'1':{start:{line:10,column:2},end:{line:21,column:3}},'2':{start:{line:12,column:4},end:{line:12,column:34}},'3':{start:{line:14,column:4},end:{line:14,column:46}},'4':{start:{line:16,column:4},end:{line:16,column:113}},'5':{start:{line:18,column:4},end:{line:18,column:24}},'6':{start:{line:20,column:4},end:{line:20,column:17}}},fnMap:{'0':{name:'user',decl:{start:{line:9,column:24},end:{line:9,column:28}},loc:{start:{line:9,column:69},end:{line:22,column:1}},line:9}},branchMap:{'0':{loc:{start:{line:9,column:30},end:{line:9,column:50}},type:'default-arg',locations:[{start:{line:9,column:38},end:{line:9,column:50}}],line:9},'1':{loc:{start:{line:10,column:2},end:{line:21,column:3}},type:'switch',locations:[{start:{line:11,column:2},end:{line:12,column:34}},{start:{line:13,column:2},end:{line:14,column:46}},{start:{line:15,column:2},end:{line:16,column:113}},{start:{line:17,column:2},end:{line:18,column:24}},{start:{line:19,column:2},end:{line:20,column:17}}],line:10}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0},f:{'0':0},b:{'0':[0],'1':[0,0,0,0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};exports.default=
+
+
+
+
+
+
+
+user;var _index=require('../actions/index.actions');var actions=_interopRequireWildcard(_index);function _interopRequireWildcard(obj){if(obj&&obj.__esModule){return obj;}else{var newObj={};if(obj!=null){for(var key in obj){if(Object.prototype.hasOwnProperty.call(obj,key))newObj[key]=obj[key];}}newObj.default=obj;return newObj;}}var initialState=(cov_1g0nklxeva.s[0]++,{sendOTPStatus:null,validateOTPStatus:null,navigateToExtraPackage:false});function user(){var state=arguments.length>0&&arguments[0]!==undefined?arguments[0]:(cov_1g0nklxeva.b[0][0]++,initialState);var _ref=arguments[1];var type=_ref.type,payload=_ref.payload;cov_1g0nklxeva.f[0]++;cov_1g0nklxeva.s[1]++;
+switch(type){
+case actions.SET_MSISDN:cov_1g0nklxeva.b[1][0]++;cov_1g0nklxeva.s[2]++;
+return _extends({},state,payload);
+case actions.SEND_OTP_STATUS:cov_1g0nklxeva.b[1][1]++;cov_1g0nklxeva.s[3]++;
+return _extends({},state,{sendOTPStatus:payload});
+case actions.VALIDATE_OTP_STATUS:cov_1g0nklxeva.b[1][2]++;cov_1g0nklxeva.s[4]++;
+return _extends({},state,{validateOTPStatus:payload.status,navigateToExtraPackage:payload.navigateToExtraPackage});
+case actions.RESET_PREPAY:cov_1g0nklxeva.b[1][3]++;cov_1g0nklxeva.s[5]++;
+return initialState;
+default:cov_1g0nklxeva.b[1][4]++;cov_1g0nklxeva.s[6]++;
+return state;}
+
+}

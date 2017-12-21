@@ -1,0 +1,74 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.billUsageRouteConfig=undefined;var cov_13184d8wx1=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/routes/billUsage.routes.js',hash='efbec4e857e70508778eef722f48c9f3a03d631f',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/routes/billUsage.routes.js',statementMap:{'0':{start:{line:13,column:36},end:{line:72,column:1}}},fnMap:{},branchMap:{},s:{'0':0},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _BillUsage=require('../pages/BillUsage/BillUsage.page');var _BillUsage2=_interopRequireDefault(_BillUsage);
+var _ISWebView=require('../pages/ISWebView/ISWebView.page');var _ISWebView2=_interopRequireDefault(_ISWebView);
+var _payment=require('./payment.routes');var _payment2=_interopRequireDefault(_payment);
+var _PreLoginPayBill=require('../pages/BillUsage/PreLoginPayBill.page');var _PreLoginPayBill2=_interopRequireDefault(_PreLoginPayBill);
+var _TConvergencePackageDetails=require('../pages/BillUsage/TConvergencePackageDetails.page');var _TConvergencePackageDetails2=_interopRequireDefault(_TConvergencePackageDetails);
+var _TMBillDetail=require('../pages/BillUsage/TMBillDetail.page');var _TMBillDetail2=_interopRequireDefault(_TMBillDetail);
+var _TMPackageDetailsExtra=require('../pages/BillUsage/TMPackageDetailsExtra.page');var _TMPackageDetailsExtra2=_interopRequireDefault(_TMPackageDetailsExtra);
+var _TOLPackageDetails=require('../pages/BillUsage/TOLPackageDetails.page');var _TOLPackageDetails2=_interopRequireDefault(_TOLPackageDetails);
+var _TVPackageDetails=require('../pages/BillUsage/TVPackageDetails.page');var _TVPackageDetails2=_interopRequireDefault(_TVPackageDetails);
+var _route=require('./helpers/route.helper');
+var _reactNavigation=require('react-navigation');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+var billUsageRouteConfig=exports.billUsageRouteConfig=(cov_13184d8wx1.s[0]++,{
+BillUsage:{
+screen:_BillUsage2.default,
+navigationOptions:_route.getStackNavOption,
+path:'billusage',
+requireLogin:true,
+showHamburger:true,
+title:'BILLS_USAGE',
+gaScreenName:'Bills & Usage'},
+
+PreLoginPayBill:{
+screen:_PreLoginPayBill2.default,
+navigationOptions:_route.getStackNavOption,
+path:'preloginpaybill',
+requireLogin:false,
+showHamburger:true,
+title:'BILLS_USAGE',
+gaScreenName:'Pre Login Pay Bill'},
+
+TMPackageDetailsExtra:{
+screen:_TMPackageDetailsExtra2.default,
+requireLogin:false,
+navigationOptions:_route.getStackNavOption,
+gaScreenName:'Bill Usage Package Details and Extra Packages'},
+
+TMoveBillDetail:{
+screen:_TMBillDetail2.default,
+navigationOptions:_route.getStackNavOption,
+gaScreenName:'TrueMoveH Bill Invoice'},
+
+TOLPackageDetail:{
+screen:_TOLPackageDetails2.default,
+requireLogin:true,
+title:'PACKAGE_DETAIL__TITLE',
+navigationOptions:_route.getStackNavOption,
+gaScreenName:'True Online Package Details'},
+
+TVPackageDetail:{
+screen:_TVPackageDetails2.default,
+requireLogin:true,
+title:'PACKAGE_DETAIL__TITLE',
+navigationOptions:_route.getStackNavOption,
+gaScreenName:'True Vision Package Details'},
+
+PackagePromoPage:{
+screen:_ISWebView2.default,
+navigationOptions:_route.getStackNavOption},
+
+TConvergencePackageDetails:{
+screen:_TConvergencePackageDetails2.default,
+requireLogin:false,
+title:'BILLS_USAGE_ABOUT_PACKAGE',
+navigationOptions:_route.getStackNavOption,
+gaScreenName:'True Smart Choice package detail'},
+
+Payment:{
+screen:_payment2.default,
+navigationOptions:{header:null}}});exports.default=
+
+
+
+(0,_reactNavigation.StackNavigator)(billUsageRouteConfig,{headerMode:'screen'});

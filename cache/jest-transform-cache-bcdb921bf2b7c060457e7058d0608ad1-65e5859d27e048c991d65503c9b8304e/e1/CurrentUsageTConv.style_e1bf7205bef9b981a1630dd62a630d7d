@@ -1,0 +1,10 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_xvc94m4at=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/CurrentUsageTConv/CurrentUsageTConv.style.js',hash='c7a6a98f6f9471dce9d2b4c0a9b07bb84eadf22b',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/CurrentUsageTConv/CurrentUsageTConv.style.js',statementMap:{},fnMap:{},branchMap:{},s:{},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();exports.default={
+currentUsageContainer:{
+flexGrow:1,
+paddingTop:5,
+borderRadius:10,
+marginTop:-15,
+overflow:'hidden'},
+
+currentUsageSection:{
+alignSelf:'stretch'}};

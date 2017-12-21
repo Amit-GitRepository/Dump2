@@ -1,0 +1,66 @@
+general:
+  artifacts:
+    - "android/app/build/outputs/apk/app-release.apk"
+    - "ios/build/Products/IPA/iService.ipa"
+    - "ios/build/Build/Products/Release-iphonesimulator/iService.zip"
+    - "../iservice-app-automation/target/surefire-reports/html/index.html"
+machine:
+  xcode:
+    version: '9.1'
+
+  environment:
+    # Needed for Android SDK installation bash script (see below)
+    ANDROID_HOME: "/usr/local/share/android-sdk"
+    ANDROID_SDK_HOME: "/usr/local/share/android-sdk"
+    ANDROID_SDK_ROOT: "/usr/local/share/android-sdk"
+    PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools"
+dependencies:
+  pre:
+    - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+    - nvm install 8.1.4
+    - gem install xcpretty
+    - brew tap caskroom/cask && brew tap caskroom/versions && brew cask install android-sdk
+    - echo y | sdkmanager "platforms;android-23"
+    - echo y | sdkmanager "build-tools;23.0.1"
+    - echo y | sdkmanager "add-ons;addon-google_apis-google-23"
+    - echo y | sdkmanager "extras;google;google_play_services"
+    - echo y | sdkmanager "extras;google;m2repository"
+    - echo y | sdkmanager "extras;android;m2repository"
+    - brew install maven # For e2e tests
+  override:
+    # Install node modules
+    - yarn
+  cache_directories:
+    # Let's speed up the next build by cacheing installed dependencies
+    - node_modules
+    - /usr/local/share/android-sdk
+    - ~/.m2
+test:
+  override:
+    - yarn lint
+    - yarn test && cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage
+deployment:
+  staging:
+    branch: [master, develop, testCI]
+    commands:
+      # Build the APK
+      - BUILD_NAME=$CIRCLE_BUILD_NUM BUILD_NUMBER=$CIRCLE_BUILD_NUM npm run build:android:dev
+      # Build the IPA
+      - BUILD_NAME=$CIRCLE_BUILD_NUM BUILD_NUMBER=$CIRCLE_BUILD_NUM npm run build:ios:dev | xcpretty
+      # Upload to saucelabs
+      - npm run e2e-test:android:dev
+      - npm run e2e-test:ios:dev
+      # Trigger e2e tests
+      - sh scripts/e2e.sh
+      # Upload to testfairy if e2e tests passes
+      - TESTFAIRY_UPLOAD_KEY=$TESTFAIRY_IOS_UPLOAD_KEY sh scripts/tf_uploader.sh IOS
+      - TESTFAIRY_UPLOAD_KEY=$TESTFAIRY_ANDROID_UPLOAD_KEY sh scripts/tf_uploader.sh ANDROID
+  alpha:
+    branch: [alpha, alpha-deploy]
+    commands:
+      # Build the APK
+      - BUILD_NAME=$CIRCLE_BUILD_NUM BUILD_NUMBER=$CIRCLE_BUILD_NUM npm run build:android:alpha
+      # Build the IPA
+      - BUILD_NAME=$CIRCLE_BUILD_NUM BUILD_NUMBER=$CIRCLE_BUILD_NUM npm run build:ios:alpha | xcpretty
+      - TESTFAIRY_UPLOAD_KEY=$TESTFAIRY_IOS_UPLOAD_KEY sh scripts/tf_uploader.sh IOS
+      - TESTFAIRY_UPLOAD_KEY=$TESTFAIRY_ANDROID_UPLOAD_KEY sh scripts/tf_uploader.sh ANDROID

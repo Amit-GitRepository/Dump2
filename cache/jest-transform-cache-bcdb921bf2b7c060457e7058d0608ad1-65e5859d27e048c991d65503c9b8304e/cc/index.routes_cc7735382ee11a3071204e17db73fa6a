@@ -1,0 +1,29 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.routeConfig=undefined;var cov_2l8aly6fi=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/routes/index.routes.js',hash='e0a3a0eacae305d07d46dc336b997c105c74ecc5',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/routes/index.routes.js',statementMap:{'0':{start:{line:8,column:27},end:{line:13,column:1}}},fnMap:{},branchMap:{},s:{'0':0},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _billingMethods=require('./billingMethods.routes');var _billingMethods2=_interopRequireDefault(_billingMethods);
+var _billUsage=require('./billUsage.routes');var _billUsage2=_interopRequireDefault(_billUsage);
+var _landing=require('./landing.routes');var _landing2=_interopRequireDefault(_landing);
+var _SideMenu=require('../pages/SideMenu/SideMenu.page');var _SideMenu2=_interopRequireDefault(_SideMenu);
+var _storeLocator=require('./storeLocator.routes');var _storeLocator2=_interopRequireDefault(_storeLocator);
+var _reactNavigation=require('react-navigation');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+var routeConfig=exports.routeConfig=(cov_2l8aly6fi.s[0]++,_extends({},_landing.landingRouteConfig,_billUsage.billUsageRouteConfig,_billingMethods.billingMethodsRouteConfig,_storeLocator.storeLocatorRouteConfig));exports.default=
+
+
+
+
+
+
+(0,_reactNavigation.DrawerNavigator)({
+Landing:{
+screen:_landing2.default},
+
+BillUsage:{
+screen:_billUsage2.default},
+
+StoreLocator:{
+screen:_storeLocator2.default},
+
+BillMethods:{
+screen:_billingMethods2.default}},
+
+{
+contentComponent:_SideMenu2.default});

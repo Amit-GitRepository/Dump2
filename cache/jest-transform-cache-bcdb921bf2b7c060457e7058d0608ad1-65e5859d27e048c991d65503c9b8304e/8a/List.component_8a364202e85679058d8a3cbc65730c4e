@@ -1,0 +1,61 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_2849sevjl4=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/List/List.component.js',hash='98db1aa9ea63028bb6c29b9205d173c2c1535f87',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/List/List.component.js',statementMap:{'0':{start:{line:14,column:88},end:{line:14,column:98}},'1':{start:{line:15,column:24},end:{line:15,column:33}},'2':{start:{line:16,column:24},end:{line:16,column:54}},'3':{start:{line:17,column:33},end:{line:17,column:134}},'4':{start:{line:18,column:26},end:{line:18,column:107}},'5':{start:{line:19,column:29},end:{line:19,column:115}},'6':{start:{line:20,column:25},end:{line:21,column:52}},'7':{start:{line:22,column:20},end:{line:22,column:78}},'8':{start:{line:23,column:23},end:{line:23,column:50}},'9':{start:{line:24,column:4},end:{line:34,column:6}},'10':{start:{line:37,column:35},end:{line:37,column:40}},'11':{start:{line:40,column:19},end:{line:40,column:29}},'12':{start:{line:41,column:4},end:{line:43,column:6}},'13':{start:{line:46,column:0},end:{line:52,column:2}},'14':{start:{line:53,column:0},end:{line:60,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:13,column:14},end:{line:13,column:15}},loc:{start:{line:13,column:33},end:{line:35,column:3}},line:13},'1':{name:'(anonymous_1)',decl:{start:{line:37,column:18},end:{line:37,column:19}},loc:{start:{line:37,column:35},end:{line:37,column:40}},line:37},'2':{name:'(anonymous_2)',decl:{start:{line:39,column:2},end:{line:39,column:3}},loc:{start:{line:39,column:12},end:{line:44,column:3}},line:39}},branchMap:{'0':{loc:{start:{line:16,column:24},end:{line:16,column:54}},type:'cond-expr',locations:[{start:{line:16,column:38},end:{line:16,column:47}},{start:{line:16,column:50},end:{line:16,column:54}}],line:16},'1':{loc:{start:{line:17,column:33},end:{line:17,column:134}},type:'cond-expr',locations:[{start:{line:17,column:56},end:{line:17,column:109}},{start:{line:17,column:112},end:{line:17,column:134}}],line:17},'2':{loc:{start:{line:18,column:26},end:{line:18,column:107}},type:'cond-expr',locations:[{start:{line:18,column:50},end:{line:18,column:90}},{start:{line:18,column:93},end:{line:18,column:107}}],line:18},'3':{loc:{start:{line:19,column:29},end:{line:19,column:115}},type:'cond-expr',locations:[{start:{line:19,column:52},end:{line:19,column:95}},{start:{line:19,column:98},end:{line:19,column:115}}],line:19},'4':{loc:{start:{line:20,column:25},end:{line:21,column:52}},type:'cond-expr',locations:[{start:{line:20,column:43},end:{line:20,column:88}},{start:{line:21,column:6},end:{line:21,column:52}}],line:20},'5':{loc:{start:{line:22,column:20},end:{line:22,column:78}},type:'cond-expr',locations:[{start:{line:22,column:47},end:{line:22,column:51}},{start:{line:22,column:54},end:{line:22,column:78}}],line:22},'6':{loc:{start:{line:25,column:39},end:{line:25,column:69}},type:'cond-expr',locations:[{start:{line:25,column:49},end:{line:25,column:62}},{start:{line:25,column:65},end:{line:25,column:69}}],line:25},'7':{loc:{start:{line:27,column:23},end:{line:27,column:84}},type:'cond-expr',locations:[{start:{line:27,column:58},end:{line:27,column:79}},{start:{line:27,column:82},end:{line:27,column:84}}],line:27},'8':{loc:{start:{line:27,column:24},end:{line:27,column:54}},type:'binary-expr',locations:[{start:{line:27,column:24},end:{line:27,column:35}},{start:{line:27,column:39},end:{line:27,column:54}}],line:27},'9':{loc:{start:{line:28,column:13},end:{line:28,column:96}},type:'cond-expr',locations:[{start:{line:28,column:23},end:{line:28,column:89}},{start:{line:28,column:92},end:{line:28,column:96}}],line:28},'10':{loc:{start:{line:29,column:13},end:{line:29,column:105}},type:'cond-expr',locations:[{start:{line:29,column:26},end:{line:29,column:98}},{start:{line:29,column:101},end:{line:29,column:105}}],line:29},'11':{loc:{start:{line:31,column:11},end:{line:31,column:110}},type:'cond-expr',locations:[{start:{line:31,column:47},end:{line:31,column:103}},{start:{line:31,column:106},end:{line:31,column:110}}],line:31},'12':{loc:{start:{line:31,column:12},end:{line:31,column:42}},type:'binary-expr',locations:[{start:{line:31,column:12},end:{line:31,column:23}},{start:{line:31,column:27},end:{line:31,column:42}}],line:31}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0},f:{'0':0,'1':0,'2':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0],'4':[0,0],'5':[0,0],'6':[0,0],'7':[0,0],'8':[0,0],'9':[0,0],'10':[0,0],'11':[0,0],'12':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _Icon=require('../Icon/Icon.component');var _Icon2=_interopRequireDefault(_Icon);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _ListStyles=require('./List.styles.js');var _ListStyles2=_interopRequireDefault(_ListStyles);
+var _TouchableComponent=require('../Touchable/Touchable.component.js');var _TouchableComponent2=_interopRequireDefault(_TouchableComponent);
+var _reactNative=require('react-native');
+var _Shared=require('../../Shared');
+var _reactNativeAnimatable=require('react-native-animatable');var Animatable=_interopRequireWildcard(_reactNativeAnimatable);function _interopRequireWildcard(obj){if(obj&&obj.__esModule){return obj;}else{var newObj={};if(obj!=null){for(var key in obj){if(Object.prototype.hasOwnProperty.call(obj,key))newObj[key]=obj[key];}}newObj.default=obj;return newObj;}}function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+List=function(_Component){_inherits(List,_Component);function List(){var _ref;var _temp,_this,_ret;_classCallCheck(this,List);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=List.__proto__||Object.getPrototypeOf(List)).call.apply(_ref,[this].concat(args))),_this),_this.
+
+_listItem=function(_ref2){var item=_ref2.item,index=_ref2.index;cov_2849sevjl4.f[0]++;var _ref3=(cov_2849sevjl4.s[0]++,
+_this.props),onPress=_ref3.onPress,headingKey=_ref3.headingKey,subHeadingKey=_ref3.subHeadingKey,alignListItemsCenter=_ref3.alignListItemsCenter,arrowVisibility=_ref3.arrowVisibility;
+var isClickable=(cov_2849sevjl4.s[1]++,!!onPress);
+var WrapperView=(cov_2849sevjl4.s[2]++,isClickable?(cov_2849sevjl4.b[0][0]++,_TouchableComponent2.default):(cov_2849sevjl4.b[0][1]++,_reactNative.View));
+var listItemWrapperStyle=(cov_2849sevjl4.s[3]++,alignListItemsCenter?(cov_2849sevjl4.b[1][0]++,[_ListStyles2.default.listItemWrapper,_ListStyles2.default.justifyContentCenter]):(cov_2849sevjl4.b[1][1]++,_ListStyles2.default.listItemWrapper));
+var headingStyles=(cov_2849sevjl4.s[4]++,alignListItemsCenter?(cov_2849sevjl4.b[2][0]++,[_ListStyles2.default.heading,_ListStyles2.default.textAlignCenter]):(cov_2849sevjl4.b[2][1]++,_ListStyles2.default.heading));
+var subHeadingStyles=(cov_2849sevjl4.s[5]++,alignListItemsCenter?(cov_2849sevjl4.b[3][0]++,[_ListStyles2.default.subHeading,_ListStyles2.default.textAlignCenter]):(cov_2849sevjl4.b[3][1]++,_ListStyles2.default.subHeading));
+var wrapperStyle=(cov_2849sevjl4.s[6]++,index%2!==0?(cov_2849sevjl4.b[4][0]++,[listItemWrapperStyle,_ListStyles2.default.darkBackground]):(cov_2849sevjl4.b[4][1]++,
+[listItemWrapperStyle,_ListStyles2.default.lightBackground]));
+var heading=(cov_2849sevjl4.s[7]++,typeof item==='string'?(cov_2849sevjl4.b[5][0]++,item):(cov_2849sevjl4.b[5][1]++,(0,_result2.default)(item,headingKey)));
+var subHeading=(cov_2849sevjl4.s[8]++,(0,_result2.default)(item,subHeadingKey));cov_2849sevjl4.s[9]++;
+return(
+_react2.default.createElement(WrapperView,{id:index,onPress:onPress?(cov_2849sevjl4.b[6][0]++,onPress(item)):(cov_2849sevjl4.b[6][1]++,null)},
+_react2.default.createElement(Animatable.View,{key:index,style:wrapperStyle,animation:'fadeIn',duration:500},
+_react2.default.createElement(_reactNative.View,{style:(cov_2849sevjl4.b[8][0]++,isClickable)&&(cov_2849sevjl4.b[8][1]++,arrowVisibility)?(cov_2849sevjl4.b[7][0]++,_ListStyles2.default.contentWrapper):(cov_2849sevjl4.b[7][1]++,{})},
+heading?(cov_2849sevjl4.b[9][0]++,_react2.default.createElement(_Shared.ISText,{style:headingStyles,type:'SEMIBOLD'},heading)):(cov_2849sevjl4.b[9][1]++,null),
+subHeading?(cov_2849sevjl4.b[10][0]++,_react2.default.createElement(_Shared.ISText,{style:subHeadingStyles,type:'SEMIBOLD'},subHeading)):(cov_2849sevjl4.b[10][1]++,null)),
+
+(cov_2849sevjl4.b[12][0]++,isClickable)&&(cov_2849sevjl4.b[12][1]++,arrowVisibility)?(cov_2849sevjl4.b[11][0]++,_react2.default.createElement(_Icon2.default,{name:'chevron-right',style:_ListStyles2.default.arrowStyle})):(cov_2849sevjl4.b[11][1]++,null))));
+
+
+
+},_this.
+
+_keyExtractor=function(item,index){cov_2849sevjl4.f[1]++;cov_2849sevjl4.s[10]++;return index;},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(List,[{key:'render',value:function render()
+
+{cov_2849sevjl4.f[2]++;var _ref4=(cov_2849sevjl4.s[11]++,
+this.props),data=_ref4.data;cov_2849sevjl4.s[12]++;
+return(
+_react2.default.createElement(_reactNative.FlatList,{data:data,renderItem:this._listItem,keyExtractor:this._keyExtractor}));
+
+}}]);return List;}(_react.Component);cov_2849sevjl4.s[13]++;
+
+List.defaultProps={
+data:[],
+headingKey:'heading',
+subHeadingKey:'subHeading',
+alignListItemsCenter:false,
+arrowVisibility:true};cov_2849sevjl4.s[14]++;
+
+List.propTypes={
+onPress:_propTypes2.default.func,
+data:_propTypes2.default.array,
+headingKey:_propTypes2.default.string,
+subHeadingKey:_propTypes2.default.string,
+alignListItemsCenter:_propTypes2.default.bool,
+arrowVisibility:_propTypes2.default.bool};exports.default=
+
+List;

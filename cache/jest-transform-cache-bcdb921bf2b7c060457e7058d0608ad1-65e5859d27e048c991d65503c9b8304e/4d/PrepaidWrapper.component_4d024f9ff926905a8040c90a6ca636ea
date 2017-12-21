@@ -1,0 +1,113 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_2ptgprkp2r=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/TopLevelCards/PrepaidWrapper/PrepaidWrapper.component.js',hash='a48155a9e370a15fe9bd157306764b352d700808',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/TopLevelCards/PrepaidWrapper/PrepaidWrapper.component.js',statementMap:{'0':{start:{line:21,column:35},end:{line:25,column:3}},'1':{start:{line:22,column:4},end:{line:24,column:7}},'2':{start:{line:29,column:4},end:{line:33,column:5}},'3':{start:{line:30,column:6},end:{line:30,column:31}},'4':{start:{line:32,column:6},end:{line:32,column:21}},'5':{start:{line:34,column:4},end:{line:36,column:7}},'6':{start:{line:40,column:42},end:{line:40,column:52}},'7':{start:{line:41,column:42},end:{line:41,column:52}},'8':{start:{line:42,column:4},end:{line:46,column:8}},'9':{start:{line:47,column:4},end:{line:51,column:5}},'10':{start:{line:48,column:6},end:{line:48,column:30}},'11':{start:{line:50,column:6},end:{line:50,column:28}},'12':{start:{line:56,column:169},end:{line:56,column:179}},'13':{start:{line:57,column:34},end:{line:57,column:44}},'14':{start:{line:58,column:27},end:{line:58,column:53}},'15':{start:{line:59,column:25},end:{line:59,column:36}},'16':{start:{line:61,column:32},end:{line:74,column:6}},'17':{start:{line:62,column:117},end:{line:62,column:128}},'18':{start:{line:63,column:26},end:{line:63,column:57}},'19':{start:{line:64,column:36},end:{line:64,column:91}},'20':{start:{line:65,column:38},end:{line:68,column:7}},'21':{start:{line:66,column:8},end:{line:67,column:134}},'22':{start:{line:69,column:48},end:{line:69,column:169}},'23':{start:{line:69,column:54},end:{line:69,column:169}},'24':{start:{line:71,column:6},end:{line:73,column:181}},'25':{start:{line:76,column:4},end:{line:85,column:6}},'26':{start:{line:88,column:0},end:{line:99,column:2}},'27':{start:{line:100,column:0},end:{line:112,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:21,column:18},end:{line:21,column:19}},loc:{start:{line:21,column:35},end:{line:25,column:3}},line:21},'1':{name:'(anonymous_1)',decl:{start:{line:21,column:35},end:{line:21,column:36}},loc:{start:{line:21,column:41},end:{line:25,column:3}},line:21},'2':{name:'(anonymous_2)',decl:{start:{line:27,column:23},end:{line:27,column:24}},loc:{start:{line:27,column:34},end:{line:37,column:3}},line:27},'3':{name:'(anonymous_3)',decl:{start:{line:39,column:15},end:{line:39,column:16}},loc:{start:{line:39,column:21},end:{line:53,column:3}},line:39},'4':{name:'(anonymous_4)',decl:{start:{line:55,column:2},end:{line:55,column:3}},loc:{start:{line:55,column:12},end:{line:86,column:3}},line:55},'5':{name:'(anonymous_5)',decl:{start:{line:61,column:48},end:{line:61,column:49}},loc:{start:{line:61,column:72},end:{line:74,column:5}},line:61},'6':{name:'(anonymous_6)',decl:{start:{line:65,column:38},end:{line:65,column:39}},loc:{start:{line:65,column:44},end:{line:68,column:7}},line:65},'7':{name:'(anonymous_7)',decl:{start:{line:69,column:48},end:{line:69,column:49}},loc:{start:{line:69,column:54},end:{line:69,column:169}},line:69}},branchMap:{'0':{loc:{start:{line:29,column:4},end:{line:33,column:5}},type:'if',locations:[{start:{line:29,column:4},end:{line:33,column:5}},{start:{line:29,column:4},end:{line:33,column:5}}],line:29},'1':{loc:{start:{line:47,column:4},end:{line:51,column:5}},type:'if',locations:[{start:{line:47,column:4},end:{line:51,column:5}},{start:{line:47,column:4},end:{line:51,column:5}}],line:47},'2':{loc:{start:{line:66,column:8},end:{line:67,column:133}},type:'cond-expr',locations:[{start:{line:66,column:53},end:{line:66,column:113}},{start:{line:67,column:10},end:{line:67,column:133}}],line:66},'3':{loc:{start:{line:66,column:9},end:{line:66,column:49}},type:'binary-expr',locations:[{start:{line:66,column:9},end:{line:66,column:27}},{start:{line:66,column:31},end:{line:66,column:49}}],line:66}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0,'19':0,'20':0,'21':0,'22':0,'23':0,'24':0,'25':0,'26':0,'27':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();
+var _map=require('lodash/map');var _map2=_interopRequireDefault(_map);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _PrepaidWrapper=require('./PrepaidWrapper.style');var _PrepaidWrapper2=_interopRequireDefault(_PrepaidWrapper);
+var _Shared=require('../../../../Shared');
+var _common=require('../../../../../utils/common.util');
+var _billUsage=require('../../../../../config/billUsage.config');
+var _ProductCards=require('../../ProductCards');
+var _helper=require('../../../../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+PrepaidWrapper=function(_Component){_inherits(PrepaidWrapper,_Component);function PrepaidWrapper(){var _ref;var _temp,_this,_ret;_classCallCheck(this,PrepaidWrapper);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=PrepaidWrapper.__proto__||Object.getPrototypeOf(PrepaidWrapper)).call.apply(_ref,[this].concat(args))),_this),_this.
+state={
+selectedPhoneNumber:'',
+amount:0},_this.
+
+
+onRadioSelect=function(phoneNumber){cov_2ptgprkp2r.f[0]++;cov_2ptgprkp2r.s[0]++;return function(){cov_2ptgprkp2r.f[1]++;cov_2ptgprkp2r.s[1]++;
+_this.setState({
+selectedPhoneNumber:phoneNumber});
+
+};},_this.
+
+onRadioGroupSelect=function(value){cov_2ptgprkp2r.f[2]++;
+var amount=void 0;cov_2ptgprkp2r.s[2]++;
+if(value!=='more'){cov_2ptgprkp2r.b[0][0]++;cov_2ptgprkp2r.s[3]++;
+amount=parseInt(value);
+}else{cov_2ptgprkp2r.b[0][1]++;cov_2ptgprkp2r.s[4]++;
+amount=value;
+}cov_2ptgprkp2r.s[5]++;
+_this.setState({
+amount:amount});
+
+},_this.
+
+payPrepaid=function(){cov_2ptgprkp2r.f[3]++;var _ref2=(cov_2ptgprkp2r.s[6]++,
+_this.props),setPaymentItems=_ref2.setPaymentItems,goToScreen=_ref2.goToScreen;var _ref3=(cov_2ptgprkp2r.s[7]++,
+_this.state),selectedPhoneNumber=_ref3.selectedPhoneNumber,amount=_ref3.amount;cov_2ptgprkp2r.s[8]++;
+setPaymentItems([{
+service:'tmhPrepaid',
+amount:amount,
+msisdn:selectedPhoneNumber}]);cov_2ptgprkp2r.s[9]++;
+
+if(amount==='more'){cov_2ptgprkp2r.b[1][0]++;cov_2ptgprkp2r.s[10]++;
+goToScreen('TopUpMore');
+}else{cov_2ptgprkp2r.b[1][1]++;cov_2ptgprkp2r.s[11]++;
+goToScreen('Payment');
+}
+
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(PrepaidWrapper,[{key:'render',value:function render()
+
+{var _this2=this;cov_2ptgprkp2r.f[4]++;var _ref4=(cov_2ptgprkp2r.s[12]++,
+this.props),productList=_ref4.productList,productDetail=_ref4.productDetail,availablePackage=_ref4.availablePackage,toggleProductCollapse=_ref4.toggleProductCollapse,goToScreen=_ref4.goToScreen,containerStyle=_ref4.containerStyle,fromPreLoginScreen=_ref4.fromPreLoginScreen,validateOTPStatus=_ref4.validateOTPStatus,defaultSelectedTab=_ref4.defaultSelectedTab;var _ref5=(cov_2ptgprkp2r.s[13]++,
+this.state),selectedPhoneNumber=_ref5.selectedPhoneNumber;
+var showTopUpValue=(cov_2ptgprkp2r.s[14]++,selectedPhoneNumber!=='');var _ref6=(cov_2ptgprkp2r.s[15]++,
+productList),tmhPrepaid=_ref6.tmhPrepaid;
+
+var prepaidSubscription=(cov_2ptgprkp2r.s[16]++,(0,_map2.default)(tmhPrepaid,function(prepaidInfo,index){cov_2ptgprkp2r.f[5]++;var _ref7=(cov_2ptgprkp2r.s[17]++,
+prepaidInfo),subscriberId=_ref7.subscriberId,balance=_ref7.balance,productId=_ref7.productId,productType=_ref7.productType,isCollapsed=_ref7.isCollapsed,subscriptionType=_ref7.subscriptionType,statusCode=_ref7.statusCode,expiryDate=_ref7.expiryDate;
+var phoneNumber=(cov_2ptgprkp2r.s[18]++,(0,_common.phoneNumberFormatter)(productId));
+var prepaidProductDetail=(cov_2ptgprkp2r.s[19]++,(0,_result2.default)(productDetail,'tmhPrepaid.'+subscriberId,{}));cov_2ptgprkp2r.s[20]++;
+var onPrepaidToggleCollapse=function onPrepaidToggleCollapse(){cov_2ptgprkp2r.f[6]++;cov_2ptgprkp2r.s[21]++;
+(cov_2ptgprkp2r.b[3][0]++,fromPreLoginScreen)&&(cov_2ptgprkp2r.b[3][1]++,!validateOTPStatus)?(cov_2ptgprkp2r.b[2][0]++,_this2.props.viewCurrentUsage({navigateToExtraPackage:false})):(cov_2ptgprkp2r.b[2][1]++,
+toggleProductCollapse('tmhPrepaid',subscriberId,null,productId,productType,subscriptionType,null,defaultSelectedTab));
+};cov_2ptgprkp2r.s[22]++;
+var onTrueMoveHNavigatetoExtraPackage=function onTrueMoveHNavigatetoExtraPackage(){cov_2ptgprkp2r.f[7]++;cov_2ptgprkp2r.s[23]++;return goToScreen('TMPackageDetailsExtra',{title:phoneNumber,isPrepaid:true,productType:'tmhPrepaid',subscriberId:subscriberId});};cov_2ptgprkp2r.s[24]++;
+
+return _react2.default.createElement(_ProductCards.TMPrepaidProductCard,{key:index,goToScreen:goToScreen,isSelected:productId===selectedPhoneNumber,onRadioSelect:_this2.onRadioSelect(productId),index:index,
+phone:phoneNumber,amount:Number(balance),expiryDate:expiryDate,statusCode:statusCode,onCollapseToggle:onPrepaidToggleCollapse,
+isCollapsed:isCollapsed,productDetail:prepaidProductDetail,onTrueMoveHNavigatetoExtraPackage:onTrueMoveHNavigatetoExtraPackage,validateOTPStatus:validateOTPStatus});
+}));cov_2ptgprkp2r.s[25]++;
+
+return(
+_react2.default.createElement(_Shared.WrapperCard,{header:(0,_helper.translate)('BILLS_USAGE_PREPAID_NUMBERS'),style:_extends({},_PrepaidWrapper2.default.container,containerStyle),contentContainerStyles:_PrepaidWrapper2.default.contentContainer},
+_react2.default.createElement(_Shared.ISText,{style:_PrepaidWrapper2.default.prepaidTitleText,type:'BOLD'},(0,_helper.translate)('BILLS_USAGE_PREPAID_CHOOSE')),
+_react2.default.createElement(_reactNative.View,{style:_PrepaidWrapper2.default.radioGroupSection},
+_react2.default.createElement(_Shared.RadioGroup,{radioGroupData:availablePackage,style:_PrepaidWrapper2.default.radioGroupStyles,showDefaultValue:showTopUpValue,onChange:this.onRadioGroupSelect}),
+_react2.default.createElement(_Shared.Button,{text:(0,_helper.translate)('BILLS_USAGE_TOP_UP'),style:_PrepaidWrapper2.default.buttonStyle,disabled:!showTopUpValue,onPress:this.payPrepaid})),
+
+prepaidSubscription));
+
+
+}}]);return PrepaidWrapper;}(_react.Component);cov_2ptgprkp2r.s[26]++;
+
+PrepaidWrapper.defaultProps={
+productList:{},
+availablePackage:[],
+goToScreen:_noop2.default,
+productDetail:{},
+toggleProductCollapse:_noop2.default,
+containerStyle:{},
+setPaymentItems:_noop2.default,
+validateOTPStatus:false,
+fromPreLoginScreen:false,
+defaultSelectedTab:_billUsage.PRODUCT_TABS.CURRENT_USAGE};cov_2ptgprkp2r.s[27]++;
+
+PrepaidWrapper.propTypes={
+containerStyle:_propTypes2.default.object,
+productList:_propTypes2.default.object,
+availablePackage:_propTypes2.default.array,
+goToScreen:_propTypes2.default.func,
+productDetail:_propTypes2.default.object,
+toggleProductCollapse:_propTypes2.default.func,
+setPaymentItems:_propTypes2.default.func,
+viewCurrentUsage:_propTypes2.default.func,
+validateOTPStatus:_propTypes2.default.bool,
+fromPreLoginScreen:_propTypes2.default.bool,
+defaultSelectedTab:_propTypes2.default.number};exports.default=
+
+PrepaidWrapper;

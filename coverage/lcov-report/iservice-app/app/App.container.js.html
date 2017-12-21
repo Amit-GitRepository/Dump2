@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/App.container.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">iservice-app/app</a> App.container.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">33.33% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>13/39</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">6.25% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>1/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">22.22% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/18</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">30.56% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>11/36</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import DeepLink from './utils/deeplink.util';
+import ExitOnDoubleBack from 'exit-on-double-back';
+import firebase from './utils/firebase.util';
+import isEmpty from 'lodash/isEmpty';
+import noop from 'lodash/noop';
+import Popup from './pages/Popup/Popup.page';
+import Proptypes from 'prop-types';
+import React, {Component} from 'react';
+import result from 'lodash/result';
+import Router from './routes/index.routes';
+import SplashScreen from 'react-native-splash-screen';
+import uniq from 'lodash/uniq';
+import {addNavigationHelpers, NavigationActions} from 'react-navigation';
+import {appContainerStyle, statusBarStyle} from './themes/application.styles';
+import {AppState, NetInfo, StatusBar, View} from 'react-native';
+import {connect} from 'react-redux';
+import {deeplinkReceived, notifyAlertHidden, registerFCMToken, setNetworkStatus} from './redux/actions/index.actions';
+import {getAlertConfig} from './utils/forceUpdate.util';
+import {menuConfig} from './config/sideMenu.config';
+import {OverlaySpinner} from './components/Shared';
+import {translate} from './language/i18n/helper';
+&nbsp;
+class App extends Component {
+&nbsp;
+  previousAppState = AppState.currentState
+&nbsp;
+  componentWillMount () {
+    SplashScreen.hide();
+    NetInfo.isConnected.addEventListener(
+      'connectionChange',
+      this.props.setNetworkStatus
+    );
+    AppState.addEventListener('change', this._handleAppStateChange);
+    DeepLink.addListener(this._handleLinkReceived);
+    firebase.messaging().onTokenRefresh(<span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >      if (!isEmpty(this.props.profile))</span>
+<span class="cstat-no" title="statement not covered" >        this.props.registerFCMToken();</span>
+    });
+  }
+&nbsp;
+<span class="fstat-no" title="function not covered" >  co</span>mponentWillUnmount () {
+<span class="cstat-no" title="statement not covered" >    NetInfo.isConnected.removeEventListener('connectionChange', this.props.setNetworkStatus);</span>
+<span class="cstat-no" title="statement not covered" >    AppState.removeEventListener('change', this._handleAppStateChange);</span>
+<span class="cstat-no" title="statement not covered" >    DeepLink.removeListener();</span>
+  }
+&nbsp;
+  _handleLinkReceived = <span class="fstat-no" title="function not covered" >(l</span>ink) =&gt; {
+<span class="cstat-no" title="statement not covered" >    if (link) {</span>
+<span class="cstat-no" title="statement not covered" >      this.props.deeplinkReceived(link);</span>
+    }
+  }
+&nbsp;
+  _handleAppStateChange = <span class="fstat-no" title="function not covered" >(n</span>extAppState) =&gt; {
+<span class="cstat-no" title="statement not covered" >    if (nextAppState === 'active') {</span>
+<span class="cstat-no" title="statement not covered" >      if ((this.previousAppState === 'inactive' || this.previousAppState === 'background') &amp;&amp; !this.props.forceUpdate.isUpdateAlertVisible &amp;&amp; this.props.forceUpdate.forced) {</span>
+<span class="cstat-no" title="statement not covered" >        getAlertConfig(this.props.forceUpdate.appLinks, true).then(<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.props.hideAlert())</span>;</span>
+      }
+<span class="cstat-no" title="statement not covered" >      NetInfo.isConnected.fetch().then(this.props.setNetworkStatus);</span>
+    }
+<span class="cstat-no" title="statement not covered" >    this.previousAppState = nextAppState;</span>
+  };
+&nbsp;
+  //  To get all the unique screen that a user can navigate to using side menu
+  _getScreenList = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+    const screenList = <span class="cstat-no" title="statement not covered" >[];</span>
+<span class="cstat-no" title="statement not covered" >    menuConfig.map(<span class="fstat-no" title="function not covered" >(i</span>temGroup) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      itemGroup.nodes.map(<span class="fstat-no" title="function not covered" >(i</span>tem) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        screenList.push(item.screen);</span>
+<span class="cstat-no" title="statement not covered" >        if (item.nodes) {</span>
+<span class="cstat-no" title="statement not covered" >          item.nodes.map(<span class="fstat-no" title="function not covered" >(s</span>ubItem) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >            screenList.push(subItem.screen);</span>
+          });
+        }
+      });
+    });
+<span class="cstat-no" title="statement not covered" >    return uniq(screenList);</span>
+  }
+&nbsp;
+  render () {
+    const {showSpinner, dispatch, nav, language, profile, goBack} = this.props;
+    return (
+      &lt;View style={appContainerStyle}&gt;
+        &lt;StatusBar translucent {...statusBarStyle}/&gt;
+        &lt;ExitOnDoubleBack exitableRoutes={isEmpty(profile)
+          ? ['Landing']
+          : <span class="branch-1 cbranch-no" title="branch not covered" >this._getScreenList()}</span> toastMessage={translate('EXIT_APP_CONFIRMATION')} doubleBackInterval={3000} backHandler={goBack} nav={nav}&gt;
+          &lt;Router screenProps={{language, keyboardDismissMode: 'on-drag', drawerLockMode: nav.drawerLockMode}} navigation={addNavigationHelpers({dispatch, state: nav})}/&gt;
+        &lt;/ExitOnDoubleBack&gt;
+        &lt;Popup /&gt;
+        &lt;OverlaySpinner showSpinner={showSpinner}/&gt;
+      &lt;/View&gt;
+    );
+  }
+}
+&nbsp;
+App.defaultProps = {
+  hideAlert: noop,
+  deeplinkReceived: noop,
+  goBack: noop
+};
+App.propTypes = {
+  showSpinner: Proptypes.number.isRequired,
+  forceUpdate: Proptypes.object,
+  setNetworkStatus: Proptypes.func.isRequired,
+  dispatch: Proptypes.func.isRequired,
+  nav: Proptypes.object.isRequired,
+  language: Proptypes.string.isRequired,
+  profile: Proptypes.object,
+  hideAlert: Proptypes.func,
+  deeplinkReceived: Proptypes.func,
+  goBack: Proptypes.func,
+  registerFCMToken: Proptypes.func
+};
+&nbsp;
+export const mapStateToProps = ({spinner, nav, user, forceUpdate}) =&gt; ({
+  showSpinner: result(spinner, 'count', 0),
+  nav,
+  forceUpdate,
+  language: user.language,
+  profile: user.profile
+});
+&nbsp;
+export const mapDispatchToProps = (dispatch) =&gt; ({
+  dispatch,
+  hideAlert: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >dispatch(notifyAlertHidden()),</span>
+  setNetworkStatus: <span class="fstat-no" title="function not covered" >(i</span>sConnected) =&gt; <span class="cstat-no" title="statement not covered" >dispatch(setNetworkStatus(isConnected)),</span>
+  deeplinkReceived: <span class="fstat-no" title="function not covered" >(l</span>ink) =&gt; <span class="cstat-no" title="statement not covered" >dispatch(deeplinkReceived(link)),</span>
+  goBack: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >dispatch(NavigationActions.back()),</span>
+  registerFCMToken: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >dispatch(registerFCMToken())</span>
+});
+&nbsp;
+export default connect(mapStateToProps, mapDispatchToProps)(App);
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

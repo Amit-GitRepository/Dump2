@@ -1,0 +1,13 @@
+var _PaymentStatus=require('../PaymentStatus.page');var _PaymentStatus2=_interopRequireDefault(_PaymentStatus);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);
+var _set=require('lodash/set');var _set2=_interopRequireDefault(_set);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('PaymentStatus component',function(){
+it('renders correctly',function(){
+var navigation={};
+(0,_set2.default)(navigation,'state.params.status','SUCCESS');
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_PaymentStatus2.default,{navigation:navigation})).toJSON();
+expect(component).toMatchSnapshot();
+});
+});

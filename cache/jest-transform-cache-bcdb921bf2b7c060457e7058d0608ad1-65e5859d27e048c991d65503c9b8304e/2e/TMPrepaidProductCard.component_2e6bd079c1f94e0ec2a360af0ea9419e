@@ -1,0 +1,89 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_26me1yafrk=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/ProductCards/TMPrepaidProductCard/TMPrepaidProductCard.component.js',hash='00847ff8f0e24fc8bf6ccbffb9b4b530f704ced7',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/ProductCards/TMPrepaidProductCard/TMPrepaidProductCard.component.js',statementMap:{'0':{start:{line:19,column:4},end:{line:19,column:117}},'1':{start:{line:21,column:35},end:{line:23,column:3}},'2':{start:{line:22,column:4},end:{line:22,column:51}},'3':{start:{line:25,column:138},end:{line:25,column:148}},'4':{start:{line:26,column:24},end:{line:26,column:32}},'5':{start:{line:27,column:29},end:{line:27,column:47}},'6':{start:{line:28,column:21},end:{line:28,column:63}},'7':{start:{line:29,column:26},end:{line:29,column:53}},'8':{start:{line:30,column:25},end:{line:30,column:143}},'9':{start:{line:31,column:26},end:{line:31,column:88}},'10':{start:{line:32,column:20},end:{line:32,column:124}},'11':{start:{line:33,column:31},end:{line:33,column:113}},'12':{start:{line:34,column:4},end:{line:55,column:6}},'13':{start:{line:59,column:0},end:{line:72,column:2}},'14':{start:{line:74,column:0},end:{line:87,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:18,column:27},end:{line:18,column:28}},loc:{start:{line:18,column:33},end:{line:20,column:3}},line:18},'1':{name:'(anonymous_1)',decl:{start:{line:21,column:25},end:{line:21,column:26}},loc:{start:{line:21,column:35},end:{line:23,column:3}},line:21},'2':{name:'(anonymous_2)',decl:{start:{line:21,column:35},end:{line:21,column:36}},loc:{start:{line:21,column:41},end:{line:23,column:3}},line:21},'3':{name:'(anonymous_3)',decl:{start:{line:24,column:2},end:{line:24,column:3}},loc:{start:{line:24,column:12},end:{line:56,column:3}},line:24}},branchMap:{'0':{loc:{start:{line:29,column:26},end:{line:29,column:53}},type:'cond-expr',locations:[{start:{line:29,column:41},end:{line:29,column:49}},{start:{line:29,column:52},end:{line:29,column:53}}],line:29},'1':{loc:{start:{line:30,column:34},end:{line:30,column:142}},type:'binary-expr',locations:[{start:{line:30,column:34},end:{line:30,column:80}},{start:{line:30,column:85},end:{line:30,column:142}}],line:30},'2':{loc:{start:{line:31,column:26},end:{line:31,column:88}},type:'cond-expr',locations:[{start:{line:31,column:39},end:{line:31,column:83}},{start:{line:31,column:86},end:{line:31,column:88}}],line:31},'3':{loc:{start:{line:32,column:20},end:{line:32,column:124}},type:'cond-expr',locations:[{start:{line:32,column:37},end:{line:32,column:45}},{start:{line:32,column:48},end:{line:32,column:124}}],line:32},'4':{loc:{start:{line:33,column:31},end:{line:33,column:113}},type:'cond-expr',locations:[{start:{line:33,column:83},end:{line:33,column:85}},{start:{line:33,column:88},end:{line:33,column:113}}],line:33},'5':{loc:{start:{line:45,column:13},end:{line:49,column:26}},type:'cond-expr',locations:[{start:{line:45,column:30},end:{line:49,column:19}},{start:{line:49,column:22},end:{line:49,column:26}}],line:45},'6':{loc:{start:{line:50,column:13},end:{line:50,column:129}},type:'cond-expr',locations:[{start:{line:50,column:27},end:{line:50,column:122}},{start:{line:50,column:125},end:{line:50,column:129}}],line:50}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0},f:{'0':0,'1':0,'2':0,'3':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0],'4':[0,0],'5':[0,0],'6':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _BaseProductCollapsibleBar=require('../BaseProductCollapsibleBar/BaseProductCollapsibleBar.component');var _BaseProductCollapsibleBar2=_interopRequireDefault(_BaseProductCollapsibleBar);
+var _CurrentUsageTM=require('../../../BillUsage/BillUsageShared/CurrentUsageTM/CurrentUsageTM.component');var _CurrentUsageTM2=_interopRequireDefault(_CurrentUsageTM);
+var _isEmpty=require('lodash/isEmpty');var _isEmpty2=_interopRequireDefault(_isEmpty);
+var _moment=require('../../../../../utils/moment.util');var _moment2=_interopRequireDefault(_moment);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _ProductCardTitle=require('../../BillUsageShared/ProductCardTitle/ProductCardTitle.component');var _ProductCardTitle2=_interopRequireDefault(_ProductCardTitle);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _TMPrepaidProductCard=require('./TMPrepaidProductCard.style');var _TMPrepaidProductCard2=_interopRequireDefault(_TMPrepaidProductCard);
+var _Shared=require('../../../../Shared');
+var _common=require('../../../../../utils/common.util');
+var _billUsage=require('../../../../../config/billUsage.config');
+var _helper=require('../../../../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+TMPrepaidProductCard=function(_Component){_inherits(TMPrepaidProductCard,_Component);function TMPrepaidProductCard(){var _ref;var _temp,_this,_ret;_classCallCheck(this,TMPrepaidProductCard);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=TMPrepaidProductCard.__proto__||Object.getPrototypeOf(TMPrepaidProductCard)).call.apply(_ref,[this].concat(args))),_this),_this.
+navigateToExtraPackage=function(){cov_26me1yafrk.f[0]++;cov_26me1yafrk.s[0]++;
+_this.props.goToScreen('TMPackageDetailsExtra',{title:(0,_common.phoneNumberFormatter)(_this.props.phone),isPrepaid:true});
+},_this.
+navigateToBillDetail=function(bill){cov_26me1yafrk.f[1]++;cov_26me1yafrk.s[1]++;return function(){cov_26me1yafrk.f[2]++;cov_26me1yafrk.s[2]++;
+_this.props.goToScreen('TMoveBillDetail',bill);
+};},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(TMPrepaidProductCard,[{key:'render',value:function render()
+{cov_26me1yafrk.f[3]++;var _ref2=(cov_26me1yafrk.s[3]++,
+this.props),phone=_ref2.phone,amount=_ref2.amount,title=_ref2.title,subtitle=_ref2.subtitle,expiryDate=_ref2.expiryDate,onRadioSelect=_ref2.onRadioSelect,isSelected=_ref2.isSelected,isCollapsed=_ref2.isCollapsed,onCollapseToggle=_ref2.onCollapseToggle,productDetail=_ref2.productDetail,status=_ref2.status;
+var currentDate=(cov_26me1yafrk.s[4]++,(0,_moment2.default)());
+var expiryDateMoment=(cov_26me1yafrk.s[5]++,(0,_moment2.default)(expiryDate));
+var daysDiff=(cov_26me1yafrk.s[6]++,expiryDateMoment.diff(currentDate,'days'));
+var remainingDays=(cov_26me1yafrk.s[7]++,daysDiff>0?(cov_26me1yafrk.b[0][0]++,daysDiff):(cov_26me1yafrk.b[0][1]++,0));
+var hasPackages=(cov_26me1yafrk.s[8]++,!(0,_isEmpty2.default)((cov_26me1yafrk.b[1][0]++,(0,_result2.default)(productDetail,'extraPackage.data',{}))||(cov_26me1yafrk.b[1][1]++,!(0,_isEmpty2.default)((0,_result2.default)(productDetail,'extraPackage.voice',{})))));
+var simExpiryDate=(cov_26me1yafrk.s[9]++,expiryDate?(cov_26me1yafrk.b[2][0]++,new _moment2.default(expiryDate).format('DD MMM YYYY')):(cov_26me1yafrk.b[2][1]++,''));
+var subText=(cov_26me1yafrk.s[10]++,status==='S'?(cov_26me1yafrk.b[3][0]++,subtitle):(cov_26me1yafrk.b[3][1]++,(0,_helper.translate)('BILLS_USAGE_ACTIVE_UNTIL')+' '+simExpiryDate+' '+subtitle));
+var leftTitleTextStyle=(cov_26me1yafrk.s[11]++,remainingDays>_billUsage.PREPAID_CONFIG.MINIMUM_DAYS_ALERT?(cov_26me1yafrk.b[4][0]++,{}):(cov_26me1yafrk.b[4][1]++,_TMPrepaidProductCard2.default.leftTitleTextStyle));cov_26me1yafrk.s[12]++;
+return(
+_react2.default.createElement(_BaseProductCollapsibleBar2.default,{type:'PREPAID',status:status,leftTitleText:phone,
+leftDetailText:''+(0,_helper.translate)('BILLS_USAGE_TIME_REMAINING_DAYS',{count:remainingDays,days:remainingDays}),
+rightTitleText:(0,_helper.translate)('BILLS_USAGE_AVAILABLE_BALANCE'),amountText:amount,
+onChecked:onRadioSelect,isCollapsed:isCollapsed,onCollapseToggle:onCollapseToggle,isChecked:isSelected,value:phone,
+leftTitleTextStyle:leftTitleTextStyle},
+_react2.default.createElement(_reactNative.View,{style:_TMPrepaidProductCard2.default.container},
+_react2.default.createElement(_reactNative.View,{style:_TMPrepaidProductCard2.default.productTitle},
+_react2.default.createElement(_ProductCardTitle2.default,{text:title,subtext:subText,navigate:this.navigateToExtraPackage,isPrepaid:true})),
+
+_react2.default.createElement(_reactNative.View,{elevation:2,style:_TMPrepaidProductCard2.default.subContainer},
+status==='S'?(cov_26me1yafrk.b[5][0]++,_react2.default.createElement(_reactNative.View,null,
+_react2.default.createElement(_Shared.ISText,{style:_TMPrepaidProductCard2.default.title,type:'BOLD'},(0,_helper.translate)('BILLS_USAGE_PREPAID_SUSPEND_MESSAGE')+' '+simExpiryDate),
+_react2.default.createElement(_Shared.Button,{text:(0,_helper.translate)('BILLS_USAGE_TOP_UP'),style:_TMPrepaidProductCard2.default.buttonStyle}),
+_react2.default.createElement(_reactNative.View,{style:_TMPrepaidProductCard2.default.horizontalLine}))):(cov_26me1yafrk.b[5][1]++,
+null),
+hasPackages?(cov_26me1yafrk.b[6][0]++,_react2.default.createElement(_Shared.ISText,{style:_TMPrepaidProductCard2.default.title,type:'BOLD'},(0,_helper.translate)('BILLS_USAGE_EXTRA_PACKAGE_DEAL'))):(cov_26me1yafrk.b[6][1]++,null),
+_react2.default.createElement(_CurrentUsageTM2.default,{data:(0,_result2.default)(productDetail,'extraPackage.data',{}),voice:(0,_result2.default)(productDetail,'extraPackage.voice',{}),hotExtraPackage:(0,_result2.default)(productDetail,'extraPackage.hotExtraPackage',{}),navigateToBuyExtraPackage:this.navigateToBuyExtraPackage,goToBillDetail:this.navigateToBillDetail(productDetail.invoice_id)})))));
+
+
+
+
+}}]);return TMPrepaidProductCard;}(_react.Component);cov_26me1yafrk.s[13]++;
+
+
+TMPrepaidProductCard.defaultProps={
+phone:'081-257-7887',
+expiryDate:'2017-12-15T00:00:00.000+07:00',
+amount:3000,
+title:'Sim Super Fun',
+subtitle:'(4 Extra Packages)',
+goToScreen:_noop2.default,
+onRadioSelect:_noop2.default,
+isSelected:false,
+status:'ACTIVE',
+onCollapseToggle:_noop2.default,
+isCollapsed:_noop2.default,
+productDetail:{}};cov_26me1yafrk.s[14]++;
+
+
+TMPrepaidProductCard.propTypes={
+phone:_propTypes2.default.string,
+expiryDate:_propTypes2.default.string,
+amount:_propTypes2.default.number,
+title:_propTypes2.default.string,
+subtitle:_propTypes2.default.string,
+goToScreen:_propTypes2.default.func,
+productDetail:_propTypes2.default.object,
+onRadioSelect:_propTypes2.default.func,
+isSelected:_propTypes2.default.bool,
+status:_propTypes2.default.string,
+onCollapseToggle:_propTypes2.default.func,
+isCollapsed:_propTypes2.default.bool};exports.default=
+
+
+TMPrepaidProductCard;

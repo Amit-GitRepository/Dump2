@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`KeyboardScrollView component renders correctly 1`] = `
+<RCTScrollView
+  automaticallyAdjustContentInsets={false}
+  contentContainerStyle={undefined}
+  contentInset={
+    Object {
+      "bottom": 0,
+    }
+  }
+  enableAutoAutomaticScroll={true}
+  enableResetScrollToCoords={true}
+  extraHeight={75}
+  extraScrollHeight={0}
+  keyboardDismissMode="interactive"
+  keyboardOpeningTime={250}
+  onScroll={[Function]}
+  overScrollMode="auto"
+  scrollEventThrottle={0}
+  showsVerticalScrollIndicator={true}
+>
+  <View>
+    <View />
+  </View>
+</RCTScrollView>
+`;

@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Separator component renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "stretch",
+      "flexDirection": "row",
+      "padding": 5,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignSelf": "center",
+          "backgroundColor": "#B9C1C9",
+          "flex": 1,
+          "height": 1,
+        },
+        Object {
+          "marginRight": 10,
+        },
+      ]
+    }
+  />
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "color": "#B9C1C9",
+        "fontFamily": "SukhumvitSet-Bold",
+        "fontSize": 14,
+      }
+    }
+  >
+    
+  </Text>
+  <View
+    style={
+      Array [
+        Object {
+          "alignSelf": "center",
+          "backgroundColor": "#B9C1C9",
+          "flex": 1,
+          "height": 1,
+        },
+        Object {
+          "marginLeft": 10,
+        },
+      ]
+    }
+  />
+</View>
+`;

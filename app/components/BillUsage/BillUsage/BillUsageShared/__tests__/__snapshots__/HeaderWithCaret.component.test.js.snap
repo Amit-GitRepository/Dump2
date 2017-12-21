@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BillHistoryList component renders correctly 1`] = `
+<View
+  style={undefined}
+>
+  <View>
+    <View
+      style={Object {}}
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "borderTopLeftRadius": 10,
+              "borderTopRightRadius": 10,
+              "padding": 10,
+            },
+            Object {},
+            Object {
+              "backgroundColor": "#FBBC1E",
+            },
+          ]
+        }
+      />
+    </View>
+    <Text
+      accessible={true}
+      allowFontScaling={false}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#FBBC1E",
+            "fontSize": 30,
+          },
+          Array [
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "transparent",
+            },
+            Object {
+              "bottom": 12,
+              "marginBottom": -12,
+            },
+            Object {},
+          ],
+          Object {
+            "fontFamily": "iservice",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+        ]
+      }
+    >
+      
+    </Text>
+  </View>
+</View>
+`;

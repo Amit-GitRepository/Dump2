@@ -1,0 +1,141 @@
+var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _forceUpdate=require('../forceUpdate.saga');var _forceUpdate2=_interopRequireDefault(_forceUpdate);
+var _localStorage=require('../../../utils/localStorage.util');var _localStorage2=_interopRequireDefault(_localStorage);
+var _reduxSagaTesting=require('redux-saga-testing');var _reduxSagaTesting2=_interopRequireDefault(_reduxSagaTesting);
+var _effects=require('redux-saga/effects');
+var _firebase=require('../../../utils/firebase.util');
+var _forceUpdate3=require('../../../utils/forceUpdate.util');
+
+
+
+var _index=require('../../actions/index.actions');
+var _versionControl=require('../../../config/versionControl.config');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('forceUpdate saga: testing the root saga',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_forceUpdate2.default)());
+it('should take STARTUP_SAGA_COMPLETE action',function(result){
+expect(result).toEqual((0,_effects.takeLatest)(_index.STARTUP_SAGA_COMPLETE,_forceUpdate.checkForUpdate));
+});
+it('should call nothing after this',function(result){
+expect(result).toBeUndefined();
+});
+});
+
+describe('forceUpdate saga test when current versions on device is lower than min version',function(){
+var versionMock=_extends({},_versionControl.versionControlConfig);
+versionMock.FORCE_UPDATE_MIN_VERSION='2.0.0';
+versionMock.FORCE_UPDATE_CURRENT_VERSION='1.5.6';
+var it=(0,_reduxSagaTesting2.default)((0,_forceUpdate.checkForUpdate)());
+var appLinks={
+playStoreUrl:versionMock.FORCE_UPDATE_PLAY_STORE_URL,
+appStoreUrl:versionMock.FORCE_UPDATE_APP_STORE_URL};
+
+it('should call updateNotification retries function',function(result){
+expect(result).toEqual((0,_effects.call)(_forceUpdate3.updateNotificationRetries));
+});
+it('should get notificationRetries from local storage',function(result){
+expect(result).toEqual((0,_effects.call)(_localStorage2.default.getItem,'notificationRetries'));
+});
+it('should fetch the config from firebase',function(result){
+expect(result).toEqual((0,_effects.call)(_firebase.fetchRemoteConfig));
+return versionMock;
+});
+it('should dispatch the alert visible action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.notifyAlertVisible)({forced:true,appLinks:appLinks})));
+});
+it('should call the getAlertconfig function',function(result){
+expect(result).toEqual((0,_effects.call)(_forceUpdate3.getAlertConfig,appLinks,true));
+});
+it('should dispatch the alert hidden action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.notifyAlertHidden)()));
+});
+});
+
+describe('forceUpdate saga test when current version on device is in the list of black listed versions',function(){
+var versionMock=_extends({},_versionControl.versionControlConfig);
+versionMock.FORCE_UPDATE_MIN_VERSION='1.5.0';
+versionMock.FORCE_UPDATE_CURRENT_VERSION='1.5.6';
+versionMock.FORCE_UPDATE_BLACKLIST_VERSIONS=['1.5.6','2.0.0'];
+versionMock.FORCE_UPDATE_NOTIFICATION_RETRY=5;
+var appLinks={
+playStoreUrl:versionMock.FORCE_UPDATE_PLAY_STORE_URL,
+appStoreUrl:versionMock.FORCE_UPDATE_APP_STORE_URL};
+
+var it=(0,_reduxSagaTesting2.default)((0,_forceUpdate.checkForUpdate)());
+it('should call updateNotification retries function',function(result){
+expect(result).toEqual((0,_effects.call)(_forceUpdate3.updateNotificationRetries));
+});
+it('should get notificationRetries from local storage',function(result){
+expect(result).toEqual((0,_effects.call)(_localStorage2.default.getItem,'notificationRetries'));
+return 1;
+});
+it('should fetch the config from firebase',function(result){
+expect(result).toEqual((0,_effects.call)(_firebase.fetchRemoteConfig));
+return versionMock;
+});
+it('should dispatch the alert visible action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.notifyAlertVisible)({forced:true,appLinks:appLinks})));
+});
+it('should call the getAlertconfig function',function(result){
+expect(result).toEqual((0,_effects.call)(_forceUpdate3.getAlertConfig,appLinks,true));
+});
+it('should dispatch the alert hidden action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.notifyAlertHidden)()));
+});
+});
+
+describe('forceUpdate saga test when current version on device is lower than current version but higher than min version',function(){
+var versionMock=_extends({},_versionControl.versionControlConfig);
+versionMock.FORCE_UPDATE_MIN_VERSION='1.5.0';
+versionMock.FORCE_UPDATE_CURRENT_VERSION='2.0.0';
+versionMock.FORCE_UPDATE_NOTIFICATION_RETRY=5;
+var appLinks={
+playStoreUrl:versionMock.FORCE_UPDATE_PLAY_STORE_URL,
+appStoreUrl:versionMock.FORCE_UPDATE_APP_STORE_URL};
+
+var it=(0,_reduxSagaTesting2.default)((0,_forceUpdate.checkForUpdate)());
+it('should call updateNotification retries function',function(result){
+expect(result).toEqual((0,_effects.call)(_forceUpdate3.updateNotificationRetries));
+});
+it('should get notificationRetries from local storage',function(result){
+expect(result).toEqual((0,_effects.call)(_localStorage2.default.getItem,'notificationRetries'));
+return 1;
+});
+it('should fetch the config from firebase',function(result){
+expect(result).toEqual((0,_effects.call)(_firebase.fetchRemoteConfig));
+return versionMock;
+});
+it('should dispatch the alert visible action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.notifyAlertVisible)({forced:false,appLinks:appLinks})));
+});
+it('should increment the value of notification retries in the local storage by 1',function(result){
+expect(result).toEqual((0,_effects.call)(_localStorage2.default.setItem,'notificationRetries',2));
+});
+it('should call the getAlertconfig function with forced false',function(result){
+expect(result).toEqual((0,_effects.call)(_forceUpdate3.getAlertConfig,appLinks,false));
+});
+it('should dispatch the alert hidden action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.notifyAlertHidden)()));
+});
+});
+
+describe('forceUpdate saga test when current version on device is lower than current version but higher than min version with exceeded notification retries',function(){
+var versionMock=_extends({},_versionControl.versionControlConfig);
+versionMock.FORCE_UPDATE_MIN_VERSION='1.5.0';
+versionMock.FORCE_UPDATE_CURRENT_VERSION='2.0.0';
+versionMock.FORCE_UPDATE_NOTIFICATION_RETRY=0;
+var it=(0,_reduxSagaTesting2.default)((0,_forceUpdate.checkForUpdate)());
+it('should call updateNotification retries function',function(result){
+expect(result).toEqual((0,_effects.call)(_forceUpdate3.updateNotificationRetries));
+});
+it('should get notificationRetries from local storage',function(result){
+expect(result).toEqual((0,_effects.call)(_localStorage2.default.getItem,'notificationRetries'));
+return 1;
+});
+it('should fetch the config from firebase',function(result){
+expect(result).toEqual((0,_effects.call)(_firebase.fetchRemoteConfig));
+return versionMock;
+});
+it('should display the optional update alert box',function(result){
+expect(result).toEqual(undefined);
+});
+});

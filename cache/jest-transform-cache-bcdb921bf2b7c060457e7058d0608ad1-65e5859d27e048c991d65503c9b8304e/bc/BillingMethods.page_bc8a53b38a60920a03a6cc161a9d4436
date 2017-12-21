@@ -1,0 +1,95 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.mapDispatchToProps=undefined;var cov_qkzp7g82d=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/BillingMethods/BillingMethods.page.js',hash='05194c114894a49378a540b098ecc2d80ce55adf',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/BillingMethods/BillingMethods.page.js',statementMap:{'0':{start:{line:12,column:21},end:{line:12,column:23}},'1':{start:{line:13,column:2},end:{line:37,column:5}},'2':{start:{line:14,column:4},end:{line:16,column:5}},'3':{start:{line:15,column:6},end:{line:15,column:13}},'4':{start:{line:18,column:4},end:{line:33,column:5}},'5':{start:{line:23,column:6},end:{line:32,column:9}},'6':{start:{line:24,column:28},end:{line:24,column:57}},'7':{start:{line:25,column:8},end:{line:31,column:9}},'8':{start:{line:25,column:43},end:{line:25,column:66}},'9':{start:{line:26,column:10},end:{line:26,column:52}},'10':{start:{line:28,column:10},end:{line:30,column:13}},'11':{start:{line:29,column:12},end:{line:29,column:44}},'12':{start:{line:34,column:4},end:{line:36,column:7}},'13':{start:{line:35,column:6},end:{line:35,column:37}},'14':{start:{line:38,column:2},end:{line:38,column:20}},'15':{start:{line:47,column:4},end:{line:47,column:87}},'16':{start:{line:51,column:26},end:{line:51,column:34}},'17':{start:{line:52,column:26},end:{line:52,column:36}},'18':{start:{line:53,column:4},end:{line:56,column:5}},'19':{start:{line:54,column:6},end:{line:54,column:78}},'20':{start:{line:55,column:6},end:{line:55,column:41}},'21':{start:{line:59,column:33},end:{line:61,column:3}},'22':{start:{line:60,column:4},end:{line:60,column:42}},'23':{start:{line:64,column:30},end:{line:64,column:40}},'24':{start:{line:65,column:4},end:{line:74,column:6}},'25':{start:{line:78,column:0},end:{line:83,column:2}},'26':{start:{line:85,column:24},end:{line:88,column:2}},'27':{start:{line:85,column:36},end:{line:88,column:1}},'28':{start:{line:90,column:34},end:{line:93,column:2}},'29':{start:{line:90,column:49},end:{line:93,column:1}},'30':{start:{line:91,column:38},end:{line:91,column:107}},'31':{start:{line:92,column:41},end:{line:92,column:92}}},fnMap:{'0':{name:'getAccountIds',decl:{start:{line:11,column:9},end:{line:11,column:22}},loc:{start:{line:11,column:37},end:{line:39,column:1}},line:11},'1':{name:'(anonymous_1)',decl:{start:{line:13,column:25},end:{line:13,column:26}},loc:{start:{line:13,column:41},end:{line:37,column:3}},line:13},'2':{name:'(anonymous_2)',decl:{start:{line:23,column:19},end:{line:23,column:20}},loc:{start:{line:23,column:28},end:{line:32,column:7}},line:23},'3':{name:'(anonymous_3)',decl:{start:{line:25,column:33},end:{line:25,column:34}},loc:{start:{line:25,column:43},end:{line:25,column:66}},line:25},'4':{name:'(anonymous_4)',decl:{start:{line:28,column:29},end:{line:28,column:30}},loc:{start:{line:28,column:39},end:{line:30,column:11}},line:28},'5':{name:'(anonymous_5)',decl:{start:{line:34,column:17},end:{line:34,column:18}},loc:{start:{line:34,column:26},end:{line:36,column:5}},line:34},'6':{name:'(anonymous_6)',decl:{start:{line:46,column:2},end:{line:46,column:3}},loc:{start:{line:46,column:24},end:{line:48,column:3}},line:46},'7':{name:'(anonymous_7)',decl:{start:{line:50,column:2},end:{line:50,column:3}},loc:{start:{line:50,column:39},end:{line:57,column:3}},line:50},'8':{name:'(anonymous_8)',decl:{start:{line:59,column:21},end:{line:59,column:22}},loc:{start:{line:59,column:33},end:{line:61,column:3}},line:59},'9':{name:'(anonymous_9)',decl:{start:{line:59,column:33},end:{line:59,column:34}},loc:{start:{line:59,column:50},end:{line:61,column:3}},line:59},'10':{name:'(anonymous_10)',decl:{start:{line:63,column:2},end:{line:63,column:3}},loc:{start:{line:63,column:19},end:{line:75,column:3}},line:63},'11':{name:'(anonymous_11)',decl:{start:{line:85,column:24},end:{line:85,column:25}},loc:{start:{line:85,column:36},end:{line:88,column:1}},line:85},'12':{name:'(anonymous_12)',decl:{start:{line:90,column:34},end:{line:90,column:35}},loc:{start:{line:90,column:49},end:{line:93,column:1}},line:90},'13':{name:'(anonymous_13)',decl:{start:{line:91,column:14},end:{line:91,column:15}},loc:{start:{line:91,column:38},end:{line:91,column:107}},line:91},'14':{name:'(anonymous_14)',decl:{start:{line:92,column:25},end:{line:92,column:26}},loc:{start:{line:92,column:41},end:{line:92,column:92}},line:92}},branchMap:{'0':{loc:{start:{line:14,column:4},end:{line:16,column:5}},type:'if',locations:[{start:{line:14,column:4},end:{line:16,column:5}},{start:{line:14,column:4},end:{line:16,column:5}}],line:14},'1':{loc:{start:{line:18,column:4},end:{line:33,column:5}},type:'if',locations:[{start:{line:18,column:4},end:{line:33,column:5}},{start:{line:18,column:4},end:{line:33,column:5}}],line:18},'2':{loc:{start:{line:25,column:8},end:{line:31,column:9}},type:'if',locations:[{start:{line:25,column:8},end:{line:31,column:9}},{start:{line:25,column:8},end:{line:31,column:9}}],line:25},'3':{loc:{start:{line:53,column:4},end:{line:56,column:5}},type:'if',locations:[{start:{line:53,column:4},end:{line:56,column:5}},{start:{line:53,column:4},end:{line:56,column:5}}],line:53},'4':{loc:{start:{line:53,column:8},end:{line:53,column:56}},type:'binary-expr',locations:[{start:{line:53,column:8},end:{line:53,column:40}},{start:{line:53,column:44},end:{line:53,column:56}}],line:53},'5':{loc:{start:{line:59,column:34},end:{line:59,column:45}},type:'default-arg',locations:[{start:{line:59,column:43},end:{line:59,column:45}}],line:59},'6':{loc:{start:{line:68,column:32},end:{line:68,column:59}},type:'binary-expr',locations:[{start:{line:68,column:32},end:{line:68,column:53}},{start:{line:68,column:57},end:{line:68,column:59}}],line:68},'7':{loc:{start:{line:68,column:61},end:{line:68,column:86}},type:'binary-expr',locations:[{start:{line:68,column:61},end:{line:68,column:80}},{start:{line:68,column:84},end:{line:68,column:86}}],line:68},'8':{loc:{start:{line:69,column:28},end:{line:69,column:55}},type:'binary-expr',locations:[{start:{line:69,column:28},end:{line:69,column:49}},{start:{line:69,column:53},end:{line:69,column:55}}],line:69}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0,'19':0,'20':0,'21':0,'22':0,'23':0,'24':0,'25':0,'26':0,'27':0,'28':0,'29':0,'30':0,'31':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0],'4':[0,0],'5':[0],'6':[0,0],'7':[0,0],'8':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _lodash=require('lodash');var _lodash2=_interopRequireDefault(_lodash);
+var _BillingMethods=require('../../components/BillingMethods/BillingMethods/BillingMethods.component');var _BillingMethods2=_interopRequireDefault(_BillingMethods);
+var _ComponentWithTab2=require('../../components/ComponentWithTab/ComponentWithTab.component');var _ComponentWithTab3=_interopRequireDefault(_ComponentWithTab2);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _reactRedux=require('react-redux');
+var _reactNavigation=require('react-navigation');
+var _reactNative=require('react-native');
+var _index=require('../../redux/actions/index.actions');var actions=_interopRequireWildcard(_index);function _interopRequireWildcard(obj){if(obj&&obj.__esModule){return obj;}else{var newObj={};if(obj!=null){for(var key in obj){if(Object.prototype.hasOwnProperty.call(obj,key))newObj[key]=obj[key];}}newObj.default=obj;return newObj;}}function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}
+
+function getAccountIds(productList){cov_qkzp7g82d.f[0]++;
+var accountIds=(cov_qkzp7g82d.s[0]++,[]);cov_qkzp7g82d.s[1]++;
+_lodash2.default.forEach(productList,function(array,key){cov_qkzp7g82d.f[1]++;cov_qkzp7g82d.s[2]++;
+if(key==='tmhPrepaid'){cov_qkzp7g82d.b[0][0]++;cov_qkzp7g82d.s[3]++;
+return;
+}else{cov_qkzp7g82d.b[0][1]++;}cov_qkzp7g82d.s[4]++;
+
+if(key==='conv'){cov_qkzp7g82d.b[1][0]++;cov_qkzp7g82d.s[5]++;
+
+
+
+
+_lodash2.default.map(array,function(val){cov_qkzp7g82d.f[2]++;
+var productList=(cov_qkzp7g82d.s[6]++,_lodash2.default.result(val,'products',[]));cov_qkzp7g82d.s[7]++;
+if(_lodash2.default.every(productList,function(item){cov_qkzp7g82d.f[3]++;cov_qkzp7g82d.s[8]++;return item.isBillConsolidated;})){cov_qkzp7g82d.b[2][0]++;cov_qkzp7g82d.s[9]++;
+accountIds.push(productList[0].accountId);
+}else{cov_qkzp7g82d.b[2][1]++;cov_qkzp7g82d.s[10]++;
+_lodash2.default.map(productList,function(item){cov_qkzp7g82d.f[4]++;cov_qkzp7g82d.s[11]++;
+accountIds.push(item.accountId);
+});
+}
+});
+}else{cov_qkzp7g82d.b[1][1]++;}cov_qkzp7g82d.s[12]++;
+_lodash2.default.map(array,function(val){cov_qkzp7g82d.f[5]++;cov_qkzp7g82d.s[13]++;
+accountIds.push(val.accountId);
+});
+});cov_qkzp7g82d.s[14]++;
+return accountIds;
+}var
+
+BillingMethodsPage=function(_ComponentWithTab){_inherits(BillingMethodsPage,_ComponentWithTab);function BillingMethodsPage(){var _ref;var _temp,_this,_ret;_classCallCheck(this,BillingMethodsPage);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=BillingMethodsPage.__proto__||Object.getPrototypeOf(BillingMethodsPage)).call.apply(_ref,[this].concat(args))),_this),_this.
+state={
+isBPFetched:false},_this.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+navigateToScreen=function(screen){cov_qkzp7g82d.f[8]++;cov_qkzp7g82d.s[21]++;return function(){var params=arguments.length>0&&arguments[0]!==undefined?arguments[0]:(cov_qkzp7g82d.b[5][0]++,{});cov_qkzp7g82d.f[9]++;cov_qkzp7g82d.s[22]++;
+_this.props.goToScreen(screen,params);
+};},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(BillingMethodsPage,[{key:'componentWillMount',value:function componentWillMount(){cov_qkzp7g82d.f[6]++;cov_qkzp7g82d.s[15]++;this.props.getBillingPreferences(getAccountIds(this.props.productList).toString());}},{key:'componentWillReceiveProps',value:function componentWillReceiveProps(newProps){cov_qkzp7g82d.f[7]++;var _ref2=(cov_qkzp7g82d.s[16]++,newProps),productList=_ref2.productList;var _ref3=(cov_qkzp7g82d.s[17]++,this.state),isBPFetched=_ref3.isBPFetched;cov_qkzp7g82d.s[18]++;if((cov_qkzp7g82d.b[4][0]++,!_lodash2.default.every(productList,_lodash2.default.isEmpty))&&(cov_qkzp7g82d.b[4][1]++,!isBPFetched)){cov_qkzp7g82d.b[3][0]++;cov_qkzp7g82d.s[19]++;this.props.getBillingPreferences(getAccountIds(productList).toString());cov_qkzp7g82d.s[20]++;this.setState({isBPFetched:true});}else{cov_qkzp7g82d.b[3][1]++;}}},{key:'renderWithTab',value:function renderWithTab()
+
+{cov_qkzp7g82d.f[10]++;var _ref4=(cov_qkzp7g82d.s[23]++,
+this.props),billPreferences=_ref4.billPreferences;cov_qkzp7g82d.s[24]++;
+return(
+_react2.default.createElement(_reactNative.View,null,
+_react2.default.createElement(_BillingMethods2.default,{
+ebillContent:_lodash2.default.union((cov_qkzp7g82d.b[6][0]++,billPreferences.email)||(cov_qkzp7g82d.b[6][1]++,[]),(cov_qkzp7g82d.b[7][0]++,billPreferences.sms)||(cov_qkzp7g82d.b[7][1]++,[])),
+paperBillContent:(cov_qkzp7g82d.b[8][0]++,billPreferences.paper)||(cov_qkzp7g82d.b[8][1]++,[]),
+onApplyEbillAction:this.navigateToScreen('EbillAdd'),
+onEditEbillAction:this.navigateToScreen('EbillEdit')})));
+
+
+
+}}]);return BillingMethodsPage;}(_ComponentWithTab3.default);cov_qkzp7g82d.s[25]++;
+
+
+BillingMethodsPage.propTypes={
+goToScreen:_propTypes2.default.func,
+productList:_propTypes2.default.object,
+billPreferences:_propTypes2.default.object,
+getBillingPreferences:_propTypes2.default.func};cov_qkzp7g82d.s[26]++;
+
+
+var mapStateToProps=function mapStateToProps(state){cov_qkzp7g82d.f[11]++;cov_qkzp7g82d.s[27]++;return{
+productList:_lodash2.default.result(state,'billUsage.productList',{}),
+billPreferences:_lodash2.default.result(state,'ebill.billPreferences',{})};
+};cov_qkzp7g82d.s[28]++;
+
+var mapDispatchToProps=exports.mapDispatchToProps=function mapDispatchToProps(dispatch){cov_qkzp7g82d.f[12]++;cov_qkzp7g82d.s[29]++;return{
+goToScreen:function goToScreen(screenName,params){cov_qkzp7g82d.f[13]++;cov_qkzp7g82d.s[30]++;return dispatch(_reactNavigation.NavigationActions.navigate({routeName:screenName,params:params}));},
+getBillingPreferences:function getBillingPreferences(accountIds){cov_qkzp7g82d.f[14]++;cov_qkzp7g82d.s[31]++;return dispatch(actions.getBillingPreferences(accountIds));}};
+};exports.default=
+
+(0,_reactRedux.connect)(mapStateToProps,mapDispatchToProps)(BillingMethodsPage);

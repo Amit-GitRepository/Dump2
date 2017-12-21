@@ -1,0 +1,37 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.mapDispatchToProps=undefined;var cov_qkzp7g82d=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/BillingMethods/BillingMethods.page.js',hash='a8c335dce996446211e228c8f4e9edb7cf9bffd3',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/BillingMethods/BillingMethods.page.js',statementMap:{'0':{start:{line:11,column:33},end:{line:13,column:3}},'1':{start:{line:12,column:4},end:{line:12,column:34}},'2':{start:{line:17,column:4},end:{line:23,column:6}},'3':{start:{line:27,column:0},end:{line:29,column:2}},'4':{start:{line:31,column:24},end:{line:31,column:34}},'5':{start:{line:31,column:31},end:{line:31,column:33}},'6':{start:{line:33,column:34},end:{line:35,column:2}},'7':{start:{line:33,column:49},end:{line:35,column:1}},'8':{start:{line:34,column:43},end:{line:34,column:112}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:11,column:21},end:{line:11,column:22}},loc:{start:{line:11,column:33},end:{line:13,column:3}},line:11},'1':{name:'(anonymous_1)',decl:{start:{line:11,column:33},end:{line:11,column:34}},loc:{start:{line:11,column:39},end:{line:13,column:3}},line:11},'2':{name:'(anonymous_2)',decl:{start:{line:15,column:2},end:{line:15,column:3}},loc:{start:{line:15,column:19},end:{line:24,column:3}},line:15},'3':{name:'(anonymous_3)',decl:{start:{line:31,column:24},end:{line:31,column:25}},loc:{start:{line:31,column:31},end:{line:31,column:33}},line:31},'4':{name:'(anonymous_4)',decl:{start:{line:33,column:34},end:{line:33,column:35}},loc:{start:{line:33,column:49},end:{line:35,column:1}},line:33},'5':{name:'(anonymous_5)',decl:{start:{line:34,column:14},end:{line:34,column:15}},loc:{start:{line:34,column:43},end:{line:34,column:112}},line:34}},branchMap:{'0':{loc:{start:{line:34,column:27},end:{line:34,column:38}},type:'default-arg',locations:[{start:{line:34,column:36},end:{line:34,column:38}}],line:34}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0},b:{'0':[0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _Button=require('../../components/Shared/Button/Button.component');var _Button2=_interopRequireDefault(_Button);
+var _ComponentWithTab2=require('../../components/ComponentWithTab/ComponentWithTab.component');var _ComponentWithTab3=_interopRequireDefault(_ComponentWithTab2);
+var _ISText=require('../../components/Shared/ISText/ISText.component');var _ISText2=_interopRequireDefault(_ISText);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _reactRedux=require('react-redux');
+var _reactNavigation=require('react-navigation');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+BillingMethodsPage=function(_ComponentWithTab){_inherits(BillingMethodsPage,_ComponentWithTab);function BillingMethodsPage(){var _ref;var _temp,_this,_ret;_classCallCheck(this,BillingMethodsPage);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=BillingMethodsPage.__proto__||Object.getPrototypeOf(BillingMethodsPage)).call.apply(_ref,[this].concat(args))),_this),_this.
+navigateToScreen=function(screen){cov_qkzp7g82d.f[0]++;cov_qkzp7g82d.s[0]++;return function(){cov_qkzp7g82d.f[1]++;cov_qkzp7g82d.s[1]++;
+_this.props.goToScreen(screen);
+};},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(BillingMethodsPage,[{key:'renderWithTab',value:function renderWithTab()
+
+{cov_qkzp7g82d.f[2]++;cov_qkzp7g82d.s[2]++;
+
+return(
+_react2.default.createElement(_reactNative.View,null,
+_react2.default.createElement(_ISText2.default,null,'BILLS_METHOD_PAGE'),
+_react2.default.createElement(_Button2.default,{type:'inline',text:'Apply e-Bill',onPress:this.navigateToScreen('EbillAdd')}),
+_react2.default.createElement(_Button2.default,{type:'inline',text:'Edit e-Bill',onPress:this.navigateToScreen('EbillEdit')})));
+
+
+}}]);return BillingMethodsPage;}(_ComponentWithTab3.default);cov_qkzp7g82d.s[3]++;
+
+
+BillingMethodsPage.propTypes={
+goToScreen:_propTypes2.default.func};cov_qkzp7g82d.s[4]++;
+
+
+var mapStateToProps=function mapStateToProps(){cov_qkzp7g82d.f[3]++;cov_qkzp7g82d.s[5]++;return{};};cov_qkzp7g82d.s[6]++;
+
+var mapDispatchToProps=exports.mapDispatchToProps=function mapDispatchToProps(dispatch){cov_qkzp7g82d.f[4]++;cov_qkzp7g82d.s[7]++;return{
+goToScreen:function goToScreen(screenName){var params=arguments.length>1&&arguments[1]!==undefined?arguments[1]:(cov_qkzp7g82d.b[0][0]++,{});cov_qkzp7g82d.f[5]++;cov_qkzp7g82d.s[8]++;return dispatch(_reactNavigation.NavigationActions.navigate({routeName:screenName,params:params}));}};
+};exports.default=
+
+(0,_reactRedux.connect)(mapStateToProps,mapDispatchToProps)(BillingMethodsPage);

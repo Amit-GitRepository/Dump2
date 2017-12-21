@@ -1,0 +1,27 @@
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);
+var _StoreLocatorMap=require('../StoreLocatorMap.component');var _StoreLocatorMap2=_interopRequireDefault(_StoreLocatorMap);
+var _enzyme=require('enzyme');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+describe('StoreLocatorMap component',function(){
+var initialRegion={
+latitude:12.9142059,
+longitude:77.6820747,
+latitudeDelta:0.012,
+longitudeDelta:0.034};
+
+it('should render correctly',function(){
+var componentTree=_reactTestRenderer2.default.create(_react2.default.createElement(_StoreLocatorMap2.default,{initialRegion:initialRegion})).toJSON();
+expect(componentTree).toMatchSnapshot();
+});
+it('addStoreMarker: should curry props.addStoreMarker',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_StoreLocatorMap2.default,null));
+var props={addStoreMarker:jest.fn()};
+wrapper.setProps(props);
+wrapper.instance().addStoreMarker({name:'someStoreName'})();
+expect(props.addStoreMarker).toBeCalledWith({name:'someStoreName'});
+});
+});

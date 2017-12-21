@@ -1,0 +1,113 @@
+var _Map=require('../Map.component');var _Map2=_interopRequireDefault(_Map);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);
+var _shopMarker=require('../../../../assets/shopMarker.png');var _shopMarker2=_interopRequireDefault(_shopMarker);
+var _enzyme=require('enzyme');
+var _reactNative=require('react-native');
+var _reactNativeMaps=require('react-native-maps');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+var initialRegion={
+latitude:12.9142059,
+longitude:77.6820747,
+latitudeDelta:0.012,
+longitudeDelta:0.034};
+
+describe('Map component',function(){
+it('renders correctly',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_Map2.default,{initialRegion:initialRegion}));
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_Map2.default,null)).toJSON();
+expect(component).toMatchSnapshot();
+expect(wrapper).toBeDefined();
+});
+
+it('should render markers inside map if markerList is passed',function(){
+var markerList=[
+{
+latitude:12.9142059,
+longitude:77.6820747,
+name:{
+'en':'some shop',
+'th':'some shop (th)'}}];
+
+
+
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_Map2.default,{initialRegion:initialRegion,markerList:markerList,language:'en'}));
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_Map2.default,{initialRegion:initialRegion,markerList:markerList,language:'en'})).toJSON();
+expect(component).toMatchSnapshot();
+expect(wrapper).toBeDefined();
+});
+
+it('should render map with the initial region if initialRegion is passed',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_Map2.default,{initialRegion:initialRegion}));
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_Map2.default,{initialRegion:initialRegion})).toJSON();
+expect(component).toMatchSnapshot();
+expect(wrapper).toBeDefined();
+});
+
+it('addMarker: should return Marker component when marker array is passed',function(){
+var markerList=[
+{
+latitude:12.9142059,
+longitude:77.6820747,
+name:{
+'en':'some shop',
+'th':'some shop (th)'}}];
+
+
+
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_Map2.default,{initialRegion:initialRegion,markerList:markerList,language:'en',onCalloutPress:jest.fn()}));
+var marker=[_react2.default.createElement(_reactNativeMaps.Marker,{key:0,
+coordinate:{latitude:12.9142059,longitude:77.6820747,name:{'en':'some shop','th':'some shop (th)'}},title:'some shop'},
+_react2.default.createElement(_reactNative.Image,{
+style:{width:30,height:40},
+source:_shopMarker2.default}))];
+
+
+expect(wrapper.instance().addMarker(markerList)).toEqual(marker);
+});
+
+it('addMarker: should return empty array when empty markerList array is passed',function(){
+var markerList=[];
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_Map2.default,{initialRegion:initialRegion,markerList:markerList}));
+var marker=[];
+expect(wrapper.instance().addMarker(markerList)).toEqual(marker);
+});
+
+it('showCurrentLocation: should update map region to current location',function(){
+var currentLocation={
+latitude:10.12345,
+longitude:70.123457,
+latitudeDelta:0.098,
+longitudeDelta:0.076};
+
+
+var map={
+_root:{animateToRegion:jest.fn()}};
+
+
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_Map2.default,{initialRegion:initialRegion,currentLocation:currentLocation,onPressCurrLocation:jest.fn()}));
+wrapper.instance().setRef(map);
+wrapper.instance().showCurrentLocation();
+expect(map._root.animateToRegion).toHaveBeenCalled();
+});
+
+it('componentDidUpdate: should update map region to the initial region prop',function(){
+var currentLocation={
+latitude:10.12345,
+longitude:70.123457,
+latitudeDelta:0.098,
+longitudeDelta:0.076};
+
+
+var map={
+_root:{animateToRegion:jest.fn()}};
+
+
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_Map2.default,{initialRegion:initialRegion,currentLocation:currentLocation,onPressCurrLocation:jest.fn()}));
+wrapper.instance().setRef(map);
+wrapper.instance().componentDidUpdate({initialRegion:currentLocation});
+expect(map._root.animateToRegion).toHaveBeenCalled();
+});
+});

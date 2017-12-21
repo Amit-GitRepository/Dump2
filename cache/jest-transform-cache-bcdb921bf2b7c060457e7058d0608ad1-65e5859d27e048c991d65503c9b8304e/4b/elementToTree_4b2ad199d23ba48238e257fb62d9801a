@@ -1,0 +1,36 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+exports['default'] = elementToTree;
+
+var _flatten = require('lodash/flatten');
+
+var _flatten2 = _interopRequireDefault(_flatten);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+function elementToTree(el) {
+  if (el === null || (typeof el === 'undefined' ? 'undefined' : _typeof(el)) !== 'object') {
+    return el;
+  }
+  var type = el.type,
+      props = el.props;
+  var children = props.children;
+
+  var rendered = null;
+  if (Array.isArray(children)) {
+    rendered = (0, _flatten2['default'])(children, true).map(elementToTree);
+  } else if (children !== undefined) {
+    rendered = elementToTree(children);
+  }
+  return {
+    nodeType: typeof type === 'string' ? 'host' : 'class',
+    type: type,
+    props: props,
+    instance: null,
+    rendered: rendered
+  };
+}

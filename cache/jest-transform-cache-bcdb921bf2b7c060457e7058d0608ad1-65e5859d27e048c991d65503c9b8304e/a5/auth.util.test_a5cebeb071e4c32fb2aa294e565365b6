@@ -1,0 +1,89 @@
+
+
+
+
+
+jest.mock('react-native',function(){return{
+NativeModules:{
+TrueAuth:{
+initialize:jest.fn(function(){return Promise.resolve({});}),
+logout:jest.fn(function(){return Promise.resolve(true);}),
+login:jest.fn(),
+register:jest.fn(function(){return Promise.resolve(true);}),
+checkLoginAndGetAccessToken:jest.fn(function(){return Promise.resolve({});})},
+
+RNI18n:{languages:['en']}},
+
+Platform:{OS:'ios'}};});var _this=this;var _auth=require('../auth.util');var _auth2=_interopRequireDefault(_auth);var _reactNative=require('react-native');var _reactNative2=require('../reactNative.util');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var
+
+TrueAuth=_reactNative.NativeModules.TrueAuth;
+
+
+var createCustomError=function createCustomError(code,message){
+var error=new Error(JSON.stringify({code:code,message:message}));
+return JSON.parse(error.message);
+};
+
+describe('AuthUtil: showToast',function(){
+it('Should show the toast notification message if error is native',function(){
+var errorObject=createCustomError('LOGOUT_FAILED_CODE','LOGOUT_FAILED');
+(0,_auth.showToast)(errorObject);
+expect(_reactNative2.Toast.show).toHaveBeenCalledWith('LOGOUT_FAILED',_reactNative2.Toast.LONG);
+});
+
+it('Should show the toast notification message if error is custom',function(){
+var errorObject=createCustomError('LOGOUT_FAILED','LOGOUT_FAILED');
+(0,_auth.showToast)(errorObject);
+expect(_reactNative2.Toast.show).toHaveBeenCalledWith('Logout unsuccessful, please try again',_reactNative2.Toast.LONG);
+});
+
+it('Should show the toast notification message if error is custom with method defined',function(){
+var errorObject=createCustomError('AUTH_FAILED','AUTH_FAILED');
+(0,_auth.showToast)(errorObject,'LOGIN');
+expect(_reactNative2.Toast.show).toHaveBeenCalledWith('Login unsuccessful, please try again',_reactNative2.Toast.LONG);
+});
+});
+
+describe('AuthUtil: handleAuthErrors',function(){
+it('Should show the toast notification message if error code is LOGOUT_FAILED',function(){
+var errorObject=createCustomError('LOGOUT_FAILED','LOGOUT_FAILED');
+(0,_auth.handleAuthErrors)(errorObject);
+expect(_reactNative2.Toast.show).toHaveBeenCalledWith('Logout unsuccessful, please try again',_reactNative2.Toast.LONG);
+});
+
+it('Should do nothing if error code is AUTH_CANCELLED',function(){
+var errorObject=createCustomError('AUTH_CANCELLED','AUTH_CANCELLED');
+(0,_auth.handleAuthErrors)(errorObject);
+expect((0,_auth.handleAuthErrors)(errorObject)).toBeUndefined();
+});
+});
+
+describe('AuthUtil: Auth',function(){
+it('login: should call TrueAuth login with language',function _callee(){return regeneratorRuntime.async(function _callee$(_context){while(1){switch(_context.prev=_context.next){case 0:
+_auth2.default.updateLanguage('en');_context.next=3;return regeneratorRuntime.awrap(
+_auth2.default.login());case 3:
+expect(TrueAuth.login).toBeCalledWith('en');case 4:case'end':return _context.stop();}}},null,_this);});
+
+it('register: should call TrueAuth register with language',function _callee2(){return regeneratorRuntime.async(function _callee2$(_context2){while(1){switch(_context2.prev=_context2.next){case 0:
+_auth2.default.updateLanguage('en');_context2.next=3;return regeneratorRuntime.awrap(
+_auth2.default.register());case 3:
+expect(TrueAuth.register).toBeCalledWith('en');case 4:case'end':return _context2.stop();}}},null,_this);});
+
+it('Should call the initialize method of native module TrueAuth',function _callee3(){return regeneratorRuntime.async(function _callee3$(_context3){while(1){switch(_context3.prev=_context3.next){case 0:_context3.next=2;return regeneratorRuntime.awrap(
+_auth2.default.init('th'));case 2:
+expect(TrueAuth.initialize).toBeCalled();
+expect(_auth2.default.selectedLanguage).toEqual('th');case 4:case'end':return _context3.stop();}}},null,_this);});
+
+it('Should call the logout method of native module TrueAuth',function _callee4(){return regeneratorRuntime.async(function _callee4$(_context4){while(1){switch(_context4.prev=_context4.next){case 0:_context4.next=2;return regeneratorRuntime.awrap(
+_auth2.default.logout());case 2:
+expect(TrueAuth.logout).toBeCalled();case 3:case'end':return _context4.stop();}}},null,_this);});
+
+it('Should call the checkExistingLogin method of native module TrueAuth',function _callee5(){return regeneratorRuntime.async(function _callee5$(_context5){while(1){switch(_context5.prev=_context5.next){case 0:_context5.next=2;return regeneratorRuntime.awrap(
+_auth2.default.checkExistingLogin());case 2:
+expect(TrueAuth.checkLoginAndGetAccessToken).toBeCalled();case 3:case'end':return _context5.stop();}}},null,_this);});
+
+it('Should call the updateLanguage method of native module TrueAuth',function _callee6(){return regeneratorRuntime.async(function _callee6$(_context6){while(1){switch(_context6.prev=_context6.next){case 0:_context6.next=2;return regeneratorRuntime.awrap(
+_auth2.default.updateLanguage('th'));case 2:
+expect(_auth2.default.selectedLanguage).toEqual('th');case 3:case'end':return _context6.stop();}}},null,_this);});
+
+});

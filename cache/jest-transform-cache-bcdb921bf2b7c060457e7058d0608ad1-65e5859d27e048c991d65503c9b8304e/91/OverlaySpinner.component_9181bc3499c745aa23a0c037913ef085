@@ -1,0 +1,31 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_60aakjrih=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/OverlaySpinner/OverlaySpinner.component.js',hash='130aab1494d6032c442a0ab5b99dcdccf3ee5cb9',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/OverlaySpinner/OverlaySpinner.component.js',statementMap:{'0':{start:{line:10,column:26},end:{line:10,column:36}},'1':{start:{line:11,column:4},end:{line:19,column:6}},'2':{start:{line:23,column:0},end:{line:25,column:2}},'3':{start:{line:27,column:0},end:{line:29,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:9,column:2},end:{line:9,column:3}},loc:{start:{line:9,column:12},end:{line:20,column:3}},line:9}},branchMap:{'0':{loc:{start:{line:12,column:6},end:{line:18,column:12}},type:'cond-expr',locations:[{start:{line:13,column:8},end:{line:17,column:15}},{start:{line:18,column:8},end:{line:18,column:12}}],line:12}},s:{'0':0,'1':0,'2':0,'3':0},f:{'0':0},b:{'0':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _OverLaySpinner=require('./OverLaySpinner.style');var _OverLaySpinner2=_interopRequireDefault(_OverLaySpinner);
+var _reactNative=require('react-native');
+var _constants=require('../../../themes/constants.styles');
+var _reactNativeAnimatable=require('react-native-animatable');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+OverlaySpinner=function(_Component){_inherits(OverlaySpinner,_Component);function OverlaySpinner(){_classCallCheck(this,OverlaySpinner);return _possibleConstructorReturn(this,(OverlaySpinner.__proto__||Object.getPrototypeOf(OverlaySpinner)).apply(this,arguments));}_createClass(OverlaySpinner,[{key:'render',value:function render()
+{cov_60aakjrih.f[0]++;var _ref=(cov_60aakjrih.s[0]++,
+this.props),showSpinner=_ref.showSpinner;cov_60aakjrih.s[1]++;
+return(
+showSpinner?(cov_60aakjrih.b[0][0]++,
+_react2.default.createElement(_reactNativeAnimatable.View,{style:_OverLaySpinner2.default.container},
+_react2.default.createElement(_reactNativeAnimatable.View,{style:_OverLaySpinner2.default.wrapperContainer,animation:'zoomIn',duration:1000},
+_react2.default.createElement(_reactNative.ActivityIndicator,{color:_constants.colors.PRIMARY_BG_TEXT_CONTRAST,size:'large'})))):(cov_60aakjrih.b[0][1]++,
+
+
+null));
+
+}}]);return OverlaySpinner;}(_react.Component);cov_60aakjrih.s[2]++;
+
+
+OverlaySpinner.defaultProps={
+showSpinner:0};cov_60aakjrih.s[3]++;
+
+
+OverlaySpinner.propTypes={
+showSpinner:_propTypes2.default.number.isRequired};exports.default=
+
+
+OverlaySpinner;

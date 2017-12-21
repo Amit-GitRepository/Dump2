@@ -1,0 +1,41 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1z45m4paho=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/CurrentUsageCard/CurrentUsageCard.component.js',hash='bef9d6fda7d8f0e630a0652a187447c6156ad700',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/CurrentUsageCard/CurrentUsageCard.component.js',statementMap:{'0':{start:{line:9,column:25},end:{line:26,column:1}},'1':{start:{line:10,column:2},end:{line:25,column:9}},'2':{start:{line:13,column:8},end:{line:19,column:121}},'3':{start:{line:28,column:0},end:{line:32,column:2}},'4':{start:{line:34,column:0},end:{line:39,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:9,column:25},end:{line:9,column:26}},loc:{start:{line:10,column:2},end:{line:25,column:9}},line:10},'1':{name:'(anonymous_1)',decl:{start:{line:12,column:16},end:{line:12,column:17}},loc:{start:{line:13,column:8},end:{line:19,column:121}},line:13}},branchMap:{'0':{loc:{start:{line:16,column:13},end:{line:16,column:118}},type:'binary-expr',locations:[{start:{line:16,column:13},end:{line:16,column:27}},{start:{line:16,column:31},end:{line:16,column:118}}],line:16},'1':{loc:{start:{line:19,column:17},end:{line:19,column:120}},type:'cond-expr',locations:[{start:{line:19,column:45},end:{line:19,column:113}},{start:{line:19,column:116},end:{line:19,column:120}}],line:19},'2':{loc:{start:{line:22,column:6},end:{line:24,column:16}},type:'binary-expr',locations:[{start:{line:22,column:6},end:{line:22,column:15}},{start:{line:22,column:19},end:{line:24,column:16}}],line:22}},s:{'0':0,'1':0,'2':0,'3':0,'4':0},f:{'0':0,'1':0},b:{'0':[0,0],'1':[0,0],'2':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _CurrentUsageCard=require('./CurrentUsageCard.style');var _CurrentUsageCard2=_interopRequireDefault(_CurrentUsageCard);
+var _Shared=require('../../../../Shared');
+var _helper=require('../../../../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}cov_1z45m4paho.s[0]++;
+
+var CurrentUsageCard=function CurrentUsageCard(_ref)
+{var data=_ref.data,bannerSrc=_ref.bannerSrc,textStyle=_ref.textStyle,onBannerClick=_ref.onBannerClick;cov_1z45m4paho.f[0]++;cov_1z45m4paho.s[1]++;return _react2.default.createElement(_reactNative.View,{style:_CurrentUsageCard2.default.currentUsageContainer},
+_react2.default.createElement(_reactNative.View,{style:_CurrentUsageCard2.default.currentUsageSubContainer},
+data.map(function(usageData,index)
+{cov_1z45m4paho.f[1]++;cov_1z45m4paho.s[2]++;return[_react2.default.createElement(_reactNative.View,{style:_CurrentUsageCard2.default.usageContainer,key:'usageCard_'+index},
+_react2.default.createElement(_reactNative.View,{style:_CurrentUsageCard2.default.usageSubContainer},
+_react2.default.createElement(_Shared.ISText,{type:'MEDIUM',style:[_CurrentUsageCard2.default.usageText,textStyle]},usageData.usage),
+(cov_1z45m4paho.b[0][0]++,usageData.unit)&&(cov_1z45m4paho.b[0][1]++,_react2.default.createElement(_Shared.ISText,{type:'BOLD',style:[_CurrentUsageCard2.default.usageUnitText,textStyle]},usageData.unit))),
+
+_react2.default.createElement(_Shared.ISText,{type:'BOLD',style:_CurrentUsageCard2.default.usageTypeText},(0,_helper.translate)(usageData.type))),
+index<data.length-1?(cov_1z45m4paho.b[1][0]++,_react2.default.createElement(_reactNative.View,{style:_CurrentUsageCard2.default.seperator,key:'usageCardSeperator_'+index})):(cov_1z45m4paho.b[1][1]++,null)];})),
+
+
+(cov_1z45m4paho.b[2][0]++,bannerSrc)&&(cov_1z45m4paho.b[2][1]++,_react2.default.createElement(_Shared.Touchable,{onPress:onBannerClick,style:_CurrentUsageCard2.default.bannerContainer},
+_react2.default.createElement(_Shared.Banner,{source:{uri:bannerSrc},style:_CurrentUsageCard2.default.bannerImage}))));
+
+};cov_1z45m4paho.s[3]++;
+
+
+CurrentUsageCard.defaultProps={
+data:[],
+textStyle:{},
+onBannerClick:_noop2.default};cov_1z45m4paho.s[4]++;
+
+
+CurrentUsageCard.propTypes={
+data:_propTypes2.default.array,
+bannerSrc:_propTypes2.default.string,
+textStyle:_propTypes2.default.object,
+onBannerClick:_propTypes2.default.func};exports.default=
+
+
+CurrentUsageCard;

@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/CurrentUsageTConv/CurrentUsageTConv.component.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../../../index.html">All files</a> / <a href="index.html">iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/CurrentUsageTConv</a> CurrentUsageTConv.component.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">20% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>4/20</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">33.33% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">20% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>4/20</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">47x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">47x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import CurrentUsageCard from '../CurrentUsageCard/CurrentUsageCard.component';
+import CurrentUsageTM from '../CurrentUsageTM/CurrentUsageTM.component';
+import I18n from '../../../../../language/i18n';
+import ProductCardTitle from '../ProductCardTitle/ProductCardTitle.component';
+import Proptypes from 'prop-types';
+import React, {Component} from 'react';
+import styles from './CurrentUsageTConv.style';
+import TConvProductBaseCard from './TConvProductBaseCard.component';
+import {ICON_MAP, PRODUCT_TYPE, TOL_SPEED_TYPES} from '../../../../../config/billUsage.config';
+import {noop, result} from 'lodash';
+import {View} from 'react-native';
+&nbsp;
+class CurrentUsageTConv extends Component {
+  navigateToPackagePromoPage = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >    this.props.goToScreen('PackagePromoPage', {url: 'https://iservice.truecorp.co.th'});</span>
+  }
+  render () {
+    const {productDetail, products, onCollapseToggle} = this.props;
+    return (
+      &lt;View style={styles.currentUsageContainer}&gt;
+        {products.map(<span class="fstat-no" title="function not covered" >(p</span>roduct, index) =&gt; {
+          let currentUsage = <span class="cstat-no" title="statement not covered" >null;</span>
+          const {subscriberId, productId, productType, subscriptionType} = <span class="cstat-no" title="statement not covered" >product;</span>
+          const productData = <span class="cstat-no" title="statement not covered" >result(productDetail, `${subscriberId}`, {});</span>
+          const planInfo = <span class="cstat-no" title="statement not covered" >result(productData, 'PRICE_PLAN_INFO', {});</span>
+<span class="cstat-no" title="statement not covered" >          if (productType === PRODUCT_TYPE.TRUEONLINE &amp;&amp; productData) {</span>
+            const {downloadSpeed, uploadSpeed, unit} = <span class="cstat-no" title="statement not covered" >result(productData, 'TOL_SPEEDS.pricePlanDetails', {});</span>
+            const packageData = <span class="cstat-no" title="statement not covered" >[{usage: downloadSpeed, unit: unit, type: TOL_SPEED_TYPES.DOWNLOAD}, {usage: uploadSpeed, unit: unit, type: TOL_SPEED_TYPES.UPLOAD}];</span>
+<span class="cstat-no" title="statement not covered" >            currentUsage = &lt;CurrentUsageCard data={packageData} onBannerClick={this.navigateToPackagePromoPage} textStyle={styles.usageText}/&gt;;</span>
+          } else <span class="cstat-no" title="statement not covered" >if (productType === PRODUCT_TYPE.TRUEVISION &amp;&amp; productData) {</span>
+            const {channelCountHD, channelCountSD, imageURL} = <span class="cstat-no" title="statement not covered" >result(productDetail, `TVS_PACKAGES.${I18n.locale}[0]`, []);</span>
+            const packageData = <span class="cstat-no" title="statement not covered" >[{usage: channelCountHD, type: ICON_MAP.HDCHANNELS.titleText}, {usage: channelCountSD, type: ICON_MAP.CHANNELS.titleText}];</span>
+<span class="cstat-no" title="statement not covered" >            currentUsage = &lt;CurrentUsageCard data={packageData} bannerSrc={imageURL} onBannerClick={this.navigateToPackagePromoPage} textStyle={styles.usageText}/&gt;;</span>
+          } else <span class="cstat-no" title="statement not covered" >if (productType === PRODUCT_TYPE.TRUEMOVEH &amp;&amp; productData) {</span>
+<span class="cstat-no" title="statement not covered" >            currentUsage = &lt;CurrentUsageTM usageData={productData.BUNDLE_USAGE} sharedNumbers={productData.SHARED_PLAN_INFO} multiSimNumbers={productData.MULTI_SIM_INFO}/&gt;;</span>
+          }
+<span class="cstat-no" title="statement not covered" >          return (</span>
+            &lt;TConvProductBaseCard key={index} product={product} isLast={(products.length - 1) === index} onCollapseToggle={onCollapseToggle('tmhPostpaid', subscriberId, productId, productType, subscriptionType)}&gt;
+              &lt;ProductCardTitle text={planInfo.name}/&gt;
+              &lt;View style={styles.currentUsageSection}&gt;
+                {currentUsage}
+              &lt;/View&gt;
+            &lt;/TConvProductBaseCard&gt;
+          );
+        })}
+      &lt;/View&gt;
+    );
+  }
+}
+&nbsp;
+CurrentUsageTConv.defaultProps = {
+  products: [],
+  productDetail: {},
+  onCollapseToggle: noop,
+  goToScreen: noop
+};
+&nbsp;
+CurrentUsageTConv.propTypes = {
+  products: Proptypes.array,
+  productDetail: Proptypes.object,
+  onCollapseToggle: Proptypes.func,
+  goToScreen: Proptypes.func
+};
+&nbsp;
+export default CurrentUsageTConv;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../../../sorter.js"></script>
+</body>
+</html>

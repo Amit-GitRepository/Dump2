@@ -1,0 +1,27 @@
+var _networkStatus=require('../networkStatus.reducer');var _networkStatus2=_interopRequireDefault(_networkStatus);
+var _index=require('../../actions/index.actions');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('Reducer: networkStatus',function(){
+var initialState={
+isConnected:true,
+isNetworkBarHighlighted:false};
+
+
+it('should return default state by default',function(){
+expect((0,_networkStatus2.default)(initialState,'')).toEqual({
+isConnected:true,
+isNetworkBarHighlighted:false});
+
+});
+
+it('should set the network status',function(){
+var action={
+type:_index.SET_NETWORK_STATUS,
+payload:true};
+
+var expectedResult={
+isConnected:true};
+
+expect((0,_networkStatus2.default)(initialState,action)).toEqual(expectedResult);
+});
+});

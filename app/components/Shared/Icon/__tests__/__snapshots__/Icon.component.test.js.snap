@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon component renders correctly 1`] = `
+<Text
+  accessible={true}
+  allowFontScaling={false}
+  ellipsizeMode="tail"
+  style={
+    Array [
+      Object {
+        "color": undefined,
+        "fontSize": 12,
+      },
+      undefined,
+      Object {
+        "fontFamily": "iservice",
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+      },
+    ]
+  }
+>
+  
+</Text>
+`;

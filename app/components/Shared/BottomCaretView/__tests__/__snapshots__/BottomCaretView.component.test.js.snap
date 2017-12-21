@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Overlay Spinner component should renders correctly 1`] = `
+<View>
+  <View
+    style={Object {}}
+  />
+  <Text
+    accessible={true}
+    allowFontScaling={false}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": undefined,
+          "fontSize": 15,
+        },
+        Array [
+          Object {
+            "alignSelf": "center",
+            "backgroundColor": "transparent",
+          },
+          Object {
+            "bottom": 6,
+            "marginBottom": -6,
+          },
+          Object {},
+        ],
+        Object {
+          "fontFamily": "iservice",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+      ]
+    }
+  >
+    
+  </Text>
+</View>
+`;

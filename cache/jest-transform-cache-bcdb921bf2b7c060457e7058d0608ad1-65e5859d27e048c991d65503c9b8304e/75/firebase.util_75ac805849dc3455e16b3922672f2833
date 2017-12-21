@@ -1,0 +1,58 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.fetchFCMToken=exports.fetchRemoteConfig=undefined;var cov_1n3iotfj1d=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/utils/firebase.util.js',hash='83624c9b5a62f3a7b00b8f7b953e34c320610f1f',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/utils/firebase.util.js',statementMap:{'0':{start:{line:6,column:0},end:{line:6,column:50}},'1':{start:{line:9,column:2},end:{line:9,column:45}},'2':{start:{line:12,column:0},end:{line:12,column:42}},'3':{start:{line:14,column:0},end:{line:14,column:62}},'4':{start:{line:16,column:0},end:{line:18,column:3}},'5':{start:{line:20,column:0},end:{line:23,column:5}},'6':{start:{line:26,column:2},end:{line:26,column:28}},'7':{start:{line:27,column:2},end:{line:35,column:5}},'8':{start:{line:28,column:4},end:{line:34,column:9}},'9':{start:{line:32,column:22},end:{line:32,column:36}},'10':{start:{line:33,column:8},end:{line:33,column:30}},'11':{start:{line:38,column:0},end:{line:38,column:52}},'12':{start:{line:40,column:33},end:{line:53,column:7}},'13':{start:{line:41,column:2},end:{line:53,column:7}},'14':{start:{line:44,column:16},end:{line:44,column:51}},'15':{start:{line:45,column:16},end:{line:45,column:78}},'16':{start:{line:46,column:25},end:{line:53,column:5}},'17':{start:{line:55,column:29},end:{line:58,column:24}},'18':{start:{line:56,column:2},end:{line:58,column:24}},'19':{start:{line:57,column:21},end:{line:57,column:26}},'20':{start:{line:58,column:20},end:{line:58,column:23}}},fnMap:{'0':{name:'signInAnonymously',decl:{start:{line:8,column:15},end:{line:8,column:32}},loc:{start:{line:8,column:36},end:{line:10,column:1}},line:8},'1':{name:'(anonymous_1)',decl:{start:{line:16,column:31},end:{line:16,column:32}},loc:{start:{line:16,column:50},end:{line:18,column:1}},line:16},'2':{name:'(anonymous_2)',decl:{start:{line:21,column:8},end:{line:21,column:9}},loc:{start:{line:21,column:32},end:{line:23,column:3}},line:21},'3':{name:'setupFirebase',decl:{start:{line:25,column:22},end:{line:25,column:35}},loc:{start:{line:25,column:39},end:{line:36,column:1}},line:25},'4':{name:'(anonymous_4)',decl:{start:{line:27,column:21},end:{line:27,column:22}},loc:{start:{line:27,column:34},end:{line:35,column:3}},line:27},'5':{name:'(anonymous_5)',decl:{start:{line:31,column:19},end:{line:31,column:20}},loc:{start:{line:31,column:33},end:{line:34,column:7}},line:31},'6':{name:'(anonymous_6)',decl:{start:{line:40,column:33},end:{line:40,column:34}},loc:{start:{line:41,column:2},end:{line:53,column:7}},line:41},'7':{name:'(anonymous_7)',decl:{start:{line:44,column:10},end:{line:44,column:11}},loc:{start:{line:44,column:16},end:{line:44,column:51}},line:44},'8':{name:'(anonymous_8)',decl:{start:{line:45,column:10},end:{line:45,column:11}},loc:{start:{line:45,column:16},end:{line:45,column:78}},line:45},'9':{name:'(anonymous_9)',decl:{start:{line:46,column:10},end:{line:46,column:11}},loc:{start:{line:46,column:25},end:{line:53,column:5}},line:46},'10':{name:'(anonymous_10)',decl:{start:{line:55,column:29},end:{line:55,column:30}},loc:{start:{line:56,column:2},end:{line:58,column:24}},line:56},'11':{name:'(anonymous_11)',decl:{start:{line:57,column:10},end:{line:57,column:11}},loc:{start:{line:57,column:21},end:{line:57,column:26}},line:57},'12':{name:'(anonymous_12)',decl:{start:{line:58,column:11},end:{line:58,column:12}},loc:{start:{line:58,column:20},end:{line:58,column:23}},line:58}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0,'19':0,'20':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();exports.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setupFirebase=setupFirebase;var _reactNativeConfig=require('react-native-config');var _reactNativeConfig2=_interopRequireDefault(_reactNativeConfig);var _reactNativeFirebase=require('react-native-firebase');var _reactNativeFirebase2=_interopRequireDefault(_reactNativeFirebase);var _versionControl=require('../config/versionControl.config');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}cov_1n3iotfj1d.s[0]++;_reactNativeFirebase2.default.crash().setCrashCollectionEnabled(false);function signInAnonymously(){return regeneratorRuntime.async(function signInAnonymously$(_context){while(1){switch(_context.prev=_context.next){case 0:cov_1n3iotfj1d.f[0]++;cov_1n3iotfj1d.s[1]++;return _context.abrupt('return',_reactNativeFirebase2.default.auth().signInAnonymously());case 3:case'end':return _context.stop();}}},null,this);}cov_1n3iotfj1d.s[2]++;_reactNativeFirebase2.default.messaging().requestPermissions();cov_1n3iotfj1d.s[3]++;_reactNativeFirebase2.default.messaging().subscribeToTopic(_reactNativeConfig2.default.BROADCAST_TOPIC);cov_1n3iotfj1d.s[4]++;_reactNativeFirebase2.default.messaging().onMessage(function(){cov_1n3iotfj1d.f[1]++;});cov_1n3iotfj1d.s[5]++;_reactNativeFirebase2.default.messaging().getInitialNotification().then(function(){cov_1n3iotfj1d.f[2]++;});function setupFirebase(){return regeneratorRuntime.async(function setupFirebase$(_context2){while(1){switch(_context2.prev=_context2.next){case 0:cov_1n3iotfj1d.f[3]++;cov_1n3iotfj1d.s[6]++;_context2.next=4;return regeneratorRuntime.awrap(
+signInAnonymously());case 4:cov_1n3iotfj1d.s[7]++;return _context2.abrupt('return',
+new Promise(function(resolve){cov_1n3iotfj1d.f[4]++;cov_1n3iotfj1d.s[8]++;
+_reactNativeFirebase2.default.
+database().
+ref().
+on('value',function(snapshot){cov_1n3iotfj1d.f[5]++;
+var value=(cov_1n3iotfj1d.s[9]++,snapshot.val());cov_1n3iotfj1d.s[10]++;
+return resolve(value);
+});
+}));case 6:case'end':return _context2.stop();}}},null,this);}cov_1n3iotfj1d.s[11]++;
+
+
+_reactNativeFirebase2.default.config().setDefaults(_versionControl.versionControlConfig);cov_1n3iotfj1d.s[12]++;
+
+var fetchRemoteConfig=exports.fetchRemoteConfig=function fetchRemoteConfig()
+{cov_1n3iotfj1d.f[6]++;cov_1n3iotfj1d.s[13]++;return _reactNativeFirebase2.default.
+config().
+fetch().
+then(function(){cov_1n3iotfj1d.f[7]++;cov_1n3iotfj1d.s[14]++;return _reactNativeFirebase2.default.config().activateFetched();}).
+then(function(){cov_1n3iotfj1d.f[8]++;cov_1n3iotfj1d.s[15]++;return _reactNativeFirebase2.default.config().getValues(Object.keys(_versionControl.versionControlConfig));}).
+then(function(snapshot){cov_1n3iotfj1d.f[9]++;cov_1n3iotfj1d.s[16]++;return{
+FORCE_UPDATE_MIN_VERSION:snapshot.FORCE_UPDATE_MIN_VERSION.val(),
+FORCE_UPDATE_BLACKLIST_VERSIONS:snapshot.FORCE_UPDATE_BLACKLIST_VERSIONS.val().split(','),
+FORCE_UPDATE_CURRENT_VERSION:snapshot.FORCE_UPDATE_CURRENT_VERSION.val(),
+FORCE_UPDATE_PLAY_STORE_URL:snapshot.FORCE_UPDATE_PLAY_STORE_URL.val(),
+FORCE_UPDATE_APP_STORE_URL:snapshot.FORCE_UPDATE_APP_STORE_URL.val(),
+FORCE_UPDATE_NOTIFICATION_RETRY:snapshot.FORCE_UPDATE_NOTIFICATION_RETRY.val()};
+});};cov_1n3iotfj1d.s[17]++;
+
+var fetchFCMToken=exports.fetchFCMToken=function fetchFCMToken()
+{cov_1n3iotfj1d.f[10]++;cov_1n3iotfj1d.s[18]++;return _reactNativeFirebase2.default.messaging().getToken().
+then(function(token){cov_1n3iotfj1d.f[11]++;cov_1n3iotfj1d.s[19]++;return token;}).
+catch(function(err){cov_1n3iotfj1d.f[12]++;cov_1n3iotfj1d.s[20]++;return err;});};exports.default=_reactNativeFirebase2.default;

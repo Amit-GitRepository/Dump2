@@ -1,0 +1,65 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1hreq5bywn=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/CaretHeader/CaretHeader.component.js',hash='87cbad44b483a914754819311905c26e1572ff20',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/CaretHeader/CaretHeader.component.js',statementMap:{'0':{start:{line:11,column:34},end:{line:11,column:87}},'1':{start:{line:18,column:158},end:{line:18,column:168}},'2':{start:{line:19,column:30},end:{line:19,column:114}},'3':{start:{line:20,column:24},end:{line:20,column:50}},'4':{start:{line:21,column:23},end:{line:21,column:75}},'5':{start:{line:22,column:23},end:{line:22,column:81}},'6':{start:{line:23,column:33},end:{line:23,column:89}},'7':{start:{line:24,column:4},end:{line:35,column:6}},'8':{start:{line:39,column:0},end:{line:50,column:2}},'9':{start:{line:51,column:0},end:{line:64,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:17,column:2},end:{line:17,column:3}},loc:{start:{line:17,column:12},end:{line:36,column:3}},line:17}},branchMap:{'0':{loc:{start:{line:19,column:30},end:{line:19,column:114}},type:'cond-expr',locations:[{start:{line:19,column:39},end:{line:19,column:74}},{start:{line:19,column:77},end:{line:19,column:114}}],line:19},'1':{loc:{start:{line:20,column:24},end:{line:20,column:50}},type:'cond-expr',locations:[{start:{line:20,column:34},end:{line:20,column:43}},{start:{line:20,column:46},end:{line:20,column:50}}],line:20},'2':{loc:{start:{line:21,column:23},end:{line:21,column:75}},type:'cond-expr',locations:[{start:{line:21,column:32},end:{line:21,column:57}},{start:{line:21,column:60},end:{line:21,column:75}}],line:21},'3':{loc:{start:{line:22,column:23},end:{line:22,column:81}},type:'cond-expr',locations:[{start:{line:22,column:32},end:{line:22,column:66}},{start:{line:22,column:69},end:{line:22,column:81}}],line:22},'4':{loc:{start:{line:29,column:15},end:{line:29,column:92}},type:'cond-expr',locations:[{start:{line:29,column:22},end:{line:29,column:85}},{start:{line:29,column:88},end:{line:29,column:92}}],line:29}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0},f:{'0':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0],'4':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _BottomCaretView=require('../BottomCaretView/BottomCaretView.component');var _BottomCaretView2=_interopRequireDefault(_BottomCaretView);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _CaretHeaderStyles=require('./CaretHeader.styles.js');var _CaretHeaderStyles2=_interopRequireDefault(_CaretHeaderStyles);
+var _Touchable=require('../Touchable/Touchable.component');var _Touchable2=_interopRequireDefault(_Touchable);
+var _constants=require('../../../themes/constants.styles');
+var _Shared=require('../../Shared');
+var _reactNative=require('react-native');
+var _reactNativeAnimatable=require('react-native-animatable');var Animatable=_interopRequireWildcard(_reactNativeAnimatable);function _interopRequireWildcard(obj){if(obj&&obj.__esModule){return obj;}else{var newObj={};if(obj!=null){for(var key in obj){if(Object.prototype.hasOwnProperty.call(obj,key))newObj[key]=obj[key];}}newObj.default=obj;return newObj;}}function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}
+
+var AnimatableBottomCaretView=(cov_1hreq5bywn.s[0]++,Animatable.createAnimatableComponent(_BottomCaretView2.default));var
+
+
+
+
+CaretHeader=function(_Component){_inherits(CaretHeader,_Component);function CaretHeader(){_classCallCheck(this,CaretHeader);return _possibleConstructorReturn(this,(CaretHeader.__proto__||Object.getPrototypeOf(CaretHeader)).apply(this,arguments));}_createClass(CaretHeader,[{key:'render',value:function render()
+{cov_1hreq5bywn.f[0]++;var _ref=(cov_1hreq5bywn.s[1]++,
+this.props),active=_ref.active,onPress=_ref.onPress,text=_ref.text,wrapperStyles=_ref.wrapperStyles,iconSize=_ref.iconSize,activeStyles=_ref.activeStyles,inActiveStyles=_ref.inActiveStyles,titleWrapperStyle=_ref.titleWrapperStyle,caretColor=_ref.caretColor,elevation=_ref.elevation,children=_ref.children,caretTextType=_ref.caretTextType;
+var titleContentStyle=(cov_1hreq5bywn.s[2]++,active?(cov_1hreq5bywn.b[0][0]++,[_CaretHeaderStyles2.default.titleContent,activeStyles]):(cov_1hreq5bywn.b[0][1]++,[_CaretHeaderStyles2.default.titleContent,inActiveStyles]));
+var WrapperView=(cov_1hreq5bywn.s[3]++,onPress?(cov_1hreq5bywn.b[1][0]++,_Touchable2.default):(cov_1hreq5bywn.b[1][1]++,_reactNative.View));
+var ActiveView=(cov_1hreq5bywn.s[4]++,active?(cov_1hreq5bywn.b[2][0]++,AnimatableBottomCaretView):(cov_1hreq5bywn.b[2][1]++,Animatable.View));
+var titleStyle=(cov_1hreq5bywn.s[5]++,active?(cov_1hreq5bywn.b[3][0]++,[_CaretHeaderStyles2.default.title,_CaretHeaderStyles2.default.activeTitle]):(cov_1hreq5bywn.b[3][1]++,_CaretHeaderStyles2.default.title));
+var titleContainerStyles=(cov_1hreq5bywn.s[6]++,[_CaretHeaderStyles2.default.titleContainer,{borderBottomColor:caretColor}]);cov_1hreq5bywn.s[7]++;
+return(
+_react2.default.createElement(WrapperView,{style:wrapperStyles,onPress:onPress},
+_react2.default.createElement(ActiveView,{useNativeDriver:true,animation:'fadeIn',duration:500,caretColor:caretColor,iconSize:iconSize},
+_react2.default.createElement(_reactNative.View,{style:titleContainerStyles,elevation:elevation},
+_react2.default.createElement(_reactNative.View,{style:[titleContentStyle,titleWrapperStyle]},
+text?(cov_1hreq5bywn.b[4][0]++,_react2.default.createElement(_Shared.ISText,{style:titleStyle,type:caretTextType},text)):(cov_1hreq5bywn.b[4][1]++,null),
+children)))));
+
+
+
+
+
+}}]);return CaretHeader;}(_react.Component);cov_1hreq5bywn.s[8]++;
+
+
+CaretHeader.defaultProps={
+active:false,
+onPress:null,
+text:'',
+wrapperStyles:{},
+activeStyles:_CaretHeaderStyles2.default.activeStyle,
+inActiveStyles:{},
+titleWrapperStyle:{},
+iconSize:15,
+caretColor:_constants.colors.PRIMARY_ACTIONABLE,
+caretTextType:'REGULAR'};cov_1hreq5bywn.s[9]++;
+
+CaretHeader.propTypes={
+active:_propTypes2.default.bool,
+onPress:_propTypes2.default.func,
+text:_propTypes2.default.string,
+wrapperStyles:_propTypes2.default.object,
+activeStyles:_propTypes2.default.object,
+inActiveStyles:_propTypes2.default.object,
+titleWrapperStyle:_propTypes2.default.object,
+iconSize:_propTypes2.default.number,
+elevation:_propTypes2.default.number,
+caretColor:_propTypes2.default.string,
+children:_propTypes2.default.node,
+caretTextType:_propTypes2.default.string};exports.default=
+
+CaretHeader;

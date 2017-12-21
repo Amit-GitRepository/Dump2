@@ -1,0 +1,50 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_z5whf2qsf=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/sagas/payment.saga.js',hash='441d946298159aa8ae87c475ecd7220d3745aa42',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/sagas/payment.saga.js',statementMap:{'0':{start:{line:11,column:2},end:{line:19,column:3}},'1':{start:{line:12,column:18},end:{line:12,column:65}},'2':{start:{line:13,column:24},end:{line:13,column:35}},'3':{start:{line:14,column:20},end:{line:14,column:64}},'4':{start:{line:15,column:20},end:{line:15,column:68}},'5':{start:{line:16,column:4},end:{line:16,column:112}},'6':{start:{line:18,column:4},end:{line:18,column:120}},'7':{start:{line:22,column:2},end:{line:33,column:3}},'8':{start:{line:23,column:37},end:{line:23,column:51}},'9':{start:{line:24,column:18},end:{line:24,column:65}},'10':{start:{line:25,column:24},end:{line:25,column:35}},'11':{start:{line:26,column:21},end:{line:26,column:66}},'12':{start:{line:27,column:18},end:{line:27,column:45}},'13':{start:{line:28,column:20},end:{line:28,column:71}},'14':{start:{line:29,column:20},end:{line:29,column:63}},'15':{start:{line:30,column:4},end:{line:30,column:112}},'16':{start:{line:32,column:4},end:{line:32,column:120}},'17':{start:{line:37,column:2},end:{line:44,column:3}},'18':{start:{line:38,column:18},end:{line:38,column:65}},'19':{start:{line:39,column:24},end:{line:39,column:35}},'20':{start:{line:40,column:22},end:{line:40,column:66}},'21':{start:{line:41,column:4},end:{line:41,column:120}},'22':{start:{line:43,column:4},end:{line:43,column:69}},'23':{start:{line:48,column:2},end:{line:48,column:61}},'24':{start:{line:49,column:2},end:{line:49,column:60}},'25':{start:{line:50,column:2},end:{line:50,column:53}}},fnMap:{'0':{name:'payWithSavedCard',decl:{start:{line:10,column:17},end:{line:10,column:33}},loc:{start:{line:10,column:43},end:{line:20,column:1}},line:10},'1':{name:'payWithNewCard',decl:{start:{line:21,column:17},end:{line:21,column:31}},loc:{start:{line:21,column:41},end:{line:34,column:1}},line:21},'2':{name:'showPaymentMethods',decl:{start:{line:36,column:17},end:{line:36,column:35}},loc:{start:{line:36,column:45},end:{line:45,column:1}},line:36},'3':{name:'paymentSaga',decl:{start:{line:47,column:26},end:{line:47,column:37}},loc:{start:{line:47,column:41},end:{line:51,column:1}},line:47}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0,'19':0,'20':0,'21':0,'22':0,'23':0,'24':0,'25':0},f:{'0':0,'1':0,'2':0,'3':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();exports.
+
+
+
+
+
+
+
+
+payWithSavedCard=payWithSavedCard;exports.
+
+
+
+
+
+
+
+
+
+
+payWithNewCard=payWithNewCard;exports.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+showPaymentMethods=showPaymentMethods;exports.default=
+
+
+
+
+
+
+
+
+
+
+paymentSaga;var _api=require('./api/api.saga');var _api2=_interopRequireDefault(_api);var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);var _effects=require('redux-saga/effects');var _apiHelper=require('./api/apiHelper');var _common=require('../../utils/common.util');var _reactNavigation=require('react-navigation');var _index=require('../actions/index.actions');var _reactNative=require('../../utils/reactNative.util');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var _marked=regeneratorRuntime.mark(payWithSavedCard),_marked2=regeneratorRuntime.mark(payWithNewCard),_marked3=regeneratorRuntime.mark(showPaymentMethods),_marked4=regeneratorRuntime.mark(paymentSaga);function payWithSavedCard(action){var ssoID,encryptedID,payload,details;return regeneratorRuntime.wrap(function payWithSavedCard$(_context){while(1){switch(_context.prev=_context.next){case 0:cov_z5whf2qsf.f[0]++;cov_z5whf2qsf.s[0]++;_context.prev=2;cov_z5whf2qsf.s[1]++;_context.next=6;return(0,_effects.select)((0,_common.getSelector)('user.profile.ssoID'));case 6:ssoID=_context.sent;encryptedID=(cov_z5whf2qsf.s[2]++,atob(ssoID));payload=(cov_z5whf2qsf.s[3]++,{amount:action.payload,ssoID:encryptedID});cov_z5whf2qsf.s[4]++;_context.next=12;return(0,_effects.call)(_api2.default,(0,_apiHelper.payForExistingCustomer)(payload));case 12:details=_context.sent;cov_z5whf2qsf.s[5]++;_context.next=16;return(0,_effects.put)(_reactNavigation.NavigationActions.navigate({'routeName':'PaymentStatus',params:{details:details,status:'SUCCESS'}}));case 16:_context.next=23;break;case 18:_context.prev=18;_context.t0=_context['catch'](2);cov_z5whf2qsf.s[6]++;_context.next=23;return(0,_effects.put)(_reactNavigation.NavigationActions.navigate({'routeName':'PaymentStatus',params:{details:_context.t0.message,status:'FAIL'}}));case 23:case'end':return _context.stop();}}},_marked,this,[[2,18]]);}function payWithNewCard(action){var _ref,amount,savePreference,ssoID,encryptedID,tokenRes,token,payload,details;return regeneratorRuntime.wrap(function payWithNewCard$(_context2){while(1){switch(_context2.prev=_context2.next){case 0:cov_z5whf2qsf.f[1]++;cov_z5whf2qsf.s[7]++;_context2.prev=2;_ref=(cov_z5whf2qsf.s[8]++,action.payload),amount=_ref.amount,savePreference=_ref.savePreference;cov_z5whf2qsf.s[9]++;_context2.next=7;return(0,_effects.select)((0,_common.getSelector)('user.profile.ssoID'));case 7:ssoID=_context2.sent;encryptedID=(cov_z5whf2qsf.s[10]++,atob(ssoID));cov_z5whf2qsf.s[11]++;_context2.next=12;return(0,_effects.call)(_api2.default,(0,_apiHelper.tokeniseCard)(action.payload));case 12:tokenRes=_context2.sent;token=(cov_z5whf2qsf.s[12]++,(0,_result2.default)(tokenRes,'body.id'));payload=(cov_z5whf2qsf.s[13]++,{amount:amount,savePreference:savePreference,token:token,ssoID:encryptedID});cov_z5whf2qsf.s[14]++;_context2.next=18;return(0,_effects.call)(_api2.default,(0,_apiHelper.payForNewCustomer)(payload));case 18:details=_context2.sent;cov_z5whf2qsf.s[15]++;_context2.next=22;return(0,_effects.put)(_reactNavigation.NavigationActions.navigate({'routeName':'PaymentStatus',params:{details:details,status:'SUCCESS'}}));case 22:_context2.next=29;break;case 24:_context2.prev=24;_context2.t0=_context2['catch'](2);cov_z5whf2qsf.s[16]++;_context2.next=29;return(0,_effects.put)(_reactNavigation.NavigationActions.navigate({'routeName':'PaymentStatus',params:{details:_context2.t0.message,status:'FAIL'}}));case 29:case'end':return _context2.stop();}}},_marked2,this,[[2,24]]);}function showPaymentMethods(action){var ssoID,encryptedID,savedCard;return regeneratorRuntime.wrap(function showPaymentMethods$(_context3){while(1){switch(_context3.prev=_context3.next){case 0:cov_z5whf2qsf.f[2]++;cov_z5whf2qsf.s[17]++;_context3.prev=2;cov_z5whf2qsf.s[18]++;_context3.next=6;return(0,_effects.select)((0,_common.getSelector)('user.profile.ssoID'));case 6:ssoID=_context3.sent;encryptedID=(cov_z5whf2qsf.s[19]++,atob(ssoID));cov_z5whf2qsf.s[20]++;_context3.next=11;return(0,_effects.call)(_api2.default,(0,_apiHelper.getDefaultCard)(encryptedID));case 11:savedCard=_context3.sent;cov_z5whf2qsf.s[21]++;_context3.next=15;return(0,_effects.put)(_reactNavigation.NavigationActions.navigate({'routeName':'PaymentMethods',params:{amount:action.payload,savedCard:savedCard}}));case 15:_context3.next=22;break;case 17:_context3.prev=17;_context3.t0=_context3['catch'](2);cov_z5whf2qsf.s[22]++;_context3.next=22;return(0,_effects.call)(_reactNative.Toast.show,'Unable to get saved cards',_reactNative.Toast.SHORT);case 22:case'end':return _context3.stop();}}},_marked3,this,[[2,17]]);}function paymentSaga(){return regeneratorRuntime.wrap(function paymentSaga$(_context4){while(1){switch(_context4.prev=_context4.next){case 0:cov_z5whf2qsf.f[3]++;cov_z5whf2qsf.s[23]++;_context4.next=4;return(
+(0,_effects.takeLatest)(_index.SHOW_PAYMENT_METHODS,showPaymentMethods));case 4:cov_z5whf2qsf.s[24]++;_context4.next=7;return(
+(0,_effects.takeLatest)(_index.PAY_EXISTING_CUSTOMER,payWithSavedCard));case 7:cov_z5whf2qsf.s[25]++;_context4.next=10;return(
+(0,_effects.takeLatest)(_index.PAY_NEW_CUSTOMER,payWithNewCard));case 10:case'end':return _context4.stop();}}},_marked4,this);}

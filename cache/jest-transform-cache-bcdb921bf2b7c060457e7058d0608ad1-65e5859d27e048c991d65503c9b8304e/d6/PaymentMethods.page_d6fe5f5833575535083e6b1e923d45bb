@@ -1,0 +1,109 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.mapDispatchToProps=undefined;var cov_ujp3tp59n=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/Payment/PaymentMethods.page.js',hash='0f6392ab17f47864998a4308863112d2ef13742e',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/Payment/PaymentMethods.page.js',statementMap:{'0':{start:{line:33,column:32},end:{line:36,column:3}},'1':{start:{line:34,column:25},end:{line:34,column:69}},'2':{start:{line:35,column:4},end:{line:35,column:40}},'3':{start:{line:37,column:23},end:{line:39,column:4}},'4':{start:{line:41,column:22},end:{line:44,column:3}},'5':{start:{line:42,column:20},end:{line:42,column:98}},'6':{start:{line:43,column:4},end:{line:43,column:34}},'7':{start:{line:46,column:23},end:{line:49,column:3}},'8':{start:{line:47,column:4},end:{line:47,column:30}},'9':{start:{line:48,column:4},end:{line:48,column:88}},'10':{start:{line:48,column:70},end:{line:48,column:84}},'11':{start:{line:52,column:4},end:{line:70,column:11}},'12':{start:{line:73,column:4},end:{line:83,column:11}},'13':{start:{line:86,column:25},end:{line:86,column:35}},'14':{start:{line:87,column:27},end:{line:87,column:48}},'15':{start:{line:88,column:4},end:{line:95,column:6}},'16':{start:{line:99,column:0},end:{line:103,column:2}},'17':{start:{line:104,column:34},end:{line:108,column:2}},'18':{start:{line:104,column:49},end:{line:108,column:1}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:33,column:15},end:{line:33,column:16}},loc:{start:{line:33,column:32},end:{line:36,column:3}},line:33},'1':{name:'(anonymous_1)',decl:{start:{line:33,column:32},end:{line:33,column:33}},loc:{start:{line:33,column:45},end:{line:36,column:3}},line:33},'2':{name:'(anonymous_2)',decl:{start:{line:37,column:17},end:{line:37,column:18}},loc:{start:{line:37,column:23},end:{line:39,column:4}},line:37},'3':{name:'(anonymous_3)',decl:{start:{line:41,column:14},end:{line:41,column:15}},loc:{start:{line:41,column:22},end:{line:44,column:3}},line:41},'4':{name:'(anonymous_4)',decl:{start:{line:41,column:22},end:{line:41,column:23}},loc:{start:{line:41,column:28},end:{line:44,column:3}},line:41},'5':{name:'(anonymous_5)',decl:{start:{line:46,column:15},end:{line:46,column:16}},loc:{start:{line:46,column:23},end:{line:49,column:3}},line:46},'6':{name:'(anonymous_6)',decl:{start:{line:46,column:23},end:{line:46,column:24}},loc:{start:{line:46,column:29},end:{line:49,column:3}},line:46},'7':{name:'(anonymous_7)',decl:{start:{line:48,column:60},end:{line:48,column:61}},loc:{start:{line:48,column:70},end:{line:48,column:84}},line:48},'8':{name:'(anonymous_8)',decl:{start:{line:51,column:19},end:{line:51,column:20}},loc:{start:{line:52,column:4},end:{line:70,column:11}},line:52},'9':{name:'(anonymous_9)',decl:{start:{line:72,column:22},end:{line:72,column:23}},loc:{start:{line:73,column:4},end:{line:83,column:11}},line:73},'10':{name:'(anonymous_10)',decl:{start:{line:85,column:2},end:{line:85,column:3}},loc:{start:{line:85,column:12},end:{line:96,column:3}},line:85},'11':{name:'(anonymous_11)',decl:{start:{line:104,column:34},end:{line:104,column:35}},loc:{start:{line:104,column:49},end:{line:108,column:1}},line:104}},branchMap:{'0':{loc:{start:{line:91,column:17},end:{line:91,column:110}},type:'cond-expr',locations:[{start:{line:91,column:34},end:{line:91,column:69}},{start:{line:91,column:72},end:{line:91,column:110}}],line:91},'1':{loc:{start:{line:93,column:9},end:{line:93,column:88}},type:'cond-expr',locations:[{start:{line:93,column:26},end:{line:93,column:64}},{start:{line:93,column:67},end:{line:93,column:88}}],line:93}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0},b:{'0':[0,0],'1':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();
+
+
+
+
+
+var _Button=require('../../components/Shared/Button/Button.component');var _Button2=_interopRequireDefault(_Button);
+var _Checkbox=require('../../components/Shared/Checkbox/Checkbox.component');var _Checkbox2=_interopRequireDefault(_Checkbox);
+var _IconTextInput=require('../../components/Shared/IconTextInput/IconTextInput.component');var _IconTextInput2=_interopRequireDefault(_IconTextInput);
+var _ISText=require('../../components/Shared/ISText/ISText.component');var _ISText2=_interopRequireDefault(_ISText);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _redux=require('redux');
+var _reactRedux=require('react-redux');
+var _index=require('../../redux/actions/index.actions');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _defineProperty(obj,key,value){if(key in obj){Object.defineProperty(obj,key,{value:value,enumerable:true,configurable:true,writable:true});}else{obj[key]=value;}return obj;}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+PaymentMethods=function(_Component){_inherits(PaymentMethods,_Component);function PaymentMethods(){var _ref;var _temp,_this,_ret;_classCallCheck(this,PaymentMethods);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=PaymentMethods.__proto__||Object.getPrototypeOf(PaymentMethods)).call.apply(_ref,[this].concat(args))),_this),_this.
+state={
+form:{
+name:'JOHN DOE',
+city:'Bangkok',
+postal_code:'10320',
+number:'4242424242424242',
+security_code:'123',
+expiration_month:'10',
+expiration_year:'2019',
+saveCard:false},
+
+savedCards:(0,_result2.default)(_this.props,'navigation.state.params.savedCards',[])},_this.
+
+setFormVal=function(keyToChange){cov_ujp3tp59n.f[0]++;cov_ujp3tp59n.s[0]++;return function(newText){cov_ujp3tp59n.f[1]++;
+var newFormState=(cov_ujp3tp59n.s[1]++,_extends({},_this.state.form,_defineProperty({},keyToChange,newText)));cov_ujp3tp59n.s[2]++;
+_this.setState({form:newFormState});
+};},_this.
+onFormSubmit=function(){cov_ujp3tp59n.f[2]++;cov_ujp3tp59n.s[3]++;return _this.props.addCard(_extends({},
+_this.state.form,{amount:(0,_result2.default)(_this.props,'navigation.state.params.amount','')}));
+},_this.
+
+payByCard=function(id){cov_ujp3tp59n.f[3]++;cov_ujp3tp59n.s[4]++;return function(){cov_ujp3tp59n.f[4]++;
+var payload=(cov_ujp3tp59n.s[5]++,{cardID:id,amount:(0,_result2.default)(_this.props,'navigation.state.params.amount','')});cov_ujp3tp59n.s[6]++;
+_this.props.payByCard(payload);
+};},_this.
+
+deleteCard=function(id){cov_ujp3tp59n.f[5]++;cov_ujp3tp59n.s[7]++;return function(){cov_ujp3tp59n.f[6]++;cov_ujp3tp59n.s[8]++;
+_this.props.deleteCard(id);cov_ujp3tp59n.s[9]++;
+_this.setState({savedCards:_this.state.savedCards.filter(function(card){cov_ujp3tp59n.f[7]++;cov_ujp3tp59n.s[10]++;return card.id!==id;})});
+};},_this.
+
+creditcardForm=function()
+{cov_ujp3tp59n.f[8]++;cov_ujp3tp59n.s[11]++;return _react2.default.createElement(_reactNative.View,null,
+_react2.default.createElement(_ISText2.default,null,'Cardholder Name'),
+_react2.default.createElement(_IconTextInput2.default,{iconName:'pay-for-others',defaultValue:_this.state.form.name,placeholder:'Cardholder Name',onChangeText:_this.setFormVal('name')}),
+_react2.default.createElement(_ISText2.default,null,'Card Number'),
+_react2.default.createElement(_IconTextInput2.default,{iconName:'pay-for-others',defaultValue:_this.state.form.number,placeholder:'Card Number',onChangeText:_this.setFormVal('number')}),
+_react2.default.createElement(_ISText2.default,null,'City'),
+_react2.default.createElement(_IconTextInput2.default,{iconName:'pay-for-others',defaultValue:_this.state.form.city,placeholder:'City',onChangeText:_this.setFormVal('city')}),
+_react2.default.createElement(_ISText2.default,null,'Postal Code'),
+_react2.default.createElement(_IconTextInput2.default,{iconName:'pay-for-others',defaultValue:_this.state.form.postal_code,placeholder:'Postal Code',onChangeText:_this.setFormVal('postal_code')}),
+_react2.default.createElement(_ISText2.default,null,'Security Code'),
+_react2.default.createElement(_IconTextInput2.default,{iconName:'pay-for-others',defaultValue:_this.state.form.security_code,placeholder:'Security Code',onChangeText:_this.setFormVal('security_code')}),
+_react2.default.createElement(_ISText2.default,null,'Expiration Month'),
+_react2.default.createElement(_IconTextInput2.default,{iconName:'pay-for-others',defaultValue:_this.state.form.expiration_month,placeholder:'Expiration Month',onChangeText:_this.setFormVal('expiration_month')}),
+_react2.default.createElement(_ISText2.default,null,'Expiration Year'),
+_react2.default.createElement(_IconTextInput2.default,{iconName:'pay-for-others',defaultValue:_this.state.form.expiration_year,placeholder:'Expiration Year',onChangeText:_this.setFormVal('expiration_year')}),
+_react2.default.createElement(_ISText2.default,null,'Save Card'),
+_react2.default.createElement(_Checkbox2.default,{onChange:_this.setFormVal('saveCard'),isChecked:false}),
+_react2.default.createElement(_Button2.default,{text:'Pay',onPress:_this.onFormSubmit}));
+},_this.
+
+creditCardDetails=function(_ref2,i)
+{var brand=_ref2.brand,expiration_month=_ref2.expiration_month,expiration_year=_ref2.expiration_year,name=_ref2.name,id=_ref2.id,last_digits=_ref2.last_digits;cov_ujp3tp59n.f[9]++;cov_ujp3tp59n.s[12]++;return _react2.default.createElement(_reactNative.View,{key:i},
+_react2.default.createElement(_ISText2.default,null,'Brand: ',brand),
+_react2.default.createElement(_ISText2.default,null,'Expiry: ',expiration_month+'/'+expiration_year),
+_react2.default.createElement(_ISText2.default,null,'name: ',name),
+_react2.default.createElement(_ISText2.default,null,'id: ',id),
+_react2.default.createElement(_ISText2.default,null,'Card No: **** **** **** ',last_digits),
+_react2.default.createElement(_reactNative.View,null,
+_react2.default.createElement(_Button2.default,{type:'inline',text:'Pay using this card',onPress:_this.payByCard(id)}),
+_react2.default.createElement(_Button2.default,{type:'inline',text:'Delete Card',onPress:_this.deleteCard(id)})));
+
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(PaymentMethods,[{key:'render',value:function render()
+
+{cov_ujp3tp59n.f[10]++;var _ref3=(cov_ujp3tp59n.s[13]++,
+this.state),savedCards=_ref3.savedCards;
+var isCardsPresent=(cov_ujp3tp59n.s[14]++,savedCards.length>0);cov_ujp3tp59n.s[15]++;
+return(
+_react2.default.createElement(_reactNative.ScrollView,null,
+_react2.default.createElement(_ISText2.default,null,
+'\n',isCardsPresent?(cov_ujp3tp59n.b[0][0]++,'Pick one of the saved cards above'):(cov_ujp3tp59n.b[0][1]++,'No saved cards. Please add a new one'),'\n'),
+
+isCardsPresent?(cov_ujp3tp59n.b[1][0]++,savedCards.map(this.creditCardDetails)):(cov_ujp3tp59n.b[1][1]++,this.creditcardForm())));
+
+
+}}]);return PaymentMethods;}(_react.Component);cov_ujp3tp59n.s[16]++;
+
+
+PaymentMethods.propTypes={
+addCard:_propTypes2.default.func,
+deleteCard:_propTypes2.default.func,
+payByCard:_propTypes2.default.func};cov_ujp3tp59n.s[17]++;
+
+var mapDispatchToProps=exports.mapDispatchToProps=function mapDispatchToProps(dispatch){cov_ujp3tp59n.f[11]++;cov_ujp3tp59n.s[18]++;return{
+addCard:(0,_redux.bindActionCreators)(_index.payNewCustomer,dispatch),
+payByCard:(0,_redux.bindActionCreators)(_index.payUsingExistingCard,dispatch),
+deleteCard:(0,_redux.bindActionCreators)(_index.removeExisingCard,dispatch)};
+};exports.default=
+(0,_reactRedux.connect)(null,mapDispatchToProps)(PaymentMethods);

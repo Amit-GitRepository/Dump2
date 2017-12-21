@@ -1,0 +1,61 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.storeLocatorRouteConfig=undefined;var cov_7ro6h577g=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/routes/storeLocator.routes.js',hash='29cda6400e31dbb4e6accbe182db01b4aebfecba',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/routes/storeLocator.routes.js',statementMap:{'0':{start:{line:9,column:23},end:{line:22,column:1}},'1':{start:{line:24,column:18},end:{line:30,column:2}},'2':{start:{line:32,column:27},end:{line:54,column:1}},'3':{start:{line:56,column:39},end:{line:59,column:1}}},fnMap:{},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _ServiceDetails=require('../components/StoreLocator/ServiceDetails/ServiceDetails.component');var _ServiceDetails2=_interopRequireDefault(_ServiceDetails);
+var _StoreDetails=require('../pages/StoreLocator/StoreDetails.page');var _StoreDetails2=_interopRequireDefault(_StoreDetails);
+var _StoreLocatorList=require('../pages/StoreLocator/StoreLocatorList.page');var _StoreLocatorList2=_interopRequireDefault(_StoreLocatorList);
+var _StoreLocatorMap=require('../pages/StoreLocator/StoreLocatorMap.page');var _StoreLocatorMap2=_interopRequireDefault(_StoreLocatorMap);
+var _StoreLocatorTabs=require('../pages/StoreLocator/StoreLocatorTabs.page');var _StoreLocatorTabs2=_interopRequireDefault(_StoreLocatorTabs);
+var _route=require('./helpers/route.helper');
+var _reactNavigation=require('react-navigation');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+var storeTabConfig=(cov_7ro6h577g.s[0]++,{
+StoreLocator:{
+screen:_StoreLocatorMap2.default,
+title:'SIDE_MENU__TRUE_SHOP',
+showHamburger:true,
+gaScreenName:'True Shop Location'},
+
+StoreLocatorList:{
+screen:_StoreLocatorList2.default,
+path:'list',
+showHamburger:true,
+gaScreenName:'True Shop List'}});
+
+
+
+var StoreTabs=(cov_7ro6h577g.s[1]++,(0,_reactNavigation.TabNavigator)(storeTabConfig,{
+tabBarComponent:_StoreLocatorTabs2.default,
+tabBarPosition:'top',
+swipeEnabled:false,
+animationEnabled:true,
+lazy:true}));
+
+
+var storeLocatorConfig=(cov_7ro6h577g.s[2]++,{
+StoreLocator:{
+screen:StoreTabs,
+navigationOptions:_route.getStackNavOption,
+path:'store',
+requireLogin:false,
+title:'SIDE_MENU__TRUE_SHOP',
+gaScreenName:'True Shop Location'},
+
+StoreDetails:{
+screen:_StoreDetails2.default,
+requireLogin:false,
+navigationOptions:_route.getStackNavOption,
+title:'STORE_LOCATOR__TRUE_SHOP_INFO',
+gaScreenName:'True Shop Info'},
+
+ServiceDetails:{
+screen:_ServiceDetails2.default,
+navigationOptions:_route.getStackNavOption,
+title:'STORE_LOCATOR__TRUE_SHOP_SERVICE_DETAIL',
+gaScreenName:'True Shop Service Details'}});
+
+
+
+var storeLocatorRouteConfig=exports.storeLocatorRouteConfig=(cov_7ro6h577g.s[3]++,_extends({},
+storeLocatorConfig,
+storeTabConfig));exports.default=
+
+
+(0,_reactNavigation.StackNavigator)(storeLocatorConfig);

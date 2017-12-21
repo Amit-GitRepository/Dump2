@@ -1,0 +1,31 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_2q36zlz54c=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/ComponentWithTab/ComponentWithTabView.component.js',hash='021a48c28400664bb985190c7946773856305ee9',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/ComponentWithTab/ComponentWithTabView.component.js',statementMap:{'0':{start:{line:9,column:62},end:{line:9,column:72}},'1':{start:{line:10,column:4},end:{line:21,column:6}},'2':{start:{line:25,column:0},end:{line:30,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:8,column:2},end:{line:8,column:3}},loc:{start:{line:8,column:12},end:{line:22,column:3}},line:8}},branchMap:{'0':{loc:{start:{line:19,column:9},end:{line:19,column:95}},type:'cond-expr',locations:[{start:{line:19,column:22},end:{line:19,column:88}},{start:{line:19,column:91},end:{line:19,column:95}}],line:19}},s:{'0':0,'1':0,'2':0},f:{'0':0},b:{'0':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _NavFooter=require('../NavFooter/NavFooter.component');var _NavFooter2=_interopRequireDefault(_NavFooter);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ComponentWithTabView=require('./ComponentWithTabView.style');var _ComponentWithTabView2=_interopRequireDefault(_ComponentWithTabView);
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+ComponentWithTabView=function(_Component){_inherits(ComponentWithTabView,_Component);function ComponentWithTabView(){_classCallCheck(this,ComponentWithTabView);return _possibleConstructorReturn(this,(ComponentWithTabView.__proto__||Object.getPrototypeOf(ComponentWithTabView)).apply(this,arguments));}_createClass(ComponentWithTabView,[{key:'render',value:function render()
+{cov_2q36zlz54c.f[0]++;var _ref=(cov_2q36zlz54c.s[0]++,
+this.props),goToScreen=_ref.goToScreen,currentScreen=_ref.currentScreen,isLoggedIn=_ref.isLoggedIn,children=_ref.children;cov_2q36zlz54c.s[1]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:_ComponentWithTabView2.default.container},
+_react2.default.createElement(_reactNative.ScrollView,{
+showsVerticalScrollIndicator:false,
+showsHorizontalScrollIndicator:false,
+contentContainerStyle:_ComponentWithTabView2.default.contentContainer},
+
+children),
+
+isLoggedIn?(cov_2q36zlz54c.b[0][0]++,_react2.default.createElement(_NavFooter2.default,{goToScreen:goToScreen,currentScreen:currentScreen})):(cov_2q36zlz54c.b[0][1]++,null)));
+
+
+}}]);return ComponentWithTabView;}(_react.Component);cov_2q36zlz54c.s[2]++;
+
+
+ComponentWithTabView.propTypes={
+currentScreen:_propTypes2.default.string,
+goToScreen:_propTypes2.default.func,
+isLoggedIn:_propTypes2.default.bool,
+children:_propTypes2.default.node};exports.default=
+
+ComponentWithTabView;

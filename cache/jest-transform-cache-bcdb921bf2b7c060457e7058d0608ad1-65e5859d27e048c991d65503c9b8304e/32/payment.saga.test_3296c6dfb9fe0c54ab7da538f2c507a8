@@ -1,0 +1,163 @@
+var _api=require('../api/api.saga');var _api2=_interopRequireDefault(_api);
+var _paymentSaga=require('../payment.saga.js');var _paymentSaga2=_interopRequireDefault(_paymentSaga);
+var _reduxSagaTesting=require('redux-saga-testing');var _reduxSagaTesting2=_interopRequireDefault(_reduxSagaTesting);
+var _effects=require('redux-saga/effects');
+var _payment=require('../../../config/payment.config');
+var _apiHelper=require('../api/apiHelper');
+var _common=require('../../../utils/common.util');
+var _reactNavigation=require('react-navigation');
+var _index=require('../../actions/index.actions');
+var _reactNative=require('../../../utils/reactNative.util');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('paymentSaga: should bind actions to sagas',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_paymentSaga2.default)());
+it(' should takeLatest SHOW_PAYMENT_METHODS',function(result){
+expect(result).toEqual((0,_effects.takeLatest)(_index.SHOW_PAYMENT_METHODS,_paymentSaga.showPaymentMethods));
+});
+it('should takeLatest PAY_NEW_CUSTOMER',function(result){
+expect(result).toEqual((0,_effects.takeLatest)(_index.PAY_NEW_CUSTOMER,_paymentSaga.paymentForNewCustomer));
+});
+it('should takeLatest PAY_EXISTING_CUSTOMER',function(result){
+expect(result).toEqual((0,_effects.takeLatest)(_index.PAY_EXISTING_CUSTOMER,_paymentSaga.paymentForExistingCustomer));
+});
+it('should takeLatest PRE_LOGIN_PAYMENT',function(result){
+expect(result).toEqual((0,_effects.takeLatest)(_index.PRE_LOGIN_PAYMENT,_paymentSaga.paymentForNonLoginUser));
+});
+it('should takeLatest PAY_EXISTING_CUSTOMER',function(result){
+expect(result).toEqual((0,_effects.takeLatest)(_index.REMOVE_EXISTING_CARD,_paymentSaga.removeExisingCard));
+});
+});
+
+describe('payForExistingCustomer => success: should call payForExistingCustomer api',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_paymentSaga.paymentForExistingCustomer)({payload:{type:_payment.CARD_TYPE.SAVED,customerId:123,paymentItems:[],formData:{saveCard:true},selectedCard:{id:123}}}));
+it('should get ssoID from store',function(result){
+expect(result).toMatchSnapshot((0,_effects.select)((0,_common.getSelector)('user.profile.ssoID')));
+return'ssoID';
+});
+it('encrypt the ID and call api with payload',function(result){
+expect(result).toEqual((0,_effects.call)(_api2.default,(0,_apiHelper.payForExistingCustomer)('encryptedID',{'cardID':123,'customerId':123,'payables':[],'saveCard':true})));
+return{status:200,body:{'cardID':123,'customerId':123,'payables':[],'saveCard':true}};
+});
+it('should dispatch a Payment success action',function(result){
+var details={'cardID':123,'customerId':123,'payables':[],'saveCard':true};
+expect(result).toEqual((0,_effects.put)((0,_index.setPaymentStatus)({status:_payment.PAYMENT_STATUS.SUCCESS,details:details})));
+});
+it('should dispatch a Payment success action',function(result){
+expect(result).toEqual((0,_effects.put)(_reactNavigation.NavigationActions.navigate({'routeName':'PaymentStatus'})));
+});
+});
+
+describe('showPaymentMethods => success: should show possible payment methods',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_paymentSaga.showPaymentMethods)());
+it('should get ssoID from store',function(result){
+expect(result).toMatchSnapshot((0,_effects.select)((0,_common.getSelector)('user.profile.ssoID')));
+return'ssoID';
+});
+it('Should call getSavedCards api to show default credit card',function(result){
+expect(result).toEqual((0,_effects.call)(_api2.default,(0,_apiHelper.getSavedCards)('encryptedID')));
+return{status:200,body:[{id:'card1'}]};
+});
+it('Should call setSavedCards with status',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.setSavedCards)([{id:'card1'}])));
+});
+});
+describe('showPaymentMethods => failure: should show toast with message',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_paymentSaga.showPaymentMethods)());
+it('should get ssoID from store',function(result){
+expect(result).toMatchSnapshot((0,_effects.select)((0,_common.getSelector)('user.profile.ssoID')));
+return'ssoID';
+});
+it('Should call getSavedCards api to show default credit card',function(){return new Error('API failed');});
+it('should call Toast if api fails',function(result){
+expect(result).toEqual((0,_effects.call)(_reactNative.Toast.show,'Unable to get saved cards',_reactNative.Toast.SHORT));
+});
+});
+
+describe('removeExisingCard => success: should removed exising card',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_paymentSaga.removeExisingCard)({payload:'someCardID'}));
+it('should get ssoID from store',function(result){
+expect(result).toMatchSnapshot((0,_effects.select)((0,_common.getSelector)('user.profile.ssoID')));
+return'ssoID';
+});
+it('Should call deleteCard api to show default credit card',function(result){
+expect(result).toEqual((0,_effects.call)(_api2.default,(0,_apiHelper.deleteCard)('encryptedID','someCardID')));
+});
+});
+describe('removeExisingCard => failure: should removed exising card',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_paymentSaga.removeExisingCard)({payload:'someCardID'}));
+it('should get ssoID from store',function(result){
+expect(result).toMatchSnapshot((0,_effects.select)((0,_common.getSelector)('user.profile.ssoID')));
+return'ssoID';
+});
+it('Should call deleteCard api to show default credit card',function(){return new Error('API failed');});
+it('should call Toast if api fails',function(result){
+expect(result).toEqual((0,_effects.call)(_reactNative.Toast.show,'Unable to delete card',_reactNative.Toast.SHORT));
+});
+});
+
+describe('fetchPayOtherProducts => success should navigate to payOthersPostpaid screen',function(){
+var mockAction={payload:{serviceNo:'1234'}};
+var mockResponse={
+body:{
+tol:[{
+productId:'12345'}],
+
+tmhPostpaid:[],
+tvs:[]}};
+
+
+var it=(0,_reduxSagaTesting2.default)((0,_paymentSaga.fetchPayOtherProducts)(mockAction));
+it('should call the getProductFromServiceNo api',function(result){
+expect(result).toEqual((0,_effects.call)(_api2.default,(0,_apiHelper.getProductFromServiceNo)(mockAction.payload.serviceNo)));
+return mockResponse;
+});
+it('should call the setPaymentProducts action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.setPaymentProducts)({serviceNo:'1234',products:mockResponse.body})));
+});
+it('should navigate to PayOthersPostpaid screen',function(result){
+expect(result).toEqual((0,_effects.put)(_reactNavigation.NavigationActions.navigate({'routeName':'PayOthersPostpaid'})));
+});
+});
+
+describe('fetchPayOtherProducts => success should navigate to PayOthersTopUp screen when product is prepaid',function(){
+var mockAction={payload:{serviceNo:'1234'}};
+var mockResponse={
+body:{
+tol:[],
+tmhPrepaid:[{
+a:'abc'}],
+
+tmhPostpaid:[],
+tvs:[]}};
+
+
+var it=(0,_reduxSagaTesting2.default)((0,_paymentSaga.fetchPayOtherProducts)(mockAction));
+it('should call the getProductFromServiceNo api',function(result){
+expect(result).toEqual((0,_effects.call)(_api2.default,(0,_apiHelper.getProductFromServiceNo)(mockAction.payload.serviceNo)));
+return mockResponse;
+});
+it('should call the setPaymentProducts action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.setPaymentProducts)({serviceNo:'1234',products:mockResponse.body})));
+});
+it('should navigate to PayOthersPostpaid screen',function(result){
+expect(result).toEqual((0,_effects.put)(_reactNavigation.NavigationActions.navigate({'routeName':'PayOthersTopUp'})));
+});
+});
+
+describe('fetchPayOtherProducts => failure should show Toast when the response Object is empty',function(){
+var mockAction={payload:{serviceNo:'1234'}};
+var mockResponse={
+body:{}};
+
+var it=(0,_reduxSagaTesting2.default)((0,_paymentSaga.fetchPayOtherProducts)(mockAction));
+it('should call the getProductFromServiceNo api',function(result){
+expect(result).toEqual((0,_effects.call)(_api2.default,(0,_apiHelper.getProductFromServiceNo)(mockAction.payload.serviceNo)));
+return mockResponse;
+});
+it('should call the setPaymentProducts action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.setPaymentProducts)({serviceNo:'1234',products:mockResponse.body})));
+});
+it('should navigate to PayOthersPostpaid screen',function(result){
+expect(result).toEqual((0,_effects.call)(_reactNative.Toast.show,'Invalid service number entered',_reactNative.Toast.LONG));
+});
+});

@@ -1,0 +1,10 @@
+var _CaretHeader=require('../CaretHeader.component');var _CaretHeader2=_interopRequireDefault(_CaretHeader);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('CaretHeader component',function(){
+it('should render correctly',function(){
+var componentTree=_reactTestRenderer2.default.create(_react2.default.createElement(_CaretHeader2.default,null)).toJSON();
+expect(componentTree).toMatchSnapshot();
+});
+});

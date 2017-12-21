@@ -1,0 +1,39 @@
+var _deeplinkUtil=require('../deeplink.util.js');var _deeplinkUtil2=_interopRequireDefault(_deeplinkUtil);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var
+
+FirebaseDynamicLink=_reactNative.NativeModules.FirebaseDynamicLink;
+
+describe('Deeplink utility',function(){
+
+beforeEach(function(){
+
+FirebaseDynamicLink.addListener.mockClear();
+FirebaseDynamicLink.removeListeners.mockClear();
+
+
+_deeplinkUtil2.default.subscription=null;
+});
+
+it('addListener: Should call listener for deeplink',function(){
+_deeplinkUtil2.default.addListener(_noop2.default);
+expect(FirebaseDynamicLink.addListener).toBeCalled();
+});
+
+it('addListener: Should not call deeplink addlistener when no listener is passed ',function(){
+_deeplinkUtil2.default.addListener();
+expect(FirebaseDynamicLink.addListener).not.toBeCalled();
+});
+
+it('removeListener: Should call deeplink remove listerer when an existing listener is attached',function(){
+_deeplinkUtil2.default.addListener(_noop2.default);
+_deeplinkUtil2.default.removeListener();
+expect(FirebaseDynamicLink.removeListeners).toBeCalled();
+});
+
+it('removeListener: Should not call deeplink remove listerer when no listener is attached',function(){
+_deeplinkUtil2.default.removeListener();
+expect(FirebaseDynamicLink.removeListeners).not.toBeCalled();
+});
+
+});

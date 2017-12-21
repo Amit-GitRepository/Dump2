@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SquareIconButton component renders correctly 1`] = `
+<View
+  accessibilityComponentType={undefined}
+  accessibilityLabel={undefined}
+  accessibilityTraits={undefined}
+  accessible={true}
+  collapsable={undefined}
+  hitSlop={undefined}
+  isTVSelectable={true}
+  nativeID={undefined}
+  onLayout={undefined}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "borderRadius": 15,
+      "flex": 1,
+      "opacity": 1,
+      "paddingHorizontal": 5,
+    }
+  }
+  testID={undefined}
+  tvParallaxProperties={undefined}
+>
+  <View
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 8.5,
+          "elevation": 3,
+          "marginBottom": 4,
+          "paddingBottom": 2,
+          "paddingTop": 6,
+          "shadowColor": "#303C46",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 1,
+          },
+          "shadowOpacity": 0.5,
+          "shadowRadius": 2,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={false}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": undefined,
+              "fontSize": 12,
+            },
+            Array [
+              Object {
+                "color": "#F93E60",
+                "fontSize": 30,
+                "padding": 1,
+              },
+              Object {
+                "color": "#F93E60",
+              },
+            ],
+            Object {
+              "fontFamily": "iservice",
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+            },
+          ]
+        }
+      >
+        
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#000000",
+            "fontFamily": "SukhumvitSet-Bold",
+            "fontSize": 16,
+          }
+        }
+      >
+        
+      </Text>
+      <View
+        style={
+          Object {
+            "alignItems": "flex-end",
+            "flexDirection": "row-reverse",
+            "marginTop": -5,
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          noOfLines={1}
+          style={
+            Object {
+              "backgroundColor": "transparent",
+              "color": "#000000",
+              "fontFamily": "SukhumvitSet-Text",
+              "fontSize": 14,
+            }
+          }
+        >
+          
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

@@ -1,0 +1,47 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1rlr80ol0j=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/TVPackageDetails/TVPackageDetails.component.js',hash='68e20a1c337779450b7d37fa28cfb58c7c3c2a0c',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/TVPackageDetails/TVPackageDetails.component.js',statementMap:{'0':{start:{line:16,column:77},end:{line:16,column:87}},'1':{start:{line:17,column:17},end:{line:17,column:31}},'2':{start:{line:18,column:4},end:{line:30,column:6}},'3':{start:{line:33,column:0},end:{line:39,column:2}},'4':{start:{line:40,column:0},end:{line:46,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:15,column:2},end:{line:15,column:3}},loc:{start:{line:15,column:12},end:{line:31,column:3}},line:15}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0},f:{'0':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _DetailCardRow=require('../BillUsage/BillUsageShared/DetailCardRow.component');var _DetailCardRow2=_interopRequireDefault(_DetailCardRow);
+var _HeaderWithCaret=require('../BillUsage/BillUsageShared/HeaderWithCaret.component');var _HeaderWithCaret2=_interopRequireDefault(_HeaderWithCaret);
+var _PackageDetailHeader=require('../BillUsage/BillUsageShared/PackageDetailHeader/PackageDetailHeader.component');var _PackageDetailHeader2=_interopRequireDefault(_PackageDetailHeader);
+var _PackageOverview=require('../BillUsage/BillUsageShared/PackageOverview/PackageOverview.component');var _PackageOverview2=_interopRequireDefault(_PackageOverview);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _TVPackageDetails=require('./TVPackageDetails.style');var _TVPackageDetails2=_interopRequireDefault(_TVPackageDetails);
+var _billUsage=require('../../../config/billUsage.config');
+var _helper=require('../../../language/i18n/helper');
+var _Shared=require('../../Shared');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+TVPackageDetails=function(_Component){_inherits(TVPackageDetails,_Component);function TVPackageDetails(){_classCallCheck(this,TVPackageDetails);return _possibleConstructorReturn(this,(TVPackageDetails.__proto__||Object.getPrototypeOf(TVPackageDetails)).apply(this,arguments));}_createClass(TVPackageDetails,[{key:'render',value:function render()
+
+{cov_1rlr80ol0j.f[0]++;var _ref=(cov_1rlr80ol0j.s[0]++,
+this.props),packageInfo=_ref.packageInfo,packageDetails=_ref.packageDetails,isConvergence=_ref.isConvergence,endDate=_ref.endDate,productId=_ref.productId;
+var type=(cov_1rlr80ol0j.s[1]++,_billUsage.ICON_MAP[type]);cov_1rlr80ol0j.s[2]++;
+return(
+_react2.default.createElement(_Shared.WrapperCard,null,
+_react2.default.createElement(_HeaderWithCaret2.default,{headerColor:_TVPackageDetails2.default.headerColor,customIconStyle:_TVPackageDetails2.default.iconStyle,style:_TVPackageDetails2.default.headerStyle},
+_react2.default.createElement(_PackageDetailHeader2.default,{isConvergence:isConvergence,phoneNumber:productId,endDate:endDate,name:(0,_helper.translate)('BILLS_USAGE_TRUEVISIONS')})),
+
+_react2.default.createElement(_PackageOverview2.default,{title:packageInfo.description,subTitle:packageInfo.planOffer}),
+_react2.default.createElement(_DetailCardRow2.default,{icon:(0,_result2.default)(_billUsage.ICON_MAP,'HDCHANNELS.titleIconPath',''),title:(0,_result2.default)(_billUsage.ICON_MAP,'HDCHANNELS.titleText',''),value:packageDetails.channelCountHD,subText:'Channels'}),
+_react2.default.createElement(_DetailCardRow2.default,{icon:(0,_result2.default)(_billUsage.ICON_MAP,'CHANNELS.titleIconPath',''),title:(0,_result2.default)(_billUsage.ICON_MAP,'CHANNELS.titleText',''),value:packageDetails.channelCountSD,subText:'Channels'})));
+
+
+
+
+
+}}]);return TVPackageDetails;}(_react.Component);cov_1rlr80ol0j.s[3]++;
+
+TVPackageDetails.defaultProps={
+packageDetails:{},
+isConvergence:false,
+packageInfo:{},
+productId:'',
+endDate:0};cov_1rlr80ol0j.s[4]++;
+
+TVPackageDetails.propTypes={
+packageDetails:_propTypes2.default.object.isRequired,
+isConvergence:_propTypes2.default.bool,
+packageInfo:_propTypes2.default.object,
+productId:_propTypes2.default.string,
+endDate:_propTypes2.default.number};exports.default=
+
+TVPackageDetails;

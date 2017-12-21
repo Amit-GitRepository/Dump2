@@ -1,0 +1,31 @@
+var _store=require('../../../redux/store');var _store2=_interopRequireDefault(_store);
+var _Landing=require('../Landing.page');var _Landing2=_interopRequireDefault(_Landing);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _enzyme=require('enzyme');
+var _index=require('../../../redux/actions/index.actions');
+var _reactNavigation=require('react-navigation');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+var store=(0,_store2.default)();
+
+describe('LandingPage',function(){
+it('renders ',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_Landing2.default,{store:store}));
+expect(wrapper).toBeDefined();
+});
+
+it('it has mapStateToProps : props defined',function(){
+var props=(0,_Landing.mapStateToProps)(store.getState());
+expect(props.msisdn).toBeDefined();
+expect(props.language).toBeDefined();
+});
+it('it has mapDispatchToProps functions',function(){
+var mockDispatch=function mockDispatch(action){return action;};
+var props=(0,_Landing.mapDispatchToProps)(mockDispatch);
+expect(props.loginRequest()).toEqual((0,_index.loginRequest)(_reactNavigation.NavigationActions.navigate({routeName:'BillUsage'})));
+expect(props.registerRequest()).toEqual((0,_index.registerRequest)(_reactNavigation.NavigationActions.navigate({routeName:'BillUsage'})));
+expect(props.navigatePayBill()).toEqual(_reactNavigation.NavigationActions.navigate({routeName:'PreLoginPayBill'}));
+});
+});

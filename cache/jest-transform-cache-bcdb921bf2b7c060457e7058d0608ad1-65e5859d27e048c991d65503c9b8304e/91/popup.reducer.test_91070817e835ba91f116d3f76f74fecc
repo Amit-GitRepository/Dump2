@@ -1,0 +1,40 @@
+var _popup=require('../popup.reducer');var _popup2=_interopRequireDefault(_popup);
+var _index=require('../../actions/index.actions');var actions=_interopRequireWildcard(_index);function _interopRequireWildcard(obj){if(obj&&obj.__esModule){return obj;}else{var newObj={};if(obj!=null){for(var key in obj){if(Object.prototype.hasOwnProperty.call(obj,key))newObj[key]=obj[key];}}newObj.default=obj;return newObj;}}function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('Show spinner reducer',function(){
+var initialState={
+message:{
+title:'',
+body:'',
+buttons:[
+{
+title:''}]},
+
+
+
+isOpen:false};
+
+
+
+Object.freeze(initialState);
+it('should have the initial value',function(){
+expect((0,_popup2.default)(undefined,{})).toEqual(initialState);
+});
+it('should set the value of isOpen as true',function(){
+var incAction={
+type:actions.POPUP_SHOW};
+
+var result={
+message:undefined,
+isOpen:true};
+
+expect((0,_popup2.default)(initialState,incAction)).toEqual(result);
+});
+it('should set the value of state as initial state on popup hide',function(){
+var incAction={
+type:actions.POPUP_HIDE};
+
+var result=initialState;
+expect((0,_popup2.default)(initialState,incAction)).toEqual(result);
+});
+});

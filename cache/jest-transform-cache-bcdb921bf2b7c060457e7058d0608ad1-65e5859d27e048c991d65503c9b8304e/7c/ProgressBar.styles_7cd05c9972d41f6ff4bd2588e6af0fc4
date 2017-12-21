@@ -1,0 +1,16 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1tehzidb4t=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/ProgressBar/ProgressBar.styles.js',hash='f599fcce2d0664c8bf89894a6b40a757f8765fb2',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/ProgressBar/ProgressBar.styles.js',statementMap:{},fnMap:{},branchMap:{},s:{},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _reactNative=require('react-native');exports.default=
+
+_reactNative.StyleSheet.create({
+container:{
+borderWidth:0,
+flexDirection:'row',
+borderRadius:4},
+
+progressFill:{
+padding:4,
+borderRadius:4},
+
+progressEmpty:{
+padding:4,
+borderTopRightRadius:4,
+borderBottomRightRadius:4}});

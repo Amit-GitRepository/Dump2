@@ -1,0 +1,43 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_fk9ij4uqq=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/CurrentUsageCard.component.js',hash='6333983d74421bcebf4a23612f02d8c6c5a9d42f',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/CurrentUsageCard.component.js',statementMap:{'0':{start:{line:10,column:25},end:{line:27,column:1}},'1':{start:{line:11,column:2},end:{line:26,column:9}},'2':{start:{line:14,column:8},end:{line:20,column:121}},'3':{start:{line:29,column:0},end:{line:34,column:2}},'4':{start:{line:36,column:0},end:{line:41,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:10,column:25},end:{line:10,column:26}},loc:{start:{line:11,column:2},end:{line:26,column:9}},line:11},'1':{name:'(anonymous_1)',decl:{start:{line:13,column:16},end:{line:13,column:17}},loc:{start:{line:14,column:8},end:{line:20,column:121}},line:14}},branchMap:{'0':{loc:{start:{line:17,column:13},end:{line:17,column:118}},type:'binary-expr',locations:[{start:{line:17,column:13},end:{line:17,column:27}},{start:{line:17,column:31},end:{line:17,column:118}}],line:17},'1':{loc:{start:{line:20,column:17},end:{line:20,column:120}},type:'cond-expr',locations:[{start:{line:20,column:45},end:{line:20,column:113}},{start:{line:20,column:116},end:{line:20,column:120}}],line:20}},s:{'0':0,'1':0,'2':0,'3':0,'4':0},f:{'0':0,'1':0},b:{'0':[0,0],'1':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _Banner=require('../../../Shared/Banner/Banner.component');var _Banner2=_interopRequireDefault(_Banner);
+var _ISText=require('../../../Shared/ISText/ISText.component');var _ISText2=_interopRequireDefault(_ISText);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _CurrentUsageCard=require('./CurrentUsageCard.style');var _CurrentUsageCard2=_interopRequireDefault(_CurrentUsageCard);
+var _Touchable=require('../../../Shared/Touchable/Touchable.component');var _Touchable2=_interopRequireDefault(_Touchable);
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}cov_fk9ij4uqq.s[0]++;
+
+var CurrentUsageCard=function CurrentUsageCard(_ref)
+{var data=_ref.data,bannerImage=_ref.bannerImage,textStyle=_ref.textStyle,onBannerClick=_ref.onBannerClick;cov_fk9ij4uqq.f[0]++;cov_fk9ij4uqq.s[1]++;return _react2.default.createElement(_reactNative.View,{style:_CurrentUsageCard2.default.currentUsageContainer},
+_react2.default.createElement(_reactNative.View,{style:_CurrentUsageCard2.default.currentUsageSubContainer},
+data.map(function(usageData,index)
+{cov_fk9ij4uqq.f[1]++;cov_fk9ij4uqq.s[2]++;return[_react2.default.createElement(_reactNative.View,{style:_CurrentUsageCard2.default.usageContainer,key:'usageCard_'+index},
+_react2.default.createElement(_reactNative.View,{style:_CurrentUsageCard2.default.usageSubContainer},
+_react2.default.createElement(_ISText2.default,{type:'MEDIUM',style:[_CurrentUsageCard2.default.usageText,textStyle]},usageData.usage),
+(cov_fk9ij4uqq.b[0][0]++,usageData.unit)&&(cov_fk9ij4uqq.b[0][1]++,_react2.default.createElement(_ISText2.default,{type:'BOLD',style:[_CurrentUsageCard2.default.usageUnitText,textStyle]},usageData.unit))),
+
+_react2.default.createElement(_ISText2.default,{type:'BOLD',style:_CurrentUsageCard2.default.usageTypeText},usageData.type)),
+index<data.length-1?(cov_fk9ij4uqq.b[1][0]++,_react2.default.createElement(_reactNative.View,{style:_CurrentUsageCard2.default.seperator,key:'usageCardSeperator_'+index})):(cov_fk9ij4uqq.b[1][1]++,null)];})),
+
+
+_react2.default.createElement(_Touchable2.default,{onPress:onBannerClick,style:_CurrentUsageCard2.default.bannerContainer},
+_react2.default.createElement(_Banner2.default,{source:bannerImage,style:_CurrentUsageCard2.default.bannerImage})));
+
+};cov_fk9ij4uqq.s[3]++;
+
+
+CurrentUsageCard.defaultProps={
+data:[],
+bannerImage:0,
+textStyle:{},
+onBannerClick:_noop2.default};cov_fk9ij4uqq.s[4]++;
+
+
+CurrentUsageCard.propTypes={
+data:_propTypes2.default.array,
+bannerImage:_propTypes2.default.number,
+textStyle:_propTypes2.default.object,
+onBannerClick:_propTypes2.default.func};exports.default=
+
+
+CurrentUsageCard;

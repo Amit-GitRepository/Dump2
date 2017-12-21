@@ -1,0 +1,100 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.getPaymentStatusHeader=exports.getStackNavOption=exports.generateCloseButton=exports.generateBackButton=exports.generateDrawerHamburger=undefined;var cov_363k9217q=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/routes/helpers/route.helper.js',hash='1a51ef6f181998b44b644c0ed55306a062a68b4f',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/routes/helpers/route.helper.js',statementMap:{'0':{start:{line:12,column:39},end:{line:22,column:1}},'1':{start:{line:13,column:18},end:{line:16,column:3}},'2':{start:{line:14,column:4},end:{line:14,column:23}},'3':{start:{line:15,column:4},end:{line:15,column:49}},'4':{start:{line:17,column:2},end:{line:21,column:4}},'5':{start:{line:24,column:34},end:{line:31,column:1}},'6':{start:{line:25,column:18},end:{line:25,column:54}},'7':{start:{line:25,column:24},end:{line:25,column:54}},'8':{start:{line:26,column:2},end:{line:30,column:4}},'9':{start:{line:33,column:35},end:{line:42,column:1}},'10':{start:{line:34,column:18},end:{line:36,column:3}},'11':{start:{line:35,column:4},end:{line:35,column:37}},'12':{start:{line:37,column:2},end:{line:41,column:4}},'13':{start:{line:44,column:24},end:{line:47,column:1}},'14':{start:{line:50,column:33},end:{line:74,column:1}},'15':{start:{line:51,column:19},end:{line:51,column:89}},'16':{start:{line:52,column:24},end:{line:52,column:103}},'17':{start:{line:53,column:19},end:{line:53,column:93}},'18':{start:{line:54,column:2},end:{line:73,column:4}},'19':{start:{line:55,column:23},end:{line:55,column:46}},'20':{start:{line:76,column:38},end:{line:100,column:1}},'21':{start:{line:77,column:19},end:{line:77,column:89}},'22':{start:{line:78,column:19},end:{line:78,column:92}},'23':{start:{line:79,column:2},end:{line:99,column:4}},'24':{start:{line:80,column:23},end:{line:80,column:46}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:12,column:39},end:{line:12,column:40}},loc:{start:{line:12,column:65},end:{line:22,column:1}},line:12},'1':{name:'(anonymous_1)',decl:{start:{line:13,column:18},end:{line:13,column:19}},loc:{start:{line:13,column:24},end:{line:16,column:3}},line:13},'2':{name:'(anonymous_2)',decl:{start:{line:24,column:34},end:{line:24,column:35}},loc:{start:{line:24,column:50},end:{line:31,column:1}},line:24},'3':{name:'(anonymous_3)',decl:{start:{line:25,column:18},end:{line:25,column:19}},loc:{start:{line:25,column:24},end:{line:25,column:54}},line:25},'4':{name:'(anonymous_4)',decl:{start:{line:33,column:35},end:{line:33,column:36}},loc:{start:{line:33,column:51},end:{line:42,column:1}},line:33},'5':{name:'(anonymous_5)',decl:{start:{line:34,column:18},end:{line:34,column:19}},loc:{start:{line:34,column:24},end:{line:36,column:3}},line:34},'6':{name:'(anonymous_6)',decl:{start:{line:50,column:33},end:{line:50,column:34}},loc:{start:{line:50,column:46},end:{line:74,column:1}},line:50},'7':{name:'(anonymous_7)',decl:{start:{line:55,column:12},end:{line:55,column:13}},loc:{start:{line:55,column:23},end:{line:55,column:46}},line:55},'8':{name:'(anonymous_8)',decl:{start:{line:76,column:38},end:{line:76,column:39}},loc:{start:{line:76,column:51},end:{line:100,column:1}},line:76},'9':{name:'(anonymous_9)',decl:{start:{line:80,column:12},end:{line:80,column:13}},loc:{start:{line:80,column:23},end:{line:80,column:46}},line:80}},branchMap:{'0':{loc:{start:{line:62,column:18},end:{line:62,column:49}},type:'cond-expr',locations:[{start:{line:62,column:42},end:{line:62,column:43}},{start:{line:62,column:46},end:{line:62,column:49}}],line:62},'1':{loc:{start:{line:64,column:18},end:{line:64,column:116}},type:'cond-expr',locations:[{start:{line:64,column:29},end:{line:64,column:109}},{start:{line:64,column:112},end:{line:64,column:116}}],line:64},'2':{loc:{start:{line:71,column:16},end:{line:71,column:102}},type:'cond-expr',locations:[{start:{line:71,column:32},end:{line:71,column:72}},{start:{line:71,column:75},end:{line:71,column:102}}],line:71},'3':{loc:{start:{line:72,column:11},end:{line:72,column:96}},type:'cond-expr',locations:[{start:{line:72,column:22},end:{line:72,column:41}},{start:{line:72,column:44},end:{line:72,column:96}}],line:72},'4':{loc:{start:{line:87,column:18},end:{line:87,column:49}},type:'cond-expr',locations:[{start:{line:87,column:42},end:{line:87,column:43}},{start:{line:87,column:46},end:{line:87,column:49}}],line:87},'5':{loc:{start:{line:95,column:11},end:{line:95,column:96}},type:'cond-expr',locations:[{start:{line:95,column:22},end:{line:95,column:41}},{start:{line:95,column:44},end:{line:95,column:96}}],line:95},'6':{loc:{start:{line:96,column:16},end:{line:96,column:61}},type:'cond-expr',locations:[{start:{line:96,column:27},end:{line:96,column:54}},{start:{line:96,column:57},end:{line:96,column:61}}],line:96}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0,'19':0,'20':0,'21':0,'22':0,'23':0,'24':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0],'4':[0,0],'5':[0,0],'6':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _logo=require('../../assets/logo.png');var _logo2=_interopRequireDefault(_logo);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _sharedPage=require('../../config/testid/sharedPage');var _sharedPage2=_interopRequireDefault(_sharedPage);
+var _constants=require('../../themes/constants.styles');
+var _Shared=require('../../components/Shared');
+var _reactNative=require('react-native');
+var _reactNativeUtil=require('../../utils/reactNative.util.js');
+var _index=require('../index.routes');
+var _helper=require('../../language/i18n/helper');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}cov_363k9217q.s[0]++;
+
+var generateDrawerHamburger=exports.generateDrawerHamburger=function generateDrawerHamburger(currentNav,iconName){cov_363k9217q.f[0]++;cov_363k9217q.s[1]++;
+var onPress=function onPress(){cov_363k9217q.f[1]++;cov_363k9217q.s[2]++;
+_reactNative.Keyboard.dismiss();cov_363k9217q.s[3]++;
+currentNav.navigation.navigate('DrawerOpen');
+};cov_363k9217q.s[4]++;
+return(
+_react2.default.createElement(_Shared.Touchable,{onPress:onPress,style:{paddingRight:10}},
+_react2.default.createElement(_Shared.Icon,{name:iconName,size:22,color:_constants.colors.SECONDARY_BG_TEXT_CONTRAST,accessibilityLabel:_sharedPage2.default.ICON__HAMBURGER,testID:_sharedPage2.default.ICON__HAMBURGER})));
+
+
+};cov_363k9217q.s[5]++;
+
+var generateBackButton=exports.generateBackButton=function generateBackButton(currentNav){cov_363k9217q.f[2]++;cov_363k9217q.s[6]++;
+var onPress=function onPress(){cov_363k9217q.f[3]++;cov_363k9217q.s[7]++;return currentNav.navigation.goBack();};cov_363k9217q.s[8]++;
+return(
+_react2.default.createElement(_Shared.Touchable,{onPress:onPress,style:{paddingRight:10}},
+_react2.default.createElement(_Shared.Icon,{name:'back_arrow',size:_constants.fonts.FONT_SIZE_LARGE,color:_constants.colors.PRIMARY_ACTIONABLE,accessibilityLabel:_sharedPage2.default.ICON__BACKBUTTON,testID:_sharedPage2.default.ICON__BACKBUTTON})));
+
+
+};cov_363k9217q.s[9]++;
+
+var generateCloseButton=exports.generateCloseButton=function generateCloseButton(currentNav){cov_363k9217q.f[4]++;cov_363k9217q.s[10]++;
+var onPress=function onPress(){cov_363k9217q.f[5]++;cov_363k9217q.s[11]++;
+currentNav.screenProps.dismiss();
+};cov_363k9217q.s[12]++;
+return(
+_react2.default.createElement(_Shared.Touchable,{onPress:onPress,style:{paddingRight:10}},
+_react2.default.createElement(_Shared.ISText,{type:'BOLD'},(0,_helper.translate)('PAYMENT__CLOSE'))));
+
+
+};
+
+var headerIconstyle=(cov_363k9217q.s[13]++,{
+ios:{width:'60%',alignSelf:'center'},
+android:{width:'50%',alignSelf:'center',marginLeft:-35}});cov_363k9217q.s[14]++;
+
+
+
+var getStackNavOption=exports.getStackNavOption=function getStackNavOption(current){cov_363k9217q.f[6]++;
+var titleKey=(cov_363k9217q.s[15]++,(0,_result2.default)(_index.routeConfig[current.navigation.state.routeName],'title',null));
+var showHamburger=(cov_363k9217q.s[16]++,(0,_result2.default)(_index.routeConfig[current.navigation.state.routeName],'showHamburger',false));
+var showIcon=(cov_363k9217q.s[17]++,(0,_result2.default)(_index.routeConfig[current.navigation.state.routeName],'showIcon',false));cov_363k9217q.s[18]++;
+return{
+header:function header(props){cov_363k9217q.f[7]++;cov_363k9217q.s[19]++;return _react2.default.createElement(_Shared.ISHeader,props);},
+headerTitleStyle:{
+alignSelf:'center',
+color:_constants.colors.SHADOW,
+fontSize:_constants.fonts.FONT_SIZE_MEDIUM,
+fontFamily:_constants.fonts.FONT_FAMILY_BOLD,
+fontWeight:'bold',
+marginLeft:_reactNativeUtil.Platform.OS==='ios'?(cov_363k9217q.b[0][0]++,0):(cov_363k9217q.b[0][1]++,-30)},
+
+headerTitle:showIcon?(cov_363k9217q.b[1][0]++,_react2.default.createElement(_reactNative.Image,{source:_logo2.default,resizeMode:'contain',style:headerIconstyle[_reactNativeUtil.Platform.OS]})):(cov_363k9217q.b[1][1]++,null),
+headerStyle:{
+backgroundColor:_constants.colors.TRANSPARENT,
+borderBottomWidth:0,
+elevation:0,
+paddingHorizontal:10},
+
+headerLeft:showHamburger?(cov_363k9217q.b[2][0]++,generateDrawerHamburger(current,'menu')):(cov_363k9217q.b[2][1]++,generateBackButton(current)),
+title:titleKey?(cov_363k9217q.b[3][0]++,(0,_helper.translate)(titleKey)):(cov_363k9217q.b[3][1]++,(0,_result2.default)(current.navigation.state,'params.title',''))};
+
+};cov_363k9217q.s[20]++;
+
+var getPaymentStatusHeader=exports.getPaymentStatusHeader=function getPaymentStatusHeader(current){cov_363k9217q.f[8]++;
+var titleKey=(cov_363k9217q.s[21]++,(0,_result2.default)(_index.routeConfig[current.navigation.state.routeName],'title',null));
+var showBack=(cov_363k9217q.s[22]++,(0,_result2.default)(_index.routeConfig[current.navigation.state.routeName],'showBack',true));cov_363k9217q.s[23]++;
+return{
+header:function header(props){cov_363k9217q.f[9]++;cov_363k9217q.s[24]++;return _react2.default.createElement(_Shared.ISHeader,props);},
+headerTitleStyle:{
+alignSelf:'center',
+color:_constants.colors.SHADOW,
+fontSize:_constants.fonts.FONT_SIZE_MEDIUM,
+fontFamily:_constants.fonts.FONT_FAMILY_BOLD,
+fontWeight:'bold',
+marginLeft:_reactNativeUtil.Platform.OS==='ios'?(cov_363k9217q.b[4][0]++,0):(cov_363k9217q.b[4][1]++,-30)},
+
+headerStyle:{
+backgroundColor:_constants.colors.TRANSPARENT,
+borderBottomWidth:0,
+elevation:0,
+paddingHorizontal:10},
+
+title:titleKey?(cov_363k9217q.b[5][0]++,(0,_helper.translate)(titleKey)):(cov_363k9217q.b[5][1]++,(0,_result2.default)(current.navigation.state,'params.title','')),
+headerLeft:showBack?(cov_363k9217q.b[6][0]++,generateBackButton(current)):(cov_363k9217q.b[6][1]++,null),
+headerRight:generateCloseButton(current),
+gesturesEnabled:showBack};
+
+};

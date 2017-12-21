@@ -1,0 +1,46 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.mapDispatchToProps=exports.mapStateToProps=undefined;var cov_16mgkor5xp=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/TopUp/TopUp.page.js',hash='20152183b404d519212a988e87defffef275a5e7',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/TopUp/TopUp.page.js',statementMap:{'0':{start:{line:14,column:54},end:{line:14,column:64}},'1':{start:{line:15,column:27},end:{line:15,column:29}},'2':{start:{line:16,column:4},end:{line:18,column:7}},'3':{start:{line:17,column:6},end:{line:17,column:42}},'4':{start:{line:19,column:4},end:{line:21,column:6}},'5':{start:{line:25,column:0},end:{line:29,column:2}},'6':{start:{line:31,column:0},end:{line:35,column:2}},'7':{start:{line:37,column:31},end:{line:39,column:2}},'8':{start:{line:37,column:43},end:{line:39,column:1}},'9':{start:{line:41,column:34},end:{line:44,column:2}},'10':{start:{line:41,column:49},end:{line:44,column:1}},'11':{start:{line:42,column:26},end:{line:42,column:83}},'12':{start:{line:43,column:30},end:{line:43,column:62}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:13,column:2},end:{line:13,column:3}},loc:{start:{line:13,column:19},end:{line:22,column:3}},line:13},'1':{name:'(anonymous_1)',decl:{start:{line:16,column:23},end:{line:16,column:24}},loc:{start:{line:16,column:33},end:{line:18,column:5}},line:16},'2':{name:'(anonymous_2)',decl:{start:{line:37,column:31},end:{line:37,column:32}},loc:{start:{line:37,column:43},end:{line:39,column:1}},line:37},'3':{name:'(anonymous_3)',decl:{start:{line:41,column:34},end:{line:41,column:35}},loc:{start:{line:41,column:49},end:{line:44,column:1}},line:41},'4':{name:'(anonymous_4)',decl:{start:{line:42,column:14},end:{line:42,column:15}},loc:{start:{line:42,column:26},end:{line:42,column:83}},line:42},'5':{name:'(anonymous_5)',decl:{start:{line:43,column:19},end:{line:43,column:20}},loc:{start:{line:43,column:30},end:{line:43,column:62}},line:43}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _ComponentWithTab2=require('../../components/ComponentWithTab/ComponentWithTab.component');var _ComponentWithTab3=_interopRequireDefault(_ComponentWithTab2);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _TopUp=require('../../components/TopUp/TopUp/TopUp.component');var _TopUp2=_interopRequireDefault(_TopUp);
+var _reactRedux=require('react-redux');
+var _reactNavigation=require('react-navigation');
+var _index=require('../../redux/actions/index.actions');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+TopUpPage=function(_ComponentWithTab){_inherits(TopUpPage,_ComponentWithTab);function TopUpPage(){_classCallCheck(this,TopUpPage);return _possibleConstructorReturn(this,(TopUpPage.__proto__||Object.getPrototypeOf(TopUpPage)).apply(this,arguments));}_createClass(TopUpPage,[{key:'renderWithTab',value:function renderWithTab()
+
+{cov_16mgkor5xp.f[0]++;var _ref=(cov_16mgkor5xp.s[0]++,
+this.props),tmhPrepaid=_ref.tmhPrepaid,goToScreen=_ref.goToScreen,setPaymentItems=_ref.setPaymentItems;
+var prepaidNumbers=(cov_16mgkor5xp.s[1]++,[]);cov_16mgkor5xp.s[2]++;
+tmhPrepaid.forEach(function(item){cov_16mgkor5xp.f[1]++;cov_16mgkor5xp.s[3]++;
+prepaidNumbers.push(item.productId);
+});cov_16mgkor5xp.s[4]++;
+return(
+_react2.default.createElement(_TopUp2.default,{goToScreen:goToScreen,prepaidNumbers:prepaidNumbers,setPaymentItems:setPaymentItems}));
+
+}}]);return TopUpPage;}(_ComponentWithTab3.default);cov_16mgkor5xp.s[5]++;
+
+
+TopUpPage.defaultProps={
+tmhPrepaid:[],
+goToScreen:_noop2.default,
+setPaymentItems:_noop2.default};cov_16mgkor5xp.s[6]++;
+
+
+TopUpPage.propTypes={
+tmhPrepaid:_propTypes2.default.array,
+goToScreen:_propTypes2.default.func,
+setPaymentItems:_propTypes2.default.func};cov_16mgkor5xp.s[7]++;
+
+
+var mapStateToProps=exports.mapStateToProps=function mapStateToProps(state){cov_16mgkor5xp.f[2]++;cov_16mgkor5xp.s[8]++;return{
+tmhPrepaid:(0,_result2.default)(state,'billUsage.productList.tmhPrepaid',[])};
+};cov_16mgkor5xp.s[9]++;
+
+var mapDispatchToProps=exports.mapDispatchToProps=function mapDispatchToProps(dispatch){cov_16mgkor5xp.f[3]++;cov_16mgkor5xp.s[10]++;return{
+goToScreen:function goToScreen(screen){cov_16mgkor5xp.f[4]++;cov_16mgkor5xp.s[11]++;return dispatch(_reactNavigation.NavigationActions.navigate({routeName:screen}));},
+setPaymentItems:function setPaymentItems(items){cov_16mgkor5xp.f[5]++;cov_16mgkor5xp.s[12]++;return dispatch((0,_index.setPaymentItems)(items));}};
+};exports.default=
+
+(0,_reactRedux.connect)(mapStateToProps,mapDispatchToProps)(TopUpPage);

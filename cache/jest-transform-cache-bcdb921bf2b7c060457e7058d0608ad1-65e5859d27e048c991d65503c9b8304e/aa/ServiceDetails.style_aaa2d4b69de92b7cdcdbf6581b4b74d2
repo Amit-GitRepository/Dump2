@@ -1,0 +1,4 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1yeg85pph=function(){var path="/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/StoreLocator/ServiceDetails/ServiceDetails.style.js",hash="7b78eb1b5b28eeaf39360fc8505b0a539aa2b334",global=new Function('return this')(),gcv="__coverage__",coverageData={path:"/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/StoreLocator/ServiceDetails/ServiceDetails.style.js",statementMap:{},fnMap:{},branchMap:{},s:{},f:{},b:{},_coverageSchema:"332fd63041d2c1bcb487cc26dd0d5f7d97098a6c"},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();exports.default={
+container:{
+padding:10,
+flex:1}};

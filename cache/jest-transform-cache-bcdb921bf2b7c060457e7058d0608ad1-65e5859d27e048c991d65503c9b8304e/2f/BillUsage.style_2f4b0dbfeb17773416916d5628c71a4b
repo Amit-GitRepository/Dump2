@@ -1,0 +1,36 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_16pch58ldd=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsage.style.js',hash='bd49888b69e5cdbb184eeb5aa0a48dbc0af32fe1',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsage.style.js',statementMap:{'0':{start:{line:3,column:19},end:{line:6,column:1}}},fnMap:{},branchMap:{},s:{'0':0},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _constants=require('../../../themes/constants.styles');
+
+var bannerText=(cov_16pch58ldd.s[0]++,{
+color:_constants.colors.PRIMARY_BG_TEXT_CONTRAST,
+backgroundColor:_constants.colors.TRANSPARENT});exports.default=
+
+
+{
+container:{
+flex:1,
+alignItems:'stretch',
+backgroundColor:_constants.colors.GRAY_NURSE,
+marginBottom:20},
+
+bannerContainer:{
+alignItems:'center',
+paddingTop:40,
+backgroundColor:_constants.colors.TRANSPARENT},
+
+productContainer:{
+marginTop:-50},
+
+welcomeText:_extends({},
+bannerText,{
+fontSize:_constants.fonts.FONT_SIZE_SMALL,
+marginBottom:-5}),
+
+
+usernameText:_extends({},
+bannerText,{
+fontSize:_constants.fonts.FONT_SIZE_XL,
+marginBottom:-10}),
+
+
+separatorPadding:{
+marginTop:30}};

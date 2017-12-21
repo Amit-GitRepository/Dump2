@@ -1,0 +1,28 @@
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);
+var _SideMenu=require('../SideMenu.component');var _SideMenu2=_interopRequireDefault(_SideMenu);
+var _enzyme=require('enzyme');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+describe('SideMenu component',function(){
+it('renders correctly',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_SideMenu2.default,null));
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_SideMenu2.default,null)).toJSON();
+expect(component).toMatchSnapshot();
+expect(wrapper).toBeDefined();
+});
+it('toggleSideMenuAccordion: set accordion collapse index',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_SideMenu2.default,null));
+wrapper.setState({openAccordionIndex:-1});
+wrapper.instance().toggleSideMenuAccordion(1);
+expect(wrapper.instance().state.openAccordionIndex).toEqual(1);
+});
+it('componentWillReceiveProps: update openAccordionIndex state',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_SideMenu2.default,{navIndex:1}));
+wrapper.setState({openAccordionIndex:2});
+wrapper.instance().componentWillReceiveProps({navIndex:0});
+expect(wrapper.instance().state.openAccordionIndex).toEqual(-1);
+});
+});

@@ -1,0 +1,57 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_my3zioih7=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/StoreLocator/StoreLocatorTab/StoreLocatorTab.component.js',hash='98d4c47e8acef6def576750904480c4dd62f82c2',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/StoreLocator/StoreLocatorTab/StoreLocatorTab.component.js',statementMap:{'0':{start:{line:14,column:24},end:{line:14,column:34}},'1':{start:{line:15,column:4},end:{line:15,column:74}},'2':{start:{line:15,column:49},end:{line:15,column:72}},'3':{start:{line:18,column:131},end:{line:18,column:141}},'4':{start:{line:19,column:24},end:{line:19,column:82}},'5':{start:{line:20,column:23},end:{line:20,column:106}},'6':{start:{line:21,column:23},end:{line:21,column:70}},'7':{start:{line:22,column:4},end:{line:33,column:6}},'8':{start:{line:37,column:0},end:{line:45,column:2}},'9':{start:{line:46,column:0},end:{line:56,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:13,column:16},end:{line:13,column:17}},loc:{start:{line:13,column:22},end:{line:16,column:3}},line:13},'1':{name:'(anonymous_1)',decl:{start:{line:15,column:35},end:{line:15,column:36}},loc:{start:{line:15,column:49},end:{line:15,column:72}},line:15},'2':{name:'(anonymous_2)',decl:{start:{line:17,column:2},end:{line:17,column:3}},loc:{start:{line:17,column:12},end:{line:34,column:3}},line:17}},branchMap:{'0':{loc:{start:{line:21,column:23},end:{line:21,column:70}},type:'cond-expr',locations:[{start:{line:21,column:46},end:{line:21,column:56}},{start:{line:21,column:59},end:{line:21,column:70}}],line:21},'1':{loc:{start:{line:31,column:9},end:{line:31,column:62}},type:'cond-expr',locations:[{start:{line:31,column:26},end:{line:31,column:55}},{start:{line:31,column:58},end:{line:31,column:62}}],line:31}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0},f:{'0':0,'1':0,'2':0},b:{'0':[0,0],'1':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _CaretTabs=require('../../Shared/CaretTabs/CaretTabs.component');var _CaretTabs2=_interopRequireDefault(_CaretTabs);
+var _Dropdown=require('../../Shared/Dropdown/Dropdown.component');var _Dropdown2=_interopRequireDefault(_Dropdown);
+var _InfoBar=require('../../Shared/InfoBar/InfoBar.component');var _InfoBar2=_interopRequireDefault(_InfoBar);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _storeInfo=require('../../../config/storeInfo.config');var _storeInfo2=_interopRequireDefault(_storeInfo);
+var _StoreLocatorTab=require('./StoreLocatorTab.style');var _StoreLocatorTab2=_interopRequireDefault(_StoreLocatorTab);
+var _helper=require('../../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+StoreLocatorTabs=function(_Component){_inherits(StoreLocatorTabs,_Component);function StoreLocatorTabs(){var _ref;var _temp,_this,_ret;_classCallCheck(this,StoreLocatorTabs);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=StoreLocatorTabs.__proto__||Object.getPrototypeOf(StoreLocatorTabs)).call.apply(_ref,[this].concat(args))),_this),_this.
+getProvices=function(){cov_my3zioih7.f[0]++;var _ref2=(cov_my3zioih7.s[0]++,
+_this.props),language=_ref2.language;cov_my3zioih7.s[1]++;
+return _storeInfo2.default.provinces.map(function(province){cov_my3zioih7.f[1]++;cov_my3zioih7.s[2]++;return province.name[language];});
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(StoreLocatorTabs,[{key:'render',value:function render()
+{cov_my3zioih7.f[2]++;var _ref3=(cov_my3zioih7.s[3]++,
+this.props),radiusKM=_ref3.radiusKM,onMapClick=_ref3.onMapClick,onListClick=_ref3.onListClick,selectedProvince=_ref3.selectedProvince,selectedService=_ref3.selectedService,selectProvince=_ref3.selectProvince,selectService=_ref3.selectService,activeTabIndex=_ref3.activeTabIndex;
+var infoBarText=(cov_my3zioih7.s[4]++,(0,_helper.translate)('STORE_LOCATOR__COVERAGE',{distance:radiusKM}));
+var headerList=(cov_my3zioih7.s[5]++,[{text:(0,_helper.translate)('STORE_LOCATOR__MAP')},{text:(0,_helper.translate)('STORE_LOCATOR__LIST')}]);
+var onTabPress=(cov_my3zioih7.s[6]++,activeTabIndex!==0?(cov_my3zioih7.b[0][0]++,onMapClick):(cov_my3zioih7.b[0][1]++,onListClick));cov_my3zioih7.s[7]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:_StoreLocatorTab2.default.container},
+_react2.default.createElement(_CaretTabs2.default,{headerContainerStyle:_StoreLocatorTab2.default.caretHeader,onTabPress:onTabPress,selectedIndex:activeTabIndex,headerList:headerList,bodyStyle:_StoreLocatorTab2.default.caretTabBody,disableShadow:true}),
+_react2.default.createElement(_reactNative.View,{style:_StoreLocatorTab2.default.dropdownContainer},
+_react2.default.createElement(_Dropdown2.default,{value:selectedProvince,data:this.getProvices().sort(),unselectedText:(0,_helper.translate)('STORE_LOCATOR__SELECT_AREA'),headerText:(0,_helper.translate)('STORE_LOCATOR__HEADER_SELECT_AREA'),
+onSelect:selectProvince,style:_StoreLocatorTab2.default.fixMargin}),
+_react2.default.createElement(_Dropdown2.default,{value:selectedService,data:_storeInfo2.default.services,unselectedText:(0,_helper.translate)('STORE_LOCATOR__SELECT_SERVICE'),headerText:(0,_helper.translate)('STORE_LOCATOR__HEADER_SELECT_SERVICE'),
+onSelect:selectService})),
+
+activeTabIndex?(cov_my3zioih7.b[1][0]++,_react2.default.createElement(_InfoBar2.default,{text:infoBarText})):(cov_my3zioih7.b[1][1]++,null)));
+
+
+}}]);return StoreLocatorTabs;}(_react.Component);cov_my3zioih7.s[8]++;
+
+
+StoreLocatorTabs.defaultProps={
+onListClick:_noop2.default,
+onMapClick:_noop2.default,
+selectProvince:_noop2.default,
+selectService:_noop2.default,
+language:'th',
+selectedProvince:'',
+selectedService:''};cov_my3zioih7.s[9]++;
+
+StoreLocatorTabs.propTypes={
+onListClick:_propTypes2.default.func,
+onMapClick:_propTypes2.default.func,
+selectProvince:_propTypes2.default.func,
+selectService:_propTypes2.default.func,
+radiusKM:_propTypes2.default.number,
+language:_propTypes2.default.string,
+activeTabIndex:_propTypes2.default.number,
+selectedProvince:_propTypes2.default.string,
+selectedService:_propTypes2.default.string};exports.default=
+
+StoreLocatorTabs;

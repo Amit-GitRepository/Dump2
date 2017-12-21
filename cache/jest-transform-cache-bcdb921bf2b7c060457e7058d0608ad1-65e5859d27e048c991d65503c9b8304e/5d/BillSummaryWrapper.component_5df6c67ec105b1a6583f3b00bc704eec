@@ -1,0 +1,114 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1qsfqe7n26=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/TopLevelCards/BillSummaryWrapper/BillSummaryWrapper.component.js',hash='2edf194dd48834396e8283cd1abf4a92a2c23f4c',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/TopLevelCards/BillSummaryWrapper/BillSummaryWrapper.component.js',statementMap:{'0':{start:{line:21,column:42},end:{line:21,column:64}},'1':{start:{line:22,column:22},end:{line:22,column:88}},'2':{start:{line:22,column:39},end:{line:22,column:88}},'3':{start:{line:23,column:4},end:{line:23,column:95}},'4':{start:{line:26,column:131},end:{line:26,column:141}},'5':{start:{line:27,column:42},end:{line:27,column:53}},'6':{start:{line:42,column:22},end:{line:52,column:6}},'7':{start:{line:43,column:40},end:{line:43,column:52}},'8':{start:{line:44,column:38},end:{line:44,column:91}},'9':{start:{line:45,column:39},end:{line:45,column:88}},'10':{start:{line:46,column:37},end:{line:46,column:87}},'11':{start:{line:46,column:43},end:{line:46,column:87}},'12':{start:{line:47,column:40},end:{line:47,column:93}},'13':{start:{line:47,column:46},end:{line:47,column:93}},'14':{start:{line:48,column:37},end:{line:48,column:87}},'15':{start:{line:48,column:43},end:{line:48,column:87}},'16':{start:{line:49,column:6},end:{line:51,column:8}},'17':{start:{line:54,column:23},end:{line:66,column:6}},'18':{start:{line:55,column:40},end:{line:55,column:54}},'19':{start:{line:56,column:39},end:{line:56,column:92}},'20':{start:{line:57,column:40},end:{line:57,column:89}},'21':{start:{line:58,column:38},end:{line:58,column:88}},'22':{start:{line:58,column:44},end:{line:58,column:88}},'23':{start:{line:59,column:41},end:{line:59,column:94}},'24':{start:{line:59,column:47},end:{line:59,column:94}},'25':{start:{line:60,column:38},end:{line:60,column:88}},'26':{start:{line:60,column:44},end:{line:60,column:88}},'27':{start:{line:61,column:6},end:{line:65,column:8}},'28':{start:{line:68,column:23},end:{line:79,column:6}},'29':{start:{line:69,column:40},end:{line:69,column:54}},'30':{start:{line:70,column:39},end:{line:70,column:91}},'31':{start:{line:71,column:40},end:{line:71,column:88}},'32':{start:{line:72,column:38},end:{line:72,column:87}},'33':{start:{line:72,column:44},end:{line:72,column:87}},'34':{start:{line:73,column:41},end:{line:73,column:93}},'35':{start:{line:73,column:47},end:{line:73,column:93}},'36':{start:{line:74,column:38},end:{line:74,column:87}},'37':{start:{line:74,column:44},end:{line:74,column:87}},'38':{start:{line:75,column:6},end:{line:78,column:8}},'39':{start:{line:81,column:4},end:{line:93,column:22}},'40':{start:{line:96,column:0},end:{line:104,column:2}},'41':{start:{line:105,column:0},end:{line:113,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:20,column:25},end:{line:20,column:26}},loc:{start:{line:20,column:31},end:{line:24,column:3}},line:20},'1':{name:'(anonymous_1)',decl:{start:{line:22,column:22},end:{line:22,column:23}},loc:{start:{line:22,column:39},end:{line:22,column:88}},line:22},'2':{name:'(anonymous_2)',decl:{start:{line:25,column:2},end:{line:25,column:3}},loc:{start:{line:25,column:12},end:{line:94,column:3}},line:25},'3':{name:'(anonymous_3)',decl:{start:{line:42,column:36},end:{line:42,column:37}},loc:{start:{line:42,column:61},end:{line:52,column:5}},line:42},'4':{name:'(anonymous_4)',decl:{start:{line:46,column:37},end:{line:46,column:38}},loc:{start:{line:46,column:43},end:{line:46,column:87}},line:46},'5':{name:'(anonymous_5)',decl:{start:{line:47,column:40},end:{line:47,column:41}},loc:{start:{line:47,column:46},end:{line:47,column:93}},line:47},'6':{name:'(anonymous_6)',decl:{start:{line:48,column:37},end:{line:48,column:38}},loc:{start:{line:48,column:43},end:{line:48,column:87}},line:48},'7':{name:'(anonymous_7)',decl:{start:{line:54,column:37},end:{line:54,column:38}},loc:{start:{line:54,column:64},end:{line:66,column:5}},line:54},'8':{name:'(anonymous_8)',decl:{start:{line:58,column:38},end:{line:58,column:39}},loc:{start:{line:58,column:44},end:{line:58,column:88}},line:58},'9':{name:'(anonymous_9)',decl:{start:{line:59,column:41},end:{line:59,column:42}},loc:{start:{line:59,column:47},end:{line:59,column:94}},line:59},'10':{name:'(anonymous_10)',decl:{start:{line:60,column:38},end:{line:60,column:39}},loc:{start:{line:60,column:44},end:{line:60,column:88}},line:60},'11':{name:'(anonymous_11)',decl:{start:{line:68,column:36},end:{line:68,column:37}},loc:{start:{line:68,column:63},end:{line:79,column:5}},line:68},'12':{name:'(anonymous_12)',decl:{start:{line:72,column:38},end:{line:72,column:39}},loc:{start:{line:72,column:44},end:{line:72,column:87}},line:72},'13':{name:'(anonymous_13)',decl:{start:{line:73,column:41},end:{line:73,column:42}},loc:{start:{line:73,column:47},end:{line:73,column:93}},line:73},'14':{name:'(anonymous_14)',decl:{start:{line:74,column:38},end:{line:74,column:39}},loc:{start:{line:74,column:44},end:{line:74,column:87}},line:74}},branchMap:{'0':{loc:{start:{line:22,column:39},end:{line:22,column:88}},type:'cond-expr',locations:[{start:{line:22,column:63},end:{line:22,column:84}},{start:{line:22,column:87},end:{line:22,column:88}}],line:22}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0,'19':0,'20':0,'21':0,'22':0,'23':0,'24':0,'25':0,'26':0,'27':0,'28':0,'29':0,'30':0,'31':0,'32':0,'33':0,'34':0,'35':0,'36':0,'37':0,'38':0,'39':0,'40':0,'41':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0},b:{'0':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _AmountText=require('../../../../Shared/AmountText/AmountText.component');var _AmountText2=_interopRequireDefault(_AmountText);
+var _Button=require('../../../../Shared/Button/Button.component');var _Button2=_interopRequireDefault(_Button);
+var _ISText=require('../../../../Shared/ISText/ISText.component');var _ISText2=_interopRequireDefault(_ISText);
+var _map=require('lodash/map');var _map2=_interopRequireDefault(_map);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _BillSummaryWrapper=require('./BillSummaryWrapper.style');var _BillSummaryWrapper2=_interopRequireDefault(_BillSummaryWrapper);
+var _sumBy=require('lodash/sumBy');var _sumBy2=_interopRequireDefault(_sumBy);
+var _TMPostpaidProductCard=require('../../ProductCards/TMPostpaidProductCard/TMPostpaidProductCard.component');var _TMPostpaidProductCard2=_interopRequireDefault(_TMPostpaidProductCard);
+var _TOnlineProductCard=require('../../ProductCards/TOnlineProductCard/TOnlineProductCard.component');var _TOnlineProductCard2=_interopRequireDefault(_TOnlineProductCard);
+var _TVisionProductCard=require('../../ProductCards/TVisionProductCard/TVisionProductCard.component');var _TVisionProductCard2=_interopRequireDefault(_TVisionProductCard);
+var _WrapperCard=require('../../BillUsageShared/WrapperCard.component');var _WrapperCard2=_interopRequireDefault(_WrapperCard);
+var _common=require('../../../../../utils/common.util');
+var _helper=require('../../../../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+BillSummaryWrapper=function(_Component){_inherits(BillSummaryWrapper,_Component);function BillSummaryWrapper(){var _ref;var _temp,_this,_ret;_classCallCheck(this,BillSummaryWrapper);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=BillSummaryWrapper.__proto__||Object.getPrototypeOf(BillSummaryWrapper)).call.apply(_ref,[this].concat(args))),_this),_this.
+calculateTotalAmount=function(){cov_1qsfqe7n26.f[0]++;var _ref2=(cov_1qsfqe7n26.s[0]++,
+_this.props.productList),ccbsList=_ref2.ccbsList,trueList=_ref2.trueList,iccList=_ref2.iccList;cov_1qsfqe7n26.s[1]++;
+var condition=function condition(eachProduct){cov_1qsfqe7n26.f[1]++;cov_1qsfqe7n26.s[2]++;return eachProduct.isChecked?(cov_1qsfqe7n26.b[0][0]++,eachProduct.arBalance):(cov_1qsfqe7n26.b[0][1]++,0);};cov_1qsfqe7n26.s[3]++;
+return(0,_sumBy2.default)(ccbsList,condition)+(0,_sumBy2.default)(trueList,condition)+(0,_sumBy2.default)(iccList,condition);
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(BillSummaryWrapper,[{key:'render',value:function render()
+{cov_1qsfqe7n26.f[2]++;var _ref3=(cov_1qsfqe7n26.s[4]++,
+this.props),productList=_ref3.productList,goToScreen=_ref3.goToScreen,billDetail=_ref3.billDetail,productDetail=_ref3.productDetail,getProductBillDetails=_ref3.getProductBillDetails,toggleProductCheck=_ref3.toggleProductCheck,toggleProductCollapse=_ref3.toggleProductCollapse;var _ref4=(cov_1qsfqe7n26.s[5]++,
+productList),ccbsList=_ref4.ccbsList,trueList=_ref4.trueList,iccList=_ref4.iccList;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var trueMoveH=(cov_1qsfqe7n26.s[6]++,(0,_map2.default)(ccbsList,function(postpaidInfo,index){cov_1qsfqe7n26.f[3]++;var _ref5=(cov_1qsfqe7n26.s[7]++,
+postpaidInfo),accountId=_ref5.accountId,subscriberId=_ref5.subscriberId;
+var trueMoveHProductDetail=(cov_1qsfqe7n26.s[8]++,(0,_result2.default)(productDetail,'ccbsList.'+subscriberId,{}));
+var trueMoveHProductDueBills=(cov_1qsfqe7n26.s[9]++,(0,_result2.default)(billDetail,'ccbsList.'+accountId,null));cov_1qsfqe7n26.s[10]++;
+var onTrueMoveHCheckToggle=function onTrueMoveHCheckToggle(){cov_1qsfqe7n26.f[4]++;cov_1qsfqe7n26.s[11]++;return toggleProductCheck('ccbsList',subscriberId);};cov_1qsfqe7n26.s[12]++;
+var onTrueMoveHCollapseToggle=function onTrueMoveHCollapseToggle(){cov_1qsfqe7n26.f[5]++;cov_1qsfqe7n26.s[13]++;return toggleProductCollapse('ccbsList',subscriberId);};cov_1qsfqe7n26.s[14]++;
+var onTrueMoveHGetDueBills=function onTrueMoveHGetDueBills(){cov_1qsfqe7n26.f[6]++;cov_1qsfqe7n26.s[15]++;return getProductBillDetails('ccbsList',accountId);};cov_1qsfqe7n26.s[16]++;
+return(
+_react2.default.createElement(_TMPostpaidProductCard2.default,{title:'4G Super Smart 899',subtitle:'(4 Extra Packages)',phone:(0,_common.phoneNumberFormatter)(postpaidInfo.primResourceValue),amount:Number(postpaidInfo.arBalance),statusCode:postpaidInfo.statusCode,key:index,goToScreen:goToScreen,dueBills:trueMoveHProductDueBills,productDetail:trueMoveHProductDetail,isCollapsed:postpaidInfo.isCollapsed,onCollapseToggle:onTrueMoveHCollapseToggle,onChecked:onTrueMoveHCheckToggle,isChecked:postpaidInfo.isChecked,getDueBills:onTrueMoveHGetDueBills}));
+
+}));
+
+var trueOnline=(cov_1qsfqe7n26.s[17]++,(0,_map2.default)(trueList,function(trueOnlineInfo,index){cov_1qsfqe7n26.f[7]++;var _ref6=(cov_1qsfqe7n26.s[18]++,
+trueOnlineInfo),accountId=_ref6.accountId,subscriberId=_ref6.subscriberId;
+var trueOnlineProductDetail=(cov_1qsfqe7n26.s[19]++,(0,_result2.default)(productDetail,'trueList.'+subscriberId,{}));
+var trueOnlineProductDueBills=(cov_1qsfqe7n26.s[20]++,(0,_result2.default)(billDetail,'trueList.'+accountId,null));cov_1qsfqe7n26.s[21]++;
+var onTrueOnlineCheckToggle=function onTrueOnlineCheckToggle(){cov_1qsfqe7n26.f[8]++;cov_1qsfqe7n26.s[22]++;return toggleProductCheck('trueList',subscriberId);};cov_1qsfqe7n26.s[23]++;
+var onTrueOnlineCollapseToggle=function onTrueOnlineCollapseToggle(){cov_1qsfqe7n26.f[9]++;cov_1qsfqe7n26.s[24]++;return toggleProductCollapse('trueList',subscriberId);};cov_1qsfqe7n26.s[25]++;
+var onTrueOnlineGetDueBills=function onTrueOnlineGetDueBills(){cov_1qsfqe7n26.f[10]++;cov_1qsfqe7n26.s[26]++;return getProductBillDetails('trueList',accountId);};cov_1qsfqe7n26.s[27]++;
+return(
+_react2.default.createElement(_TOnlineProductCard2.default,{key:index,phone:trueOnlineInfo.primResourceValue,productDetail:trueOnlineProductDetail,dueBills:trueOnlineProductDueBills,amount:Number(trueOnlineInfo.arBalance),statusCode:trueOnlineInfo.statusCode,goToScreen:goToScreen,
+isCollapsed:trueOnlineInfo.isCollapsed,onCollapseToggle:onTrueOnlineCollapseToggle,onChecked:onTrueOnlineCheckToggle,isChecked:trueOnlineInfo.isChecked,getDueBills:onTrueOnlineGetDueBills}));
+
+
+}));
+
+var trueVision=(cov_1qsfqe7n26.s[28]++,(0,_map2.default)(iccList,function(trueVisionInfo,index){cov_1qsfqe7n26.f[11]++;var _ref7=(cov_1qsfqe7n26.s[29]++,
+trueVisionInfo),accountId=_ref7.accountId,subscriberId=_ref7.subscriberId;
+var trueVisionProductDetail=(cov_1qsfqe7n26.s[30]++,(0,_result2.default)(productDetail,'iccList.'+subscriberId,{}));
+var trueVisionProductDueBills=(cov_1qsfqe7n26.s[31]++,(0,_result2.default)(billDetail,'iccList.'+accountId,null));cov_1qsfqe7n26.s[32]++;
+var onTrueVisionCheckToggle=function onTrueVisionCheckToggle(){cov_1qsfqe7n26.f[12]++;cov_1qsfqe7n26.s[33]++;return toggleProductCheck('iccList',subscriberId);};cov_1qsfqe7n26.s[34]++;
+var onTrueVisionCollapseToggle=function onTrueVisionCollapseToggle(){cov_1qsfqe7n26.f[13]++;cov_1qsfqe7n26.s[35]++;return toggleProductCollapse('iccList',subscriberId);};cov_1qsfqe7n26.s[36]++;
+var onTrueVisionGetDueBills=function onTrueVisionGetDueBills(){cov_1qsfqe7n26.f[14]++;cov_1qsfqe7n26.s[37]++;return getProductBillDetails('iccList',accountId);};cov_1qsfqe7n26.s[38]++;
+return(
+_react2.default.createElement(_TVisionProductCard2.default,{key:index,phone:trueVisionInfo.primResourceValue,productDetail:trueVisionProductDetail,dueBills:trueVisionProductDueBills,amount:Number(trueVisionInfo.arBalance),statusCode:trueVisionInfo.statusCode,goToScreen:goToScreen,isCollapsed:trueVisionInfo.isCollapsed,onCollapseToggle:onTrueVisionCollapseToggle,onChecked:onTrueVisionCheckToggle,isChecked:trueVisionInfo.isChecked,getDueBills:onTrueVisionGetDueBills}));
+
+
+}));cov_1qsfqe7n26.s[39]++;
+
+return(
+_react2.default.createElement(_WrapperCard2.default,{header:(0,_helper.translate)('BILLS_USAGE_BILLING_SUMMARY'),style:_BillSummaryWrapper2.default.container,contentContainerStyles:_BillSummaryWrapper2.default.contentContainer},
+_react2.default.createElement(_reactNative.View,{style:_BillSummaryWrapper2.default.totalBillSection},
+_react2.default.createElement(_reactNative.View,null,
+_react2.default.createElement(_ISText2.default,{style:_BillSummaryWrapper2.default.postpaidTitleText},(0,_helper.translate)('BILLS_USAGE_TOTAL')),
+_react2.default.createElement(_AmountText2.default,{style:_BillSummaryWrapper2.default.totalAmount,value:this.calculateTotalAmount(),isTotalText:true})),
+
+_react2.default.createElement(_Button2.default,{text:(0,_helper.translate)('BILLS_USAGE_PAY'),textStyle:_BillSummaryWrapper2.default.buttonText,style:_BillSummaryWrapper2.default.buttonStyle})),
+
+trueMoveH,
+trueOnline,
+trueVision));
+
+}}]);return BillSummaryWrapper;}(_react.Component);cov_1qsfqe7n26.s[40]++;
+
+BillSummaryWrapper.defaultProps={
+goToScreen:_noop2.default,
+productList:{},
+productDetail:{},
+billDetail:{},
+toggleProductCheck:_noop2.default,
+toggleProductCollapse:_noop2.default,
+getProductBillDetails:_noop2.default};cov_1qsfqe7n26.s[41]++;
+
+BillSummaryWrapper.propTypes={
+goToScreen:_propTypes2.default.func,
+productList:_propTypes2.default.object,
+productDetail:_propTypes2.default.object,
+billDetail:_propTypes2.default.object,
+toggleProductCheck:_propTypes2.default.func,
+toggleProductCollapse:_propTypes2.default.func,
+getProductBillDetails:_propTypes2.default.func};exports.default=
+
+BillSummaryWrapper;

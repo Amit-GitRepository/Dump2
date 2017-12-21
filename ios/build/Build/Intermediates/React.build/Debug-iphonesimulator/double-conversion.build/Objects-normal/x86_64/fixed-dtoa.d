@@ -1,0 +1,6 @@
+dependencies: \
+  /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native/third-party/double-conversion-1.1.5/src/fixed-dtoa.cc \
+  /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native/third-party/double-conversion-1.1.5/src/fixed-dtoa.h \
+  /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native/third-party/double-conversion-1.1.5/src/utils.h \
+  /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native/third-party/double-conversion-1.1.5/src/ieee.h \
+  /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native/third-party/double-conversion-1.1.5/src/diy-fp.h

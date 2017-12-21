@@ -1,0 +1,37 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_2fkx1m30jm=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/NavFooter/NavFooterItem.component.js',hash='ba3069833294d705e245b5a948f3a6c8bccfe995',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/NavFooter/NavFooterItem.component.js',statementMap:{'0':{start:{line:10,column:33},end:{line:12,column:3}},'1':{start:{line:11,column:4},end:{line:11,column:34}},'2':{start:{line:15,column:62},end:{line:15,column:72}},'3':{start:{line:16,column:4},end:{line:24,column:6}},'4':{start:{line:28,column:0},end:{line:35,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:10,column:21},end:{line:10,column:22}},loc:{start:{line:10,column:33},end:{line:12,column:3}},line:10},'1':{name:'(anonymous_1)',decl:{start:{line:10,column:33},end:{line:10,column:34}},loc:{start:{line:10,column:39},end:{line:12,column:3}},line:10},'2':{name:'(anonymous_2)',decl:{start:{line:14,column:2},end:{line:14,column:3}},loc:{start:{line:14,column:12},end:{line:25,column:3}},line:14}},branchMap:{'0':{loc:{start:{line:17,column:24},end:{line:17,column:92}},type:'cond-expr',locations:[{start:{line:17,column:41},end:{line:17,column:75}},{start:{line:17,column:78},end:{line:17,column:92}}],line:17},'1':{loc:{start:{line:18,column:21},end:{line:18,column:89}},type:'cond-expr',locations:[{start:{line:18,column:34},end:{line:18,column:50}},{start:{line:18,column:53},end:{line:18,column:89}}],line:18},'2':{loc:{start:{line:19,column:62},end:{line:19,column:142}},type:'cond-expr',locations:[{start:{line:19,column:79},end:{line:19,column:110}},{start:{line:19,column:113},end:{line:19,column:142}}],line:19},'3':{loc:{start:{line:20,column:37},end:{line:20,column:112}},type:'cond-expr',locations:[{start:{line:20,column:54},end:{line:20,column:94}},{start:{line:20,column:97},end:{line:20,column:112}}],line:20}},s:{'0':0,'1':0,'2':0,'3':0,'4':0},f:{'0':0,'1':0,'2':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _NavFooterItem=require('./NavFooterItem.style');var _NavFooterItem2=_interopRequireDefault(_NavFooterItem);
+var _constants=require('../../themes/constants.styles');
+var _Shared=require('../Shared');
+var _helper=require('../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+NavFooterItem=function(_Component){_inherits(NavFooterItem,_Component);function NavFooterItem(){var _ref;var _temp,_this,_ret;_classCallCheck(this,NavFooterItem);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=NavFooterItem.__proto__||Object.getPrototypeOf(NavFooterItem)).call.apply(_ref,[this].concat(args))),_this),_this.
+navigateToScreen=function(screen){cov_2fkx1m30jm.f[0]++;cov_2fkx1m30jm.s[0]++;return function(){cov_2fkx1m30jm.f[1]++;cov_2fkx1m30jm.s[1]++;
+_this.props.goToScreen(screen);
+};},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(NavFooterItem,[{key:'render',value:function render()
+
+{cov_2fkx1m30jm.f[2]++;var _ref2=(cov_2fkx1m30jm.s[2]++,
+this.props),icon=_ref2.icon,screen=_ref2.screen,title=_ref2.title,isActiveScreen=_ref2.isActiveScreen,isLastItem=_ref2.isLastItem;cov_2fkx1m30jm.s[3]++;
+return(
+_react2.default.createElement(_Shared.Touchable,{style:isActiveScreen?(cov_2fkx1m30jm.b[0][0]++,[_NavFooterItem2.default.wrapper,_NavFooterItem2.default.activeTab]):(cov_2fkx1m30jm.b[0][1]++,_NavFooterItem2.default.wrapper),onPress:this.navigateToScreen(screen)},
+_react2.default.createElement(_reactNative.View,{style:isLastItem?(cov_2fkx1m30jm.b[1][0]++,_NavFooterItem2.default.container):(cov_2fkx1m30jm.b[1][1]++,[_NavFooterItem2.default.container,_NavFooterItem2.default.separator])},
+_react2.default.createElement(_Shared.Icon,{name:icon,size:_constants.fonts.FONT_SIZE_XXL,color:isActiveScreen?(cov_2fkx1m30jm.b[2][0]++,_constants.colors.PRIMARY_BG_TEXT_CONTRAST):(cov_2fkx1m30jm.b[2][1]++,_constants.colors.PRIMARY_TEXT_TAB_LABEL)}),
+_react2.default.createElement(_Shared.ISText,{type:'BOLD',style:isActiveScreen?(cov_2fkx1m30jm.b[3][0]++,[_NavFooterItem2.default.tabTitle,_NavFooterItem2.default.activeTabTitle]):(cov_2fkx1m30jm.b[3][1]++,_NavFooterItem2.default.tabTitle)},(0,_helper.translate)(title)))));
+
+
+
+
+}}]);return NavFooterItem;}(_react.Component);cov_2fkx1m30jm.s[4]++;
+
+
+NavFooterItem.propTypes={
+icon:_propTypes2.default.string,
+title:_propTypes2.default.string,
+screen:_propTypes2.default.string,
+goToScreen:_propTypes2.default.func,
+isActiveScreen:_propTypes2.default.bool,
+isLastItem:_propTypes2.default.bool};exports.default=
+
+
+NavFooterItem;

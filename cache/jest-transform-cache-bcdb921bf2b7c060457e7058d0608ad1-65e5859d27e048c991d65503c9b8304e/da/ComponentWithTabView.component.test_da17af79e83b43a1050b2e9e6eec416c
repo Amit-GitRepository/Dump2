@@ -1,0 +1,16 @@
+var _ComponentWithTabView=require('../ComponentWithTabView.component');var _ComponentWithTabView2=_interopRequireDefault(_ComponentWithTabView);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);
+var _enzyme=require('enzyme');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+describe('ComponentWithTabView component',function(){
+it('renders correctly',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_ComponentWithTabView2.default,null));
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_ComponentWithTabView2.default,null)).toJSON();
+expect(component).toMatchSnapshot();
+expect(wrapper).toBeDefined();
+});
+});

@@ -1,0 +1,8 @@
+var cov_lfmqmwldq=function(){var path="/Users/amitkumar/iTrueService/DevCode/iservice-app/app/config/billUsage.config.js",hash="3efb3857c966e9a0cc81766c9203363dbcf38937",global=new Function('return this')(),gcv="__coverage__",coverageData={path:"/Users/amitkumar/iTrueService/DevCode/iservice-app/app/config/billUsage.config.js",statementMap:{"0":{start:{line:1,column:24},end:{line:5,column:1}},"1":{start:{line:7,column:0},end:{line:9,column:2}}},fnMap:{},branchMap:{},s:{"0":0,"1":0},f:{},b:{},_coverageSchema:"332fd63041d2c1bcb487cc26dd0d5f7d97098a6c"},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var billUsageConfig=(cov_lfmqmwldq.s[0]++,{
+PREPAID_CONFIG:{
+MINIMUM_DAYS_ALERT:7}});cov_lfmqmwldq.s[1]++;
+
+
+
+module.exports=_extends({},
+billUsageConfig);

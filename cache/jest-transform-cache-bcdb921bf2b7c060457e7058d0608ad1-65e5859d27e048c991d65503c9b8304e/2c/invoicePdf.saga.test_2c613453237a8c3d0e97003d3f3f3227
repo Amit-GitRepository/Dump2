@@ -1,0 +1,70 @@
+var _invoicePdf=require('../invoicePdf.saga');var _invoicePdf2=_interopRequireDefault(_invoicePdf);
+var _reactNativeFetchBlob=require('react-native-fetch-blob');var _reactNativeFetchBlob2=_interopRequireDefault(_reactNativeFetchBlob);
+var _reduxSagaTesting=require('redux-saga-testing');var _reduxSagaTesting2=_interopRequireDefault(_reduxSagaTesting);
+var _effects=require('redux-saga/effects');
+var _index=require('../../actions/index.actions');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('Testing the invoicePdfSaga saga',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_invoicePdf2.default)());
+it('should take GET_INVOICE_PDF action and call the getInvoicePdf saga',function(result){
+expect(result).toEqual((0,_effects.takeLatest)(_index.GET_INVOICE_PDF,_invoicePdf.getInvoicePdf));
+});
+it('should call nothing after this',function(result){
+expect(result).toBeUndefined();
+});
+});
+
+describe('getINvoice Pdf saga',function(){
+var mockAction={payload:{invoiceNo:1234}};
+var mockRequesData={
+headers:{
+'Authorization':'Basic 1234',
+'icard':'9876543',
+'msisdn':'0957590128'},
+
+url:'http://che.org.il/wp-content/uploads/2016/12/pdf-sample.pdf',
+invoiceNo:mockAction.payload.invoiceNo};
+
+var it=(0,_reduxSagaTesting2.default)((0,_invoicePdf.getInvoicePdf)(mockAction));
+it('should call the getRequestData function',function(result){
+expect(result).toEqual((0,_effects.call)(_invoicePdf.getRequestData,1234));
+return mockRequesData;
+});
+it('should call the getInvoiceAndorid function when the running platform is ios',function(result){
+expect(result).toEqual((0,_effects.call)(_invoicePdf.getInvoiceIos,mockRequesData));
+});
+});
+
+describe('getInvoiceAndroid saga',function(){
+var mockRequesData={
+headers:{
+'Authorization':'Basic 1234',
+'icard':'9876543',
+'msisdn':'0957590128'},
+
+url:'http://che.org.il/wp-content/uploads/2016/12/pdf-sample.pdf',
+invoiceNo:1234};
+
+var mockRequestConfig={
+addAndroidDownloads:{useDownloadManager:true,
+notification:true,
+mime:'application/pdf',
+mediaScannable:true,
+title:'invoice-'+mockRequesData.invoiceNo+'.pdf',
+path:_reactNativeFetchBlob2.default.fs.dirs.DownloadDir+('/invoice-'+mockRequesData.invoiceNo+'.pdf')}};
+
+var mockResponse={path:jest.fn()};
+var mockConfigResponse={fetch:jest.fn()};
+var it=(0,_reduxSagaTesting2.default)((0,_invoicePdf.getInvoiceAndroid)(mockRequesData));
+it('should call the config function with data from config',function(result){
+expect(result).toEqual((0,_effects.call)(_reactNativeFetchBlob2.default.config,mockRequestConfig));
+return mockConfigResponse;
+});
+it('should call the fetch function from the returned object with request data',function(result){
+expect(result).toEqual((0,_effects.call)(mockConfigResponse.fetch,'GET',mockRequesData.url,mockRequesData.headers));
+return mockResponse;
+});
+it('should call the actionViewIntent from the fetch-blob library',function(result){
+expect(result).toEqual((0,_effects.call)(_reactNativeFetchBlob2.default.android.actionViewIntent,mockResponse.path(),'application/pdf'));
+});
+});

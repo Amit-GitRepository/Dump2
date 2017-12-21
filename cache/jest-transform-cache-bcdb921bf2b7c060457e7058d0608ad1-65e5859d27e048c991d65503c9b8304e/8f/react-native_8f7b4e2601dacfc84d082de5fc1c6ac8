@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+
+
+
+
+jest.mock('AsyncStorage',function(){return{
+getItem:jest.fn(function(){return Promise.resolve('{}');}),
+setItem:jest.fn(function(){return Promise.resolve();}),
+mergeItem:jest.fn(function(){return Promise.resolve();}),
+multiGet:jest.fn(function(){return Promise.resolve('{}');})};});
+
+jest.mock('BackHandler',function(){return{
+addEventListener:jest.fn()};});
+
+jest.mock('AppState',function(){return{
+currentState:'inactive',
+addEventListener:jest.fn()};});var rn=require('react-native');rn.NativeModules.RNI18n={languages:['en']};rn.NativeModules.BlobModule={BLOB_URI_SCHEME:''};rn.NativeModules.FirebaseDynamicLink={addListener:jest.fn(),removeListeners:jest.fn()};rn.NativeModules.ReactNativeExceptionHandler={setHandlerforNativeException:jest.fn()};
+
+var ReactNativeART=require('react-native/Libraries/ART/ReactNativeART');
+
+ReactNativeART.Group=rn.View;
+ReactNativeART.Surface=rn.View;
+ReactNativeART.Shape=rn.View;
+module.exports=rn;

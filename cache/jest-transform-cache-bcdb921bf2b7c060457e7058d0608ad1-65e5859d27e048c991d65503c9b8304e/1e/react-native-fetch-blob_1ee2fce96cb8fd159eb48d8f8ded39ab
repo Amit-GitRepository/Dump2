@@ -1,0 +1,17 @@
+var mock={
+DocumentDir:function DocumentDir(){},
+config:function config(){
+var requestMock={
+fetch:jest.fn()};
+
+return requestMock;
+},
+fetch:function fetch(){},
+fs:{
+dirs:{}},
+
+android:{
+actionViewIntent:jest.fn()}};
+
+
+module.exports=mock;

@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/components/Shared/Dropdown/Dropdown.component.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">app/components/Shared/Dropdown</a> Dropdown.component.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>11/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">83.33% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>5/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>5/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>11/11</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import Button from '../Button/Button.component';
+import Card from '../Card/Card.component';
+import Icon from '../Icon/Icon.component';
+import ISText from '../../Shared/ISText/ISText.component';
+import List from '../List/List.component';
+import Modal from '../Modal/Modal.component';
+import PropTypes from 'prop-types';
+import React, {Component} from 'react';
+import styles from './Dropdown.styles.js';
+import Touchable from '../Touchable/Touchable.component';
+import {colors, fonts} from '../../../themes/constants.styles';
+import {translate} from '../../../language/i18n/helper';
+import {View} from 'react-native';
+&nbsp;
+class Dropdown extends Component {
+  state = {
+    isVisible: false
+  };
+&nbsp;
+  showModal = () =&gt; this.setState({isVisible: true});
+  hideModal = () =&gt; this.setState({isVisible: false});
+&nbsp;
+  selectItem = (item) =&gt; () =&gt; {
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (item !== this.props.value) {
+      this.props.onSelect(item); // don't call onSelect if the value is same
+    }
+    this.hideModal();
+  }
+  render () {
+    const {data, unselectedText, value, style} = this.props;
+    const modalHeaderText = this.props.headerText || this.props.unselectedText;
+    return (
+      &lt;View style={styles.container}&gt;
+        &lt;Touchable onPress={this.showModal} style={{...styles.touchableContainer, ...style}} &gt;
+          &lt;View style={styles.viewContainer}&gt;
+            &lt;ISText style= {styles.title} type={'BOLD'}&gt;{value || unselectedText}&lt;/ISText&gt;
+            &lt;Icon name={'caret-down'} size={fonts.FONT_SIZE_XL} color={colors.PRIMARY_ACTIONABLE} style={styles.downArrow}/&gt;
+          &lt;/View&gt;
+        &lt;/Touchable&gt;
+&nbsp;
+        &lt;Modal isVisible={this.state.isVisible} animationIn={'zoomIn'} animationOut={'zoomOut'}
+          animationInTiming={1} backdropTransitionInTiming={1} backdropTransitionOutTiming={1}
+          animationOutTiming={1} onBackdropPress={this.hideModal}&gt;
+          &lt;Card header={modalHeaderText} &gt;
+            &lt;View style={styles.listContainer}&gt;
+              &lt;List data={data} alignListItemsCenter onPress={this.selectItem} arrowVisibility={false}/&gt;
+            &lt;/View&gt;
+          &lt;/Card&gt;
+          &lt;Button onPress={this.hideModal} text={translate('STORE_LOCATOR__CANCEL')} style={styles.cancelButton}/&gt;
+        &lt;/Modal&gt;
+      &lt;/View&gt;
+    );
+  }
+}
+&nbsp;
+Dropdown.defaultProps = {
+  data: [],
+  unselectedText: translate('DROPDOWN_PLEASE_SELECT'),
+  headerText: ''
+};
+Dropdown.propTypes = {
+  data: PropTypes.array,
+  unselectedText: PropTypes.string,
+  headerText: PropTypes.string,
+  onSelect: PropTypes.func,
+  value: PropTypes.string,
+  style: PropTypes.object
+};
+export default Dropdown;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Oct 31 2017 11:24:42 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

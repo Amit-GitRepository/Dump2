@@ -1,0 +1,24 @@
+var _transformer=require('redux-ga-screen-tracker/utils/transformer.utils');var _transformer2=_interopRequireDefault(_transformer);
+var _nav=require('../nav.reducer');var _nav2=_interopRequireDefault(_nav);
+var _index=require('../../../routes/index.routes');var _index2=_interopRequireDefault(_index);
+var _reactNavigation=require('react-navigation');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('nav reducer',function(){
+var initialState=_index2.default.router.getStateForAction({type:_reactNavigation.NavigationActions.INIT});
+it('should have routes and index defined',function(){
+expect(initialState.routes).toBeDefined();
+expect(initialState.index).toBeDefined();
+});
+it('should not navigate if currentScreen is equal to the routename passed in navigation action',function(){
+var currentScreen=(0,_transformer2.default)(initialState);
+var newState=(0,_nav2.default)(initialState,_reactNavigation.NavigationActions.navigate({routeName:currentScreen}));
+expect(initialState).toEqual(newState);
+});
+it('should navigate to the landing page if actionType is LOGOUT_SUCCESS and reset the nav state',function(){
+var action={
+type:'LOGOUT_SUCCESS'};
+
+var newState=(0,_nav2.default)(initialState,action);
+expect((0,_transformer2.default)(newState)).toEqual('Landing');
+});
+});

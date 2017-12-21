@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/components/SideMenu/SideMenuItem.component.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">iservice-app/app/components/SideMenu</a> SideMenuItem.component.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">85.71% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>12/14</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>12/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">66.67% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">92.31% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>12/13</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">41x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">41x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import noop from 'lodash/noop';
+import PropTypes from 'prop-types';
+import React, {Component} from 'react';
+import styles from './SideMenuItem.style';
+import {Accordion, Icon, ISText, Touchable} from '../Shared';
+import {colors, fonts} from '../../themes/constants.styles';
+import {translate} from '../../language/i18n/helper';
+import {View} from 'react-native';
+&nbsp;
+class SideMenuItem extends Component {
+&nbsp;
+  navigateToScreen = (screen) =&gt; <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >    this.props.goToScreen(screen);</span>
+  }
+&nbsp;
+  toggleSideMenuItem = (index) =&gt; <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.props.toggleSideMenuAccordion(index);</span>
+&nbsp;
+  render () {
+    const {icon, title, screen, index, nodes, openAccordionIndex, lastIndex} = this.props;
+    if (nodes &amp;&amp; nodes.length &gt; 0) {
+      const collapsedState = !(index === openAccordionIndex);
+      const header = (
+        &lt;View style={styles.container}&gt;
+          &lt;Icon name={icon} size={fonts.FONT_SIZE_XL} color={colors.PRIMARY_ACTIONABLE}/&gt;
+          &lt;ISText type='BOLD' style={styles.menuTitle}&gt;{translate(title)}&lt;/ISText&gt;
+        &lt;/View&gt;
+      );
+      const headerSuffix = collapsedState &amp;&amp; !lastIndex ? &lt;View style={styles.separator} /&gt; : null;
+      return (
+        &lt;Accordion header={header} headerSuffix={headerSuffix} collapsedState={collapsedState} onToggle={this.toggleSideMenuItem(index)}&gt;
+          &lt;View&gt;
+            {
+              nodes.map((child, childIndex) =&gt; (
+                &lt;Touchable key={childIndex} onPress={this.navigateToScreen(child.screen)}&gt;
+                  &lt;View style={styles.subMenuItem}&gt;
+                    {childIndex ? &lt;View style={styles.separator} /&gt; : null}
+                    &lt;View style={styles.subMenuContent}&gt;
+                      &lt;View style={styles.listMarker}/&gt;
+                      &lt;ISText type='BOLD' style={styles.subMenuTitle}&gt;{translate(child.title)}&lt;/ISText&gt;
+                    &lt;/View&gt;
+                  &lt;/View&gt;
+                &lt;/Touchable&gt;
+              ))
+            }
+          &lt;/View&gt;
+        &lt;/Accordion&gt;
+      );
+    }
+    return (
+      &lt;Touchable onPress={this.navigateToScreen(screen)}&gt;
+        &lt;View&gt;
+          {index ? &lt;View style={styles.separator} /&gt; : null}
+          &lt;View style={styles.container}&gt;
+            &lt;Icon name={icon} size={fonts.FONT_SIZE_XL} color={colors.PRIMARY_ACTIONABLE}/&gt;
+            &lt;ISText type='BOLD' style={styles.menuTitle}&gt;{translate(title)}&lt;/ISText&gt;
+          &lt;/View&gt;
+        &lt;/View&gt;
+      &lt;/Touchable&gt;
+    );
+  }
+}
+&nbsp;
+SideMenuItem.defaultProps = {
+  goToScreen: noop,
+  toggleSideMenuAccordion: noop
+};
+&nbsp;
+SideMenuItem.propTypes = {
+  goToScreen: PropTypes.func,
+  icon: PropTypes.string,
+  title: PropTypes.string,
+  screen: PropTypes.string,
+  index: PropTypes.number,
+  nodes: PropTypes.array,
+  toggleSideMenuAccordion: PropTypes.func,
+  openAccordionIndex: PropTypes.number,
+  lastIndex: PropTypes.bool
+};
+&nbsp;
+export default SideMenuItem;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

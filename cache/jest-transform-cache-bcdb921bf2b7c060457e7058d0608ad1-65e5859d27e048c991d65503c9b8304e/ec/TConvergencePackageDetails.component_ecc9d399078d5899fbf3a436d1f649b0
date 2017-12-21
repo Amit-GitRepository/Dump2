@@ -1,0 +1,49 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.TConvergencePackageDetails=undefined;var cov_73u9qrzz6=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/TConvergencePackageDetails/TConvergencePackageDetails.component.js',hash='1ab72c3b1ceb5a5965ce6a01149096846d3162f3',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/TConvergencePackageDetails/TConvergencePackageDetails.component.js',statementMap:{'0':{start:{line:17,column:92},end:{line:17,column:102}},'1':{start:{line:18,column:4},end:{line:33,column:6}},'2':{start:{line:37,column:0},end:{line:39,column:2}},'3':{start:{line:41,column:0},end:{line:47,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:16,column:2},end:{line:16,column:3}},loc:{start:{line:16,column:12},end:{line:34,column:3}},line:16}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0},f:{'0':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _reactNativeLinearGradient=require('react-native-linear-gradient');var _reactNativeLinearGradient2=_interopRequireDefault(_reactNativeLinearGradient);
+var _PackageDetailHeader=require('../BillUsage/BillUsageShared/PackageDetailHeader/PackageDetailHeader.component');var _PackageDetailHeader2=_interopRequireDefault(_PackageDetailHeader);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _TConvergencePackageDetails=require('./TConvergencePackageDetails.styles');var _TConvergencePackageDetails2=_interopRequireDefault(_TConvergencePackageDetails);
+var _TMPackageDetailsExtra=require('../TMPackageDetailsExtra/TMPackageDetailsExtra.component');var _TMPackageDetailsExtra2=_interopRequireDefault(_TMPackageDetailsExtra);
+var _TOLPackageDetails=require('../TOLPackageDetails/TOLPackageDetails.component');var _TOLPackageDetails2=_interopRequireDefault(_TOLPackageDetails);
+var _TVPackageDetails=require('../TVPackageDetails/TVPackageDetails.component');var _TVPackageDetails2=_interopRequireDefault(_TVPackageDetails);
+var _Shared=require('../../Shared');
+var _constants=require('../../../themes/constants.styles');
+var _reactNative=require('react-native');
+var _helper=require('../../../language/i18n/helper');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+TConvergencePackageDetails=exports.TConvergencePackageDetails=function(_Component){_inherits(TConvergencePackageDetails,_Component);function TConvergencePackageDetails(){_classCallCheck(this,TConvergencePackageDetails);return _possibleConstructorReturn(this,(TConvergencePackageDetails.__proto__||Object.getPrototypeOf(TConvergencePackageDetails)).apply(this,arguments));}_createClass(TConvergencePackageDetails,[{key:'render',value:function render()
+{cov_73u9qrzz6.f[0]++;var _ref=(cov_73u9qrzz6.s[0]++,
+this.props),TOLPackageDetails=_ref.TOLPackageDetails,TVPackageDetails=_ref.TVPackageDetails,TMPackageDetails=_ref.TMPackageDetails,userDetails=_ref.userDetails,billCycle=_ref.billCycle;cov_73u9qrzz6.s[1]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:_TConvergencePackageDetails2.default.container},
+_react2.default.createElement(_Shared.BottomCaretView,{caretColor:_constants.colors.SECONDARY_TSMARTCHOICE_MIDDLE,iconSize:_constants.fonts.FONT_SIZE_XXXL},
+_react2.default.createElement(_reactNativeLinearGradient2.default,{colors:[_constants.colors.SECONDARY_TSMARTCHOICE_START,_constants.colors.SECONDARY_TSMARTCHOICE_MIDDLE,_constants.colors.SECONDARY_TSMARTCHOICE_END],
+start:{x:0,y:1},end:{x:1,y:1},locations:[0,0.33,1],style:_TConvergencePackageDetails2.default.headerContainer},
+_react2.default.createElement(_PackageDetailHeader2.default,{endDate:(0,_result2.default)(billCycle,'code',0),name:(0,_helper.translate)('BILLS_USAGE_TRUESMARTCHOICE'),titleStyle:_TConvergencePackageDetails2.default.titleStyle,leftSectionStyle:_TConvergencePackageDetails2.default.leftSectionStyle}))),
+
+
+_react2.default.createElement(_Shared.ISText,{style:_TConvergencePackageDetails2.default.packageTitle,type:'BOLD'},(0,_helper.translate)('BILLS_USAGE_TRUESMARTCHOICE')),
+_react2.default.createElement(_reactNative.ScrollView,{style:_TConvergencePackageDetails2.default.scrollContainer},
+_react2.default.createElement(_TMPackageDetailsExtra2.default,{packageDetailExtra:TMPackageDetails,isConvergence:true}),
+_react2.default.createElement(_TOLPackageDetails2.default,{packageDetails:TOLPackageDetails,isConvergence:true,userDetails:userDetails}),
+_react2.default.createElement(_TVPackageDetails2.default,{packageDetails:TVPackageDetails,isConvergence:true,userDetails:userDetails}))));
+
+
+
+}}]);return TConvergencePackageDetails;}(_react.Component);cov_73u9qrzz6.s[2]++;
+
+
+TConvergencePackageDetails.defaultProps={
+billCycle:{}};cov_73u9qrzz6.s[3]++;
+
+
+TConvergencePackageDetails.propTypes={
+TOLPackageDetails:_propTypes2.default.object,
+TVPackageDetails:_propTypes2.default.object,
+TMPackageDetails:_propTypes2.default.object,
+userDetails:_propTypes2.default.object,
+billCycle:_propTypes2.default.object};exports.default=
+
+
+TConvergencePackageDetails;

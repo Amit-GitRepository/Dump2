@@ -1,0 +1,78 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_16oygadfeb=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillingMethods/BillingMethods/BillingMethods.component.js',hash='8f704f74207049c0d9d167b4b06719ffa2fff04b',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillingMethods/BillingMethods/BillingMethods.component.js',statementMap:{'0':{start:{line:16,column:4},end:{line:28,column:11}},'1':{start:{line:32,column:32},end:{line:32,column:42}},'2':{start:{line:34,column:4},end:{line:48,column:6}},'3':{start:{line:52,column:33},end:{line:52,column:43}},'4':{start:{line:54,column:4},end:{line:67,column:15}},'5':{start:{line:70,column:0},end:{line:73,column:2}},'6':{start:{line:74,column:0},end:{line:77,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:15,column:29},end:{line:15,column:30}},loc:{start:{line:16,column:4},end:{line:28,column:11}},line:16},'1':{name:'(anonymous_1)',decl:{start:{line:31,column:25},end:{line:31,column:26}},loc:{start:{line:31,column:31},end:{line:49,column:3}},line:31},'2':{name:'(anonymous_2)',decl:{start:{line:51,column:2},end:{line:51,column:3}},loc:{start:{line:51,column:12},end:{line:68,column:3}},line:51}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0},f:{'0':0,'1':0,'2':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();
+
+var _Button=require('../../Shared/Button/Button.component');var _Button2=_interopRequireDefault(_Button);
+var _Card=require('../../Shared/Card/Card.component');var _Card2=_interopRequireDefault(_Card);
+var _EBillItem=require('../EBillItem/EBillItem.component');var _EBillItem2=_interopRequireDefault(_EBillItem);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _PaperBillItem=require('../PaperBillItem/PaperBillItem.component');var _PaperBillItem2=_interopRequireDefault(_PaperBillItem);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _BillingMethods=require('./BillingMethods.style');var _BillingMethods2=_interopRequireDefault(_BillingMethods);
+var _reactNative=require('react-native');
+var _helper=require('../../../language/i18n/helper');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+BillingMethods=function(_Component){_inherits(BillingMethods,_Component);function BillingMethods(){var _ref;var _temp,_this,_ret;_classCallCheck(this,BillingMethods);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=BillingMethods.__proto__||Object.getPrototypeOf(BillingMethods)).call.apply(_ref,[this].concat(args))),_this),_this.
+generatePaperBillSection=function()
+{cov_16oygadfeb.f[0]++;cov_16oygadfeb.s[0]++;return _react2.default.createElement(_Card2.default,{header:(0,_helper.translate)('BILLING_METHODS__PAPER_HEADER')},
+_react2.default.createElement(_PaperBillItem2.default,{
+accountType:'TrueMove H Postpaid',
+serviceID:'9876543210',
+billingAddress:'444 Soi Ladprao 109, Ladprao rd., Bangkapi, Bangkok 10240'}),
+
+_react2.default.createElement(_PaperBillItem2.default,{
+accountType:'True Online',
+serviceID:'9876543210',
+billingAddress:'444 Soi Ladprao 109, Ladprao rd., Bangkapi, Bangkok 10240',
+noBorder:true}));
+
+},_this.
+
+
+generateEBillSection=function(){cov_16oygadfeb.f[1]++;var _ref2=(cov_16oygadfeb.s[1]++,
+_this.props),onEditEbillAction=_ref2.onEditEbillAction;cov_16oygadfeb.s[2]++;
+
+return(
+_react2.default.createElement(_Card2.default,{
+containerStyles:_BillingMethods2.default.ebillCard,
+header:(0,_helper.translate)('BILLING_METHODS__EBILL_HEADER')},
+
+_react2.default.createElement(_EBillItem2.default,{
+accountType:'True Vision',
+serviceID:'9876543210',
+ebillFormat:'SMS',
+ebillValue:'9876543210',
+onEditBill:onEditEbillAction,
+noBorder:true})));
+
+
+
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(BillingMethods,[{key:'render',value:function render()
+
+{cov_16oygadfeb.f[2]++;var _ref3=(cov_16oygadfeb.s[3]++,
+this.props),onApplyEbillAction=_ref3.onApplyEbillAction;cov_16oygadfeb.s[4]++;
+
+return(
+_react2.default.createElement(_reactNative.View,{style:_BillingMethods2.default.container},
+_react2.default.createElement(_reactNative.ScrollView,{
+showsVerticalScrollIndicator:false,
+style:_BillingMethods2.default.cardContainer,
+contentContainerStyle:_BillingMethods2.default.scrollContainer},
+
+this.generateEBillSection(),
+this.generatePaperBillSection()),
+
+_react2.default.createElement(_reactNative.View,{style:_BillingMethods2.default.buttonContainer},
+_react2.default.createElement(_Button2.default,{text:(0,_helper.translate)('BILLING_METHODS__ADD_APPLY'),onPress:onApplyEbillAction}))));
+
+
+}}]);return BillingMethods;}(_react.Component);cov_16oygadfeb.s[5]++;
+
+BillingMethods.defaultProps={
+onApplyEbillAction:_noop2.default,
+onEditBillAction:_noop2.default};cov_16oygadfeb.s[6]++;
+
+BillingMethods.propTypes={
+onApplyEbillAction:_propTypes2.default.func,
+onEditEbillAction:_propTypes2.default.func};exports.default=
+
+BillingMethods;

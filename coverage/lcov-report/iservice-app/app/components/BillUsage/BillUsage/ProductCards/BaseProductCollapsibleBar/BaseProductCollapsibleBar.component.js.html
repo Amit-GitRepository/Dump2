@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/components/BillUsage/BillUsage/ProductCards/BaseProductCollapsibleBar/BaseProductCollapsibleBar.component.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../../../index.html">All files</a> / <a href="index.html">iservice-app/app/components/BillUsage/BillUsage/ProductCards/BaseProductCollapsibleBar</a> BaseProductCollapsibleBar.component.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">80.65% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>25/31</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">62.86% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>22/35</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">80.65% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>25/31</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import CircularAccordianButton from './CircularAccordianButton.component';
+import Collapsible from 'react-native-collapsible';
+import LinearGradient from 'react-native-linear-gradient';
+import noop from 'lodash/noop';
+import Proptypes from 'prop-types';
+import React, {Component} from 'react';
+import styles from './BaseProductCollapsibleBar.style';
+import {AmountText, Checkbox, Icon, ISText, RadioButton} from '../../../../Shared';
+import {colors} from '../../../../../themes/constants.styles';
+import {shadowActiveStyle, shadowInactiveStyle} from '../../../../../themes/application.styles';
+import {translate} from '../../../../../language/i18n/helper';
+import {View} from 'react-native';
+&nbsp;
+class BaseProductCollapsibleBar extends Component {
+&nbsp;
+  getTypeDetails= (type) =&gt; {
+    const typeMap = {
+      POSTPAID: {
+        iconName: 'icon-true-move',
+        sectionColor: colors.SECONDARY_TMOVE,
+        sectionTextColor: colors.SECONDARY_TMOVE
+      },
+      PREPAID: {
+        iconName: 'icon-true-move',
+        sectionColor: colors.SECONDARY_TMOVE,
+        sectionTextColor: colors.SECONDARY_TMOVE
+      },
+      ONLINE: {
+        iconName: 'icon-true-online',
+        sectionColor: colors.SECONDARY_TONLINE,
+        sectionTextColor: colors.SECONDARY_TONLINE
+      },
+      VISION: {
+        iconName: 'icon-true-visions',
+        sectionColor: colors.SECONDARY_TVISION,
+        sectionTextColor: colors.SECONDARY_TVISION
+      },
+      SMARTCHOICE: {
+        iconName: 'icon-true-smart-choice',
+        sectionColor: [colors.SECONDARY_TSMARTCHOICE_START, colors.SECONDARY_TSMARTCHOICE_MIDDLE, colors.SECONDARY_TSMARTCHOICE_END],
+        sectionTextColor: colors.SECONDARY_TVISION
+      }
+    };
+    return typeMap[type] || <span class="branch-1 cbranch-no" title="branch not covered" >{};</span>
+  }
+&nbsp;
+  getStatusTextAndColors = (statusCode, sectionColor, sectionTextColor, isNotPrepaid) =&gt; {
+    let iconSectionColor = colors.PRIMARY_DISABLED_BG_TEXT;
+    let textSectionColor = colors.PRIMARY_DISABLED_BG_TEXT;
+    let statusText = '';
+&nbsp;
+    switch (statusCode) {
+    case 'ACTIVE': {
+      iconSectionColor = sectionColor;
+      textSectionColor = (isNotPrepaid) ? sectionTextColor :  colors.PRIMARY_DISABLED_BG_TEXT;
+      break;
+    } <span class="branch-1 cbranch-no" title="branch not covered" >case 'SUSPEND': {</span>
+<span class="cstat-no" title="statement not covered" >      iconSectionColor = (isNotPrepaid) ? colors.PRIMARY_DISABLED_BG_TEXT :  sectionTextColor;</span>
+<span class="cstat-no" title="statement not covered" >      textSectionColor = (isNotPrepaid) ? colors.PRIMARY_DISABLED_BG_TEXT :  sectionTextColor;</span>
+<span class="cstat-no" title="statement not covered" >      statusText = (isNotPrepaid) ? translate('BILLS_USAGE_SUSPENDED') : '';</span>
+<span class="cstat-no" title="statement not covered" >      break;</span>
+    } <span class="branch-2 cbranch-no" title="branch not covered" >case 'CANCEL': {</span>
+<span class="cstat-no" title="statement not covered" >      statusText = translate('BILLS_USAGE_CANCELLED');</span>
+<span class="cstat-no" title="statement not covered" >      break;</span>
+    }
+    }
+    return {
+      iconSectionColor,
+      statusText,
+      textSectionColor
+    };
+  }
+&nbsp;
+  render () {
+    const {type, statusCode, leftTitleText, leftDetailText, rightTitleText, amountText, children, onCollapseToggle, isCollapsed, onChecked, isChecked, leftTitleTextStyle, checkboxDisabled} = this.props;
+    const isNotPrepaid = !(type === 'PREPAID');
+    const {iconName, sectionColor, sectionTextColor} = this.getTypeDetails(type);
+    const {statusText, iconSectionColor, textSectionColor} = this.getStatusTextAndColors(statusCode, sectionColor, sectionTextColor, isNotPrepaid);
+    const leftSectionStyles = (isNotPrepaid) ? {} : styles.flipColumn;
+    const leftStyle = (statusText) ? <span class="branch-0 cbranch-no" title="branch not covered" >styles.statusLeftSection </span>: styles.leftSection;
+    const rightStatusStyle = (statusText) ? <span class="branch-0 cbranch-no" title="branch not covered" >styles.statusRightSection </span>: styles.rightSection;
+    const rightStyle = (isNotPrepaid) ? [rightStatusStyle, styles.notPrepaidRightSection] : rightStatusStyle;
+    const leftDetailStyle = (isNotPrepaid) ? [styles.detailText, {color: textSectionColor}] : [styles.rightDetailText, styles.leftText, leftTitleTextStyle];
+    const containerShadowStyle = isCollapsed ? shadowInactiveStyle : <span class="branch-1 cbranch-no" title="branch not covered" >shadowActiveStyle;</span>
+    const productCardHeight = isNotPrepaid ? styles.postpaidProductCard : styles.prepaidProductCard;
+    const selectButton = (isNotPrepaid) ? &lt;Checkbox style={styles.checkbox} isChecked={isChecked} onChange={onChecked} disabled={checkboxDisabled} /&gt;
+      : &lt;RadioButton style={styles.checkbox} isSelected={isChecked} onRadioSelect={onChecked} /&gt;;
+    return (
+      &lt;View style={[styles.container, containerShadowStyle]}&gt;
+        &lt;View style={styles.subContainer}&gt;
+          &lt;View style={styles.cardContainer}&gt;
+            &lt;LinearGradient colors={Array.isArray(sectionColor) ? iconSectionColor :  [iconSectionColor, iconSectionColor]} start={{x: 0, y: 1}} end={{x: 1, y: 1}} style={styles.iconContainer}&gt;
+              &lt;Icon name={iconName} style={styles.iconStyles}/&gt;
+            &lt;/LinearGradient&gt;
+            &lt;View style={[styles.detailContainer, productCardHeight]}&gt;
+              &lt;View style={styles.infoSection}&gt;
+                &lt;View style={leftStyle}&gt;
+                  {statusText ? <span class="branch-0 cbranch-no" title="branch not covered" >&lt;ISText style={styles.statusText} type='BOLD'&gt;{statusText}&lt;/ISText&gt; </span>: null}
+                  &lt;View style={leftSectionStyles}&gt;
+                    &lt;ISText style={styles.leftTitleText} type='BOLD'&gt;{leftTitleText}&lt;/ISText&gt;
+                    &lt;ISText style={leftDetailStyle} type='BOLD'&gt;{leftDetailText}&lt;/ISText&gt;
+                  &lt;/View&gt;
+                &lt;/View&gt;
+                &lt;View style={rightStyle}&gt;
+                  {(!isNotPrepaid) ? &lt;ISText type='BOLD' style={styles.rightDetailText}&gt;{rightTitleText}&lt;/ISText&gt; : null}
+                  &lt;View style={styles.amountSection}&gt;
+                    &lt;AmountText value={amountText}/&gt;
+                    {selectButton}
+                  &lt;/View&gt;
+                &lt;/View&gt;
+              &lt;/View&gt;
+              &lt;CircularAccordianButton onClick={onCollapseToggle} isCollapsed={isCollapsed} style={styles.accordianButton}/&gt;
+            &lt;/View&gt;
+          &lt;/View&gt;
+          &lt;Collapsible collapsed={isCollapsed}&gt;
+            &lt;View style={styles.childContainer}&gt;
+              {children}
+            &lt;/View&gt;
+          &lt;/Collapsible&gt;
+        &lt;/View&gt;
+      &lt;/View&gt;
+    );
+  }
+}
+BaseProductCollapsibleBar.defaultProps = {
+  leftTitleText: '',
+  leftDetailText: '',
+  rightTitleText: '',
+  amountText: 0,
+  statusCode: 'ACTIVE',
+  type: 'PREPAID',
+  isCollapsed: true,
+  onCollapseToggle: noop,
+  onChecked: noop,
+  isChecked: false,
+  leftTitleTextStyle: {},
+  checkboxDisabled: false
+};
+BaseProductCollapsibleBar.propTypes = {
+  leftTitleText: Proptypes.string,
+  leftDetailText: Proptypes.string,
+  rightTitleText: Proptypes.string,
+  amountText: Proptypes.number,
+  children: Proptypes.node,
+  statusCode: Proptypes.string,
+  type: Proptypes.oneOf(['PREPAID', 'POSTPAID', 'ONLINE', 'VISION', 'SMARTCHOICE']),
+  onCollapseToggle: Proptypes.func,
+  isCollapsed: Proptypes.bool,
+  onChecked: Proptypes.func,
+  isChecked: Proptypes.bool,
+  leftTitleTextStyle: Proptypes.object,
+  checkboxDisabled: Proptypes.bool
+};
+export default BaseProductCollapsibleBar;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../../../sorter.js"></script>
+</body>
+</html>

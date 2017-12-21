@@ -1,0 +1,7 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_2maz1tfs1p=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/config/productTypeMap.config.js',hash='4993647499b913d2fcd438aa8edc0328bdcfe117',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/config/productTypeMap.config.js',statementMap:{'0':{start:{line:1,column:17},end:{line:5,column:1}}},fnMap:{},branchMap:{},s:{'0':0},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var typeMap=(cov_2maz1tfs1p.s[0]++,{
+TrueMoveH:'tmhPostpaid',
+TrueOnline:'tol',
+TrueVision:'tvs'});exports.default=
+
+
+typeMap;

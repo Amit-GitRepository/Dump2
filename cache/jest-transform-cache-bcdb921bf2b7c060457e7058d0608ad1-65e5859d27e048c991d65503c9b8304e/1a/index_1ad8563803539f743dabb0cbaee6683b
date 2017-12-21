@@ -1,0 +1,13 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_2ag2rx7tio=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/language/i18n/index.js',hash='7fdab9b9200d024168d212cfe0056defd6c05378',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/language/i18n/index.js',statementMap:{'0':{start:{line:10,column:0},end:{line:10,column:22}},'1':{start:{line:11,column:0},end:{line:11,column:35}},'2':{start:{line:13,column:0},end:{line:13,column:33}}},fnMap:{},branchMap:{},s:{'0':0,'1':0,'2':0},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();
+
+
+
+
+
+var _reactNativeI18n=require('react-native-i18n');var _reactNativeI18n2=_interopRequireDefault(_reactNativeI18n);
+var _language=require('../../config/language.config');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}cov_2ag2rx7tio.s[0]++;
+
+_reactNativeI18n2.default.fallbacks=true;cov_2ag2rx7tio.s[1]++;
+_reactNativeI18n2.default.defaultLocale=_language.defaultLocale;cov_2ag2rx7tio.s[2]++;
+
+_reactNativeI18n2.default.translations=_language.translations;exports.default=_reactNativeI18n2.default;

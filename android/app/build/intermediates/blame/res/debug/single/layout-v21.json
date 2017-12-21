@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/amitkumar/.android/build-cache/0ef00a90abcf9e20e36833c0983a3c43f72ef5cf/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/amitkumar/.android/build-cache/0ef00a90abcf9e20e36833c0983a3c43f72ef5cf/output/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/amitkumar/.android/build-cache/0ef00a90abcf9e20e36833c0983a3c43f72ef5cf/output/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/amitkumar/.android/build-cache/0ef00a90abcf9e20e36833c0983a3c43f72ef5cf/output/res/layout-v21/notification_template_icon_group.xml"
+    }
+]

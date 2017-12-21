@@ -1,0 +1,58 @@
+var _dbInitializer=require('../dbInitializer.saga');var _dbInitializer2=_interopRequireDefault(_dbInitializer);
+var _dbKeys=require('../../../config/dbKeys.config');var _dbKeys2=_interopRequireDefault(_dbKeys);
+var _localStorage=require('../../../utils/localStorage.util');var _localStorage2=_interopRequireDefault(_localStorage);
+var _reduxSagaTesting=require('redux-saga-testing');var _reduxSagaTesting2=_interopRequireDefault(_reduxSagaTesting);
+var _seedData=require('../../../config/seedData.config');var _seedData2=_interopRequireDefault(_seedData);
+var _effects=require('redux-saga/effects');
+var _index=require('../../actions/index.actions');
+var _language=require('../../../config/language.config');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('dbInitializationSaga: Testing the root Saga',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_dbInitializer2.default)());
+it('Should check for initlisation data action',function(result){
+expect(result).toEqual((0,_effects.take)(_index.INITIALIZE_DATA));
+});
+it('Should then call the initializeData saga',function(result){
+expect(result).toEqual((0,_effects.call)(_dbInitializer.initializeData));
+});
+it('Should then dispatch an action for initialisation succeeded',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.initializeDataSucceeded)()));
+});
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});
+
+describe('initializeData: Testing the initialisation saga when localStorage is empty(first run)',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_dbInitializer.initializeData)());
+it('Should fetch the initialisation key from localStorage which returns null ',function(result){
+expect(result).toEqual((0,_effects.call)(_localStorage2.default.getItem,_dbKeys2.default.INITIALIZATION_KEY));
+return null;
+});
+it('Should then initialized the database with seed data',function(result){
+expect(result).toEqual((0,_effects.call)(_localStorage2.default.multiSetItem,[_dbKeys2.default.USER_PREFERENCE_KEY,_seedData2.default.userPreference],[_dbKeys2.default.TRANSLATION_KEY,_language.translations]));
+});
+it('Should then dispatch an action for setting user preferences with the seed data',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.setPreferences)(_seedData2.default.userPreference)));
+});
+it('Should then set the initialized key to true in localStorage',function(result){
+expect(result).toEqual((0,_effects.call)(_localStorage2.default.setItem,_dbKeys2.default.INITIALIZATION_KEY,true));
+});
+});
+
+var mockUserData={};
+
+describe('initializeData: Testing the initialisation saga when localStorage is already initialized',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_dbInitializer.initializeData)());
+it('Should fetch the initialisation key from localStorage which returns true ',function(result){
+expect(result).toEqual((0,_effects.call)(_localStorage2.default.getItem,_dbKeys2.default.INITIALIZATION_KEY));
+return true;
+});
+it('Should then fetch the data from localStorage',function(result){
+expect(result).toEqual((0,_effects.call)(_localStorage2.default.getItem,_dbKeys2.default.USER_PREFERENCE_KEY));
+return mockUserData;
+});
+it('Should then dispatch an action for setting user preferences with the fetched data',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.setPreferences)(mockUserData)));
+});
+});

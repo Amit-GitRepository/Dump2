@@ -1,0 +1,73 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_rqj2ks1zu=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/HotExtraPackageCard/HotExtraPackageCard.component.js',hash='1aa08044e7d439e2e969cc0d110652a063bfd8ab',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/HotExtraPackageCard/HotExtraPackageCard.component.js',statementMap:{'0':{start:{line:13,column:125},end:{line:13,column:135}},'1':{start:{line:14,column:23},end:{line:14,column:25}},'2':{start:{line:15,column:4},end:{line:19,column:5}},'3':{start:{line:16,column:19},end:{line:16,column:43}},'4':{start:{line:16,column:44},end:{line:16,column:50}},'5':{start:{line:17,column:20},end:{line:17,column:45}},'6':{start:{line:17,column:46},end:{line:17,column:52}},'7':{start:{line:18,column:21},end:{line:18,column:45}},'8':{start:{line:18,column:46},end:{line:18,column:52}},'9':{start:{line:20,column:4},end:{line:45,column:15}},'10':{start:{line:49,column:0},end:{line:59,column:2}},'11':{start:{line:61,column:0},end:{line:71,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:12,column:2},end:{line:12,column:3}},loc:{start:{line:12,column:12},end:{line:46,column:3}},line:12}},branchMap:{'0':{loc:{start:{line:15,column:4},end:{line:19,column:5}},type:'switch',locations:[{start:{line:16,column:4},end:{line:16,column:52}},{start:{line:17,column:4},end:{line:17,column:54}},{start:{line:18,column:4},end:{line:18,column:54}}],line:15},'1':{loc:{start:{line:22,column:9},end:{line:22,column:138}},type:'cond-expr',locations:[{start:{line:22,column:25},end:{line:22,column:131}},{start:{line:22,column:134},end:{line:22,column:138}}],line:22}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0},f:{'0':0},b:{'0':[0,0,0],'1':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _Button=require('../../../../Shared/Button/Button.component');var _Button2=_interopRequireDefault(_Button);
+var _Icon=require('../../../../Shared/Icon/Icon.component');var _Icon2=_interopRequireDefault(_Icon);
+var _ISText=require('../../../../Shared/ISText/ISText.component');var _ISText2=_interopRequireDefault(_ISText);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _HotExtraPackageCard=require('./HotExtraPackageCard.style');var _HotExtraPackageCard2=_interopRequireDefault(_HotExtraPackageCard);
+var _constants=require('../../../../../themes/constants.styles');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+HotExtraPackageCard=function(_Component){_inherits(HotExtraPackageCard,_Component);function HotExtraPackageCard(){_classCallCheck(this,HotExtraPackageCard);return _possibleConstructorReturn(this,(HotExtraPackageCard.__proto__||Object.getPrototypeOf(HotExtraPackageCard)).apply(this,arguments));}_createClass(HotExtraPackageCard,[{key:'render',value:function render()
+
+{cov_rqj2ks1zu.f[0]++;var _ref=(cov_rqj2ks1zu.s[0]++,
+this.props),header=_ref.header,planValue=_ref.planValue,planDescription=_ref.planDescription,noOfDays=_ref.noOfDays,dayDescription=_ref.dayDescription,cost=_ref.cost,costDescription=_ref.costDescription,buttonText=_ref.buttonText,caretPosition=_ref.caretPosition;
+var caretStyle=(cov_rqj2ks1zu.s[1]++,{});cov_rqj2ks1zu.s[2]++;
+switch(caretPosition){
+case'LEFT':cov_rqj2ks1zu.b[0][0]++;{cov_rqj2ks1zu.s[3]++;caretStyle.left='20%';cov_rqj2ks1zu.s[4]++;break;}
+case'RIGHT':cov_rqj2ks1zu.b[0][1]++;{cov_rqj2ks1zu.s[5]++;caretStyle.right='20%';cov_rqj2ks1zu.s[6]++;break;}
+case'CENTER':cov_rqj2ks1zu.b[0][2]++;{cov_rqj2ks1zu.s[7]++;caretStyle.left='50%';cov_rqj2ks1zu.s[8]++;break;}}cov_rqj2ks1zu.s[9]++;
+
+return(
+_react2.default.createElement(_reactNative.View,null,
+caretPosition?(cov_rqj2ks1zu.b[1][0]++,_react2.default.createElement(_Icon2.default,{size:25,color:_constants.colors.PRIMARY_SUBTEXT,style:[_HotExtraPackageCard2.default.iconStyle,caretStyle],name:'caret-down'})):(cov_rqj2ks1zu.b[1][1]++,null),
+_react2.default.createElement(_reactNative.View,{style:_HotExtraPackageCard2.default.container},
+_react2.default.createElement(_reactNative.View,{style:_HotExtraPackageCard2.default.titleWrapper},_react2.default.createElement(_ISText2.default,{type:'BOLD',style:_HotExtraPackageCard2.default.title},header)),
+_react2.default.createElement(_reactNative.View,{style:_HotExtraPackageCard2.default.content},
+_react2.default.createElement(_reactNative.View,{style:_HotExtraPackageCard2.default.payWrapper},
+_react2.default.createElement(_Button2.default,{text:buttonText,textType:'BOLD',textStyle:_HotExtraPackageCard2.default.buttonText,style:_HotExtraPackageCard2.default.button})),
+
+_react2.default.createElement(_reactNative.View,{style:_HotExtraPackageCard2.default.contentWrapper},
+_react2.default.createElement(_reactNative.View,{style:_HotExtraPackageCard2.default.data},
+_react2.default.createElement(_ISText2.default,{type:'BOLD',style:_HotExtraPackageCard2.default.leftText},planValue),
+_react2.default.createElement(_ISText2.default,{style:_HotExtraPackageCard2.default.textGrey,ellipsizeMode:'tail',numberOfLines:1},planDescription)),
+
+_react2.default.createElement(_reactNative.View,{style:_HotExtraPackageCard2.default.data},
+_react2.default.createElement(_ISText2.default,{type:'BOLD',style:_HotExtraPackageCard2.default.centerText},noOfDays),
+_react2.default.createElement(_ISText2.default,{style:_HotExtraPackageCard2.default.textGrey,ellipsizeMode:'tail',numberOfLines:1},dayDescription)),
+
+_react2.default.createElement(_reactNative.View,{style:_HotExtraPackageCard2.default.data},
+_react2.default.createElement(_ISText2.default,{type:'BOLD',style:_HotExtraPackageCard2.default.rightText},cost),
+_react2.default.createElement(_ISText2.default,{style:_HotExtraPackageCard2.default.textGrey,ellipsizeMode:'tail',numberOfLines:1},costDescription)))))));
+
+
+
+
+
+}}]);return HotExtraPackageCard;}(_react.Component);cov_rqj2ks1zu.s[10]++;
+
+
+HotExtraPackageCard.defaultProps={
+header:'',
+planValue:'',
+planDescription:'',
+noOfDays:'',
+dayDescription:'',
+cost:'',
+costDescription:'',
+buttonText:'',
+caretPosition:null};cov_rqj2ks1zu.s[11]++;
+
+
+HotExtraPackageCard.propTypes={
+header:_propTypes2.default.string,
+planValue:_propTypes2.default.string,
+planDescription:_propTypes2.default.string,
+noOfDays:_propTypes2.default.oneOfType([_propTypes2.default.string,_propTypes2.default.number]),
+dayDescription:_propTypes2.default.string,
+cost:_propTypes2.default.oneOfType([_propTypes2.default.string,_propTypes2.default.number]),
+costDescription:_propTypes2.default.string,
+buttonText:_propTypes2.default.string,
+caretPosition:_propTypes2.default.oneOf(['LEFT','RIGHT','CENTER',null])};exports.default=
+
+
+HotExtraPackageCard;

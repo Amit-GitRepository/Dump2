@@ -1,0 +1,77 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_12ew4yx2fq=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/CaretTabs/CaretTabs.component.js',hash='597156342bcf0404a2563a0b639d47a1b442dbc4',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/CaretTabs/CaretTabs.component.js',statementMap:{'0':{start:{line:13,column:23},end:{line:13,column:57}},'1':{start:{line:13,column:29},end:{line:13,column:57}},'2':{start:{line:16,column:160},end:{line:16,column:170}},'3':{start:{line:17,column:30},end:{line:17,column:70}},'4':{start:{line:18,column:4},end:{line:45,column:6}},'5':{start:{line:23,column:29},end:{line:23,column:35}},'6':{start:{line:24,column:32},end:{line:24,column:55}},'7':{start:{line:25,column:30},end:{line:25,column:61}},'8':{start:{line:26,column:30},end:{line:26,column:63}},'9':{start:{line:27,column:31},end:{line:27,column:106}},'10':{start:{line:28,column:35},end:{line:28,column:85}},'11':{start:{line:29,column:40},end:{line:29,column:112}},'12':{start:{line:30,column:14},end:{line:36,column:16}},'13':{start:{line:49,column:0},end:{line:63,column:2}},'14':{start:{line:64,column:0},end:{line:76,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:13,column:12},end:{line:13,column:13}},loc:{start:{line:13,column:23},end:{line:13,column:57}},line:13},'1':{name:'(anonymous_1)',decl:{start:{line:13,column:23},end:{line:13,column:24}},loc:{start:{line:13,column:29},end:{line:13,column:57}},line:13},'2':{name:'(anonymous_2)',decl:{start:{line:15,column:2},end:{line:15,column:3}},loc:{start:{line:15,column:12},end:{line:46,column:3}},line:15},'3':{name:'(anonymous_3)',decl:{start:{line:22,column:27},end:{line:22,column:28}},loc:{start:{line:22,column:46},end:{line:37,column:13}},line:22}},branchMap:{'0':{loc:{start:{line:26,column:30},end:{line:26,column:63}},type:'cond-expr',locations:[{start:{line:26,column:41},end:{line:26,column:56}},{start:{line:26,column:59},end:{line:26,column:63}}],line:26},'1':{loc:{start:{line:27,column:31},end:{line:27,column:106}},type:'cond-expr',locations:[{start:{line:27,column:42},end:{line:27,column:59}},{start:{line:27,column:62},end:{line:27,column:106}}],line:27},'2':{loc:{start:{line:28,column:35},end:{line:28,column:85}},type:'cond-expr',locations:[{start:{line:28,column:46},end:{line:28,column:63}},{start:{line:28,column:66},end:{line:28,column:85}}],line:28},'3':{loc:{start:{line:29,column:40},end:{line:29,column:112}},type:'cond-expr',locations:[{start:{line:29,column:49},end:{line:29,column:90}},{start:{line:29,column:93},end:{line:29,column:112}}],line:29},'4':{loc:{start:{line:41,column:10},end:{line:43,column:99}},type:'cond-expr',locations:[{start:{line:42,column:10},end:{line:42,column:66}},{start:{line:43,column:10},end:{line:43,column:99}}],line:41}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0},f:{'0':0,'1':0,'2':0,'3':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0],'4':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _BottomCaretView=require('../BottomCaretView/BottomCaretView.component');var _BottomCaretView2=_interopRequireDefault(_BottomCaretView);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _CaretTabsStyle=require('./CaretTabs.style.js');var _CaretTabsStyle2=_interopRequireDefault(_CaretTabsStyle);
+var _Touchable=require('../Touchable/Touchable.component');var _Touchable2=_interopRequireDefault(_Touchable);
+var _Shared=require('../../Shared');
+var _application=require('../../../themes/application.styles');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+CaretTabs=function(_Component){_inherits(CaretTabs,_Component);function CaretTabs(){var _ref;var _temp,_this,_ret;_classCallCheck(this,CaretTabs);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=CaretTabs.__proto__||Object.getPrototypeOf(CaretTabs)).call.apply(_ref,[this].concat(args))),_this),_this.
+
+onPress=function(index){cov_12ew4yx2fq.f[0]++;cov_12ew4yx2fq.s[0]++;return function(){cov_12ew4yx2fq.f[1]++;cov_12ew4yx2fq.s[1]++;return _this.props.onTabPress(index);};},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(CaretTabs,[{key:'render',value:function render()
+
+{var _this2=this;cov_12ew4yx2fq.f[2]++;var _ref2=(cov_12ew4yx2fq.s[2]++,
+this.props),accessibilityLabel=_ref2.accessibilityLabel,activeTabStyle=_ref2.activeTabStyle,inActiveTabStyle=_ref2.inActiveTabStyle,headerList=_ref2.headerList,selectedIndex=_ref2.selectedIndex,children=_ref2.children,bodyStyle=_ref2.bodyStyle,headerContainerStyle=_ref2.headerContainerStyle,disableShadow=_ref2.disableShadow,testID=_ref2.testID;
+var customActiveStyle=(cov_12ew4yx2fq.s[3]++,_extends({},_CaretTabsStyle2.default.activeTab,activeTabStyle));cov_12ew4yx2fq.s[4]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:_CaretTabsStyle2.default.container,accessibilityLabel:accessibilityLabel,testID:testID},
+_react2.default.createElement(_reactNative.View,{style:[_CaretTabsStyle2.default.headerContainer,headerContainerStyle]},
+
+headerList.map(function(header,index){cov_12ew4yx2fq.f[3]++;var _ref3=(cov_12ew4yx2fq.s[5]++,
+header),text=_ref3.text;
+var isActive=(cov_12ew4yx2fq.s[6]++,selectedIndex===index);
+var isLast=(cov_12ew4yx2fq.s[7]++,index===headerList.length-1);
+var Wrapper=(cov_12ew4yx2fq.s[8]++,isActive?(cov_12ew4yx2fq.b[0][0]++,_BottomCaretView2.default):(cov_12ew4yx2fq.b[0][1]++,_reactNative.View));
+var tabStyle=(cov_12ew4yx2fq.s[9]++,isActive?(cov_12ew4yx2fq.b[1][0]++,customActiveStyle):(cov_12ew4yx2fq.b[1][1]++,_extends({},_CaretTabsStyle2.default.inactiveTab,inActiveTabStyle)));
+var tabTextStyle=(cov_12ew4yx2fq.s[10]++,isActive?(cov_12ew4yx2fq.b[2][0]++,_CaretTabsStyle2.default.activeText):(cov_12ew4yx2fq.b[2][1]++,_CaretTabsStyle2.default.inactiveText));
+var touchWrapperStyle=(cov_12ew4yx2fq.s[11]++,isLast?(cov_12ew4yx2fq.b[3][0]++,[_CaretTabsStyle2.default.touchWrapper,_CaretTabsStyle2.default.lastWrapper]):(cov_12ew4yx2fq.b[3][1]++,_CaretTabsStyle2.default.touchWrapper));cov_12ew4yx2fq.s[12]++;
+return(
+_react2.default.createElement(_Touchable2.default,{style:touchWrapperStyle,onPress:_this2.onPress(index),key:index},
+_react2.default.createElement(Wrapper,{style:[_CaretTabsStyle2.default.wrapper,tabStyle],iconSize:_CaretTabsStyle.caretSize,caretColor:tabStyle.backgroundColor},
+_react2.default.createElement(_Shared.ISText,{type:'BOLD',style:tabTextStyle,numberOfLines:1},text))));
+
+
+
+})),
+
+
+_react2.default.createElement(_reactNative.View,{style:[_CaretTabsStyle2.default.separator,{borderColor:customActiveStyle.backgroundColor}]}),
+disableShadow?(cov_12ew4yx2fq.b[4][0]++,
+_react2.default.createElement(_reactNative.View,{style:[_CaretTabsStyle2.default.body,bodyStyle]},children)):(cov_12ew4yx2fq.b[4][1]++,
+_react2.default.createElement(_reactNative.View,{elevation:4,style:[_CaretTabsStyle2.default.body,bodyStyle,_application.shadowActiveStyle]},children))));
+
+
+}}]);return CaretTabs;}(_react.Component);cov_12ew4yx2fq.s[13]++;
+
+
+CaretTabs.defaultProps={
+headerList:[{
+text:'Primary'},
+{
+text:'Secondary'}],
+
+onTabPress:_noop2.default,
+selectedIndex:0,
+children:null,
+bodyStyle:{},
+activeTabStyle:{},
+inActiveTabStyle:{},
+headerContainerStyle:{},
+disableShadow:false};cov_12ew4yx2fq.s[14]++;
+
+CaretTabs.propTypes={
+accessibilityLabel:_propTypes2.default.string,
+activeTabStyle:_propTypes2.default.object,
+inActiveTabStyle:_propTypes2.default.object,
+headerList:_propTypes2.default.array,
+onTabPress:_propTypes2.default.func,
+selectedIndex:_propTypes2.default.number,
+children:_propTypes2.default.node,
+bodyStyle:_propTypes2.default.object,
+headerContainerStyle:_propTypes2.default.object,
+disableShadow:_propTypes2.default.bool,
+testID:_propTypes2.default.string};exports.default=
+
+CaretTabs;

@@ -1,0 +1,63 @@
+var _this=this;var _location=require('../location.util');
+
+describe('Location utility',function(){
+it('sortByDistance: Should sort the distances based on lat-longs from currentLatLong',function(){
+var storesData=[{latitude:15.299326,longitude:74.123996},
+{latitude:33.778175,longitude:76.576171},
+{latitude:28.704059,longitude:77.102490},
+{latitude:19.075984,longitude:72.877656}];
+
+var currentLatLong={
+'latitude':12.971599,
+'longitude':77.594563};
+
+var expected=[{latitude:15.299326,longitude:74.123996,'distance':454.66},
+{latitude:19.075984,longitude:72.877656,'distance':843.11},
+{latitude:28.704059,longitude:77.102490,'distance':1742.65},
+{latitude:33.778175,longitude:76.576171,'distance':2306.80}];
+expect((0,_location.sortByDistance)(currentLatLong,storesData)).toEqual(expected);
+});
+
+it('sortByDistance: Should return the sorted distances within the limit if limit is passed',function(){
+var storesData=[{latitude:15.299326,longitude:74.123996},
+{latitude:33.778175,longitude:76.576171},
+{latitude:28.704059,longitude:77.102490},
+{latitude:19.075984,longitude:72.877656}];
+
+var currentLatLong={
+'latitude':12.971599,
+'longitude':77.594563};
+
+var expected=[{latitude:15.299326,longitude:74.123996,'distance':454.66},
+{latitude:19.075984,longitude:72.877656,'distance':843.11}];
+expect((0,_location.sortByDistance)(currentLatLong,storesData,1000)).toEqual(expected);
+});
+
+it('getCurrentPosition: should return correct coordinates of current location',function _callee(){var position;return regeneratorRuntime.async(function _callee$(_context){while(1){switch(_context.prev=_context.next){case 0:
+global.navigator={
+geolocation:{
+getCurrentPosition:jest.fn(function(position){
+position({
+coords:{latitude:10.234,longitude:20.765}});
+
+})}};_context.next=3;return regeneratorRuntime.awrap(
+
+
+(0,_location.getCurrentPosition)());case 3:position=_context.sent;
+expect(global.navigator.geolocation.getCurrentPosition).toHaveBeenCalled();
+expect(position).toEqual({latitude:10.234,longitude:20.765});case 6:case'end':return _context.stop();}}},null,_this);});
+
+
+it('getCurrentPosition: should handle the error',function _callee2(){var position;return regeneratorRuntime.async(function _callee2$(_context2){while(1){switch(_context2.prev=_context2.next){case 0:
+global.navigator={
+geolocation:{
+getCurrentPosition:jest.fn(function(successCallback,failureCallback){
+failureCallback({message:'someError'});
+})}};_context2.next=3;return regeneratorRuntime.awrap(
+
+
+(0,_location.getCurrentPosition)().catch(function(err){return err;}));case 3:position=_context2.sent;
+expect(position).toEqual({message:'someError'});case 5:case'end':return _context2.stop();}}},null,_this);});
+
+
+});

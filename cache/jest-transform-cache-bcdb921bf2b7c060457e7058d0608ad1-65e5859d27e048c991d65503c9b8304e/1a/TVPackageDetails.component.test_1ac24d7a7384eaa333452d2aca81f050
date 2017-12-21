@@ -1,0 +1,52 @@
+var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);
+var _TVPackageDetails=require('../TVPackageDetails.component');var _TVPackageDetails2=_interopRequireDefault(_TVPackageDetails);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('TVPackagDetail card',function(){
+var mockProps={
+planDetail:{
+endMonth:'may',
+endDate:12,
+planOverView:'Gold',
+planOffer:'รับส่วนลดค่าบริการ 50%  12 รอบบิล (ก.ย.59 - ส.ค.60)',
+hdChannel:{
+consumedValue:'64',subtext:'channels'},
+channel:{
+consumedValue:'170',subtext:'channels'},
+additionalOffers:[
+{
+titleText:'FREE! Super Soccer',
+consumedValue:2,
+subtext:'Seasons'},
+
+{
+titleText:'FREE Installation',
+subtext:'12 Months contract'}]},
+
+
+
+userDetail:{
+phoneNumber:'9629770174',
+name:'pulkit Juneja'}};
+
+
+it('renders correctly',function(){
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_TVPackageDetails2.default,{planDetails:mockProps.planDetail,userDetails:mockProps.userDetail}));
+expect(component).toMatchSnapshot();
+});
+it('renders correctly when no additional offers are passed',function(){
+var testProps=_extends({},mockProps,{additionalOffers:[]});
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_TVPackageDetails2.default,{planDetails:testProps.planDetail,userDetails:testProps.userDetail}));
+expect(component).toMatchSnapshot();
+});
+it('renders correctly when planDetails is empty',function(){
+var testProps=_extends({},mockProps,{planDetails:{}});
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_TVPackageDetails2.default,{planDetails:testProps.planDetail,userDetails:testProps.userDetail}));
+expect(component).toMatchSnapshot();
+});
+it('renders correctly when userDetails is empty',function(){
+var testProps=_extends({},mockProps,{userDetails:{}});
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_TVPackageDetails2.default,{planDetails:testProps.planDetail,userDetails:testProps.userDetail}));
+expect(component).toMatchSnapshot();
+});
+});

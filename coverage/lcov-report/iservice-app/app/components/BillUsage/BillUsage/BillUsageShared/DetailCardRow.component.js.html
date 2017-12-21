@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/DetailCardRow.component.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../../index.html">All files</a> / <a href="index.html">iservice-app/app/components/BillUsage/BillUsage/BillUsageShared</a> DetailCardRow.component.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>9/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">80.77% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>21/26</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">75% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>9/12</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">18x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import Proptypes from 'prop-types';
+import React, {Component} from 'react';
+import styles from './DetailCardRow.style';
+import {bytesToSize} from '../../../../utils/common.util';
+import {fonts} from '../../../../themes/constants.styles';
+import {Icon, ISText} from '../../../Shared';
+import {QUOTA_TYPE, QUOTA_VALUE} from '../../../../config/billUsage.config';
+import {translate} from '../../../../language/i18n/helper';
+import {View} from 'react-native';
+&nbsp;
+class DetailCardRow extends Component {
+  render () {
+    const {consumedValueStyle, unitStyle, subtextStyle, iconSize, showSeparator, value, unit, subText, icon, title, type} = this.props;
+    let displayValue = value;
+    let displayUnit = (unit === QUOTA_VALUE.MINUTES) ? <span class="branch-0 cbranch-no" title="branch not covered" >translate('BILLS_USAGE_MIN') </span>: unit;
+    const consumerValueStyle = value === QUOTA_VALUE.UNLIMITED ?
+<span class="branch-0 cbranch-no" title="branch not covered" >      [styles.unlimitedTextStyle, consumedValueStyle] </span>: [styles.consumedValueDefault, consumedValueStyle];
+    const consumerValueTexttype = value === QUOTA_VALUE.UNLIMITED ? <span class="branch-0 cbranch-no" title="branch not covered" >'BOLD' </span>: 'SEMIBOLD';
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (type === QUOTA_TYPE.DATA &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >displayValue !== QUOTA_VALUE.UNLIMITED)</span> {
+      const sizedValues = <span class="cstat-no" title="statement not covered" >bytesToSize(value, unit);</span>
+<span class="cstat-no" title="statement not covered" >      displayValue = sizedValues.value;</span>
+<span class="cstat-no" title="statement not covered" >      displayUnit = sizedValues.unit;</span>
+    }
+    return (
+      &lt;View style = {styles.parentContainer}&gt;
+        &lt;View style = {styles.wrapper}&gt;
+          &lt;View style = {styles.leftContainer}&gt;
+            {icon !== '' ? &lt;Icon name = {icon} size = {iconSize} style={styles.iconStyle}/&gt; :  null}
+            &lt;ISText style = {styles.titleText} type='BOLD'&gt;{title ? translate(title) : type}&lt;/ISText&gt;
+          &lt;/View&gt;
+          &lt;View style = {styles.rightContainer}&gt;
+            &lt;ISText style = {styles.topRightContainer}&gt;
+              { value || value === 0 ? &lt;ISText type={consumerValueTexttype} style = {consumerValueStyle}&gt;{displayValue}&lt;/ISText&gt; : null }
+              { (unit &amp;&amp; (value !== QUOTA_VALUE.UNLIMITED)) ? &lt;ISText type='SEMIBOLD' style = {[styles.unitDefault, unitStyle]}&gt; {displayUnit}&lt;/ISText&gt; : null }
+            &lt;/ISText&gt;
+            { subText ? &lt;ISText type='SEMIBOLD' style = {[styles.subtextDefault, subtextStyle]}&gt;{subText}&lt;/ISText&gt; : null }
+          &lt;/View&gt;
+        &lt;/View&gt;
+        {showSeparator &amp;&amp; &lt;View style = {styles.bottomBorderLine}/&gt;}
+      &lt;/View&gt;
+    );
+  }
+}
+DetailCardRow.defaultProps = {
+  consumedValueStyle: {},
+  subtextStyle: {},
+  unitStyle: {},
+  iconSize: fonts.FONT_SIZE_XXL, // should be used for dynamic data when type is not known beforeHand
+  type: '',
+  showSeparator: true,
+  value: '',
+  unit: '',
+  subText: '',
+  icon: '',
+  title: ''
+};
+DetailCardRow.propTypes = {
+  consumedValueStyle: Proptypes.object,
+  unitStyle: Proptypes.object,
+  subtextStyle: Proptypes.object,
+  iconSize: Proptypes.number,
+  type: Proptypes.string,
+  showSeparator: Proptypes.bool,
+  value: Proptypes.oneOfType([Proptypes.string, Proptypes.number]),
+  unit: Proptypes.string,
+  subText: Proptypes.string,
+  icon: Proptypes.string,
+  title: Proptypes.string
+};
+export default DetailCardRow;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../../sorter.js"></script>
+</body>
+</html>

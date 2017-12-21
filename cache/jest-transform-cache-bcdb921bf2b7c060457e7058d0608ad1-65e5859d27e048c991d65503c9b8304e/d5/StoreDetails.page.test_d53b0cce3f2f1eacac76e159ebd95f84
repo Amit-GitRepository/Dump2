@@ -1,0 +1,138 @@
+
+
+
+
+
+
+
+
+
+
+
+
+jest.mock('../../../config/storeInfo.config',function(){return{data:[{
+id:'storeID700',
+services:{}}]};});
+
+
+jest.mock('../../../utils/location.util.js');
+jest.mock('../../../utils/reactNative.util.js',function(){return{
+openUrl:jest.fn(function(url){return url;}),
+Platform:{OS:'ios'}};});var _react=require('react');var _react2=_interopRequireDefault(_react);var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);var _set=require('lodash/set');var _set2=_interopRequireDefault(_set);var _StoreDetails=require('../StoreDetails.page');var _StoreDetails2=_interopRequireDefault(_StoreDetails);var _enzyme=require('enzyme');var _redux=require('redux');var _reactNavigation=require('react-navigation');var _reactRedux=require('react-redux');var _reactNative=require('../../../utils/reactNative.util');var reactNative=_interopRequireWildcard(_reactNative);function _interopRequireWildcard(obj){if(obj&&obj.__esModule){return obj;}else{var newObj={};if(obj!=null){for(var key in obj){if(Object.prototype.hasOwnProperty.call(obj,key))newObj[key]=obj[key];}}newObj.default=obj;return newObj;}}function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+
+var store=(0,_redux.createStore)(function(){return{user:{language:'en'}};});
+
+describe('StoreDetailsPage page',function(){
+var pageComponent=null;
+var navigation=(0,_set2.default)({},'state.params',{});
+
+beforeEach(function(){
+navigation.state.params={
+service:{'a':null,'b':null},
+distance:1,
+landmarks:{'en':'someLandmark'},
+address:{'en':'someAddress'},
+name:{
+'en':'someName',
+'th':'someName (th)'},
+
+latitude:1,
+longitude:1};
+
+(0,_set2.default)(navigation.state.params,'contact.info.phonenumber','123');
+(0,_set2.default)(navigation.state.params,'id','storeID700');
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_StoreDetails2.default,{store:store,navigation:navigation}));
+pageComponent=wrapper.find('StoreDetailsPage').shallow();
+});
+
+it('should render',function(){
+var wrapper=(0,_enzyme.shallow)(
+_react2.default.createElement(_reactRedux.Provider,{store:store},
+_react2.default.createElement(_StoreDetails2.default,null)));
+
+expect(wrapper).toBeDefined();
+});
+it('getDetails: should return store details',function(){
+var expectedDetails={
+address:'someAddress',
+services:['a','b'],
+distance:1,
+landmark:'someLandmark',
+contact:'123',
+name:'someName',
+id:'storeID700'};
+
+var instance=pageComponent.instance();
+expect(instance.getDetails()).toEqual(expectedDetails);
+});
+it('getProducts: should return products for a service',function(){
+var instance=pageComponent.instance();
+var storeId='storeID700';
+var serviceName='ServiceTitle';
+var storesInfo={};
+(0,_set2.default)(storesInfo,'metaData.services.s0','Some ProductName');
+(0,_set2.default)(storesInfo,'metaData.services.s123','Yet another ProductName');
+(0,_set2.default)(storesInfo,'data[0].id','storeID700');
+(0,_set2.default)(storesInfo,'data[0].service.ServiceTitle[0]','s0');
+(0,_set2.default)(storesInfo,'data[0].service.ServiceTitle[1]','s123');
+var products=instance.getProducts(serviceName,storeId,storesInfo);
+expect(products).toEqual(['Some ProductName','Yet another ProductName']);
+});
+it('onServiceClick: should accept serviceName and call props.navigateToServiceDetails with required args',function(){
+var navigateToServiceDetails=jest.fn();
+pageComponent.setProps({navigateToServiceDetails:navigateToServiceDetails});
+var instance=pageComponent.instance();
+instance.getProducts=jest.fn(function(){return['p'];});
+instance.onServiceClick('Payment Service')();
+var mockedStoreInfo={data:[{
+id:'storeID700',
+services:{}}]};
+
+var expected={
+products:['p'],
+serviceName:'Payment'};
+
+expect(instance.getProducts).toHaveBeenCalledWith('Payment','storeID700',mockedStoreInfo);
+expect(navigateToServiceDetails).toHaveBeenCalledWith(expected);
+});
+it('mapDispatchToProps: serviceClickHandler => should navigate to ServiceDetails with servicename',function(){
+var mockDispatch=jest.fn();var _mapDispatchToProps=
+(0,_StoreDetails.mapDispatchToProps)(mockDispatch),navigateToServiceDetails=_mapDispatchToProps.navigateToServiceDetails;
+var params={products:[1]};
+navigateToServiceDetails(params);
+expect(mockDispatch).toHaveBeenCalledWith(_reactNavigation.NavigationActions.navigate({routeName:'ServiceDetails',params:params}));
+});
+
+it('onCallClick: should link to native dialer',function(){
+var instance=pageComponent.instance();
+expect(instance.onCallClick()).toEqual('tel:123');
+});
+it('onGetDirectionClick: should call redirectToMaps with longitude and latitude and name',function(){
+var instance=pageComponent.instance();
+var spy=jest.spyOn(instance,'redirectToMaps');
+instance.onGetDirectionClick();
+expect(spy).toHaveBeenCalledWith(1,1,'someName');
+});
+
+it('redirectToMaps: should redirect to ios maps when platform is ios',function(){
+var instance=pageComponent.instance();
+reactNative.Platform.OS='ios';
+
+expect(instance.onGetDirectionClick()).toEqual('http://maps.apple.com/?ll=1,1&q=someName');
+});
+
+it('redirectToMaps: should redirect to ios maps when platform is not ios',function(){
+var instance=pageComponent.instance();
+reactNative.Platform.OS='android';
+expect(instance.onGetDirectionClick()).toEqual('http://maps.google.com/maps?q=1,1&label=someName');
+});
+
+it('appendServiceText: Add Service text in each service of service list',function(){
+var initialDetails={services:['After Sales','Payment','Sale Product']};
+var finalDetails={services:['After Sales Service','Payment Service','Sale Product Service']};
+var instance=pageComponent.instance();
+expect(instance.appendServiceText(initialDetails)).toEqual(finalDetails);
+});
+
+});

@@ -1,0 +1,20 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_2bbol7evp=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/reducers/spinner.reducer.js',hash='12a90bbec55c529ef8e21e374b7540ca282b5530',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/reducers/spinner.reducer.js',statementMap:{'0':{start:{line:4,column:21},end:{line:4,column:31}},'1':{start:{line:7,column:2},end:{line:19,column:3}},'2':{start:{line:9,column:4},end:{line:9,column:36}},'3':{start:{line:13,column:25},end:{line:13,column:64}},'4':{start:{line:14,column:4},end:{line:14,column:33}},'5':{start:{line:17,column:4},end:{line:17,column:17}}},fnMap:{'0':{name:'Spinner',decl:{start:{line:6,column:24},end:{line:6,column:31}},loc:{start:{line:6,column:63},end:{line:20,column:1}},line:6}},branchMap:{'0':{loc:{start:{line:6,column:33},end:{line:6,column:53}},type:'default-arg',locations:[{start:{line:6,column:41},end:{line:6,column:53}}],line:6},'1':{loc:{start:{line:7,column:2},end:{line:19,column:3}},type:'switch',locations:[{start:{line:8,column:2},end:{line:10,column:3}},{start:{line:11,column:2},end:{line:15,column:3}},{start:{line:16,column:2},end:{line:18,column:3}}],line:7},'2':{loc:{start:{line:13,column:25},end:{line:13,column:64}},type:'cond-expr',locations:[{start:{line:13,column:45},end:{line:13,column:60}},{start:{line:13,column:63},end:{line:13,column:64}}],line:13}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0},f:{'0':0},b:{'0':[0],'1':[0,0,0],'2':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();exports.default=
+
+
+
+
+Spinner;var _index=require('../actions/index.actions');var initialState=(cov_2bbol7evp.s[0]++,{count:0});function Spinner(){var state=arguments.length>0&&arguments[0]!==undefined?arguments[0]:(cov_2bbol7evp.b[0][0]++,initialState);var action=arguments[1];cov_2bbol7evp.f[0]++;cov_2bbol7evp.s[1]++;
+switch(action.type){
+case _index.SPINNER_SHOW:cov_2bbol7evp.b[1][0]++;{cov_2bbol7evp.s[2]++;
+return{count:state.count+1};
+}
+case _index.SPINNER_HIDE:cov_2bbol7evp.b[1][1]++;{
+
+var spinnerCount=(cov_2bbol7evp.s[3]++,state.count>0?(cov_2bbol7evp.b[2][0]++,state.count-1):(cov_2bbol7evp.b[2][1]++,0));cov_2bbol7evp.s[4]++;
+return{count:spinnerCount};
+}
+default:cov_2bbol7evp.b[1][2]++;{cov_2bbol7evp.s[5]++;
+return state;
+}}
+
+}

@@ -1,0 +1,49 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1vq8apegkm=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/ProductCards/BaseProductCard/BaseProductCard.component.js',hash='c0c13d646dae9c6c7446269c1364d048cad68f5b',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/ProductCards/BaseProductCard/BaseProductCard.component.js',statementMap:{'0':{start:{line:9,column:27},end:{line:34,column:3}},'1':{start:{line:10,column:24},end:{line:10,column:34}},'2':{start:{line:11,column:68},end:{line:11,column:78}},'3':{start:{line:12,column:21},end:{line:12,column:23}},'4':{start:{line:13,column:4},end:{line:16,column:5}},'5':{start:{line:14,column:6},end:{line:14,column:56}},'6':{start:{line:15,column:6},end:{line:15,column:36}},'7':{start:{line:17,column:4},end:{line:24,column:7}},'8':{start:{line:18,column:24},end:{line:18,column:137}},'9':{start:{line:19,column:6},end:{line:23,column:7}},'10':{start:{line:20,column:8},end:{line:20,column:123}},'11':{start:{line:21,column:8},end:{line:21,column:55}},'12':{start:{line:22,column:8},end:{line:22,column:45}},'13':{start:{line:25,column:4},end:{line:25,column:33}},'14':{start:{line:26,column:4},end:{line:26,column:56}},'15':{start:{line:27,column:4},end:{line:33,column:5}},'16':{start:{line:27,column:32},end:{line:27,column:46}},'17':{start:{line:28,column:6},end:{line:30,column:7}},'18':{start:{line:29,column:8},end:{line:29,column:20}},'19':{start:{line:31,column:11},end:{line:33,column:5}},'20':{start:{line:32,column:6},end:{line:32,column:18}},'21':{start:{line:37,column:0},end:{line:40,column:2}},'22':{start:{line:42,column:0},end:{line:47,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:9,column:17},end:{line:9,column:18}},loc:{start:{line:9,column:27},end:{line:34,column:3}},line:9},'1':{name:'(anonymous_1)',decl:{start:{line:9,column:27},end:{line:9,column:28}},loc:{start:{line:9,column:38},end:{line:34,column:3}},line:9},'2':{name:'(anonymous_2)',decl:{start:{line:17,column:21},end:{line:17,column:22}},loc:{start:{line:17,column:38},end:{line:24,column:5}},line:17},'3':{name:'(anonymous_3)',decl:{start:{line:27,column:22},end:{line:27,column:23}},loc:{start:{line:27,column:32},end:{line:27,column:46}},line:27}},branchMap:{'0':{loc:{start:{line:13,column:4},end:{line:16,column:5}},type:'if',locations:[{start:{line:13,column:4},end:{line:16,column:5}},{start:{line:13,column:4},end:{line:16,column:5}}],line:13},'1':{loc:{start:{line:18,column:24},end:{line:18,column:137}},type:'binary-expr',locations:[{start:{line:18,column:24},end:{line:18,column:101}},{start:{line:18,column:105},end:{line:18,column:137}}],line:18},'2':{loc:{start:{line:19,column:6},end:{line:23,column:7}},type:'if',locations:[{start:{line:19,column:6},end:{line:23,column:7}},{start:{line:19,column:6},end:{line:23,column:7}}],line:19},'3':{loc:{start:{line:20,column:22},end:{line:20,column:122}},type:'cond-expr',locations:[{start:{line:20,column:30},end:{line:20,column:72}},{start:{line:20,column:75},end:{line:20,column:122}}],line:20},'4':{loc:{start:{line:27,column:4},end:{line:33,column:5}},type:'if',locations:[{start:{line:27,column:4},end:{line:33,column:5}},{start:{line:27,column:4},end:{line:33,column:5}}],line:27},'5':{loc:{start:{line:28,column:6},end:{line:30,column:7}},type:'if',locations:[{start:{line:28,column:6},end:{line:30,column:7}},{start:{line:28,column:6},end:{line:30,column:7}}],line:28},'6':{loc:{start:{line:31,column:11},end:{line:33,column:5}},type:'if',locations:[{start:{line:31,column:11},end:{line:33,column:5}},{start:{line:31,column:11},end:{line:33,column:5}}],line:31}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0,'19':0,'20':0,'21':0,'22':0},f:{'0':0,'1':0,'2':0,'3':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0],'4':[0,0],'5':[0,0],'6':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _moment=require('../../../../../utils/moment.util');var _moment2=_interopRequireDefault(_moment);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _floatingPoint=require('../../../../../utils/floatingPoint.util');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+BaseProductCard=function(_Component){_inherits(BaseProductCard,_Component);function BaseProductCard(){var _ref;var _temp,_this,_ret;_classCallCheck(this,BaseProductCard);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=BaseProductCard.__proto__||Object.getPrototypeOf(BaseProductCard)).call.apply(_ref,[this].concat(args))),_this),_this.
+
+onBillToggle=function(bill){cov_1vq8apegkm.f[0]++;cov_1vq8apegkm.s[0]++;return function(check){cov_1vq8apegkm.f[1]++;var _ref2=(cov_1vq8apegkm.s[1]++,
+_this.state),totalAmount=_ref2.totalAmount;var _ref3=(cov_1vq8apegkm.s[2]++,
+_this.props),dueBills=_ref3.dueBills,toggleBillDetailCheck=_ref3.toggleBillDetailCheck,onChecked=_ref3.onChecked,isChecked=_ref3.isChecked;
+var invoices=(cov_1vq8apegkm.s[3]++,[]);cov_1vq8apegkm.s[4]++;
+if(check){cov_1vq8apegkm.b[0][0]++;cov_1vq8apegkm.s[5]++;
+totalAmount=(0,_floatingPoint.add)(totalAmount,bill.unpaidAmount);cov_1vq8apegkm.s[6]++;
+invoices.push(bill.invoiceNo);
+}else{cov_1vq8apegkm.b[0][1]++;}cov_1vq8apegkm.s[7]++;
+dueBills.forEach(function(currentBill){cov_1vq8apegkm.f[2]++;
+var condition=(cov_1vq8apegkm.s[8]++,(cov_1vq8apegkm.b[1][0]++,(0,_moment2.default)(currentBill.dueDate).isBefore(bill.dueDate)===!currentBill.isChecked)&&(cov_1vq8apegkm.b[1][1]++,!currentBill.isChecked===check));cov_1vq8apegkm.s[9]++;
+if(condition){cov_1vq8apegkm.b[2][0]++;cov_1vq8apegkm.s[10]++;
+totalAmount=check?(cov_1vq8apegkm.b[3][0]++,(0,_floatingPoint.add)(totalAmount,currentBill.unpaidAmount)):(cov_1vq8apegkm.b[3][1]++,(0,_floatingPoint.subtract)(totalAmount,currentBill.unpaidAmount));cov_1vq8apegkm.s[11]++;
+currentBill.isChecked=!currentBill.isChecked;cov_1vq8apegkm.s[12]++;
+invoices.push(currentBill.invoiceNo);
+}else{cov_1vq8apegkm.b[2][1]++;}
+});cov_1vq8apegkm.s[13]++;
+_this.setState({totalAmount:totalAmount});cov_1vq8apegkm.s[14]++;
+toggleBillDetailCheck(invoices,check,totalAmount);cov_1vq8apegkm.s[15]++;
+if(dueBills.some(function(bill){cov_1vq8apegkm.f[3]++;cov_1vq8apegkm.s[16]++;return bill.isChecked;})){cov_1vq8apegkm.b[4][0]++;cov_1vq8apegkm.s[17]++;
+if(!isChecked){cov_1vq8apegkm.b[5][0]++;cov_1vq8apegkm.s[18]++;
+onChecked();
+}else{cov_1vq8apegkm.b[5][1]++;}
+}else{cov_1vq8apegkm.b[4][1]++;cov_1vq8apegkm.s[19]++;if(isChecked){cov_1vq8apegkm.b[6][0]++;cov_1vq8apegkm.s[20]++;
+onChecked();
+}else{cov_1vq8apegkm.b[6][1]++;}}
+};},_temp),_possibleConstructorReturn(_this,_ret);}return BaseProductCard;}(_react.Component);cov_1vq8apegkm.s[21]++;
+
+
+BaseProductCard.defaultProps={
+toggleBillDetailCheck:_noop2.default,
+onChecked:_noop2.default};cov_1vq8apegkm.s[22]++;
+
+
+BaseProductCard.propTypes={
+dueBills:_propTypes2.default.object,
+toggleBillDetailCheck:_propTypes2.default.func,
+onChecked:_propTypes2.default.func,
+isChecked:_propTypes2.default.bool};exports.default=
+
+
+BaseProductCard;

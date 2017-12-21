@@ -1,0 +1,74 @@
+Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _reactNative=require('react-native');
+var _CircularProgress=require('./CircularProgress');var _CircularProgress2=_interopRequireDefault(_CircularProgress);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _objectWithoutProperties(obj,keys){var target={};for(var i in obj){if(keys.indexOf(i)>=0)continue;if(!Object.prototype.hasOwnProperty.call(obj,i))continue;target[i]=obj[i];}return target;}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}
+var AnimatedProgress=_reactNative.Animated.createAnimatedComponent(_CircularProgress2.default);var
+
+AnimatedCircularProgress=function(_React$Component){_inherits(AnimatedCircularProgress,_React$Component);
+
+function AnimatedCircularProgress(props){_classCallCheck(this,AnimatedCircularProgress);var _this=_possibleConstructorReturn(this,(AnimatedCircularProgress.__proto__||Object.getPrototypeOf(AnimatedCircularProgress)).call(this,
+props));
+_this.state={
+chartFillAnimation:new _reactNative.Animated.Value(props.prefill||0)};return _this;
+
+}_createClass(AnimatedCircularProgress,[{key:'componentDidMount',value:function componentDidMount()
+
+{
+this.animateFill();
+}},{key:'componentDidUpdate',value:function componentDidUpdate(
+
+prevProps){
+if(prevProps.fill!==this.props.fill){
+this.animateFill();
+}
+}},{key:'animateFill',value:function animateFill()
+
+{var _props=
+this.props,tension=_props.tension,friction=_props.friction;
+
+_reactNative.Animated.spring(
+this.state.chartFillAnimation,
+{
+toValue:this.props.fill,
+tension:tension,
+friction:friction}).
+
+start();
+}},{key:'performLinearAnimation',value:function performLinearAnimation(
+
+toValue,duration){
+_reactNative.Animated.timing(this.state.chartFillAnimation,{
+toValue:toValue,
+duration:duration}).
+start();
+}},{key:'render',value:function render()
+
+{var _props2=
+this.props,fill=_props2.fill,prefill=_props2.prefill,other=_objectWithoutProperties(_props2,['fill','prefill']);
+
+return(
+_react2.default.createElement(AnimatedProgress,_extends({},
+other,{
+fill:this.state.chartFillAnimation})));
+
+
+}}]);return AnimatedCircularProgress;}(_react2.default.Component);exports.default=AnimatedCircularProgress;
+
+
+var viewPropTypes=_reactNative.ViewPropTypes||_reactNative.View.propTypes;
+
+AnimatedCircularProgress.propTypes={
+style:viewPropTypes.style,
+size:_propTypes2.default.number.isRequired,
+fill:_propTypes2.default.number,
+prefill:_propTypes2.default.number,
+width:_propTypes2.default.number.isRequired,
+tintColor:_propTypes2.default.oneOfType([_propTypes2.default.string,_propTypes2.default.object]),
+backgroundColor:_propTypes2.default.oneOfType([_propTypes2.default.string,_propTypes2.default.object]),
+tension:_propTypes2.default.number,
+friction:_propTypes2.default.number};
+
+
+AnimatedCircularProgress.defaultProps={
+tension:7,
+friction:10};

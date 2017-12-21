@@ -1,0 +1,42 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_bpj48crfr=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/ProgressBar/ProgressBar.component.js',hash='a46aa3c476c06b330022b6cb16f9ea39cfaaabdc',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/ProgressBar/ProgressBar.component.js',statementMap:{'0':{start:{line:9,column:53},end:{line:9,column:63}},'1':{start:{line:10,column:26},end:{line:12,column:5}},'2':{start:{line:13,column:20},end:{line:16,column:5}},'3':{start:{line:17,column:28},end:{line:17,column:65}},'4':{start:{line:18,column:22},end:{line:20,column:5}},'5':{start:{line:21,column:4},end:{line:26,column:6}},'6':{start:{line:30,column:0},end:{line:34,column:2}},'7':{start:{line:36,column:0},end:{line:40,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:8,column:2},end:{line:8,column:3}},loc:{start:{line:8,column:12},end:{line:27,column:3}},line:8}},branchMap:{'0':{loc:{start:{line:17,column:28},end:{line:17,column:65}},type:'cond-expr',locations:[{start:{line:17,column:49},end:{line:17,column:52}},{start:{line:17,column:55},end:{line:17,column:65}}],line:17},'1':{loc:{start:{line:23,column:9},end:{line:23,column:80}},type:'cond-expr',locations:[{start:{line:23,column:27},end:{line:23,column:73}},{start:{line:23,column:76},end:{line:23,column:80}}],line:23}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0},f:{'0':0},b:{'0':[0,0],'1':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ProgressBar=require('./ProgressBar.styles');var _ProgressBar2=_interopRequireDefault(_ProgressBar);
+var _constants=require('../../../themes/constants.styles');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+ProgressBar=function(_Component){_inherits(ProgressBar,_Component);function ProgressBar(){_classCallCheck(this,ProgressBar);return _possibleConstructorReturn(this,(ProgressBar.__proto__||Object.getPrototypeOf(ProgressBar)).apply(this,arguments));}_createClass(ProgressBar,[{key:'render',value:function render()
+{cov_bpj48crfr.f[0]++;var _ref=(cov_bpj48crfr.s[0]++,
+this.props),percentage=_ref.percentage,fillColor=_ref.fillColor,backgroundColor=_ref.backgroundColor;
+var fillContainer=(cov_bpj48crfr.s[1]++,{
+backgroundColor:backgroundColor});
+
+var fillBar=(cov_bpj48crfr.s[2]++,{
+flex:percentage,
+backgroundColor:fillColor});
+
+var percentageValue=(cov_bpj48crfr.s[3]++,percentage>100?(cov_bpj48crfr.b[0][0]++,100):(cov_bpj48crfr.b[0][1]++,percentage));
+var emptyFlex=(cov_bpj48crfr.s[4]++,{
+flex:100-percentageValue});cov_bpj48crfr.s[5]++;
+
+return(
+_react2.default.createElement(_reactNative.View,{style:[fillContainer,_ProgressBar2.default.container]},
+percentageValue?(cov_bpj48crfr.b[1][0]++,_react2.default.createElement(_reactNative.View,{style:[fillBar,_ProgressBar2.default.progressFill]})):(cov_bpj48crfr.b[1][1]++,null),
+_react2.default.createElement(_reactNative.View,{style:[emptyFlex,_ProgressBar2.default.progressEmpty]})));
+
+
+}}]);return ProgressBar;}(_react.Component);cov_bpj48crfr.s[6]++;
+
+
+ProgressBar.defaultProps={
+percentage:100,
+fillColor:_constants.colors.PRIMARY_ACTIONABLE,
+backgroundColor:_constants.colors.PRIMARY_BG_TEXT_CONTRAST};cov_bpj48crfr.s[7]++;
+
+
+ProgressBar.propTypes={
+percentage:_propTypes2.default.number.isRequired,
+fillColor:_propTypes2.default.string,
+backgroundColor:_propTypes2.default.string};exports.default=
+
+
+ProgressBar;

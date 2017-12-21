@@ -1,0 +1,33 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1nu7hynghe=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/reducers/payment.reducer.js',hash='4cc137b6ded876466a5beba12f66c82138a7fb68',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/reducers/payment.reducer.js',statementMap:{'0':{start:{line:4,column:21},end:{line:8,column:1}},'1':{start:{line:11,column:2},end:{line:32,column:3}},'2':{start:{line:13,column:4},end:{line:13,column:67}},'3':{start:{line:15,column:4},end:{line:15,column:68}},'4':{start:{line:17,column:4},end:{line:17,column:65}},'5':{start:{line:19,column:18},end:{line:19,column:40}},'6':{start:{line:20,column:22},end:{line:20,column:75}},'7':{start:{line:20,column:48},end:{line:20,column:74}},'8':{start:{line:21,column:4},end:{line:23,column:5}},'9':{start:{line:22,column:6},end:{line:22,column:33}},'10':{start:{line:24,column:4},end:{line:24,column:64}},'11':{start:{line:27,column:4},end:{line:27,column:24}},'12':{start:{line:29,column:4},end:{line:29,column:24}},'13':{start:{line:31,column:4},end:{line:31,column:17}}},fnMap:{'0':{name:'payment',decl:{start:{line:10,column:24},end:{line:10,column:31}},loc:{start:{line:10,column:63},end:{line:33,column:1}},line:10},'1':{name:'(anonymous_1)',decl:{start:{line:20,column:38},end:{line:20,column:39}},loc:{start:{line:20,column:48},end:{line:20,column:74}},line:20}},branchMap:{'0':{loc:{start:{line:10,column:33},end:{line:10,column:53}},type:'default-arg',locations:[{start:{line:10,column:41},end:{line:10,column:53}}],line:10},'1':{loc:{start:{line:11,column:2},end:{line:32,column:3}},type:'switch',locations:[{start:{line:12,column:2},end:{line:13,column:67}},{start:{line:14,column:2},end:{line:15,column:68}},{start:{line:16,column:2},end:{line:17,column:65}},{start:{line:18,column:2},end:{line:25,column:3}},{start:{line:26,column:2},end:{line:27,column:24}},{start:{line:28,column:2},end:{line:29,column:24}},{start:{line:30,column:2},end:{line:31,column:17}}],line:11},'2':{loc:{start:{line:21,column:4},end:{line:23,column:5}},type:'if',locations:[{start:{line:21,column:4},end:{line:23,column:5}},{start:{line:21,column:4},end:{line:23,column:5}}],line:21}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0},f:{'0':0,'1':0},b:{'0':[0],'1':[0,0,0,0,0,0,0],'2':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};exports.default=
+
+
+
+
+
+
+
+
+payment;var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);var _index=require('../actions/index.actions');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var initialState=(cov_1nu7hynghe.s[0]++,{paymentItems:[],paymentStatus:{},savedCards:{cards:[]}});function payment(){var state=arguments.length>0&&arguments[0]!==undefined?arguments[0]:(cov_1nu7hynghe.b[0][0]++,initialState);var action=arguments[1];cov_1nu7hynghe.f[0]++;cov_1nu7hynghe.s[1]++;
+switch(action.type){
+case _index.SET_PAYMENT_ITEMS:cov_1nu7hynghe.b[1][0]++;cov_1nu7hynghe.s[2]++;
+return _extends({},state,{paymentItems:(0,_result2.default)(action,'payload',[])});
+case _index.SET_PAYMENT_STATUS:cov_1nu7hynghe.b[1][1]++;cov_1nu7hynghe.s[3]++;
+return _extends({},state,{paymentStatus:(0,_result2.default)(action,'payload',{})});
+case _index.SET_SAVED_CARDS:cov_1nu7hynghe.b[1][2]++;cov_1nu7hynghe.s[4]++;
+return _extends({},state,{savedCards:(0,_result2.default)(action,'payload',[])});
+case _index.REMOVE_CARD_SUCCESSFUL:cov_1nu7hynghe.b[1][3]++;{
+var cards=(cov_1nu7hynghe.s[5]++,state.savedCards.cards);
+var cardIndex=(cov_1nu7hynghe.s[6]++,cards.findIndex(function(card){cov_1nu7hynghe.f[1]++;cov_1nu7hynghe.s[7]++;return card.id===action.payload;}));cov_1nu7hynghe.s[8]++;
+if(cardIndex>-1){cov_1nu7hynghe.b[2][0]++;cov_1nu7hynghe.s[9]++;
+cards.splice(cardIndex,1);
+}else{cov_1nu7hynghe.b[2][1]++;}cov_1nu7hynghe.s[10]++;
+return _extends({},state,{savedCards:_extends({},state.savedCards,{cards:cards})});
+}
+case _index.CLEAR_PAYMENT_DATA:cov_1nu7hynghe.b[1][4]++;cov_1nu7hynghe.s[11]++;
+return initialState;
+case _index.LOGOUT_SUCCESS:cov_1nu7hynghe.b[1][5]++;cov_1nu7hynghe.s[12]++;
+return initialState;
+default:cov_1nu7hynghe.b[1][6]++;cov_1nu7hynghe.s[13]++;
+return state;}
+
+}

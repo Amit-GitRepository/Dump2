@@ -1,0 +1,41 @@
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);
+var _TopUpMore=require('../TopUpMore.component');var _TopUpMore2=_interopRequireDefault(_TopUpMore);
+var _enzyme=require('enzyme');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+describe('TopUpMore component',function(){
+it('renders correctly',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_TopUpMore2.default,null));
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_TopUpMore2.default,null)).toJSON();
+expect(component).toMatchSnapshot();
+expect(wrapper).toBeDefined();
+});
+it('should update the state on validateTopUpValue to true',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_TopUpMore2.default,null));
+wrapper.instance().validateTopUpValue(123);
+expect(wrapper.state().errorTopUpValue).toBe(true);
+});
+it('should update the state on validateTopUpValue to false',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_TopUpMore2.default,null));
+wrapper.instance().validateTopUpValue(120);
+expect(wrapper.state().errorTopUpValue).toBe(false);
+});
+it('should setPaymentItems to payment options screen',function(){
+var paymentItems=[{
+msisdn:'1234',
+amount:'more',
+service:'tmhPrepaid'}];
+
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_TopUpMore2.default,{paymentItems:paymentItems,goToScreen:jest.fn(),setPaymentItems:jest.fn()}));
+wrapper.instance().topUp();
+expect(wrapper.instance().props.setPaymentItems).toHaveBeenLastCalledWith([{
+msisdn:'1234',
+amount:0,
+service:'tmhPrepaid'}]);
+
+expect(wrapper.instance().props.goToScreen).toHaveBeenLastCalledWith('Payment');
+});
+});

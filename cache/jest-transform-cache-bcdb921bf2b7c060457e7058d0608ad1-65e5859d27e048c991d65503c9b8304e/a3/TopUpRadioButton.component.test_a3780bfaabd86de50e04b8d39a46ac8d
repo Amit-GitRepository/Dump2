@@ -1,0 +1,31 @@
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);
+var _TopUpRadioButton=require('../TopUpRadioButton.component');var _TopUpRadioButton2=_interopRequireDefault(_TopUpRadioButton);
+var _enzyme=require('enzyme');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+describe('TopUpRadioButton component',function(){
+it('renders correctly',function(){
+var component=_reactTestRenderer2.default.create(
+_react2.default.createElement(_TopUpRadioButton2.default,{label:'First',value:'1',index:0,radioSelect:jest.fn()})).toJSON();
+expect(component).toMatchSnapshot();
+});
+it('renders correctly Radio button with the props',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_TopUpRadioButton2.default,{label:'First',value:'1',index:0,radioSelect:jest.fn()}));
+expect(wrapper).toBeDefined();
+});
+it('onToggle should callback to radioSelect func',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_TopUpRadioButton2.default,{label:'First',value:'1',index:0,radioSelect:jest.fn()}));
+wrapper.instance().onToggle();
+expect(wrapper.instance().props.radioSelect).toHaveBeenCalled();
+});
+it('onToggle should callback to radioSelect func with value',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_TopUpRadioButton2.default,{label:'First',value:'1',index:0,radioSelect:jest.fn()}));
+wrapper.instance().onToggle();
+var props=wrapper.instance().props;
+expect(wrapper.instance().props.radioSelect).toHaveBeenCalled();
+expect(props.radioSelect).toHaveBeenLastCalledWith(props.value);
+});
+});

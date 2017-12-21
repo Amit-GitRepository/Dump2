@@ -1,0 +1,42 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1c8t25zl4x=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/CircularProgress/CircularProgress.component.js',hash='bcf5a120c5ccf519095af72c6534e042d623b1ae',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/CircularProgress/CircularProgress.component.js',statementMap:{'0':{start:{line:8,column:89},end:{line:8,column:99}},'1':{start:{line:9,column:4},end:{line:20,column:6}},'2':{start:{line:23,column:0},end:{line:31,column:2}},'3':{start:{line:32,column:0},end:{line:41,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:7,column:2},end:{line:7,column:3}},loc:{start:{line:7,column:12},end:{line:21,column:3}},line:7}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0},f:{'0':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _reactNativeCircularProgress=require('react-native-circular-progress');
+var _constants=require('../../../themes/constants.styles');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+CircularProgress=function(_Component){_inherits(CircularProgress,_Component);function CircularProgress(){_classCallCheck(this,CircularProgress);return _possibleConstructorReturn(this,(CircularProgress.__proto__||Object.getPrototypeOf(CircularProgress)).apply(this,arguments));}_createClass(CircularProgress,[{key:'render',value:function render()
+{cov_1c8t25zl4x.f[0]++;var _ref=(cov_1c8t25zl4x.s[0]++,
+this.props),size=_ref.size,width=_ref.width,fill=_ref.fill,prefill=_ref.prefill,tintColor=_ref.tintColor,backgroundColor=_ref.backgroundColor,rotation=_ref.rotation,children=_ref.children;cov_1c8t25zl4x.s[1]++;
+return(
+_react2.default.createElement(_reactNativeCircularProgress.AnimatedCircularProgress,{
+size:size,
+width:width,
+fill:fill,
+prefill:prefill,
+tintColor:tintColor,
+backgroundColor:backgroundColor,
+rotation:rotation},
+children));
+
+
+}}]);return CircularProgress;}(_react.Component);cov_1c8t25zl4x.s[2]++;
+
+CircularProgress.defaultProps={
+size:130,
+width:5,
+fill:0,
+prefill:0,
+tintColor:_constants.colors.PRIMARY_ACTIONABLE,
+backgroundColor:_constants.colors.PRIMARY_BG_SEPARATOR,
+rotation:90};cov_1c8t25zl4x.s[3]++;
+
+CircularProgress.propTypes={
+size:_propTypes2.default.number,
+width:_propTypes2.default.number,
+fill:_propTypes2.default.number,
+prefill:_propTypes2.default.number,
+tintColor:_propTypes2.default.string,
+backgroundColor:_propTypes2.default.string,
+rotation:_propTypes2.default.number,
+children:_propTypes2.default.node};exports.default=
+
+CircularProgress;

@@ -1,0 +1,88 @@
+var _api=require('../api/api.saga');var _api2=_interopRequireDefault(_api);
+var _billUsage=require('../billUsage.saga');var _billUsage2=_interopRequireDefault(_billUsage);
+var _reduxSagaTesting=require('redux-saga-testing');var _reduxSagaTesting2=_interopRequireDefault(_reduxSagaTesting);
+var _apiHelper=require('../api/apiHelper');
+var _effects=require('redux-saga/effects');
+var _index=require('../../actions/index.actions');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('billUsageSaga: Testing the root Saga',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_billUsage2.default)());
+it('Should take the every get Bill usage product action and call fetchProductList saga',function(result){
+expect(result).toEqual((0,_effects.takeEvery)(_index.GET_BILL_USAGE_PRODUCT_LIST,_billUsage.fetchProductList));
+});
+it('Should take the every GET_BILL_USAGE_PRODUCT_BILL_DETAIL actions and call fetch curret usage saga',function(result){
+expect(result).toEqual((0,_effects.takeEvery)(_index.GET_BILL_USAGE_PREPAID_PRODUCT_DETAIL,_billUsage.fetchPrepaidProductDetail));
+});
+it('Should take the every GET_BILL_USAGE_PRODUCT_BILL_DETAIL actions and call fetch curret usage saga',function(result){
+expect(result).toEqual((0,_effects.takeEvery)(_index.GET_BILL_USAGE_PRODUCT_BILL_DETAIL,_billUsage.fetchProductBillDetail));
+});
+it('Should take the every TOGGLE_BILL_USAGE_PRODUCT_COLLAPSE_STATUS actions and call fetch curret usage saga',function(result){
+expect(result).toEqual((0,_effects.takeEvery)(_index.TOGGLE_BILL_USAGE_PRODUCT_COLLAPSE_STATUS,_billUsage.toggleProductCollapseStatus));
+});
+
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});
+
+describe('billUsageSaga: fetchProductList saga',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_billUsage.fetchProductList)());
+it('Should select msisdn',function(result){
+expect(result).toEqual((0,_effects.select)(_billUsage.msisdnSelector));
+return 123456;
+});
+it('Should call api billUsageProductList',function(result){
+expect(result).toEqual((0,_effects.call)(_api2.default,(0,_apiHelper.billUsageProductList)(123456)));
+return{
+body:{test:1}};
+
+});
+it('Should dispatch action to setBillUsageProductList',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.setBillUsageProductList)({test:1})));
+});
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});
+
+describe('billUsageSaga: fetchProductDetail saga',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_billUsage.fetchProductDetail)({payload:{subscriberId:111111,productType:'ccbsList'}}));
+it('Should select msisdn',function(result){
+expect(result).toEqual((0,_effects.select)(_billUsage.msisdnSelector));
+return 123456;
+});
+it('Should call api billUsageProductDetail',function(result){
+expect(result).toEqual((0,_effects.call)(_api2.default,(0,_apiHelper.billUsageProductDetail)(123456,111111)));
+return{
+body:{test:1}};
+
+});
+it('Should dispatch action to setBillUsageProductDetail',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.setBillUsageProductDetail)(
+{productType:'ccbsList',subscriberId:111111,data:{test:1}})));
+});
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});
+
+describe('billUsageSaga: fetchPrepaidProductDetail saga',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_billUsage.fetchPrepaidProductDetail)({payload:{subscriberId:111111,productType:'prepayList'}}));
+it('Should select msisdn',function(result){
+expect(result).toEqual((0,_effects.select)(_billUsage.msisdnSelector));
+return 123456;
+});
+it('Should call api billUsagePrepaidDetail',function(result){
+expect(result).toEqual((0,_effects.call)(_api2.default,(0,_apiHelper.billUsagePrepaidDetail)(123456,111111)));
+return{
+body:{test:1}};
+
+});
+it('Should dispatch action to setBillUsageProductDetail',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.setBillUsageProductDetail)(
+{productType:'prepayList',subscriberId:111111,data:{test:1}})));
+});
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});

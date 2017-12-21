@@ -1,0 +1,28 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_q6iec3rtv=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/utils/deeplink.util.js',hash='be0378cf8eb96b3bed8a03f051c17b516b6bcc91',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/utils/deeplink.util.js',statementMap:{'0':{start:{line:3,column:30},end:{line:3,column:43}},'1':{start:{line:5,column:27},end:{line:5,column:70}},'2':{start:{line:11,column:4},end:{line:16,column:5}},'3':{start:{line:12,column:6},end:{line:15,column:8}},'4':{start:{line:14,column:18},end:{line:14,column:33}},'5':{start:{line:20,column:4},end:{line:22,column:5}},'6':{start:{line:21,column:6},end:{line:21,column:33}},'7':{start:{line:26,column:17},end:{line:26,column:31}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:10,column:2},end:{line:10,column:3}},loc:{start:{line:10,column:26},end:{line:17,column:3}},line:10},'1':{name:'(anonymous_1)',decl:{start:{line:14,column:8},end:{line:14,column:9}},loc:{start:{line:14,column:18},end:{line:14,column:33}},line:14},'2':{name:'(anonymous_2)',decl:{start:{line:19,column:2},end:{line:19,column:3}},loc:{start:{line:19,column:20},end:{line:23,column:3}},line:19}},branchMap:{'0':{loc:{start:{line:11,column:4},end:{line:16,column:5}},type:'if',locations:[{start:{line:11,column:4},end:{line:16,column:5}},{start:{line:11,column:4},end:{line:16,column:5}}],line:11},'1':{loc:{start:{line:20,column:4},end:{line:22,column:5}},type:'if',locations:[{start:{line:20,column:4},end:{line:22,column:5}},{start:{line:20,column:4},end:{line:22,column:5}}],line:20}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0},f:{'0':0,'1':0,'2':0},b:{'0':[0,0],'1':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _reactNative=require('react-native');function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}var _ref=(cov_q6iec3rtv.s[0]++,_reactNative.NativeModules),
+
+FirebaseDynamicLink=_ref.FirebaseDynamicLink;
+
+var dynamicLinkEmitter=(cov_q6iec3rtv.s[1]++,new _reactNative.NativeEventEmitter(FirebaseDynamicLink));var
+
+DeepLink=function(){function DeepLink(){_classCallCheck(this,DeepLink);}_createClass(DeepLink,[{key:'addListener',value:function addListener(
+
+
+listenser){cov_q6iec3rtv.f[0]++;cov_q6iec3rtv.s[2]++;
+if(listenser){cov_q6iec3rtv.b[0][0]++;cov_q6iec3rtv.s[3]++;
+this.subscription=dynamicLinkEmitter.addListener(
+'onDeepLinkReceived',
+function(link){cov_q6iec3rtv.f[1]++;cov_q6iec3rtv.s[4]++;return listenser(link);});
+
+}else{cov_q6iec3rtv.b[0][1]++;}
+}},{key:'removeListener',value:function removeListener()
+
+{cov_q6iec3rtv.f[2]++;cov_q6iec3rtv.s[5]++;
+if(this.subscription){cov_q6iec3rtv.b[1][0]++;cov_q6iec3rtv.s[6]++;
+this.subscription.remove();
+}else{cov_q6iec3rtv.b[1][1]++;}
+}}]);return DeepLink;}();
+
+
+var deepLink=(cov_q6iec3rtv.s[7]++,new DeepLink());exports.default=
+
+deepLink;

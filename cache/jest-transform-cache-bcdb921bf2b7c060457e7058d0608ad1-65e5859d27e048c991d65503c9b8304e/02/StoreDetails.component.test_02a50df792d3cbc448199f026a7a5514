@@ -1,0 +1,30 @@
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);
+var _StoreDetails=require('../StoreDetails.component');var _StoreDetails2=_interopRequireDefault(_StoreDetails);
+var _enzyme=require('enzyme');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+describe('StoreDetails component',function(){
+it('StoreDetails: renders correctly',function(){
+var tree=_reactTestRenderer2.default.create(_react2.default.createElement(_StoreDetails2.default,null)).toJSON();
+expect(tree).toMatchSnapshot();
+});
+
+it('formatContact: returns the contact number in correct format for 9 digit contact number',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_StoreDetails2.default,null));
+expect(wrapper.instance().formatContact('026584088')).toEqual('02-658-4088');
+});
+
+it('formatContact: returns the contact number in correct format for 10 digit contact number',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_StoreDetails2.default,null));
+expect(wrapper.instance().formatContact('0916967185')).toEqual('091-696-7185');
+});
+
+it('formatContact: returns null if null is passed',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_StoreDetails2.default,null));
+expect(wrapper.instance().formatContact(null)).toEqual(null);
+});
+
+});

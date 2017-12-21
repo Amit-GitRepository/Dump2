@@ -1,0 +1,41 @@
+var _List=require('../List.component');var _List2=_interopRequireDefault(_List);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);
+var _TouchableComponent=require('../../Touchable/Touchable.component.js');var _TouchableComponent2=_interopRequireDefault(_TouchableComponent);
+var _enzyme=require('enzyme');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+describe('List component',function(){
+it('should render correctly',function(){
+var progressBarTree=_reactTestRenderer2.default.create(_react2.default.createElement(_List2.default,null)).toJSON();
+expect(progressBarTree).toMatchSnapshot();
+});
+it('should render listItem correctly',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_List2.default,null));
+var inst=wrapper.instance();
+var ListItem=inst._listItem({item:{heading:'',subheading:''}});
+var progressBarTree=_reactTestRenderer2.default.create(ListItem).toJSON();
+expect(progressBarTree).toMatchSnapshot();
+});
+it('should be wrapped around touchable if on press is passed',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_List2.default,{onPress:_noop2.default}));
+var inst=wrapper.instance();
+var ListItem=(0,_enzyme.shallow)(inst._listItem({item:{heading:'',subheading:''}}));
+expect(ListItem.instance()).toBeInstanceOf(_TouchableComponent2.default);
+});
+it('should be wrapped around view if onpress is not passed',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_List2.default,null));
+var inst=wrapper.instance();
+var ListItem=(0,_enzyme.shallow)(inst._listItem({item:{heading:'',subheading:''}}));
+expect(ListItem.instance()).toBeInstanceOf(_reactNative.View);
+});
+it('_keyExtractor: should return the index',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_List2.default,null));
+var _keyExtractor=wrapper.instance()._keyExtractor;
+expect(_keyExtractor(null,1)).toBe(1);
+});
+});

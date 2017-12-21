@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/components/BillUsage/BillUsage/TopLevelCards/BillSummaryWrapper/BillSummaryWrapper.component.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../../../index.html">All files</a> / <a href="index.html">iservice-app/app/components/BillUsage/BillUsage/TopLevelCards/BillSummaryWrapper</a> BillSummaryWrapper.component.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">57.89% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>55/95</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">17.95% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>7/39</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">30% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>9/30</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">67.5% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>54/80</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">40x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">40x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import Proptypes from 'prop-types';
+import React, {Component} from 'react';
+import styles from './BillSummaryWrapper.style';
+import sumBy from  'lodash/sumBy';
+import {AmountText, Button, ISText, WrapperCard} from '../../../../Shared';
+import {flatten, isEmpty, map, noop, pick, result, toArray} from 'lodash';
+import {phoneNumberFormatter} from '../../../../../utils/common.util';
+import {PRODUCT_TABS} from '../../../../../config/billUsage.config';
+import {TConvergenceCard, TMPostpaidProductCard, TOnlineProductCard, TVisionProductCard} from '../../ProductCards';
+import {translate} from '../../../../../language/i18n/helper';
+import {View} from 'react-native';
+&nbsp;
+class BillSummaryWrapper extends Component {
+  calculateTotalAmount = () =&gt; {
+    const {conv, tmhPostpaid, tol, tvs} = this.props.productList;
+    const condition = (eachProduct) =&gt; eachProduct.isChecked ? eachProduct.checkedBillSum : 0;
+    return sumBy(tmhPostpaid, condition) + sumBy(tol, condition) + sumBy(tvs, condition) + sumBy(conv, condition);
+  };
+  navigateToPayments = () =&gt; {
+    const {productList, goToScreen, setPaymentItems, billDetail} = this.props;
+    const productsToPay = [];
+    Object.entries(productList).forEach(([productType, products]) =&gt; {
+      const payload = products.reduce((aggregate, product) =&gt; {
+        const {accountId, bundle, isChecked, checkedBillSum} = product;
+        if (isChecked &amp;&amp; checkedBillSum &gt; 0) {
+          const invoiceBcBanId = result(billDetail.conv, `${bundle}[0].invoiceBcBanId`);
+          const accountNumber = productType === 'conv' ? <span class="branch-0 cbranch-no" title="branch not covered" >result(product, 'products[0].accountId') </span>: accountId;
+          aggregate.push({service: productType, amount: checkedBillSum, accountNumber: accountNumber, invoiceBcBanId});
+        }
+        return aggregate;
+      }, []);
+      productsToPay.push(...payload);
+    });
+    setPaymentItems(productsToPay);
+    goToScreen('Payment');
+  };
+&nbsp;
+  render () {
+    const {productList, goToScreen, billDetail, productDetail, onBillDetailsClick, getProductBillDetails, toggleBillDetailCheck, toggleProductCheck, toggleProductCollapse, getProductCurrentUsage, defaultSelectedTab, validateOTPStatus, fromPreLoginScreen, navigateToExtraPackage} = this.props;
+    const {tmhPostpaid, tol, tvs, conv} = productList;
+    const trueConvergence = map(conv, <span class="fstat-no" title="function not covered" >(c</span>onvergenceProduct, index) =&gt; {
+      const {bundle, products} = <span class="cstat-no" title="statement not covered" >convergenceProduct;</span>
+      const accountId = <span class="cstat-no" title="statement not covered" >convergenceProduct.products.map(<span class="fstat-no" title="function not covered" >(p</span>roduct) =&gt; <span class="cstat-no" title="statement not covered" >product.accountId)</span>;</span>
+      let trueConvergenceDueBills = <span class="cstat-no" title="statement not covered" >pick(billDetail.conv, bundle);</span>
+<span class="cstat-no" title="statement not covered" >      if (!isEmpty(trueConvergenceDueBills)) {</span>
+<span class="cstat-no" title="statement not covered" >        trueConvergenceDueBills = flatten(toArray(trueConvergenceDueBills));</span>
+      } else {
+<span class="cstat-no" title="statement not covered" >        trueConvergenceDueBills = null;</span>
+      }
+      const trueConvergenceProductDetail =  <span class="cstat-no" title="statement not covered" >result(productDetail, 'conv', {});</span>
+      const onTrueConvergenceCheckToggle = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >toggleProductCheck('conv', {bundle});</span></span>
+      const onTrueConvergenceCollapseToggle = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(p</span>roductType, subscriberId, productId, productTypeAsInPayload, subscriptionType, accountId) =&gt; <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >toggleProductCollapse(productType, subscriberId, convergenceProduct.bundle, productId, productTypeAsInPayload, subscriptionType, accountId, defaultSelectedTab);</span></span></span>
+      const onTrueConvergenceGetDueBills = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getProductBillDetails('conv', {accountId, bundle});</span></span>
+<span class="cstat-no" title="statement not covered" >      return (</span>
+        &lt;TConvergenceCard amount={Number(convergenceProduct.balance)} status={convergenceProduct.state} plan={convergenceProduct.bundle} key={index} products={products} goToScreen={goToScreen} dueBills={trueConvergenceDueBills} productDetail={trueConvergenceProductDetail} onCollapseToggle={onTrueConvergenceCollapseToggle} onChecked={onTrueConvergenceCheckToggle} isChecked={convergenceProduct.isChecked} getDueBills={onTrueConvergenceGetDueBills} toggleBillDetailCheck ={toggleBillDetailCheck('conv', {bundle})} onBillDetailsClick={onBillDetailsClick} defaultSelectedTab={defaultSelectedTab}/&gt;
+      );
+    });
+&nbsp;
+    const trueMoveH = map(tmhPostpaid, (postpaidInfo, index) =&gt; {
+      const {accountId, subscriberId, productId, productType, subscriptionType} = postpaidInfo;
+      const phoneNumber = phoneNumberFormatter(productId);
+      const trueMoveHProductDetail =  result(productDetail, `tmhPostpaid.${subscriberId}`, {});
+      const trueMoveHProductDueBills = result(billDetail, `tmhPostpaid.${accountId}`, null);
+      const onTrueMoveHCheckToggle = <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >toggleProductCheck('tmhPostpaid', {subscriberId});</span>
+      const onTrueMoveHGetDueBills = <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getProductBillDetails('tmhPostpaid', {accountId});</span>
+      const onTrueMoveHNavigatetoExtraPackage = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        if (fromPreLoginScreen &amp;&amp; !validateOTPStatus &amp;&amp; isEmpty(trueMoveHProductDetail)) {</span>
+<span class="cstat-no" title="statement not covered" >          this.props.viewCurrentUsage({navigateToExtraPackage: true});</span>
+        } else {
+<span class="cstat-no" title="statement not covered" >          isEmpty(trueMoveHProductDetail) ? onTrueMoveHCurrentUsage() : noop;</span>
+<span class="cstat-no" title="statement not covered" >          goToScreen('TMPackageDetailsExtra', {title: phoneNumber, productType: 'tmhPostpaid', subscriberId}); </span>// TODO: Move navigation to saga
+        }
+      };
+      const onTrueMoveHCurrentUsage = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        (fromPreLoginScreen &amp;&amp; !validateOTPStatus) ? this.props.viewCurrentUsage({navigateToExtraPackage: false}) :</span>
+          getProductCurrentUsage('tmhPostpaid', subscriberId, null, productId, productType, subscriptionType);
+      };
+      const onTrueMoveHCollapseToggle = <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >toggleProductCollapse('tmhPostpaid', subscriberId, null, productId, productType, subscriptionType, accountId, defaultSelectedTab);</span>
+      return (
+        &lt;TMPostpaidProductCard phone={phoneNumber} amount={Number(postpaidInfo.balance)} statusCode={postpaidInfo.statusCode} key={index} goToScreen={goToScreen} dueBills={trueMoveHProductDueBills} productDetail={trueMoveHProductDetail} isCollapsed={postpaidInfo.isCollapsed} onCollapseToggle={onTrueMoveHCollapseToggle} onChecked={onTrueMoveHCheckToggle} isChecked={postpaidInfo.isChecked} getDueBills={onTrueMoveHGetDueBills} toggleBillDetailCheck ={toggleBillDetailCheck('tmhPostpaid', {accountId})} onTrueMoveHNavigatetoExtraPackage={onTrueMoveHNavigatetoExtraPackage} onBillDetailsClick={onBillDetailsClick} defaultSelectedTab={defaultSelectedTab} getCurrentUsage={onTrueMoveHCurrentUsage} validateOTPStatus={validateOTPStatus} navigateToExtraPackage={navigateToExtraPackage}/&gt;
+      );
+    });
+&nbsp;
+    const trueOnline = map(tol, (trueOnlineInfo, index) =&gt; {
+      const {accountId, subscriberId, productId, productType, subscriptionType} = trueOnlineInfo;
+      const trueOnlineProductDetail =  result(productDetail, `tol.${subscriberId}`, {});
+      const trueOnlineProductDueBills = result(billDetail, `tol.${accountId}`, null);
+      const onTrueOnlineCheckToggle = <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >toggleProductCheck('tol', {subscriberId});</span>
+      const onTrueOnlineCollapseToggle = <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >toggleProductCollapse('tol', subscriberId, null, productId, productType, subscriptionType, accountId, defaultSelectedTab);</span>
+      const onTrueOnlineGetDueBills = <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getProductBillDetails('tol', {accountId});</span>
+      const onTrueOnlineNavigatetoExtraPackage = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        if (fromPreLoginScreen &amp;&amp; !validateOTPStatus &amp;&amp; isEmpty(trueOnlineProductDetail)) {</span>
+<span class="cstat-no" title="statement not covered" >          this.props.viewCurrentUsage({navigateToExtraPackage: true});</span>
+        } else {
+<span class="cstat-no" title="statement not covered" >          onTrueOnlineCurrentUsage();</span>
+<span class="cstat-no" title="statement not covered" >          goToScreen('TOLPackageDetail', {title: productId, productType: 'tol', subscriberId});</span>
+        }
+      };
+      const onTrueOnlineCurrentUsage = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        (fromPreLoginScreen &amp;&amp; !validateOTPStatus) ? this.props.viewCurrentUsage({navigateToExtraPackage: false}) :</span>
+          getProductCurrentUsage('tol', subscriberId, null, productId, productType, subscriptionType);
+      };
+      return (
+        &lt;TOnlineProductCard key={index} plan={trueOnlineInfo.productId} productDetail={trueOnlineProductDetail} dueBills={trueOnlineProductDueBills} amount={Number(trueOnlineInfo.balance)} statusCode={trueOnlineInfo.statusCode} goToScreen={goToScreen}
+          isCollapsed={trueOnlineInfo.isCollapsed} onCollapseToggle={onTrueOnlineCollapseToggle} onChecked={onTrueOnlineCheckToggle} isChecked={trueOnlineInfo.isChecked} getDueBills={onTrueOnlineGetDueBills} onBillDetailsClick={onBillDetailsClick}
+          toggleBillDetailCheck ={toggleBillDetailCheck('tol', {accountId})} defaultSelectedTab={defaultSelectedTab} getCurrentUsage={onTrueOnlineCurrentUsage} onTrueOnlineNavigatetoExtraPackage={onTrueOnlineNavigatetoExtraPackage}
+        /&gt;
+      );
+    });
+&nbsp;
+    const trueVision = map(tvs, (trueVisionInfo, index) =&gt; {
+      const {accountId, subscriberId, productId, productType, subscriptionType} = trueVisionInfo;
+      const trueVisionProductDetail =  result(productDetail, `tvs.${subscriberId}`, {});
+      const trueVisionProductDueBills = result(billDetail, `tvs.${accountId}`, null);
+      const onTrueVisionCheckToggle = <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >toggleProductCheck('tvs', {subscriberId});</span>
+      const onTrueVisionCollapseToggle = <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >toggleProductCollapse('tvs', subscriberId, null, productId, productType, subscriptionType, accountId, defaultSelectedTab);</span>
+      const onTrueVisionGetDueBills = <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >getProductBillDetails('tvs', {accountId});</span>
+      const onTrueVisionNavigatetoPackageDetail = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        if (fromPreLoginScreen &amp;&amp; !validateOTPStatus &amp;&amp; isEmpty(trueVisionProductDetail)) {</span>
+<span class="cstat-no" title="statement not covered" >          this.props.viewCurrentUsage({navigateToExtraPackage: true});</span>
+        } else {
+<span class="cstat-no" title="statement not covered" >          onTrueVisionCurrentUsage();</span>
+<span class="cstat-no" title="statement not covered" >          goToScreen('TVPackageDetail', {productId: productId, productType: 'tvs', subscriberId});</span>
+        }
+      };
+      const onTrueVisionCurrentUsage = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >        (fromPreLoginScreen &amp;&amp; !validateOTPStatus) ? this.props.viewCurrentUsage({navigateToExtraPackage: false}) :</span>
+          getProductCurrentUsage('tvs', subscriberId, null, productId, productType, subscriptionType);
+      };
+      return (
+        &lt;TVisionProductCard key={index} plan={trueVisionInfo.productId} productDetail={trueVisionProductDetail} dueBills={trueVisionProductDueBills} amount={Number(trueVisionInfo.balance)} statusCode={trueVisionInfo.statusCode} goToScreen={goToScreen} isCollapsed={trueVisionInfo.isCollapsed} onCollapseToggle={onTrueVisionCollapseToggle} onChecked={onTrueVisionCheckToggle} isChecked={trueVisionInfo.isChecked} getDueBills={onTrueVisionGetDueBills} toggleBillDetailCheck ={toggleBillDetailCheck('tvs', {accountId})} onBillDetailsClick={onBillDetailsClick} defaultSelectedTab={defaultSelectedTab} getCurrentUsage={onTrueVisionCurrentUsage} onTrueVisionNavigatetoPackageDetail={onTrueVisionNavigatetoPackageDetail}
+        /&gt;
+      );
+    });
+&nbsp;
+    const totalAmount = this.calculateTotalAmount();
+    return (
+      &lt;WrapperCard header={translate('BILLS_USAGE_BILLING_SUMMARY')} style={styles.container} contentContainerStyles={styles.contentContainer}&gt;
+        &lt;View style={styles.totalBillSection}&gt;
+          &lt;View&gt;
+            &lt;ISText style={styles.postpaidTitleText}&gt;{translate('BILLS_USAGE_TOTAL')}&lt;/ISText&gt;
+            &lt;AmountText style={styles.totalAmount} value={totalAmount} isTotalText/&gt;
+          &lt;/View&gt;
+          &lt;Button text={translate('BILLS_USAGE_PAY')} disabled={!totalAmount} textStyle={styles.buttonText} style={styles.buttonStyle} onPress={this.navigateToPayments}/&gt;
+        &lt;/View&gt;
+        {trueConvergence}
+        {trueMoveH}
+        {trueOnline}
+        {trueVision}
+      &lt;/WrapperCard&gt;);
+  }
+}
+&nbsp;
+BillSummaryWrapper.defaultProps = {
+  goToScreen: noop,
+  productList: {},
+  productDetail: {},
+  billDetail: {},
+  toggleProductCheck: noop,
+  toggleProductCollapse: noop,
+  getProductBillDetails: noop,
+  toggleBillDetailCheck: noop,
+  onBillDetailsClick: noop,
+  setPaymentItems: noop,
+  getProductCurrentUsage: noop,
+  defaultSelectedTab: PRODUCT_TABS.CURRENT_USAGE,
+  validateOTPStatus: false,
+  fromPreLoginScreen: false,
+  navigateToExtraPackage: false
+};
+&nbsp;
+BillSummaryWrapper.propTypes = {
+  goToScreen: Proptypes.func,
+  productList: Proptypes.object,
+  productDetail: Proptypes.object,
+  billDetail: Proptypes.object,
+  toggleProductCheck: Proptypes.func,
+  toggleProductCollapse: Proptypes.func,
+  getProductBillDetails: Proptypes.func,
+  toggleBillDetailCheck: Proptypes.func,
+  onBillDetailsClick: Proptypes.func,
+  setPaymentItems: Proptypes.func,
+  getProductCurrentUsage: Proptypes.func,
+  defaultSelectedTab: Proptypes.number,
+  viewCurrentUsage: Proptypes.func,
+  validateOTPStatus: Proptypes.bool,
+  fromPreLoginScreen: Proptypes.bool,
+  navigateToExtraPackage: Proptypes.bool
+};
+&nbsp;
+export default BillSummaryWrapper;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../../../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "TAB__MAPANDLIST_VIEW": "trueShopMapView_tab_mapAndListView",
+  "DROPDOWN__SELECTAREA": "trueShopMapView_dropdown_selectArea",
+  "DROPDOWN__SELECTSERVICE": "trueShopMapView_dropdown_selectService",
+  "LABEL__INFOBAR_COVERAGE": "trueShopMapView_labelInfobar_coverage",
+  "ICON__SEARCHSTORE": "trueShopMapView_icon_searchStore",
+  "ICON__GOTOCURRENTLOCATION": "trueShopMapView_icon_goToCurrentLocation"
+}

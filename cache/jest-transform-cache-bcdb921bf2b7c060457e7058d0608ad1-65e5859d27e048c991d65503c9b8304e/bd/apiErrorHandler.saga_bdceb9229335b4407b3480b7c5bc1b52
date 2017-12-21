@@ -1,0 +1,28 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_2r6w3sair8=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/sagas/api/apiErrorHandler.saga.js',hash='4bb2fd887357af5aeaae088d06469633d6632cfe',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/sagas/api/apiErrorHandler.saga.js',statementMap:{'0':{start:{line:8,column:26},end:{line:8,column:34}},'1':{start:{line:9,column:2},end:{line:11,column:3}},'2':{start:{line:10,column:4},end:{line:10,column:45}},'3':{start:{line:12,column:2},end:{line:18,column:3}},'4':{start:{line:15,column:4},end:{line:15,column:36}},'5':{start:{line:16,column:4},end:{line:16,column:53}},'6':{start:{line:19,column:2},end:{line:19,column:36}},'7':{start:{line:23,column:23},end:{line:23,column:32}},'8':{start:{line:24,column:25},end:{line:24,column:67}},'9':{start:{line:25,column:2},end:{line:27,column:3}},'10':{start:{line:26,column:4},end:{line:26,column:53}},'11':{start:{line:28,column:2},end:{line:28,column:41}}},fnMap:{'0':{name:'apiErrorHandler',decl:{start:{line:7,column:18},end:{line:7,column:33}},loc:{start:{line:7,column:56},end:{line:20,column:1}},line:7},'1':{name:'retryApi',decl:{start:{line:22,column:18},end:{line:22,column:26}},loc:{start:{line:22,column:54},end:{line:29,column:1}},line:22}},branchMap:{'0':{loc:{start:{line:9,column:2},end:{line:11,column:3}},type:'if',locations:[{start:{line:9,column:2},end:{line:11,column:3}},{start:{line:9,column:2},end:{line:11,column:3}}],line:9},'1':{loc:{start:{line:12,column:2},end:{line:18,column:3}},type:'switch',locations:[{start:{line:14,column:2},end:{line:17,column:3}}],line:12},'2':{loc:{start:{line:25,column:2},end:{line:27,column:3}},type:'if',locations:[{start:{line:25,column:2},end:{line:27,column:3}},{start:{line:25,column:2},end:{line:27,column:3}}],line:25}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0},f:{'0':0,'1':0},b:{'0':[0,0],'1':[0],'2':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};exports.
+
+
+
+
+
+apiErrorHandler=apiErrorHandler;exports.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+retryApi=retryApi;var _api=require('./api.saga');var _api2=_interopRequireDefault(_api);var _reactNativeConfig=require('react-native-config');var _reactNativeConfig2=_interopRequireDefault(_reactNativeConfig);var _effects=require('redux-saga/effects');var _common=require('../../../utils/common.util');var _auth=require('../auth.saga');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var _marked=regeneratorRuntime.mark(apiErrorHandler),_marked2=regeneratorRuntime.mark(retryApi);function apiErrorHandler(response,apiConfig){var _ref,error,status;return regeneratorRuntime.wrap(function apiErrorHandler$(_context){while(1){switch(_context.prev=_context.next){case 0:cov_2r6w3sair8.f[0]++;_ref=(cov_2r6w3sair8.s[0]++,response),error=_ref.error,status=_ref.status;cov_2r6w3sair8.s[1]++;if(apiConfig.intercept){_context.next=11;break;}cov_2r6w3sair8.b[0][0]++;cov_2r6w3sair8.s[2]++;_context.next=8;return(0,_effects.call)(_common.throwException,error);case 8:return _context.abrupt('return',_context.sent);case 11:cov_2r6w3sair8.b[0][1]++;case 12:cov_2r6w3sair8.s[3]++;_context.t0=status;_context.next=_context.t0===401?16:24;break;case 16:cov_2r6w3sair8.b[1][0]++;cov_2r6w3sair8.s[4]++;_context.next=20;return(0,_effects.call)(_auth.verifyExistingLogin);case 20:cov_2r6w3sair8.s[5]++;_context.next=23;return(0,_effects.call)(retryApi,apiConfig,response);case 23:return _context.abrupt('return',_context.sent);case 24:cov_2r6w3sair8.s[6]++;_context.next=27;return(0,_effects.call)(_common.throwException,error);case 27:case'end':return _context.stop();}}},_marked,this);}function retryApi(apiConfig,errorResponse){var _ref2,retryCount,apiConfigToHit;return regeneratorRuntime.wrap(function retryApi$(_context2){while(1){switch(_context2.prev=_context2.next){case 0:cov_2r6w3sair8.f[1]++;_ref2=(cov_2r6w3sair8.s[7]++,
+apiConfig),retryCount=_ref2.retryCount;
+apiConfigToHit=(cov_2r6w3sair8.s[8]++,_extends({},apiConfig,{retryCount:retryCount+1}));cov_2r6w3sair8.s[9]++;if(!(
+apiConfig.retryCount>=_reactNativeConfig2.default.API_MAX_RETRIES)){_context2.next=12;break;}cov_2r6w3sair8.b[2][0]++;cov_2r6w3sair8.s[10]++;_context2.next=9;return(
+(0,_effects.call)(_common.throwException,errorResponse));case 9:return _context2.abrupt('return',_context2.sent);case 12:cov_2r6w3sair8.b[2][1]++;case 13:cov_2r6w3sair8.s[11]++;_context2.next=16;return(
+
+(0,_effects.call)(_api2.default,apiConfigToHit));case 16:return _context2.abrupt('return',_context2.sent);case 17:case'end':return _context2.stop();}}},_marked2,this);}

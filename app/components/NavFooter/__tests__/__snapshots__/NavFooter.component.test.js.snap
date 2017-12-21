@@ -1,0 +1,285 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavFooter component renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "transparent",
+      "bottom": 0,
+      "height": 65,
+      "left": 0,
+      "position": "absolute",
+      "right": 0,
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "flexDirection": "row",
+        "height": 60,
+        "marginTop": 5,
+        "shadowColor": "#303C46",
+        "shadowOffset": Object {
+          "height": -2,
+        },
+        "shadowOpacity": 0.2,
+        "shadowRadius": 2,
+        "zIndex": 2,
+      }
+    }
+  >
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      collapsable={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      nativeID={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "opacity": 1,
+        }
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <View
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "padding": 4,
+              },
+              Object {
+                "borderColor": "#E9E9EA",
+                "borderRightWidth": 2,
+              },
+            ]
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": "#303C46",
+                  "fontSize": 30,
+                },
+                undefined,
+                Object {
+                  "fontFamily": "iservice",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#303C46",
+                "fontFamily": "SukhumvitSet-Bold",
+                "fontSize": 14,
+              }
+            }
+          >
+            Bills & Usage
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      collapsable={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      nativeID={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "opacity": 1,
+        }
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <View
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "padding": 4,
+              },
+              Object {
+                "borderColor": "#E9E9EA",
+                "borderRightWidth": 2,
+              },
+            ]
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": "#303C46",
+                  "fontSize": 30,
+                },
+                undefined,
+                Object {
+                  "fontFamily": "iservice",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#303C46",
+                "fontFamily": "SukhumvitSet-Bold",
+                "fontSize": 14,
+              }
+            }
+          >
+            Buy Extra Package
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      collapsable={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      nativeID={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "flex": 1,
+          "opacity": 1,
+        }
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <View
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "padding": 4,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": "#303C46",
+                  "fontSize": 30,
+                },
+                undefined,
+                Object {
+                  "fontFamily": "iservice",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#303C46",
+                "fontFamily": "SukhumvitSet-Bold",
+                "fontSize": 14,
+              }
+            }
+          >
+            True Care
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

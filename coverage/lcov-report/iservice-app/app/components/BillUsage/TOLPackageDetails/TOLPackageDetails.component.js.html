@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/components/BillUsage/TOLPackageDetails/TOLPackageDetails.component.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../index.html">All files</a> / <a href="index.html">iservice-app/app/components/BillUsage/TOLPackageDetails</a> TOLPackageDetails.component.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>6/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>6/6</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">39x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">39x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import DetailCardRow from '../BillUsage/BillUsageShared/DetailCardRow.component';
+import HeaderWithCaret from '../BillUsage/BillUsageShared/HeaderWithCaret.component';
+import PackageDetailHeader from '../BillUsage/BillUsageShared/PackageDetailHeader/PackageDetailHeader.component';
+import PackageOverview from '../BillUsage/BillUsageShared/PackageOverview/PackageOverview.component';
+import Proptypes from 'prop-types';
+import React, {Component} from 'react';
+import result from 'lodash/result';
+import styles from './TOLPackageDetails.style';
+import {ICON_MAP} from '../../../config/billUsage.config';
+import {translate} from '../../../language/i18n/helper';
+import {WrapperCard} from '../../Shared';
+&nbsp;
+class TOLPackageDetails extends Component {
+  render () {
+    const {packageDetails, packageInfo, isConvergence} = this.props;
+    const {productId, uploadSpeed, downloadSpeed, unit, planOffer} = packageDetails;
+    const {description} = packageInfo;
+    return (
+      &lt;WrapperCard&gt;
+        &lt;HeaderWithCaret headerColor = {styles.headerColor} customIconStyle = {styles.iconStyle} style = {styles.headerStyle}&gt;
+          &lt;PackageDetailHeader isConvergence = {isConvergence} phoneNumber = {productId} name = {translate('BILLS_USAGE_TRUEONLINE')} /&gt;
+        &lt;/HeaderWithCaret&gt;
+        &lt;PackageOverview title = {description} subTitle = {planOffer}/&gt;
+        &lt;DetailCardRow value = {downloadSpeed} icon= {result(ICON_MAP, 'DOWNLOAD.titleIconPath', '')} title= {result(ICON_MAP, 'DOWNLOAD.titleText', '')} unit={unit}/&gt;
+        &lt;DetailCardRow value = {uploadSpeed} icon= {result(ICON_MAP, 'UPLOAD.titleIconPath', '')} title= {result(ICON_MAP, 'UPLOAD.titleText', '')} unit={unit}/&gt;
+        {/* {wifi &amp;&amp; &lt;DetailCardRow rowData = {wifi} type = 'wifi' /&gt;}
+        {wifiRouter &amp;&amp; &lt;DetailCardRow rowData = {wifiRouter} type = 'wifiRouter'/&gt;} */}
+      &lt;/WrapperCard&gt;
+    );
+  }
+}
+TOLPackageDetails.defaultProps = {
+  packageDetails: {},
+  packageInfo: {},
+  isConvergence: false
+};
+TOLPackageDetails.propTypes = {
+  packageDetails: Proptypes.object,
+  packageInfo: Proptypes.object,
+  isConvergence: Proptypes.bool
+};
+export default TOLPackageDetails;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../sorter.js"></script>
+</body>
+</html>

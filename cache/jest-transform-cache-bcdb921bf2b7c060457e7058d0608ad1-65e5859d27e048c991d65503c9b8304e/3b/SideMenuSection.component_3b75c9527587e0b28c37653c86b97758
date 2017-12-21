@@ -1,0 +1,42 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_xt7rdri7s=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/SideMenu/SideMenuSection.component.js',hash='662135555faae6eee31e07b16738f1ea144e012f',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/SideMenu/SideMenuSection.component.js',statementMap:{'0':{start:{line:14,column:79},end:{line:14,column:89}},'1':{start:{line:16,column:6},end:{line:23,column:13}},'2':{start:{line:20,column:12},end:{line:20,column:226}},'3':{start:{line:25,column:4},end:{line:25,column:23}},'4':{start:{line:29,column:0},end:{line:33,column:2}},'5':{start:{line:35,column:0},end:{line:40,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:13,column:2},end:{line:13,column:3}},loc:{start:{line:13,column:12},end:{line:26,column:3}},line:13},'1':{name:'(anonymous_1)',decl:{start:{line:19,column:54},end:{line:19,column:55}},loc:{start:{line:20,column:12},end:{line:20,column:226}},line:20}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0},f:{'0':0,'1':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _SideMenuItem=require('./SideMenuItem.component');var _SideMenuItem2=_interopRequireDefault(_SideMenuItem);
+var _SideMenuSection=require('./SideMenuSection.style');var _SideMenuSection2=_interopRequireDefault(_SideMenuSection);
+var _Shared=require('../Shared');
+var _helper=require('../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+SideMenuSection=function(_Component){_inherits(SideMenuSection,_Component);function SideMenuSection(){_classCallCheck(this,SideMenuSection);return _possibleConstructorReturn(this,(SideMenuSection.__proto__||Object.getPrototypeOf(SideMenuSection)).apply(this,arguments));}_createClass(SideMenuSection,[{key:'render',value:function render()
+
+{cov_xt7rdri7s.f[0]++;var _ref=(cov_xt7rdri7s.s[0]++,
+this.props),section=_ref.section,goToScreen=_ref.goToScreen,toggleSideMenuAccordion=_ref.toggleSideMenuAccordion,openAccordionIndex=_ref.openAccordionIndex;
+var sectionView=(cov_xt7rdri7s.s[1]++,
+_react2.default.createElement(_reactNative.View,null,
+_react2.default.createElement(_Shared.ISText,{style:_SideMenuSection2.default.sectionTitle,type:'BOLD'},(0,_helper.translate)(section.title)),
+
+(0,_result2.default)(this.props,'section.nodes',[]).map(function(item,index)
+{cov_xt7rdri7s.f[1]++;cov_xt7rdri7s.s[2]++;return _react2.default.createElement(_SideMenuItem2.default,_extends({key:index,index:index,lastIndex:index===section.nodes.length-1},item,{goToScreen:goToScreen,toggleSideMenuAccordion:toggleSideMenuAccordion,openAccordionIndex:openAccordionIndex}));})));cov_xt7rdri7s.s[3]++;
+
+
+
+
+return sectionView;
+}}]);return SideMenuSection;}(_react.Component);cov_xt7rdri7s.s[4]++;
+
+
+SideMenuSection.defaultProps={
+section:{},
+goToScreen:_noop2.default,
+toggleSideMenuAccordion:_noop2.default};cov_xt7rdri7s.s[5]++;
+
+
+SideMenuSection.propTypes={
+goToScreen:_propTypes2.default.func,
+section:_propTypes2.default.object,
+toggleSideMenuAccordion:_propTypes2.default.func,
+openAccordionIndex:_propTypes2.default.number};exports.default=
+
+
+SideMenuSection;

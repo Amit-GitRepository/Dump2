@@ -1,0 +1,42 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_127zu7qb28=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/TOLPackageDetails/TOLPackageDetails.component.js',hash='409cbf04e523f42ace6dccd5cbbcccc9f0252255',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/TOLPackageDetails/TOLPackageDetails.component.js',statementMap:{'0':{start:{line:15,column:57},end:{line:15,column:67}},'1':{start:{line:16,column:69},end:{line:16,column:83}},'2':{start:{line:17,column:26},end:{line:17,column:37}},'3':{start:{line:18,column:4},end:{line:29,column:6}},'4':{start:{line:32,column:0},end:{line:36,column:2}},'5':{start:{line:37,column:0},end:{line:41,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:14,column:2},end:{line:14,column:3}},loc:{start:{line:14,column:12},end:{line:30,column:3}},line:14}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0},f:{'0':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _DetailCardRow=require('../BillUsage/BillUsageShared/DetailCardRow.component');var _DetailCardRow2=_interopRequireDefault(_DetailCardRow);
+var _HeaderWithCaret=require('../BillUsage/BillUsageShared/HeaderWithCaret.component');var _HeaderWithCaret2=_interopRequireDefault(_HeaderWithCaret);
+var _PackageDetailHeader=require('../BillUsage/BillUsageShared/PackageDetailHeader/PackageDetailHeader.component');var _PackageDetailHeader2=_interopRequireDefault(_PackageDetailHeader);
+var _PackageOverview=require('../BillUsage/BillUsageShared/PackageOverview/PackageOverview.component');var _PackageOverview2=_interopRequireDefault(_PackageOverview);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _TOLPackageDetails=require('./TOLPackageDetails.style');var _TOLPackageDetails2=_interopRequireDefault(_TOLPackageDetails);
+var _billUsage=require('../../../config/billUsage.config');
+var _helper=require('../../../language/i18n/helper');
+var _Shared=require('../../Shared');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+TOLPackageDetails=function(_Component){_inherits(TOLPackageDetails,_Component);function TOLPackageDetails(){_classCallCheck(this,TOLPackageDetails);return _possibleConstructorReturn(this,(TOLPackageDetails.__proto__||Object.getPrototypeOf(TOLPackageDetails)).apply(this,arguments));}_createClass(TOLPackageDetails,[{key:'render',value:function render()
+{cov_127zu7qb28.f[0]++;var _ref=(cov_127zu7qb28.s[0]++,
+this.props),packageDetails=_ref.packageDetails,packageInfo=_ref.packageInfo,isConvergence=_ref.isConvergence;var _ref2=(cov_127zu7qb28.s[1]++,
+packageDetails),productId=_ref2.productId,uploadSpeed=_ref2.uploadSpeed,downloadSpeed=_ref2.downloadSpeed,unit=_ref2.unit,planOffer=_ref2.planOffer;var _ref3=(cov_127zu7qb28.s[2]++,
+packageInfo),description=_ref3.description;cov_127zu7qb28.s[3]++;
+return(
+_react2.default.createElement(_Shared.WrapperCard,null,
+_react2.default.createElement(_HeaderWithCaret2.default,{headerColor:_TOLPackageDetails2.default.headerColor,customIconStyle:_TOLPackageDetails2.default.iconStyle,style:_TOLPackageDetails2.default.headerStyle},
+_react2.default.createElement(_PackageDetailHeader2.default,{isConvergence:isConvergence,phoneNumber:productId,name:(0,_helper.translate)('BILLS_USAGE_TRUEONLINE')})),
+
+_react2.default.createElement(_PackageOverview2.default,{title:description,subTitle:planOffer}),
+_react2.default.createElement(_DetailCardRow2.default,{value:downloadSpeed,icon:(0,_result2.default)(_billUsage.ICON_MAP,'DOWNLOAD.titleIconPath',''),title:(0,_result2.default)(_billUsage.ICON_MAP,'DOWNLOAD.titleText',''),unit:unit}),
+_react2.default.createElement(_DetailCardRow2.default,{value:uploadSpeed,icon:(0,_result2.default)(_billUsage.ICON_MAP,'UPLOAD.titleIconPath',''),title:(0,_result2.default)(_billUsage.ICON_MAP,'UPLOAD.titleText',''),unit:unit})));
+
+
+
+
+}}]);return TOLPackageDetails;}(_react.Component);cov_127zu7qb28.s[4]++;
+
+TOLPackageDetails.defaultProps={
+packageDetails:{},
+packageInfo:{},
+isConvergence:false};cov_127zu7qb28.s[5]++;
+
+TOLPackageDetails.propTypes={
+packageDetails:_propTypes2.default.object,
+packageInfo:_propTypes2.default.object,
+isConvergence:_propTypes2.default.bool};exports.default=
+
+TOLPackageDetails;

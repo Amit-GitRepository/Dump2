@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/CurrentUsageTM/CurrentUsageTM.component.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../../../index.html">All files</a> / <a href="index.html">iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/CurrentUsageTM</a> CurrentUsageTM.component.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">79.03% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>49/62</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">45% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>27/60</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">81.36% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>48/59</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">49x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">49x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import HotExtraPackageCard from '../HotExtraPackageCard/HotExtraPackageCard.component';
+import Proptypes from 'prop-types';
+import React, {Component} from 'react';
+import styles from './CurrentUsageTM.style';
+import {Button, Card, CircularProgress, Icon, ISText, List, Modal, Touchable} from '../../../../Shared';
+import {bytesToSize} from '../../../../../utils/common.util';
+import {colors} from '../../../../../themes/constants.styles';
+import {isEmpty, noop} from 'lodash';
+import {QUOTA_TYPE, QUOTA_VALUE} from '../../../../../config/billUsage.config';
+import {translate} from '../../../../../language/i18n/helper';
+import {View} from 'react-native';
+&nbsp;
+class CurrentUsageTM extends Component {
+&nbsp;
+   calculateUsageData = (usageData) =&gt; {
+     const {MAIN_PACKAGE, EXTRA_PACKAGE} = usageData;
+     const baseUnitData = 'KB'; // Using KB as the base unit for data
+     const response = {[QUOTA_TYPE.DATA]: {}, [QUOTA_TYPE.VOICE]: {}};
+     for (const bundlePackage of [...MAIN_PACKAGE, ...EXTRA_PACKAGE]) {
+       let {initialQuota, remainingQuota} = bundlePackage;
+       const {quotaType, quotaUnit} = bundlePackage;
+       const quota = response[quotaType];
+       <span class="missing-if-branch" title="else path not taken" >E</span>if (quota) {
+         let consumedValue = quota.consumedValue || 0;
+         let totalValue = quota.totalValue || 0;
+         let percentageConsumed = null;
+         let unit = quota.quotaUnit;
+         if (totalValue === QUOTA_VALUE.UNLIMITED || initialQuota === QUOTA_VALUE.UNLIMITED) {
+           totalValue = QUOTA_VALUE.UNLIMITED;
+           consumedValue = QUOTA_VALUE.UNLIMITED;
+           percentageConsumed = 0;
+           unit = '';
+         } else {
+           unit = quotaUnit;
+           <span class="missing-if-branch" title="else path not taken" >E</span>if (quotaType === QUOTA_TYPE.DATA) {
+             unit = baseUnitData;
+             initialQuota = bytesToSize(initialQuota, quotaUnit, unit).value;
+             remainingQuota = bytesToSize(remainingQuota, quotaUnit, unit).value;
+           }
+           totalValue += parseFloat(initialQuota);
+           consumedValue += parseFloat(remainingQuota);
+           percentageConsumed = (consumedValue / totalValue) * 100;
+&nbsp;
+         }
+         response[quotaType] = {consumedValue, totalValue, percentageConsumed, unit};
+       }
+     }
+     const dataQuota = response[QUOTA_TYPE.DATA];
+     if (dataQuota &amp;&amp; dataQuota.unit) {
+       const totalSizedValue = bytesToSize(dataQuota.totalValue, baseUnitData);
+       const consumedSizedValue = bytesToSize(dataQuota.consumedValue, baseUnitData, totalSizedValue.unit).value;
+       response[QUOTA_TYPE.DATA] = {
+         consumedValue: consumedSizedValue,
+         totalValue: totalSizedValue.value,
+         percentageConsumed: dataQuota.percentageConsumed,
+         unit: totalSizedValue.unit
+       };
+     }
+     return response;
+   }
+&nbsp;
+  state = {
+    isVisible: false,
+    modalData: [],
+    modalHeaderTextKey: '',
+    usageData: this.calculateUsageData(this.props.usageData)
+  };
+&nbsp;
+<span class="fstat-no" title="function not covered" >  co</span>mponentWillReceiveProps (nextProps) {
+    const {usageData} = <span class="cstat-no" title="statement not covered" >nextProps;</span>
+<span class="cstat-no" title="statement not covered" >    if (this.props.usageData !== usageData) {</span>
+<span class="cstat-no" title="statement not covered" >      this.setState({usageData: this.calculateUsageData(usageData)});</span>
+    }
+  }
+&nbsp;
+  toggleModal = (modalData = [], modalHeaderTextKey = '') =&gt; <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+    const {isVisible} = <span class="cstat-no" title="statement not covered" >this.state;</span>
+<span class="cstat-no" title="statement not covered" >    this.setState({isVisible: !isVisible, modalData, modalHeaderTextKey});</span>
+  }
+&nbsp;
+  getConsumedDataContent = <span class="fstat-no" title="function not covered" >(f</span>ill, titleText, footerText, isUnlimited = <span class="branch-0 cbranch-no" title="branch not covered" >false,</span> showProgress = <span class="branch-0 cbranch-no" title="branch not covered" >true)</span> =&gt; (<span class="cstat-no" title="statement not covered" >&lt;View style={styles.detailsContainer}&gt;</span>
+    &lt;ISText type='BOLD' style={styles.infoTopText}&gt;{titleText}&lt;/ISText&gt;
+    &lt;ISText style={styles.infoSubText}&gt;{`(${translate('BILLS_USAGE_MAIN')} + ${translate('BILLS_USAGE_EXTRA')})`}&lt;/ISText&gt;
+    {showProgress &amp;&amp; &lt;ISText type='MEDIUM' style={[styles.valueText, styles.circularProgressFillStyle]}&gt;{fill}&lt;/ISText&gt;}
+    {!isUnlimited &amp;&amp; &lt;ISText style={styles.infoBottomText}&gt;{footerText}&lt;/ISText&gt;}&lt;/View&gt;)
+&nbsp;
+  render () {
+    const {hotExtraPackage, sharedNumbers, multiSimNumbers, navigateToBuyExtraPackage} = this.props;
+    const {isVisible, modalData, modalHeaderTextKey, usageData} = this.state;
+    const data = usageData[QUOTA_TYPE.DATA], voice = usageData[QUOTA_TYPE.VOICE];
+    const hasData = !isEmpty(data);
+    const hasVoice = !isEmpty(voice);
+    const hasPackages = hasData || hasVoice;
+    const hasOneOfDataVoice = hasData &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >!hasVoice </span>|| !hasData &amp;&amp; hasVoice;
+    const hasHotExtraPackage = !isEmpty(hotExtraPackage);
+    const hasMultiSimPlan = !isEmpty(multiSimNumbers);
+    const hasSharedPlan = !isEmpty(sharedNumbers);
+    let hotExtraPackageCaretPosition = null; // means dont show caret
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (hasHotExtraPackage &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >hasPackages)</span> {
+<span class="cstat-no" title="statement not covered" >      if (hasOneOfDataVoice) {</span>
+<span class="cstat-no" title="statement not covered" >        hotExtraPackageCaretPosition = 'CENTER';</span>
+      } else {
+<span class="cstat-no" title="statement not covered" >        switch (hotExtraPackage.planType) {</span>
+        case 'voice': { <span class="cstat-no" title="statement not covered" >hotExtraPackageCaretPosition = 'LEFT'; <span class="cstat-no" title="statement not covered" ></span>break; </span>}
+        case 'data': { <span class="cstat-no" title="statement not covered" >hotExtraPackageCaretPosition = 'RIGHT'; <span class="cstat-no" title="statement not covered" ></span>break; </span>}
+        }
+      }
+    }
+    return (
+      &lt;View style={styles.currentUsageContainer}&gt;
+        { hasMultiSimPlan ?
+<span class="branch-0 cbranch-no" title="branch not covered" >          &lt;Touchable onPress={this.toggleModal(multiSimNumbers, 'BILLS_USAGE_MULTI_SIM')}&gt;</span>
+            &lt;View style={styles.multiSimContainer}&gt;
+              &lt;ISText type='BOLD' style={styles.multiSimText}&gt;{`${translate('BILLS_USAGE_MULTI_SIM')} (${multiSimNumbers.length})`}&lt;/ISText&gt;
+            &lt;/View&gt;
+          &lt;/Touchable&gt; : null
+        }
+        &lt;View style={styles.currentUsageWrapper}&gt;
+          {
+            hasPackages ?
+<span class="branch-0 cbranch-no" title="branch not covered" >              &lt;View style={styles.currentUsageSubContainer}&gt;</span>
+                {
+                  hasVoice ?
+                    voice.consumedValue === QUOTA_VALUE.UNLIMITED ?
+                      this.getConsumedDataContent(voice.consumedValue, translate('BILLS_USAGE_TALK'), `${translate('BILLS_USAGE_FROM')} ${voice.totalValue} ${translate('BILLS_USAGE_MIN')}`, true) :
+                      &lt;CircularProgress fill={voice.percentageConsumed} tintColor={colors.SECONDARY_TMOVE}&gt;
+                        {this.getConsumedDataContent(voice.consumedValue, translate('BILLS_USAGE_TALK'), `${translate('BILLS_USAGE_FROM')} ${voice.totalValue} ${translate('BILLS_USAGE_MIN')}`)}
+                      &lt;/CircularProgress&gt;
+                    : null
+                }
+&nbsp;
+                {hasVoice &amp;&amp; hasData ? &lt;View style={styles.separator} /&gt; : null}
+&nbsp;
+                {
+                  hasData ?
+                    data.consumedValue === QUOTA_VALUE.UNLIMITED ?
+                      this.getConsumedDataContent(data.consumedValue, translate('BILLS_USAGE_DATA'), `${translate('BILLS_USAGE_FROM')} ${data.totalValue} ${data.unit}`, true) :
+                      &lt;CircularProgress fill={data.percentageConsumed} tintColor={colors.SECONDARY_TMOVE}&gt;
+                        {this.getConsumedDataContent(data.consumedValue, translate('BILLS_USAGE_DATA'), `${translate('BILLS_USAGE_FROM')} ${data.totalValue} ${data.unit}`)}
+                      &lt;/CircularProgress&gt;
+                    : null
+                }
+&nbsp;
+              &lt;/View&gt; : null
+          }
+&nbsp;
+          {
+            hasHotExtraPackage ?
+<span class="branch-0 cbranch-no" title="branch not covered" >              &lt;HotExtraPackageCard header={translate('BILLS_USAGE__HEP_TITLE')} caretPosition={hotExtraPackageCaretPosition} planValue={hotExtraPackage.planValue} planDescription={hotExtraPackage.planDescription} noOfDays={hotExtraPackage.days} dayDescription={translate('BILLS_USAGE__HEP_DAYS')} cost={hotExtraPackage.cost} costDescription={translate('BILLS_USAGE__HEP_COST_UNIT')} buttonText={translate('BILLS_USAGE__HEP_PAY_BUTTON')} /&gt;</span>
+              : null
+          }
+        &lt;/View&gt;
+        &lt;Button type='inline' textType='BOLD' text={translate('BILLS_USAGE_SEE_OTHER_PACKAGE')} style={styles.otherButton} textStyle={styles.otherButtonText} onPress={navigateToBuyExtraPackage}/&gt;
+&nbsp;
+        {
+          hasSharedPlan ?
+<span class="branch-0 cbranch-no" title="branch not covered" >            &lt;Touchable style={styles.sharedTouchableWrapper} onPress={this.toggleModal(sharedNumbers, 'BILLS_USAGE_SHARED_NUMBER')}&gt;</span>
+              &lt;View style={styles.sharedNumbersContainer}&gt;
+                &lt;ISText type='BOLD' style={styles.sharedNumbersDescription}&gt;{translate('BILLS_USAGE_SHARED_NUMBER')}&lt;/ISText&gt;
+                &lt;View style={styles.sharedNoIconWrap}&gt;&lt;ISText type='BOLD' style={styles.sharedNumber}&gt;{sharedNumbers.length}&lt;/ISText&gt;&lt;Icon name='chevron-down' size={15} style={styles.sharedNumberIcon}/&gt;
+                &lt;/View&gt;
+              &lt;/View&gt;
+            &lt;/Touchable&gt; : null
+        }
+        &lt;Modal isVisible={isVisible} animationIn={'zoomIn'} animationOut={'zoomOut'}
+          animationInTiming={1} backdropTransitionInTiming={1} backdropTransitionOutTiming={1}
+          animationOutTiming={1} onBackdropPress={this.hideModal}&gt;
+          &lt;Card header={translate(modalHeaderTextKey)} containerStyles={styles.modalContainer}&gt;
+            &lt;List data={modalData} alignListItemsCenter onPress={this.selectItem} arrowVisibility={false}/&gt;
+          &lt;/Card&gt;
+          &lt;Button onPress={this.toggleModal()} text={translate('STORE_LOCATOR__CANCEL')} style={styles.cancelButton}/&gt;
+        &lt;/Modal&gt;
+      &lt;/View&gt;
+    );
+  }
+}
+&nbsp;
+CurrentUsageTM.defaultProps = {
+  usageData: {
+    MAIN_PACKAGE: [],
+    EXTRA_PACKAGE: []
+  },
+  hotExtraPackage: null,
+  navigateToBuyExtraPackage: noop,
+  sharedNumbers: null,
+  multiSimNumbers: null
+};
+&nbsp;
+CurrentUsageTM.propTypes = {
+  usageData: Proptypes.shape({
+    MAIN_PACKAGE: Proptypes.array,
+    EXTRA_PACKAGE: Proptypes.array
+  }),
+  hotExtraPackage: Proptypes.object,
+  navigateToBuyExtraPackage: Proptypes.func,
+  multiSimNumbers: Proptypes.array,
+  sharedNumbers: Proptypes.array
+};
+&nbsp;
+export default CurrentUsageTM;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../../../sorter.js"></script>
+</body>
+</html>

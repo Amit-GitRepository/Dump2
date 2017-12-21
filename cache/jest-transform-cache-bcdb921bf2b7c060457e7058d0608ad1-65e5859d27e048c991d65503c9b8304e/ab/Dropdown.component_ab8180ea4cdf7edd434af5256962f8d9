@@ -1,0 +1,69 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_mo5m00yqv=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/Dropdown/Dropdown.component.js',hash='12875d6aebb30511150e123dcc34e8a1d63f89aa',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/Dropdown/Dropdown.component.js',statementMap:{'0':{start:{line:20,column:20},end:{line:20,column:52}},'1':{start:{line:21,column:20},end:{line:21,column:53}},'2':{start:{line:23,column:25},end:{line:28,column:3}},'3':{start:{line:24,column:4},end:{line:26,column:5}},'4':{start:{line:25,column:6},end:{line:25,column:32}},'5':{start:{line:27,column:4},end:{line:27,column:21}},'6':{start:{line:30,column:49},end:{line:30,column:59}},'7':{start:{line:31,column:28},end:{line:31,column:78}},'8':{start:{line:32,column:4},end:{line:52,column:6}},'9':{start:{line:56,column:0},end:{line:60,column:2}},'10':{start:{line:61,column:0},end:{line:68,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:20,column:14},end:{line:20,column:15}},loc:{start:{line:20,column:20},end:{line:20,column:52}},line:20},'1':{name:'(anonymous_1)',decl:{start:{line:21,column:14},end:{line:21,column:15}},loc:{start:{line:21,column:20},end:{line:21,column:53}},line:21},'2':{name:'(anonymous_2)',decl:{start:{line:23,column:15},end:{line:23,column:16}},loc:{start:{line:23,column:25},end:{line:28,column:3}},line:23},'3':{name:'(anonymous_3)',decl:{start:{line:23,column:25},end:{line:23,column:26}},loc:{start:{line:23,column:31},end:{line:28,column:3}},line:23},'4':{name:'(anonymous_4)',decl:{start:{line:29,column:2},end:{line:29,column:3}},loc:{start:{line:29,column:12},end:{line:53,column:3}},line:29}},branchMap:{'0':{loc:{start:{line:24,column:4},end:{line:26,column:5}},type:'if',locations:[{start:{line:24,column:4},end:{line:26,column:5}},{start:{line:24,column:4},end:{line:26,column:5}}],line:24},'1':{loc:{start:{line:31,column:28},end:{line:31,column:78}},type:'binary-expr',locations:[{start:{line:31,column:28},end:{line:31,column:49}},{start:{line:31,column:53},end:{line:31,column:78}}],line:31},'2':{loc:{start:{line:36,column:57},end:{line:36,column:80}},type:'binary-expr',locations:[{start:{line:36,column:57},end:{line:36,column:62}},{start:{line:36,column:66},end:{line:36,column:80}}],line:36}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0},b:{'0':[0,0],'1':[0,0],'2':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _Button=require('../Button/Button.component');var _Button2=_interopRequireDefault(_Button);
+var _Card=require('../Card/Card.component');var _Card2=_interopRequireDefault(_Card);
+var _Icon=require('../Icon/Icon.component');var _Icon2=_interopRequireDefault(_Icon);
+var _ISText=require('../../Shared/ISText/ISText.component');var _ISText2=_interopRequireDefault(_ISText);
+var _List=require('../List/List.component');var _List2=_interopRequireDefault(_List);
+var _Modal=require('../Modal/Modal.component');var _Modal2=_interopRequireDefault(_Modal);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _DropdownStyles=require('./Dropdown.styles.js');var _DropdownStyles2=_interopRequireDefault(_DropdownStyles);
+var _Touchable=require('../Touchable/Touchable.component');var _Touchable2=_interopRequireDefault(_Touchable);
+var _constants=require('../../../themes/constants.styles');
+var _helper=require('../../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+Dropdown=function(_Component){_inherits(Dropdown,_Component);function Dropdown(){var _ref;var _temp,_this,_ret;_classCallCheck(this,Dropdown);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=Dropdown.__proto__||Object.getPrototypeOf(Dropdown)).call.apply(_ref,[this].concat(args))),_this),_this.
+state={
+isVisible:false},_this.
+
+
+showModal=function(){cov_mo5m00yqv.f[0]++;cov_mo5m00yqv.s[0]++;return _this.setState({isVisible:true});},_this.
+hideModal=function(){cov_mo5m00yqv.f[1]++;cov_mo5m00yqv.s[1]++;return _this.setState({isVisible:false});},_this.
+
+selectItem=function(item){cov_mo5m00yqv.f[2]++;cov_mo5m00yqv.s[2]++;return function(){cov_mo5m00yqv.f[3]++;cov_mo5m00yqv.s[3]++;
+if(item!==_this.props.value){cov_mo5m00yqv.b[0][0]++;cov_mo5m00yqv.s[4]++;
+_this.props.onSelect(item);
+}else{cov_mo5m00yqv.b[0][1]++;}cov_mo5m00yqv.s[5]++;
+_this.hideModal();
+};},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(Dropdown,[{key:'render',value:function render()
+{cov_mo5m00yqv.f[4]++;var _ref2=(cov_mo5m00yqv.s[6]++,
+this.props),data=_ref2.data,unselectedText=_ref2.unselectedText,value=_ref2.value,style=_ref2.style;
+var modalHeaderText=(cov_mo5m00yqv.s[7]++,(cov_mo5m00yqv.b[1][0]++,this.props.headerText)||(cov_mo5m00yqv.b[1][1]++,this.props.unselectedText));cov_mo5m00yqv.s[8]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:_DropdownStyles2.default.container},
+_react2.default.createElement(_Touchable2.default,{onPress:this.showModal,style:_extends({},_DropdownStyles2.default.touchableContainer,style)},
+_react2.default.createElement(_reactNative.View,{style:_DropdownStyles2.default.viewContainer},
+_react2.default.createElement(_ISText2.default,{style:_DropdownStyles2.default.title,type:'BOLD'},(cov_mo5m00yqv.b[2][0]++,value)||(cov_mo5m00yqv.b[2][1]++,unselectedText)),
+_react2.default.createElement(_Icon2.default,{name:'caret-down',size:_constants.fonts.FONT_SIZE_XL,color:_constants.colors.PRIMARY_ACTIONABLE,style:_DropdownStyles2.default.downArrow}))),
+
+
+
+_react2.default.createElement(_Modal2.default,{isVisible:this.state.isVisible,animationIn:'zoomIn',animationOut:'zoomOut',
+animationInTiming:1,backdropTransitionInTiming:1,backdropTransitionOutTiming:1,
+animationOutTiming:1,onBackdropPress:this.hideModal},
+_react2.default.createElement(_Card2.default,{header:modalHeaderText},
+_react2.default.createElement(_reactNative.View,{style:_DropdownStyles2.default.listContainer},
+_react2.default.createElement(_List2.default,{data:data,alignListItemsCenter:true,onPress:this.selectItem,arrowVisibility:false}))),
+
+
+_react2.default.createElement(_Button2.default,{onPress:this.hideModal,text:(0,_helper.translate)('STORE_LOCATOR__CANCEL'),style:_DropdownStyles2.default.cancelButton}))));
+
+
+
+}}]);return Dropdown;}(_react.Component);cov_mo5m00yqv.s[9]++;
+
+
+Dropdown.defaultProps={
+data:[],
+unselectedText:(0,_helper.translate)('DROPDOWN_PLEASE_SELECT'),
+headerText:''};cov_mo5m00yqv.s[10]++;
+
+Dropdown.propTypes={
+data:_propTypes2.default.array,
+unselectedText:_propTypes2.default.string,
+headerText:_propTypes2.default.string,
+onSelect:_propTypes2.default.func,
+value:_propTypes2.default.string,
+style:_propTypes2.default.object};exports.default=
+
+Dropdown;

@@ -1,0 +1,52 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_106ppfinu2=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/middlewares/routeInterceptor.middleware.js',hash='b24114e1606f72003db77c83ca27b8878f4b4136',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/middlewares/routeInterceptor.middleware.js',statementMap:{'0':{start:{line:7,column:22},end:{line:18,column:1}},'1':{start:{line:8,column:17},end:{line:8,column:39}},'2':{start:{line:9,column:2},end:{line:9,column:28}},'3':{start:{line:9,column:15},end:{line:9,column:28}},'4':{start:{line:10,column:2},end:{line:16,column:3}},'5':{start:{line:12,column:4},end:{line:14,column:5}},'6':{start:{line:13,column:6},end:{line:13,column:39}},'7':{start:{line:15,column:4},end:{line:15,column:17}},'8':{start:{line:17,column:2},end:{line:17,column:14}},'9':{start:{line:20,column:26},end:{line:23,column:1}},'10':{start:{line:21,column:19},end:{line:21,column:65}},'11':{start:{line:22,column:2},end:{line:22,column:31}},'12':{start:{line:25,column:25},end:{line:27,column:6}},'13':{start:{line:27,column:2},end:{line:27,column:6}},'14':{start:{line:30,column:25},end:{line:50,column:1}},'15':{start:{line:30,column:51},end:{line:50,column:1}},'16':{start:{line:30,column:61},end:{line:50,column:1}},'17':{start:{line:31,column:2},end:{line:33,column:3}},'18':{start:{line:32,column:4},end:{line:32,column:24}},'19':{start:{line:34,column:2},end:{line:37,column:3}},'20':{start:{line:35,column:4},end:{line:35,column:46}},'21':{start:{line:36,column:4},end:{line:36,column:16}},'22':{start:{line:38,column:22},end:{line:38,column:37}},'23':{start:{line:40,column:2},end:{line:47,column:3}},'24':{start:{line:41,column:4},end:{line:43,column:5}},'25':{start:{line:42,column:6},end:{line:42,column:49}},'26':{start:{line:44,column:4},end:{line:46,column:5}},'27':{start:{line:45,column:6},end:{line:45,column:18}},'28':{start:{line:49,column:2},end:{line:49,column:22}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:7,column:22},end:{line:7,column:23}},loc:{start:{line:7,column:59},end:{line:18,column:1}},line:7},'1':{name:'(anonymous_1)',decl:{start:{line:20,column:26},end:{line:20,column:27}},loc:{start:{line:20,column:45},end:{line:23,column:1}},line:20},'2':{name:'(anonymous_2)',decl:{start:{line:25,column:25},end:{line:25,column:26}},loc:{start:{line:27,column:2},end:{line:27,column:6}},line:27},'3':{name:'(anonymous_3)',decl:{start:{line:30,column:25},end:{line:30,column:26}},loc:{start:{line:30,column:51},end:{line:50,column:1}},line:30},'4':{name:'(anonymous_4)',decl:{start:{line:30,column:51},end:{line:30,column:52}},loc:{start:{line:30,column:61},end:{line:50,column:1}},line:30},'5':{name:'(anonymous_5)',decl:{start:{line:30,column:61},end:{line:30,column:62}},loc:{start:{line:30,column:73},end:{line:50,column:1}},line:30}},branchMap:{'0':{loc:{start:{line:9,column:2},end:{line:9,column:28}},type:'if',locations:[{start:{line:9,column:2},end:{line:9,column:28}},{start:{line:9,column:2},end:{line:9,column:28}}],line:9},'1':{loc:{start:{line:10,column:2},end:{line:16,column:3}},type:'if',locations:[{start:{line:10,column:2},end:{line:16,column:3}},{start:{line:10,column:2},end:{line:16,column:3}}],line:10},'2':{loc:{start:{line:12,column:4},end:{line:14,column:5}},type:'if',locations:[{start:{line:12,column:4},end:{line:14,column:5}},{start:{line:12,column:4},end:{line:14,column:5}}],line:12},'3':{loc:{start:{line:31,column:2},end:{line:33,column:3}},type:'if',locations:[{start:{line:31,column:2},end:{line:33,column:3}},{start:{line:31,column:2},end:{line:33,column:3}}],line:31},'4':{loc:{start:{line:31,column:6},end:{line:31,column:91}},type:'binary-expr',locations:[{start:{line:31,column:6},end:{line:31,column:48}},{start:{line:31,column:52},end:{line:31,column:91}}],line:31},'5':{loc:{start:{line:34,column:2},end:{line:37,column:3}},type:'if',locations:[{start:{line:34,column:2},end:{line:37,column:3}},{start:{line:34,column:2},end:{line:37,column:3}}],line:34},'6':{loc:{start:{line:40,column:2},end:{line:47,column:3}},type:'if',locations:[{start:{line:40,column:2},end:{line:47,column:3}},{start:{line:40,column:2},end:{line:47,column:3}}],line:40},'7':{loc:{start:{line:41,column:4},end:{line:43,column:5}},type:'if',locations:[{start:{line:41,column:4},end:{line:43,column:5}},{start:{line:41,column:4},end:{line:43,column:5}}],line:41},'8':{loc:{start:{line:44,column:4},end:{line:46,column:5}},type:'if',locations:[{start:{line:44,column:4},end:{line:46,column:5}},{start:{line:44,column:4},end:{line:46,column:5}}],line:44}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0,'19':0,'20':0,'21':0,'22':0,'23':0,'24':0,'25':0,'26':0,'27':0,'28':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0],'4':[0,0],'5':[0,0],'6':[0,0],'7':[0,0],'8':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _isEmpty=require('lodash/isEmpty');var _isEmpty2=_interopRequireDefault(_isEmpty);
+var _index=require('../../routes/index.routes');var _index2=_interopRequireDefault(_index);
+var _reactNavigation=require('react-navigation');
+var _reactNative=require('../../utils/reactNative.util');
+var _index3=require('../actions/index.actions');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}cov_106ppfinu2.s[0]++;
+
+var loginRequired=function loginRequired(_ref){var routeName=_ref.routeName,nextAction=_ref.action;cov_106ppfinu2.f[0]++;
+var config=(cov_106ppfinu2.s[1]++,_index.routeConfig[routeName]);cov_106ppfinu2.s[2]++;
+if(!config){cov_106ppfinu2.b[0][0]++;cov_106ppfinu2.s[3]++;return false;}else{cov_106ppfinu2.b[0][1]++;}cov_106ppfinu2.s[4]++;
+if(!config.requireLogin){cov_106ppfinu2.b[1][0]++;cov_106ppfinu2.s[5]++;
+
+if(nextAction){cov_106ppfinu2.b[2][0]++;cov_106ppfinu2.s[6]++;
+return loginRequired(nextAction);
+}else{cov_106ppfinu2.b[2][1]++;}cov_106ppfinu2.s[7]++;
+return false;
+}else{cov_106ppfinu2.b[1][1]++;}cov_106ppfinu2.s[8]++;
+return true;
+};cov_106ppfinu2.s[9]++;
+
+var checkIfRouteExist=function checkIfRouteExist(action,state){cov_106ppfinu2.f[1]++;
+var newState=(cov_106ppfinu2.s[10]++,_index2.default.router.getStateForAction(action,state));cov_106ppfinu2.s[11]++;
+return!(state===newState);
+};cov_106ppfinu2.s[12]++;
+
+var isUserAuthorized=function isUserAuthorized()
+
+{cov_106ppfinu2.f[2]++;cov_106ppfinu2.s[13]++;return true;};cov_106ppfinu2.s[14]++;
+
+
+var routeInterceptor=function routeInterceptor(_ref2){var dispatch=_ref2.dispatch,getState=_ref2.getState;cov_106ppfinu2.f[3]++;cov_106ppfinu2.s[15]++;return function(next){cov_106ppfinu2.f[4]++;cov_106ppfinu2.s[16]++;return function(action){cov_106ppfinu2.f[5]++;cov_106ppfinu2.s[17]++;
+if((cov_106ppfinu2.b[4][0]++,action.type!==_reactNavigation.NavigationActions.NAVIGATE)&&(cov_106ppfinu2.b[4][1]++,action.type!==_reactNavigation.NavigationActions.RESET)){cov_106ppfinu2.b[3][0]++;cov_106ppfinu2.s[18]++;
+return next(action);
+}else{cov_106ppfinu2.b[3][1]++;}cov_106ppfinu2.s[19]++;
+if(!checkIfRouteExist(action,getState().nav)){cov_106ppfinu2.b[5][0]++;cov_106ppfinu2.s[20]++;
+_reactNative.Toast.show('Route not found',_reactNative.Toast.LONG);cov_106ppfinu2.s[21]++;
+return null;
+}else{cov_106ppfinu2.b[5][1]++;}
+var userProfile=(cov_106ppfinu2.s[22]++,getState().user);cov_106ppfinu2.s[23]++;
+
+if(loginRequired(action)){cov_106ppfinu2.b[6][0]++;cov_106ppfinu2.s[24]++;
+if((0,_isEmpty2.default)(userProfile.profile)){cov_106ppfinu2.b[7][0]++;cov_106ppfinu2.s[25]++;
+return dispatch((0,_index3.toggleLoginPrompt)(action));
+}else{cov_106ppfinu2.b[7][1]++;}cov_106ppfinu2.s[26]++;
+if(!isUserAuthorized(action,userProfile)){cov_106ppfinu2.b[8][0]++;cov_106ppfinu2.s[27]++;
+return null;
+}else{cov_106ppfinu2.b[8][1]++;}
+}else{cov_106ppfinu2.b[6][1]++;}cov_106ppfinu2.s[28]++;
+
+return next(action);
+};};};exports.default=
+
+routeInterceptor;

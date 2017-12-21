@@ -1,0 +1,30 @@
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);
+var _TOLPackageDetails=require('../TOLPackageDetails.component');var _TOLPackageDetails2=_interopRequireDefault(_TOLPackageDetails);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('TOLPackageDetails component',function(){
+it('renders correctly',function(){
+var mockData={
+'PRICE_PLAN_INFO':{
+'name':'BB9D31RQBB31',
+'description':'BB9 - TrueSmartChoice 3PQ2 2017'},
+
+'TOL_SPEEDS':{
+'pricePlanDetails':{
+'productId':'9101086216',
+'uploadSpeed':0,
+'downloadSpeed':0,
+'unit':'MBPS'}}};
+
+
+
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_TOLPackageDetails2.default,{packageDetails:mockData.TOL_SPEEDS.pricePlanDetails,
+packageInfo:mockData.PRICE_PLAN_INFO}));
+expect(component).toMatchSnapshot();
+});
+
+it('renders correctly with no props',function(){
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_TOLPackageDetails2.default,null));
+expect(component).toMatchSnapshot();
+});
+});

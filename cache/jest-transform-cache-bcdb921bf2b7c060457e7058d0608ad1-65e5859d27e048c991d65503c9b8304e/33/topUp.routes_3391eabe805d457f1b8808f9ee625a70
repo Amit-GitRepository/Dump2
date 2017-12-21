@@ -1,0 +1,30 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.topUpRouteConfig=undefined;var cov_1usxduqvvv=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/routes/topUp.routes.js',hash='a3f95cf7c5e38cd38d2658cbbc9dd22524eee08a',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/routes/topUp.routes.js',statementMap:{'0':{start:{line:7,column:32},end:{line:28,column:1}}},fnMap:{},branchMap:{},s:{'0':0},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _payment=require('./payment.routes');var _payment2=_interopRequireDefault(_payment);
+var _TopUp=require('../pages/TopUp/TopUp.page');var _TopUp2=_interopRequireDefault(_TopUp);
+var _TopUpMore=require('../pages/TopUp/TopUpMore.page');var _TopUpMore2=_interopRequireDefault(_TopUpMore);
+var _route=require('./helpers/route.helper');
+var _reactNavigation=require('react-navigation');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+var topUpRouteConfig=exports.topUpRouteConfig=(cov_1usxduqvvv.s[0]++,{
+TopUp:{
+screen:_TopUp2.default,
+navigationOptions:_route.getStackNavOption,
+requireLogin:true,
+title:'SIDE_MENU__TOP_UP',
+showHamburger:true,
+gaScreenName:'Top Up Page'},
+
+TopUpMore:{
+screen:_TopUpMore2.default,
+navigationOptions:_route.getStackNavOption,
+requireLogin:true,
+title:'TOP_UP_MORE__TITLE',
+showHamburger:false,
+gaScreenName:'Top Up More Page'},
+
+Payment:{
+screen:_payment2.default,
+navigationOptions:{header:null}}});exports.default=
+
+
+
+(0,_reactNavigation.StackNavigator)(topUpRouteConfig,{headerMode:'screen'});

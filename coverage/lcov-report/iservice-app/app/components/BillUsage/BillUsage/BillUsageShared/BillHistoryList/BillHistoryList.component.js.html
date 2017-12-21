@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/BillHistoryList/BillHistoryList.component.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../../../index.html">All files</a> / <a href="index.html">iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/BillHistoryList</a> BillHistoryList.component.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">45.45% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>5/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>4/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">25% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>5/10</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">47x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">47x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import moment from '../../../../../utils/moment.util';
+import noop from 'lodash/noop';
+import Proptypes from 'prop-types';
+import React, {Component} from 'react';
+import styles from './BillHistoryList.style';
+import {AmountText, Button, Checkbox, ISText} from '../../../../Shared';
+import {translate} from '../../../../../language/i18n/helper';
+import {View} from 'react-native';
+&nbsp;
+class BillHistoryList extends Component {
+&nbsp;
+  billDetailClick = <span class="fstat-no" title="function not covered" >(i</span>nvoiceNo) =&gt; <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >this.props.onBillDetailsClick(invoiceNo);</span></span>
+&nbsp;
+  render () {
+    const {dueBills, style, onPaymentHistoryClick, onBillToggle, isCancelled} = this.props;
+    const currentDate = moment();
+    return (
+      &lt;View style={[styles.container, style]}&gt;
+        {isCancelled &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >&lt;View style={styles.titleContainer}&gt;&lt;ISText type='BOLD' style={styles.title}&gt;{translate('BILLS_USAGE_BILL_DETAILS')}&lt;/ISText&gt;</span>
+        &lt;/View&gt;}
+        {dueBills &amp;&amp; dueBills.length &gt; 0 ?
+<span class="branch-0 cbranch-no" title="branch not covered" >          dueBills.map(<span class="fstat-no" title="function not covered" >(b</span>ill, index) =&gt; {</span>
+            const billDate = <span class="cstat-no" title="statement not covered" >new moment(bill.invoiceCycle, 'DD/MM/YYYY');</span>
+            const billDueDate = <span class="cstat-no" title="statement not covered" >new moment(bill.dueDate);</span>
+            const overDueDays = <span class="cstat-no" title="statement not covered" >currentDate.diff(billDueDate, 'days');</span>
+<span class="cstat-no" title="statement not covered" >            return (</span>
+              &lt;View style={styles.cardContainer} key={`billingCard_${index}`}&gt;
+                &lt;View style={styles.leftSection}&gt;
+                  &lt;ISText type='BOLD' style={styles.billMonthText}&gt;{billDate.format('MMMM')}&lt;/ISText&gt;
+                  &lt;ISText type='BOLD' style={styles.dueDateText}&gt;{(overDueDays &gt; 0) ? `${translate('BILLS_USAGE_OVERDUE', {count: overDueDays, days: overDueDays})}` : `${translate('BILLS_USAGE_DUE_DATE')}: ${billDueDate.format('DD MMM YY')}`}&lt;/ISText&gt;
+                &lt;/View&gt;
+                &lt;View style={styles.rightSection}&gt;
+                  &lt;View style={styles.amountSection}&gt;
+                    &lt;AmountText value={bill.unpaidAmount} isTotalText={false}/&gt;
+                    &lt;Checkbox style={styles.checkbox} onChange={onBillToggle(bill)} isChecked = {bill.isChecked}/&gt;
+                  &lt;/View&gt;
+                  &lt;Button type='inline' text={translate('BILLS_USAGE_DETAILS')} style={styles.billDetailButton} textStyle={styles.billDetailText} onPress = {this.billDetailClick({invoiceNo: bill.invoiceNo})}/&gt;
+                &lt;/View&gt;
+              &lt;/View&gt;
+            );
+          }) : &lt;ISText type='BOLD' style = {styles.noBillPlaceHolderText}&gt;{translate('BILLS_USAGE_BILL_DETAILS_PLACEHOLDER')}&lt;/ISText&gt;
+        }
+        &lt;Button type='inline' text={translate('BILLS_USAGE_PAYMENT_HISTORY')} textStyle={styles.otherButton} onPress={onPaymentHistoryClick}/&gt;
+      &lt;/View&gt;
+    );
+  }
+}
+&nbsp;
+BillHistoryList.defaultProps = {
+  dueBills: [],
+  onBillDetailsClick: noop,
+  onPaymentHistoryClick: noop,
+  onBillToggle: noop,
+  isCancelled: false,
+  style: {}
+};
+&nbsp;
+BillHistoryList.propTypes = {
+  dueBills: Proptypes.array,
+  onBillDetailsClick: Proptypes.func,
+  onPaymentHistoryClick: Proptypes.func,
+  style: Proptypes.object,
+  onBillToggle: Proptypes.func,
+  isCancelled: Proptypes.bool
+};
+&nbsp;
+export default BillHistoryList;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../../../sorter.js"></script>
+</body>
+</html>

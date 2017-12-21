@@ -1,0 +1,10 @@
+var _BottomCaretView=require('../BottomCaretView.component');var _BottomCaretView2=_interopRequireDefault(_BottomCaretView);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('Overlay Spinner component',function(){
+it('should renders correctly',function(){
+var componentTree=_reactTestRenderer2.default.create(_react2.default.createElement(_BottomCaretView2.default,null)).toJSON();
+expect(componentTree).toMatchSnapshot();
+});
+});

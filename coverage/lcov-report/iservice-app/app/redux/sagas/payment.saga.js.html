@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/redux/sagas/payment.saga.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">iservice-app/app/redux/sagas</a> payment.saga.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">44.05% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>37/84</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">33.33% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>8/24</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">55.56% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>5/9</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">44.05% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>37/84</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">23x</span>
+<span class="cline-any cline-yes">23x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import api from './api/api.saga'; // TODO: change mockAPI to API once microserice is ready
+import result from 'lodash/result';
+import {billUsageProductBillDetail, deleteCard, getProductFromServiceNo, getSavedCards, payForExistingCustomer, payForNewCustomer, payForNonLoginUser, tokeniseCard} from './api/apiHelper';
+import {call, put, select, takeLatest} from 'redux-saga/effects';
+import {CARD_TYPE, PAYMENT_STATUS} from '../../config/payment.config';
+import {GET_PRODUCTS_PAYMENT, PAY_EXISTING_CUSTOMER, PAY_NEW_CUSTOMER, PRE_LOGIN_PAYMENT, REMOVE_EXISTING_CARD, removeCardSuccessful, setPaymentProducts, setPaymentStatus, setPayOthersProductBillDetail, setPayOthersProductCollapseStatus, setSavedCards, SHOW_PAYMENT_METHODS, TOGGLE_PAYOTHERS_PRODUCT_COLLAPSE_STATUS} from '../actions/index.actions';
+import {getSelector} from '../../utils/common.util';
+import {NavigationActions} from 'react-navigation';
+import {Toast} from '../../utils/reactNative.util';
+import {translate} from '../../language/i18n/helper';
+&nbsp;
+export function* <span class="fstat-no" title="function not covered" >paymentForNewCustomer </span>({payload}) {
+<span class="cstat-no" title="statement not covered" >  try {</span>
+    const ssoID = <span class="cstat-no" title="statement not covered" >yield select(getSelector('user.profile.uid'));</span>
+    const {paymentItems, formData} = <span class="cstat-no" title="statement not covered" >payload;</span>
+    const {token} = <span class="cstat-no" title="statement not covered" >yield call(getCardToken, formData);</span>
+    const requestPayload = <span class="cstat-no" title="statement not covered" >{payables: paymentItems, saveCard: formData.saveCard, token};</span>
+    const response = <span class="cstat-no" title="statement not covered" >yield call(api, payForNewCustomer(ssoID, requestPayload));</span>
+<span class="cstat-no" title="statement not covered" >    yield put(setPaymentStatus({</span>
+      status: PAYMENT_STATUS.SUCCESS,
+      details: response.body
+    }));
+<span class="cstat-no" title="statement not covered" >    yield put(NavigationActions.navigate({'routeName': 'PaymentStatus'})); </span>// payment successful
+  } catch (error) {
+<span class="cstat-no" title="statement not covered" >    if (error &amp;&amp; error.code !== 'invalid_card') {</span>
+<span class="cstat-no" title="statement not covered" >      yield put(setPaymentStatus({</span>
+        status: PAYMENT_STATUS.FAIL,
+        details: {message: result(error, 'message')}
+      }));
+<span class="cstat-no" title="statement not covered" >      yield put(NavigationActions.navigate({'routeName': 'PaymentStatus'})); </span>// handle request failed case
+    }
+  }
+}
+&nbsp;
+export function* <span class="fstat-no" title="function not covered" >paymentForNonLoginUser </span>({payload}) {
+<span class="cstat-no" title="statement not covered" >  try {</span>
+    const {paymentItems, formData} = <span class="cstat-no" title="statement not covered" >payload;</span>
+    const {token} = <span class="cstat-no" title="statement not covered" >yield call(getCardToken, formData);</span>
+    const requestPayload = <span class="cstat-no" title="statement not covered" >{payables: paymentItems[0], token};</span>
+    const response = <span class="cstat-no" title="statement not covered" >yield call(api, payForNonLoginUser(requestPayload));</span>
+<span class="cstat-no" title="statement not covered" >    yield put(setPaymentStatus({</span>
+      status: PAYMENT_STATUS.SUCCESS,
+      details: response.body
+    }));
+<span class="cstat-no" title="statement not covered" >    yield put(NavigationActions.navigate({'routeName': 'PaymentStatus'})); </span>// payment successful
+  } catch (error) {
+<span class="cstat-no" title="statement not covered" >    if (error &amp;&amp; error.code !== 'invalid_card') {</span>
+<span class="cstat-no" title="statement not covered" >      yield put(setPaymentStatus({</span>
+        status: PAYMENT_STATUS.FAIL,
+        details: {message: result(error, 'message')}
+      }));
+<span class="cstat-no" title="statement not covered" >      yield put(NavigationActions.navigate({'routeName': 'PaymentStatus'})); </span>// handle request failed case
+    }
+  }
+}
+&nbsp;
+export function* paymentForExistingCustomer ({payload}) {
+  try {
+    const ssoID = yield select(getSelector('user.profile.uid'));
+    const {type, customerId, paymentItems, formData, selectedCard} = payload;
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (customerId) {
+      let requestPayload = {payables: paymentItems, customerId, saveCard: formData.saveCard};
+      <span class="missing-if-branch" title="else path not taken" >E</span>if (type === CARD_TYPE.SAVED) {
+        requestPayload = {...requestPayload, cardID: selectedCard.id};
+      } else {
+        const {token, fingerprint} = <span class="cstat-no" title="statement not covered" >yield call(getCardToken, formData);</span>
+<span class="cstat-no" title="statement not covered" >        requestPayload = {...requestPayload, token, fingerprint};</span>
+      }
+      const response = yield call(api, payForExistingCustomer(ssoID, requestPayload));
+      yield put(setPaymentStatus({
+        status: PAYMENT_STATUS.SUCCESS,
+        details: response.body
+      }));
+      yield put(NavigationActions.navigate({'routeName': 'PaymentStatus'})); // payment successful
+    }
+  } catch (error) {
+<span class="cstat-no" title="statement not covered" >    if (error &amp;&amp; error.code !== 'invalid_card') {</span>
+<span class="cstat-no" title="statement not covered" >      yield put(setPaymentStatus({</span>
+        status: PAYMENT_STATUS.FAIL,
+        details: {message: result(error, 'message')}
+      }));
+<span class="cstat-no" title="statement not covered" >      yield put(NavigationActions.navigate({'routeName': 'PaymentStatus'})); </span>// handle request failed case
+    }
+  }
+}
+&nbsp;
+export function* removeExisingCard ({payload}) {
+  try {
+    const ssoID = yield select(getSelector('user.profile.uid'));
+    yield call(api, deleteCard(ssoID, payload));
+<span class="cstat-no" title="statement not covered" >    yield put(removeCardSuccessful(payload));</span>
+  } catch (e) {
+    yield call(Toast.show, 'Unable to delete card', Toast.SHORT); // hardcoded string because we are not sure what to do here(yet)
+  }
+}
+&nbsp;
+function* <span class="fstat-no" title="function not covered" >getCardToken </span>({name, number, expirationDate, securityCode}) {
+<span class="cstat-no" title="statement not covered" >  try {</span>
+    let cardData = <span class="cstat-no" title="statement not covered" >{name, number, 'security_code': securityCode};</span>
+    const [expirationMonth, expirationYear] = <span class="cstat-no" title="statement not covered" >expirationDate.split('/');</span>
+<span class="cstat-no" title="statement not covered" >    cardData = {...cardData, 'expiration_month': Number(expirationMonth), 'expiration_year': Number(expirationYear)};</span>
+    const tokenResponse = <span class="cstat-no" title="statement not covered" >yield call(api, tokeniseCard({card: cardData}));</span> // Token from credit card info
+    const token = <span class="cstat-no" title="statement not covered" >result(tokenResponse, 'body.id');</span>
+    const fingerprint = <span class="cstat-no" title="statement not covered" >result(tokenResponse, 'body.card.fingerprint');</span>
+<span class="cstat-no" title="statement not covered" >    return {token, fingerprint};</span>
+  } catch (error) {
+<span class="cstat-no" title="statement not covered" >    yield call(Toast.show, 'Unable to fetch card token', Toast.SHORT);</span>
+<span class="cstat-no" title="statement not covered" >    throw error;</span>
+  }
+}
+export function* fetchPayOtherProducts (action) {
+  try {
+    const {serviceNo} = action.payload;
+    const response = yield call(api, getProductFromServiceNo(serviceNo));
+    const products = response.body;
+    yield put(setPaymentProducts({serviceNo, products}));
+    if (Object.keys(products).length === 0) {
+      yield call(Toast.show, translate('PAYMENT_INVALID_SERVICE_NO'), Toast.LONG);
+    } else if (products.tmhPrepaid &amp;&amp; products.tmhPrepaid.length &gt; 0) {
+      yield put(NavigationActions.navigate({routeName: 'PayOthersTopUp'}));
+    } else {
+      yield put(NavigationActions.navigate({routeName: 'PayOthersPostpaid'}));
+    }      
+  } catch (err) {
+<span class="cstat-no" title="statement not covered" >    Toast.show(translate('PAYMENT_INVALID_SERVICE_NO'), Toast.LONG);</span>
+  }
+}
+&nbsp;
+export function* <span class="fstat-no" title="function not covered" >payOtherProductToggleCollapseStatus </span>({payload}) {
+<span class="cstat-no" title="statement not covered" >  try {</span>
+    const {isCollapsed, accountId} = <span class="cstat-no" title="statement not covered" >payload;</span>
+    const billDetailSelector = <span class="cstat-no" title="statement not covered" >getSelector('payForOthers.billDetail');</span>
+    const allBillDetail = <span class="cstat-no" title="statement not covered" >yield select(billDetailSelector);</span>
+    const selectedBillDetail = <span class="cstat-no" title="statement not covered" >result(allBillDetail, `${accountId}`, null);</span>
+<span class="cstat-no" title="statement not covered" >    if (!selectedBillDetail) {</span>
+      const billDetail = <span class="cstat-no" title="statement not covered" >yield call(api, billUsageProductBillDetail(accountId, false));</span>
+<span class="cstat-no" title="statement not covered" >      yield put(setPayOthersProductBillDetail({data: billDetail.body}));</span>
+    }
+<span class="cstat-no" title="statement not covered" >    yield put(setPayOthersProductCollapseStatus({isCollapsed}));</span>
+  } catch (err) {
+    //
+  }
+}
+&nbsp;
+export function* showPaymentMethods () {
+  try {
+    const ssoID = yield select(getSelector('user.profile.uid'));
+    const res = yield call(api, getSavedCards(ssoID));
+    const savedCards = result(res, 'body', []);
+    yield put(setSavedCards(savedCards));
+  } catch (e) {
+    yield call(Toast.show, 'Unable to get saved cards', Toast.SHORT);// hardcoded string because we are not sure what to do here(yet)
+  }
+}
+&nbsp;
+export default function * paymentSaga () {
+  yield takeLatest(SHOW_PAYMENT_METHODS, showPaymentMethods);
+  yield takeLatest(PAY_NEW_CUSTOMER, paymentForNewCustomer);
+  yield takeLatest(PAY_EXISTING_CUSTOMER, paymentForExistingCustomer);
+  yield takeLatest(PRE_LOGIN_PAYMENT, paymentForNonLoginUser);
+  yield takeLatest(REMOVE_EXISTING_CARD, removeExisingCard);
+  yield takeLatest(GET_PRODUCTS_PAYMENT, fetchPayOtherProducts);
+  yield takeLatest(TOGGLE_PAYOTHERS_PRODUCT_COLLAPSE_STATUS, payOtherProductToggleCollapseStatus);
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

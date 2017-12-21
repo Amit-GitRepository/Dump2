@@ -1,0 +1,17 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_15y5yiobd7=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/SideMenu/SideMenu.style.js',hash='fe6a21643abe25a227b04ac4c733d7082a6e55c6',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/SideMenu/SideMenu.style.js',statementMap:{},fnMap:{},branchMap:{},s:{},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _constants=require('../../themes/constants.styles');exports.default=
+
+{
+container:{
+flex:1,
+backgroundColor:_constants.colors.PRIMARY_TEXT_TAB_LABEL},
+
+iosContainer:{
+paddingTop:20},
+
+versionContainer:{
+paddingHorizontal:15,
+paddingVertical:10},
+
+versionNumberText:{
+color:_constants.colors.PRIMARY_BG_TEXT_CONTRAST,
+fontSize:_constants.fonts.FONT_SIZE_SMALL}};

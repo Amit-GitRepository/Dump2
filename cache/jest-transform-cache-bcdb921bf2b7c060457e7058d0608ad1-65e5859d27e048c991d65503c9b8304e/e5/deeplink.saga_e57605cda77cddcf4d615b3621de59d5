@@ -1,0 +1,36 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_14qotayp4l=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/sagas/deeplink.saga.js',hash='462387c658e4bade3166e76841649b27a56cdec9',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/sagas/deeplink.saga.js',statementMap:{'0':{start:{line:9,column:2},end:{line:9,column:27}},'1':{start:{line:11,column:15},end:{line:11,column:64}},'2':{start:{line:13,column:22},end:{line:13,column:67}},'3':{start:{line:15,column:2},end:{line:19,column:3}},'4':{start:{line:16,column:4},end:{line:16,column:27}},'5':{start:{line:18,column:4},end:{line:18,column:46}},'6':{start:{line:20,column:2},end:{line:20,column:27}},'7':{start:{line:27,column:17},end:{line:30,column:4}},'8':{start:{line:33,column:2},end:{line:33,column:40}},'9':{start:{line:36,column:2},end:{line:36,column:54}}},fnMap:{'0':{name:'handleDeepLink',decl:{start:{line:7,column:18},end:{line:7,column:32}},loc:{start:{line:7,column:42},end:{line:21,column:1}},line:7},'1':{name:'deeplinkSaga',decl:{start:{line:24,column:26},end:{line:24,column:38}},loc:{start:{line:24,column:42},end:{line:37,column:1}},line:24}},branchMap:{'0':{loc:{start:{line:15,column:2},end:{line:19,column:3}},type:'if',locations:[{start:{line:15,column:2},end:{line:19,column:3}},{start:{line:15,column:2},end:{line:19,column:3}}],line:15}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0},f:{'0':0,'1':0},b:{'0':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();exports.
+
+
+
+
+
+handleDeepLink=handleDeepLink;exports.default=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deeplinkSaga;var _reactNativeConfig=require('react-native-config');var _reactNativeConfig2=_interopRequireDefault(_reactNativeConfig);var _index=require('../../routes/index.routes');var _index2=_interopRequireDefault(_index);var _effects=require('redux-saga/effects');var _index3=require('../actions/index.actions');var _reactNative=require('../../utils/reactNative.util');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var _marked=regeneratorRuntime.mark(handleDeepLink),_marked2=regeneratorRuntime.mark(deeplinkSaga);function handleDeepLink(action){var path,routeAction;return regeneratorRuntime.wrap(function handleDeepLink$(_context){while(1){switch(_context.prev=_context.next){case 0:cov_14qotayp4l.f[0]++;cov_14qotayp4l.s[0]++;_context.next=4;return(0,_effects.put)((0,_index3.showSpinner)());case 4:path=(cov_14qotayp4l.s[1]++,action.payload.split(_reactNativeConfig2.default.DEEPLINK_BASE_URL)[1]);routeAction=(cov_14qotayp4l.s[2]++,_index2.default.router.getActionForPathAndParams(path));cov_14qotayp4l.s[3]++;if(!routeAction){_context.next=14;break;}cov_14qotayp4l.b[0][0]++;cov_14qotayp4l.s[4]++;_context.next=12;return(0,_effects.put)(routeAction);case 12:_context.next=17;break;case 14:cov_14qotayp4l.b[0][1]++;cov_14qotayp4l.s[5]++;_reactNative.Toast.show('Route not found',_reactNative.Toast.LONG);case 17:cov_14qotayp4l.s[6]++;_context.next=20;return(0,_effects.put)((0,_index3.hideSpinner)());case 20:case'end':return _context.stop();}}},_marked,this);}function deeplinkSaga(){var result;return regeneratorRuntime.wrap(function deeplinkSaga$(_context2){while(1){switch(_context2.prev=_context2.next){case 0:cov_14qotayp4l.f[1]++;cov_14qotayp4l.s[7]++;_context2.next=4;return(
+
+
+(0,_effects.all)([
+(0,_effects.take)(_index3.STARTUP_SAGA_COMPLETE),
+(0,_effects.take)(_index3.DEEP_LINK_RECEIVED)]));case 4:result=_context2.sent;cov_14qotayp4l.s[8]++;_context2.next=8;return(
+
+
+
+(0,_effects.call)(handleDeepLink,result[1]));case 8:cov_14qotayp4l.s[9]++;_context2.next=11;return(
+
+
+(0,_effects.takeEvery)(_index3.DEEP_LINK_RECEIVED,handleDeepLink));case 11:case'end':return _context2.stop();}}},_marked2,this);}

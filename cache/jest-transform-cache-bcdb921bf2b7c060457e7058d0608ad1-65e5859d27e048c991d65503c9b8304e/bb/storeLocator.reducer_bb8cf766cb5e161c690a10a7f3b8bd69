@@ -1,0 +1,46 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_hqb12n5d3=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/reducers/storeLocator.reducer.js',hash='92249b95ac11e7c98609f051643468e729a6f126',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/reducers/storeLocator.reducer.js',statementMap:{'0':{start:{line:7,column:21},end:{line:14,column:1}},'1':{start:{line:16,column:26},end:{line:22,column:1}},'2':{start:{line:17,column:26},end:{line:20,column:37}},'3':{start:{line:18,column:23},end:{line:20,column:36}},'4':{start:{line:21,column:2},end:{line:21,column:112}},'5':{start:{line:25,column:2},end:{line:45,column:3}},'6':{start:{line:27,column:4},end:{line:27,column:45}},'7':{start:{line:29,column:4},end:{line:29,column:41}},'8':{start:{line:31,column:4},end:{line:31,column:138}},'9':{start:{line:33,column:4},end:{line:33,column:44}},'10':{start:{line:35,column:4},end:{line:35,column:92}},'11':{start:{line:37,column:30},end:{line:37,column:37}},'12':{start:{line:38,column:27},end:{line:38,column:78}},'13':{start:{line:39,column:4},end:{line:39,column:38}},'14':{start:{line:42,column:4},end:{line:42,column:42}},'15':{start:{line:44,column:4},end:{line:44,column:17}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:16,column:26},end:{line:16,column:27}},loc:{start:{line:16,column:58},end:{line:22,column:1}},line:16},'1':{name:'(anonymous_1)',decl:{start:{line:18,column:12},end:{line:18,column:13}},loc:{start:{line:18,column:23},end:{line:20,column:36}},line:18},'2':{name:'storeLocator',decl:{start:{line:24,column:24},end:{line:24,column:36}},loc:{start:{line:24,column:77},end:{line:46,column:1}},line:24}},branchMap:{'0':{loc:{start:{line:21,column:9},end:{line:21,column:111}},type:'cond-expr',locations:[{start:{line:21,column:37},end:{line:21,column:94}},{start:{line:21,column:97},end:{line:21,column:111}}],line:21},'1':{loc:{start:{line:24,column:38},end:{line:24,column:58}},type:'default-arg',locations:[{start:{line:24,column:46},end:{line:24,column:58}}],line:24},'2':{loc:{start:{line:25,column:2},end:{line:45,column:3}},type:'switch',locations:[{start:{line:26,column:2},end:{line:27,column:45}},{start:{line:28,column:2},end:{line:29,column:41}},{start:{line:30,column:2},end:{line:31,column:138}},{start:{line:32,column:2},end:{line:33,column:44}},{start:{line:34,column:2},end:{line:35,column:92}},{start:{line:36,column:2},end:{line:40,column:3}},{start:{line:41,column:2},end:{line:42,column:42}},{start:{line:43,column:2},end:{line:44,column:17}}],line:25}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0},f:{'0':0,'1':0,'2':0},b:{'0':[0,0],'1':[0],'2':[0,0,0,0,0,0,0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};exports.default=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+storeLocator;var _map=require('../../config/map.config');var _map2=_interopRequireDefault(_map);var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);var _storeInfo=require('../../config/storeInfo.config');var _storeInfo2=_interopRequireDefault(_storeInfo);var _helper=require('../../language/i18n/helper');var _index=require('../actions/index.actions');var actions=_interopRequireWildcard(_index);function _interopRequireWildcard(obj){if(obj&&obj.__esModule){return obj;}else{var newObj={};if(obj!=null){for(var key in obj){if(Object.prototype.hasOwnProperty.call(obj,key))newObj[key]=obj[key];}}newObj.default=obj;return newObj;}}function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var initialState=(cov_hqb12n5d3.s[0]++,{selectedProvince:null,selectedService:'',nearByStores:[],filteredStores:[],radiusKM:15,allStores:_storeInfo2.default});cov_hqb12n5d3.s[1]++;var getFilteredStores=function getFilteredStores(input,language,allStores){cov_hqb12n5d3.f[0]++;var filteredStores=(cov_hqb12n5d3.s[2]++,allStores.data.filter(function(store){cov_hqb12n5d3.f[1]++;cov_hqb12n5d3.s[3]++;return(0,_result2.default)(store,'address['+language+']','').toLowerCase().includes(input.toLowerCase());}));cov_hqb12n5d3.s[4]++;return filteredStores.length<1?(cov_hqb12n5d3.b[0][0]++,[{storeName:(0,_helper.translate)('STORE_LOCATOR_STORE_NOT_FOUND')}]):(cov_hqb12n5d3.b[0][1]++,filteredStores);};function storeLocator(){var state=arguments.length>0&&arguments[0]!==undefined?arguments[0]:(cov_hqb12n5d3.b[1][0]++,initialState);var _ref=arguments[1];var type=_ref.type,payload=_ref.payload;cov_hqb12n5d3.f[2]++;cov_hqb12n5d3.s[5]++;
+switch(type){
+case actions.UPDATE_NEARBY_STORES:cov_hqb12n5d3.b[2][0]++;cov_hqb12n5d3.s[6]++;
+return _extends({},state,{nearByStores:payload});
+case actions.UPDATE_KM_RADIUS:cov_hqb12n5d3.b[2][1]++;cov_hqb12n5d3.s[7]++;
+return _extends({},state,{radiusKM:payload});
+case actions.SET_PROVINCE:cov_hqb12n5d3.b[2][2]++;cov_hqb12n5d3.s[8]++;
+return _extends({},state,{selectedProvince:payload.province,nearByStores:payload.nearByStores,radiusKM:_map2.default.distanceLimit.province});
+case actions.CLEAR_PROVINCE:cov_hqb12n5d3.b[2][3]++;cov_hqb12n5d3.s[9]++;
+return _extends({},state,{selectedProvince:{}});
+case actions.SET_SERVICE:cov_hqb12n5d3.b[2][4]++;cov_hqb12n5d3.s[10]++;
+return _extends({},state,{selectedService:payload.service,nearByStores:payload.nearByStores});
+case actions.CHANGE_SEARCH_TEXT:cov_hqb12n5d3.b[2][5]++;{var _ref2=(cov_hqb12n5d3.s[11]++,
+payload),language=_ref2.language,input=_ref2.input;
+var filteredStores=(cov_hqb12n5d3.s[12]++,getFilteredStores(input,language,state.allStores));cov_hqb12n5d3.s[13]++;
+return _extends({},state,{filteredStores:filteredStores});
+}
+case actions.CLEAR_FILTERED_STORES:cov_hqb12n5d3.b[2][6]++;cov_hqb12n5d3.s[14]++;
+return _extends({},state,{filteredStores:[]});
+default:cov_hqb12n5d3.b[2][7]++;cov_hqb12n5d3.s[15]++;
+return state;}
+
+}

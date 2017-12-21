@@ -1,0 +1,33 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1ubrfkhg3h=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/Payment/PayForOthers/PayForOthersTopUp.page.js',hash='9ebba265004e1174cf005d28c44e9dda29191b5d',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/Payment/PayForOthers/PayForOthersTopUp.page.js',statementMap:{'0':{start:{line:11,column:62},end:{line:11,column:72}},'1':{start:{line:12,column:4},end:{line:12,column:129}},'2':{start:{line:16,column:0},end:{line:21,column:2}},'3':{start:{line:23,column:24},end:{line:26,column:2}},'4':{start:{line:23,column:45},end:{line:26,column:1}},'5':{start:{line:28,column:27},end:{line:31,column:2}},'6':{start:{line:28,column:42},end:{line:31,column:1}},'7':{start:{line:29,column:43},end:{line:29,column:112}},'8':{start:{line:30,column:30},end:{line:30,column:62}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:10,column:2},end:{line:10,column:3}},loc:{start:{line:10,column:12},end:{line:13,column:3}},line:10},'1':{name:'(anonymous_1)',decl:{start:{line:23,column:24},end:{line:23,column:25}},loc:{start:{line:23,column:45},end:{line:26,column:1}},line:23},'2':{name:'(anonymous_2)',decl:{start:{line:28,column:27},end:{line:28,column:28}},loc:{start:{line:28,column:42},end:{line:31,column:1}},line:28},'3':{name:'(anonymous_3)',decl:{start:{line:29,column:14},end:{line:29,column:15}},loc:{start:{line:29,column:43},end:{line:29,column:112}},line:29},'4':{name:'(anonymous_4)',decl:{start:{line:30,column:19},end:{line:30,column:20}},loc:{start:{line:30,column:30},end:{line:30,column:62}},line:30}},branchMap:{'0':{loc:{start:{line:29,column:27},end:{line:29,column:38}},type:'default-arg',locations:[{start:{line:29,column:36},end:{line:29,column:38}}],line:29}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0},b:{'0':[0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _PayOthersTopUp=require('../../../components/Payment/PayOthersTopUp/PayOthersTopUp.component');var _PayOthersTopUp2=_interopRequireDefault(_PayOthersTopUp);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _reactRedux=require('react-redux');
+var _reactNavigation=require('react-navigation');
+var _index=require('../../../redux/actions/index.actions');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+PayForOtherTopUpPage=function(_Component){_inherits(PayForOtherTopUpPage,_Component);function PayForOtherTopUpPage(){_classCallCheck(this,PayForOtherTopUpPage);return _possibleConstructorReturn(this,(PayForOtherTopUpPage.__proto__||Object.getPrototypeOf(PayForOtherTopUpPage)).apply(this,arguments));}_createClass(PayForOtherTopUpPage,[{key:'render',value:function render()
+{cov_1ubrfkhg3h.f[0]++;var _ref=(cov_1ubrfkhg3h.s[0]++,
+this.props),serviceNo=_ref.serviceNo,goToScreen=_ref.goToScreen,setPaymentItems=_ref.setPaymentItems,product=_ref.product;cov_1ubrfkhg3h.s[1]++;
+return _react2.default.createElement(_PayOthersTopUp2.default,{serviceNo:serviceNo,setPaymentItems:setPaymentItems,goToScreen:goToScreen,product:product});
+}}]);return PayForOtherTopUpPage;}(_react.Component);cov_1ubrfkhg3h.s[2]++;
+
+
+PayForOtherTopUpPage.propTypes={
+serviceNo:_propTypes2.default.string,
+setPaymentItems:_propTypes2.default.func,
+goToScreen:_propTypes2.default.func,
+product:_propTypes2.default.object};cov_1ubrfkhg3h.s[3]++;
+
+
+var mapStateToProps=function mapStateToProps(_ref2){var payForOthers=_ref2.payForOthers;cov_1ubrfkhg3h.f[1]++;cov_1ubrfkhg3h.s[4]++;return{
+serviceNo:(0,_result2.default)(payForOthers,'serviceNo',{}),
+product:(0,_result2.default)(payForOthers,'product',{})};
+};cov_1ubrfkhg3h.s[5]++;
+
+var mapDispatchToProps=function mapDispatchToProps(dispatch){cov_1ubrfkhg3h.f[2]++;cov_1ubrfkhg3h.s[6]++;return{
+goToScreen:function goToScreen(screenName){var params=arguments.length>1&&arguments[1]!==undefined?arguments[1]:(cov_1ubrfkhg3h.b[0][0]++,{});cov_1ubrfkhg3h.f[3]++;cov_1ubrfkhg3h.s[7]++;return dispatch(_reactNavigation.NavigationActions.navigate({routeName:screenName,params:params}));},
+setPaymentItems:function setPaymentItems(items){cov_1ubrfkhg3h.f[4]++;cov_1ubrfkhg3h.s[8]++;return dispatch((0,_index.setPaymentItems)(items));}};
+};exports.default=
+
+(0,_reactRedux.connect)(mapStateToProps,mapDispatchToProps)(PayForOtherTopUpPage);

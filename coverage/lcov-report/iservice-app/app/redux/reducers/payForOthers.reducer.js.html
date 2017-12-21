@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/redux/reducers/payForOthers.reducer.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">iservice-app/app/redux/reducers</a> payForOthers.reducer.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">12.5% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>3/24</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">18.18% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>2/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">33.33% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">12.5% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>3/24</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">21x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">254x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">254x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import result from 'lodash/result';
+import {addAttributesToBillDetails, addAttributesToProducts} from '../../utils/storeList.util';
+import * as actions from '../actions/index.actions';
+&nbsp;
+const initialState = {
+  product: {},
+  billDetail: {},
+  serviceNo: ''
+};
+&nbsp;
+export default function payForOthers (state = initialState, action) {
+  switch (action.type) {
+<span class="branch-0 cbranch-no" title="branch not covered" >  case actions.SET_PRODUCTS_PAYMENT: {</span>
+    const {serviceNo} = <span class="cstat-no" title="statement not covered" >action.payload;</span>
+    const productList = <span class="cstat-no" title="statement not covered" >result(action.payload, 'products', {});</span>
+    let productToStore;
+<span class="cstat-no" title="statement not covered" >    Object.keys(productList).forEach(<span class="fstat-no" title="function not covered" >(p</span>rodcutType) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      if (productList[prodcutType].length &gt; 0) {</span>
+<span class="cstat-no" title="statement not covered" >        productToStore = addAttributesToProducts(productList[prodcutType])[0];</span>
+      }
+    });
+<span class="cstat-no" title="statement not covered" >    return {</span>
+      ...state,
+      product: productToStore, serviceNo
+    };
+  }
+&nbsp;
+<span class="branch-1 cbranch-no" title="branch not covered" >  case actions.SET_PAYOTHERS_PRODUCT_COLLAPSE_STATUS: {</span>
+    const {isCollapsed} = <span class="cstat-no" title="statement not covered" >action.payload;</span>
+<span class="cstat-no" title="statement not covered" >    return {...state, product: {...state.product, isCollapsed}};</span>
+  }
+&nbsp;
+<span class="branch-2 cbranch-no" title="branch not covered" >  case actions.TOGGLE_PAYOTHERS_PRODUCT_CHECK_STATUS: {</span>
+    const toggledCheck = <span class="cstat-no" title="statement not covered" >!state.product.isChecked;</span>
+<span class="cstat-no" title="statement not covered" >    return {...state, product: {...state.product, isChecked: toggledCheck}};</span>
+  }
+&nbsp;
+<span class="branch-3 cbranch-no" title="branch not covered" >  case actions.SET_PAYOTHERS_PRODUCT_BILL_DETAIL: {</span>
+    const {data} = <span class="cstat-no" title="statement not covered" >action.payload;</span>
+    const accountId = <span class="cstat-no" title="statement not covered" >Object.keys(data)[0];</span>
+    const modifiedBillDetail =  <span class="cstat-no" title="statement not covered" >addAttributesToBillDetails(data[accountId]);</span>
+<span class="cstat-no" title="statement not covered" >    return {...state, billDetail: {...state.billDetail, [accountId]: modifiedBillDetail}};</span>
+  }
+<span class="branch-4 cbranch-no" title="branch not covered" >  case actions.TOGGLE_PAYOTHERS_BILL_DETAIL_CHECK_STATUS: {</span>
+    const {accountId, invoiceNos, isChecked, checkedBillSum} = <span class="cstat-no" title="statement not covered" >action.payload;</span>
+    const billDetails = <span class="cstat-no" title="statement not covered" >result(state.billDetail, `${accountId}`, []);</span>
+    const billDetailsModified = <span class="cstat-no" title="statement not covered" >billDetails.map(<span class="fstat-no" title="function not covered" >(b</span>ill) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      if (invoiceNos.includes(bill.invoiceNo)) {</span>
+<span class="cstat-no" title="statement not covered" >        bill.isChecked = isChecked;</span>
+      }
+<span class="cstat-no" title="statement not covered" >      return bill;</span>
+    });
+<span class="cstat-no" title="statement not covered" >    return {</span>
+      ...state, billDetail: {
+        ...state.billDetail, [accountId]: billDetailsModified
+      }, product: {
+        ...state.product, checkedBillSum
+      }
+    };
+  }
+  default :
+    return state;
+  }
+}
+&nbsp;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

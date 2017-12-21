@@ -1,0 +1,12 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1vo6cq3oex=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/reducers/msisdn.reducer.js',hash='7adce8048ed4ee77adc8bacde1f93f5ea2f40c7a',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/reducers/msisdn.reducer.js',statementMap:{'0':{start:{line:4,column:2},end:{line:11,column:3}},'1':{start:{line:6,column:4},end:{line:6,column:26}},'2':{start:{line:8,column:4},end:{line:8,column:26}},'3':{start:{line:10,column:4},end:{line:10,column:17}}},fnMap:{'0':{name:'autoDetectMSISDN',decl:{start:{line:3,column:24},end:{line:3,column:40}},loc:{start:{line:3,column:62},end:{line:12,column:1}},line:3}},branchMap:{'0':{loc:{start:{line:3,column:42},end:{line:3,column:52}},type:'default-arg',locations:[{start:{line:3,column:50},end:{line:3,column:52}}],line:3},'1':{loc:{start:{line:4,column:2},end:{line:11,column:3}},type:'switch',locations:[{start:{line:5,column:2},end:{line:6,column:26}},{start:{line:7,column:2},end:{line:8,column:26}},{start:{line:9,column:2},end:{line:10,column:17}}],line:4}},s:{'0':0,'1':0,'2':0,'3':0},f:{'0':0},b:{'0':[0],'1':[0,0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();exports.default=
+
+autoDetectMSISDN;var _index=require('../actions/index.actions');function autoDetectMSISDN(){var state=arguments.length>0&&arguments[0]!==undefined?arguments[0]:(cov_1vo6cq3oex.b[0][0]++,{});var action=arguments[1];cov_1vo6cq3oex.f[0]++;cov_1vo6cq3oex.s[0]++;
+switch(action.type){
+case _index.AUTO_DETECT_MSISDN_SUCCESS:cov_1vo6cq3oex.b[1][0]++;cov_1vo6cq3oex.s[1]++;
+return action.payload;
+case _index.AUTO_DETECT_MSISDN_FAIL:cov_1vo6cq3oex.b[1][1]++;cov_1vo6cq3oex.s[2]++;
+return{msisdn:null};
+default:cov_1vo6cq3oex.b[1][2]++;cov_1vo6cq3oex.s[3]++;
+return state;}
+
+}

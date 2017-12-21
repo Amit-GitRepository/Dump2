@@ -1,0 +1,38 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1zwb8wsskf=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/TrueOnline/TOLPackageDetails.component.js',hash='187f26a5869b399c8a87159d282c803306bf6a9e',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/TrueOnline/TOLPackageDetails.component.js',statementMap:{'0':{start:{line:13,column:160},end:{line:13,column:170}},'1':{start:{line:14,column:4},end:{line:25,column:6}},'2':{start:{line:28,column:0},end:{line:32,column:2}},'3':{start:{line:33,column:0},end:{line:37,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:12,column:2},end:{line:12,column:3}},loc:{start:{line:12,column:12},end:{line:26,column:3}},line:12}},branchMap:{'0':{loc:{start:{line:17,column:118},end:{line:17,column:176}},type:'cond-expr',locations:[{start:{line:17,column:134},end:{line:17,column:169}},{start:{line:17,column:172},end:{line:17,column:176}}],line:17},'1':{loc:{start:{line:20,column:9},end:{line:20,column:77}},type:'binary-expr',locations:[{start:{line:20,column:9},end:{line:20,column:17}},{start:{line:20,column:21},end:{line:20,column:77}}],line:20},'2':{loc:{start:{line:21,column:9},end:{line:21,column:71}},type:'binary-expr',locations:[{start:{line:21,column:9},end:{line:21,column:15}},{start:{line:21,column:19},end:{line:21,column:71}}],line:21},'3':{loc:{start:{line:22,column:9},end:{line:22,column:65}},type:'binary-expr',locations:[{start:{line:22,column:9},end:{line:22,column:13}},{start:{line:22,column:17},end:{line:22,column:65}}],line:22},'4':{loc:{start:{line:23,column:9},end:{line:23,column:82}},type:'binary-expr',locations:[{start:{line:23,column:9},end:{line:23,column:19}},{start:{line:23,column:23},end:{line:23,column:82}}],line:23}},s:{'0':0,'1':0,'2':0,'3':0},f:{'0':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0],'4':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _DetailCardRow=require('../BillUsage/BillUsageShared/DetailCardRow.component');var _DetailCardRow2=_interopRequireDefault(_DetailCardRow);
+var _HeaderWithCaret=require('../BillUsage/BillUsageShared/HeaderWithCaret.component');var _HeaderWithCaret2=_interopRequireDefault(_HeaderWithCaret);
+var _PackageDetailHeader=require('../BillUsage/BillUsageShared/PackageDetailHeader/PackageDetailHeader.component');var _PackageDetailHeader2=_interopRequireDefault(_PackageDetailHeader);
+var _PackageOverview=require('../BillUsage/BillUsageShared/PackageOverview/PackageOverview.component');var _PackageOverview2=_interopRequireDefault(_PackageOverview);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _TOLPackageDetails=require('./TOLPackageDetails.style');var _TOLPackageDetails2=_interopRequireDefault(_TOLPackageDetails);
+var _WrapperCard=require('../BillUsage/BillUsageShared/WrapperCard.component');var _WrapperCard2=_interopRequireDefault(_WrapperCard);
+var _helper=require('../../../language/i18n/helper');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+TOLPackageDetails=function(_Component){_inherits(TOLPackageDetails,_Component);function TOLPackageDetails(){_classCallCheck(this,TOLPackageDetails);return _possibleConstructorReturn(this,(TOLPackageDetails.__proto__||Object.getPrototypeOf(TOLPackageDetails)).apply(this,arguments));}_createClass(TOLPackageDetails,[{key:'render',value:function render()
+{cov_1zwb8wsskf.f[0]++;var _ref=(cov_1zwb8wsskf.s[0]++,
+this.props),_ref$userDetails=_ref.userDetails,phoneNumber=_ref$userDetails.phoneNumber,name=_ref$userDetails.name,_ref$packageDetails=_ref.packageDetails,endMonth=_ref$packageDetails.endMonth,endDate=_ref$packageDetails.endDate,planOverView=_ref$packageDetails.planOverView,planOffer=_ref$packageDetails.planOffer,wifi=_ref$packageDetails.wifi,download=_ref$packageDetails.download,upload=_ref$packageDetails.upload,wifiRouter=_ref$packageDetails.wifiRouter,isConvergence=_ref.isConvergence;cov_1zwb8wsskf.s[1]++;
+return(
+_react2.default.createElement(_WrapperCard2.default,null,
+_react2.default.createElement(_HeaderWithCaret2.default,{headerColor:_TOLPackageDetails2.default.headerColor,customIconStyle:_TOLPackageDetails2.default.iconStyle,style:_TOLPackageDetails2.default.headerStyle},
+_react2.default.createElement(_PackageDetailHeader2.default,{isConvergence:isConvergence,phoneNumber:phoneNumber,endDate:endDate,name:isConvergence?(cov_1zwb8wsskf.b[0][0]++,(0,_helper.translate)('BILLS_USAGE_TRUEONLINE')):(cov_1zwb8wsskf.b[0][1]++,name),endMonth:endMonth})),
+
+_react2.default.createElement(_PackageOverview2.default,{title:planOverView,subTitle:planOffer}),
+(cov_1zwb8wsskf.b[1][0]++,download)&&(cov_1zwb8wsskf.b[1][1]++,_react2.default.createElement(_DetailCardRow2.default,{rowData:download,type:'download'})),
+(cov_1zwb8wsskf.b[2][0]++,upload)&&(cov_1zwb8wsskf.b[2][1]++,_react2.default.createElement(_DetailCardRow2.default,{rowData:upload,type:'upload'})),
+(cov_1zwb8wsskf.b[3][0]++,wifi)&&(cov_1zwb8wsskf.b[3][1]++,_react2.default.createElement(_DetailCardRow2.default,{rowData:wifi,type:'wifi'})),
+(cov_1zwb8wsskf.b[4][0]++,wifiRouter)&&(cov_1zwb8wsskf.b[4][1]++,_react2.default.createElement(_DetailCardRow2.default,{rowData:wifiRouter,type:'wifiRouter'}))));
+
+
+}}]);return TOLPackageDetails;}(_react.Component);cov_1zwb8wsskf.s[2]++;
+
+TOLPackageDetails.defaultProps={
+packageDetails:{},
+userDetails:{},
+isConvergence:false};cov_1zwb8wsskf.s[3]++;
+
+TOLPackageDetails.propTypes={
+packageDetails:_propTypes2.default.object.isRequired,
+userDetails:_propTypes2.default.object.isRequired,
+isConvergence:_propTypes2.default.bool};exports.default=
+
+TOLPackageDetails;

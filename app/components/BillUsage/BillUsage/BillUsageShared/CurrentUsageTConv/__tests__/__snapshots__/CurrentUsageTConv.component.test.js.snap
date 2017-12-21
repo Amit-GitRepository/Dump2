@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CurrentUsageTConv component renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "borderRadius": 10,
+      "flexGrow": 1,
+      "marginTop": -15,
+      "overflow": "hidden",
+      "paddingTop": 5,
+    }
+  }
+/>
+`;

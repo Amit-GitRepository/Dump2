@@ -1,0 +1,42 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_wkrufyud5=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/AmountText/AmountText.component.js',hash='623ad0e7f5c25c08cf16a3cf818927f87c24d3c1',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/AmountText/AmountText.component.js',statementMap:{'0':{start:{line:10,column:97},end:{line:10,column:107}},'1':{start:{line:11,column:19},end:{line:11,column:61}},'2':{start:{line:12,column:26},end:{line:12,column:89}},'3':{start:{line:13,column:28},end:{line:13,column:94}},'4':{start:{line:14,column:31},end:{line:14,column:103}},'5':{start:{line:16,column:4},end:{line:21,column:15}},'6':{start:{line:24,column:0},end:{line:32,column:2}},'7':{start:{line:33,column:0},end:{line:41,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:9,column:2},end:{line:9,column:3}},loc:{start:{line:9,column:12},end:{line:22,column:3}},line:9}},branchMap:{'0':{loc:{start:{line:12,column:26},end:{line:12,column:89}},type:'cond-expr',locations:[{start:{line:12,column:40},end:{line:12,column:60}},{start:{line:12,column:63},end:{line:12,column:89}}],line:12},'1':{loc:{start:{line:13,column:28},end:{line:13,column:94}},type:'cond-expr',locations:[{start:{line:13,column:42},end:{line:13,column:64}},{start:{line:13,column:67},end:{line:13,column:94}}],line:13},'2':{loc:{start:{line:14,column:31},end:{line:14,column:103}},type:'cond-expr',locations:[{start:{line:14,column:45},end:{line:14,column:70}},{start:{line:14,column:73},end:{line:14,column:103}}],line:14},'3':{loc:{start:{line:20,column:9},end:{line:20,column:115}},type:'binary-expr',locations:[{start:{line:20,column:9},end:{line:20,column:25}},{start:{line:20,column:29},end:{line:20,column:115}}],line:20}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0},f:{'0':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _AmountText=require('./AmountText.style');var _AmountText2=_interopRequireDefault(_AmountText);
+var _helper=require('../../../language/i18n/helper');
+var _Shared=require('../../Shared');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+AmountText=function(_Component){_inherits(AmountText,_Component);function AmountText(){_classCallCheck(this,AmountText);return _possibleConstructorReturn(this,(AmountText.__proto__||Object.getPrototypeOf(AmountText)).apply(this,arguments));}_createClass(AmountText,[{key:'render',value:function render()
+{cov_wkrufyud5.f[0]++;var _ref=(cov_wkrufyud5.s[0]++,
+this.props),value=_ref.value,unitStyle=_ref.unitStyle,valueStyle=_ref.valueStyle,precisionStyle=_ref.precisionStyle,style=_ref.style,displayPrecision=_ref.displayPrecision,isTotalText=_ref.isTotalText;
+var amount=(cov_wkrufyud5.s[1]++,String((0,_helper.currenyFormatter)(value)).split('.'));
+var unitTextStyle=(cov_wkrufyud5.s[2]++,isTotalText?(cov_wkrufyud5.b[0][0]++,_AmountText2.default.unitTextTotal):(cov_wkrufyud5.b[0][1]++,_AmountText2.default.unitTextIndividulal));
+var amountTextStyle=(cov_wkrufyud5.s[3]++,isTotalText?(cov_wkrufyud5.b[1][0]++,_AmountText2.default.amountTextTotal):(cov_wkrufyud5.b[1][1]++,_AmountText2.default.amountTextIndividual));
+var precisionTextStyle=(cov_wkrufyud5.s[4]++,isTotalText?(cov_wkrufyud5.b[2][0]++,_AmountText2.default.precisionTextTotal):(cov_wkrufyud5.b[2][1]++,_AmountText2.default.precisionTextIndividual));cov_wkrufyud5.s[5]++;
+
+return(
+_react2.default.createElement(_reactNative.View,{style:[_AmountText2.default.container,style]},
+_react2.default.createElement(_Shared.ISText,{style:[unitTextStyle,unitStyle],type:'BOLD'},'\u0E3F'),
+_react2.default.createElement(_Shared.ISText,{style:[amountTextStyle,valueStyle],type:'BOLD'},amount[0]),
+(cov_wkrufyud5.b[3][0]++,displayPrecision)&&(cov_wkrufyud5.b[3][1]++,_react2.default.createElement(_Shared.ISText,{style:[precisionTextStyle,precisionStyle],type:'BOLD'},'.',amount[1]))));
+
+}}]);return AmountText;}(_react.Component);cov_wkrufyud5.s[6]++;
+
+AmountText.defaultProps={
+value:0,
+valueStyle:{},
+precisionStyle:{},
+unitStyle:{},
+style:{},
+displayPrecision:true,
+isTotalText:false};cov_wkrufyud5.s[7]++;
+
+AmountText.propTypes={
+value:_propTypes2.default.number,
+valueStyle:_propTypes2.default.object,
+precisionStyle:_propTypes2.default.object,
+unitStyle:_propTypes2.default.object,
+style:_propTypes2.default.object,
+displayPrecision:_propTypes2.default.bool,
+isTotalText:_propTypes2.default.bool};exports.default=
+
+AmountText;

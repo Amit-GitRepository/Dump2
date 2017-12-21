@@ -1,0 +1,37 @@
+var _store=require('../../../redux/store');var _store2=_interopRequireDefault(_store);
+var _Popup=require('../Popup.page');var _Popup2=_interopRequireDefault(_Popup);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _enzyme=require('enzyme');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+var store=(0,_store2.default)();
+var dispatch=jest.fn();
+
+describe('Popup',function(){
+it('renders ',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_Popup2.default,{store:store}));
+expect(wrapper).toBeDefined();
+});
+});
+
+describe('Popup: mapStateToProps',function(){
+var props=(0,_Popup.mapStateToProps)(store.getState());
+it('message prop to be defined',function(){
+expect(props.message).toBeDefined();
+});
+it('isOpen prop to be defined',function(){
+expect(props.isOpen).toBeDefined();
+});
+});
+
+describe('Popup: mapDispatchToProps',function(){
+var props=(0,_Popup.mapDispatchToProps)(dispatch);
+it('hidePopup prop to be defined',function(){
+expect(props.hidePopup).toBeDefined();
+});
+it('popupPutAction prop to be defined',function(){
+expect(props.popupPutAction).toBeDefined();
+});
+});

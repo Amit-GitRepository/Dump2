@@ -1,0 +1,893 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/redux/actions/index.actions.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">iservice-app/app/redux/actions</a> index.actions.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>160/160</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>160/160</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-yes">57x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {createAction} from 'redux-actions';
+&nbsp;
+// ******************
+//  ACTION CONSTANTS
+// ******************
+&nbsp;
+// NETWORK STATUS ACTION CONSTANTS
+export const SET_NETWORK_STATUS = 'SET_NETWORK_STATUS';
+&nbsp;
+// USER PREFERENCE CONSTANTS
+export const SET_PREFERENCES = 'SET_PREFERENCES';
+export const CHANGE_LANGUAGE = 'CHANGE_LANGUAGE';
+&nbsp;
+// SPINNER ACTIONS
+export const SPINNER_SHOW = 'SPINNER_SHOW';
+export const SPINNER_HIDE = 'SPINNER_HIDE';
+&nbsp;
+// CMS Translation ACTIONS;
+export const FETCH_TRANSLATIONS = 'FETCH_TRANSLATIONS';
+&nbsp;
+// DATABASE SEED ACTIONS
+export const INITIALIZE_DATA = 'INITIALIZE_DATA';
+export const INITIALIZE_DATA_SUCCEEDED = 'INITIALIZE_DATA_SUCCEEDED';
+&nbsp;
+// START UP ACTIONS
+export const STARTUP_SAGA_COMPLETE = 'STARTUP_SAGA_COMPLETE';
+&nbsp;
+// LOGIN ACTIONS
+export const LOGIN_REQUEST = 'LOGIN_REQUEST';
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
+export const LOGIN_FAILURE = 'LOGIN_FAILURE';
+&nbsp;
+// REGISTER REQUEST
+export const REGISTER_REQUEST = 'REGISTER_REQUEST';
+export const REGISTER_SUCCESS = 'REGISTER_SUCCESS';
+export const REGISTER_FAILURE = 'REGISTER_FAILURE';
+&nbsp;
+// CHECK_LOGIN ACTIONS
+export const CHECK_EXISTING_LOGIN = 'CHECK_EXISTING_LOGIN';
+&nbsp;
+// SET ACCESS TOKEN ACTIONS
+export const SET_ACCESS_TOKEN_AND_PROFILE = 'SET_ACCESS_TOKEN_AND_PROFILE';
+&nbsp;
+// SET MSISDN ACTION
+export const SET_MSISDN = 'SET_MSISDN';
+&nbsp;
+// FORCE UPDATE ACTIONS
+export const FORCE_UPDATE_FAILED = 'FORCE_UPDATE_FAILED';
+&nbsp;
+// ALERT VISIBILITY ACTIONS
+export const FORCE_UPDATE_ALERT_VISIBLE = 'FORCE_UPDATE_ALERT_VISIBLE';
+export const FORCE_UPDATE_ALERT_HIDDEN  = 'FORCE_UPDATE_ALERT_HIDDEN';
+&nbsp;
+// AUTO_DETECT_MSISDN Action CREATORS;
+export const AUTO_DETECT_MSISDN_REQUEST = 'AUTO_DETECT_MSISDN_REQUEST';
+export const AUTO_DETECT_MSISDN_SUCCESS = 'AUTO_DETECT_MSISDN_SUCCESS';
+export const AUTO_DETECT_MSISDN_FAIL = 'AUTO_DETECT_MSISDN_FAIL';
+&nbsp;
+// OTP ACTIONS
+export const SEND_OTP = 'SEND_OTP';
+export const VALIDATE_OTP = 'VALIDATE_OTP';
+export const SEND_OTP_STATUS = 'SEND_OTP_STATUS';
+export const VALIDATE_OTP_STATUS = 'VALIDATE_OTP_STATUS';
+&nbsp;
+export const RESET_PREPAY = 'RESET_PREPAY';
+&nbsp;
+// LOGOUT ACTIONS
+export const LOGOUT_REQUEST = 'LOGOUT_REQUEST';
+export const LOGOUT_SUCCESS = 'LOGOUT_SUCCESS';
+export const LOGOUT_FAILURE = 'LOGOUT_FAILURE';
+&nbsp;
+// DEEPLINKING ACTIONS
+export const DEEP_LINK_RECEIVED = 'DEEP_LINK_RECEIVED';
+&nbsp;
+// STORELOCATOR ACTIONS
+// CURRENT LOCATION ACTIONS
+export const CHANGE_CURRENT_LOCATION = 'CHANGE_CURRENT_LOCATION';
+// CLEAR PROVINCE ACTION
+export const CLEAR_PROVINCE = 'CLEAR_PROVINCE';
+// SELECT PROVINCE ACTION
+export const SET_PROVINCE = 'SET_PROVINCE';
+// SELECT PROVINCE ACTION
+export const SET_SERVICE = 'SET_SERVICE';
+// CLEAR PROVINCE ACTION
+export const CLEAR_SERVICE = 'CLEAR_SERVICE';
+// UPDATE NEARBY STORE ACTION
+export const UPDATE_NEARBY_STORES = 'UPDATE_NEARBY_STORES';
+// UPDATE KM RADIUS ACTION
+export const UPDATE_KM_RADIUS = 'UPDATE_KM_RADIUS';
+export const CHANGE_SEARCH_TEXT = 'CHANGE_SEARCH_TEXT';
+export const CLEAR_FILTERED_STORES = 'CLEAR_FILTERED_STORES';
+&nbsp;
+// PAYMENT ACTIONS
+export const PAY_NEW_CUSTOMER = 'PAY_NEW_CUSTOMER';
+export const SHOW_PAYMENT_METHODS = 'SHOW_PAYMENT_METHODS';
+export const PRE_LOGIN_PAYMENT = 'PRE_LOGIN_PAYMENT';
+export const PAY_EXISTING_CUSTOMER = 'PAY_EXISTING_CUSTOMER';
+export const REMOVE_EXISTING_CARD = 'REMOVE_EXISTING_CARD';
+export const REMOVE_CARD_SUCCESSFUL = 'REMOVE_CARD_SUCCESSFUL';
+export const SET_PAYMENT_ITEMS = 'SET_PAYMENT_ITEMS';
+export const SET_PAYMENT_STATUS = 'SET_PAYMENT_STATUS';
+export const SET_SAVED_CARDS = 'SET_SAVED_CARDS';
+export const CLEAR_PAYMENT_DATA = 'CLEAR_PAYMENT_DATA';
+&nbsp;
+// PAY FOR OTHERS ACTIONS
+export const GET_PRODUCTS_PAYMENT = 'GET_PRODUCTS_PAYMENT';
+export const SET_PRODUCTS_PAYMENT = 'SET_PRODUCTS_PAYMENT';
+export const TOGGLE_PAYOTHERS_PRODUCT_CHECK_STATUS = 'TOGGLE_PAYOTHERS_PRODUCT_CHECK_STATUS';
+export const SET_PAYOTHERS_PRODUCT_BILL_DETAIL = 'SET_PAYOTHERS_PRODUCT_BILL_DETAIL';
+export const TOGGLE_PAYOTHERS_BILL_DETAIL_CHECK_STATUS = 'TOGGLE_PAYOTHERS_BILL_DETAIL_CHECK_STATUS';
+export const SET_PAYOTHERS_PRODUCT_COLLAPSE_STATUS = 'SET_PAYOTHERS_PRODUCT_COLLAPSE_STATUS';
+export const TOGGLE_PAYOTHERS_PRODUCT_COLLAPSE_STATUS = 'TOGGLE_PAYOTHERS_PRODUCT_COLLAPSE_STATUS';
+&nbsp;
+// BILLS AND USAGE
+export const FETCH_BILL_USAGE_AND_NAVIGATE = 'FETCH_BILL_USAGE_AND_NAVIGATE';
+export const GET_BILL_USAGE_PRODUCT_LIST = 'GET_BILL_USAGE_PRODUCT_LIST';
+export const GET_BILL_USAGE_PRODUCT = 'GET_BILL_USAGE_PRODUCT';
+export const SET_BILL_USAGE_PRODUCT_LIST = 'SET_BILL_USAGE_PRODUCT_LIST';
+export const SET_BILL_USAGE_PRODUCT_COLLAPSE_STATUS = 'SET_BILL_USAGE_PRODUCT_COLLAPSE_STATUS';
+export const TOGGLE_BILL_USAGE_PRODUCT_COLLAPSE_STATUS = 'TOGGLE_BILL_USAGE_PRODUCT_COLLAPSE_STATUS';
+export const TOGGLE_BILL_USAGE_PRODUCT_CHECK_STATUS = 'TOGGLE_BILL_USAGE_PRODUCT_CHECK_STATUS';
+export const GET_BILL_USAGE_PRODUCT_DETAIL = 'GET_BILL_USAGE_PRODUCT_DETAIL';
+export const SET_BILL_USAGE_PRODUCT_DETAIL = 'SET_BILL_USAGE_PRODUCT_DETAIL';
+export const GET_BILL_USAGE_PRODUCT_BILL_DETAIL = 'GET_BILL_USAGE_PRODUCT_BILL_DETAIL';
+export const SET_BILL_USAGE_PRODUCT_BILL_DETAIL = 'SET_BILL_USAGE_PRODUCT_BILL_DETAIL';
+export const GET_BILL_PREFERENCES = 'GET_BILL_PREFERENCES';
+export const SET_BILL_PREFERENCES = 'SET_BILL_PREFERENCES';
+export const TOGGLE_BILL_DETAIL_CHECK_STATUS = 'TOGGLE_BILL_DETAIL_CHECK_STATUS';
+export const APPLY_FOR_EBILL = 'APPLY_FOR_EBILL';
+export const GET_INVOICE_PDF = 'GET_INVOICE_PDF';
+// FIREBASE NOTIFICATIONS
+export const REGISTER_FCM_TOKEN = 'REGISTER_FCM_TOKEN';
+export const DEREGISTER_FCM_TOKEN = 'DEREGISTER_FCM_TOKEN';
+&nbsp;
+// POPUP ACTIONS
+export const POPUP_SHOW = 'POPUP_SHOW';
+export const POPUP_HIDE = 'POPUP_HIDE';
+export const POPUP_PUT_ACTION = 'POPUP_PUT_ACTION';
+&nbsp;
+// ******************
+//  ACTIONS CREATORS
+// ******************
+&nbsp;
+// DATABASE SEED ACTIONS CREATOR
+export const initializeData = createAction(INITIALIZE_DATA);
+export const initializeDataSucceeded = createAction(INITIALIZE_DATA_SUCCEEDED);
+&nbsp;
+// SPINNER ACTIONS CREATORS
+export const showSpinner = createAction(SPINNER_SHOW);
+export const hideSpinner = createAction(SPINNER_HIDE);
+&nbsp;
+// CMS Translation ACTION CREATORS
+export const getTranslations = createAction(FETCH_TRANSLATIONS);
+&nbsp;
+// auto-detect number which is used for auto-login.
+export const autoDetectMSISDN = createAction(AUTO_DETECT_MSISDN_REQUEST);
+export const autoDetectMSISDNSuccess = createAction(AUTO_DETECT_MSISDN_SUCCESS);
+export const autoDetectMSISDNFail = createAction(AUTO_DETECT_MSISDN_FAIL);
+&nbsp;
+// OTP Send and validate
+export const sendOTP = createAction(SEND_OTP);
+export const validateOTP = createAction(VALIDATE_OTP);
+export const sendOTPStatus = createAction(SEND_OTP_STATUS);
+export const validateOTPStatus = createAction(VALIDATE_OTP_STATUS);
+&nbsp;
+export const resetPrepay = createAction(RESET_PREPAY);
+&nbsp;
+// NETWORK STATUS ACTION CREATORS
+export const setNetworkStatus = createAction(SET_NETWORK_STATUS);
+&nbsp;
+// USER PREFERENCE ACTION CREATORS
+export const setPreferences = createAction(SET_PREFERENCES);
+export const changeLanguage = createAction(CHANGE_LANGUAGE);
+&nbsp;
+// START UP ACTION CREATORS
+export const startupSagaComplete = createAction(STARTUP_SAGA_COMPLETE);
+&nbsp;
+// LOGIN ACTION CREATORS
+export const loginRequest = createAction(LOGIN_REQUEST);
+export const loginSuccess = createAction(LOGIN_SUCCESS);
+export const loginFailure = createAction(LOGIN_FAILURE);
+&nbsp;
+// REGISTER ACTION CREATORS
+export const registerRequest = createAction(REGISTER_REQUEST);
+export const registerSuccess = createAction(REGISTER_SUCCESS);
+export const registerFailure = createAction(REGISTER_FAILURE);
+&nbsp;
+// LOGOUT ACTION CREATOR
+export const logoutRequest = createAction(LOGOUT_REQUEST);
+export const logoutSuccess = createAction(LOGOUT_SUCCESS);
+export const logoutFailure = createAction(LOGOUT_FAILURE);
+&nbsp;
+// CHECK_LOGIN ACTION CREATORS
+export const loginWithExistingToken = createAction(CHECK_EXISTING_LOGIN);
+&nbsp;
+// SET ACCESS TOKEN AND PROFILE ACTION CREATOR
+export const setAccessTokenAndProfile = createAction(SET_ACCESS_TOKEN_AND_PROFILE);
+&nbsp;
+// SET MSISDN
+export const setMSISDN = createAction(SET_MSISDN);
+&nbsp;
+// FORCE UPDATE ACTION CREATORS
+export const forceUpdateFailed = createAction(FORCE_UPDATE_FAILED);
+&nbsp;
+// ALERT VISIBILITY ACTION CREATORS
+export const notifyAlertVisible = createAction(FORCE_UPDATE_ALERT_VISIBLE);
+export const notifyAlertHidden = createAction(FORCE_UPDATE_ALERT_HIDDEN);
+&nbsp;
+// DEEPLINKING ACTION CREATORS
+export const deeplinkReceived = createAction(DEEP_LINK_RECEIVED);
+&nbsp;
+// STORELOCATOR ACTION CREATORS
+// CURRENT LOCATION ACTION CREATORS
+export const changeCurrentLocation = createAction(CHANGE_CURRENT_LOCATION);
+// CLEAR PROVINCE FROM DROPDOWN ACTION CREATOR
+export const clearProvince = createAction(CLEAR_PROVINCE);
+// SET PROVINCE FROM DROPDOWN ACTION CREATOR
+export const setProvince = createAction(SET_PROVINCE);
+// SET SERVICE FROM DROPDOWN ACTION CREATOR
+export const setService = createAction(SET_SERVICE);
+// CLEAR SERVICE FROM DROPDOWN ACTION CREATOR
+export const clearService = createAction(CLEAR_SERVICE);
+// UPDATE NEARBY STORES ACTION CREATOR
+export const updateNearByStores = createAction(UPDATE_NEARBY_STORES);
+// UPDATE KM RADIUS ACTION CREATOR
+export const updateKMRadius = createAction(UPDATE_KM_RADIUS);
+// CHANGE_SEARCH_TEXT
+export const changeSearchText = createAction(CHANGE_SEARCH_TEXT);
+export const clearFilteredStores = createAction(CLEAR_FILTERED_STORES);
+&nbsp;
+// PAYMENT ACTIONS
+export const payNewCustomer = createAction(PAY_NEW_CUSTOMER);
+export const showPaymentMethods = createAction(SHOW_PAYMENT_METHODS);
+export const preLoginPayment = createAction(PRE_LOGIN_PAYMENT);
+export const payForExistingCustomer = createAction(PAY_EXISTING_CUSTOMER);
+export const removeExisingCard = createAction(REMOVE_EXISTING_CARD);
+export const removeCardSuccessful = createAction(REMOVE_CARD_SUCCESSFUL);
+export const setPaymentItems = createAction(SET_PAYMENT_ITEMS);
+export const setPaymentStatus = createAction(SET_PAYMENT_STATUS);
+export const setSavedCards = createAction(SET_SAVED_CARDS);
+export const clearPaymentData = createAction(CLEAR_PAYMENT_DATA);
+&nbsp;
+// PAY FOR OTHERS ACTIONS
+export const getPaymentProducts = createAction(GET_PRODUCTS_PAYMENT);
+export const setPaymentProducts = createAction(SET_PRODUCTS_PAYMENT);
+export const togglePayOthersProductCheckStatus = createAction(TOGGLE_PAYOTHERS_PRODUCT_CHECK_STATUS);
+export const setPayOthersProductBillDetail = createAction(SET_PAYOTHERS_PRODUCT_BILL_DETAIL);
+export const setPayOthersProductBillDetailCheckStatus = createAction(TOGGLE_PAYOTHERS_BILL_DETAIL_CHECK_STATUS);
+export const setPayOthersProductCollapseStatus = createAction(SET_PAYOTHERS_PRODUCT_COLLAPSE_STATUS);
+export const togglePayOthersProductCollapseStatus = createAction(TOGGLE_PAYOTHERS_PRODUCT_COLLAPSE_STATUS);
+&nbsp;
+// BILLS AND USAGE
+export const fetchBillUsageAndNavigate = createAction(FETCH_BILL_USAGE_AND_NAVIGATE);
+export const getBillUsageProductList = createAction(GET_BILL_USAGE_PRODUCT_LIST);
+export const getBillUsageProduct = createAction(GET_BILL_USAGE_PRODUCT);
+export const setBillUsageProductList = createAction(SET_BILL_USAGE_PRODUCT_LIST);
+export const toggleBillUsageProductCheckStatus = createAction(TOGGLE_BILL_USAGE_PRODUCT_CHECK_STATUS);
+export const toggleBillUsageProductCollapseStatus = createAction(TOGGLE_BILL_USAGE_PRODUCT_COLLAPSE_STATUS);
+export const setBillUsageProductCollapseStatus = createAction(SET_BILL_USAGE_PRODUCT_COLLAPSE_STATUS);
+export const getBillUsageProductDetail = createAction(GET_BILL_USAGE_PRODUCT_DETAIL);
+export const setBillUsageProductDetail = createAction(SET_BILL_USAGE_PRODUCT_DETAIL);
+export const getBillUsageProductBillDetail = createAction(GET_BILL_USAGE_PRODUCT_BILL_DETAIL);
+export const setBillUsageProductBillDetail = createAction(SET_BILL_USAGE_PRODUCT_BILL_DETAIL);
+export const getBillingPreferences = createAction(GET_BILL_PREFERENCES);
+export const setBillingPreferences = createAction(SET_BILL_PREFERENCES);
+export const toggleBillDetailCheckStatus = createAction(TOGGLE_BILL_DETAIL_CHECK_STATUS);
+export const applyForEBill = createAction(APPLY_FOR_EBILL);
+export const getInvoicePdf = createAction(GET_INVOICE_PDF);
+// FIREBASE NOTIFICATIONS
+export const registerFCMToken = createAction(REGISTER_FCM_TOKEN);
+export const deregisterFCMToken = createAction(DEREGISTER_FCM_TOKEN);
+&nbsp;
+// POPUP ACTION CREATORS
+export const showPopup = createAction(POPUP_SHOW);
+export const hidePopup = createAction(POPUP_HIDE);
+export const popupPutAction = createAction(POPUP_PUT_ACTION);
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

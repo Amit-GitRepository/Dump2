@@ -1,0 +1,59 @@
+var _dbKeys=require('../../../config/dbKeys.config');var _dbKeys2=_interopRequireDefault(_dbKeys);
+var _localStorage=require('../../../utils/localStorage.util');var _localStorage2=_interopRequireDefault(_localStorage);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _reduxSagaTesting=require('redux-saga-testing');var _reduxSagaTesting2=_interopRequireDefault(_reduxSagaTesting);
+var _user=require('../user.saga');var _user2=_interopRequireDefault(_user);
+var _effects=require('redux-saga/effects');
+var _index=require('../../actions/index.actions');
+var _helper=require('../../../language/i18n/helper');
+var _moment=require('../../../utils/moment.util');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('userSaga: Testing the root Saga',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_user2.default)());
+it('Should take the latest Change language actions and call update language saga',function(result){
+expect(result).toEqual((0,_effects.takeLatest)(_index.CHANGE_LANGUAGE,_user.updateLanguage));
+});
+it('Should take the latest SET PREFERENCES actions and call set Preference saga',function(result){
+expect(result).toEqual((0,_effects.takeLatest)(_index.SET_PREFERENCES,_user.setPreferences));
+});
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});
+
+var mockSelectedLanguageAction={
+payload:{
+language:'th'}};
+
+
+
+describe('setPreferences: Testing the set preferences Saga',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_user.setPreferences)(mockSelectedLanguageAction));
+var language=(0,_result2.default)(mockSelectedLanguageAction,'payload.language');
+it('Should call the change locale to set the preferred user language',function(result){
+expect(result).toEqual((0,_effects.call)(_helper.changeLocale,language));
+});
+it('Should call the change language for moment',function(result){
+expect(result).toEqual((0,_effects.call)(_moment.setLanguage,language));
+});
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});
+
+describe('updateLanguage: Testing the update language Saga',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_user.updateLanguage)(mockSelectedLanguageAction));
+var language=(0,_result2.default)(mockSelectedLanguageAction,'payload.language');
+it('Should call the change locale to set the preferred user language',function(result){
+expect(result).toEqual((0,_effects.call)(_helper.changeLocale,language));
+});
+it('Should call the change language for moment',function(result){
+expect(result).toEqual((0,_effects.call)(_moment.setLanguage,language));
+});
+it('Should call update the selected language in local storage',function(result){
+expect(result).toEqual((0,_effects.call)(_localStorage2.default.updateItem,_dbKeys2.default.USER_PREFERENCE_KEY,{language:language}));
+});
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});

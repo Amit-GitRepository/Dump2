@@ -1,0 +1,49 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.mapDispatchToProps=exports.mapStateToProps=undefined;var cov_2lb9csns2r=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/Payment/PayForOthers/PayForOthersPostpaid.page.js',hash='297782ca235c77b3872360f27eca9ea623abaac2',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/Payment/PayForOthers/PayForOthersPostpaid.page.js',statementMap:{'0':{start:{line:11,column:149},end:{line:11,column:159}},'1':{start:{line:12,column:4},end:{line:15,column:6}},'2':{start:{line:18,column:0},end:{line:19,column:2}},'3':{start:{line:21,column:0},end:{line:30,column:2}},'4':{start:{line:32,column:31},end:{line:35,column:2}},'5':{start:{line:32,column:52},end:{line:35,column:1}},'6':{start:{line:37,column:34},end:{line:47,column:2}},'7':{start:{line:37,column:49},end:{line:47,column:1}},'8':{start:{line:38,column:28},end:{line:38,column:81}},'9':{start:{line:39,column:53},end:{line:39,column:133}},'10':{start:{line:40,column:40},end:{line:43,column:3}},'11':{start:{line:41,column:16},end:{line:41,column:66}},'12':{start:{line:42,column:4},end:{line:42,column:68}},'13':{start:{line:44,column:30},end:{line:44,column:70}},'14':{start:{line:45,column:43},end:{line:45,column:112}},'15':{start:{line:46,column:37},end:{line:46,column:79}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:10,column:2},end:{line:10,column:3}},loc:{start:{line:10,column:12},end:{line:16,column:3}},line:10},'1':{name:'(anonymous_1)',decl:{start:{line:32,column:31},end:{line:32,column:32}},loc:{start:{line:32,column:52},end:{line:35,column:1}},line:32},'2':{name:'(anonymous_2)',decl:{start:{line:37,column:34},end:{line:37,column:35}},loc:{start:{line:37,column:49},end:{line:47,column:1}},line:37},'3':{name:'(anonymous_3)',decl:{start:{line:38,column:22},end:{line:38,column:23}},loc:{start:{line:38,column:28},end:{line:38,column:81}},line:38},'4':{name:'(anonymous_4)',decl:{start:{line:39,column:25},end:{line:39,column:26}},loc:{start:{line:39,column:53},end:{line:39,column:133}},line:39},'5':{name:'(anonymous_5)',decl:{start:{line:40,column:25},end:{line:40,column:26}},loc:{start:{line:40,column:40},end:{line:43,column:3}},line:40},'6':{name:'(anonymous_6)',decl:{start:{line:40,column:40},end:{line:40,column:41}},loc:{start:{line:40,column:83},end:{line:43,column:3}},line:40},'7':{name:'(anonymous_7)',decl:{start:{line:44,column:19},end:{line:44,column:20}},loc:{start:{line:44,column:30},end:{line:44,column:70}},line:44},'8':{name:'(anonymous_8)',decl:{start:{line:45,column:14},end:{line:45,column:15}},loc:{start:{line:45,column:43},end:{line:45,column:112}},line:45},'9':{name:'(anonymous_9)',decl:{start:{line:46,column:22},end:{line:46,column:23}},loc:{start:{line:46,column:37},end:{line:46,column:79}},line:46}},branchMap:{'0':{loc:{start:{line:45,column:27},end:{line:45,column:38}},type:'default-arg',locations:[{start:{line:45,column:36},end:{line:45,column:38}}],line:45}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0},b:{'0':[0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _PayOthersPostpaid=require('../../../components/Payment/PayOthersPostpaid/PayOthersPostpaid.component');var _PayOthersPostpaid2=_interopRequireDefault(_PayOthersPostpaid);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _reactRedux=require('react-redux');
+var _reactNavigation=require('react-navigation');
+var _index=require('../../../redux/actions/index.actions');var actions=_interopRequireWildcard(_index);function _interopRequireWildcard(obj){if(obj&&obj.__esModule){return obj;}else{var newObj={};if(obj!=null){for(var key in obj){if(Object.prototype.hasOwnProperty.call(obj,key))newObj[key]=obj[key];}}newObj.default=obj;return newObj;}}function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+PayForOthersPostpaidPage=function(_Component){_inherits(PayForOthersPostpaidPage,_Component);function PayForOthersPostpaidPage(){_classCallCheck(this,PayForOthersPostpaidPage);return _possibleConstructorReturn(this,(PayForOthersPostpaidPage.__proto__||Object.getPrototypeOf(PayForOthersPostpaidPage)).apply(this,arguments));}_createClass(PayForOthersPostpaidPage,[{key:'render',value:function render()
+{cov_2lb9csns2r.f[0]++;var _ref=(cov_2lb9csns2r.s[0]++,
+this.props),product=_ref.product,billDetail=_ref.billDetail,toggleProductCheck=_ref.toggleProductCheck,toggleProductCollapse=_ref.toggleProductCollapse,onBillDetailsClick=_ref.onBillDetailsClick,toggleBillDetailCheck=_ref.toggleBillDetailCheck,goToScreen=_ref.goToScreen,setPaymentItems=_ref.setPaymentItems;cov_2lb9csns2r.s[1]++;
+return(
+_react2.default.createElement(_PayOthersPostpaid2.default,{product:product,dueBills:billDetail,toggleProductCheck:toggleProductCheck,toggleProductCollapse:toggleProductCollapse,
+onBillDetailsClick:onBillDetailsClick,toggleBillDetailCheck:toggleBillDetailCheck,goToScreen:goToScreen,setPaymentItems:setPaymentItems}));
+
+}}]);return PayForOthersPostpaidPage;}(_react.Component);cov_2lb9csns2r.s[2]++;
+
+PayForOthersPostpaidPage.defaultProps={};cov_2lb9csns2r.s[3]++;
+
+
+PayForOthersPostpaidPage.propTypes={
+product:_propTypes2.default.object,
+toggleProductCheck:_propTypes2.default.func,
+billDetail:_propTypes2.default.object,
+toggleProductCollapse:_propTypes2.default.func,
+onBillDetailsClick:_propTypes2.default.func,
+toggleBillDetailCheck:_propTypes2.default.func,
+goToScreen:_propTypes2.default.func,
+setPaymentItems:_propTypes2.default.func};cov_2lb9csns2r.s[4]++;
+
+
+var mapStateToProps=exports.mapStateToProps=function mapStateToProps(_ref2){var payForOthers=_ref2.payForOthers;cov_2lb9csns2r.f[1]++;cov_2lb9csns2r.s[5]++;return{
+product:(0,_result2.default)(payForOthers,'product',{}),
+billDetail:(0,_result2.default)(payForOthers,'billDetail',{})};
+};cov_2lb9csns2r.s[6]++;
+
+var mapDispatchToProps=exports.mapDispatchToProps=function mapDispatchToProps(dispatch){cov_2lb9csns2r.f[2]++;cov_2lb9csns2r.s[7]++;return{
+toggleProductCheck:function toggleProductCheck(){cov_2lb9csns2r.f[3]++;cov_2lb9csns2r.s[8]++;return dispatch(actions.togglePayOthersProductCheckStatus());},
+toggleProductCollapse:function toggleProductCollapse(isCollapsed,accountId){cov_2lb9csns2r.f[4]++;cov_2lb9csns2r.s[9]++;return dispatch(actions.togglePayOthersProductCollapseStatus({isCollapsed:isCollapsed,accountId:accountId}));},
+toggleBillDetailCheck:function toggleBillDetailCheck(accountId){cov_2lb9csns2r.f[5]++;cov_2lb9csns2r.s[10]++;return function(invoiceNos,isChecked,checkedBillSum){cov_2lb9csns2r.f[6]++;
+var obj=(cov_2lb9csns2r.s[11]++,{invoiceNos:invoiceNos,isChecked:isChecked,checkedBillSum:checkedBillSum,accountId:accountId});cov_2lb9csns2r.s[12]++;
+dispatch(actions.setPayOthersProductBillDetailCheckStatus(obj));
+};},
+setPaymentItems:function setPaymentItems(items){cov_2lb9csns2r.f[7]++;cov_2lb9csns2r.s[13]++;return dispatch(actions.setPaymentItems(items));},
+goToScreen:function goToScreen(screenName){var params=arguments.length>1&&arguments[1]!==undefined?arguments[1]:(cov_2lb9csns2r.b[0][0]++,{});cov_2lb9csns2r.f[8]++;cov_2lb9csns2r.s[14]++;return dispatch(_reactNavigation.NavigationActions.navigate({routeName:screenName,params:params}));},
+onBillDetailsClick:function onBillDetailsClick(invoiceNo){cov_2lb9csns2r.f[9]++;cov_2lb9csns2r.s[15]++;return dispatch(actions.getInvoicePdf(invoiceNo));}};
+};exports.default=
+
+(0,_reactRedux.connect)(mapStateToProps,mapDispatchToProps)(PayForOthersPostpaidPage);

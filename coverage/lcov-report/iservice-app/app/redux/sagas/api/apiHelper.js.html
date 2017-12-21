@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/redux/sagas/api/apiHelper.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../index.html">All files</a> / <a href="index.html">iservice-app/app/redux/sagas/api</a> apiHelper.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">77.27% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>34/44</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">63.16% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>12/19</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">78.13% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>25/32</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import base64 from 'base-64';
+import Config from 'react-native-config';
+&nbsp;
+export const msisdnRequest = () =&gt; ({
+  endpoint: 'MSISDN',
+  baseUrl: Config.USER_ENDPOINT
+});
+&nbsp;
+export const getTranslations  = () =&gt; ({
+  endpoint: 'TRANSLATIONS',
+  baseUrl: Config.CONTENT_ENDPOINT,
+  query: {platform: 'mobile'}
+});
+&nbsp;
+export const billPreferences = (accountIds) =&gt; ({
+  endpoint: 'BILL_PREFERENCES',
+  method: 'GET',
+  baseUrl: Config.SUBSCRIBER_ENDPOINT,
+  query: {
+    accountIDs: accountIds
+  }
+});
+&nbsp;
+export const registerEbill = (accounts) =&gt; ({
+  endpoint: 'REGISTER_EBILL',
+  method: 'POST',
+  baseUrl: Config.SUBSCRIBER_ENDPOINT,
+  data: accounts
+});
+&nbsp;
+export const payForExistingCustomer = (ssoId, data) =&gt; {
+  const headers = {
+    'ssoid': base64.encode(ssoId)
+  };
+  return {
+    endpoint: 'PAY_EXISTING_CUSTOMER',
+    baseUrl: Config.PAYMENT_ENDPOINT,
+    headers,
+    method: 'POST',
+    data
+  };
+};
+&nbsp;
+export const payForNewCustomer = <span class="fstat-no" title="function not covered" >(s</span>soId, data) =&gt; {
+  const headers = <span class="cstat-no" title="statement not covered" >{</span>
+    'ssoid': base64.encode(ssoId)
+  };
+<span class="cstat-no" title="statement not covered" >  return {</span>
+    endpoint: 'PAY_NEW_CUSTOMER',
+    baseUrl: Config.PAYMENT_ENDPOINT,
+    headers,
+    method: 'POST',
+    data
+  };
+};
+&nbsp;
+export const payForNonLoginUser = <span class="fstat-no" title="function not covered" >(d</span>ata) =&gt; (<span class="cstat-no" title="statement not covered" >{</span>
+  endpoint: 'PAY_NON_LOGIN_USER',
+  baseUrl: Config.PAYMENT_ENDPOINT,
+  method: 'POST',
+  data
+});
+&nbsp;
+export const deleteCard = (ssoId, cardID) =&gt; {
+  const headers = {
+    'ssoid': base64.encode(ssoId)
+  };
+  return {
+    endpoint: 'CARD',
+    baseUrl: Config.PAYMENT_ENDPOINT,
+    pathParam: `/${cardID}`,
+    method: 'DELETE',
+    headers
+  };
+};
+&nbsp;
+export const getSavedCards = (ssoId) =&gt; {
+  const headers = {
+    'ssoid': base64.encode(ssoId)
+  };
+  return {
+    endpoint: 'CARD',
+    baseUrl: Config.PAYMENT_ENDPOINT,
+    method: 'GET',
+    headers
+  };
+};
+&nbsp;
+export const tokeniseCard = <span class="fstat-no" title="function not covered" >(d</span>ata) =&gt; {
+  const pubKey = <span class="cstat-no" title="statement not covered" >Config.OMISE_PUBLIC_KEY_ENCRYPTED;</span>
+  const headers = <span class="cstat-no" title="statement not covered" >{'Authorization': `Basic ${pubKey}`};</span>
+<span class="cstat-no" title="statement not covered" >  return {</span>
+    endpoint: 'TOKENISE_CARD',
+    baseUrl: Config.OMISE_VAULT_URL,
+    headers,
+    method: 'POST',
+    data
+  };
+};
+&nbsp;
+export const billUsageProductList  = ({msisdn, idCard}) =&gt; ({
+  endpoint: 'BILL_USAGE_PRODUCT_LIST',
+  baseUrl: Config.SUBSCRIBER_ENDPOINT,
+  data: {msisdn, idCard},
+  method: 'POST'
+});
+&nbsp;
+export const preLoginProduct  = <span class="fstat-no" title="function not covered" >(i</span>d) =&gt; (<span class="cstat-no" title="statement not covered" >{</span>
+  endpoint: 'PRE_LOGIN_PRODUCT',
+  baseUrl: Config.SUBSCRIBER_ENDPOINT,
+  pathParam: `/${id}`,
+  method: 'GET'
+});
+&nbsp;
+export const billUsageProductDetail  = (productId, productType, subscriberId, subscriptionType) =&gt; ({
+  endpoint: 'BILL_USAGE_PRODUCT_DETAIL',
+  baseUrl: Config.SUBSCRIBER_ENDPOINT,
+  data: {
+    productId,
+    productType,
+    subscriberId,
+    subscriptionType
+  },
+  method: 'POST'
+});
+&nbsp;
+// TODO CHANGE EVERYTHING
+export const billUsageProductBillDetail  = <span class="fstat-no" title="function not covered" >(a</span>ccountIds, isConvergence) =&gt; (<span class="cstat-no" title="statement not covered" >{</span>
+  endpoint: 'BILL_USAGE_PRODUCT_BILL_DETAIL',
+  baseUrl: Config.SUBSCRIBER_ENDPOINT,
+  method: 'GET',
+  query: {'accountNo': accountIds, isConvergence}
+});
+&nbsp;
+export const registerFCMToken = (ssoid, token) =&gt; ({
+  endpoint: 'REGISTER_FCM_TOKEN',
+  baseUrl: Config.NOTIFICATION_ENDPOINT,
+  method: 'POST',
+  data: {
+    ssoid: ssoid,
+    token: token
+  },
+  loader: false
+});
+&nbsp;
+export const deregisterFCMToken = (token) =&gt; ({
+  endpoint: 'DEREGISTER_FCM_TOKEN',
+  baseUrl: Config.NOTIFICATION_ENDPOINT,
+  method: 'POST',
+  data: {
+    tokenList: [token]
+  },
+  loader: false
+});
+&nbsp;
+export const getProductFromServiceNo = (serviceNo) =&gt; ({
+  endpoint: 'PAY_OTHERS_GET_PRODUCT',
+  baseUrl: Config.SUBSCRIBER_ENDPOINT,
+  method: 'GET',
+  pathParam: `/${serviceNo}`
+});
+&nbsp;
+export const sendOTPRequest  = <span class="fstat-no" title="function not covered" >(m</span>sisdn) =&gt;
+  (<span class="cstat-no" title="statement not covered" >{</span>
+    baseUrl: Config.OTP_ENDPOINT,
+    method: 'GET',
+    query: {'method': 'request_otp', 'project': 'iservice', 'app_id': 20, 'secret': '453d1a20c3acf2ca0d4e', 'otp_sender': 'iservice', 'type': 'sync', 'ln': 'en', 'msisdn': msisdn, 'channel': 'web', 'format': 'json'}
+  });
+&nbsp;
+export const validateOTPRequest  = <span class="fstat-no" title="function not covered" >(m</span>sisdn, otp) =&gt;
+  (<span class="cstat-no" title="statement not covered" >{</span>
+    baseUrl: Config.OTP_ENDPOINT,
+    method: 'GET',
+    query: {'method': 'validate_otp', 'project': 'iservice', 'app_id': 20, 'secret': '453d1a20c3acf2ca0d4e', 'otp_sender': 'iservice', 'type': 'sync', 'ln': 'en', 'msisdn': msisdn, 'channel': 'web', 'otp': otp, 'format': 'json'}
+  });
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../sorter.js"></script>
+</body>
+</html>

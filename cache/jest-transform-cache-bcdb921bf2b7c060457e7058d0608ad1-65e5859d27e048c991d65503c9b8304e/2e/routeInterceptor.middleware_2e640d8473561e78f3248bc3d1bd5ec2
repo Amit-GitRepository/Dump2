@@ -1,0 +1,72 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.generateLoginPopupMessage=undefined;var cov_106ppfinu2=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/middlewares/routeInterceptor.middleware.js',hash='d723ede377a47b14ff03da3049a64f9abefb1a20',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/middlewares/routeInterceptor.middleware.js',statementMap:{'0':{start:{line:9,column:22},end:{line:20,column:1}},'1':{start:{line:10,column:17},end:{line:10,column:39}},'2':{start:{line:11,column:2},end:{line:11,column:28}},'3':{start:{line:11,column:15},end:{line:11,column:28}},'4':{start:{line:12,column:2},end:{line:18,column:3}},'5':{start:{line:14,column:4},end:{line:16,column:5}},'6':{start:{line:15,column:6},end:{line:15,column:39}},'7':{start:{line:17,column:4},end:{line:17,column:17}},'8':{start:{line:19,column:2},end:{line:19,column:14}},'9':{start:{line:22,column:26},end:{line:25,column:1}},'10':{start:{line:23,column:19},end:{line:23,column:65}},'11':{start:{line:24,column:2},end:{line:24,column:31}},'12':{start:{line:27,column:25},end:{line:29,column:6}},'13':{start:{line:29,column:2},end:{line:29,column:6}},'14':{start:{line:32,column:41},end:{line:45,column:2}},'15':{start:{line:32,column:54},end:{line:45,column:1}},'16':{start:{line:47,column:25},end:{line:70,column:1}},'17':{start:{line:47,column:51},end:{line:70,column:1}},'18':{start:{line:47,column:61},end:{line:70,column:1}},'19':{start:{line:48,column:2},end:{line:50,column:3}},'20':{start:{line:49,column:4},end:{line:49,column:24}},'21':{start:{line:51,column:2},end:{line:54,column:3}},'22':{start:{line:52,column:4},end:{line:52,column:46}},'23':{start:{line:53,column:4},end:{line:53,column:16}},'24':{start:{line:56,column:18},end:{line:56,column:51}},'25':{start:{line:58,column:22},end:{line:58,column:37}},'26':{start:{line:60,column:2},end:{line:67,column:3}},'27':{start:{line:61,column:4},end:{line:63,column:5}},'28':{start:{line:62,column:6},end:{line:62,column:42}},'29':{start:{line:64,column:4},end:{line:66,column:5}},'30':{start:{line:65,column:6},end:{line:65,column:18}},'31':{start:{line:69,column:2},end:{line:69,column:22}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:9,column:22},end:{line:9,column:23}},loc:{start:{line:9,column:59},end:{line:20,column:1}},line:9},'1':{name:'(anonymous_1)',decl:{start:{line:22,column:26},end:{line:22,column:27}},loc:{start:{line:22,column:45},end:{line:25,column:1}},line:22},'2':{name:'(anonymous_2)',decl:{start:{line:27,column:25},end:{line:27,column:26}},loc:{start:{line:29,column:2},end:{line:29,column:6}},line:29},'3':{name:'(anonymous_3)',decl:{start:{line:32,column:41},end:{line:32,column:42}},loc:{start:{line:32,column:54},end:{line:45,column:1}},line:32},'4':{name:'(anonymous_4)',decl:{start:{line:47,column:25},end:{line:47,column:26}},loc:{start:{line:47,column:51},end:{line:70,column:1}},line:47},'5':{name:'(anonymous_5)',decl:{start:{line:47,column:51},end:{line:47,column:52}},loc:{start:{line:47,column:61},end:{line:70,column:1}},line:47},'6':{name:'(anonymous_6)',decl:{start:{line:47,column:61},end:{line:47,column:62}},loc:{start:{line:47,column:73},end:{line:70,column:1}},line:47}},branchMap:{'0':{loc:{start:{line:11,column:2},end:{line:11,column:28}},type:'if',locations:[{start:{line:11,column:2},end:{line:11,column:28}},{start:{line:11,column:2},end:{line:11,column:28}}],line:11},'1':{loc:{start:{line:12,column:2},end:{line:18,column:3}},type:'if',locations:[{start:{line:12,column:2},end:{line:18,column:3}},{start:{line:12,column:2},end:{line:18,column:3}}],line:12},'2':{loc:{start:{line:14,column:4},end:{line:16,column:5}},type:'if',locations:[{start:{line:14,column:4},end:{line:16,column:5}},{start:{line:14,column:4},end:{line:16,column:5}}],line:14},'3':{loc:{start:{line:48,column:2},end:{line:50,column:3}},type:'if',locations:[{start:{line:48,column:2},end:{line:50,column:3}},{start:{line:48,column:2},end:{line:50,column:3}}],line:48},'4':{loc:{start:{line:48,column:6},end:{line:48,column:91}},type:'binary-expr',locations:[{start:{line:48,column:6},end:{line:48,column:48}},{start:{line:48,column:52},end:{line:48,column:91}}],line:48},'5':{loc:{start:{line:51,column:2},end:{line:54,column:3}},type:'if',locations:[{start:{line:51,column:2},end:{line:54,column:3}},{start:{line:51,column:2},end:{line:54,column:3}}],line:51},'6':{loc:{start:{line:60,column:2},end:{line:67,column:3}},type:'if',locations:[{start:{line:60,column:2},end:{line:67,column:3}},{start:{line:60,column:2},end:{line:67,column:3}}],line:60},'7':{loc:{start:{line:61,column:4},end:{line:63,column:5}},type:'if',locations:[{start:{line:61,column:4},end:{line:63,column:5}},{start:{line:61,column:4},end:{line:63,column:5}}],line:61},'8':{loc:{start:{line:64,column:4},end:{line:66,column:5}},type:'if',locations:[{start:{line:64,column:4},end:{line:66,column:5}},{start:{line:64,column:4},end:{line:66,column:5}}],line:64}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0,'19':0,'20':0,'21':0,'22':0,'23':0,'24':0,'25':0,'26':0,'27':0,'28':0,'29':0,'30':0,'31':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0],'4':[0,0],'5':[0,0],'6':[0,0],'7':[0,0],'8':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _isEmpty=require('lodash/isEmpty');var _isEmpty2=_interopRequireDefault(_isEmpty);
+var _index=require('../../routes/index.routes');var _index2=_interopRequireDefault(_index);
+var _index3=require('../../redux/actions/index.actions');
+var _reactNavigation=require('react-navigation');
+var _index4=require('../actions/index.actions');
+var _reactNative=require('../../utils/reactNative.util');
+var _helper=require('../../language/i18n/helper');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}cov_106ppfinu2.s[0]++;
+
+var loginRequired=function loginRequired(_ref){var routeName=_ref.routeName,nextAction=_ref.action;cov_106ppfinu2.f[0]++;
+var config=(cov_106ppfinu2.s[1]++,_index.routeConfig[routeName]);cov_106ppfinu2.s[2]++;
+if(!config){cov_106ppfinu2.b[0][0]++;cov_106ppfinu2.s[3]++;return false;}else{cov_106ppfinu2.b[0][1]++;}cov_106ppfinu2.s[4]++;
+if(!config.requireLogin){cov_106ppfinu2.b[1][0]++;cov_106ppfinu2.s[5]++;
+
+if(nextAction){cov_106ppfinu2.b[2][0]++;cov_106ppfinu2.s[6]++;
+return loginRequired(nextAction);
+}else{cov_106ppfinu2.b[2][1]++;}cov_106ppfinu2.s[7]++;
+return false;
+}else{cov_106ppfinu2.b[1][1]++;}cov_106ppfinu2.s[8]++;
+return true;
+};cov_106ppfinu2.s[9]++;
+
+var checkIfRouteExist=function checkIfRouteExist(action,state){cov_106ppfinu2.f[1]++;
+var newState=(cov_106ppfinu2.s[10]++,_index2.default.router.getStateForAction(action,state));cov_106ppfinu2.s[11]++;
+return!(state===newState);
+};cov_106ppfinu2.s[12]++;
+
+var isUserAuthorized=function isUserAuthorized()
+
+{cov_106ppfinu2.f[2]++;cov_106ppfinu2.s[13]++;return true;};cov_106ppfinu2.s[14]++;
+
+
+var generateLoginPopupMessage=exports.generateLoginPopupMessage=function generateLoginPopupMessage(action){cov_106ppfinu2.f[3]++;cov_106ppfinu2.s[15]++;return{
+title:(0,_helper.translate)('SIDE_MENU__LOGIN_PROMPT_TITLE_TEXT'),
+body:(0,_helper.translate)('SIDE_MENU__LOGIN_PROMPT_NEED_ACCESS'),
+buttons:[
+{
+title:(0,_helper.translate)('SIDE_MENU__LOGIN_PROMPT_CANCEL')},
+
+{
+title:(0,_helper.translate)('SIDE_MENU__LOGIN_PROMPT_LOGIN'),
+actionType:_index3.LOGIN_REQUEST,
+nextAction:action}]};
+
+
+};cov_106ppfinu2.s[16]++;
+
+var routeInterceptor=function routeInterceptor(_ref2){var dispatch=_ref2.dispatch,getState=_ref2.getState;cov_106ppfinu2.f[4]++;cov_106ppfinu2.s[17]++;return function(next){cov_106ppfinu2.f[5]++;cov_106ppfinu2.s[18]++;return function(action){cov_106ppfinu2.f[6]++;cov_106ppfinu2.s[19]++;
+if((cov_106ppfinu2.b[4][0]++,action.type!==_reactNavigation.NavigationActions.NAVIGATE)&&(cov_106ppfinu2.b[4][1]++,action.type!==_reactNavigation.NavigationActions.RESET)){cov_106ppfinu2.b[3][0]++;cov_106ppfinu2.s[20]++;
+return next(action);
+}else{cov_106ppfinu2.b[3][1]++;}cov_106ppfinu2.s[21]++;
+if(!checkIfRouteExist(action,getState().nav)){cov_106ppfinu2.b[5][0]++;cov_106ppfinu2.s[22]++;
+_reactNative.Toast.show('Route not found',_reactNative.Toast.LONG);cov_106ppfinu2.s[23]++;
+return null;
+}else{cov_106ppfinu2.b[5][1]++;}
+
+var message=(cov_106ppfinu2.s[24]++,generateLoginPopupMessage(action));
+
+var userProfile=(cov_106ppfinu2.s[25]++,getState().user);cov_106ppfinu2.s[26]++;
+
+if(loginRequired(action)){cov_106ppfinu2.b[6][0]++;cov_106ppfinu2.s[27]++;
+if((0,_isEmpty2.default)(userProfile.profile)){cov_106ppfinu2.b[7][0]++;cov_106ppfinu2.s[28]++;
+return dispatch((0,_index4.showPopup)(message));
+}else{cov_106ppfinu2.b[7][1]++;}cov_106ppfinu2.s[29]++;
+if(!isUserAuthorized(action,userProfile)){cov_106ppfinu2.b[8][0]++;cov_106ppfinu2.s[30]++;
+return null;
+}else{cov_106ppfinu2.b[8][1]++;}
+}else{cov_106ppfinu2.b[6][1]++;}cov_106ppfinu2.s[31]++;
+
+return next(action);
+};};};exports.default=
+
+routeInterceptor;

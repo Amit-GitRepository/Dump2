@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductCardTitle component renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "paddingLeft": 25,
+      "paddingRight": 28,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "paddingLeft": 25,
+          "paddingRight": 28,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#303C46",
+            "fontFamily": "SukhumvitSet-Bold",
+            "fontSize": 16,
+          }
+        }
+      >
+        
+      </Text>
+    </View>
+  </View>
+</View>
+`;

@@ -1,0 +1,52 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1yzucif40a=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/DetailCardRow.component.js',hash='b7f065f83b026ea3c1153cd1ee8acb71e3c11624',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/DetailCardRow.component.js',statementMap:{'0':{start:{line:13,column:98},end:{line:13,column:108}},'1':{start:{line:14,column:4},end:{line:31,column:6}},'2':{start:{line:34,column:0},end:{line:42,column:2}},'3':{start:{line:43,column:0},end:{line:51,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:12,column:2},end:{line:12,column:3}},loc:{start:{line:12,column:12},end:{line:32,column:3}},line:12}},branchMap:{'0':{loc:{start:{line:18,column:13},end:{line:18,column:137}},type:'cond-expr',locations:[{start:{line:18,column:27},end:{line:18,column:129}},{start:{line:18,column:133},end:{line:18,column:137}}],line:18},'1':{loc:{start:{line:19,column:60},end:{line:19,column:130}},type:'binary-expr',locations:[{start:{line:19,column:60},end:{line:19,column:77}},{start:{line:19,column:81},end:{line:19,column:130}}],line:19},'2':{loc:{start:{line:23,column:16},end:{line:23,column:163}},type:'cond-expr',locations:[{start:{line:23,column:40},end:{line:23,column:156}},{start:{line:23,column:159},end:{line:23,column:163}}],line:23},'3':{loc:{start:{line:24,column:16},end:{line:24,column:128}},type:'cond-expr',locations:[{start:{line:24,column:31},end:{line:24,column:121}},{start:{line:24,column:124},end:{line:24,column:128}}],line:24},'4':{loc:{start:{line:26,column:14},end:{line:26,column:137}},type:'cond-expr',locations:[{start:{line:26,column:32},end:{line:26,column:130}},{start:{line:26,column:133},end:{line:26,column:137}}],line:26},'5':{loc:{start:{line:29,column:9},end:{line:29,column:67}},type:'binary-expr',locations:[{start:{line:29,column:9},end:{line:29,column:22}},{start:{line:29,column:26},end:{line:29,column:67}}],line:29}},s:{'0':0,'1':0,'2':0,'3':0},f:{'0':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0],'4':[0,0],'5':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _billUsageIconMap=require('../../../../config/billUsageIconMap.config');var _billUsageIconMap2=_interopRequireDefault(_billUsageIconMap);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _DetailCardRow=require('./DetailCardRow.style');var _DetailCardRow2=_interopRequireDefault(_DetailCardRow);
+var _constants=require('../../../../themes/constants.styles');
+var _Shared=require('../../../Shared');
+var _helper=require('../../../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+DetailCardRow=function(_Component){_inherits(DetailCardRow,_Component);function DetailCardRow(){_classCallCheck(this,DetailCardRow);return _possibleConstructorReturn(this,(DetailCardRow.__proto__||Object.getPrototypeOf(DetailCardRow)).apply(this,arguments));}_createClass(DetailCardRow,[{key:'render',value:function render()
+{cov_1yzucif40a.f[0]++;var _ref=(cov_1yzucif40a.s[0]++,
+this.props),consumedValueStyle=_ref.consumedValueStyle,unitStyle=_ref.unitStyle,subtextStyle=_ref.subtextStyle,rowData=_ref.rowData,iconSize=_ref.iconSize,type=_ref.type,showSeparator=_ref.showSeparator;cov_1yzucif40a.s[1]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:_DetailCardRow2.default.parentContainer},
+_react2.default.createElement(_reactNative.View,{style:_DetailCardRow2.default.wrapper},
+_react2.default.createElement(_reactNative.View,{style:_DetailCardRow2.default.leftContainer},
+type!==''?(cov_1yzucif40a.b[0][0]++,_react2.default.createElement(_Shared.Icon,{name:(0,_result2.default)(_billUsageIconMap2.default[type],'titleIconPath',''),size:iconSize,style:_DetailCardRow2.default.iconStyle})):(cov_1yzucif40a.b[0][1]++,null),
+_react2.default.createElement(_Shared.ISText,{style:_DetailCardRow2.default.titleText,type:'BOLD'},(cov_1yzucif40a.b[1][0]++,rowData.titleText)||(cov_1yzucif40a.b[1][1]++,(0,_helper.translate)((0,_result2.default)(_billUsageIconMap2.default[type],'titleText',''))))),
+
+_react2.default.createElement(_reactNative.View,{style:_DetailCardRow2.default.rightContainer},
+_react2.default.createElement(_Shared.ISText,{style:_DetailCardRow2.default.topRightContainer},
+rowData.consumedValue?(cov_1yzucif40a.b[2][0]++,_react2.default.createElement(_Shared.ISText,{type:'SEMIBOLD',style:[_DetailCardRow2.default.consumedValueDefault,consumedValueStyle]},rowData.consumedValue)):(cov_1yzucif40a.b[2][1]++,null),
+rowData.unit?(cov_1yzucif40a.b[3][0]++,_react2.default.createElement(_Shared.ISText,{type:'SEMIBOLD',style:[_DetailCardRow2.default.unitDefault,unitStyle]},' ',rowData.unit)):(cov_1yzucif40a.b[3][1]++,null)),
+
+rowData.subtext?(cov_1yzucif40a.b[4][0]++,_react2.default.createElement(_Shared.ISText,{type:'SEMIBOLD',style:[_DetailCardRow2.default.subtextDefault,subtextStyle]},rowData.subtext)):(cov_1yzucif40a.b[4][1]++,null))),
+
+
+(cov_1yzucif40a.b[5][0]++,showSeparator)&&(cov_1yzucif40a.b[5][1]++,_react2.default.createElement(_reactNative.View,{style:_DetailCardRow2.default.bottomBorderLine}))));
+
+
+}}]);return DetailCardRow;}(_react.Component);cov_1yzucif40a.s[2]++;
+
+DetailCardRow.defaultProps={
+consumedValueStyle:{},
+subtextStyle:{},
+unitStyle:{},
+rowData:{},
+iconSize:_constants.fonts.FONT_SIZE_XXL,
+type:'',
+showSeparator:true};cov_1yzucif40a.s[3]++;
+
+DetailCardRow.propTypes={
+consumedValueStyle:_propTypes2.default.object,
+unitStyle:_propTypes2.default.object,
+subtextStyle:_propTypes2.default.object,
+iconSize:_propTypes2.default.number,
+rowData:_propTypes2.default.object.isRequired,
+type:_propTypes2.default.string,
+showSeparator:_propTypes2.default.bool};exports.default=
+
+DetailCardRow;

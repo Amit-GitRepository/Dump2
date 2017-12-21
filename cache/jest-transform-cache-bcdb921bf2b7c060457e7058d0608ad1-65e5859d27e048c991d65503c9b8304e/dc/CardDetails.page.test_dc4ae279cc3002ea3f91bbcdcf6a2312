@@ -1,0 +1,43 @@
+var _CardDetails=require('../CardDetails.page');var _CardDetails2=_interopRequireDefault(_CardDetails);
+var _store=require('../../../redux/store');var _store2=_interopRequireDefault(_store);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _enzyme=require('enzyme');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+var store=(0,_store2.default)();
+var dispatch=jest.fn();
+
+describe('CardDetailsPage',function(){
+it('renders ',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_CardDetails2.default,{store:store}));
+expect(wrapper).toBeDefined();
+});
+});
+
+describe('CardDetailsPage: mapStateToProps',function(){
+var props=(0,_CardDetails.mapStateToProps)(store.getState());
+it('paymentItems prop to be defined',function(){
+expect(props.paymentItems).toBeDefined();
+});
+it('savedCards prop to be defined',function(){
+expect(props.savedCards).toBeDefined();
+});
+});
+
+describe('CardDetailsPage: mapDispatchToProps',function(){
+var props=(0,_CardDetails.mapDispatchToProps)(dispatch);
+it('payForExistingCustomer prop to be defined',function(){
+expect(props.payForExistingCustomer).toBeDefined();
+});
+it('payForNewCustomer prop to be defined',function(){
+expect(props.payForNewCustomer).toBeDefined();
+});
+it('preLoginPayment prop to be defined',function(){
+expect(props.preLoginPayment).toBeDefined();
+});
+it('showPaymentMethods prop to be defined',function(){
+expect(props.showPaymentMethods).toBeDefined();
+});
+});

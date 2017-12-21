@@ -1,0 +1,81 @@
+{
+  "req": {
+    "method": "POST",
+    "url": "http://dmpapi-dev.trueid.net/iservice-subscriber-dev/products",
+    "data": {
+      "msisdn": "0909184684"
+    },
+    "headers": {
+      "content-type": "application/json",
+      "authorization": "Bearer 59a3b924233eaa10411635f4d182a204bce64f615edc68ecb304bb82",
+      "accept": "application/json",
+      "accesstoken": "fbd9aac6e9de901f89704cdefc5795db9cb19f02",
+      "icard": "2900819238633",
+      "msisdn": "0909184684"
+    }
+  },
+  "xhr": {},
+  "text": "{\"tmhPostpaid\":[],\"tvs\":[],\"tol\":[],\"conv\":[],\"tmhPrepaid\":[{\"productId\":\"0909184684\",\"subscriberId\":\"107303\",\"subscriptionType\":\"PREPAID\",\"statusCode\":\"ACTIVE\",\"productType\":\"TrueMoveH\",\"isBillConsolidated\":false}]}",
+  "statusText": "OK",
+  "statusCode": 200,
+  "status": 200,
+  "statusType": 2,
+  "info": false,
+  "ok": true,
+  "redirect": false,
+  "clientError": false,
+  "serverError": false,
+  "error": false,
+  "accepted": false,
+  "noContent": false,
+  "badRequest": false,
+  "unauthorized": false,
+  "notAcceptable": false,
+  "forbidden": false,
+  "notFound": false,
+  "headers": {
+    "date": "Tue, 05 Dec 2017 11:03:24 GMT",
+    "content-encoding": "gzip",
+    "vary": "Origin, origin,accept-encoding",
+    "content-type": "application/json; charset=utf-8",
+    "access-control-allow-origin": "null, null",
+    "x-ratelimit-remaining": "-1",
+    "cache-control": "no-cache",
+    "x-ratelimit-reset": "1509966511",
+    "x-ratelimit-limit": "-1",
+    "connection": "close",
+    "content-length": "176",
+    "access-control-expose-headers": "WWW-Authenticate,Server-Authorization"
+  },
+  "header": {
+    "date": "Tue, 05 Dec 2017 11:03:24 GMT",
+    "content-encoding": "gzip",
+    "vary": "Origin, origin,accept-encoding",
+    "content-type": "application/json; charset=utf-8",
+    "access-control-allow-origin": "null, null",
+    "x-ratelimit-remaining": "-1",
+    "cache-control": "no-cache",
+    "x-ratelimit-reset": "1509966511",
+    "x-ratelimit-limit": "-1",
+    "connection": "close",
+    "content-length": "176",
+    "access-control-expose-headers": "WWW-Authenticate,Server-Authorization"
+  },
+  "type": "application/json",
+  "charset": "utf-8",
+  "links": {},
+  "body": {
+    "tmhPostpaid": [],
+    "tvs": [],
+    "tol": [],
+    "conv": [],
+    "tmhPrepaid": [{
+      "productId": "0909184684",
+      "subscriberId": "107303",
+      "subscriptionType": "PREPAID",
+      "statusCode": "ACTIVE",
+      "productType": "TrueMoveH",
+      "isBillConsolidated": false
+    }]
+  }
+}

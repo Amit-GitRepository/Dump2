@@ -1,0 +1,47 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.getAlertConfig=undefined;var cov_1eo0fnw1kg=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/utils/forceUpdate.util.js',hash='ecc1f51913a6e9afa513aa324a9edeb37ac88cbe',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/utils/forceUpdate.util.js',statementMap:{'0':{start:{line:7,column:25},end:{line:7,column:69}},'1':{start:{line:8,column:30},end:{line:8,column:79}},'2':{start:{line:9,column:2},end:{line:11,column:3}},'3':{start:{line:10,column:4},end:{line:10,column:57}},'4':{start:{line:12,column:2},end:{line:17,column:3}},'5':{start:{line:13,column:4},end:{line:13,column:75}},'6':{start:{line:14,column:9},end:{line:17,column:3}},'7':{start:{line:15,column:4},end:{line:15,column:57}},'8':{start:{line:16,column:4},end:{line:16,column:75}},'9':{start:{line:20,column:30},end:{line:47,column:4}},'10':{start:{line:21,column:2},end:{line:47,column:4}},'11':{start:{line:22,column:18},end:{line:22,column:43}},'12':{start:{line:23,column:18},end:{line:23,column:20}},'13':{start:{line:24,column:23},end:{line:24,column:28}},'14':{start:{line:26,column:6},end:{line:28,column:31}},'15':{start:{line:29,column:20},end:{line:37,column:5}},'16':{start:{line:33,column:10},end:{line:33,column:27}},'17':{start:{line:34,column:10},end:{line:34,column:20}},'18':{start:{line:38,column:4},end:{line:45,column:5}},'19':{start:{line:39,column:6},end:{line:41,column:55}},'20':{start:{line:43,column:6},end:{line:43,column:53}},'21':{start:{line:44,column:6},end:{line:44,column:90}},'22':{start:{line:44,column:78},end:{line:44,column:87}},'23':{start:{line:46,column:4},end:{line:46,column:55}}},fnMap:{'0':{name:'updateNotificationRetries',decl:{start:{line:6,column:22},end:{line:6,column:47}},loc:{start:{line:6,column:51},end:{line:18,column:1}},line:6},'1':{name:'(anonymous_1)',decl:{start:{line:20,column:30},end:{line:20,column:31}},loc:{start:{line:21,column:2},end:{line:47,column:4}},line:21},'2':{name:'(anonymous_2)',decl:{start:{line:21,column:14},end:{line:21,column:15}},loc:{start:{line:21,column:27},end:{line:47,column:3}},line:21},'3':{name:'(anonymous_3)',decl:{start:{line:32,column:17},end:{line:32,column:18}},loc:{start:{line:32,column:23},end:{line:35,column:9}},line:32},'4':{name:'(anonymous_4)',decl:{start:{line:44,column:72},end:{line:44,column:73}},loc:{start:{line:44,column:78},end:{line:44,column:87}},line:44}},branchMap:{'0':{loc:{start:{line:9,column:2},end:{line:11,column:3}},type:'if',locations:[{start:{line:9,column:2},end:{line:11,column:3}},{start:{line:9,column:2},end:{line:11,column:3}}],line:9},'1':{loc:{start:{line:12,column:2},end:{line:17,column:3}},type:'if',locations:[{start:{line:12,column:2},end:{line:17,column:3}},{start:{line:12,column:2},end:{line:17,column:3}}],line:12},'2':{loc:{start:{line:14,column:9},end:{line:17,column:3}},type:'if',locations:[{start:{line:14,column:9},end:{line:17,column:3}},{start:{line:14,column:9},end:{line:17,column:3}}],line:14},'3':{loc:{start:{line:26,column:6},end:{line:28,column:31}},type:'cond-expr',locations:[{start:{line:27,column:10},end:{line:27,column:30}},{start:{line:28,column:10},end:{line:28,column:31}}],line:26},'4':{loc:{start:{line:38,column:4},end:{line:45,column:5}},type:'if',locations:[{start:{line:38,column:4},end:{line:45,column:5}},{start:{line:38,column:4},end:{line:45,column:5}}],line:38},'5':{loc:{start:{line:39,column:16},end:{line:41,column:54}},type:'cond-expr',locations:[{start:{line:40,column:10},end:{line:40,column:52}},{start:{line:41,column:10},end:{line:41,column:54}}],line:39}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0,'19':0,'20':0,'21':0,'22':0,'23':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0],'4':[0,0],'5':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();exports.
+
+
+
+
+updateNotificationRetries=updateNotificationRetries;var _localStorage=require('./localStorage.util');var _localStorage2=_interopRequireDefault(_localStorage);var _reactNativeVersionNumber=require('react-native-version-number');var _reactNativeVersionNumber2=_interopRequireDefault(_reactNativeVersionNumber);var _reactNative=require('./reactNative.util');var _helper=require('../language/i18n/helper');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function updateNotificationRetries(){var currentVersion,notificationRetries;return regeneratorRuntime.async(function updateNotificationRetries$(_context){while(1){switch(_context.prev=_context.next){case 0:cov_1eo0fnw1kg.f[0]++;cov_1eo0fnw1kg.s[0]++;_context.next=4;return regeneratorRuntime.awrap(
+_localStorage2.default.getItem('currentVersion'));case 4:currentVersion=_context.sent;cov_1eo0fnw1kg.s[1]++;_context.next=8;return regeneratorRuntime.awrap(
+_localStorage2.default.getItem('notificationRetries'));case 8:notificationRetries=_context.sent;cov_1eo0fnw1kg.s[2]++;if(!(
+notificationRetries===null)){_context.next=17;break;}cov_1eo0fnw1kg.b[0][0]++;cov_1eo0fnw1kg.s[3]++;_context.next=15;return regeneratorRuntime.awrap(
+_localStorage2.default.setItem('notificationRetries',0));case 15:_context.next=18;break;case 17:cov_1eo0fnw1kg.b[0][1]++;case 18:cov_1eo0fnw1kg.s[4]++;if(!(
+
+currentVersion===null)){_context.next=26;break;}cov_1eo0fnw1kg.b[1][0]++;cov_1eo0fnw1kg.s[5]++;_context.next=24;return regeneratorRuntime.awrap(
+_localStorage2.default.setItem('currentVersion',_reactNativeVersionNumber2.default.appVersion));case 24:_context.next=39;break;case 26:cov_1eo0fnw1kg.b[1][1]++;cov_1eo0fnw1kg.s[6]++;if(!(
+currentVersion!==_reactNativeVersionNumber2.default.appVersion)){_context.next=38;break;}cov_1eo0fnw1kg.b[2][0]++;cov_1eo0fnw1kg.s[7]++;_context.next=33;return regeneratorRuntime.awrap(
+_localStorage2.default.setItem('notificationRetries',0));case 33:cov_1eo0fnw1kg.s[8]++;_context.next=36;return regeneratorRuntime.awrap(
+_localStorage2.default.setItem('currentVersion',_reactNativeVersionNumber2.default.appVersion));case 36:_context.next=39;break;case 38:cov_1eo0fnw1kg.b[2][1]++;case 39:case'end':return _context.stop();}}},null,this);}cov_1eo0fnw1kg.s[9]++;
+
+
+
+var getAlertConfig=exports.getAlertConfig=function getAlertConfig(appLinks,forced)
+{cov_1eo0fnw1kg.f[1]++;cov_1eo0fnw1kg.s[10]++;return new Promise(function(resolve){cov_1eo0fnw1kg.f[2]++;
+var title=(cov_1eo0fnw1kg.s[11]++,(0,_helper.translate)('UPDATE_TITLE'));
+var message=(cov_1eo0fnw1kg.s[12]++,'');
+var cancelable=(cov_1eo0fnw1kg.s[13]++,false);
+var appLink=(cov_1eo0fnw1kg.s[14]++,
+_reactNative.Platform.OS==='ios'?(cov_1eo0fnw1kg.b[3][0]++,
+appLinks.appStoreUrl):(cov_1eo0fnw1kg.b[3][1]++,
+appLinks.playStoreUrl));
+var buttons=(cov_1eo0fnw1kg.s[15]++,[
+{
+text:(0,_helper.translate)('ALERT_BUTTON_UPDATE'),
+onPress:function onPress(){cov_1eo0fnw1kg.f[3]++;cov_1eo0fnw1kg.s[16]++;
+(0,_reactNative.openUrl)(appLink);cov_1eo0fnw1kg.s[17]++;
+resolve();
+}}]);cov_1eo0fnw1kg.s[18]++;
+
+
+if(forced){cov_1eo0fnw1kg.b[4][0]++;cov_1eo0fnw1kg.s[19]++;
+message=_reactNative.Platform.OS==='ios'?(cov_1eo0fnw1kg.b[5][0]++,
+(0,_helper.translate)('UPDATE_REQUIRED_MESSAGE_APPLE')):(cov_1eo0fnw1kg.b[5][1]++,
+(0,_helper.translate)('UPDATE_REQUIRED_MESSAGE_ANDROID'));
+}else{cov_1eo0fnw1kg.b[4][1]++;cov_1eo0fnw1kg.s[20]++;
+message=(0,_helper.translate)('UPDATE_OPTIONAL_MESSAGE');cov_1eo0fnw1kg.s[21]++;
+buttons.push({text:(0,_helper.translate)('ALERT_BUTTON_NO_THANKS'),onPress:function onPress(){cov_1eo0fnw1kg.f[4]++;cov_1eo0fnw1kg.s[22]++;return resolve();}});
+}cov_1eo0fnw1kg.s[23]++;
+_reactNative.Alert.alert(title,message,buttons,{cancelable:cancelable});
+});};

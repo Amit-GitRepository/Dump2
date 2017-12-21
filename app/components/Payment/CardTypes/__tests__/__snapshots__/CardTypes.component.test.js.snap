@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardTypes component renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../app/assets/visa.png",
+      }
+    }
+    style={
+      Object {
+        "marginHorizontal": 5,
+      }
+    }
+  />
+  <Image
+    source={
+      Object {
+        "testUri": "../../../app/assets/mastercard.png",
+      }
+    }
+    style={
+      Object {
+        "marginHorizontal": 5,
+      }
+    }
+  />
+  <Image
+    source={
+      Object {
+        "testUri": "../../../app/assets/jcb.png",
+      }
+    }
+    style={
+      Array [
+        Object {
+          "marginHorizontal": 5,
+        },
+        Object {
+          "bottom": 1,
+          "marginLeft": -5,
+        },
+      ]
+    }
+  />
+</View>
+`;

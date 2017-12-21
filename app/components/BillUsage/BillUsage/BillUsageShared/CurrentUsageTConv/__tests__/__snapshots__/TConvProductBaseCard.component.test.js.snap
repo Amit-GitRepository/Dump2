@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TConvProductBaseCard component renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "flexGrow": 1,
+      },
+      Object {
+        "shadowColor": "#303C46",
+        "shadowOffset": Object {
+          "height": 30,
+          "width": 0,
+        },
+        "shadowOpacity": 0.4,
+        "shadowRadius": 4,
+      },
+    ]
+  }
+>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    collapsable={undefined}
+    hitSlop={undefined}
+    isTVSelectable={true}
+    nativeID={undefined}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+    testID={undefined}
+    tvParallaxProperties={undefined}
+  >
+    <View
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "flexGrow": 1,
+              "marginHorizontal": 15,
+              "paddingVertical": 15,
+            },
+            undefined,
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "flexGrow": 1,
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#303C46",
+                "fontFamily": "SukhumvitSet-Bold",
+                "fontSize": 18,
+                "marginBottom": -5,
+              }
+            }
+          />
+          <Text
+            accessible={true}
+            allowFontScaling={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 12,
+                },
+                Array [
+                  Object {
+                    "transform": Array [
+                      Object {
+                        "rotate": "180deg",
+                      },
+                    ],
+                  },
+                  Object {
+                    "color": "#F93E60",
+                    "fontSize": 14,
+                    "marginTop": 5,
+                  },
+                ],
+                Object {
+                  "fontFamily": "iservice",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+            transition="rotate"
+            useNativeDriver={true}
+          >
+            
+          </Text>
+        </View>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#303C46",
+              },
+              Array [
+                Object {
+                  "fontSize": 14,
+                },
+                Object {
+                  "color": "#B9C1C9",
+                },
+              ],
+              Object {
+                "fontFamily": "SukhumvitSet-Bold",
+              },
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+  <View
+    collapsable={undefined}
+    pointerEvents="none"
+    style={
+      Object {
+        "height": 0,
+        "overflow": "hidden",
+      }
+    }
+  >
+    <View
+      collapsable={undefined}
+      onLayout={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#EDF2F6",
+          "borderColor": "transparent",
+          "flexGrow": 1,
+          "paddingTop": 10,
+        }
+      }
+    />
+  </View>
+</View>
+`;

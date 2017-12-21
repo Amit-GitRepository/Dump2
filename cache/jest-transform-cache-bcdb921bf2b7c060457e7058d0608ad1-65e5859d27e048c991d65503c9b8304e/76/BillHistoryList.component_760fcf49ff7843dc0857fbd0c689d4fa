@@ -1,0 +1,60 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_21usae7ddl=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/BillHistoryList.component.js',hash='77ae705f8541d456abc0cd46dabe8592fe2ccabe',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/BillHistoryList.component.js',statementMap:{'0':{start:{line:13,column:24},end:{line:42,column:1}},'1':{start:{line:14,column:22},end:{line:14,column:30}},'2':{start:{line:15,column:2},end:{line:41,column:4}},'3':{start:{line:19,column:27},end:{line:19,column:70}},'4':{start:{line:20,column:30},end:{line:20,column:54}},'5':{start:{line:21,column:30},end:{line:21,column:67}},'6':{start:{line:22,column:10},end:{line:36,column:12}},'7':{start:{line:44,column:0},end:{line:50,column:2}},'8':{start:{line:52,column:0},end:{line:58,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:13,column:24},end:{line:13,column:25}},loc:{start:{line:13,column:104},end:{line:42,column:1}},line:13},'1':{name:'(anonymous_1)',decl:{start:{line:18,column:21},end:{line:18,column:22}},loc:{start:{line:18,column:38},end:{line:37,column:9}},line:18}},branchMap:{'0':{loc:{start:{line:17,column:7},end:{line:37,column:132}},type:'cond-expr',locations:[{start:{line:18,column:8},end:{line:37,column:10}},{start:{line:37,column:13},end:{line:37,column:132}}],line:17},'1':{loc:{start:{line:26,column:64},end:{line:26,column:239}},type:'cond-expr',locations:[{start:{line:26,column:84},end:{line:26,column:162}},{start:{line:26,column:165},end:{line:26,column:239}}],line:26}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0},f:{'0':0,'1':0},b:{'0':[0,0],'1':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _AmountText=require('../../../Shared/AmountText/AmountText.component');var _AmountText2=_interopRequireDefault(_AmountText);
+var _Button=require('../../../Shared/Button/Button.component');var _Button2=_interopRequireDefault(_Button);
+var _Checkbox=require('../../../Shared/Checkbox/Checkbox.component');var _Checkbox2=_interopRequireDefault(_Checkbox);
+var _ISText=require('../../../Shared/ISText/ISText.component');var _ISText2=_interopRequireDefault(_ISText);
+var _moment=require('../../../../utils/moment.util');var _moment2=_interopRequireDefault(_moment);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _BillHistoryList=require('./BillHistoryList.style');var _BillHistoryList2=_interopRequireDefault(_BillHistoryList);
+var _helper=require('../../../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}cov_21usae7ddl.s[0]++;
+
+var BillHistoryList=function BillHistoryList(_ref){var dueBills=_ref.dueBills,style=_ref.style,onPaymentHistoryClick=_ref.onPaymentHistoryClick,onBillDetailsClick=_ref.onBillDetailsClick,onBillToggle=_ref.onBillToggle;cov_21usae7ddl.f[0]++;
+var currentDate=(cov_21usae7ddl.s[1]++,(0,_moment2.default)());cov_21usae7ddl.s[2]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:[_BillHistoryList2.default.container,style]},
+dueBills.length>0?(cov_21usae7ddl.b[0][0]++,
+dueBills.map(function(bill,index){cov_21usae7ddl.f[1]++;
+var billDate=(cov_21usae7ddl.s[3]++,new _moment2.default(bill.invoiceCycle,'DD/MM/YYYY'));
+var billDueDate=(cov_21usae7ddl.s[4]++,new _moment2.default(bill.dueDate));
+var overDueDays=(cov_21usae7ddl.s[5]++,currentDate.diff(billDueDate,'days'));cov_21usae7ddl.s[6]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:_BillHistoryList2.default.cardContainer,key:'billingCard_'+index},
+_react2.default.createElement(_reactNative.View,{style:_BillHistoryList2.default.leftSection},
+_react2.default.createElement(_ISText2.default,{type:'BOLD',style:_BillHistoryList2.default.billMonthText},billDate.format('MMMM')),
+_react2.default.createElement(_ISText2.default,{type:'BOLD',style:_BillHistoryList2.default.dueDateText},overDueDays>0?(cov_21usae7ddl.b[1][0]++,''+(0,_helper.translate)('BILLS_USAGE_OVERDUE',{count:overDueDays,days:overDueDays})):(cov_21usae7ddl.b[1][1]++,(0,_helper.translate)('BILLS_USAGE_DUE_DATE')+': '+billDueDate.format('DD MMM YY')))),
+
+_react2.default.createElement(_reactNative.View,{style:_BillHistoryList2.default.rightSection},
+_react2.default.createElement(_reactNative.View,{style:_BillHistoryList2.default.amountSection},
+_react2.default.createElement(_AmountText2.default,{value:bill.unpaidAmount,isTotalText:false}),
+_react2.default.createElement(_Checkbox2.default,{style:_BillHistoryList2.default.checkbox,onChange:onBillToggle(bill.invoiceNo)})),
+
+_react2.default.createElement(_Button2.default,{type:'inline',text:(0,_helper.translate)('BILLS_USAGE_DETAILS'),style:_BillHistoryList2.default.billDetailButton,textStyle:_BillHistoryList2.default.billDetailText,onPress:onBillDetailsClick(bill.invoiceNo)}))));
+
+
+
+})):(cov_21usae7ddl.b[0][1]++,_react2.default.createElement(_ISText2.default,{type:'BOLD',style:_BillHistoryList2.default.noBillPlaceHolderText},(0,_helper.translate)('BILLS_USAGE_BILL_DETAILS_PLACEHOLDER'))),
+
+_react2.default.createElement(_Button2.default,{type:'inline',text:(0,_helper.translate)('BILLS_USAGE_PAYMENT_HISTORY'),textStyle:_BillHistoryList2.default.otherButton,onPress:onPaymentHistoryClick})));
+
+
+};cov_21usae7ddl.s[7]++;
+
+BillHistoryList.defaultProps={
+dueBills:[],
+onBillDetailsClick:_noop2.default,
+onPaymentHistoryClick:_noop2.default,
+onBillToggle:_noop2.default,
+style:{}};cov_21usae7ddl.s[8]++;
+
+
+BillHistoryList.propTypes={
+dueBills:_propTypes2.default.array,
+onBillDetailsClick:_propTypes2.default.func,
+onPaymentHistoryClick:_propTypes2.default.func,
+onBillToggle:_propTypes2.default.func,
+style:_propTypes2.default.object};exports.default=
+
+
+BillHistoryList;

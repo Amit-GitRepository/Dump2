@@ -1,0 +1,43 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.mapDispatchToProps=exports.mapStateToProps=undefined;var cov_1laequ27w=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/Landing/Landing.page.js',hash='342690cdb690529859c25c8bf53370c53afb233b',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/Landing/Landing.page.js',statementMap:{'0':{start:{line:12,column:64},end:{line:12,column:74}},'1':{start:{line:13,column:28},end:{line:13,column:63}},'2':{start:{line:14,column:4},end:{line:21,column:6}},'3':{start:{line:25,column:0},end:{line:30,column:2}},'4':{start:{line:32,column:31},end:{line:35,column:2}},'5':{start:{line:32,column:43},end:{line:35,column:1}},'6':{start:{line:37,column:34},end:{line:41,column:2}},'7':{start:{line:37,column:49},end:{line:41,column:1}},'8':{start:{line:38,column:22},end:{line:38,column:98}},'9':{start:{line:39,column:20},end:{line:39,column:80}},'10':{start:{line:40,column:25},end:{line:40,column:104}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:11,column:2},end:{line:11,column:3}},loc:{start:{line:11,column:12},end:{line:22,column:3}},line:11},'1':{name:'(anonymous_1)',decl:{start:{line:32,column:31},end:{line:32,column:32}},loc:{start:{line:32,column:43},end:{line:35,column:1}},line:32},'2':{name:'(anonymous_2)',decl:{start:{line:37,column:34},end:{line:37,column:35}},loc:{start:{line:37,column:49},end:{line:41,column:1}},line:37},'3':{name:'(anonymous_3)',decl:{start:{line:38,column:16},end:{line:38,column:17}},loc:{start:{line:38,column:22},end:{line:38,column:98}},line:38},'4':{name:'(anonymous_4)',decl:{start:{line:39,column:14},end:{line:39,column:15}},loc:{start:{line:39,column:20},end:{line:39,column:80}},line:39},'5':{name:'(anonymous_5)',decl:{start:{line:40,column:19},end:{line:40,column:20}},loc:{start:{line:40,column:25},end:{line:40,column:104}},line:40}},branchMap:{'0':{loc:{start:{line:13,column:28},end:{line:13,column:63}},type:'cond-expr',locations:[{start:{line:13,column:52},end:{line:13,column:58}},{start:{line:13,column:61},end:{line:13,column:63}}],line:13}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0},b:{'0':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _Landing=require('../../components/Landing/Landing.component');var _Landing2=_interopRequireDefault(_Landing);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _reactRedux=require('react-redux');
+var _msisdn=require('../../utils/msisdn.util');
+var _index=require('../../redux/actions/index.actions');
+var _reactNavigation=require('react-navigation');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+LandingPage=function(_Component){_inherits(LandingPage,_Component);function LandingPage(){_classCallCheck(this,LandingPage);return _possibleConstructorReturn(this,(LandingPage.__proto__||Object.getPrototypeOf(LandingPage)).apply(this,arguments));}_createClass(LandingPage,[{key:'render',value:function render()
+{cov_1laequ27w.f[0]++;var _ref=(cov_1laequ27w.s[0]++,
+this.props),loginRequest=_ref.loginRequest,msisdn=_ref.msisdn,registerRequest=_ref.registerRequest,onPayPress=_ref.onPayPress;
+var validatedMsisdn=(cov_1laequ27w.s[1]++,(0,_msisdn.isValidMSISDN)(msisdn)?(cov_1laequ27w.b[0][0]++,msisdn):(cov_1laequ27w.b[0][1]++,''));cov_1laequ27w.s[2]++;
+return(
+_react2.default.createElement(_Landing2.default,{
+msisdn:validatedMsisdn,
+onLogin:loginRequest,
+onRegister:registerRequest,
+onPayPress:onPayPress}));
+
+
+}}]);return LandingPage;}(_react.Component);cov_1laequ27w.s[3]++;
+
+
+LandingPage.propTypes={
+loginRequest:_propTypes2.default.func,
+registerRequest:_propTypes2.default.func,
+onPayPress:_propTypes2.default.func,
+msisdn:_propTypes2.default.string};cov_1laequ27w.s[4]++;
+
+
+var mapStateToProps=exports.mapStateToProps=function mapStateToProps(state){cov_1laequ27w.f[1]++;cov_1laequ27w.s[5]++;return{
+language:(0,_result2.default)(state,'user.language',null),
+msisdn:String((0,_result2.default)(state,'msisdn.msisdn',''))};
+};cov_1laequ27w.s[6]++;
+
+var mapDispatchToProps=exports.mapDispatchToProps=function mapDispatchToProps(dispatch){cov_1laequ27w.f[2]++;cov_1laequ27w.s[7]++;return{
+loginRequest:function loginRequest(){cov_1laequ27w.f[3]++;cov_1laequ27w.s[8]++;return dispatch((0,_index.loginRequest)(_reactNavigation.NavigationActions.navigate({routeName:'BillUsage'})));},
+onPayPress:function onPayPress(){cov_1laequ27w.f[4]++;cov_1laequ27w.s[9]++;return dispatch(_reactNavigation.NavigationActions.navigate({routeName:'Payment'}));},
+registerRequest:function registerRequest(){cov_1laequ27w.f[5]++;cov_1laequ27w.s[10]++;return dispatch((0,_index.registerRequest)(_reactNavigation.NavigationActions.navigate({routeName:'BillUsage'})));}};
+};exports.default=
+
+(0,_reactRedux.connect)(mapStateToProps,mapDispatchToProps)(LandingPage);

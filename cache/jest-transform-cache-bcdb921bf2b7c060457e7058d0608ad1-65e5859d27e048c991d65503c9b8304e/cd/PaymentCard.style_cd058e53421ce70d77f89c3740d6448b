@@ -1,0 +1,29 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1c83ecziky=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Payment/PaymentCard/PaymentCard.style.js',hash='92fe833f46b9d11c6c240d12de8d24c6412c1444',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Payment/PaymentCard/PaymentCard.style.js',statementMap:{},fnMap:{},branchMap:{},s:{},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _constants=require('../../../themes/constants.styles');
+var _application=require('../../../themes/application.styles');exports.default=
+
+{
+contentContainer:_application.contentContainerStyle,
+container:{
+padding:10},
+
+textBar:{
+backgroundColor:_constants.colors.PRIMARY_TEXT_TAB_LABEL,
+paddingVertical:10,
+marginHorizontal:-10},
+
+textBarTitle:{
+textAlign:'center',
+color:_constants.colors.PRIMARY_BG_TEXT_CONTRAST,
+fontSize:_constants.fonts.FONT_SIZE_MEDIUM},
+
+topSection:{
+flexDirection:'row',
+justifyContent:'space-between',
+paddingBottom:15,
+alignItems:'center'},
+
+amountText:{
+fontSize:_constants.fonts.FONT_SIZE_MEDIUM},
+
+buttonStyle:{
+margin:10}};

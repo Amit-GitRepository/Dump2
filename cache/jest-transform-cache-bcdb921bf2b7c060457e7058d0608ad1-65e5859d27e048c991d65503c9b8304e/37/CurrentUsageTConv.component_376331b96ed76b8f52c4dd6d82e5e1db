@@ -1,0 +1,65 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_n9e7tzqwj=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/CurrentUsageTConv/CurrentUsageTConv.component.js',hash='41db769cabec7589b71a09088c24f0f2835c09ee',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/CurrentUsageTConv/CurrentUsageTConv.component.js',statementMap:{'0':{start:{line:15,column:4},end:{line:15,column:88}},'1':{start:{line:18,column:56},end:{line:18,column:66}},'2':{start:{line:19,column:4},end:{line:47,column:6}},'3':{start:{line:22,column:29},end:{line:22,column:33}},'4':{start:{line:23,column:75},end:{line:23,column:82}},'5':{start:{line:24,column:30},end:{line:24,column:74}},'6':{start:{line:25,column:27},end:{line:25,column:69}},'7':{start:{line:26,column:10},end:{line:36,column:11}},'8':{start:{line:27,column:55},end:{line:27,column:109}},'9':{start:{line:28,column:32},end:{line:28,column:164}},'10':{start:{line:29,column:12},end:{line:29,column:143}},'11':{start:{line:30,column:17},end:{line:36,column:11}},'12':{start:{line:31,column:63},end:{line:31,column:122}},'13':{start:{line:32,column:32},end:{line:32,column:154}},'14':{start:{line:33,column:12},end:{line:33,column:164}},'15':{start:{line:34,column:17},end:{line:36,column:11}},'16':{start:{line:35,column:12},end:{line:35,column:172}},'17':{start:{line:37,column:10},end:{line:44,column:12}},'18':{start:{line:51,column:0},end:{line:56,column:2}},'19':{start:{line:58,column:0},end:{line:63,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:14,column:31},end:{line:14,column:32}},loc:{start:{line:14,column:37},end:{line:16,column:3}},line:14},'1':{name:'(anonymous_1)',decl:{start:{line:17,column:2},end:{line:17,column:3}},loc:{start:{line:17,column:12},end:{line:48,column:3}},line:17},'2':{name:'(anonymous_2)',decl:{start:{line:21,column:22},end:{line:21,column:23}},loc:{start:{line:21,column:42},end:{line:45,column:9}},line:21}},branchMap:{'0':{loc:{start:{line:26,column:10},end:{line:36,column:11}},type:'if',locations:[{start:{line:26,column:10},end:{line:36,column:11}},{start:{line:26,column:10},end:{line:36,column:11}}],line:26},'1':{loc:{start:{line:26,column:14},end:{line:26,column:68}},type:'binary-expr',locations:[{start:{line:26,column:14},end:{line:26,column:53}},{start:{line:26,column:57},end:{line:26,column:68}}],line:26},'2':{loc:{start:{line:30,column:17},end:{line:36,column:11}},type:'if',locations:[{start:{line:30,column:17},end:{line:36,column:11}},{start:{line:30,column:17},end:{line:36,column:11}}],line:30},'3':{loc:{start:{line:30,column:21},end:{line:30,column:75}},type:'binary-expr',locations:[{start:{line:30,column:21},end:{line:30,column:60}},{start:{line:30,column:64},end:{line:30,column:75}}],line:30},'4':{loc:{start:{line:34,column:17},end:{line:36,column:11}},type:'if',locations:[{start:{line:34,column:17},end:{line:36,column:11}},{start:{line:34,column:17},end:{line:36,column:11}}],line:34},'5':{loc:{start:{line:34,column:21},end:{line:34,column:74}},type:'binary-expr',locations:[{start:{line:34,column:21},end:{line:34,column:59}},{start:{line:34,column:63},end:{line:34,column:74}}],line:34}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0,'19':0},f:{'0':0,'1':0,'2':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0],'4':[0,0],'5':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _CurrentUsageCard=require('../CurrentUsageCard/CurrentUsageCard.component');var _CurrentUsageCard2=_interopRequireDefault(_CurrentUsageCard);
+var _CurrentUsageTM=require('../CurrentUsageTM/CurrentUsageTM.component');var _CurrentUsageTM2=_interopRequireDefault(_CurrentUsageTM);
+var _i18n=require('../../../../../language/i18n');var _i18n2=_interopRequireDefault(_i18n);
+var _ProductCardTitle=require('../ProductCardTitle/ProductCardTitle.component');var _ProductCardTitle2=_interopRequireDefault(_ProductCardTitle);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _CurrentUsageTConv=require('./CurrentUsageTConv.style');var _CurrentUsageTConv2=_interopRequireDefault(_CurrentUsageTConv);
+var _TConvProductBaseCard=require('./TConvProductBaseCard.component');var _TConvProductBaseCard2=_interopRequireDefault(_TConvProductBaseCard);
+var _billUsage=require('../../../../../config/billUsage.config');
+var _lodash=require('lodash');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+CurrentUsageTConv=function(_Component){_inherits(CurrentUsageTConv,_Component);function CurrentUsageTConv(){var _ref;var _temp,_this,_ret;_classCallCheck(this,CurrentUsageTConv);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=CurrentUsageTConv.__proto__||Object.getPrototypeOf(CurrentUsageTConv)).call.apply(_ref,[this].concat(args))),_this),_this.
+navigateToPackagePromoPage=function(){cov_n9e7tzqwj.f[0]++;cov_n9e7tzqwj.s[0]++;
+_this.props.goToScreen('PackagePromoPage',{url:'https://iservice.truecorp.co.th'});
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(CurrentUsageTConv,[{key:'render',value:function render()
+{var _this2=this;cov_n9e7tzqwj.f[1]++;var _ref2=(cov_n9e7tzqwj.s[1]++,
+this.props),productDetail=_ref2.productDetail,products=_ref2.products,onCollapseToggle=_ref2.onCollapseToggle;cov_n9e7tzqwj.s[2]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:_CurrentUsageTConv2.default.currentUsageContainer},
+products.map(function(product,index){cov_n9e7tzqwj.f[2]++;
+var currentUsage=(cov_n9e7tzqwj.s[3]++,null);var _ref3=(cov_n9e7tzqwj.s[4]++,
+product),subscriberId=_ref3.subscriberId,productId=_ref3.productId,productType=_ref3.productType,subscriptionType=_ref3.subscriptionType;
+var productData=(cov_n9e7tzqwj.s[5]++,(0,_lodash.result)(productDetail,''+subscriberId,{}));
+var planInfo=(cov_n9e7tzqwj.s[6]++,(0,_lodash.result)(productData,'PRICE_PLAN_INFO',{}));cov_n9e7tzqwj.s[7]++;
+if((cov_n9e7tzqwj.b[1][0]++,productType===_billUsage.PRODUCT_TYPE.TRUEONLINE)&&(cov_n9e7tzqwj.b[1][1]++,productData)){cov_n9e7tzqwj.b[0][0]++;var _ref4=(cov_n9e7tzqwj.s[8]++,
+(0,_lodash.result)(productData,'TOL_SPEEDS.pricePlanDetails',{})),downloadSpeed=_ref4.downloadSpeed,uploadSpeed=_ref4.uploadSpeed,unit=_ref4.unit;
+var packageData=(cov_n9e7tzqwj.s[9]++,[{usage:downloadSpeed,unit:unit,type:_billUsage.TOL_SPEED_TYPES.DOWNLOAD},{usage:uploadSpeed,unit:unit,type:_billUsage.TOL_SPEED_TYPES.UPLOAD}]);cov_n9e7tzqwj.s[10]++;
+currentUsage=_react2.default.createElement(_CurrentUsageCard2.default,{data:packageData,onBannerClick:_this2.navigateToPackagePromoPage,textStyle:_CurrentUsageTConv2.default.usageText});
+}else{cov_n9e7tzqwj.b[0][1]++;cov_n9e7tzqwj.s[11]++;if((cov_n9e7tzqwj.b[3][0]++,productType===_billUsage.PRODUCT_TYPE.TRUEVISION)&&(cov_n9e7tzqwj.b[3][1]++,productData)){cov_n9e7tzqwj.b[2][0]++;var _ref5=(cov_n9e7tzqwj.s[12]++,
+(0,_lodash.result)(productDetail,'TVS_PACKAGES.'+_i18n2.default.locale+'[0]',[])),channelCountHD=_ref5.channelCountHD,channelCountSD=_ref5.channelCountSD,imageURL=_ref5.imageURL;
+var _packageData=(cov_n9e7tzqwj.s[13]++,[{usage:channelCountHD,type:_billUsage.ICON_MAP.HDCHANNELS.titleText},{usage:channelCountSD,type:_billUsage.ICON_MAP.CHANNELS.titleText}]);cov_n9e7tzqwj.s[14]++;
+currentUsage=_react2.default.createElement(_CurrentUsageCard2.default,{data:_packageData,bannerSrc:imageURL,onBannerClick:_this2.navigateToPackagePromoPage,textStyle:_CurrentUsageTConv2.default.usageText});
+}else{cov_n9e7tzqwj.b[2][1]++;cov_n9e7tzqwj.s[15]++;if((cov_n9e7tzqwj.b[5][0]++,productType===_billUsage.PRODUCT_TYPE.TRUEMOVEH)&&(cov_n9e7tzqwj.b[5][1]++,productData)){cov_n9e7tzqwj.b[4][0]++;cov_n9e7tzqwj.s[16]++;
+currentUsage=_react2.default.createElement(_CurrentUsageTM2.default,{usageData:productData.BUNDLE_USAGE,sharedNumbers:productData.SHARED_PLAN_INFO,multiSimNumbers:productData.MULTI_SIM_INFO});
+}else{cov_n9e7tzqwj.b[4][1]++;}}}cov_n9e7tzqwj.s[17]++;
+return(
+_react2.default.createElement(_TConvProductBaseCard2.default,{key:index,product:product,isLast:products.length-1===index,onCollapseToggle:onCollapseToggle('tmhPostpaid',subscriberId,productId,productType,subscriptionType)},
+_react2.default.createElement(_ProductCardTitle2.default,{text:planInfo.name}),
+_react2.default.createElement(_reactNative.View,{style:_CurrentUsageTConv2.default.currentUsageSection},
+currentUsage)));
+
+
+
+})));
+
+
+}}]);return CurrentUsageTConv;}(_react.Component);cov_n9e7tzqwj.s[18]++;
+
+
+CurrentUsageTConv.defaultProps={
+products:[],
+productDetail:{},
+onCollapseToggle:_lodash.noop,
+goToScreen:_lodash.noop};cov_n9e7tzqwj.s[19]++;
+
+
+CurrentUsageTConv.propTypes={
+products:_propTypes2.default.array,
+productDetail:_propTypes2.default.object,
+onCollapseToggle:_propTypes2.default.func,
+goToScreen:_propTypes2.default.func};exports.default=
+
+
+CurrentUsageTConv;

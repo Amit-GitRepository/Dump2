@@ -1,0 +1,307 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Map component renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "bottom": 35,
+        "position": "absolute",
+        "right": 5,
+      }
+    }
+  >
+    <View
+      elevation={4}
+      style={
+        Object {
+          "backgroundColor": "#F93E60",
+          "borderColor": "#FFFFFF",
+          "borderRadius": 100,
+          "borderWidth": 2,
+          "margin": 5,
+          "shadowColor": "#303C46",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 1,
+          },
+          "shadowOpacity": 0.3,
+          "shadowRadius": 1,
+        }
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            accessibilityLabel="trueShopMapView_icon_searchStore"
+            accessible={true}
+            allowFontScaling={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 12,
+                },
+                Object {
+                  "borderRadius": 55,
+                  "color": "#FFFFFF",
+                  "fontSize": 55,
+                  "overflow": "hidden",
+                },
+                Object {
+                  "fontFamily": "iservice",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+            testID="trueShopMapView_icon_searchStore"
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Map component should render map with the initial region if initialRegion is passed 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "bottom": 35,
+        "position": "absolute",
+        "right": 5,
+      }
+    }
+  >
+    <View
+      elevation={4}
+      style={
+        Object {
+          "backgroundColor": "#F93E60",
+          "borderColor": "#FFFFFF",
+          "borderRadius": 100,
+          "borderWidth": 2,
+          "margin": 5,
+          "shadowColor": "#303C46",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 1,
+          },
+          "shadowOpacity": 0.3,
+          "shadowRadius": 1,
+        }
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            accessibilityLabel="trueShopMapView_icon_searchStore"
+            accessible={true}
+            allowFontScaling={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 12,
+                },
+                Object {
+                  "borderRadius": 55,
+                  "color": "#FFFFFF",
+                  "fontSize": 55,
+                  "overflow": "hidden",
+                },
+                Object {
+                  "fontFamily": "iservice",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+            testID="trueShopMapView_icon_searchStore"
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Map component should render markers inside map if markerList is passed 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "bottom": 35,
+        "position": "absolute",
+        "right": 5,
+      }
+    }
+  >
+    <View
+      elevation={4}
+      style={
+        Object {
+          "backgroundColor": "#F93E60",
+          "borderColor": "#FFFFFF",
+          "borderRadius": 100,
+          "borderWidth": 2,
+          "margin": 5,
+          "shadowColor": "#303C46",
+          "shadowOffset": Object {
+            "height": 2,
+            "width": 1,
+          },
+          "shadowOpacity": 0.3,
+          "shadowRadius": 1,
+        }
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            accessibilityLabel="trueShopMapView_icon_searchStore"
+            accessible={true}
+            allowFontScaling={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 12,
+                },
+                Object {
+                  "borderRadius": 55,
+                  "color": "#FFFFFF",
+                  "fontSize": 55,
+                  "overflow": "hidden",
+                },
+                Object {
+                  "fontFamily": "iservice",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+            testID="trueShopMapView_icon_searchStore"
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

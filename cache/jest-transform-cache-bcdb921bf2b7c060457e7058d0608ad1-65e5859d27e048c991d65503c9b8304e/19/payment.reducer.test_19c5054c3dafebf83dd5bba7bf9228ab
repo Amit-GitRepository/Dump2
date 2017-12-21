@@ -1,0 +1,41 @@
+var _payment=require('../payment.reducer');var _payment2=_interopRequireDefault(_payment);
+var _index=require('../../actions/index.actions');var actions=_interopRequireWildcard(_index);function _interopRequireWildcard(obj){if(obj&&obj.__esModule){return obj;}else{var newObj={};if(obj!=null){for(var key in obj){if(Object.prototype.hasOwnProperty.call(obj,key))newObj[key]=obj[key];}}newObj.default=obj;return newObj;}}function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('Payment reducer',function(){
+var initialState={
+paymentItems:[],
+paymentStatus:{},
+savedCards:[]};
+
+it('Should have the initial paymentItems set to empty array',function(){
+expect((0,_payment2.default)(initialState,{}).paymentItems).toEqual([]);
+expect((0,_payment2.default)(initialState,{}).paymentStatus).toEqual({});
+expect((0,_payment2.default)(initialState,{}).savedCards).toEqual([]);
+});
+it('Should set the paymentItems',function(){
+var setPaymentItemsAction={
+type:actions.SET_PAYMENT_ITEMS,
+payload:[{item:'123'}]};
+
+var result={paymentItems:[{item:'123'}],paymentStatus:{},savedCards:[]};
+expect((0,_payment2.default)(initialState,setPaymentItemsAction)).toEqual(result);
+});
+it('Should set the paymentStatus',function(){
+var setPaymentStatusAction={
+type:actions.SET_PAYMENT_STATUS,
+payload:{
+status:'SUCCESS'}};
+
+
+var result={paymentItems:[],paymentStatus:{status:'SUCCESS'},savedCards:[]};
+expect((0,_payment2.default)(initialState,setPaymentStatusAction)).toEqual(result);
+});
+it('Should set the savedCards',function(){
+var setSavedCardsAction={
+type:actions.SET_SAVED_CARDS,
+payload:[{id:'card1'}]};
+
+var result={paymentItems:[],paymentStatus:{},savedCards:[{id:'card1'}]};
+expect((0,_payment2.default)(initialState,setSavedCardsAction)).toEqual(result);
+});
+});

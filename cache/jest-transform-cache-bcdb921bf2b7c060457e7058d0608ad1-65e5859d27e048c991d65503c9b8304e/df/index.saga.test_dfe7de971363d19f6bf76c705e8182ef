@@ -1,0 +1,63 @@
+var _auth=require('../auth.saga');var _auth2=_interopRequireDefault(_auth);
+var _billUsage=require('../billUsage.saga');var _billUsage2=_interopRequireDefault(_billUsage);
+var _index=require('../index.saga');var _index2=_interopRequireDefault(_index);
+var _dbInitializer=require('../dbInitializer.saga');var _dbInitializer2=_interopRequireDefault(_dbInitializer);
+var _deeplink=require('../deeplink.saga');var _deeplink2=_interopRequireDefault(_deeplink);
+var _ebill=require('../ebill.saga');var _ebill2=_interopRequireDefault(_ebill);
+var _forceUpdate=require('../forceUpdate.saga');var _forceUpdate2=_interopRequireDefault(_forceUpdate);
+var _invoicePdf=require('../invoicePdf.saga');var _invoicePdf2=_interopRequireDefault(_invoicePdf);
+var _msisdn=require('../msisdn.saga');var _msisdn2=_interopRequireDefault(_msisdn);
+var _otp=require('../otp.saga');var _otp2=_interopRequireDefault(_otp);
+var _payment=require('../payment.saga');var _payment2=_interopRequireDefault(_payment);
+var _popup=require('../popup.saga');var _popup2=_interopRequireDefault(_popup);
+var _reduxSagaTesting=require('redux-saga-testing');var _reduxSagaTesting2=_interopRequireDefault(_reduxSagaTesting);
+var _startup=require('../startup.saga');var _startup2=_interopRequireDefault(_startup);
+var _translations=require('../translations.saga');var _translations2=_interopRequireDefault(_translations);
+var _user=require('../user.saga');var _user2=_interopRequireDefault(_user);
+var _effects=require('redux-saga/effects');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('combinedSagas: combines all the sagas and return a single saga',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_index2.default)());
+it('should combine startup saga',function(result){
+expect(result).toEqual((0,_effects.fork)(_startup2.default));
+});
+it('should combine startup saga',function(result){
+expect(result).toEqual((0,_effects.fork)(_dbInitializer2.default));
+});
+it('should combine all translation saga',function(result){
+expect(result).toEqual((0,_effects.fork)(_translations2.default));
+});
+it('should combine all user preferences saga',function(result){
+expect(result).toEqual((0,_effects.fork)(_user2.default));
+});
+it('should combine all msisdn saga',function(result){
+expect(result).toEqual((0,_effects.fork)(_msisdn2.default));
+});
+it('should combine all otp saga',function(result){
+expect(result).toEqual((0,_effects.fork)(_otp2.default));
+});
+it('should combine auth saga',function(result){
+expect(result).toEqual((0,_effects.fork)(_auth2.default));
+});
+it('should combine forceUpdate saga',function(result){
+expect(result).toEqual((0,_effects.fork)(_forceUpdate2.default));
+});
+it('should combine deeplink saga',function(result){
+expect(result).toEqual((0,_effects.fork)(_deeplink2.default));
+});
+it('should combine billUsage saga',function(result){
+expect(result).toEqual((0,_effects.fork)(_billUsage2.default));
+});
+it('should combine ebill saga',function(result){
+expect(result).toEqual((0,_effects.fork)(_ebill2.default));
+});
+it('should combine payment saga',function(result){
+expect(result).toEqual((0,_effects.fork)(_payment2.default));
+});
+it('should combine invoicePdf saga',function(result){
+expect(result).toEqual((0,_effects.fork)(_invoicePdf2.default));
+});
+it('should combine popup saga',function(result){
+expect(result).toEqual((0,_effects.fork)(_popup2.default));
+});
+});

@@ -1,0 +1,86 @@
+var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _ebill=require('../ebill.reducer');var _ebill2=_interopRequireDefault(_ebill);
+var _index=require('../../actions/index.actions');var actions=_interopRequireWildcard(_index);function _interopRequireWildcard(obj){if(obj&&obj.__esModule){return obj;}else{var newObj={};if(obj!=null){for(var key in obj){if(Object.prototype.hasOwnProperty.call(obj,key))newObj[key]=obj[key];}}newObj.default=obj;return newObj;}}function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('Ebill reducer',function(){
+var initialState={
+billPreferences:{
+paper:[],
+email:[],
+sms:[],
+error:[]}};
+
+
+
+Object.freeze(initialState);
+it('should have the initial value',function(){
+expect((0,_ebill2.default)(undefined,{})).toEqual(initialState);
+});
+it('should set bill preferences which is merging of product list data and bill preferences api res',function(){
+var mergedBillPreference={
+'paper':[
+{
+'accountID':'10100949',
+'billingFormat':'paper',
+'billingValue':{
+'country':'',
+'zipCode':'10170',
+'roomNo':'',
+'city':'กรุงเทพมหานคร',
+'addressType':'I',
+'moo':'',
+'soi':'ซอยพุทธมณฑลสาย 2 ซอย 24',
+'building':'',
+'street':'-',
+'district':'เขตทวีวัฒนา',
+'addressLine1':'11/9 * * ซอยพุทธมณฑลสาย 2 ซอย 24 *',
+'houseNo':'11/9',
+'addressLine2':'* * * * -',
+'timeAtAddress':'0101',
+'addressLine3':'* แขวงศาลาธรรมสพน์ * เขตทวีวัฒนา',
+'addressLine4':'กรุงเทพมหานคร 10170',
+'floor':'',
+'subDistrict':'แขวงศาลาธรรมสพน์'},
+
+'productId':'0968730312',
+'subscriberId':'193510',
+'accountId':'10100949',
+'balance':'0.0',
+'subscriptionType':'POSTPAID',
+'statusCode':'ACTIVE',
+'productType':'TrueMoveH',
+'accountType':'tmhPostpaid'}],
+
+
+'sms':[
+{
+'accountID':'10101029',
+'billingFormat':'sms',
+'billingValue':'0855469856',
+'productId':'0968730313',
+'subscriberId':'193591',
+'accountId':'10101029',
+'balance':'0.0',
+'subscriptionType':'POSTPAID',
+'statusCode':'ACTIVE',
+'productType':'TrueMoveH',
+'accountType':'tmhPostpaid'}],
+
+
+email:[],
+error:[]};
+
+var testAction={
+type:actions.SET_BILL_PREFERENCES,
+payload:mergedBillPreference};
+
+
+var state=_extends({},
+initialState);
+
+var result=_extends({},
+initialState,{
+billPreferences:mergedBillPreference});
+
+expect((0,_ebill2.default)(state,testAction)).toEqual(result);
+});
+});

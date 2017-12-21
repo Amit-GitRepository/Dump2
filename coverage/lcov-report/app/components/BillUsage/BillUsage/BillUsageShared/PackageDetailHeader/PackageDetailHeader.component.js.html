@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/components/BillUsage/BillUsage/BillUsageShared/PackageDetailHeader/PackageDetailHeader.component.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../../index.html">All files</a> / <a href="index.html">app/components/BillUsage/BillUsage/BillUsageShared/PackageDetailHeader</a> PackageDetailHeader.component.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>4/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">72.73% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>8/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>4/4</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import ISText from '../../../../Shared/ISText/ISText.component';
+import Proptypes from 'prop-types';
+import React, {Component} from 'react';
+import styles from './PackageDetailHeader.style';
+import {translate} from '../../../../../language/i18n/helper';
+import {View} from 'react-native';
+&nbsp;
+class PackageDetailHeader extends Component {
+  render () {
+    const {phoneNumber, name, endDate, endMonth, isConvergence, isPrepaid} = this.props;
+    return (
+      &lt;View style = {(isConvergence || isPrepaid) ? <span class="branch-0 cbranch-no" title="branch not covered" >styles.headerWrapperCenter </span>: styles.headerWrapper}&gt;
+        &lt;View style = {(isConvergence || isPrepaid) &amp;&amp; <span class="branch-2 cbranch-no" title="branch not covered" >styles.alignCenter}</span>&gt;
+          &lt;ISText type = 'BOLD' style = {styles.textWhite}&gt;{name}&lt;/ISText&gt;
+          &lt;ISText type = 'BOLD' style = {styles.textWhiteLarge}&gt;{phoneNumber}&lt;/ISText&gt;
+        &lt;/View&gt;
+        { (!isConvergence &amp;&amp; !isPrepaid) ?
+          &lt;View style = {styles.verticalLine}&gt;
+            &lt;ISText type = 'BOLD' style = {styles.textWhite}&gt;{translate('BILLS_USAGE_BILLING_CYCLE_END_DATE')}&lt;/ISText&gt;
+            &lt;ISText style = {styles.textMonth}&gt;{endMonth}&lt;ISText type = 'BOLD' style = {styles.textDate}&gt; {endDate}&lt;/ISText&gt;&lt;/ISText&gt;
+          &lt;/View&gt; :
+<span class="branch-1 cbranch-no" title="branch not covered" >          null}</span>
+      &lt;/View&gt;
+    );
+  }
+}
+PackageDetailHeader.defaultProps = {
+  name: '',
+  phoneNumber: '',
+  endMonth: '',
+  endDate: 1,
+  isConvergence: false,
+  isPrepaid: false
+};
+PackageDetailHeader.propTypes = {
+  phoneNumber: Proptypes.string,
+  name: Proptypes.string,
+  endMonth: Proptypes.string,
+  endDate: Proptypes.number,
+  isConvergence: Proptypes.bool,
+  isPrepaid: Proptypes.bool
+};
+export default PackageDetailHeader;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Oct 31 2017 11:24:42 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../../sorter.js"></script>
+</body>
+</html>

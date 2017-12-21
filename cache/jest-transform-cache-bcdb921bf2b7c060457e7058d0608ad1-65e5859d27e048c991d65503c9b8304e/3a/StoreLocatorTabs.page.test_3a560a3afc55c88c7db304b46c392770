@@ -1,0 +1,61 @@
+var _store=require('../../../redux/store');var _store2=_interopRequireDefault(_store);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _StoreLocatorTabs=require('../StoreLocatorTabs.page');var _StoreLocatorTabs2=_interopRequireDefault(_StoreLocatorTabs);
+var _enzyme=require('enzyme');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+var store=(0,_store2.default)({
+user:{language:'en'},
+storeLocator:{selectedProvince:{
+'name':{
+'en':'Bangkok',
+'th':'กรุงเทพ'},
+
+'latitude':13.752725,
+'longitude':100.502518}}});
+
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+describe('StoreLocatorMap Page',function(){
+
+it('renders ',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_StoreLocatorTabs2.default,{store:store}));
+expect(wrapper).toBeDefined();
+});
+
+it('it has mapStateToProps : props defined',function(){
+var props=(0,_StoreLocatorTabs.mapStateToProps)(store.getState());
+expect(props.radiusKM).toBeDefined();
+expect(props.language).toBeDefined();
+
+expect(props.selectedProvince).toBeDefined();
+expect(props.currentLocation).toBeDefined();
+});
+
+it('it has mapDispatchToProps functions',function(){
+var mockDispatch=function mockDispatch(action){return action;};
+var props=(0,_StoreLocatorTabs.mapDispatchToProps)(mockDispatch);
+expect(props.onMapClick).toBeDefined();
+expect(props.onListClick).toBeDefined();
+expect(props.selectProvince).toBeDefined();
+expect(props.selectService).toBeDefined();
+});
+
+it('selectService: should call the props.selectService',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_StoreLocatorTabs2.default,{store:store}));
+var page=wrapper.find('StoreLocatorTabsPage').shallow();
+page.setProps({selectService:jest.fn()});
+page.instance().selectService('Payment');
+expect(page.instance().props.selectService).toHaveBeenCalled();
+});
+
+it('selectProvince: should call the props.selectProvince',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_StoreLocatorTabs2.default,{store:store}));
+var page=wrapper.find('StoreLocatorTabsPage').shallow();
+page.setProps({selectProvince:jest.fn()});
+page.instance().selectProvince('Bangkok');
+expect(page.instance().props.selectProvince).toHaveBeenCalled();
+});
+
+});

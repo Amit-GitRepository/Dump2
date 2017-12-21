@@ -1,0 +1,42 @@
+var _msisdn=require('../msisdn.reducer');var _msisdn2=_interopRequireDefault(_msisdn);
+var _index=require('../../actions/index.actions');var actions=_interopRequireWildcard(_index);function _interopRequireWildcard(obj){if(obj&&obj.__esModule){return obj;}else{var newObj={};if(obj!=null){for(var key in obj){if(Object.prototype.hasOwnProperty.call(obj,key))newObj[key]=obj[key];}}newObj.default=obj;return newObj;}}function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('autoDetectMSISDN',function(){
+var initialState={};
+
+it('should return default state by default',function(done){
+expect((0,_msisdn2.default)(initialState,'')).toEqual({});
+done();
+});
+
+it('should update the msisdn information with success payload',function(done){
+var payload={
+msisdn:123456789,
+'x-forwarded-for':'10.10.1.0'};
+
+var detectMSISDNAction={
+type:actions.AUTO_DETECT_MSISDN_SUCCESS,
+payload:payload};
+
+var expectedResult=payload;
+var result=(0,_msisdn2.default)(initialState,detectMSISDNAction);
+expect(result).toEqual(expectedResult);
+done();
+});
+
+it('should update the msisdn information with null if failed',function(done){
+var payload={
+msisdn:'Authorization error'};
+
+var detectMSISDNAction={
+type:actions.AUTO_DETECT_MSISDN_FAIL,
+payload:payload};
+
+var expectedResult={
+msisdn:null};
+
+var result=(0,_msisdn2.default)(initialState,detectMSISDNAction);
+expect(result).toEqual(expectedResult);
+done();
+});
+});

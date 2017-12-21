@@ -1,0 +1,12 @@
+Object.defineProperty(exports,"__esModule",{value:true});var sortByDistance=exports.sortByDistance=jest.fn(function(latlng,data){return data;});
+
+var getCurrentPosition=exports.getCurrentPosition=jest.fn(function(){return new Promise(function(resolve){
+resolve({
+latitude:12,
+longitude:56});
+
+});});
+
+var getAddress=exports.getAddress=jest.fn(function(){return'someAddress';});
+
+var getProducts=exports.getProducts=jest.fn(function(){return[];});

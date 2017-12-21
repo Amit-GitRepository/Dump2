@@ -1,0 +1,285 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HotExtraPackageCard component renders correctly 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "alignSelf": "stretch",
+        "borderColor": "#B9C1C9",
+        "borderRadius": 10,
+        "borderTopWidth": 0,
+        "borderWidth": 1,
+        "overflow": "hidden",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#68747E",
+          "borderColor": "#68747E",
+          "marginHorizontal": -1,
+          "padding": 5,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#FFFFFF",
+            "fontFamily": "SukhumvitSet-Bold",
+            "textAlign": "center",
+          }
+        }
+      >
+        
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "alignSelf": "stretch",
+          "flexDirection": "row-reverse",
+          "paddingHorizontal": 10,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "flex-end",
+            "justifyContent": "center",
+            "paddingLeft": 10,
+          }
+        }
+      >
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          collapsable={undefined}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          nativeID={undefined}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "backgroundColor": "#F93E60",
+              "borderRadius": 50,
+              "justifyContent": "center",
+              "opacity": 1,
+              "padding": 10,
+              "paddingHorizontal": 10,
+              "paddingVertical": 5,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <View
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "alignSelf": "stretch",
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "transparent",
+                      "color": "#303C46",
+                    },
+                    Array [
+                      Object {
+                        "color": "#FFFFFF",
+                        "fontSize": 16,
+                      },
+                      Object {
+                        "marginTop": -5,
+                        "padding": 0,
+                      },
+                    ],
+                    Object {
+                      "fontFamily": "SukhumvitSet-Bold",
+                    },
+                  ]
+                }
+              >
+                
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "flexGrow": 1,
+            "justifyContent": "space-between",
+            "paddingVertical": 10,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "borderColor": "transparent",
+              "borderRightColor": "#E9E9EA",
+              "borderWidth": 1,
+              "justifyContent": "center",
+              "paddingRight": 5,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "alignSelf": "flex-start",
+                "backgroundColor": "transparent",
+                "color": "#303C46",
+                "fontFamily": "SukhumvitSet-Bold",
+              }
+            }
+          >
+            
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#68747E",
+                "fontFamily": "SukhumvitSet-Text",
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "borderColor": "transparent",
+              "borderRightColor": "#E9E9EA",
+              "borderWidth": 1,
+              "justifyContent": "center",
+              "paddingRight": 5,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "alignSelf": "center",
+                "backgroundColor": "transparent",
+                "color": "#303C46",
+                "fontFamily": "SukhumvitSet-Bold",
+              }
+            }
+          >
+            
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#68747E",
+                "fontFamily": "SukhumvitSet-Text",
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "borderColor": "transparent",
+              "borderRightColor": "#E9E9EA",
+              "borderWidth": 1,
+              "justifyContent": "center",
+              "paddingRight": 5,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "alignSelf": "flex-end",
+                "backgroundColor": "transparent",
+                "color": "#303C46",
+                "fontFamily": "SukhumvitSet-Bold",
+              }
+            }
+          >
+            
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            numberOfLines={1}
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#68747E",
+                "fontFamily": "SukhumvitSet-Text",
+              }
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

@@ -1,0 +1,9 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.defaultLocale=exports.translations=undefined;var cov_q0rl4nmfk=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/config/language.config.js',hash='5fb21556c917321fb4ccf34ed4b256fca80c0769',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/config/language.config.js',statementMap:{'0':{start:{line:4,column:28},end:{line:7,column:1}},'1':{start:{line:9,column:29},end:{line:9,column:33}}},fnMap:{},branchMap:{},s:{'0':0,'1':0},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _en=require('../language/locale/en');
+var _th=require('../language/locale/th');
+
+var translations=exports.translations=(cov_q0rl4nmfk.s[0]++,{
+en:_en.en,
+th:_th.th});
+
+
+var defaultLocale=exports.defaultLocale=(cov_q0rl4nmfk.s[1]++,'th');

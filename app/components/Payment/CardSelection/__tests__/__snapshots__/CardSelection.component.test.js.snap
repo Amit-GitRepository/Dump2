@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardSelection component renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderBottomWidth": 1,
+        "borderColor": "#E9E9EA",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingVertical": 10,
+      },
+      false,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      collapsable={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      nativeID={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <View
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "borderColor": "#F93E60",
+              "borderRadius": 11,
+              "borderWidth": 1,
+              "height": 22,
+              "justifyContent": "center",
+              "width": 22,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "#E9E9EA",
+                "borderRadius": 6,
+                "height": 12,
+                "width": 12,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      numberOfLines={1}
+      style={
+        Object {
+          "backgroundColor": "transparent",
+          "color": "#303C46",
+          "fontFamily": "SukhumvitSet-SemiBold",
+          "fontSize": 18,
+          "marginLeft": 10,
+          "maxWidth": 130,
+          "paddingHorizontal": 5,
+        }
+      }
+    />
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "backgroundColor": "transparent",
+          "color": "#F93E60",
+          "fontFamily": "SukhumvitSet-SemiBold",
+          "fontSize": 16,
+        }
+      }
+    />
+  </View>
+</View>
+`;

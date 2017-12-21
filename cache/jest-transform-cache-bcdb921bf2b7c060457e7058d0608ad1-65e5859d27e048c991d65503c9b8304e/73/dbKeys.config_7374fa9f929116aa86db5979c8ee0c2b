@@ -1,0 +1,7 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_2qml8w955t=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/config/dbKeys.config.js',hash='a587e2780b0a82f5c76e6ae19ae643750683e67b',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/config/dbKeys.config.js',statementMap:{'0':{start:{line:1,column:15},end:{line:5,column:1}}},fnMap:{},branchMap:{},s:{'0':0},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var dbKeys=(cov_2qml8w955t.s[0]++,{
+TRANSLATION_KEY:'translation',
+INITIALIZATION_KEY:'initalizationKey',
+USER_PREFERENCE_KEY:'userPreference'});exports.default=
+
+
+dbKeys;

@@ -1,0 +1,46 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_269xpq5w1w=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/TMPackageDetailsExtra/TMPackageDetailsExtra.component.js',hash='b190f3a7a9d7e13a9f580a6a4190d0cc3d743da7',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/TMPackageDetailsExtra/TMPackageDetailsExtra.component.js',statementMap:{'0':{start:{line:16,column:4},end:{line:16,column:38}},'1':{start:{line:20,column:75},end:{line:20,column:85}},'2':{start:{line:21,column:31},end:{line:21,column:41}},'3':{start:{line:22,column:23},end:{line:26,column:6}},'4':{start:{line:27,column:4},end:{line:34,column:6}},'5':{start:{line:38,column:0},end:{line:40,column:2}},'6':{start:{line:42,column:0},end:{line:44,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:15,column:15},end:{line:15,column:16}},loc:{start:{line:15,column:37},end:{line:17,column:3}},line:15},'1':{name:'(anonymous_1)',decl:{start:{line:19,column:2},end:{line:19,column:3}},loc:{start:{line:19,column:12},end:{line:35,column:3}},line:19}},branchMap:{'0':{loc:{start:{line:30,column:11},end:{line:30,column:108}},type:'binary-expr',locations:[{start:{line:30,column:11},end:{line:30,column:33}},{start:{line:30,column:37},end:{line:30,column:108}}],line:30},'1':{loc:{start:{line:31,column:11},end:{line:31,column:82}},type:'binary-expr',locations:[{start:{line:31,column:11},end:{line:31,column:33}},{start:{line:31,column:37},end:{line:31,column:82}}],line:31}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0},f:{'0':0,'1':0},b:{'0':[0,0],'1':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _CaretTabs=require('../../Shared/CaretTabs/CaretTabs.component');var _CaretTabs2=_interopRequireDefault(_CaretTabs);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _TMPackageDetailsExtra=require('./TMPackageDetailsExtra.style');var _TMPackageDetailsExtra2=_interopRequireDefault(_TMPackageDetailsExtra);
+var _TMExtraPackage=require('./TMExtraPackage.component');var _TMExtraPackage2=_interopRequireDefault(_TMExtraPackage);
+var _TMPackageDetails=require('./TMPackageDetails.component');var _TMPackageDetails2=_interopRequireDefault(_TMPackageDetails);
+var _helper=require('../../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+TMPackageDetailsExtra=function(_Component){_inherits(TMPackageDetailsExtra,_Component);function TMPackageDetailsExtra(){var _ref;var _temp,_this,_ret;_classCallCheck(this,TMPackageDetailsExtra);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=TMPackageDetailsExtra.__proto__||Object.getPrototypeOf(TMPackageDetailsExtra)).call.apply(_ref,[this].concat(args))),_this),_this.
+state={
+selectedTabIndex:0},_this.
+
+
+onTabPress=function(selectedTabIndex){cov_269xpq5w1w.f[0]++;cov_269xpq5w1w.s[0]++;
+_this.setState({selectedTabIndex:selectedTabIndex});
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(TMPackageDetailsExtra,[{key:'render',value:function render()
+
+{cov_269xpq5w1w.f[1]++;var _ref2=(cov_269xpq5w1w.s[1]++,
+this.props),_ref2$packageDetailEx=_ref2.packageDetailExtra,extraPackage=_ref2$packageDetailEx.extraPackage,autoRenew=_ref2$packageDetailEx.autoRenew,packageDetail=_ref2$packageDetailEx.packageDetail;var _ref3=(cov_269xpq5w1w.s[2]++,
+this.state),selectedTabIndex=_ref3.selectedTabIndex;
+var headerList=(cov_269xpq5w1w.s[3]++,[{
+text:(0,_helper.translate)('PACKAGE_DETAIL__TITLE')},
+{
+text:(0,_helper.translate)('EXTRA_PACKAGE_TITLE')}]);cov_269xpq5w1w.s[4]++;
+
+return(
+_react2.default.createElement(_reactNative.View,{style:_TMPackageDetailsExtra2.default.container},
+_react2.default.createElement(_CaretTabs2.default,{onTabPress:this.onTabPress,selectedIndex:selectedTabIndex,headerList:headerList,headerContainerStyle:_TMPackageDetailsExtra2.default.caretTabContainer,bodyStyle:_TMPackageDetailsExtra2.default.bodyStyle},
+(cov_269xpq5w1w.b[0][0]++,selectedTabIndex===0)&&(cov_269xpq5w1w.b[0][1]++,_react2.default.createElement(_TMPackageDetails2.default,{packageDetail:packageDetail,autoRenew:autoRenew})),
+(cov_269xpq5w1w.b[1][0]++,selectedTabIndex===1)&&(cov_269xpq5w1w.b[1][1]++,_react2.default.createElement(_TMExtraPackage2.default,{extraPackage:extraPackage})))));
+
+
+
+}}]);return TMPackageDetailsExtra;}(_react.Component);cov_269xpq5w1w.s[5]++;
+
+
+TMPackageDetailsExtra.defaultProps={
+packageDetailExtra:{}};cov_269xpq5w1w.s[6]++;
+
+
+TMPackageDetailsExtra.propTypes={
+packageDetailExtra:_propTypes2.default.object};exports.default=
+
+
+TMPackageDetailsExtra;

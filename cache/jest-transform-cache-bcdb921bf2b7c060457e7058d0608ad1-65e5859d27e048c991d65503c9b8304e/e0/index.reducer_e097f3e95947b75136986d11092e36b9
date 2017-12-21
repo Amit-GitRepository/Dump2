@@ -1,0 +1,24 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1jef43y14a=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/reducers/index.reducer.js',hash='f9f4ac78fcdd09493450fdb242b4b869fdc251c9',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/reducers/index.reducer.js',statementMap:{'0':{start:{line:12,column:20},end:{line:22,column:2}}},fnMap:{},branchMap:{},s:{'0':0},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _billUsage=require('./billUsage.reducer');var _billUsage2=_interopRequireDefault(_billUsage);
+var _forceUpdate=require('./forceUpdate.reducer');var _forceUpdate2=_interopRequireDefault(_forceUpdate);
+var _msisdn=require('./msisdn.reducer');var _msisdn2=_interopRequireDefault(_msisdn);
+var _nav=require('./nav.reducer');var _nav2=_interopRequireDefault(_nav);
+var _networkStatus=require('./networkStatus.reducer');var _networkStatus2=_interopRequireDefault(_networkStatus);
+var _sideMenu=require('./sideMenu.reducer');var _sideMenu2=_interopRequireDefault(_sideMenu);
+var _spinner=require('./spinner.reducer');var _spinner2=_interopRequireDefault(_spinner);
+var _storeLocator=require('./storeLocator.reducer');var _storeLocator2=_interopRequireDefault(_storeLocator);
+var _user=require('./user.reducer');var _user2=_interopRequireDefault(_user);
+var _redux=require('redux');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+var appReducers=(cov_1jef43y14a.s[0]++,(0,_redux.combineReducers)({
+user:_user2.default,
+nav:_nav2.default,
+spinner:_spinner2.default,
+forceUpdate:_forceUpdate2.default,
+networkStatus:_networkStatus2.default,
+msisdn:_msisdn2.default,
+sideMenu:_sideMenu2.default,
+storeLocator:_storeLocator2.default,
+billUsage:_billUsage2.default}));exports.default=
+
+
+appReducers;

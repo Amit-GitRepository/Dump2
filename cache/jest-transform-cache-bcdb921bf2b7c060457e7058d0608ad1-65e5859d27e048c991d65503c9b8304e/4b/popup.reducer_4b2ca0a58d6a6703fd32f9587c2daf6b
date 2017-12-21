@@ -1,0 +1,28 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_p1evdrjzp=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/reducers/popup.reducer.js',hash='d30e05ee25252419889c9519c41ba326a47714f2',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/reducers/popup.reducer.js',statementMap:{'0':{start:{line:3,column:21},end:{line:14,column:1}},'1':{start:{line:17,column:2},end:{line:27,column:3}},'2':{start:{line:19,column:4},end:{line:19,column:24}},'3':{start:{line:22,column:4},end:{line:22,column:61}},'4':{start:{line:25,column:4},end:{line:25,column:17}}},fnMap:{'0':{name:'popup',decl:{start:{line:16,column:24},end:{line:16,column:29}},loc:{start:{line:16,column:61},end:{line:28,column:1}},line:16}},branchMap:{'0':{loc:{start:{line:16,column:31},end:{line:16,column:51}},type:'default-arg',locations:[{start:{line:16,column:39},end:{line:16,column:51}}],line:16},'1':{loc:{start:{line:17,column:2},end:{line:27,column:3}},type:'switch',locations:[{start:{line:18,column:2},end:{line:20,column:3}},{start:{line:21,column:2},end:{line:23,column:3}},{start:{line:24,column:2},end:{line:26,column:3}}],line:17}},s:{'0':0,'1':0,'2':0,'3':0,'4':0},f:{'0':0},b:{'0':[0],'1':[0,0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};exports.default=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+popup;var _index=require('../actions/index.actions');var initialState=(cov_p1evdrjzp.s[0]++,{message:{title:'',body:'',buttons:[{title:''}]},isOpen:false});function popup(){var state=arguments.length>0&&arguments[0]!==undefined?arguments[0]:(cov_p1evdrjzp.b[0][0]++,initialState);var action=arguments[1];cov_p1evdrjzp.f[0]++;cov_p1evdrjzp.s[1]++;
+switch(action.type){
+case _index.POPUP_HIDE:cov_p1evdrjzp.b[1][0]++;{cov_p1evdrjzp.s[2]++;
+return initialState;
+}
+case _index.POPUP_SHOW:cov_p1evdrjzp.b[1][1]++;{cov_p1evdrjzp.s[3]++;
+return _extends({},state,{isOpen:true,message:action.payload});
+}
+default:cov_p1evdrjzp.b[1][2]++;{cov_p1evdrjzp.s[4]++;
+return state;
+}}
+
+}

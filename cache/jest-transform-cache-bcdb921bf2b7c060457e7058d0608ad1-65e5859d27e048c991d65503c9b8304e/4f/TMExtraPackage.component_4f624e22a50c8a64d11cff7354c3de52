@@ -1,0 +1,73 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1uwfdi5f1z=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/TMPackageDetailsExtra/TMExtraPackage.component.js',hash='7c8c4fee9882cbb4be65635c4707680ddefad7a0',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/TMPackageDetailsExtra/TMExtraPackage.component.js',statementMap:{'0':{start:{line:17,column:27},end:{line:17,column:37}},'1':{start:{line:18,column:29},end:{line:18,column:77}},'2':{start:{line:18,column:63},end:{line:18,column:76}},'3':{start:{line:19,column:23},end:{line:39,column:5}},'4':{start:{line:20,column:6},end:{line:38,column:13}},'5':{start:{line:40,column:34},end:{line:40,column:142}},'6':{start:{line:40,column:108},end:{line:40,column:141}},'7':{start:{line:41,column:36},end:{line:41,column:144}},'8':{start:{line:41,column:110},end:{line:41,column:143}},'9':{start:{line:42,column:4},end:{line:61,column:6}},'10':{start:{line:65,column:0},end:{line:67,column:2}},'11':{start:{line:69,column:0},end:{line:71,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:16,column:2},end:{line:16,column:3}},loc:{start:{line:16,column:12},end:{line:62,column:3}},line:16},'1':{name:'(anonymous_1)',decl:{start:{line:18,column:53},end:{line:18,column:54}},loc:{start:{line:18,column:63},end:{line:18,column:76}},line:18},'2':{name:'(anonymous_2)',decl:{start:{line:19,column:23},end:{line:19,column:24}},loc:{start:{line:20,column:6},end:{line:38,column:13}},line:20},'3':{name:'(anonymous_3)',decl:{start:{line:40,column:81},end:{line:40,column:82}},loc:{start:{line:40,column:108},end:{line:40,column:141}},line:40},'4':{name:'(anonymous_4)',decl:{start:{line:41,column:83},end:{line:41,column:84}},loc:{start:{line:41,column:110},end:{line:41,column:143}},line:41}},branchMap:{'0':{loc:{start:{line:37,column:9},end:{line:37,column:172}},type:'binary-expr',locations:[{start:{line:37,column:9},end:{line:37,column:34}},{start:{line:37,column:38},end:{line:37,column:172}}],line:37},'1':{loc:{start:{line:40,column:34},end:{line:40,column:142}},type:'binary-expr',locations:[{start:{line:40,column:34},end:{line:40,column:53}},{start:{line:40,column:57},end:{line:40,column:142}}],line:40},'2':{loc:{start:{line:41,column:36},end:{line:41,column:144}},type:'binary-expr',locations:[{start:{line:41,column:36},end:{line:41,column:55}},{start:{line:41,column:59},end:{line:41,column:144}}],line:41}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0},b:{'0':[0,0],'1':[0,0],'2':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _HeaderWithCaret=require('../BillUsage/BillUsageShared/HeaderWithCaret.component');var _HeaderWithCaret2=_interopRequireDefault(_HeaderWithCaret);
+var _ISText=require('../../Shared/ISText/ISText.component');var _ISText2=_interopRequireDefault(_ISText);
+var _moment=require('../../../utils/moment.util');var _moment2=_interopRequireDefault(_moment);
+var _partition=require('lodash/partition');var _partition2=_interopRequireDefault(_partition);
+var _ProgressBar=require('../../Shared/ProgressBar/ProgressBar.component');var _ProgressBar2=_interopRequireDefault(_ProgressBar);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _TMExtraPackage=require('./TMExtraPackage.style');var _TMExtraPackage2=_interopRequireDefault(_TMExtraPackage);
+var _WrapperCard=require('../BillUsage/BillUsageShared/WrapperCard.component');var _WrapperCard2=_interopRequireDefault(_WrapperCard);
+var _constants=require('../../../themes/constants.styles');
+var _reactNative=require('react-native');
+var _helper=require('../../../language/i18n/helper');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+TMExtraPackage=function(_Component){_inherits(TMExtraPackage,_Component);function TMExtraPackage(){_classCallCheck(this,TMExtraPackage);return _possibleConstructorReturn(this,(TMExtraPackage.__proto__||Object.getPrototypeOf(TMExtraPackage)).apply(this,arguments));}_createClass(TMExtraPackage,[{key:'render',value:function render()
+
+{cov_1uwfdi5f1z.f[0]++;var _ref=(cov_1uwfdi5f1z.s[0]++,
+this.props),extraPackage=_ref.extraPackage;
+var filteredPackages=(cov_1uwfdi5f1z.s[1]++,(0,_partition2.default)(extraPackage,function(item){cov_1uwfdi5f1z.f[1]++;cov_1uwfdi5f1z.s[2]++;return item.isActive;}));cov_1uwfdi5f1z.s[3]++;
+var rowContent=function rowContent(packageRowItem,index)
+{cov_1uwfdi5f1z.f[2]++;cov_1uwfdi5f1z.s[4]++;return _react2.default.createElement(_reactNative.View,{key:index,style:_TMExtraPackage2.default.packageItem},
+_react2.default.createElement(_reactNative.View,{style:_TMExtraPackage2.default.packageItemRow},
+_react2.default.createElement(_reactNative.View,{style:_TMExtraPackage2.default.packageRowLeft},
+_react2.default.createElement(_ISText2.default,{type:'BOLD',style:_TMExtraPackage2.default.itemTitle},packageRowItem.title,_react2.default.createElement(_ISText2.default,{type:'BOLD',style:_TMExtraPackage2.default.itemSubtitle},' ',packageRowItem.subtitle))),
+
+_react2.default.createElement(_reactNative.View,{style:_TMExtraPackage2.default.packageRowRight},
+_react2.default.createElement(_ISText2.default,{type:'BOLD',style:_TMExtraPackage2.default.consumedValue},packageRowItem.consumedValue,' ',_react2.default.createElement(_ISText2.default,{style:_TMExtraPackage2.default.consumedValueUnit},packageRowItem.unit)))),
+
+
+_react2.default.createElement(_reactNative.View,{style:_TMExtraPackage2.default.packageItemRow},
+_react2.default.createElement(_reactNative.View,{style:_TMExtraPackage2.default.packageRowLeft},
+_react2.default.createElement(_ProgressBar2.default,{fillColor:_constants.colors.SECONDARY_TMOVE,backgroundColor:_constants.colors.PRIMARY_BG_SEPARATOR,percentage:parseInt(packageRowItem.consumedValue)*100/parseInt(packageRowItem.totalValue)})),
+
+_react2.default.createElement(_reactNative.View,{style:_TMExtraPackage2.default.packageRowRight},
+_react2.default.createElement(_ISText2.default,{type:'SEMIBOLD',style:_TMExtraPackage2.default.totalValue},'of ',packageRowItem.totalValue,' ',packageRowItem.unit))),
+
+
+(cov_1uwfdi5f1z.b[0][0]++,packageRowItem.expiryDate)&&(cov_1uwfdi5f1z.b[0][1]++,_react2.default.createElement(_ISText2.default,{type:'SEMIBOLD',style:_TMExtraPackage2.default.validityText},'Valid until ',new _moment2.default(packageRowItem.expiryDate).format('DD/MM/YYYY'),' ')));
+};
+
+var activePackagesContent=(cov_1uwfdi5f1z.s[5]++,(cov_1uwfdi5f1z.b[1][0]++,filteredPackages[0])&&(cov_1uwfdi5f1z.b[1][1]++,filteredPackages[0].map(function(packageRowItem,index){cov_1uwfdi5f1z.f[3]++;cov_1uwfdi5f1z.s[6]++;return rowContent(packageRowItem,index);})));
+var inactivePackagesContent=(cov_1uwfdi5f1z.s[7]++,(cov_1uwfdi5f1z.b[2][0]++,filteredPackages[1])&&(cov_1uwfdi5f1z.b[2][1]++,filteredPackages[1].map(function(packageRowItem,index){cov_1uwfdi5f1z.f[4]++;cov_1uwfdi5f1z.s[8]++;return rowContent(packageRowItem,index);})));cov_1uwfdi5f1z.s[9]++;
+return(
+_react2.default.createElement(_reactNative.ScrollView,{style:_TMExtraPackage2.default.scrollContainer,contentContainerStyle:_TMExtraPackage2.default.scrollContentContainer},
+_react2.default.createElement(_WrapperCard2.default,null,
+_react2.default.createElement(_HeaderWithCaret2.default,{headerColor:_constants.colors.PRIMARY_SUBMENU},
+_react2.default.createElement(_ISText2.default,{type:'BOLD',style:_TMExtraPackage2.default.cardHeaderText},(0,_helper.translate)('EXTRA_PACKAGE_ACTIVE'))),
+
+_react2.default.createElement(_reactNative.View,{style:_TMExtraPackage2.default.cardContent},
+activePackagesContent)),
+
+
+_react2.default.createElement(_WrapperCard2.default,null,
+_react2.default.createElement(_HeaderWithCaret2.default,{headerColor:_constants.colors.PRIMARY_DISABLED_BG_TEXT},
+_react2.default.createElement(_ISText2.default,{type:'BOLD',style:_TMExtraPackage2.default.cardHeaderText},(0,_helper.translate)('EXTRA_PACKAGE_INACTIVE'))),
+
+_react2.default.createElement(_reactNative.View,{style:_TMExtraPackage2.default.cardContent},
+inactivePackagesContent))));
+
+
+
+
+}}]);return TMExtraPackage;}(_react.Component);cov_1uwfdi5f1z.s[10]++;
+
+
+TMExtraPackage.defaultProps={
+extraPackage:[]};cov_1uwfdi5f1z.s[11]++;
+
+
+TMExtraPackage.propTypes={
+extraPackage:_propTypes2.default.array};exports.default=
+
+
+TMExtraPackage;

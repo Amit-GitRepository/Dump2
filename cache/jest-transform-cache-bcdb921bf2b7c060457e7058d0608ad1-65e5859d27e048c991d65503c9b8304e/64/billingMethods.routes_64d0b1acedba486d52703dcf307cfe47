@@ -1,0 +1,34 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.billingMethodsRouteConfig=undefined;var cov_18nhur5j8i=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/routes/billingMethods.routes.js',hash='4c75ce26262e7a3def1a1870425b71c228039539',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/routes/billingMethods.routes.js',statementMap:{'0':{start:{line:7,column:29},end:{line:30,column:1}},'1':{start:{line:32,column:41},end:{line:32,column:61}}},fnMap:{},branchMap:{},s:{'0':0,'1':0},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _BillingMethods=require('../pages/BillingMethods/BillingMethods.page');var _BillingMethods2=_interopRequireDefault(_BillingMethods);
+var _EBillAdd=require('../pages/BillingMethods/EBillAdd.page');var _EBillAdd2=_interopRequireDefault(_EBillAdd);
+var _EBillEdit=require('../pages/BillingMethods/EBillEdit.page');var _EBillEdit2=_interopRequireDefault(_EBillEdit);
+var _route=require('./helpers/route.helper');
+var _reactNavigation=require('react-navigation');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+var billingMethodsConfig=(cov_18nhur5j8i.s[0]++,{
+BillingMethods:{
+screen:_BillingMethods2.default,
+navigationOptions:_route.getStackNavOption,
+showHamburger:true,
+requireLogin:true,
+gaScreenName:'Billing Methods Page',
+title:'SIDE_MENU__BILLING_METHODS'},
+
+EbillAdd:{
+screen:_EBillAdd2.default,
+navigationOptions:_route.getStackNavOption,
+requireLogin:true,
+gaScreenName:'Add Ebill Page',
+title:'BILLING_METHODS__ADD_EBILL'},
+
+EbillEdit:{
+screen:_EBillEdit2.default,
+navigationOptions:_route.getStackNavOption,
+requireLogin:true,
+gaScreenName:'Edit Ebill Page',
+title:'BILLING_METHODS__EDIT_EBILL'}});
+
+
+
+var billingMethodsRouteConfig=exports.billingMethodsRouteConfig=(cov_18nhur5j8i.s[1]++,billingMethodsConfig);exports.default=
+
+(0,_reactNavigation.StackNavigator)(billingMethodsConfig);

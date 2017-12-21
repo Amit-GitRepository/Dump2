@@ -1,0 +1,32 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1jef43y14a=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/reducers/index.reducer.js',hash='78a82c517f33d84311cd4944e9c2d9664edaf7f1',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/reducers/index.reducer.js',statementMap:{'0':{start:{line:16,column:20},end:{line:30,column:2}}},fnMap:{},branchMap:{},s:{'0':0},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _billUsage=require('./billUsage.reducer');var _billUsage2=_interopRequireDefault(_billUsage);
+var _ebill=require('./ebill.reducer');var _ebill2=_interopRequireDefault(_ebill);
+var _forceUpdate=require('./forceUpdate.reducer');var _forceUpdate2=_interopRequireDefault(_forceUpdate);
+var _msisdn=require('./msisdn.reducer');var _msisdn2=_interopRequireDefault(_msisdn);
+var _nav=require('./nav.reducer');var _nav2=_interopRequireDefault(_nav);
+var _networkStatus=require('./networkStatus.reducer');var _networkStatus2=_interopRequireDefault(_networkStatus);
+var _payForOthers=require('./payForOthers.reducer');var _payForOthers2=_interopRequireDefault(_payForOthers);
+var _payment=require('./payment.reducer');var _payment2=_interopRequireDefault(_payment);
+var _popup=require('./popup.reducer');var _popup2=_interopRequireDefault(_popup);
+var _preLoginPay=require('./preLoginPay.reducer');var _preLoginPay2=_interopRequireDefault(_preLoginPay);
+var _spinner=require('./spinner.reducer');var _spinner2=_interopRequireDefault(_spinner);
+var _storeLocator=require('./storeLocator.reducer');var _storeLocator2=_interopRequireDefault(_storeLocator);
+var _user=require('./user.reducer');var _user2=_interopRequireDefault(_user);
+var _redux=require('redux');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+var appReducers=(cov_1jef43y14a.s[0]++,(0,_redux.combineReducers)({
+billUsage:_billUsage2.default,
+ebill:_ebill2.default,
+forceUpdate:_forceUpdate2.default,
+msisdn:_msisdn2.default,
+nav:_nav2.default,
+networkStatus:_networkStatus2.default,
+spinner:_spinner2.default,
+storeLocator:_storeLocator2.default,
+user:_user2.default,
+popup:_popup2.default,
+payment:_payment2.default,
+payForOthers:_payForOthers2.default,
+preLoginPay:_preLoginPay2.default}));exports.default=
+
+
+appReducers;

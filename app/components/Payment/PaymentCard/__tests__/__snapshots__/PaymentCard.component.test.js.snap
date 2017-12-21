@@ -1,0 +1,1086 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaymentCard component renders correctly 1`] = `
+<RCTScrollView
+  automaticallyAdjustContentInsets={false}
+  contentContainerStyle={
+    Object {
+      "flexDirection": "column",
+      "flexGrow": 1,
+      "justifyContent": "space-between",
+    }
+  }
+  contentInset={
+    Object {
+      "bottom": 0,
+    }
+  }
+  enableAutoAutomaticScroll={true}
+  enableResetScrollToCoords={true}
+  extraHeight={75}
+  extraScrollHeight={0}
+  keyboardDismissMode="interactive"
+  keyboardOpeningTime={250}
+  onScroll={[Function]}
+  overScrollMode="auto"
+  scrollEventThrottle={0}
+  showsVerticalScrollIndicator={true}
+>
+  <View>
+    <View
+      style={
+        Array [
+          Object {
+            "marginHorizontal": 8,
+          },
+          Object {},
+        ]
+      }
+    >
+      <View
+        elevation={2}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderColor": "#B9C1C9",
+              "borderRadius": 10,
+              "borderWidth": 1,
+              "shadowColor": "#303C46",
+              "shadowOffset": Object {
+                "height": 2,
+                "width": 1,
+              },
+              "shadowOpacity": 0.3,
+              "shadowRadius": 1,
+            },
+            Object {
+              "padding": 10,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "paddingBottom": 15,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#303C46",
+                "fontFamily": "SukhumvitSet-Bold",
+                "fontSize": 18,
+              }
+            }
+          >
+            Balance required
+          </Text>
+          <View
+            style={
+              Array [
+                Object {
+                  "alignItems": "flex-end",
+                  "flexDirection": "row",
+                },
+                Object {},
+              ]
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "transparent",
+                    "color": "#303C46",
+                  },
+                  Array [
+                    Object {
+                      "fontSize": 18,
+                      "paddingBottom": 6,
+                      "paddingRight": 3,
+                    },
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "SukhumvitSet-Bold",
+                  },
+                ]
+              }
+            >
+              ฿
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "transparent",
+                    "color": "#303C46",
+                  },
+                  Array [
+                    Object {
+                      "fontSize": 30,
+                    },
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "SukhumvitSet-Bold",
+                  },
+                ]
+              }
+            >
+              0
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "transparent",
+                    "color": "#303C46",
+                  },
+                  Array [
+                    Object {
+                      "color": "#68747E",
+                      "fontSize": 18,
+                      "paddingBottom": 5,
+                    },
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "SukhumvitSet-Bold",
+                  },
+                ]
+              }
+            >
+              .
+              00
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#303C46",
+              "marginHorizontal": -10,
+              "padding": 10,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#FFFFFF",
+                "fontFamily": "SukhumvitSet-SemiBold",
+                "fontSize": 18,
+                "textAlign": "center",
+              }
+            }
+          >
+            Card details
+          </Text>
+        </View>
+        <View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "#303C46",
+                  "fontFamily": "SukhumvitSet-SemiBold",
+                  "fontSize": 16,
+                  "paddingVertical": 10,
+                }
+              }
+            >
+              Credit card number
+            </Text>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Image
+                source={
+                  Object {
+                    "testUri": "../../../app/assets/visa.png",
+                  }
+                }
+                style={
+                  Object {
+                    "marginHorizontal": 5,
+                  }
+                }
+              />
+              <Image
+                source={
+                  Object {
+                    "testUri": "../../../app/assets/mastercard.png",
+                  }
+                }
+                style={
+                  Object {
+                    "marginHorizontal": 5,
+                  }
+                }
+              />
+              <Image
+                source={
+                  Object {
+                    "testUri": "../../../app/assets/jcb.png",
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "marginHorizontal": 5,
+                    },
+                    Object {
+                      "bottom": 1,
+                      "marginLeft": -5,
+                    },
+                  ]
+                }
+              />
+            </View>
+          </View>
+          <View
+            accessibilityLabel={undefined}
+            style={
+              Array [
+                Object {
+                  "alignSelf": "stretch",
+                  "backgroundColor": "#FFFFFF",
+                  "borderColor": "#605E71",
+                  "borderRadius": 4,
+                  "borderWidth": 2,
+                  "flexDirection": "row",
+                },
+                Object {
+                  "borderColor": "#B9C1C9",
+                  "borderWidth": 1,
+                },
+                Object {},
+              ]
+            }
+            testID={undefined}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={false}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": undefined,
+                    "fontSize": 35,
+                  },
+                  Object {
+                    "alignSelf": "center",
+                    "backgroundColor": "transparent",
+                    "color": "#B9C1C9",
+                    "padding": 5,
+                  },
+                  Object {
+                    "fontFamily": "iservice",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                ]
+              }
+            >
+              
+            </Text>
+            <TextInput
+              allowFontScaling={true}
+              defaultValue={undefined}
+              keyboardType="numeric"
+              maxLength={19}
+              onChangeText={[Function]}
+              placeholder="Card Number"
+              placeholderTextColor="#B9C1C9"
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "stretch",
+                    "borderRadius": 4,
+                    "flex": 1,
+                    "fontSize": 16,
+                    "paddingHorizontal": 0,
+                    "paddingVertical": 10,
+                  },
+                  Object {},
+                ]
+              }
+              underlineColorAndroid="transparent"
+            />
+          </View>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#303C46",
+                "fontFamily": "SukhumvitSet-SemiBold",
+                "fontSize": 16,
+                "paddingVertical": 10,
+              }
+            }
+          >
+            Name on the card
+          </Text>
+          <View
+            accessibilityLabel={undefined}
+            style={
+              Array [
+                Object {
+                  "alignSelf": "stretch",
+                  "backgroundColor": "#FFFFFF",
+                  "borderColor": "#605E71",
+                  "borderRadius": 4,
+                  "borderWidth": 2,
+                  "flexDirection": "row",
+                },
+                Object {
+                  "borderColor": "#B9C1C9",
+                  "borderWidth": 1,
+                },
+                Object {},
+              ]
+            }
+            testID={undefined}
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={false}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": undefined,
+                    "fontSize": 35,
+                  },
+                  Object {
+                    "alignSelf": "center",
+                    "backgroundColor": "transparent",
+                    "color": "#B9C1C9",
+                    "padding": 5,
+                  },
+                  Object {
+                    "fontFamily": "iservice",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                ]
+              }
+            >
+              
+            </Text>
+            <TextInput
+              allowFontScaling={true}
+              defaultValue={undefined}
+              maxLength={26}
+              onChangeText={[Function]}
+              placeholder="Cardholder Name"
+              placeholderTextColor="#B9C1C9"
+              style={
+                Array [
+                  Object {
+                    "alignSelf": "stretch",
+                    "borderRadius": 4,
+                    "flex": 1,
+                    "fontSize": 16,
+                    "paddingHorizontal": 0,
+                    "paddingVertical": 10,
+                  },
+                  Object {},
+                ]
+              }
+              underlineColorAndroid="transparent"
+            />
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                  "paddingRight": 10,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "backgroundColor": "transparent",
+                    "color": "#303C46",
+                    "fontFamily": "SukhumvitSet-SemiBold",
+                    "fontSize": 16,
+                    "paddingVertical": 10,
+                  }
+                }
+              >
+                Expiry date
+              </Text>
+              <View
+                accessibilityLabel={undefined}
+                style={
+                  Array [
+                    Object {
+                      "alignSelf": "stretch",
+                      "backgroundColor": "#FFFFFF",
+                      "borderColor": "#605E71",
+                      "borderRadius": 4,
+                      "borderWidth": 2,
+                      "flexDirection": "row",
+                    },
+                    Object {
+                      "borderColor": "#B9C1C9",
+                      "borderWidth": 1,
+                    },
+                    Object {},
+                  ]
+                }
+                testID={undefined}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={false}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": undefined,
+                        "fontSize": 35,
+                      },
+                      Object {
+                        "alignSelf": "center",
+                        "backgroundColor": "transparent",
+                        "color": "#B9C1C9",
+                        "padding": 5,
+                      },
+                      Object {
+                        "fontFamily": "iservice",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                    ]
+                  }
+                >
+                  
+                </Text>
+                <TextInput
+                  allowFontScaling={true}
+                  defaultValue={undefined}
+                  maxLength={7}
+                  onChangeText={[Function]}
+                  placeholder="Date (MM/YYYY)"
+                  placeholderTextColor="#B9C1C9"
+                  style={
+                    Array [
+                      Object {
+                        "alignSelf": "stretch",
+                        "borderRadius": 4,
+                        "flex": 1,
+                        "fontSize": 16,
+                        "paddingHorizontal": 0,
+                        "paddingVertical": 10,
+                      },
+                      Object {},
+                    ]
+                  }
+                  underlineColorAndroid="transparent"
+                />
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "flex": 1,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Object {
+                    "backgroundColor": "transparent",
+                    "color": "#303C46",
+                    "fontFamily": "SukhumvitSet-SemiBold",
+                    "fontSize": 16,
+                    "paddingVertical": 10,
+                  }
+                }
+              >
+                Security code
+              </Text>
+              <View
+                accessibilityLabel={undefined}
+                style={
+                  Array [
+                    Object {
+                      "alignSelf": "stretch",
+                      "backgroundColor": "#FFFFFF",
+                      "borderColor": "#605E71",
+                      "borderRadius": 4,
+                      "borderWidth": 2,
+                      "flexDirection": "row",
+                    },
+                    Object {
+                      "borderColor": "#B9C1C9",
+                      "borderWidth": 1,
+                    },
+                    Object {
+                      "flex": 1,
+                    },
+                  ]
+                }
+                testID={undefined}
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={false}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": undefined,
+                        "fontSize": 35,
+                      },
+                      Object {
+                        "alignSelf": "center",
+                        "backgroundColor": "transparent",
+                        "color": "#B9C1C9",
+                        "padding": 5,
+                      },
+                      Object {
+                        "fontFamily": "iservice",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                    ]
+                  }
+                >
+                  
+                </Text>
+                <TextInput
+                  allowFontScaling={true}
+                  defaultValue={undefined}
+                  keyboardType="numeric"
+                  maxLength={4}
+                  onChangeText={[Function]}
+                  placeholder="Security Code"
+                  placeholderTextColor="#B9C1C9"
+                  secureTextEntry={true}
+                  style={
+                    Array [
+                      Object {
+                        "alignSelf": "stretch",
+                        "borderRadius": 4,
+                        "flex": 1,
+                        "fontSize": 16,
+                        "paddingHorizontal": 0,
+                        "paddingVertical": 10,
+                      },
+                      Object {},
+                    ]
+                  }
+                  underlineColorAndroid="transparent"
+                />
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "marginHorizontal": 30,
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "#B9C1C9",
+                  "fontFamily": "SukhumvitSet-Text",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "marginRight": 10,
+                }
+              }
+            >
+              Secured By
+            </Text>
+            <Image
+              resizeMode="contain"
+              source={
+                Object {
+                  "testUri": "../../../app/assets/omise-logo.png",
+                }
+              }
+              style={
+                Object {
+                  "flex": 0,
+                  "width": 60,
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      collapsable={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      nativeID={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignSelf": "stretch",
+          "backgroundColor": "#F93E60",
+          "borderRadius": 50,
+          "margin": 10,
+          "opacity": 1,
+          "padding": 10,
+        }
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <View
+        style={
+          Object {
+            "opacity": 0.7,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "#303C46",
+                },
+                Array [
+                  Object {
+                    "color": "#FFFFFF",
+                    "fontSize": 16,
+                  },
+                  Object {},
+                ],
+                Object {
+                  "fontFamily": "SukhumvitSet-Bold",
+                },
+              ]
+            }
+          >
+            Pay 0.00 Baht
+          </Text>
+        </View>
+      </View>
+    </View>
+    <Modal
+      animationType="none"
+      hardwareAccelerated={false}
+      onModalHide={[Function]}
+      onRequestClose={[Function]}
+      transparent={true}
+      visible={false}
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hitSlop={undefined}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "black",
+              "bottom": 0,
+              "left": 0,
+              "opacity": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
+            Object {
+              "backgroundColor": "rgba(48,60,70,0.9)",
+              "height": 1334,
+              "width": 750,
+            },
+          ]
+        }
+        testID={undefined}
+      />
+      <View
+        onModalHide={[Function]}
+        pointerEvents="box-none"
+        style={
+          Array [
+            Object {
+              "margin": 37.5,
+              "transform": Array [
+                Object {
+                  "translateY": 0,
+                },
+              ],
+            },
+            Object {
+              "flex": 1,
+              "justifyContent": "center",
+            },
+            Object {
+              "margin": 15,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "backgroundColor": "#FFFFFF",
+              "borderColor": "#E9E9EA",
+              "borderRadius": 10,
+              "borderWidth": 1,
+              "padding": 10,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={false}
+            ellipsizeMode="tail"
+            onPress={[Function]}
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 12,
+                },
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "#B9C1C9",
+                  "fontSize": 18,
+                  "padding": 5,
+                  "textAlign": "right",
+                },
+                Object {
+                  "fontFamily": "iservice",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "color": "#303C46",
+                "fontFamily": "SukhumvitSet-SemiBold",
+                "fontSize": 18,
+                "padding": 5,
+                "paddingBottom": 5,
+                "textAlign": "center",
+              }
+            }
+          >
+            Up to 3 cards can be remembered
+          </Text>
+          <View
+            style={
+              Object {
+                "backgroundColor": "#303C46",
+                "marginHorizontal": -10,
+                "padding": 10,
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "#FFFFFF",
+                  "fontFamily": "SukhumvitSet-SemiBold",
+                  "fontSize": 18,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Select one card below to replace :
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+                "paddingVertical": 5,
+              }
+            }
+          >
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              collapsable={undefined}
+              hitSlop={undefined}
+              isTVSelectable={true}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignSelf": "stretch",
+                  "backgroundColor": "#FFFFFF",
+                  "borderColor": "#F93E60",
+                  "borderRadius": 50,
+                  "borderWidth": 1.5,
+                  "flex": 1,
+                  "opacity": 1,
+                  "padding": 10,
+                }
+              }
+              testID={undefined}
+              tvParallaxProperties={undefined}
+            >
+              <View
+                style={
+                  Object {
+                    "opacity": 1,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "alignSelf": "stretch",
+                      "flexDirection": "row",
+                      "justifyContent": "center",
+                    }
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                          "color": "#303C46",
+                        },
+                        Array [
+                          Object {
+                            "color": "#303C46",
+                            "fontSize": 16,
+                          },
+                          Object {
+                            "color": "#F93E60",
+                            "fontSize": 18,
+                          },
+                        ],
+                        Object {
+                          "fontFamily": "SukhumvitSet-Bold",
+                        },
+                      ]
+                    }
+                  >
+                    Cancel
+                  </Text>
+                </View>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "width": 10,
+                }
+              }
+            />
+            <View
+              accessibilityComponentType={undefined}
+              accessibilityLabel={undefined}
+              accessibilityTraits={undefined}
+              accessible={true}
+              collapsable={undefined}
+              hitSlop={undefined}
+              isTVSelectable={true}
+              nativeID={undefined}
+              onLayout={undefined}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "alignSelf": "stretch",
+                  "backgroundColor": "#F93E60",
+                  "borderColor": "#F93E60",
+                  "borderRadius": 50,
+                  "flex": 1,
+                  "opacity": 1,
+                  "padding": 10,
+                }
+              }
+              testID={undefined}
+              tvParallaxProperties={undefined}
+            >
+              <View
+                style={
+                  Object {
+                    "opacity": 1,
+                  }
+                }
+              >
+                <View
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "alignSelf": "stretch",
+                      "flexDirection": "row",
+                      "justifyContent": "center",
+                    }
+                  }
+                >
+                  <Text
+                    accessible={true}
+                    allowFontScaling={true}
+                    ellipsizeMode="tail"
+                    style={
+                      Array [
+                        Object {
+                          "backgroundColor": "transparent",
+                          "color": "#303C46",
+                        },
+                        Array [
+                          Object {
+                            "color": "#FFFFFF",
+                            "fontSize": 16,
+                          },
+                          Object {
+                            "fontSize": 18,
+                          },
+                        ],
+                        Object {
+                          "fontFamily": "SukhumvitSet-Bold",
+                        },
+                      ]
+                    }
+                  >
+                    Replace
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </Modal>
+  </View>
+</RCTScrollView>
+`;

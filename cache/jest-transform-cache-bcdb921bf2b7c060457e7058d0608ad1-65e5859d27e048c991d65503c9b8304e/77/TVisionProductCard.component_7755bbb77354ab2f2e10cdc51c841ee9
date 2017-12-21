@@ -1,0 +1,106 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1zbq87zwua=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/ProductCards/TVisionProductCard/TVisionProductCard.component.js',hash='ae5b8ece1c5ffa352e4f05bacca62f6654189b2a',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/ProductCards/TVisionProductCard/TVisionProductCard.component.js',statementMap:{'0':{start:{line:23,column:4},end:{line:25,column:5}},'1':{start:{line:24,column:6},end:{line:24,column:31}},'2':{start:{line:26,column:4},end:{line:28,column:5}},'3':{start:{line:27,column:6},end:{line:27,column:35}},'4':{start:{line:29,column:4},end:{line:29,column:38}},'5':{start:{line:33,column:4},end:{line:33,column:88}},'6':{start:{line:41,column:184},end:{line:41,column:194}},'7':{start:{line:42,column:23},end:{line:42,column:118}},'8':{start:{line:43,column:44},end:{line:43,column:54}},'9':{start:{line:45,column:21},end:{line:45,column:65}},'10':{start:{line:46,column:55},end:{line:46,column:114}},'11':{start:{line:47,column:24},end:{line:47,column:146}},'12':{start:{line:48,column:4},end:{line:60,column:6}},'13':{start:{line:64,column:0},end:{line:83,column:2}},'14':{start:{line:85,column:0},end:{line:104,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:22,column:15},end:{line:22,column:16}},loc:{start:{line:22,column:37},end:{line:30,column:3}},line:22},'1':{name:'(anonymous_1)',decl:{start:{line:32,column:31},end:{line:32,column:32}},loc:{start:{line:32,column:37},end:{line:34,column:3}},line:32},'2':{name:'(anonymous_2)',decl:{start:{line:36,column:29},end:{line:36,column:30}},loc:{start:{line:36,column:35},end:{line:38,column:3}},line:36},'3':{name:'(anonymous_3)',decl:{start:{line:40,column:2},end:{line:40,column:3}},loc:{start:{line:40,column:12},end:{line:61,column:3}},line:40}},branchMap:{'0':{loc:{start:{line:23,column:4},end:{line:25,column:5}},type:'if',locations:[{start:{line:23,column:4},end:{line:25,column:5}},{start:{line:23,column:4},end:{line:25,column:5}}],line:23},'1':{loc:{start:{line:23,column:8},end:{line:23,column:54}},type:'binary-expr',locations:[{start:{line:23,column:8},end:{line:23,column:30}},{start:{line:23,column:34},end:{line:23,column:54}}],line:23},'2':{loc:{start:{line:26,column:4},end:{line:28,column:5}},type:'if',locations:[{start:{line:26,column:4},end:{line:28,column:5}},{start:{line:26,column:4},end:{line:28,column:5}}],line:26},'3':{loc:{start:{line:26,column:8},end:{line:26,column:67}},type:'binary-expr',locations:[{start:{line:26,column:8},end:{line:26,column:30}},{start:{line:26,column:34},end:{line:26,column:67}}],line:26},'4':{loc:{start:{line:51,column:11},end:{line:53,column:17}},type:'binary-expr',locations:[{start:{line:51,column:11},end:{line:51,column:20}},{start:{line:51,column:24},end:{line:53,column:17}}],line:51},'5':{loc:{start:{line:54,column:12},end:{line:57,column:22}},type:'cond-expr',locations:[{start:{line:54,column:35},end:{line:54,column:202}},{start:{line:54,column:206},end:{line:57,column:22}}],line:54},'6':{loc:{start:{line:54,column:12},end:{line:54,column:32}},type:'binary-expr',locations:[{start:{line:54,column:12},end:{line:54,column:20}},{start:{line:54,column:24},end:{line:54,column:32}}],line:54},'7':{loc:{start:{line:55,column:13},end:{line:55,column:175}},type:'binary-expr',locations:[{start:{line:55,column:13},end:{line:55,column:35}},{start:{line:55,column:39},end:{line:55,column:175}}],line:55},'8':{loc:{start:{line:56,column:13},end:{line:56,column:206}},type:'binary-expr',locations:[{start:{line:56,column:13},end:{line:56,column:35}},{start:{line:56,column:39},end:{line:56,column:206}}],line:56}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0},f:{'0':0,'1':0,'2':0,'3':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0],'4':[0,0],'5':[0,0],'6':[0,0],'7':[0,0],'8':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _BaseProductCard2=require('../BaseProductCard/BaseProductCard.component');var _BaseProductCard3=_interopRequireDefault(_BaseProductCard2);
+var _BaseProductCollapsibleBar=require('../BaseProductCollapsibleBar/BaseProductCollapsibleBar.component');var _BaseProductCollapsibleBar2=_interopRequireDefault(_BaseProductCollapsibleBar);
+var _i18n=require('../../../../../language/i18n');var _i18n2=_interopRequireDefault(_i18n);
+var _isEmpty=require('lodash/isEmpty');var _isEmpty2=_interopRequireDefault(_isEmpty);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _TVisionProductCardStyle=require('./TVisionProductCard.style.js');var _TVisionProductCardStyle2=_interopRequireDefault(_TVisionProductCardStyle);
+var _BillUsageShared=require('../../BillUsageShared');
+var _Shared=require('../../../../../components/Shared');
+var _billUsage=require('../../../../../config/billUsage.config');
+var _lodash=require('lodash');
+var _helper=require('../../../../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+TVisionProductCard=function(_BaseProductCard){_inherits(TVisionProductCard,_BaseProductCard);function TVisionProductCard(){var _ref;var _temp,_this,_ret;_classCallCheck(this,TVisionProductCard);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=TVisionProductCard.__proto__||Object.getPrototypeOf(TVisionProductCard)).call.apply(_ref,[this].concat(args))),_this),_this.
+
+state={
+selectedTabIndex:_this.props.defaultSelectedTab,
+totalAmount:_this.props.amount},_this.
+
+
+onTabPress=function(selectedTabIndex){cov_1zbq87zwua.f[0]++;cov_1zbq87zwua.s[0]++;
+if((cov_1zbq87zwua.b[1][0]++,selectedTabIndex===1)&&(cov_1zbq87zwua.b[1][1]++,!_this.props.dueBills)){cov_1zbq87zwua.b[0][0]++;cov_1zbq87zwua.s[1]++;
+_this.props.getDueBills();
+}else{cov_1zbq87zwua.b[0][1]++;}cov_1zbq87zwua.s[2]++;
+if((cov_1zbq87zwua.b[3][0]++,selectedTabIndex===0)&&(cov_1zbq87zwua.b[3][1]++,(0,_isEmpty2.default)(_this.props.productDetail))){cov_1zbq87zwua.b[2][0]++;cov_1zbq87zwua.s[3]++;
+_this.props.getCurrentUsage();
+}else{cov_1zbq87zwua.b[2][1]++;}cov_1zbq87zwua.s[4]++;
+_this.setState({selectedTabIndex:selectedTabIndex});
+},_this.
+
+navigateToPackagePromoPage=function(){cov_1zbq87zwua.f[1]++;cov_1zbq87zwua.s[5]++;
+_this.props.goToScreen('PackagePromoPage',{url:'https://iservice.truecorp.co.th'});
+},_this.
+
+navigateToPaymentHistory=function(){cov_1zbq87zwua.f[2]++;
+
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(TVisionProductCard,[{key:'render',value:function render()
+
+{cov_1zbq87zwua.f[3]++;var _ref2=(cov_1zbq87zwua.s[6]++,
+this.props),plan=_ref2.plan,dueBills=_ref2.dueBills,amount=_ref2.amount,productDetail=_ref2.productDetail,isOthers=_ref2.isOthers,statusCode=_ref2.statusCode,isCollapsed=_ref2.isCollapsed,onCollapseToggle=_ref2.onCollapseToggle,onChecked=_ref2.onChecked,isChecked=_ref2.isChecked,onTrueVisionNavigatetoPackageDetail=_ref2.onTrueVisionNavigatetoPackageDetail,onBillDetailsClick=_ref2.onBillDetailsClick;
+var headerList=(cov_1zbq87zwua.s[7]++,[{text:(0,_helper.translate)('BILLS_USAGE_CURRENT_USAGE')},{text:(0,_helper.translate)('BILLS_USAGE_BILL_DETAILS')}]);var _ref3=(cov_1zbq87zwua.s[8]++,
+this.state),totalAmount=_ref3.totalAmount,selectedTabIndex=_ref3.selectedTabIndex;
+
+var planInfo=(cov_1zbq87zwua.s[9]++,(0,_lodash.result)(productDetail,'PRICE_PLAN_INFO',{}));var _ref4=(cov_1zbq87zwua.s[10]++,
+(0,_lodash.result)(productDetail,'TVS_PACKAGES.'+_i18n2.default.locale+'[0]',{})),channelCountHD=_ref4.channelCountHD,channelCountSD=_ref4.channelCountSD,imageURL=_ref4.imageURL;
+var packageData=(cov_1zbq87zwua.s[11]++,[{usage:channelCountHD,type:_billUsage.ICON_MAP.HDCHANNELS.titleText},{usage:channelCountSD,type:_billUsage.ICON_MAP.CHANNELS.titleText}]);cov_1zbq87zwua.s[12]++;
+return(
+_react2.default.createElement(_BaseProductCollapsibleBar2.default,{statusCode:statusCode,checkboxDisabled:!amount,type:'VISION',leftTitleText:plan,leftDetailText:(0,_helper.translate)('BILLS_USAGE_TRUEVISIONS'),amountText:totalAmount,isCollapsed:isCollapsed,onCollapseToggle:onCollapseToggle,onChecked:onChecked,isChecked:isChecked},
+_react2.default.createElement(_reactNative.View,{style:_TVisionProductCardStyle2.default.container},
+(cov_1zbq87zwua.b[4][0]++,!isOthers)&&(cov_1zbq87zwua.b[4][1]++,_react2.default.createElement(_reactNative.View,{style:_TVisionProductCardStyle2.default.productTitle},
+_react2.default.createElement(_BillUsageShared.ProductCardTitle,{text:planInfo.name,navigate:onTrueVisionNavigatetoPackageDetail}))),
+
+(cov_1zbq87zwua.b[6][0]++,dueBills)&&(cov_1zbq87zwua.b[6][1]++,isOthers)?(cov_1zbq87zwua.b[5][0]++,_react2.default.createElement(_BillUsageShared.BillHistoryList,{onBillDetailsClick:onBillDetailsClick,dueBills:dueBills,onPaymentHistoryClick:this.navigateToPaymentHistory,onBillToggle:this.onBillToggle})):(cov_1zbq87zwua.b[5][1]++,_react2.default.createElement(_Shared.CaretTabs,{onTabPress:this.onTabPress,selectedIndex:selectedTabIndex,headerList:headerList},
+(cov_1zbq87zwua.b[7][0]++,selectedTabIndex===0)&&(cov_1zbq87zwua.b[7][1]++,_react2.default.createElement(_BillUsageShared.CurrentUsageCard,{data:packageData,bannerSrc:imageURL,onBannerClick:this.navigateToPackagePromoPage,textStyle:_TVisionProductCardStyle2.default.usageText})),
+(cov_1zbq87zwua.b[8][0]++,selectedTabIndex===1)&&(cov_1zbq87zwua.b[8][1]++,_react2.default.createElement(_BillUsageShared.BillHistoryList,{onBillDetailsClick:onBillDetailsClick,dueBills:dueBills,onPaymentHistoryClick:this.navigateToPaymentHistory,onBillToggle:this.onBillToggle})))))));
+
+
+
+
+}}]);return TVisionProductCard;}(_BaseProductCard3.default);cov_1zbq87zwua.s[13]++;
+
+
+TVisionProductCard.defaultProps={
+plan:'Gold',
+amount:0,
+dueBills:[],
+productDetail:{},
+goToScreen:_lodash.noop,
+statusCode:'ACTIVE',
+isCollapsed:true,
+onCollapseToggle:_lodash.noop,
+onChecked:_lodash.noop,
+isChecked:false,
+getDueBills:_lodash.noop,
+onBillDetailsClick:_lodash.noop,
+toggleBillDetailCheck:_lodash.noop,
+onTrueVisionNavigatetoPackageDetail:_lodash.noop,
+defaultSelectedTab:0,
+getCurrentUsage:_lodash.noop,
+isOthers:false,
+validateOTPStatus:false};cov_1zbq87zwua.s[14]++;
+
+
+TVisionProductCard.propTypes={
+plan:_propTypes2.default.string,
+amount:_propTypes2.default.number,
+dueBills:_propTypes2.default.array,
+productDetail:_propTypes2.default.object,
+goToScreen:_propTypes2.default.func,
+statusCode:_propTypes2.default.string,
+onCollapseToggle:_propTypes2.default.func,
+onBillDetailsClick:_propTypes2.default.func,
+isCollapsed:_propTypes2.default.bool,
+onChecked:_propTypes2.default.func,
+isChecked:_propTypes2.default.bool,
+getDueBills:_propTypes2.default.func,
+toggleBillDetailCheck:_propTypes2.default.func,
+onTrueVisionNavigatetoPackageDetail:_propTypes2.default.func,
+defaultSelectedTab:_propTypes2.default.number,
+getCurrentUsage:_propTypes2.default.func,
+isOthers:_propTypes2.default.bool,
+validateOTPStatus:_propTypes2.default.bool};exports.default=
+
+
+TVisionProductCard;

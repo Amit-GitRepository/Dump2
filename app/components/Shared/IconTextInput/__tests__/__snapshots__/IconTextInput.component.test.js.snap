@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconTextInput component renders correctly 1`] = `
+<View
+  accessibilityLabel={undefined}
+  style={
+    Array [
+      Object {
+        "alignSelf": "stretch",
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#605E71",
+        "borderRadius": 4,
+        "borderWidth": 2,
+        "flexDirection": "row",
+      },
+      Object {},
+    ]
+  }
+  testID={undefined}
+>
+  <Text
+    accessible={true}
+    allowFontScaling={false}
+    ellipsizeMode="tail"
+    style={
+      Array [
+        Object {
+          "color": undefined,
+          "fontSize": 35,
+        },
+        Object {
+          "alignSelf": "center",
+          "backgroundColor": "transparent",
+          "color": "#B9C1C9",
+          "padding": 5,
+        },
+        Object {
+          "fontFamily": "iservice",
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+        },
+      ]
+    }
+  >
+    
+  </Text>
+  <TextInput
+    allowFontScaling={true}
+    placeholder=""
+    placeholderTextColor="#B9C1C9"
+    style={
+      Array [
+        Object {
+          "alignSelf": "stretch",
+          "borderRadius": 4,
+          "flex": 1,
+          "fontSize": 16,
+          "paddingHorizontal": 0,
+          "paddingVertical": 10,
+        },
+        Object {},
+      ]
+    }
+    underlineColorAndroid="transparent"
+  />
+</View>
+`;

@@ -1,0 +1,68 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_2podgbpiqs=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/TMPackageDetailsExtra/TMPackageDetails.component.js',hash='f9684c1fb3e3d942e694f5c05970720c36cb7292',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/TMPackageDetailsExtra/TMPackageDetails.component.js',statementMap:{'0':{start:{line:16,column:65},end:{line:16,column:75}},'1':{start:{line:17,column:4},end:{line:50,column:6}},'2':{start:{line:54,column:0},end:{line:59,column:2}},'3':{start:{line:61,column:0},end:{line:66,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:15,column:2},end:{line:15,column:3}},loc:{start:{line:15,column:12},end:{line:51,column:3}},line:15}},branchMap:{'0':{loc:{start:{line:27,column:15},end:{line:27,column:132}},type:'binary-expr',locations:[{start:{line:27,column:15},end:{line:27,column:34}},{start:{line:27,column:38},end:{line:27,column:63}},{start:{line:27,column:67},end:{line:27,column:132}}],line:27},'1':{loc:{start:{line:28,column:15},end:{line:28,column:129}},type:'binary-expr',locations:[{start:{line:28,column:15},end:{line:28,column:34}},{start:{line:28,column:38},end:{line:28,column:62}},{start:{line:28,column:66},end:{line:28,column:129}}],line:28},'2':{loc:{start:{line:29,column:15},end:{line:29,column:129}},type:'binary-expr',locations:[{start:{line:29,column:15},end:{line:29,column:34}},{start:{line:29,column:38},end:{line:29,column:62}},{start:{line:29,column:66},end:{line:29,column:129}}],line:29},'3':{loc:{start:{line:30,column:15},end:{line:30,column:148}},type:'binary-expr',locations:[{start:{line:30,column:15},end:{line:30,column:34}},{start:{line:30,column:38},end:{line:30,column:61}},{start:{line:30,column:65},end:{line:30,column:148}}],line:30},'4':{loc:{start:{line:32,column:13},end:{line:46,column:19}},type:'binary-expr',locations:[{start:{line:32,column:13},end:{line:32,column:23}},{start:{line:32,column:27},end:{line:46,column:19}}],line:32},'5':{loc:{start:{line:40,column:168},end:{line:40,column:256}},type:'cond-expr',locations:[{start:{line:40,column:190},end:{line:40,column:221}},{start:{line:40,column:224},end:{line:40,column:256}}],line:40}},s:{'0':0,'1':0,'2':0,'3':0},f:{'0':0},b:{'0':[0,0,0],'1':[0,0,0],'2':[0,0,0],'3':[0,0,0],'4':[0,0],'5':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _DetailCardRow=require('../BillUsage/BillUsageShared/DetailCardRow.component');var _DetailCardRow2=_interopRequireDefault(_DetailCardRow);
+var _HeaderWithCaret=require('../BillUsage/BillUsageShared/HeaderWithCaret.component');var _HeaderWithCaret2=_interopRequireDefault(_HeaderWithCaret);
+var _PackageDetailHeader=require('../BillUsage/BillUsageShared/PackageDetailHeader/PackageDetailHeader.component');var _PackageDetailHeader2=_interopRequireDefault(_PackageDetailHeader);
+var _PackageOverview=require('../BillUsage/BillUsageShared/PackageOverview/PackageOverview.component');var _PackageOverview2=_interopRequireDefault(_PackageOverview);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _TMPackageDetails=require('./TMPackageDetails.style');var _TMPackageDetails2=_interopRequireDefault(_TMPackageDetails);
+var _WrapperCard=require('../BillUsage/BillUsageShared/WrapperCard.component');var _WrapperCard2=_interopRequireDefault(_WrapperCard);
+var _Shared=require('../../Shared');
+var _reactNative=require('react-native');
+var _helper=require('../../../language/i18n/helper');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+TMPackageDetails=function(_Component){_inherits(TMPackageDetails,_Component);function TMPackageDetails(){_classCallCheck(this,TMPackageDetails);return _possibleConstructorReturn(this,(TMPackageDetails.__proto__||Object.getPrototypeOf(TMPackageDetails)).apply(this,arguments));}_createClass(TMPackageDetails,[{key:'render',value:function render()
+
+{cov_2podgbpiqs.f[0]++;var _ref=(cov_2podgbpiqs.s[0]++,
+this.props),packageDetail=_ref.packageDetail,autoRenew=_ref.autoRenew,isConvergence=_ref.isConvergence,isPrepaid=_ref.isPrepaid;cov_2podgbpiqs.s[1]++;
+return(
+_react2.default.createElement(_reactNative.ScrollView,{style:_TMPackageDetails2.default.scrollContainer,contentContainerStyle:_TMPackageDetails2.default.scrollContentContainer},
+_react2.default.createElement(_WrapperCard2.default,null,
+_react2.default.createElement(_HeaderWithCaret2.default,null,
+_react2.default.createElement(_PackageDetailHeader2.default,{isConvergence:isConvergence,name:(0,_helper.translate)('BILLS_USAGE_TRUEMOVE'),phoneNumber:packageDetail.phoneNumber,
+endMonth:packageDetail.endMonth,endDate:packageDetail.endDate,isPrepaid:isPrepaid})),
+
+_react2.default.createElement(_reactNative.View,{style:_TMPackageDetails2.default.container},
+_react2.default.createElement(_reactNative.View,{style:_TMPackageDetails2.default.topContainer},
+_react2.default.createElement(_PackageOverview2.default,{title:packageDetail.title,subTitle:packageDetail.subtitle}),
+(cov_2podgbpiqs.b[0][0]++,packageDetail.items)&&(cov_2podgbpiqs.b[0][1]++,packageDetail.items.voice)&&(cov_2podgbpiqs.b[0][2]++,_react2.default.createElement(_DetailCardRow2.default,{rowData:packageDetail.items.voice,type:'voice'})),
+(cov_2podgbpiqs.b[1][0]++,packageDetail.items)&&(cov_2podgbpiqs.b[1][1]++,packageDetail.items.data)&&(cov_2podgbpiqs.b[1][2]++,_react2.default.createElement(_DetailCardRow2.default,{rowData:packageDetail.items.data,type:'data'})),
+(cov_2podgbpiqs.b[2][0]++,packageDetail.items)&&(cov_2podgbpiqs.b[2][1]++,packageDetail.items.wifi)&&(cov_2podgbpiqs.b[2][2]++,_react2.default.createElement(_DetailCardRow2.default,{rowData:packageDetail.items.wifi,type:'wifi'})),
+(cov_2podgbpiqs.b[3][0]++,packageDetail.items)&&(cov_2podgbpiqs.b[3][1]++,packageDetail.items.sms)&&(cov_2podgbpiqs.b[3][2]++,_react2.default.createElement(_DetailCardRow2.default,{rowData:packageDetail.items.sms,type:'sms',showSeparator:false}))),
+
+(cov_2podgbpiqs.b[4][0]++,!isPrepaid)&&(cov_2podgbpiqs.b[4][1]++,_react2.default.createElement(_reactNative.View,null,
+_react2.default.createElement(_reactNative.View,{style:_TMPackageDetails2.default.creditContainer},
+_react2.default.createElement(_reactNative.View,{style:_TMPackageDetails2.default.creditItem},
+_react2.default.createElement(_Shared.ISText,{type:'BOLD',style:_TMPackageDetails2.default.creditItemText},(0,_helper.translate)('PACKAGE_DETAIL__CREDIT_LIMIT'),'\n',_react2.default.createElement(_Shared.ISText,{type:'BOLD',style:_TMPackageDetails2.default.creditItemCost},packageDetail.creditLimit),'\nBaht'))),
+
+
+_react2.default.createElement(_reactNative.View,{style:_TMPackageDetails2.default.iconContainer},
+_react2.default.createElement(_reactNative.View,{style:_TMPackageDetails2.default.autoRenewContainer},
+_react2.default.createElement(_Shared.ISText,{type:'BOLD',style:_TMPackageDetails2.default.autoRenewStatus},(0,_helper.translate)('PACKAGE_DETAIL__AUTO_RENEW'),' : ',_react2.default.createElement(_Shared.ISText,{type:'BOLD',style:_TMPackageDetails2.default.autoRenewStatusVal},autoRenew.isEnabled?(cov_2podgbpiqs.b[5][0]++,(0,_helper.translate)('PACKAGE_DETAIL__ON')):(cov_2podgbpiqs.b[5][1]++,(0,_helper.translate)('PACKAGE_DETAIL__OFF')))),
+_react2.default.createElement(_Shared.ISText,null,_react2.default.createElement(_Shared.ISText,{type:'BOLD',style:_TMPackageDetails2.default.autoRenewMethod},(0,_helper.translate)('PACKAGE_DETAIL__VIA_CC'),' : '),_react2.default.createElement(_Shared.ISText,{type:'BOLD'},autoRenew.paymentDetail))),
+
+_react2.default.createElement(_Shared.Icon,{style:_TMPackageDetails2.default.subIcon,size:20,name:'chevron-right'}))))))));
+
+
+
+
+
+
+
+}}]);return TMPackageDetails;}(_react.Component);cov_2podgbpiqs.s[2]++;
+
+
+TMPackageDetails.defaultProps={
+packageDetail:{},
+autoRenew:{},
+isConvergence:false,
+isPrepaid:false};cov_2podgbpiqs.s[3]++;
+
+
+TMPackageDetails.propTypes={
+packageDetail:_propTypes2.default.object,
+autoRenew:_propTypes2.default.object,
+isConvergence:_propTypes2.default.bool,
+isPrepaid:_propTypes2.default.bool};exports.default=
+
+
+TMPackageDetails;

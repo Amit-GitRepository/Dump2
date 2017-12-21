@@ -1,0 +1,28 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_28a30s0cmk=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/InfoBar/InfoBar.component.js',hash='7cf94461bfa6ff83501c7490458bd9e77f506783',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/InfoBar/InfoBar.component.js',statementMap:{'0':{start:{line:9,column:26},end:{line:9,column:36}},'1':{start:{line:10,column:4},end:{line:14,column:6}},'2':{start:{line:18,column:0},end:{line:21,column:2}},'3':{start:{line:23,column:0},end:{line:26,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:8,column:2},end:{line:8,column:3}},loc:{start:{line:8,column:12},end:{line:15,column:3}},line:8}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0},f:{'0':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _ISText=require('../../Shared/ISText/ISText.component');var _ISText2=_interopRequireDefault(_ISText);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _InfoBar=require('./InfoBar.style');var _InfoBar2=_interopRequireDefault(_InfoBar);
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+InfoBar=function(_Component){_inherits(InfoBar,_Component);function InfoBar(){_classCallCheck(this,InfoBar);return _possibleConstructorReturn(this,(InfoBar.__proto__||Object.getPrototypeOf(InfoBar)).apply(this,arguments));}_createClass(InfoBar,[{key:'render',value:function render()
+{cov_28a30s0cmk.f[0]++;var _ref=(cov_28a30s0cmk.s[0]++,
+this.props),text=_ref.text,style=_ref.style;cov_28a30s0cmk.s[1]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:[_InfoBar2.default.container,style]},
+_react2.default.createElement(_ISText2.default,{style:_InfoBar2.default.text},text)));
+
+
+}}]);return InfoBar;}(_react.Component);cov_28a30s0cmk.s[2]++;
+
+
+InfoBar.defaultProps={
+text:'',
+style:{}};cov_28a30s0cmk.s[3]++;
+
+
+InfoBar.propTypes={
+text:_propTypes2.default.string,
+style:_propTypes2.default.object};exports.default=
+
+
+InfoBar;

@@ -1,0 +1,270 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioGroup component renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "flex": 0,
+      },
+      Object {},
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "marginVertical": 5,
+      }
+    }
+  >
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      collapsable={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      nativeID={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "borderRadius": 5,
+          "flex": 1,
+          "opacity": 1,
+        }
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <View
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderColor": "#F93E60",
+                "borderRadius": 5,
+                "borderWidth": 2,
+                "flex": 0,
+                "justifyContent": "center",
+                "marginRight": 5,
+              },
+              Object {
+                "backgroundColor": "transparent",
+              },
+              Object {},
+            ]
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "#303C46",
+                },
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "fontSize": 16,
+                  },
+                  Object {
+                    "color": "#303C46",
+                  },
+                ],
+                Object {
+                  "fontFamily": "SukhumvitSet-Medium",
+                },
+              ]
+            }
+          >
+            first
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      collapsable={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      nativeID={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "borderRadius": 5,
+          "flex": 1,
+          "opacity": 1,
+        }
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <View
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderColor": "#F93E60",
+                "borderRadius": 5,
+                "borderWidth": 2,
+                "flex": 0,
+                "justifyContent": "center",
+                "marginRight": 5,
+              },
+              Object {
+                "backgroundColor": "transparent",
+              },
+              Object {},
+            ]
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "#303C46",
+                },
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "fontSize": 16,
+                  },
+                  Object {
+                    "color": "#303C46",
+                  },
+                ],
+                Object {
+                  "fontFamily": "SukhumvitSet-Medium",
+                },
+              ]
+            }
+          >
+            seco
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      collapsable={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      nativeID={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "borderRadius": 5,
+          "flex": 1,
+          "opacity": 1,
+        }
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <View
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "borderColor": "#F93E60",
+                "borderRadius": 5,
+                "borderWidth": 2,
+                "flex": 0,
+                "justifyContent": "center",
+                "marginRight": 5,
+              },
+              Object {
+                "backgroundColor": "transparent",
+              },
+              Object {},
+            ]
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "#303C46",
+                },
+                Array [
+                  Object {
+                    "alignSelf": "center",
+                    "fontSize": 16,
+                  },
+                  Object {
+                    "color": "#303C46",
+                  },
+                ],
+                Object {
+                  "fontFamily": "SukhumvitSet-Medium",
+                },
+              ]
+            }
+          >
+            Third
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

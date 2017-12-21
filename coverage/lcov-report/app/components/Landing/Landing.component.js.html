@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/components/Landing/Landing.component.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">app/components/Landing</a> Landing.component.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>4/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>4/4</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import Banner from '../Shared/Banner/Banner.component';
+import bannerImage from '../../assets/home_banner.jpg';
+import BottomCaretView from '../Shared/BottomCaretView/BottomCaretView.component';
+import Button from '../Shared/Button/Button.component';
+import CircleShadowSeparator from '../Shared/CircleShadowSeparator/CircleShadowSeparator.component';
+import IconTextInput from '../Shared/IconTextInput/IconTextInput.component';
+import ISText from '../Shared/ISText/ISText.component';
+import KeyboardScrollView from '../Shared/KeyboardScollView/KeyboardScrollView.component';
+import noop from 'lodash/noop';
+import Proptypes from 'prop-types';
+import React, {Component} from 'react';
+import Separator from '../Shared/Separator/Separator.component';
+import SquareIconButton from '../Shared/SquareIconButton/SquareIconButton.component';
+import styles from './Landing.style';
+import {colors} from '../../themes/constants.styles';
+import {translate} from '../../language/i18n/helper';
+import {View} from 'react-native';
+&nbsp;
+class Landing extends Component {
+  render () {
+    const {onLogin, onRegister, msisdn, onPayPress} = this.props;
+    return (
+      &lt;KeyboardScrollView contentContainerStyle={styles.contentContainer}&gt;
+        &lt;View&gt;
+          &lt;Banner source={bannerImage} /&gt;
+          &lt;BottomCaretView iconSize={32} caretColor={colors.LANDING_TITLE_BG}&gt;
+            &lt;ISText type='BOLD' style={styles.title} i18nKey='LANDING__EASY_PAYMENT_TITLE' /&gt;
+          &lt;/BottomCaretView&gt;
+        &lt;/View&gt;
+        &lt;View style={styles.upperBody}&gt;
+          &lt;IconTextInput multiline={false} style={styles.numberInput} containerStyle={styles.numberInputContainer} defaultValue={msisdn} iconName={'mobile-phone'} placeholder={translate('LANDING__EASY_PAYMENT_INPUT_PLACEHOLDER')}/&gt;
+          &lt;ISText type={'SEMIBOLD'} style={styles.errorText} i18nKey='LANDING__EASY_PAYMENT_INPUT_ERROR' /&gt;
+          &lt;Button textType={'SEMIBOLD'} style={styles.payButton} textStyle={styles.payButtonText} text='LANDING__EASY_PAYMENT_BUTTON_TEXT' onPress={onPayPress} accessibilityLabel='Landing_LoginButton'/&gt;
+        &lt;/View&gt;
+        &lt;CircleShadowSeparator text='LANDING__OR_SEPARATOR'/&gt;
+        &lt;View style={styles.lowerBody} accessibilityLabel='Landing_check&amp;buy&amp;pay'&gt;
+          &lt;View style={styles.boxButtonContainer}&gt;
+            &lt;SquareIconButton iconName='check-usage' title='LANDING__CHECK_USAGE_TITLE' subtitle='LANDING__CHECK_USAGE_SUBTITLE' /&gt;
+            &lt;SquareIconButton iconName='buy-package' title='LANDING__BUY_EXTRA_TITLE' subtitle='LANDING__BUY_EXTRA_SUBTITLE' /&gt;
+            &lt;SquareIconButton iconName='pay-other' title='LANDING__PAY_OTHERS_TITLE' subtitle='LANDING__PAY_OTHERS_SUBTITLE' /&gt;
+          &lt;/View&gt;
+          &lt;Separator text='LANDING__FULL_ACCESS_SEPARATOR' /&gt;
+          &lt;Button textStyle={styles.loginButtonText} style={styles.loginButton} text='LANDING__LOGIN_TRUEID_BUTTON_TEXT' type='secondary' onPress={onLogin}/&gt;
+        &lt;/View&gt;
+        &lt;View style={styles.footer} accessibilityLabel='Landing_registerLink'&gt;
+          &lt;ISText style={styles.dontHaveTrueId} i18nKey='LANDING__REGISTER_TITLE' /&gt;
+          &lt;Button textType={'REGULAR'} textStyle={styles.registerBtnText} text='LANDING__REGISTER_SUBTITLE' type='inline' onPress={onRegister}/&gt;
+        &lt;/View&gt;
+      &lt;/KeyboardScrollView&gt;
+    );
+  }
+}
+&nbsp;
+Landing.defaultProps = {
+  onLogin: noop,
+  onRegister: noop,
+  onPayPress: noop,
+  msisdn: null
+};
+&nbsp;
+Landing.propTypes = {
+  onLogin: Proptypes.func,
+  onRegister: Proptypes.func,
+  onPayPress: Proptypes.func,
+  msisdn: Proptypes.string
+};
+&nbsp;
+export default Landing;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Oct 31 2017 11:24:42 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

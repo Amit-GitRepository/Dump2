@@ -1,0 +1,17 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1nud72gs44=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/sagas/msisdn.saga.js',hash='3c17c954a6ab53033b62bc11999c13d7c3c1d58d',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/sagas/msisdn.saga.js',statementMap:{'0':{start:{line:7,column:2},end:{line:12,column:3}},'1':{start:{line:8,column:23},end:{line:8,column:55}},'2':{start:{line:9,column:4},end:{line:9,column:56}},'3':{start:{line:11,column:4},end:{line:11,column:47}},'4':{start:{line:17,column:2},end:{line:17,column:61}}},fnMap:{'0':{name:'detectMSISDN',decl:{start:{line:6,column:17},end:{line:6,column:29}},loc:{start:{line:6,column:33},end:{line:13,column:1}},line:6},'1':{name:'msisdnSaga',decl:{start:{line:16,column:26},end:{line:16,column:36}},loc:{start:{line:16,column:40},end:{line:18,column:1}},line:16}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0},f:{'0':0,'1':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();exports.
+
+
+
+
+detectMSISDN=detectMSISDN;exports.default=
+
+
+
+
+
+
+
+
+
+msisdnSaga;var _api=require('./api/api.saga');var _api2=_interopRequireDefault(_api);var _index=require('../actions/index.actions');var _effects=require('redux-saga/effects');var _apiHelper=require('./api/apiHelper');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var _marked=regeneratorRuntime.mark(detectMSISDN),_marked2=regeneratorRuntime.mark(msisdnSaga);function detectMSISDN(){var msisdnInfo;return regeneratorRuntime.wrap(function detectMSISDN$(_context){while(1){switch(_context.prev=_context.next){case 0:cov_1nud72gs44.f[0]++;cov_1nud72gs44.s[0]++;_context.prev=2;cov_1nud72gs44.s[1]++;_context.next=6;return(0,_effects.call)(_api2.default,(0,_apiHelper.msisdnRequest)());case 6:msisdnInfo=_context.sent;cov_1nud72gs44.s[2]++;_context.next=10;return(0,_effects.put)((0,_index.autoDetectMSISDNSuccess)(msisdnInfo.body));case 10:_context.next=17;break;case 12:_context.prev=12;_context.t0=_context['catch'](2);cov_1nud72gs44.s[3]++;_context.next=17;return(0,_effects.put)((0,_index.autoDetectMSISDNFail)(_context.t0.message));case 17:case'end':return _context.stop();}}},_marked,this,[[2,12]]);}function msisdnSaga(){return regeneratorRuntime.wrap(function msisdnSaga$(_context2){while(1){switch(_context2.prev=_context2.next){case 0:cov_1nud72gs44.f[1]++;cov_1nud72gs44.s[4]++;_context2.next=4;return(
+(0,_effects.takeLatest)(_index.AUTO_DETECT_MSISDN_REQUEST,detectMSISDN));case 4:case'end':return _context2.stop();}}},_marked2,this);}

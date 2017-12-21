@@ -1,0 +1,91 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_rjqzi830o=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsage.component.js',hash='e8b9bbddf570ff4cc9deb4464a8e61242b06b812',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsage.component.js',statementMap:{'0':{start:{line:18,column:225},end:{line:18,column:235}},'1':{start:{line:19,column:54},end:{line:19,column:65}},'2':{start:{line:20,column:35},end:{line:20,column:64}},'3':{start:{line:21,column:24},end:{line:21,column:36}},'4':{start:{line:22,column:27},end:{line:22,column:90}},'5':{start:{line:22,column:66},end:{line:22,column:89}},'6':{start:{line:23,column:27},end:{line:23,column:79}},'7':{start:{line:23,column:55},end:{line:23,column:78}},'8':{start:{line:24,column:4},end:{line:45,column:6}},'9':{start:{line:49,column:0},end:{line:68,column:2}},'10':{start:{line:70,column:0},end:{line:89,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:17,column:2},end:{line:17,column:3}},loc:{start:{line:17,column:12},end:{line:46,column:3}},line:17},'1':{name:'(anonymous_1)',decl:{start:{line:22,column:56},end:{line:22,column:57}},loc:{start:{line:22,column:66},end:{line:22,column:89}},line:22},'2':{name:'(anonymous_2)',decl:{start:{line:23,column:45},end:{line:23,column:46}},loc:{start:{line:23,column:55},end:{line:23,column:78}},line:23}},branchMap:{'0':{loc:{start:{line:22,column:66},end:{line:22,column:89}},type:'binary-expr',locations:[{start:{line:22,column:66},end:{line:22,column:70}},{start:{line:22,column:74},end:{line:22,column:89}}],line:22},'1':{loc:{start:{line:23,column:55},end:{line:23,column:78}},type:'binary-expr',locations:[{start:{line:23,column:55},end:{line:23,column:59}},{start:{line:23,column:63},end:{line:23,column:78}}],line:23},'2':{loc:{start:{line:32,column:12},end:{line:36,column:18}},type:'cond-expr',locations:[{start:{line:33,column:14},end:{line:35,column:209}},{start:{line:36,column:14},end:{line:36,column:18}}],line:32},'3':{loc:{start:{line:39,column:12},end:{line:41,column:18}},type:'cond-expr',locations:[{start:{line:40,column:14},end:{line:40,column:290}},{start:{line:41,column:14},end:{line:41,column:18}}],line:39},'4':{loc:{start:{line:40,column:72},end:{line:40,column:117}},type:'cond-expr',locations:[{start:{line:40,column:89},end:{line:40,column:112}},{start:{line:40,column:115},end:{line:40,column:117}}],line:40}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0},f:{'0':0,'1':0,'2':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0],'4':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();
+
+var _bill_usage_banner=require('../../../assets/bill_usage_banner.jpg');var _bill_usage_banner2=_interopRequireDefault(_bill_usage_banner);
+var _BillSummaryWrapper=require('./TopLevelCards/BillSummaryWrapper/BillSummaryWrapper.component');var _BillSummaryWrapper2=_interopRequireDefault(_BillSummaryWrapper);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _PrepaidWrapper=require('./TopLevelCards/PrepaidWrapper/PrepaidWrapper.component');var _PrepaidWrapper2=_interopRequireDefault(_PrepaidWrapper);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _BillUsage=require('./BillUsage.style');var _BillUsage2=_interopRequireDefault(_BillUsage);
+var _mockData=require('../mockData');
+var _Shared=require('../../Shared');
+var _reactNative=require('react-native');
+var _lodash=require('lodash');
+var _helper=require('../../../language/i18n/helper');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+BillUsage=function(_Component){_inherits(BillUsage,_Component);function BillUsage(){_classCallCheck(this,BillUsage);return _possibleConstructorReturn(this,(BillUsage.__proto__||Object.getPrototypeOf(BillUsage)).apply(this,arguments));}_createClass(BillUsage,[{key:'render',value:function render()
+{cov_rjqzi830o.f[0]++;var _ref=(cov_rjqzi830o.s[0]++,
+this.props),username=_ref.username,goToScreen=_ref.goToScreen,productList=_ref.productList,toggleBillDetailCheck=_ref.toggleBillDetailCheck,onBillDetailsClick=_ref.onBillDetailsClick,productDetail=_ref.productDetail,billDetail=_ref.billDetail,getProductBillDetails=_ref.getProductBillDetails,toggleProductCheck=_ref.toggleProductCheck,toggleProductCollapse=_ref.toggleProductCollapse,setPaymentItems=_ref.setPaymentItems,getProductCurrentUsage=_ref.getProductCurrentUsage;var _ref2=(cov_rjqzi830o.s[1]++,
+productList),tmhPostpaid=_ref2.tmhPostpaid,conv=_ref2.conv,tol=_ref2.tol,tvs=_ref2.tvs,tmhPrepaid=_ref2.tmhPrepaid;
+var billSummaryProductList=(cov_rjqzi830o.s[2]++,{tmhPostpaid:tmhPostpaid,conv:conv,tol:tol,tvs:tvs});
+var prepaidList=(cov_rjqzi830o.s[3]++,{tmhPrepaid:tmhPrepaid});
+var hasBillSummary=(cov_rjqzi830o.s[4]++,(0,_lodash.some)(billSummaryProductList,function(elem){cov_rjqzi830o.f[1]++;cov_rjqzi830o.s[5]++;return(cov_rjqzi830o.b[0][0]++,elem)&&(cov_rjqzi830o.b[0][1]++,elem.length>0);}));
+var hasPrepaidList=(cov_rjqzi830o.s[6]++,(0,_lodash.some)(prepaidList,function(elem){cov_rjqzi830o.f[2]++;cov_rjqzi830o.s[7]++;return(cov_rjqzi830o.b[1][0]++,elem)&&(cov_rjqzi830o.b[1][1]++,elem.length>0);}));cov_rjqzi830o.s[8]++;
+return(
+_react2.default.createElement(_reactNative.ScrollView,{contentContainerStyle:_BillUsage2.default.container,accessibilityLabel:'Bills&Usage_container'},
+_react2.default.createElement(_Shared.Banner,{source:_bill_usage_banner2.default,style:_BillUsage2.default.bannerContainer},
+_react2.default.createElement(_Shared.ISText,{style:_BillUsage2.default.welcomeText,type:'BOLD'},(0,_helper.translate)('BILLS_USAGE_WELCOME')),
+_react2.default.createElement(_Shared.ISText,{style:_BillUsage2.default.usernameText,type:'BOLD'},username)),
+
+_react2.default.createElement(_reactNative.View,{style:_BillUsage2.default.productContainer},
+
+hasBillSummary?(cov_rjqzi830o.b[2][0]++,
+_react2.default.createElement(_BillSummaryWrapper2.default,{productList:billSummaryProductList,billDetail:billDetail,productDetail:productDetail,
+getProductBillDetails:getProductBillDetails,toggleProductCheck:toggleProductCheck,toggleProductCollapse:toggleProductCollapse,
+goToScreen:goToScreen,toggleBillDetailCheck:toggleBillDetailCheck,setPaymentItems:setPaymentItems,onBillDetailsClick:onBillDetailsClick,getProductCurrentUsage:getProductCurrentUsage})):(cov_rjqzi830o.b[2][1]++,
+null),
+
+
+hasPrepaidList?(cov_rjqzi830o.b[3][0]++,
+_react2.default.createElement(_PrepaidWrapper2.default,{productList:prepaidList,containerStyle:hasBillSummary?(cov_rjqzi830o.b[4][0]++,_BillUsage2.default.separatorPadding):(cov_rjqzi830o.b[4][1]++,{}),productDetail:productDetail,toggleProductCollapse:toggleProductCollapse,goToScreen:goToScreen,availablePackage:_mockData.availablePackage,setPaymentItems:setPaymentItems})):(cov_rjqzi830o.b[3][1]++,
+null))));
+
+
+
+
+}}]);return BillUsage;}(_react.Component);cov_rjqzi830o.s[9]++;
+
+
+BillUsage.defaultProps={
+username:'',
+goToScreen:_noop2.default,
+productList:{
+tmhPostpaid:[],
+conv:[],
+tol:[],
+tvs:[],
+tmhPrepaid:[]},
+
+productDetail:{},
+billDetail:{},
+toggleProductCheck:_noop2.default,
+toggleProductCollapse:_noop2.default,
+getProductBillDetails:_noop2.default,
+toggleBillDetailCheck:_noop2.default,
+onBillDetailsClick:_noop2.default,
+setPaymentItems:_noop2.default,
+getProductCurrentUsage:_noop2.default};cov_rjqzi830o.s[10]++;
+
+
+BillUsage.propTypes={
+username:_propTypes2.default.string,
+goToScreen:_propTypes2.default.func,
+productList:_propTypes2.default.PropTypes.shape({
+tmhPostpaid:_propTypes2.default.array,
+conv:_propTypes2.default.array,
+tol:_propTypes2.default.array,
+tvs:_propTypes2.default.array,
+tmhPrepaid:_propTypes2.default.array}),
+
+productDetail:_propTypes2.default.object,
+billDetail:_propTypes2.default.object,
+toggleProductCheck:_propTypes2.default.func,
+toggleProductCollapse:_propTypes2.default.func,
+getProductBillDetails:_propTypes2.default.func,
+toggleBillDetailCheck:_propTypes2.default.func,
+onBillDetailsClick:_propTypes2.default.func,
+setPaymentItems:_propTypes2.default.func,
+getProductCurrentUsage:_propTypes2.default.func};exports.default=
+
+
+BillUsage;

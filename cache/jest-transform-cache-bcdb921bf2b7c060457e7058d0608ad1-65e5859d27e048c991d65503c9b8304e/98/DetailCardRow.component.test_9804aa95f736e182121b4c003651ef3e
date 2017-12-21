@@ -1,0 +1,23 @@
+var _DetailCardRow=require('../DetailCardRow.component');var _DetailCardRow2=_interopRequireDefault(_DetailCardRow);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('DetailCardRow Component',function(){
+it('renders correctly when all values are passed to it',function(){
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_DetailCardRow2.default,{rowData:{consumedValue:'250',unit:'MB',subtext:'out of 30 GB'},type:'voice',iconSize:50})).toJSON();
+expect(component).toMatchSnapshot();
+});
+it('renders correctly when no values are passed to the component',function(){
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_DetailCardRow2.default,null)).toJSON();
+expect(component).toMatchSnapshot();
+});
+it('renders correctly when partial values are passed to the component',function(){
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_DetailCardRow2.default,{rowData:{consumedValue:'250',unit:'MB'},iconSize:50,type:'voice'}));
+expect(component).toMatchSnapshot();
+});
+it('renders correctly with different styles passed to the component',function(){
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_DetailCardRow2.default,{rowData:{consumedValue:'250',unit:'MB'},consumedValueStyle:{fontSize:80},unitStyle:{fontSize:80},subtextStyle:{fontSize:80},type:'voice'}));
+expect(component).toMatchSnapshot();
+});
+});

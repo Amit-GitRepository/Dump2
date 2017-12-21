@@ -1,0 +1,47 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.payForOthersRouteConfig=undefined;var cov_11vrjuke84=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/routes/payForOthers.routes.js',hash='3c508afef69ca77ca81b3354ceaddca4a95224c3',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/routes/payForOthers.routes.js',statementMap:{'0':{start:{line:10,column:39},end:{line:45,column:1}}},fnMap:{},branchMap:{},s:{'0':0},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _ISWebView=require('../pages/ISWebView/ISWebView.page');var _ISWebView2=_interopRequireDefault(_ISWebView);
+var _payment=require('./payment.routes');var _payment2=_interopRequireDefault(_payment);
+var _PayOthersInput=require('../pages/Payment/PayForOthers/PayOthersInput.page');var _PayOthersInput2=_interopRequireDefault(_PayOthersInput);
+var _PayForOthersPostpaid=require('../pages/Payment/PayForOthers/PayForOthersPostpaid.page');var _PayForOthersPostpaid2=_interopRequireDefault(_PayForOthersPostpaid);
+var _PayForOthersTopUp=require('../pages/Payment/PayForOthers/PayForOthersTopUp.page');var _PayForOthersTopUp2=_interopRequireDefault(_PayForOthersTopUp);
+var _TopUpMore=require('../pages/TopUp/TopUpMore.page');var _TopUpMore2=_interopRequireDefault(_TopUpMore);
+var _route=require('./helpers/route.helper');
+var _reactNavigation=require('react-navigation');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+var payForOthersRouteConfig=exports.payForOthersRouteConfig=(cov_11vrjuke84.s[0]++,{
+PayForOthers:{
+screen:_PayOthersInput2.default,
+requireLogin:false,
+showHamburger:true,
+title:'SIDE_MENU__PAY_OTHERS',
+navigationOptions:_route.getStackNavOption},
+
+PayOthersPostpaid:{
+screen:_PayForOthersPostpaid2.default,
+requireLogin:false,
+title:'TOP_UP_OTHERS_TITLE',
+navigationOptions:_route.getStackNavOption},
+
+PayOthersTopUp:{
+screen:_PayForOthersTopUp2.default,
+requireLogin:false,
+title:'TOP_UP_OTHERS_TITLE',
+navigationOptions:_route.getStackNavOption},
+
+TopUpMore:{
+screen:_TopUpMore2.default,
+navigationOptions:_route.getStackNavOption,
+title:'TOP_UP_MORE__TITLE',
+showHamburger:false,
+gaScreenName:'Top Up More Page'},
+
+Payment:{
+screen:_payment2.default,
+navigationOptions:{header:null}},
+
+PackagePromoPage:{
+screen:_ISWebView2.default,
+navigationOptions:_route.getStackNavOption}});exports.default=
+
+
+
+(0,_reactNavigation.StackNavigator)(payForOthersRouteConfig,{headerMode:'screen'});

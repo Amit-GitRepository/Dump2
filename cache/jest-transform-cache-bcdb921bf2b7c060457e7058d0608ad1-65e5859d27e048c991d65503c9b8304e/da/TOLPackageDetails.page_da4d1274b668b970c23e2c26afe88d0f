@@ -1,0 +1,42 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_9cdn0a0vb=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/TrueOnlinePackage/TOLPackageDetails.page.js',hash='a1f6ffed288c8843bdb58804331c38bd739e8f8b',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/TrueOnlinePackage/TOLPackageDetails.page.js',statementMap:{'0':{start:{line:8,column:42},end:{line:8,column:52}},'1':{start:{line:9,column:4},end:{line:11,column:6}},'2':{start:{line:15,column:0},end:{line:36,column:2}},'3':{start:{line:38,column:0},end:{line:41,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:7,column:2},end:{line:7,column:3}},loc:{start:{line:7,column:12},end:{line:12,column:3}},line:7}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0},f:{'0':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _TOLPackageDetails=require('../../components/BillUsage/TOLPackageDetails/TOLPackageDetails.component');var _TOLPackageDetails2=_interopRequireDefault(_TOLPackageDetails);
+var _reactRedux=require('react-redux');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+TOLPackageDetailsPage=function(_Component){_inherits(TOLPackageDetailsPage,_Component);function TOLPackageDetailsPage(){_classCallCheck(this,TOLPackageDetailsPage);return _possibleConstructorReturn(this,(TOLPackageDetailsPage.__proto__||Object.getPrototypeOf(TOLPackageDetailsPage)).apply(this,arguments));}_createClass(TOLPackageDetailsPage,[{key:'render',value:function render()
+{cov_9cdn0a0vb.f[0]++;var _ref=(cov_9cdn0a0vb.s[0]++,
+this.props),packageDetails=_ref.packageDetails,userDetails=_ref.userDetails;cov_9cdn0a0vb.s[1]++;
+return(
+_react2.default.createElement(_TOLPackageDetails2.default,{packageDetails:packageDetails,userDetails:userDetails}));
+
+}}]);return TOLPackageDetailsPage;}(_react.Component);cov_9cdn0a0vb.s[2]++;
+
+
+TOLPackageDetailsPage.defaultProps={
+packageDetails:{
+endMonth:'may',
+endDate:12,
+planOverView:'Ultra hi-speed Internet 50M  2,799',
+planOffer:'รับส่วนลดค่าบริการ 50%  12 รอบบิล (ก.ย.59 - ส.ค.60)',
+download:{
+consumedValue:'50',unit:'MB'},
+upload:{
+consumedValue:'5',unit:'MB'},
+wifi:{
+consumedValue:'30',subtext:'hrs / month'},
+
+wifiRouter:{
+subtext:'12 months contract'}},
+
+
+userDetails:{
+phoneNumber:'9629770174',
+name:'pulkit Juneja'}};cov_9cdn0a0vb.s[3]++;
+
+
+
+TOLPackageDetailsPage.propTypes={
+packageDetails:_propTypes2.default.object,
+userDetails:_propTypes2.default.object};exports.default=
+
+(0,_reactRedux.connect)(null,null)(TOLPackageDetailsPage);

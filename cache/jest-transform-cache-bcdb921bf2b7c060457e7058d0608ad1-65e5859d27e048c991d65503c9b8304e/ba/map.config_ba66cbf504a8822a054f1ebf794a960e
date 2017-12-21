@@ -1,0 +1,24 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1y4gcx3nme=function(){var path="/Users/amitkumar/iTrueService/DevCode/iservice-app/app/config/map.config.js",hash="501dfa15d28d1d9bfc17f9d711bd49ddb935f0af",global=new Function('return this')(),gcv="__coverage__",coverageData={path:"/Users/amitkumar/iTrueService/DevCode/iservice-app/app/config/map.config.js",statementMap:{"0":{start:{line:1,column:18},end:{line:22,column:1}}},fnMap:{},branchMap:{},s:{"0":0},f:{},b:{},_coverageSchema:"332fd63041d2c1bcb487cc26dd0d5f7d97098a6c"},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var mapConfig=(cov_1y4gcx3nme.s[0]++,{
+initialRegion:{
+latitude:13.7628754,
+longitude:100.5658374,
+latitudeDelta:0.3,
+longitudeDelta:0.3},
+
+defaultZoom:{
+location:{
+latitudeDelta:0.3,
+longitudeDelta:0.3},
+
+province:{
+latitudeDelta:0.5,
+longitudeDelta:0.5}},
+
+
+distanceLimit:{
+currentLocation:15,
+province:50}});exports.default=
+
+
+
+mapConfig;

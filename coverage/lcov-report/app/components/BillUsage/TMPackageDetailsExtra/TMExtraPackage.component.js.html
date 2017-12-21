@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for app/components/BillUsage/TMPackageDetailsExtra/TMExtraPackage.component.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">app/components/BillUsage/TMPackageDetailsExtra</a> TMExtraPackage.component.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">66.67% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>8/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">66.67% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>4/6</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">20% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">88.89% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>8/9</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import HeaderWithCaret from '../BillUsage/BillUsageShared/HeaderWithCaret.component';
+import ISText from '../../Shared/ISText/ISText.component';
+import moment from '../../../utils/moment.util';
+import partition from 'lodash/partition';
+import ProgressBar from '../../Shared/ProgressBar/ProgressBar.component';
+import PropTypes from 'prop-types';
+import React, {Component} from 'react';
+import styles from './TMExtraPackage.style';
+import WrapperCard from '../BillUsage/BillUsageShared/WrapperCard.component';
+import {colors} from '../../../themes/constants.styles';
+import {ScrollView, View} from 'react-native';
+import {translate} from '../../../language/i18n/helper';
+&nbsp;
+class TMExtraPackage extends Component {
+&nbsp;
+  render () {
+    const {extraPackage} = this.props;
+    const filteredPackages = partition(extraPackage, <span class="fstat-no" title="function not covered" >(i</span>tem) =&gt; <span class="cstat-no" title="statement not covered" >item.isActive)</span>;
+    const rowContent = <span class="fstat-no" title="function not covered" >(p</span>ackageRowItem, index) =&gt; (
+<span class="cstat-no" title="statement not covered" >      &lt;View key={index} style={styles.packageItem}&gt;</span>
+        &lt;View style={styles.packageItemRow}&gt;
+          &lt;View style={styles.packageRowLeft}&gt;
+            &lt;ISText type='BOLD' style={styles.itemTitle}&gt;{packageRowItem.title}&lt;ISText type='BOLD' style={styles.itemSubtitle}&gt; {packageRowItem.subtitle}&lt;/ISText&gt;&lt;/ISText&gt;
+          &lt;/View&gt;
+          &lt;View style={styles.packageRowRight}&gt;
+            &lt;ISText type='BOLD' style={styles.consumedValue}&gt;{packageRowItem.consumedValue} &lt;ISText style={styles.consumedValueUnit}&gt;{packageRowItem.unit}&lt;/ISText&gt;&lt;/ISText&gt;
+          &lt;/View&gt;
+        &lt;/View&gt;
+        &lt;View style={styles.packageItemRow}&gt;
+          &lt;View style={styles.packageRowLeft}&gt;
+            &lt;ProgressBar fillColor={colors.SECONDARY_TMOVE} backgroundColor={colors.PRIMARY_BG_SEPARATOR} percentage={(parseInt(packageRowItem.consumedValue) * 100) / parseInt(packageRowItem.totalValue)} /&gt;
+          &lt;/View&gt;
+          &lt;View style={styles.packageRowRight}&gt;
+            &lt;ISText type='SEMIBOLD' style={styles.totalValue}&gt;of {packageRowItem.totalValue} {packageRowItem.unit}&lt;/ISText&gt;
+          &lt;/View&gt;
+        &lt;/View&gt;
+        {packageRowItem.expiryDate &amp;&amp; &lt;ISText type='SEMIBOLD' style={styles.validityText}&gt;Valid until {new moment(packageRowItem.expiryDate).format('DD/MM/YYYY')} &lt;/ISText&gt;}
+      &lt;/View&gt;
+    );
+    const activePackagesContent = filteredPackages[0] &amp;&amp; filteredPackages[0].map(<span class="fstat-no" title="function not covered" >(p</span>ackageRowItem, index) =&gt; <span class="cstat-no" title="statement not covered" >rowContent(packageRowItem, index))</span>;
+    const inactivePackagesContent = filteredPackages[1] &amp;&amp; filteredPackages[1].map(<span class="fstat-no" title="function not covered" >(p</span>ackageRowItem, index) =&gt; <span class="cstat-no" title="statement not covered" >rowContent(packageRowItem, index))</span>;
+    return (
+      &lt;ScrollView style={styles.scrollContainer} contentContainerStyle={styles.scrollContentContainer}&gt;
+        &lt;WrapperCard&gt;
+          &lt;HeaderWithCaret headerColor={colors.PRIMARY_SUBMENU}&gt;
+            &lt;ISText type='BOLD' style={styles.cardHeaderText}&gt;{translate('EXTRA_PACKAGE_ACTIVE')}&lt;/ISText&gt;
+          &lt;/HeaderWithCaret&gt;
+          &lt;View style={styles.cardContent}&gt;
+            {activePackagesContent}
+          &lt;/View&gt;
+        &lt;/WrapperCard&gt;
+        &lt;WrapperCard&gt;
+          &lt;HeaderWithCaret headerColor={colors.PRIMARY_DISABLED_BG_TEXT}&gt;
+            &lt;ISText type='BOLD' style={styles.cardHeaderText}&gt;{translate('EXTRA_PACKAGE_INACTIVE')}&lt;/ISText&gt;
+          &lt;/HeaderWithCaret&gt;
+          &lt;View style={styles.cardContent}&gt;
+            {inactivePackagesContent}
+          &lt;/View&gt;
+        &lt;/WrapperCard&gt;
+      &lt;/ScrollView&gt;
+    );
+  }
+}
+&nbsp;
+TMExtraPackage.defaultProps = {
+  extraPackage: []
+};
+&nbsp;
+TMExtraPackage.propTypes = {
+  extraPackage: PropTypes.array
+};
+&nbsp;
+export default TMExtraPackage;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Tue Oct 31 2017 11:24:42 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

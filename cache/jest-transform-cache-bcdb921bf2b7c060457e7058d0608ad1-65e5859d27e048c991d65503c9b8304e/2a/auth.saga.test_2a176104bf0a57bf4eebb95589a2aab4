@@ -1,0 +1,278 @@
+var _auth=require('../../../utils/auth.util');var _auth2=_interopRequireDefault(_auth);
+var _auth3=require('../auth.saga');var _auth4=_interopRequireDefault(_auth3);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _reduxSagaTesting=require('redux-saga-testing');var _reduxSagaTesting2=_interopRequireDefault(_reduxSagaTesting);
+var _effects=require('redux-saga/effects');
+var _index=require('../../actions/index.actions');
+
+var _billUsage=require('../billUsage.saga');
+var _reactNavigation=require('react-navigation');
+var _analytics=require('../../../utils/analytics.util');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('Auth Saga: Testing the auth Saga',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_auth4.default)());
+it('Should takeLatest the check login action',function(result){
+expect(result).toEqual((0,_effects.takeLatest)(_index.CHECK_EXISTING_LOGIN,_auth3.verifyExistingLogin));
+});
+it('Should takeLatest the login request action',function(result){
+expect(result).toEqual((0,_effects.takeLatest)(_index.LOGIN_REQUEST,_auth3.login));
+});
+it('Should takeLatest the register request action',function(result){
+expect(result).toEqual((0,_effects.takeLatest)(_index.REGISTER_REQUEST,_auth3.register));
+});
+it('Should takeLatest the logout request action',function(result){
+expect(result).toEqual((0,_effects.takeLatest)(_index.LOGOUT_REQUEST,_auth3.logout));
+});
+it('Should takeLatest the change language action',function(result){
+expect(result).toEqual((0,_effects.takeLatest)(_index.CHANGE_LANGUAGE,_auth3.updateAuthLanguage));
+});
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});
+
+describe('login: Testing call the login action - success case',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_auth3.login)());
+it('Should call login action',function(result){
+expect(result).toEqual((0,_effects.call)(_auth2.default.login));
+return{name:'apurva'};
+});
+it('Should should call loginSuccess action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.loginSuccess)({name:'apurva'})));
+});
+it('Should should call registerFCMToken action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.registerFCMToken)()));
+});
+it('Should should call setDimension with userID and fbID',function(result){
+expect(result).toEqual((0,_effects.call)(_analytics.setDimension,{SSOID:'',FB_ID:''}));
+});
+});
+
+describe('login: Testing call the login action - success case with next action',function(){
+var nextAction=jest.fn();
+var it=(0,_reduxSagaTesting2.default)((0,_auth3.login)({payload:nextAction}));
+it('Should call login action',function(result){
+expect(result).toEqual((0,_effects.call)(_auth2.default.login));
+return{name:'apurva'};
+});
+it('Should call loginSuccess action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.loginSuccess)({name:'apurva'})));
+});
+it('Should should call registerFCMToken action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.registerFCMToken)()));
+});
+it('Should call setDimension with userID and fbID',function(result){
+expect(result).toEqual((0,_effects.call)(_analytics.setDimension,{SSOID:'',FB_ID:''}));
+});
+it('Should fork fetchProduct list as a fork',function(result){
+expect(result).toEqual((0,_effects.fork)(_billUsage.fetchProductList));
+});
+it('Should call next action',function(result){
+expect(result).toEqual((0,_effects.put)(nextAction));
+});
+});
+
+describe('login: Testing call the login action - failure case',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_auth3.login)());
+it('Should call the login action',function(result){
+expect(result).toEqual((0,_effects.call)(_auth2.default.login));
+return new Error('Login call failed');
+});
+it('Should should call loginFailure action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.loginFailure)()));
+});
+});
+
+describe('register: Testing call the register action - success case',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_auth3.register)());
+it('Should call register action',function(result){
+expect(result).toEqual((0,_effects.call)(_auth2.default.register));
+return{name:'xyz'};
+});
+it('Should call registerSuccess action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.registerSuccess)({name:'xyz'})));
+});
+it('Should call setDimension with userID and fbID',function(result){
+expect(result).toEqual((0,_effects.call)(_analytics.setDimension,{SSOID:'',FB_ID:''}));
+});
+});
+
+describe('register: Testing call the register action - success case with next action',function(){
+var nextAction=jest.fn();
+var it=(0,_reduxSagaTesting2.default)((0,_auth3.register)({payload:nextAction}));
+it('Should call register action',function(result){
+expect(result).toEqual((0,_effects.call)(_auth2.default.register));
+return{name:'xyz'};
+});
+it('Should call registerSuccess action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.registerSuccess)({name:'xyz'})));
+});
+it('Should call setDimension with userID and fbID',function(result){
+expect(result).toEqual((0,_effects.call)(_analytics.setDimension,{SSOID:'',FB_ID:''}));
+});
+it('Should call next action',function(result){
+expect(result).toEqual((0,_effects.put)(nextAction));
+});
+});
+
+describe('register: Testing call the register action - failure case',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_auth3.register)());
+it('Should call the register action',function(result){
+expect(result).toEqual((0,_effects.call)(_auth2.default.register));
+return new Error('Register call failed');
+});
+it('Should call registerFailure action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.registerFailure)()));
+});
+});
+
+describe('logout: Testing call the logout action - success case',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_auth3.logout)());
+it('Should call logout action',function(result){
+expect(result).toEqual((0,_effects.call)(_auth2.default.logout));
+});
+it('Should call logoutSuccess action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.logoutSuccess)()));
+});
+it('Should call deregisterFCMToken action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.deregisterFCMToken)()));
+});
+});
+
+describe('logout: Testing call the logout action - success case with next action',function(){
+var nextAction=jest.fn();
+var it=(0,_reduxSagaTesting2.default)((0,_auth3.logout)({payload:nextAction}));
+it('Should call logout action',function(result){
+expect(result).toEqual((0,_effects.call)(_auth2.default.logout));
+});
+it('Should call logoutSuccess action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.logoutSuccess)()));
+});
+it('Should call deregisterFCMToken action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.deregisterFCMToken)()));
+});
+it('Should call next action',function(result){
+expect(result).toEqual((0,_effects.put)(nextAction));
+});
+});
+
+describe('logout: Testing call the logout action - failure case',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_auth3.logout)());
+it('Should call the logout action',function(result){
+expect(result).toEqual((0,_effects.call)(_auth2.default.logout));
+return new Error('Logout call failed');
+});
+it('Should call loginFailure action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.logoutFailure)()));
+});
+});
+
+describe('loginCheck: do nothing if there is no internet connection',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_auth3.verifyExistingLogin)());
+it('Should select network status from state',function(result){
+expect(result).toHaveProperty('SELECT');
+return false;
+});
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});
+
+describe('loginCheck: Testing check login action - success case',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_auth3.verifyExistingLogin)());
+it('Should select network status from state',function(result){
+expect(result).toHaveProperty('SELECT');
+return true;
+});
+it('Should call check login action',function(result){
+expect(result).toEqual((0,_effects.call)(_auth2.default.checkExistingLogin));
+return{profile:{name:'apurva'},accessToken:'xyz'};
+});
+it('Should set the access token action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.setAccessTokenAndProfile)({profile:{name:'apurva'},accessToken:'xyz'})));
+});
+});
+
+describe('loginCheck: Testing check login action - success case with next action',function(){
+var nextAction=jest.fn();
+var it=(0,_reduxSagaTesting2.default)((0,_auth3.verifyExistingLogin)({payload:nextAction}));
+it('Should select network status from state',function(result){
+expect(result).toHaveProperty('SELECT');
+return true;
+});
+it('Should call check login action',function(result){
+expect(result).toEqual((0,_effects.call)(_auth2.default.checkExistingLogin));
+return{profile:{name:'apurva'},accessToken:'xyz'};
+});
+it('Should set the access token action',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.setAccessTokenAndProfile)({profile:{name:'apurva'},accessToken:'xyz'})));
+});
+it('Should call next action',function(result){
+expect(result).toEqual((0,_effects.put)(nextAction));
+});
+});
+
+describe('loginCheck: Testing check login action - failure case',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_auth3.verifyExistingLogin)());
+it('Should select network status from state',function(result){
+expect(result).toHaveProperty('SELECT');
+expect(result).toEqual((0,_effects.select)(_auth3.networkSelector));
+return true;
+});
+it('Should call the change language action',function(result){
+expect(result).toEqual((0,_effects.call)(_auth2.default.checkExistingLogin));
+return new Error('User not logged in');
+});
+});
+
+var mockSelectedLanguageAction={
+payload:{
+language:'th'}};
+
+
+
+describe('updateAuthLanguage: Testing the update auth language Saga',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_auth3.updateAuthLanguage)(mockSelectedLanguageAction));
+var language=(0,_result2.default)(mockSelectedLanguageAction,'payload.language');
+it('Should call the auth updateLanguage function',function(result){
+expect(result).toEqual((0,_effects.call)(_auth2.default.updateLanguage,language));
+});
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});
+
+describe('initializeAuth: Testing the auth Saga',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_auth3.initializeAuth)());
+it('Should select the preferences from state',function(result){
+expect(result).toEqual((0,_effects.select)(_auth3.languageSelector));
+return'th';
+});
+it('Should call auth initialization saga',function(result){
+expect(result).toEqual((0,_effects.call)(_auth2.default.init,'th'));
+});
+it('Should call check login saga',function(result){
+expect(result).toEqual((0,_effects.call)(_auth3.verifyExistingLogin,{payload:_reactNavigation.NavigationActions.navigate({routeName:'BillUsage'})}));
+});
+});
+
+describe('initializeAuth: Testing the auth Saga',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_auth3.initializeAuth)());
+it('Should select the preferences from state',function(result){
+expect(result).toEqual((0,_effects.select)(_auth3.languageSelector));
+return'th';
+});
+it('Should call auth initialization saga',function(result){
+expect(result).toEqual((0,_effects.call)(_auth2.default.init,'th'));
+});
+it('Should call check login saga',function(result){
+expect(result).toEqual((0,_effects.call)(_auth3.verifyExistingLogin,{payload:_reactNavigation.NavigationActions.navigate({routeName:'BillUsage'})}));
+return new Error('Something went wrong!');
+});
+it('Should call check login saga',function(result){
+expect(result).toEqual((0,_effects.put)(_reactNavigation.NavigationActions.reset({
+index:0,
+actions:[_reactNavigation.NavigationActions.navigate({routeName:'Landing'})]})));
+
+});
+});

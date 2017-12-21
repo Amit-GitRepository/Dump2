@@ -1,0 +1,15 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_21s7ig7ke2=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/OverlaySpinner/OverLaySpinner.style.js',hash='d044924d9eb66b373592475c6c809aa6735f70f0',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/OverlaySpinner/OverLaySpinner.style.js',statementMap:{},fnMap:{},branchMap:{},s:{},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _constantsStyles=require('../../../themes/constants.styles.js');exports.default=
+
+{
+container:{
+position:'absolute',
+top:0,
+bottom:0,
+right:0,
+left:0,
+backgroundColor:_constantsStyles.colors.BACKDROP_COLOR},
+
+wrapperContainer:{
+flex:1,
+alignItems:'center',
+justifyContent:'center'}};

@@ -1,0 +1,2422 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StoreLocatorTab component should render correctly 1`] = `
+<View
+  style={
+    Object {
+      "paddingTop": 15,
+    }
+  }
+>
+  <View
+    accessibilityLabel="trueShopMapView_tab_mapAndListView"
+    style={
+      Object {
+        "alignSelf": "stretch",
+        "flexGrow": 1,
+      }
+    }
+    testID="trueShopMapView_tab_mapAndListView"
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "flex-start",
+            "flexDirection": "row",
+            "zIndex": 2,
+          },
+          Object {
+            "paddingHorizontal": 20,
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "borderTopLeftRadius": 10,
+            "borderTopRightRadius": 10,
+            "flex": 1,
+            "marginRight": 5,
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View>
+            <View
+              style={
+                Object {
+                  "backgroundColor": "#F93E60",
+                  "borderTopLeftRadius": 10,
+                  "borderTopRightRadius": 10,
+                  "height": 42,
+                  "overflow": "hidden",
+                  "paddingHorizontal": 10,
+                  "paddingTop": 7,
+                }
+              }
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                numberOfLines={1}
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "backgroundColor": "transparent",
+                    "color": "#FFFFFF",
+                    "fontFamily": "SukhumvitSet-Bold",
+                    "fontSize": 18,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Map
+              </Text>
+            </View>
+            <Text
+              accessible={true}
+              allowFontScaling={false}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#F93E60",
+                    "fontSize": 30,
+                  },
+                  Array [
+                    Object {
+                      "alignSelf": "center",
+                      "backgroundColor": "transparent",
+                    },
+                    Object {
+                      "bottom": 12,
+                      "marginBottom": -12,
+                    },
+                    Object {},
+                  ],
+                  Object {
+                    "fontFamily": "iservice",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "borderTopLeftRadius": 10,
+            "borderTopRightRadius": 10,
+            "flex": 1,
+            "marginRight": 0,
+            "opacity": 1,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "backgroundColor": "transparent",
+                "borderRadius": 0,
+                "height": 42,
+                "overflow": "hidden",
+                "paddingBottom": 0,
+                "paddingTop": 0,
+              }
+            }
+          >
+            <View
+              style={Object {}}
+            >
+              <Image
+                getSize={[Function]}
+                isBackground={false}
+                onLayout={[Function]}
+                resizeMode="contain"
+                source={
+                  Object {
+                    "testUri": "../../../app/assets/deselectedTabBg.png",
+                  }
+                }
+                style={
+                  Array [
+                    Object {
+                      "bottom": 0,
+                      "left": 0,
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                    },
+                    Object {
+                      "height": undefined,
+                      "width": undefined,
+                    },
+                    undefined,
+                  ]
+                }
+              />
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                numberOfLines={1}
+                style={
+                  Object {
+                    "alignSelf": "center",
+                    "backgroundColor": "transparent",
+                    "color": "#000000",
+                    "fontFamily": "SukhumvitSet-Bold",
+                    "fontSize": 18,
+                    "paddingTop": 2,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                List
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "borderColor": "#F93E60",
+            "borderWidth": 1,
+            "marginTop": -19,
+            "zIndex": 3,
+          },
+          Object {
+            "borderColor": "#F93E60",
+          },
+        ]
+      }
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "alignSelf": "stretch",
+            "backgroundColor": "#FFFFFF",
+            "borderBottomLeftRadius": 7,
+            "borderBottomRightRadius": 7,
+            "paddingTop": 10,
+          },
+          Object {
+            "backgroundColor": "#E9E9EA",
+            "borderBottomLeftRadius": 5,
+            "borderBottomRightRadius": 5,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "paddingBottom": 15,
+        "paddingHorizontal": 10,
+        "paddingTop": 5,
+      }
+    }
+  >
+    <View
+      accessibilityLabel="trueShopMapView_dropdown_selectArea"
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+      testID="trueShopMapView_dropdown_selectArea"
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#F93E60",
+            "borderRadius": 8,
+            "borderWidth": 1,
+            "marginRight": 10,
+            "opacity": 1,
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "#303C46",
+                  "fontFamily": "SukhumvitSet-Bold",
+                  "fontSize": 18,
+                }
+              }
+            >
+              Select Area
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={false}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#F93E60",
+                    "fontSize": 24,
+                  },
+                  Object {
+                    "marginTop": 3,
+                  },
+                  Object {
+                    "fontFamily": "iservice",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+        </View>
+      </View>
+      <Modal
+        animationType="none"
+        hardwareAccelerated={false}
+        onModalHide={[Function]}
+        onRequestClose={[Function]}
+        transparent={true}
+        visible={false}
+      >
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          nativeID={undefined}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "black",
+                "bottom": 0,
+                "left": 0,
+                "opacity": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              Object {
+                "backgroundColor": "rgba(48,60,70,0.9)",
+                "height": 1334,
+                "width": 750,
+              },
+            ]
+          }
+          testID={undefined}
+        />
+        <View
+          onModalHide={[Function]}
+          pointerEvents="box-none"
+          style={
+            Array [
+              Object {
+                "margin": 37.5,
+                "transform": Array [
+                  Object {
+                    "translateY": 0,
+                  },
+                ],
+              },
+              Object {
+                "flex": 1,
+                "justifyContent": "center",
+              },
+              undefined,
+            ]
+          }
+        >
+          <View
+            elevation={5}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#FFFFFF",
+                  "borderRadius": 8,
+                  "flex": 1,
+                  "marginHorizontal": -1,
+                  "overflow": "hidden",
+                  "shadowColor": "#303C46",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 1,
+                  },
+                  "shadowOpacity": 0.3,
+                  "shadowRadius": 1,
+                },
+                Object {},
+              ]
+            }
+          >
+            <View
+              onPress={null}
+              style={
+                Array [
+                  Object {
+                    "zIndex": 1,
+                  },
+                  Object {},
+                ]
+              }
+            >
+              <View>
+                <View
+                  style={
+                    Object {
+                      "borderWidth": 0,
+                      "elevation": 3,
+                      "shadowColor": "#303C46",
+                      "shadowOffset": Object {
+                        "height": 2,
+                        "width": 1,
+                      },
+                      "shadowOpacity": 0.3,
+                      "shadowRadius": 1,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "borderBottomColor": "#F93E60",
+                          "paddingHorizontal": 5,
+                        },
+                        Object {
+                          "borderBottomColor": "#303C46",
+                        },
+                      ]
+                    }
+                  >
+                    <View
+                      style={
+                        Array [
+                          Array [
+                            Object {
+                              "alignItems": "center",
+                              "backgroundColor": "#E9E9EA",
+                              "padding": 10,
+                            },
+                            Object {
+                              "backgroundColor": "#303C46",
+                              "marginHorizontal": -5,
+                              "padding": 10,
+                            },
+                          ],
+                          Object {},
+                        ]
+                      }
+                    >
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Array [
+                            Object {
+                              "backgroundColor": "transparent",
+                              "color": "#303C46",
+                            },
+                            Array [
+                              Object {
+                                "color": "#000000",
+                                "fontSize": 18,
+                              },
+                              Object {
+                                "color": "#FFFFFF",
+                              },
+                            ],
+                            Object {
+                              "fontFamily": "SukhumvitSet-Bold",
+                            },
+                          ]
+                        }
+                      >
+                        Please Select Area
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+                <Text
+                  accessible={true}
+                  allowFontScaling={false}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#303C46",
+                        "fontSize": 24,
+                      },
+                      Array [
+                        Object {
+                          "alignSelf": "center",
+                          "backgroundColor": "transparent",
+                        },
+                        Object {
+                          "bottom": 9.6,
+                          "marginBottom": -9.6,
+                        },
+                        Object {},
+                      ],
+                      Object {
+                        "fontFamily": "iservice",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                    ]
+                  }
+                >
+                  
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "borderRadius": 10,
+                  "marginTop": -15,
+                  "paddingBottom": 75,
+                }
+              }
+            >
+              <RCTScrollView
+                data={
+                  Array [
+                    "กระบี่",
+                    "กรุงเทพ",
+                    "กาญจนบุรี",
+                    "กาฬสินธุ์",
+                    "กำแพงเพชร",
+                    "ขอนแก่น",
+                    "จันทบุรี",
+                    "ฉะเชิงเทรา",
+                    "ชลบุรี",
+                    "ชัยนาท",
+                    "ชัยภูมิ",
+                    "ชุมพร",
+                    "ตรัง",
+                    "ตราด",
+                    "ตาก",
+                    "นครนายก",
+                    "นครปฐม",
+                    "นครพนม",
+                    "นครราชสีมา",
+                    "นครศรีธรรมราช",
+                    "นครสวรรค์",
+                    "นนทบุรี",
+                    "นราธิวาส",
+                    "น่าน",
+                    "บึงกาฬ",
+                    "บุรีรัมย์",
+                    "ปทุมธานี",
+                    "ประจวบคีรีขันธ์",
+                    "ปราจีนบุรี",
+                    "ปัตตานี",
+                    "พระนครศรีอยุธยา",
+                    "พะเยา",
+                    "พังงา",
+                    "พัทลุง",
+                    "พิจิตร",
+                    "พิษณุโลก",
+                    "ภูเก็ต",
+                    "มหาสารคาม",
+                    "มุกดาหาร",
+                    "ยะลา",
+                    "ยโสธร",
+                    "ระนอง",
+                    "ระยอง",
+                    "ราชบุรี",
+                    "ร้อยเอ็ด",
+                    "ลพบุรี",
+                    "ลำปาง",
+                    "ลำพูน",
+                    "ศรีสะเกษ",
+                    "สกลนคร",
+                    "สงขลา",
+                    "สตูล",
+                    "สมุทรปราการ",
+                    "สมุทรปราการ",
+                    "สมุทรสาคร",
+                    "สระบุรี",
+                    "สระแก้ว",
+                    "สิงห์บุรี",
+                    "สุพรรณบุรี",
+                    "สุราษฎร์ธานี",
+                    "สุรินทร์",
+                    "สุโขทัย",
+                    "หนองคาย",
+                    "หนองบัวลำภู",
+                    "อำนาจเจริญ",
+                    "อุดรธานี",
+                    "อุตรดิตถ์",
+                    "อุทัยธานี",
+                    "อุบลราชธานี",
+                    "อ่างทอง",
+                    "เชียงราย",
+                    "เชียงใหม่",
+                    "เพชรบุรี",
+                    "เพชรบูรณ์",
+                    "เลย",
+                    "แพร่",
+                    "แม่ฮ่องสอน",
+                  ]
+                }
+                disableVirtualization={false}
+                getItem={[Function]}
+                getItemCount={[Function]}
+                horizontal={false}
+                initialNumToRender={10}
+                keyExtractor={[Function]}
+                maxToRenderPerBatch={10}
+                numColumns={1}
+                onContentSizeChange={[Function]}
+                onEndReachedThreshold={2}
+                onLayout={[Function]}
+                onMomentumScrollEnd={[Function]}
+                onScroll={[Function]}
+                onScrollBeginDrag={[Function]}
+                onScrollEndDrag={[Function]}
+                renderItem={[Function]}
+                scrollEventThrottle={50}
+                stickyHeaderIndices={Array []}
+                updateCellsBatchingPeriod={50}
+                viewabilityConfigCallbackPairs={Array []}
+                windowSize={21}
+              >
+                <View>
+                  <View
+                    onLayout={[Function]}
+                    style={null}
+                  >
+                    <View
+                      accessibilityComponentType={undefined}
+                      accessibilityLabel={undefined}
+                      accessibilityTraits={undefined}
+                      accessible={true}
+                      collapsable={undefined}
+                      hitSlop={undefined}
+                      isTVSelectable={true}
+                      nativeID={undefined}
+                      onLayout={undefined}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "opacity": 1,
+                        }
+                      }
+                      testID={undefined}
+                      tvParallaxProperties={undefined}
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 1,
+                          }
+                        }
+                      >
+                        <View
+                          animation="fadeIn"
+                          duration={500}
+                          style={
+                            Array [
+                              Array [
+                                Object {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
+                                  "paddingHorizontal": 10,
+                                  "paddingVertical": 15,
+                                },
+                                Object {
+                                  "justifyContent": "center",
+                                },
+                              ],
+                              Object {
+                                "backgroundColor": "#FFFFFF",
+                              },
+                            ]
+                          }
+                        >
+                          <View
+                            style={Object {}}
+                          >
+                            <Text
+                              accessible={true}
+                              allowFontScaling={true}
+                              ellipsizeMode="tail"
+                              style={
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                    "color": "#303C46",
+                                  },
+                                  Array [
+                                    Object {
+                                      "fontSize": 18,
+                                      "marginBottom": -4,
+                                    },
+                                    Object {
+                                      "textAlign": "center",
+                                    },
+                                  ],
+                                  Object {
+                                    "fontFamily": "SukhumvitSet-SemiBold",
+                                  },
+                                ]
+                              }
+                            >
+                              กระบี่
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    onLayout={[Function]}
+                    style={null}
+                  >
+                    <View
+                      accessibilityComponentType={undefined}
+                      accessibilityLabel={undefined}
+                      accessibilityTraits={undefined}
+                      accessible={true}
+                      collapsable={undefined}
+                      hitSlop={undefined}
+                      isTVSelectable={true}
+                      nativeID={undefined}
+                      onLayout={undefined}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "opacity": 1,
+                        }
+                      }
+                      testID={undefined}
+                      tvParallaxProperties={undefined}
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 1,
+                          }
+                        }
+                      >
+                        <View
+                          animation="fadeIn"
+                          duration={500}
+                          style={
+                            Array [
+                              Array [
+                                Object {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
+                                  "paddingHorizontal": 10,
+                                  "paddingVertical": 15,
+                                },
+                                Object {
+                                  "justifyContent": "center",
+                                },
+                              ],
+                              Object {
+                                "backgroundColor": "#E9E9EA",
+                              },
+                            ]
+                          }
+                        >
+                          <View
+                            style={Object {}}
+                          >
+                            <Text
+                              accessible={true}
+                              allowFontScaling={true}
+                              ellipsizeMode="tail"
+                              style={
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                    "color": "#303C46",
+                                  },
+                                  Array [
+                                    Object {
+                                      "fontSize": 18,
+                                      "marginBottom": -4,
+                                    },
+                                    Object {
+                                      "textAlign": "center",
+                                    },
+                                  ],
+                                  Object {
+                                    "fontFamily": "SukhumvitSet-SemiBold",
+                                  },
+                                ]
+                              }
+                            >
+                              กรุงเทพ
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    onLayout={[Function]}
+                    style={null}
+                  >
+                    <View
+                      accessibilityComponentType={undefined}
+                      accessibilityLabel={undefined}
+                      accessibilityTraits={undefined}
+                      accessible={true}
+                      collapsable={undefined}
+                      hitSlop={undefined}
+                      isTVSelectable={true}
+                      nativeID={undefined}
+                      onLayout={undefined}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "opacity": 1,
+                        }
+                      }
+                      testID={undefined}
+                      tvParallaxProperties={undefined}
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 1,
+                          }
+                        }
+                      >
+                        <View
+                          animation="fadeIn"
+                          duration={500}
+                          style={
+                            Array [
+                              Array [
+                                Object {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
+                                  "paddingHorizontal": 10,
+                                  "paddingVertical": 15,
+                                },
+                                Object {
+                                  "justifyContent": "center",
+                                },
+                              ],
+                              Object {
+                                "backgroundColor": "#FFFFFF",
+                              },
+                            ]
+                          }
+                        >
+                          <View
+                            style={Object {}}
+                          >
+                            <Text
+                              accessible={true}
+                              allowFontScaling={true}
+                              ellipsizeMode="tail"
+                              style={
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                    "color": "#303C46",
+                                  },
+                                  Array [
+                                    Object {
+                                      "fontSize": 18,
+                                      "marginBottom": -4,
+                                    },
+                                    Object {
+                                      "textAlign": "center",
+                                    },
+                                  ],
+                                  Object {
+                                    "fontFamily": "SukhumvitSet-SemiBold",
+                                  },
+                                ]
+                              }
+                            >
+                              กาญจนบุรี
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    onLayout={[Function]}
+                    style={null}
+                  >
+                    <View
+                      accessibilityComponentType={undefined}
+                      accessibilityLabel={undefined}
+                      accessibilityTraits={undefined}
+                      accessible={true}
+                      collapsable={undefined}
+                      hitSlop={undefined}
+                      isTVSelectable={true}
+                      nativeID={undefined}
+                      onLayout={undefined}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "opacity": 1,
+                        }
+                      }
+                      testID={undefined}
+                      tvParallaxProperties={undefined}
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 1,
+                          }
+                        }
+                      >
+                        <View
+                          animation="fadeIn"
+                          duration={500}
+                          style={
+                            Array [
+                              Array [
+                                Object {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
+                                  "paddingHorizontal": 10,
+                                  "paddingVertical": 15,
+                                },
+                                Object {
+                                  "justifyContent": "center",
+                                },
+                              ],
+                              Object {
+                                "backgroundColor": "#E9E9EA",
+                              },
+                            ]
+                          }
+                        >
+                          <View
+                            style={Object {}}
+                          >
+                            <Text
+                              accessible={true}
+                              allowFontScaling={true}
+                              ellipsizeMode="tail"
+                              style={
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                    "color": "#303C46",
+                                  },
+                                  Array [
+                                    Object {
+                                      "fontSize": 18,
+                                      "marginBottom": -4,
+                                    },
+                                    Object {
+                                      "textAlign": "center",
+                                    },
+                                  ],
+                                  Object {
+                                    "fontFamily": "SukhumvitSet-SemiBold",
+                                  },
+                                ]
+                              }
+                            >
+                              กาฬสินธุ์
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    onLayout={[Function]}
+                    style={null}
+                  >
+                    <View
+                      accessibilityComponentType={undefined}
+                      accessibilityLabel={undefined}
+                      accessibilityTraits={undefined}
+                      accessible={true}
+                      collapsable={undefined}
+                      hitSlop={undefined}
+                      isTVSelectable={true}
+                      nativeID={undefined}
+                      onLayout={undefined}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "opacity": 1,
+                        }
+                      }
+                      testID={undefined}
+                      tvParallaxProperties={undefined}
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 1,
+                          }
+                        }
+                      >
+                        <View
+                          animation="fadeIn"
+                          duration={500}
+                          style={
+                            Array [
+                              Array [
+                                Object {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
+                                  "paddingHorizontal": 10,
+                                  "paddingVertical": 15,
+                                },
+                                Object {
+                                  "justifyContent": "center",
+                                },
+                              ],
+                              Object {
+                                "backgroundColor": "#FFFFFF",
+                              },
+                            ]
+                          }
+                        >
+                          <View
+                            style={Object {}}
+                          >
+                            <Text
+                              accessible={true}
+                              allowFontScaling={true}
+                              ellipsizeMode="tail"
+                              style={
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                    "color": "#303C46",
+                                  },
+                                  Array [
+                                    Object {
+                                      "fontSize": 18,
+                                      "marginBottom": -4,
+                                    },
+                                    Object {
+                                      "textAlign": "center",
+                                    },
+                                  ],
+                                  Object {
+                                    "fontFamily": "SukhumvitSet-SemiBold",
+                                  },
+                                ]
+                              }
+                            >
+                              กำแพงเพชร
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    onLayout={[Function]}
+                    style={null}
+                  >
+                    <View
+                      accessibilityComponentType={undefined}
+                      accessibilityLabel={undefined}
+                      accessibilityTraits={undefined}
+                      accessible={true}
+                      collapsable={undefined}
+                      hitSlop={undefined}
+                      isTVSelectable={true}
+                      nativeID={undefined}
+                      onLayout={undefined}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "opacity": 1,
+                        }
+                      }
+                      testID={undefined}
+                      tvParallaxProperties={undefined}
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 1,
+                          }
+                        }
+                      >
+                        <View
+                          animation="fadeIn"
+                          duration={500}
+                          style={
+                            Array [
+                              Array [
+                                Object {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
+                                  "paddingHorizontal": 10,
+                                  "paddingVertical": 15,
+                                },
+                                Object {
+                                  "justifyContent": "center",
+                                },
+                              ],
+                              Object {
+                                "backgroundColor": "#E9E9EA",
+                              },
+                            ]
+                          }
+                        >
+                          <View
+                            style={Object {}}
+                          >
+                            <Text
+                              accessible={true}
+                              allowFontScaling={true}
+                              ellipsizeMode="tail"
+                              style={
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                    "color": "#303C46",
+                                  },
+                                  Array [
+                                    Object {
+                                      "fontSize": 18,
+                                      "marginBottom": -4,
+                                    },
+                                    Object {
+                                      "textAlign": "center",
+                                    },
+                                  ],
+                                  Object {
+                                    "fontFamily": "SukhumvitSet-SemiBold",
+                                  },
+                                ]
+                              }
+                            >
+                              ขอนแก่น
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    onLayout={[Function]}
+                    style={null}
+                  >
+                    <View
+                      accessibilityComponentType={undefined}
+                      accessibilityLabel={undefined}
+                      accessibilityTraits={undefined}
+                      accessible={true}
+                      collapsable={undefined}
+                      hitSlop={undefined}
+                      isTVSelectable={true}
+                      nativeID={undefined}
+                      onLayout={undefined}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "opacity": 1,
+                        }
+                      }
+                      testID={undefined}
+                      tvParallaxProperties={undefined}
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 1,
+                          }
+                        }
+                      >
+                        <View
+                          animation="fadeIn"
+                          duration={500}
+                          style={
+                            Array [
+                              Array [
+                                Object {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
+                                  "paddingHorizontal": 10,
+                                  "paddingVertical": 15,
+                                },
+                                Object {
+                                  "justifyContent": "center",
+                                },
+                              ],
+                              Object {
+                                "backgroundColor": "#FFFFFF",
+                              },
+                            ]
+                          }
+                        >
+                          <View
+                            style={Object {}}
+                          >
+                            <Text
+                              accessible={true}
+                              allowFontScaling={true}
+                              ellipsizeMode="tail"
+                              style={
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                    "color": "#303C46",
+                                  },
+                                  Array [
+                                    Object {
+                                      "fontSize": 18,
+                                      "marginBottom": -4,
+                                    },
+                                    Object {
+                                      "textAlign": "center",
+                                    },
+                                  ],
+                                  Object {
+                                    "fontFamily": "SukhumvitSet-SemiBold",
+                                  },
+                                ]
+                              }
+                            >
+                              จันทบุรี
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    onLayout={[Function]}
+                    style={null}
+                  >
+                    <View
+                      accessibilityComponentType={undefined}
+                      accessibilityLabel={undefined}
+                      accessibilityTraits={undefined}
+                      accessible={true}
+                      collapsable={undefined}
+                      hitSlop={undefined}
+                      isTVSelectable={true}
+                      nativeID={undefined}
+                      onLayout={undefined}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "opacity": 1,
+                        }
+                      }
+                      testID={undefined}
+                      tvParallaxProperties={undefined}
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 1,
+                          }
+                        }
+                      >
+                        <View
+                          animation="fadeIn"
+                          duration={500}
+                          style={
+                            Array [
+                              Array [
+                                Object {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
+                                  "paddingHorizontal": 10,
+                                  "paddingVertical": 15,
+                                },
+                                Object {
+                                  "justifyContent": "center",
+                                },
+                              ],
+                              Object {
+                                "backgroundColor": "#E9E9EA",
+                              },
+                            ]
+                          }
+                        >
+                          <View
+                            style={Object {}}
+                          >
+                            <Text
+                              accessible={true}
+                              allowFontScaling={true}
+                              ellipsizeMode="tail"
+                              style={
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                    "color": "#303C46",
+                                  },
+                                  Array [
+                                    Object {
+                                      "fontSize": 18,
+                                      "marginBottom": -4,
+                                    },
+                                    Object {
+                                      "textAlign": "center",
+                                    },
+                                  ],
+                                  Object {
+                                    "fontFamily": "SukhumvitSet-SemiBold",
+                                  },
+                                ]
+                              }
+                            >
+                              ฉะเชิงเทรา
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    onLayout={[Function]}
+                    style={null}
+                  >
+                    <View
+                      accessibilityComponentType={undefined}
+                      accessibilityLabel={undefined}
+                      accessibilityTraits={undefined}
+                      accessible={true}
+                      collapsable={undefined}
+                      hitSlop={undefined}
+                      isTVSelectable={true}
+                      nativeID={undefined}
+                      onLayout={undefined}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "opacity": 1,
+                        }
+                      }
+                      testID={undefined}
+                      tvParallaxProperties={undefined}
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 1,
+                          }
+                        }
+                      >
+                        <View
+                          animation="fadeIn"
+                          duration={500}
+                          style={
+                            Array [
+                              Array [
+                                Object {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
+                                  "paddingHorizontal": 10,
+                                  "paddingVertical": 15,
+                                },
+                                Object {
+                                  "justifyContent": "center",
+                                },
+                              ],
+                              Object {
+                                "backgroundColor": "#FFFFFF",
+                              },
+                            ]
+                          }
+                        >
+                          <View
+                            style={Object {}}
+                          >
+                            <Text
+                              accessible={true}
+                              allowFontScaling={true}
+                              ellipsizeMode="tail"
+                              style={
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                    "color": "#303C46",
+                                  },
+                                  Array [
+                                    Object {
+                                      "fontSize": 18,
+                                      "marginBottom": -4,
+                                    },
+                                    Object {
+                                      "textAlign": "center",
+                                    },
+                                  ],
+                                  Object {
+                                    "fontFamily": "SukhumvitSet-SemiBold",
+                                  },
+                                ]
+                              }
+                            >
+                              ชลบุรี
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    onLayout={[Function]}
+                    style={null}
+                  >
+                    <View
+                      accessibilityComponentType={undefined}
+                      accessibilityLabel={undefined}
+                      accessibilityTraits={undefined}
+                      accessible={true}
+                      collapsable={undefined}
+                      hitSlop={undefined}
+                      isTVSelectable={true}
+                      nativeID={undefined}
+                      onLayout={undefined}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "opacity": 1,
+                        }
+                      }
+                      testID={undefined}
+                      tvParallaxProperties={undefined}
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 1,
+                          }
+                        }
+                      >
+                        <View
+                          animation="fadeIn"
+                          duration={500}
+                          style={
+                            Array [
+                              Array [
+                                Object {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
+                                  "paddingHorizontal": 10,
+                                  "paddingVertical": 15,
+                                },
+                                Object {
+                                  "justifyContent": "center",
+                                },
+                              ],
+                              Object {
+                                "backgroundColor": "#E9E9EA",
+                              },
+                            ]
+                          }
+                        >
+                          <View
+                            style={Object {}}
+                          >
+                            <Text
+                              accessible={true}
+                              allowFontScaling={true}
+                              ellipsizeMode="tail"
+                              style={
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                    "color": "#303C46",
+                                  },
+                                  Array [
+                                    Object {
+                                      "fontSize": 18,
+                                      "marginBottom": -4,
+                                    },
+                                    Object {
+                                      "textAlign": "center",
+                                    },
+                                  ],
+                                  Object {
+                                    "fontFamily": "SukhumvitSet-SemiBold",
+                                  },
+                                ]
+                              }
+                            >
+                              ชัยนาท
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "height": 0,
+                      }
+                    }
+                  />
+                </View>
+              </RCTScrollView>
+            </View>
+          </View>
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            collapsable={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignSelf": "stretch",
+                "backgroundColor": "#F93E60",
+                "borderRadius": 50,
+                "marginTop": 10,
+                "opacity": 1,
+                "padding": 10,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View
+              style={
+                Object {
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "alignSelf": "stretch",
+                    "flexDirection": "row",
+                    "justifyContent": "center",
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "color": "#303C46",
+                      },
+                      Array [
+                        Object {
+                          "color": "#FFFFFF",
+                          "fontSize": 16,
+                        },
+                        Object {},
+                      ],
+                      Object {
+                        "fontFamily": "SukhumvitSet-Bold",
+                      },
+                    ]
+                  }
+                >
+                  Cancel
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+    </View>
+    <View
+      accessibilityLabel="trueShopMapView_dropdown_selectService"
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+      testID="trueShopMapView_dropdown_selectService"
+    >
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        collapsable={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#FFFFFF",
+            "borderColor": "#F93E60",
+            "borderRadius": 8,
+            "borderWidth": 1,
+            "opacity": 1,
+            "paddingHorizontal": 10,
+            "paddingVertical": 6,
+          }
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+              style={
+                Object {
+                  "backgroundColor": "transparent",
+                  "color": "#303C46",
+                  "fontFamily": "SukhumvitSet-Bold",
+                  "fontSize": 18,
+                }
+              }
+            >
+              Select Service
+            </Text>
+            <Text
+              accessible={true}
+              allowFontScaling={false}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": "#F93E60",
+                    "fontSize": 24,
+                  },
+                  Object {
+                    "marginTop": 3,
+                  },
+                  Object {
+                    "fontFamily": "iservice",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+        </View>
+      </View>
+      <Modal
+        animationType="none"
+        hardwareAccelerated={false}
+        onModalHide={[Function]}
+        onRequestClose={[Function]}
+        transparent={true}
+        visible={false}
+      >
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          nativeID={undefined}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "black",
+                "bottom": 0,
+                "left": 0,
+                "opacity": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              Object {
+                "backgroundColor": "rgba(48,60,70,0.9)",
+                "height": 1334,
+                "width": 750,
+              },
+            ]
+          }
+          testID={undefined}
+        />
+        <View
+          onModalHide={[Function]}
+          pointerEvents="box-none"
+          style={
+            Array [
+              Object {
+                "margin": 37.5,
+                "transform": Array [
+                  Object {
+                    "translateY": 0,
+                  },
+                ],
+              },
+              Object {
+                "flex": 1,
+                "justifyContent": "center",
+              },
+              undefined,
+            ]
+          }
+        >
+          <View
+            elevation={5}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "#FFFFFF",
+                  "borderRadius": 8,
+                  "flex": 1,
+                  "marginHorizontal": -1,
+                  "overflow": "hidden",
+                  "shadowColor": "#303C46",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 1,
+                  },
+                  "shadowOpacity": 0.3,
+                  "shadowRadius": 1,
+                },
+                Object {},
+              ]
+            }
+          >
+            <View
+              onPress={null}
+              style={
+                Array [
+                  Object {
+                    "zIndex": 1,
+                  },
+                  Object {},
+                ]
+              }
+            >
+              <View>
+                <View
+                  style={
+                    Object {
+                      "borderWidth": 0,
+                      "elevation": 3,
+                      "shadowColor": "#303C46",
+                      "shadowOffset": Object {
+                        "height": 2,
+                        "width": 1,
+                      },
+                      "shadowOpacity": 0.3,
+                      "shadowRadius": 1,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      Array [
+                        Object {
+                          "borderBottomColor": "#F93E60",
+                          "paddingHorizontal": 5,
+                        },
+                        Object {
+                          "borderBottomColor": "#303C46",
+                        },
+                      ]
+                    }
+                  >
+                    <View
+                      style={
+                        Array [
+                          Array [
+                            Object {
+                              "alignItems": "center",
+                              "backgroundColor": "#E9E9EA",
+                              "padding": 10,
+                            },
+                            Object {
+                              "backgroundColor": "#303C46",
+                              "marginHorizontal": -5,
+                              "padding": 10,
+                            },
+                          ],
+                          Object {},
+                        ]
+                      }
+                    >
+                      <Text
+                        accessible={true}
+                        allowFontScaling={true}
+                        ellipsizeMode="tail"
+                        style={
+                          Array [
+                            Object {
+                              "backgroundColor": "transparent",
+                              "color": "#303C46",
+                            },
+                            Array [
+                              Object {
+                                "color": "#000000",
+                                "fontSize": 18,
+                              },
+                              Object {
+                                "color": "#FFFFFF",
+                              },
+                            ],
+                            Object {
+                              "fontFamily": "SukhumvitSet-Bold",
+                            },
+                          ]
+                        }
+                      >
+                        Please Select Service
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+                <Text
+                  accessible={true}
+                  allowFontScaling={false}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "color": "#303C46",
+                        "fontSize": 24,
+                      },
+                      Array [
+                        Object {
+                          "alignSelf": "center",
+                          "backgroundColor": "transparent",
+                        },
+                        Object {
+                          "bottom": 9.6,
+                          "marginBottom": -9.6,
+                        },
+                        Object {},
+                      ],
+                      Object {
+                        "fontFamily": "iservice",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                    ]
+                  }
+                >
+                  
+                </Text>
+              </View>
+            </View>
+            <View
+              style={
+                Object {
+                  "borderRadius": 10,
+                  "marginTop": -15,
+                  "paddingBottom": 75,
+                }
+              }
+            >
+              <RCTScrollView
+                data={
+                  Array [
+                    "After Sales",
+                    "Payment",
+                    "Product & Order",
+                  ]
+                }
+                disableVirtualization={false}
+                getItem={[Function]}
+                getItemCount={[Function]}
+                horizontal={false}
+                initialNumToRender={10}
+                keyExtractor={[Function]}
+                maxToRenderPerBatch={10}
+                numColumns={1}
+                onContentSizeChange={[Function]}
+                onEndReachedThreshold={2}
+                onLayout={[Function]}
+                onMomentumScrollEnd={[Function]}
+                onScroll={[Function]}
+                onScrollBeginDrag={[Function]}
+                onScrollEndDrag={[Function]}
+                renderItem={[Function]}
+                scrollEventThrottle={50}
+                stickyHeaderIndices={Array []}
+                updateCellsBatchingPeriod={50}
+                viewabilityConfigCallbackPairs={Array []}
+                windowSize={21}
+              >
+                <View>
+                  <View
+                    onLayout={[Function]}
+                    style={null}
+                  >
+                    <View
+                      accessibilityComponentType={undefined}
+                      accessibilityLabel={undefined}
+                      accessibilityTraits={undefined}
+                      accessible={true}
+                      collapsable={undefined}
+                      hitSlop={undefined}
+                      isTVSelectable={true}
+                      nativeID={undefined}
+                      onLayout={undefined}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "opacity": 1,
+                        }
+                      }
+                      testID={undefined}
+                      tvParallaxProperties={undefined}
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 1,
+                          }
+                        }
+                      >
+                        <View
+                          animation="fadeIn"
+                          duration={500}
+                          style={
+                            Array [
+                              Array [
+                                Object {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
+                                  "paddingHorizontal": 10,
+                                  "paddingVertical": 15,
+                                },
+                                Object {
+                                  "justifyContent": "center",
+                                },
+                              ],
+                              Object {
+                                "backgroundColor": "#FFFFFF",
+                              },
+                            ]
+                          }
+                        >
+                          <View
+                            style={Object {}}
+                          >
+                            <Text
+                              accessible={true}
+                              allowFontScaling={true}
+                              ellipsizeMode="tail"
+                              style={
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                    "color": "#303C46",
+                                  },
+                                  Array [
+                                    Object {
+                                      "fontSize": 18,
+                                      "marginBottom": -4,
+                                    },
+                                    Object {
+                                      "textAlign": "center",
+                                    },
+                                  ],
+                                  Object {
+                                    "fontFamily": "SukhumvitSet-SemiBold",
+                                  },
+                                ]
+                              }
+                            >
+                              After Sales
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    onLayout={[Function]}
+                    style={null}
+                  >
+                    <View
+                      accessibilityComponentType={undefined}
+                      accessibilityLabel={undefined}
+                      accessibilityTraits={undefined}
+                      accessible={true}
+                      collapsable={undefined}
+                      hitSlop={undefined}
+                      isTVSelectable={true}
+                      nativeID={undefined}
+                      onLayout={undefined}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "opacity": 1,
+                        }
+                      }
+                      testID={undefined}
+                      tvParallaxProperties={undefined}
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 1,
+                          }
+                        }
+                      >
+                        <View
+                          animation="fadeIn"
+                          duration={500}
+                          style={
+                            Array [
+                              Array [
+                                Object {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
+                                  "paddingHorizontal": 10,
+                                  "paddingVertical": 15,
+                                },
+                                Object {
+                                  "justifyContent": "center",
+                                },
+                              ],
+                              Object {
+                                "backgroundColor": "#E9E9EA",
+                              },
+                            ]
+                          }
+                        >
+                          <View
+                            style={Object {}}
+                          >
+                            <Text
+                              accessible={true}
+                              allowFontScaling={true}
+                              ellipsizeMode="tail"
+                              style={
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                    "color": "#303C46",
+                                  },
+                                  Array [
+                                    Object {
+                                      "fontSize": 18,
+                                      "marginBottom": -4,
+                                    },
+                                    Object {
+                                      "textAlign": "center",
+                                    },
+                                  ],
+                                  Object {
+                                    "fontFamily": "SukhumvitSet-SemiBold",
+                                  },
+                                ]
+                              }
+                            >
+                              Payment
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                  <View
+                    onLayout={[Function]}
+                    style={null}
+                  >
+                    <View
+                      accessibilityComponentType={undefined}
+                      accessibilityLabel={undefined}
+                      accessibilityTraits={undefined}
+                      accessible={true}
+                      collapsable={undefined}
+                      hitSlop={undefined}
+                      isTVSelectable={true}
+                      nativeID={undefined}
+                      onLayout={undefined}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        Object {
+                          "opacity": 1,
+                        }
+                      }
+                      testID={undefined}
+                      tvParallaxProperties={undefined}
+                    >
+                      <View
+                        style={
+                          Object {
+                            "opacity": 1,
+                          }
+                        }
+                      >
+                        <View
+                          animation="fadeIn"
+                          duration={500}
+                          style={
+                            Array [
+                              Array [
+                                Object {
+                                  "alignItems": "center",
+                                  "flexDirection": "row",
+                                  "justifyContent": "space-between",
+                                  "paddingHorizontal": 10,
+                                  "paddingVertical": 15,
+                                },
+                                Object {
+                                  "justifyContent": "center",
+                                },
+                              ],
+                              Object {
+                                "backgroundColor": "#FFFFFF",
+                              },
+                            ]
+                          }
+                        >
+                          <View
+                            style={Object {}}
+                          >
+                            <Text
+                              accessible={true}
+                              allowFontScaling={true}
+                              ellipsizeMode="tail"
+                              style={
+                                Array [
+                                  Object {
+                                    "backgroundColor": "transparent",
+                                    "color": "#303C46",
+                                  },
+                                  Array [
+                                    Object {
+                                      "fontSize": 18,
+                                      "marginBottom": -4,
+                                    },
+                                    Object {
+                                      "textAlign": "center",
+                                    },
+                                  ],
+                                  Object {
+                                    "fontFamily": "SukhumvitSet-SemiBold",
+                                  },
+                                ]
+                              }
+                            >
+                              Product & Order
+                            </Text>
+                          </View>
+                        </View>
+                      </View>
+                    </View>
+                  </View>
+                </View>
+              </RCTScrollView>
+            </View>
+          </View>
+          <View
+            accessibilityComponentType={undefined}
+            accessibilityLabel={undefined}
+            accessibilityTraits={undefined}
+            accessible={true}
+            collapsable={undefined}
+            hitSlop={undefined}
+            isTVSelectable={true}
+            nativeID={undefined}
+            onLayout={undefined}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignSelf": "stretch",
+                "backgroundColor": "#F93E60",
+                "borderRadius": 50,
+                "marginTop": 10,
+                "opacity": 1,
+                "padding": 10,
+              }
+            }
+            testID={undefined}
+            tvParallaxProperties={undefined}
+          >
+            <View
+              style={
+                Object {
+                  "opacity": 1,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "alignSelf": "stretch",
+                    "flexDirection": "row",
+                    "justifyContent": "center",
+                  }
+                }
+              >
+                <Text
+                  accessible={true}
+                  allowFontScaling={true}
+                  ellipsizeMode="tail"
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "color": "#303C46",
+                      },
+                      Array [
+                        Object {
+                          "color": "#FFFFFF",
+                          "fontSize": 16,
+                        },
+                        Object {},
+                      ],
+                      Object {
+                        "fontFamily": "SukhumvitSet-Bold",
+                      },
+                    ]
+                  }
+                >
+                  Cancel
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </Modal>
+    </View>
+  </View>
+</View>
+`;

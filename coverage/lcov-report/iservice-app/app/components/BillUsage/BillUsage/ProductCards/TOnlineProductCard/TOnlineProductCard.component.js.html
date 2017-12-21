@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/components/BillUsage/BillUsage/ProductCards/TOnlineProductCard/TOnlineProductCard.component.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../../../index.html">All files</a> / <a href="index.html">iservice-app/app/components/BillUsage/BillUsage/ProductCards/TOnlineProductCard</a> TOnlineProductCard.component.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">60% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>9/15</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">44.44% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>8/18</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">25% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">60% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>9/15</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">43x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">43x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import BaseProductCard from '../BaseProductCard/BaseProductCard.component';
+import BaseProductCollapsibleBar from '../BaseProductCollapsibleBar/BaseProductCollapsibleBar.component';
+import isEmpty from 'lodash/isEmpty';
+import Proptypes from 'prop-types';
+import React from 'react';
+import styles from './TOnlineProductCard.style.js';
+import {BillHistoryList, CurrentUsageCard, ProductCardTitle} from '../../BillUsageShared';
+import {CaretTabs} from '../../../../../components/Shared';
+import {noop, result} from 'lodash';
+import {TOL_SPEED_TYPES} from '../../../../../config/billUsage.config';
+import {translate} from '../../../../../language/i18n/helper';
+import {View} from 'react-native';
+&nbsp;
+class TOnlineProductCard extends BaseProductCard {
+  state = {
+    selectedTabIndex: this.props.defaultSelectedTab,
+    totalAmount: this.props.amount
+  }
+&nbsp;
+  onTabPress = <span class="fstat-no" title="function not covered" >(s</span>electedTabIndex) =&gt; {
+<span class="cstat-no" title="statement not covered" >    if (selectedTabIndex === 1 &amp;&amp; !this.props.dueBills) {</span>
+<span class="cstat-no" title="statement not covered" >      this.props.getDueBills();</span>
+    }
+<span class="cstat-no" title="statement not covered" >    if (selectedTabIndex === 0 &amp;&amp; isEmpty(this.props.productDetail)) {</span>
+<span class="cstat-no" title="statement not covered" >      this.props.getCurrentUsage();</span>
+    }
+<span class="cstat-no" title="statement not covered" >    this.setState({selectedTabIndex});</span>
+  }
+&nbsp;
+  navigateToPaymentHistory = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+    // TODO navigate to payment history
+  }
+&nbsp;
+  navigateToPackagePromoPage = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >    this.props.goToScreen('PackagePromoPage', {url: 'https://iservice.truecorp.co.th'});</span>
+  }
+&nbsp;
+  render () {
+    const {plan, dueBills, amount, productDetail, isOthers, statusCode, isCollapsed, onCollapseToggle, onChecked, isChecked, onTrueOnlineNavigatetoExtraPackage, onBillDetailsClick} = this.props;
+    const {totalAmount, selectedTabIndex} = this.state;
+    const headerList = [{text: translate('BILLS_USAGE_CURRENT_USAGE')}, {text: translate('BILLS_USAGE_BILL_DETAILS')}];
+    const planInfo = result(productDetail, 'PRICE_PLAN_INFO', {});
+    const {downloadSpeed, uploadSpeed, unit} = result(productDetail, 'TOL_SPEEDS.pricePlanDetails', {});
+    const packageData = [{usage: downloadSpeed, unit: unit, type: TOL_SPEED_TYPES.DOWNLOAD}, {usage: uploadSpeed, unit: unit, type: TOL_SPEED_TYPES.UPLOAD}];
+    return (
+      &lt;BaseProductCollapsibleBar statusCode={statusCode} checkboxDisabled={!amount} type={'ONLINE'} leftTitleText={plan} leftDetailText={translate('BILLS_USAGE_TRUEONLINE')} amountText={totalAmount} isCollapsed={isCollapsed} onCollapseToggle={onCollapseToggle} onChecked={onChecked} isChecked={isChecked}&gt;
+        &lt;View style={styles.container}&gt;
+          {!isOthers &amp;&amp;
+          &lt;View style={styles.productTitle}&gt;
+            &lt;ProductCardTitle text={planInfo.name} navigate={onTrueOnlineNavigatetoExtraPackage}/&gt;
+          &lt;/View&gt;
+          }
+          {(dueBills &amp;&amp; isOthers) ? <span class="branch-0 cbranch-no" title="branch not covered" >&lt;BillHistoryList onBillDetailsClick={onBillDetailsClick} dueBills={dueBills} onPaymentHistoryClick={this.navigateToPaymentHistory} onBillToggle={this.onBillToggle}/&gt; </span>:  &lt;CaretTabs onTabPress={this.onTabPress} selectedIndex={selectedTabIndex} headerList={headerList} activeTabStyle={styles.activeTabStyle} bodyStyle={styles.tabContainer}&gt;
+            {selectedTabIndex === 0 &amp;&amp; &lt;CurrentUsageCard data={packageData} onBannerClick={this.navigateToPackagePromoPage} textStyle={styles.usageText}/&gt;}
+            {selectedTabIndex === 1 &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >&lt;BillHistoryList onBillDetailsClick={onBillDetailsClick} dueBills={dueBills} onPaymentHistoryClick={this.navigateToPaymentHistory} onBillToggle={this.onBillToggle}/&gt; </span>}
+          &lt;/CaretTabs&gt;}
+        &lt;/View&gt;
+      &lt;/BaseProductCollapsibleBar&gt;
+    );
+  }
+}
+&nbsp;
+TOnlineProductCard.defaultProps = {
+  plan: '',
+  amount: 0,
+  dueBills: [],
+  productDetail: {},
+  goToScreen: noop,
+  statusCode: 'ACTIVE',
+  isCollapsed: true,
+  onCollapseToggle: noop,
+  onChecked: noop,
+  isChecked: false,
+  getDueBills: noop,
+  toggleBillDetailCheck: noop,
+  onBillDetailsClick: noop,
+  onTrueOnlineNavigatetoExtraPackage: noop,
+  defaultSelectedTab: 0,
+  getCurrentUsage: noop,
+  isOthers: false,
+  validateOTPStatus: false
+};
+&nbsp;
+TOnlineProductCard.propTypes = {
+  plan: Proptypes.string,
+  amount: Proptypes.number,
+  dueBills: Proptypes.array,
+  productDetail: Proptypes.object,
+  goToScreen: Proptypes.func,
+  statusCode: Proptypes.string,
+  onCollapseToggle: Proptypes.func,
+  isCollapsed: Proptypes.bool,
+  onChecked: Proptypes.func,
+  isChecked: Proptypes.bool,
+  getDueBills: Proptypes.func,
+  toggleBillDetailCheck: Proptypes.func,
+  onBillDetailsClick: Proptypes.func,
+  onTrueOnlineNavigatetoExtraPackage: Proptypes.func,
+  defaultSelectedTab: Proptypes.number,
+  getCurrentUsage: Proptypes.func,
+  isOthers: Proptypes.bool,
+  validateOTPStatus: Proptypes.bool
+};
+&nbsp;
+export default TOnlineProductCard;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../../../sorter.js"></script>
+</body>
+</html>

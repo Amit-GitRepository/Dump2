@@ -1,0 +1,14 @@
+var _OverlaySpinner=require('../OverlaySpinner.component');var _OverlaySpinner2=_interopRequireDefault(_OverlaySpinner);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('Overlay Spinner component',function(){
+it('should render spinner when showSpinner positive',function(){
+var progressBarTree=_reactTestRenderer2.default.create(_react2.default.createElement(_OverlaySpinner2.default,{showSpinner:1})).toJSON();
+expect(progressBarTree).toMatchSnapshot();
+});
+it('should render nothing when showSpinner positive',function(){
+var progressBarTree=_reactTestRenderer2.default.create(_react2.default.createElement(_OverlaySpinner2.default,{showSpinner:0})).toJSON();
+expect(progressBarTree).toMatchSnapshot();
+});
+});

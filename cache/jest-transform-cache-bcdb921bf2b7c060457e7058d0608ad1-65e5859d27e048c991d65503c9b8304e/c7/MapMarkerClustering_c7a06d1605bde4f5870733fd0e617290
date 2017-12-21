@@ -1,0 +1,200 @@
+Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _reactNativeMaps=require('react-native-maps');var _reactNativeMaps2=_interopRequireDefault(_reactNativeMaps);
+var _reactNativeDimension=require('react-native-dimension');
+var _ClusteredMarker=require('./ClusteredMarker');var _ClusteredMarker2=_interopRequireDefault(_ClusteredMarker);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}
+
+var height=(0,_reactNativeDimension.height)(100);
+var width=(0,_reactNativeDimension.width)(100);
+
+var divideBy=5;
+var clusterPercentageRange=0.14;
+var _root;var
+
+MapMarkerClustering=function(_Component){_inherits(MapMarkerClustering,_Component);
+
+function MapMarkerClustering(props){_classCallCheck(this,MapMarkerClustering);var _this=_possibleConstructorReturn(this,(MapMarkerClustering.__proto__||Object.getPrototypeOf(MapMarkerClustering)).call(this,
+props));
+_this.state={
+enableClustering:true,
+clusterColor:'',
+clusterTextColor:'',
+clusterBorderColor:'',
+clusterBorderWidth:0,
+numberOfMarkers:0,
+initDelta:0,
+region:props.region,
+markers:new Set(),
+markersOnMap:[],
+otherChildren:[],
+mapProps:null};return _this;
+
+}_createClass(MapMarkerClustering,[{key:'createMarkers',value:function createMarkers(
+
+propsData){var _this2=this;
+this.state.markers.clear();
+this.state.mapProps=propsData;
+this.state.initDelta=propsData.region.latitudeDelta;
+this.state.numberOfMarkers=0;
+this.state.otherChildren=[];
+
+if(propsData.children!==undefined){
+var size=propsData.children.length;
+
+if(size===undefined){
+
+if(propsData.children.props&&propsData.children.props.coordinate){
+this.state.markers.add({
+key:1,
+belly:new Set(),
+value:1,
+uid:1,
+props:propsData.children.props});
+
+this.state.numberOfMarkers=1;
+}else{
+this.state.otherChildren=propsData.children;
+}
+}else{
+var newArray=[];
+if(propsData.children){
+propsData.children.map(function(item){
+if(item){
+if(item.length===0||item.length===undefined){
+newArray.push(item);
+}else{
+item.map(function(child){
+newArray.push(child);
+});
+}
+}
+});}
+
+this.state.numberOfMarkers=size;
+markerKey=0;
+newArray.map(function(item){
+if(item.props&&item.props.coordinate&&!item.props.disableClustering){
+_this2.state.markers.add({
+key:markerKey,
+belly:new Set(),
+value:1,
+props:item.props});
+
+markerKey++;
+}else{
+_this2.state.otherChildren.push(item);
+}
+});
+}
+this.calculateCluster(1,this.state.initDelta*clusterPercentageRange);
+}
+}},{key:'componentWillReceiveProps',value:function componentWillReceiveProps(
+
+nextProps){
+this.state.onClusterPress=nextProps.onClusterPress;
+this.createMarkers(nextProps);
+}},{key:'componentWillMount',value:function componentWillMount()
+
+{
+this.createMarkers(this.props);
+}},{key:'onRegionChangeComplete',value:function onRegionChangeComplete(
+
+region){
+this.state.region=region;
+if(this.state.numberOfMarkers>1&&this.state.enableClustering){
+if(region.latitudeDelta-this.state.initDelta>this.state.initDelta/divideBy){
+this.state.initDelta=region.latitudeDelta;
+this.calculateCluster(1,region.latitudeDelta*clusterPercentageRange);
+}
+if(region.latitudeDelta-this.state.initDelta<-this.state.initDelta/divideBy){
+this.state.initDelta=region.latitudeDelta;
+this.calculateCluster(-1,region.latitudeDelta*clusterPercentageRange);
+}
+}
+}},{key:'calculateCluster',value:function calculateCluster(
+
+direction,clusterRange){var _this3=this;
+if(this.state.enableClustering){
+this.state.markers.forEach(function(marker){
+var belly=marker.belly;
+var y=marker.props.coordinate.latitude;
+var x=marker.props.coordinate.longitude;
+var id=marker.key;
+
+if(direction===1){
+_this3.state.markers.forEach(function(childMarker){
+var id2=childMarker.key;
+if(id!==id2){
+var y2=childMarker.props.coordinate.latitude;
+var x2=childMarker.props.coordinate.longitude;
+if(Math.abs(y-y2)<clusterRange&&Math.abs(x-x2)<clusterRange){
+belly.add(childMarker);
+marker.value+=childMarker.value;
+_this3.state.markers.delete(childMarker);
+}
+}
+});
+}else{
+belly.forEach(function(childMarker){
+var y2=childMarker.props.coordinate.latitude;
+var x2=childMarker.props.coordinate.longitude;
+if(Math.abs(y-y2)>clusterRange||Math.abs(x-x2)>clusterRange){
+belly.delete(childMarker);
+marker.value-=childMarker.value;
+_this3.state.markers.add(childMarker);
+}
+});
+}
+});
+if(direction===-1){
+this.calculateCluster(1,clusterRange);
+}else{
+this.state.markersOnMap=[];
+this.state.markers.forEach(function(marker){
+_this3.state.markersOnMap.push(_react2.default.createElement(_ClusteredMarker2.default,_extends({clusterColor:_this3.state.clusterColor},marker,{
+clusterTextColor:_this3.state.clusterTextColor,
+clusterBorderColor:_this3.state.clusterBorderColor,
+clusterBorderWidth:_this3.state.clusterBorderWidth,
+onClusterPress:_this3.state.onClusterPress,
+customClusterMarkerDesign:_this3.props.customClusterMarkerDesign}),
+marker.props.children));
+});
+}
+}else{
+this.state.markersOnMap=[];
+this.state.markers.forEach(function(marker){
+_this3.state.markersOnMap.push(_react2.default.createElement(_ClusteredMarker2.default,marker,marker.props.children));
+});
+}
+this.setState({markersOnMap:this.state.markersOnMap});
+}},{key:'render',value:function render()
+
+{var _this4=this;
+var clustering=this.props.clustering;
+if(clustering===false||clustering===true){
+this.state.enableClustering=clustering;
+}else{
+this.state.enableClustering=true;
+}
+
+this.state.clusterColor=this.props.clusterColor;
+this.state.clusterTextColor=this.props.clusterTextColor;
+this.state.clusterBorderColor=this.props.clusterBorderColor;
+this.state.clusterBorderWidth=this.props.clusterBorderWidth;
+
+return(
+_react2.default.createElement(_reactNativeMaps2.default,_extends({},this.state.mapProps,{
+region:this.state.region,
+ref:function ref(_ref){return _this4._root=_ref;},
+onRegionChangeComplete:function onRegionChangeComplete(region){
+_this4.onRegionChangeComplete(region);
+}}),
+this.state.markersOnMap,
+this.state.otherChildren));
+
+
+}}]);return MapMarkerClustering;}(_react.Component);exports.default=MapMarkerClustering;
+
+
+
+MapMarkerClustering.defaultProps={
+region:{}};

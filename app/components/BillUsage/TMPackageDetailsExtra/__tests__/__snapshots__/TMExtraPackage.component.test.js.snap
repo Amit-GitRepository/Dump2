@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TMExtraPackage component renders correctly 1`] = `
+<RCTScrollView
+  contentContainerStyle={
+    Object {
+      "paddingTop": 10,
+    }
+  }
+  style={
+    Object {
+      "marginTop": -10,
+    }
+  }
+>
+  <View />
+</RCTScrollView>
+`;

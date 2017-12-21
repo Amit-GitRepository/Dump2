@@ -1,0 +1,76 @@
+var _common=require('../common.util');
+
+describe('get selector: returns a selector function that selects a variable from the state',function(){
+var state={
+test:{
+abc:'def'}};
+
+
+it('Should select correct state variable when path is provided',function(){
+var selector=(0,_common.getSelector)('test.abc');
+expect(selector(state)).toBe('def');
+});
+
+it('Should return null id incorrect state variable path is provided',function(){
+var selector=(0,_common.getSelector)('test.abc.uvf');
+expect(selector(state)).toBe(null);
+});
+});
+
+describe('throwException: should throw error',function(){
+it('should throw the passed error',function(){
+var testError={message:'dummy'};
+expect(function(){
+(0,_common.throwException)(testError);
+}).toThrow(testError);
+});
+});
+
+describe('phoneNumberFormatter: should format phone number',function(){
+it('should return formatted phone number',function(){
+var phoneNumber=(0,_common.phoneNumberFormatter)('0123456789');
+expect((0,_common.phoneNumberFormatter)(phoneNumber)).toBe('012-345-6789');
+});
+it('should return formatted phone number',function(){
+var phoneNumber=(0,_common.phoneNumberFormatter)('012345678');
+expect((0,_common.phoneNumberFormatter)(phoneNumber)).toBe('012345678');
+});
+});
+
+describe('unformatPhoneNumber: should format phone number',function(){
+it('should return unformatted phone number',function(){
+var result=(0,_common.unformatPhoneNumber)('012-345-6789');
+expect(result).toBe('0123456789');
+});
+it('should return unformatted phone number',function(){
+var result=(0,_common.unformatPhoneNumber)('01234-5678');
+expect(result).toBe('012345678');
+});
+it('should return phone number as it',function(){
+var result=(0,_common.unformatPhoneNumber)('012345678');
+expect(result).toBe('012345678');
+});
+});
+
+describe('bytesToSize: should format data size with unit',function(){
+it('should return data in bytes if less than 1024 and no target unit',function(){
+var result=(0,_common.bytesToSize)(1011,'Bytes');
+expect(result).toEqual({value:'1011.00',unit:'Bytes'});
+});
+it('should return initial data in 1 MB when 1024 KB and no targetUnit',function(){
+var result=(0,_common.bytesToSize)(1024,'KB');
+expect(result).toEqual({value:'1.00',unit:'MB'});
+});
+it('should return initial data in KB when less than 1024 KB and target value in Bytes',function(){
+var result=(0,_common.bytesToSize)(500,'KB','Bytes');
+expect(result).toEqual({value:'512000.00',unit:'Bytes'});
+});
+it('should return data in KB when more than 1024 KB',function(){
+var result=(0,_common.bytesToSize)(1048576,'KB');
+expect(result).toEqual({value:'1.00',unit:'GB'});
+});
+it('should return data in TB',function(){
+var result=(0,_common.bytesToSize)(5368709120,'KB');
+expect(result).toEqual({value:'5.00',unit:'TB'});
+});
+});

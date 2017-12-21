@@ -1,0 +1,106 @@
+var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _api=require('../api/api.saga');var _api2=_interopRequireDefault(_api);
+var _paymentSaga=require('../payment.saga.js');var _paymentSaga2=_interopRequireDefault(_paymentSaga);
+var _reduxSagaTesting=require('redux-saga-testing');var _reduxSagaTesting2=_interopRequireDefault(_reduxSagaTesting);
+var _effects=require('redux-saga/effects');
+var _apiHelper=require('../api/apiHelper');
+var _common=require('../../../utils/common.util');
+var _reactNavigation=require('react-navigation');
+var _index=require('../../actions/index.actions');
+var _reactNative=require('../../../utils/reactNative.util');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+global.atob=function(){return'encryptedID';};
+
+describe('paymentSaga: should bind actions to sagas',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_paymentSaga2.default)());
+it(' should takeLatest SHOW_PAYMENT_METHODS',function(result){
+expect(result).toEqual((0,_effects.takeLatest)(_index.SHOW_PAYMENT_METHODS,_paymentSaga.showPaymentMethods));
+});
+it('should takeLatest PAY_EXISTING_CUSTOMER',function(result){
+expect(result).toEqual((0,_effects.takeLatest)(_index.PAY_EXISTING_CUSTOMER,_paymentSaga.payWithSavedCard));
+});
+it('should takeLatest PAY_NEW_CUSTOMER',function(result){
+expect(result).toEqual((0,_effects.takeLatest)(_index.PAY_NEW_CUSTOMER,_paymentSaga.payWithNewCard));
+});
+});
+
+describe('payWithSavedCard => success: should call payForExistingCustomer api',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_paymentSaga.payWithSavedCard)({payload:123}));
+it('should get ssoID from store',function(result){
+expect(result).toMatchSnapshot((0,_effects.select)((0,_common.getSelector)('user.profile.ssoID')));
+return'ssoID';
+});
+it('encrypt the ID and call api with payload',function(result){
+var expectedPayload={amount:123,ssoID:'encryptedID'};
+expect(result).toEqual((0,_effects.call)(_api2.default,(0,_apiHelper.payForExistingCustomer)(expectedPayload)));
+return{status:200,data:'success'};
+});
+it('should navigate to PaymentStatus page',function(result){
+var details={status:200,data:'success'};
+expect(result).toEqual((0,_effects.put)(_reactNavigation.NavigationActions.navigate({'routeName':'PaymentStatus',params:{details:details,status:'SUCCESS'}})));
+});
+});
+
+describe('payWithSavedCard => failure: should navigate to PaymentStatus page with failure param',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_paymentSaga.payWithSavedCard)({payload:123}));
+it('should get ssoID from store',function(){return'someSSOID';});
+it('encrypt the ID and call api with payload',function(){return new Error('API Failed');});
+it('should navigate to PaymentStatus page',function(result){
+var e='API Failed';
+expect(result).toEqual((0,_effects.put)(_reactNavigation.NavigationActions.navigate({'routeName':'PaymentStatus',params:{details:e,status:'FAIL'}})));
+});
+});
+
+describe('payWithNewCard => success: should tokenize and then call payForNewCustomer api',function(){
+var payload={amount:123,savePreference:true};
+var it=(0,_reduxSagaTesting2.default)((0,_paymentSaga.payWithNewCard)({payload:payload}));
+it('should get ssoID from store',function(result){
+expect(result).toMatchSnapshot((0,_effects.select)((0,_common.getSelector)('user.profile.ssoID')));
+return'ssoID';
+});
+it('should call tokeniseCard api with payload',function(result){
+expect(result).toEqual((0,_effects.call)(_api2.default,(0,_apiHelper.tokeniseCard)(payload)));
+return{status:200,body:{id:'token123'}};
+});
+it('should call payForNewCustomer api with the payload',function(result){
+var expectedPayload=_extends({},payload,{token:'token123',ssoID:'encryptedID'});
+expect(result).toEqual((0,_effects.call)(_api2.default,(0,_apiHelper.payForNewCustomer)(expectedPayload)));
+return{status:200,data:'success'};
+});
+it('should navigate to PaymentStatus page',function(result){
+var details={status:200,data:'success'};
+expect(result).toEqual((0,_effects.put)(_reactNavigation.NavigationActions.navigate({'routeName':'PaymentStatus',params:{details:details,status:'SUCCESS'}})));
+});
+});
+
+describe('payWithNewCard => failure: should navigate to PaymentStatus page with failure param',function(){
+var payload={amount:123,savePreference:true};
+var it=(0,_reduxSagaTesting2.default)((0,_paymentSaga.payWithNewCard)({payload:payload}));
+it('should get ssoID from store',function(){return'someSSOID';});
+it('should call tokeniseCard api with payload',function(){return new Error('API Failed');});
+it('should navigate to PaymentStatus page',function(result){
+var e='API Failed';
+expect(result).toEqual((0,_effects.put)(_reactNavigation.NavigationActions.navigate({'routeName':'PaymentStatus',params:{details:e,status:'FAIL'}})));
+});
+});
+
+describe('showPaymentMethods => success: should show possible payment methods',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_paymentSaga.showPaymentMethods)({payload:123}));
+it('should get ssoID from store',function(result){
+expect(result).toMatchSnapshot((0,_effects.select)((0,_common.getSelector)('user.profile.ssoID')));
+return'ssoID';
+});
+it('Should call getDefaultCard api to show default credit card',function(result){
+expect(result).toEqual((0,_effects.call)(_api2.default,(0,_apiHelper.getDefaultCard)('encryptedID')));
+});
+});
+describe('showPaymentMethods => failure: should show toast with message',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_paymentSaga.showPaymentMethods)({payload:123}));
+it('should get ssoID from store',function(result){
+expect(result).toMatchSnapshot((0,_effects.select)((0,_common.getSelector)('user.profile.ssoID')));
+return'ssoID';
+});
+it('Should call getDefaultCard api to show default credit card',function(){return new Error('API failed');});
+it('should call Toast if api fails',function(result){
+expect(result).toEqual((0,_effects.call)(_reactNative.Toast.show,'Unable to get saved cards',_reactNative.Toast.SHORT));
+});
+});

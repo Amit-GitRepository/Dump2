@@ -1,0 +1,53 @@
+var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _constants=require('../../../themes/constants.styles');
+var _enzyme=require('enzyme');
+var _route=require('../route.helper');
+var _application=require('../../../themes/application.styles');
+var _Shared=require('../../../components/Shared');
+var _helper=require('../../../language/i18n/helper');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+describe('Route Helper',function(){
+it('should generate hamburger icon component',function(){
+var wrapper=(0,_enzyme.shallow)((0,_route.generateDrawerHamburger)({},'test'));
+var inst=wrapper.instance();
+expect(inst).toBeInstanceOf(_Shared.Touchable);
+});
+it('should find route title from route in section',function(){
+var current={
+navigation:{
+state:{
+routeName:'StoreLocator'}}};
+
+
+
+var titleKey='SIDE_MENU__TRUE_SHOP';
+var navOptions=(0,_route.getStackNavOption)(current);
+expect(navOptions.title).toEqual((0,_helper.translate)(titleKey));
+});
+it('should calculate stack navigationOptions',function(){
+var current={
+navigation:{
+state:{
+routeName:'StoreLocator'}}};
+
+
+
+var titleKey='SIDE_MENU__TRUE_SHOP';
+var navOption={
+headerStyle:_extends({
+paddingHorizontal:10,
+backgroundColor:_constants.colors.PRIMARY_BG_SEPARATOR},_application.shadowActiveStyle),
+
+
+headerLeft:(0,_route.generateDrawerHamburger)(current,'menu'),
+title:(0,_helper.translate)(titleKey)};
+
+var receivedVal=(0,_route.getStackNavOption)(current);
+expect(receivedVal.headerStyle).toEqual(navOption.headerStyle);
+expect(receivedVal.title).toEqual(navOption.title);
+expect((0,_enzyme.shallow)(receivedVal.headerLeft).instance()).toBeInstanceOf(_Shared.Touchable);
+});
+
+});

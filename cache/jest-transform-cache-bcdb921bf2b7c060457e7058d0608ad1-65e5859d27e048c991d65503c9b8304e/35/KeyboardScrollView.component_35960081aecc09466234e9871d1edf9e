@@ -1,0 +1,22 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1qaly1sa1j=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/KeyboardScollView/KeyboardScrollView.component.js',hash='5aaf5cc01e22eecbb71eebabe91ed60091e056c9',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/KeyboardScollView/KeyboardScrollView.component.js',statementMap:{'0':{start:{line:7,column:38},end:{line:7,column:48}},'1':{start:{line:8,column:4},end:{line:10,column:6}},'2':{start:{line:14,column:0},end:{line:16,column:2}},'3':{start:{line:18,column:0},end:{line:20,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:6,column:2},end:{line:6,column:3}},loc:{start:{line:6,column:12},end:{line:11,column:3}},line:6}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0},f:{'0':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _reactNativeKeyboardAwareScrollView=require('react-native-keyboard-aware-scroll-view');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _objectWithoutProperties(obj,keys){var target={};for(var i in obj){if(keys.indexOf(i)>=0)continue;if(!Object.prototype.hasOwnProperty.call(obj,i))continue;target[i]=obj[i];}return target;}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+KeyboardScrollView=function(_Component){_inherits(KeyboardScrollView,_Component);function KeyboardScrollView(){_classCallCheck(this,KeyboardScrollView);return _possibleConstructorReturn(this,(KeyboardScrollView.__proto__||Object.getPrototypeOf(KeyboardScrollView)).apply(this,arguments));}_createClass(KeyboardScrollView,[{key:'render',value:function render()
+{cov_1qaly1sa1j.f[0]++;var _ref=(cov_1qaly1sa1j.s[0]++,
+this.props),children=_ref.children,extraProps=_objectWithoutProperties(_ref,['children']);cov_1qaly1sa1j.s[1]++;
+return(
+_react2.default.createElement(_reactNativeKeyboardAwareScrollView.KeyboardAwareScrollView,_extends({overScrollMode:'auto'},extraProps),children));
+
+}}]);return KeyboardScrollView;}(_react.Component);cov_1qaly1sa1j.s[2]++;
+
+
+KeyboardScrollView.defaultProps={
+children:null};cov_1qaly1sa1j.s[3]++;
+
+
+KeyboardScrollView.propTypes={
+children:_propTypes2.default.node};exports.default=
+
+
+KeyboardScrollView;

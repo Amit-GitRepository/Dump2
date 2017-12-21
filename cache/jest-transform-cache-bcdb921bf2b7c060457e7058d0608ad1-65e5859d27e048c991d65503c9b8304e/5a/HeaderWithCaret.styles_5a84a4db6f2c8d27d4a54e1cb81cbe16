@@ -1,0 +1,6 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_2o1364wi5g=function(){var path="/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/HeaderWithCaret.styles.js",hash="fb7646488b272eb67c9880635df1aad2d6ac84eb",global=new Function('return this')(),gcv="__coverage__",coverageData={path:"/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/HeaderWithCaret.styles.js",statementMap:{},fnMap:{},branchMap:{},s:{},f:{},b:{},_coverageSchema:"332fd63041d2c1bcb487cc26dd0d5f7d97098a6c"},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();exports.default=
+{
+wrapper:{
+padding:10,
+borderTopLeftRadius:10,
+borderTopRightRadius:10}};

@@ -1,0 +1,42 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_17lr77epkx=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/NavFooter/NavFooter.component.js',hash='e480d509181ddfe776f638857383dd7da4724d36',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/NavFooter/NavFooter.component.js',statementMap:{'0':{start:{line:9,column:40},end:{line:9,column:50}},'1':{start:{line:10,column:25},end:{line:22,column:6}},'2':{start:{line:23,column:4},end:{line:26,column:7}},'3':{start:{line:24,column:6},end:{line:24,column:70}},'4':{start:{line:25,column:6},end:{line:25,column:24}},'5':{start:{line:27,column:4},end:{line:33,column:6}},'6':{start:{line:30,column:44},end:{line:30,column:153}},'7':{start:{line:37,column:0},end:{line:40,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:8,column:2},end:{line:8,column:3}},loc:{start:{line:8,column:12},end:{line:34,column:3}},line:8},'1':{name:'(anonymous_1)',decl:{start:{line:23,column:25},end:{line:23,column:26}},loc:{start:{line:23,column:41},end:{line:26,column:5}},line:23},'2':{name:'(anonymous_2)',decl:{start:{line:30,column:27},end:{line:30,column:28}},loc:{start:{line:30,column:44},end:{line:30,column:153}},line:30}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0},f:{'0':0,'1':0,'2':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _NavFooterItem=require('./NavFooterItem.component');var _NavFooterItem2=_interopRequireDefault(_NavFooterItem);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _NavFooter=require('./NavFooter.style');var _NavFooter2=_interopRequireDefault(_NavFooter);
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+NavFooter=function(_Component){_inherits(NavFooter,_Component);function NavFooter(){_classCallCheck(this,NavFooter);return _possibleConstructorReturn(this,(NavFooter.__proto__||Object.getPrototypeOf(NavFooter)).apply(this,arguments));}_createClass(NavFooter,[{key:'render',value:function render()
+{cov_17lr77epkx.f[0]++;var _ref=(cov_17lr77epkx.s[0]++,
+this.props),currentScreen=_ref.currentScreen,goToScreen=_ref.goToScreen;
+var footerConfig=(cov_17lr77epkx.s[1]++,[{
+icon:'bills-and-usage',
+title:'SIDE_MENU__BILLS_USAGE',
+screen:'BillUsage'},
+{
+icon:'buy-extra',
+title:'SIDE_MENU__BUY_EXTRA_PACKAGE',
+screen:'BuyExtra'},
+{
+icon:'true-chat',
+title:'SIDE_MENU__CHAT',
+screen:'TrueChat'}]);cov_17lr77epkx.s[2]++;
+
+footerConfig.forEach(function(footerItem){cov_17lr77epkx.f[1]++;cov_17lr77epkx.s[3]++;
+footerItem.isActiveScreen=currentScreen===footerItem.screen;cov_17lr77epkx.s[4]++;
+return footerItem;
+});cov_17lr77epkx.s[5]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:_NavFooter2.default.container,elevation:5},
+
+footerConfig.map(function(item,index){cov_17lr77epkx.f[2]++;cov_17lr77epkx.s[6]++;return _react2.default.createElement(_NavFooterItem2.default,_extends({key:index},item,{goToScreen:goToScreen,isLastItem:index===footerConfig.length-1}));})));
+
+
+
+}}]);return NavFooter;}(_react.Component);cov_17lr77epkx.s[7]++;
+
+
+NavFooter.propTypes={
+goToScreen:_propTypes2.default.func,
+currentScreen:_propTypes2.default.string};exports.default=
+
+
+NavFooter;

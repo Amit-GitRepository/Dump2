@@ -1,0 +1,46 @@
+var _msisdn=require('../msisdn.util');
+
+describe('isValidMSISDN',function(){
+
+it('should return false in msisdn is null',function(){
+var result=(0,_msisdn.isValidMSISDN)(null);
+expect(result).toEqual(false);
+});
+
+it('should return false in msisdn does not match msisdn criteria',function(){
+var lessNumberOfDigitsMSISDN='92611283';
+var result=(0,_msisdn.isValidMSISDN)(lessNumberOfDigitsMSISDN);
+expect(result).toEqual(false);
+});
+
+it('should return true if MSISDN matches MSISDN criteria',function(){
+var correctMSISDN='66922611283';
+var result=(0,_msisdn.isValidMSISDN)(correctMSISDN);
+expect(result).toEqual(true);
+});
+
+it('should return false in MSISDN does not match MSISDN criteria',function(){
+var reandomString='random string with large characters';
+var result=(0,_msisdn.isValidMSISDN)(reandomString);
+expect(result).toEqual(false);
+});
+
+it('should return false in MSISDN does not matches MSISDN criteria',function(){
+var invalidMSISDN='+66922611283';
+var result=(0,_msisdn.isValidMSISDN)(invalidMSISDN);
+expect(result).toEqual(false);
+});
+
+it('should return false in MSISDN does not matches MSISDN criteria',function(){
+var invalidMSISDN='0066922611283';
+var result=(0,_msisdn.isValidMSISDN)(invalidMSISDN);
+expect(result).toEqual(false);
+});
+
+it('should return false in MSISDN does not contain all digits',function(){
+var invalidMSISDN='6692261128r';
+var result=(0,_msisdn.isValidMSISDN)(invalidMSISDN);
+expect(result).toEqual(false);
+});
+
+});

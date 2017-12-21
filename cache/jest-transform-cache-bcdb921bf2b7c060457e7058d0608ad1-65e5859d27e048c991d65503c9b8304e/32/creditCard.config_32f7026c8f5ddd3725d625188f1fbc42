@@ -1,0 +1,10 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1k894bmyx7=function(){var path="/Users/amitkumar/iTrueService/DevCode/iservice-app/app/config/creditCard.config.js",hash="6b26fb3d2c32bd1732ed63b0900da41c5ac281da",global=new Function('return this')(),gcv="__coverage__",coverageData={path:"/Users/amitkumar/iTrueService/DevCode/iservice-app/app/config/creditCard.config.js",statementMap:{"0":{start:{line:1,column:19},end:{line:8,column:1}}},fnMap:{},branchMap:{},s:{"0":0},f:{},b:{},_coverageSchema:"332fd63041d2c1bcb487cc26dd0d5f7d97098a6c"},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var creditCard=(cov_1k894bmyx7.s[0]++,{
+maxLength:{
+cardNo:19,
+cvv:4,
+name:26,
+date:7}});exports.default=
+
+
+
+creditCard;

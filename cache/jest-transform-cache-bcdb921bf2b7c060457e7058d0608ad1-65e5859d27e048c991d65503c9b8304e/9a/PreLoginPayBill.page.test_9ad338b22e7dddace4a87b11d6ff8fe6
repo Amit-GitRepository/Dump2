@@ -1,0 +1,55 @@
+var _store=require('../../../redux/store');var _store2=_interopRequireDefault(_store);
+var _PreLoginPayBill=require('../PreLoginPayBill.page');var _PreLoginPayBill2=_interopRequireDefault(_PreLoginPayBill);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _enzyme=require('enzyme');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+var store=(0,_store2.default)();
+var dispatch=jest.fn();
+
+describe('PreLoginPayBillPage',function(){
+it('renders ',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_PreLoginPayBill2.default,{store:store}));
+expect(wrapper).toBeDefined();
+});
+});
+
+describe('PreLoginPayBillPage: mapStateToProps',function(){
+var props=(0,_PreLoginPayBill.mapStateToProps)(store.getState());
+it('username prop to be defined',function(){
+expect(props.username).toBeDefined();
+});
+it('productList prop to be defined',function(){
+expect(props.productList).toBeDefined();
+});
+it('productDetail prop to be defined',function(){
+expect(props.productDetail).toBeDefined();
+});
+it('billDetail prop to be defined',function(){
+expect(props.billDetail).toBeDefined();
+});
+});
+
+describe('PreLoginPayBillPage: mapDispatchToProps',function(){
+var props=(0,_PreLoginPayBill.mapDispatchToProps)(dispatch);
+it('goToScreen prop to be defined',function(){
+expect(props.goToScreen).toBeDefined();
+});
+it('getProduct prop to be defined',function(){
+expect(props.getProduct).toBeDefined();
+});
+it('getProductBillDetails prop to be defined',function(){
+expect(props.getProductBillDetails).toBeDefined();
+});
+it('toggleProductCheck prop to be defined',function(){
+expect(props.toggleProductCheck).toBeDefined();
+});
+it('toggleProductCollapse prop to be defined',function(){
+expect(props.toggleProductCollapse).toBeDefined();
+});
+it('setPaymentItems prop to be defined',function(){
+expect(props.setPaymentItems).toBeDefined();
+});
+});

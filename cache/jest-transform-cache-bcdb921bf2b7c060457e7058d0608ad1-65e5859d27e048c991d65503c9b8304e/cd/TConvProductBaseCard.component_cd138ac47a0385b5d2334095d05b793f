@@ -1,0 +1,103 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_2mv9qdfdpg=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/CurrentUsageTConv/TConvProductBaseCard.component.js',hash='120d462f5887c1fd05c4ca2917b19bc006d333d3',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/CurrentUsageTConv/TConvProductBaseCard.component.js',statementMap:{'0':{start:{line:13,column:23},end:{line:32,column:1}},'1':{start:{line:14,column:18},end:{line:30,column:3}},'2':{start:{line:31,column:2},end:{line:31,column:29}},'3':{start:{line:34,column:31},end:{line:55,column:1}},'4':{start:{line:35,column:25},end:{line:35,column:56}},'5':{start:{line:36,column:19},end:{line:36,column:21}},'6':{start:{line:38,column:2},end:{line:50,column:3}},'7':{start:{line:40,column:4},end:{line:40,column:36}},'8':{start:{line:41,column:4},end:{line:41,column:10}},'9':{start:{line:43,column:4},end:{line:43,column:55}},'10':{start:{line:44,column:4},end:{line:44,column:52}},'11':{start:{line:45,column:4},end:{line:45,column:10}},'12':{start:{line:47,column:4},end:{line:47,column:52}},'13':{start:{line:48,column:4},end:{line:48,column:10}},'14':{start:{line:51,column:2},end:{line:54,column:4}},'15':{start:{line:57,column:23},end:{line:57,column:65}},'16':{start:{line:66,column:58},end:{line:66,column:68}},'17':{start:{line:67,column:62},end:{line:67,column:69}},'18':{start:{line:68,column:53},end:{line:68,column:91}},'19':{start:{line:69,column:43},end:{line:69,column:91}},'20':{start:{line:70,column:28},end:{line:70,column:74}},'21':{start:{line:71,column:23},end:{line:71,column:105}},'22':{start:{line:72,column:4},end:{line:87,column:15}},'23':{start:{line:91,column:0},end:{line:95,column:2}},'24':{start:{line:97,column:0},end:{line:102,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:13,column:23},end:{line:13,column:24}},loc:{start:{line:13,column:44},end:{line:32,column:1}},line:13},'1':{name:'(anonymous_1)',decl:{start:{line:34,column:31},end:{line:34,column:32}},loc:{start:{line:34,column:61},end:{line:55,column:1}},line:34},'2':{name:'(anonymous_2)',decl:{start:{line:65,column:2},end:{line:65,column:3}},loc:{start:{line:65,column:12},end:{line:88,column:3}},line:65}},branchMap:{'0':{loc:{start:{line:31,column:9},end:{line:31,column:28}},type:'binary-expr',locations:[{start:{line:31,column:9},end:{line:31,column:22}},{start:{line:31,column:26},end:{line:31,column:28}}],line:31},'1':{loc:{start:{line:38,column:2},end:{line:50,column:3}},type:'switch',locations:[{start:{line:39,column:2},end:{line:42,column:3}},{start:{line:42,column:4},end:{line:46,column:3}},{start:{line:46,column:4},end:{line:49,column:3}}],line:38},'2':{loc:{start:{line:71,column:23},end:{line:71,column:105}},type:'cond-expr',locations:[{start:{line:71,column:38},end:{line:71,column:85}},{start:{line:71,column:88},end:{line:71,column:105}}],line:71},'3':{loc:{start:{line:73,column:54},end:{line:73,column:89}},type:'binary-expr',locations:[{start:{line:73,column:54},end:{line:73,column:66}},{start:{line:73,column:70},end:{line:73,column:89}}],line:73},'4':{loc:{start:{line:75,column:45},end:{line:75,column:87}},type:'binary-expr',locations:[{start:{line:75,column:45},end:{line:75,column:56}},{start:{line:75,column:60},end:{line:75,column:67}},{start:{line:75,column:71},end:{line:75,column:87}}],line:75},'5':{loc:{start:{line:76,column:13},end:{line:76,column:100}},type:'cond-expr',locations:[{start:{line:76,column:26},end:{line:76,column:93}},{start:{line:76,column:96},end:{line:76,column:100}}],line:76}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0,'19':0,'20':0,'21':0,'22':0,'23':0,'24':0},f:{'0':0,'1':0,'2':0},b:{'0':[0,0],'1':[0,0,0],'2':[0,0],'3':[0,0],'4':[0,0,0],'5':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _reactNativeCollapsible=require('react-native-collapsible');var _reactNativeCollapsible2=_interopRequireDefault(_reactNativeCollapsible);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _TConvProductBaseCard=require('./TConvProductBaseCard.style');var _TConvProductBaseCard2=_interopRequireDefault(_TConvProductBaseCard);
+var _constants=require('../../../../../themes/constants.styles');
+var _Shared=require('../../../../Shared');
+var _lodash=require('lodash');
+var _common=require('../../../../../utils/common.util');
+var _helper=require('../../../../../language/i18n/helper');
+var _reactNative=require('react-native');
+var _reactNativeAnimatable=require('react-native-animatable');var Animatable=_interopRequireWildcard(_reactNativeAnimatable);function _interopRequireWildcard(obj){if(obj&&obj.__esModule){return obj;}else{var newObj={};if(obj!=null){for(var key in obj){if(Object.prototype.hasOwnProperty.call(obj,key))newObj[key]=obj[key];}}newObj.default=obj;return newObj;}}function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}cov_2mv9qdfdpg.s[0]++;
+
+var getTypeDetails=function getTypeDetails(type,productId){cov_2mv9qdfdpg.f[0]++;
+var typeMap=(cov_2mv9qdfdpg.s[1]++,{
+TrueMoveH:{
+sectionColor:_constants.colors.SECONDARY_TMOVE,
+titleText:(0,_common.phoneNumberFormatter)(productId),
+titleDescText:(0,_helper.translate)('BILLS_USAGE_TRUEMOVE')},
+
+TrueOnline:{
+sectionColor:_constants.colors.SECONDARY_TONLINE,
+titleText:productId,
+titleDescText:(0,_helper.translate)('BILLS_USAGE_TRUEONLINE')},
+
+TrueVision:{
+sectionColor:_constants.colors.SECONDARY_TVISION,
+titleText:productId,
+titleDescText:(0,_helper.translate)('BILLS_USAGE_TRUEVISIONS')}});cov_2mv9qdfdpg.s[2]++;
+
+
+return(cov_2mv9qdfdpg.b[0][0]++,typeMap[type])||(cov_2mv9qdfdpg.b[0][1]++,{});
+};cov_2mv9qdfdpg.s[3]++;
+
+var getStatusTextAndColors=function getStatusTextAndColors(statusCode,sectionColor){cov_2mv9qdfdpg.f[1]++;
+var iconSectionColor=(cov_2mv9qdfdpg.s[4]++,_constants.colors.PRIMARY_DISABLED_BG_TEXT);
+var statusText=(cov_2mv9qdfdpg.s[5]++,'');cov_2mv9qdfdpg.s[6]++;
+
+switch(statusCode){
+case'ACTIVE':cov_2mv9qdfdpg.b[1][0]++;{cov_2mv9qdfdpg.s[7]++;
+iconSectionColor=sectionColor;cov_2mv9qdfdpg.s[8]++;
+break;
+}case'SUSPEND':cov_2mv9qdfdpg.b[1][1]++;{cov_2mv9qdfdpg.s[9]++;
+iconSectionColor=_constants.colors.PRIMARY_DISABLED_BG_TEXT;cov_2mv9qdfdpg.s[10]++;
+statusText=(0,_helper.translate)('BILLS_USAGE_SUSPENDED');cov_2mv9qdfdpg.s[11]++;
+break;
+}case'CANCEL':cov_2mv9qdfdpg.b[1][2]++;{cov_2mv9qdfdpg.s[12]++;
+statusText=(0,_helper.translate)('BILLS_USAGE_CANCELLED');cov_2mv9qdfdpg.s[13]++;
+break;
+}}cov_2mv9qdfdpg.s[14]++;
+
+return{
+iconSectionColor:iconSectionColor,
+statusText:statusText};
+
+};
+
+var AnimatableIcon=(cov_2mv9qdfdpg.s[15]++,Animatable.createAnimatableComponent(_Shared.Icon));var
+
+TConvProductBaseCard=function(_Component){_inherits(TConvProductBaseCard,_Component);function TConvProductBaseCard(){var _ref;var _temp,_this,_ret;_classCallCheck(this,TConvProductBaseCard);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=TConvProductBaseCard.__proto__||Object.getPrototypeOf(TConvProductBaseCard)).call.apply(_ref,[this].concat(args))),_this),_this.
+
+state={
+isCollapsed:true},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(TConvProductBaseCard,[{key:'render',value:function render()
+
+
+{cov_2mv9qdfdpg.f[2]++;var _ref2=(cov_2mv9qdfdpg.s[16]++,
+this.props),children=_ref2.children,product=_ref2.product,onCollapseToggle=_ref2.onCollapseToggle,isLast=_ref2.isLast;var _ref3=(cov_2mv9qdfdpg.s[17]++,
+product),productId=_ref3.productId,productType=_ref3.productType,statusCode=_ref3.statusCode,isCollapsed=_ref3.isCollapsed;var _ref4=(cov_2mv9qdfdpg.s[18]++,
+getTypeDetails(productType,productId)),sectionColor=_ref4.sectionColor,titleText=_ref4.titleText,titleDescText=_ref4.titleDescText;var _ref5=(cov_2mv9qdfdpg.s[19]++,
+getStatusTextAndColors(statusCode,sectionColor)),statusText=_ref5.statusText,iconSectionColor=_ref5.iconSectionColor;
+var leftDetailStyle=(cov_2mv9qdfdpg.s[20]++,[_TConvProductBaseCard2.default.detailText,{color:iconSectionColor}]);
+var arrowStyle=(cov_2mv9qdfdpg.s[21]++,!isCollapsed?(cov_2mv9qdfdpg.b[2][0]++,[_TConvProductBaseCard2.default.collapsedArrowStyle,_TConvProductBaseCard2.default.arrowStyle]):(cov_2mv9qdfdpg.b[2][1]++,_TConvProductBaseCard2.default.arrowStyle));cov_2mv9qdfdpg.s[22]++;
+return(
+_react2.default.createElement(_reactNative.View,{key:productId,style:[_TConvProductBaseCard2.default.container,(cov_2mv9qdfdpg.b[3][0]++,!isCollapsed)&&(cov_2mv9qdfdpg.b[3][1]++,_TConvProductBaseCard2.default.activeShadow)]},
+_react2.default.createElement(_Shared.Touchable,{onPress:onCollapseToggle},
+_react2.default.createElement(_reactNative.View,{style:[_TConvProductBaseCard2.default.subContainer,(cov_2mv9qdfdpg.b[4][0]++,isCollapsed)&&(cov_2mv9qdfdpg.b[4][1]++,!isLast)&&(cov_2mv9qdfdpg.b[4][2]++,_TConvProductBaseCard2.default.separator)]},
+statusText?(cov_2mv9qdfdpg.b[5][0]++,_react2.default.createElement(_Shared.ISText,{style:_TConvProductBaseCard2.default.statusText,type:'BOLD'},statusText)):(cov_2mv9qdfdpg.b[5][1]++,null),
+_react2.default.createElement(_reactNative.View,{style:{flexGrow:1,flexDirection:'row',justifyContent:'space-between'}},
+_react2.default.createElement(_Shared.ISText,{style:_TConvProductBaseCard2.default.leftTitleText,type:'BOLD'},titleText),
+_react2.default.createElement(AnimatableIcon,{name:'chevron-down',style:arrowStyle,transition:'rotate',useNativeDriver:true})),
+
+_react2.default.createElement(_Shared.ISText,{style:leftDetailStyle,type:'BOLD'},titleDescText))),
+
+
+_react2.default.createElement(_reactNativeCollapsible2.default,{style:_TConvProductBaseCard2.default.childContainer,collapsed:isCollapsed},
+children)));
+
+
+}}]);return TConvProductBaseCard;}(_react.Component);cov_2mv9qdfdpg.s[23]++;
+
+
+TConvProductBaseCard.defaultProps={
+product:{},
+onCollapseToggle:_lodash.noop,
+isLast:false};cov_2mv9qdfdpg.s[24]++;
+
+
+TConvProductBaseCard.propTypes={
+isLast:_propTypes2.default.bool,
+product:_propTypes2.default.object,
+children:_propTypes2.default.node,
+onCollapseToggle:_propTypes2.default.func};exports.default=
+
+TConvProductBaseCard;

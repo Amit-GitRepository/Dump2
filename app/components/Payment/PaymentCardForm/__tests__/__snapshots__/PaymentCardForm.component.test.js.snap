@@ -1,0 +1,600 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaymentCardForm component renders correctly 1`] = `
+<View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "backgroundColor": "transparent",
+          "color": "#303C46",
+          "fontFamily": "SukhumvitSet-SemiBold",
+          "fontSize": 16,
+          "paddingVertical": 10,
+        }
+      }
+    >
+      Credit card number
+    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "testUri": "../../../app/assets/visa.png",
+          }
+        }
+        style={
+          Object {
+            "marginHorizontal": 5,
+          }
+        }
+      />
+      <Image
+        source={
+          Object {
+            "testUri": "../../../app/assets/mastercard.png",
+          }
+        }
+        style={
+          Object {
+            "marginHorizontal": 5,
+          }
+        }
+      />
+      <Image
+        source={
+          Object {
+            "testUri": "../../../app/assets/jcb.png",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "marginHorizontal": 5,
+            },
+            Object {
+              "bottom": 1,
+              "marginLeft": -5,
+            },
+          ]
+        }
+      />
+    </View>
+  </View>
+  <View
+    accessibilityLabel={undefined}
+    style={
+      Array [
+        Object {
+          "alignSelf": "stretch",
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#605E71",
+          "borderRadius": 4,
+          "borderWidth": 2,
+          "flexDirection": "row",
+        },
+        Object {
+          "borderColor": "#B9C1C9",
+          "borderWidth": 1,
+        },
+        Object {},
+      ]
+    }
+    testID={undefined}
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={false}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": undefined,
+            "fontSize": 35,
+          },
+          Object {
+            "alignSelf": "center",
+            "backgroundColor": "transparent",
+            "color": "#B9C1C9",
+            "padding": 5,
+          },
+          Object {
+            "fontFamily": "iservice",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+        ]
+      }
+    >
+      
+    </Text>
+    <TextInput
+      allowFontScaling={true}
+      defaultValue={undefined}
+      keyboardType="numeric"
+      maxLength={19}
+      onChangeText={undefined}
+      placeholder="Card Number"
+      placeholderTextColor="#B9C1C9"
+      style={
+        Array [
+          Object {
+            "alignSelf": "stretch",
+            "borderRadius": 4,
+            "flex": 1,
+            "fontSize": 16,
+            "paddingHorizontal": 0,
+            "paddingVertical": 10,
+          },
+          Object {},
+        ]
+      }
+      underlineColorAndroid="transparent"
+    />
+  </View>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "color": "#303C46",
+        "fontFamily": "SukhumvitSet-SemiBold",
+        "fontSize": 16,
+        "paddingVertical": 10,
+      }
+    }
+  >
+    Name on the card
+  </Text>
+  <View
+    accessibilityLabel={undefined}
+    style={
+      Array [
+        Object {
+          "alignSelf": "stretch",
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#605E71",
+          "borderRadius": 4,
+          "borderWidth": 2,
+          "flexDirection": "row",
+        },
+        Object {
+          "borderColor": "#B9C1C9",
+          "borderWidth": 1,
+        },
+        Object {},
+      ]
+    }
+    testID={undefined}
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={false}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": undefined,
+            "fontSize": 35,
+          },
+          Object {
+            "alignSelf": "center",
+            "backgroundColor": "transparent",
+            "color": "#B9C1C9",
+            "padding": 5,
+          },
+          Object {
+            "fontFamily": "iservice",
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+          },
+        ]
+      }
+    >
+      
+    </Text>
+    <TextInput
+      allowFontScaling={true}
+      defaultValue={undefined}
+      maxLength={26}
+      onChangeText={undefined}
+      placeholder="Cardholder Name"
+      placeholderTextColor="#B9C1C9"
+      style={
+        Array [
+          Object {
+            "alignSelf": "stretch",
+            "borderRadius": 4,
+            "flex": 1,
+            "fontSize": 16,
+            "paddingHorizontal": 0,
+            "paddingVertical": 10,
+          },
+          Object {},
+        ]
+      }
+      underlineColorAndroid="transparent"
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 1,
+          "paddingRight": 10,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#303C46",
+            "fontFamily": "SukhumvitSet-SemiBold",
+            "fontSize": 16,
+            "paddingVertical": 10,
+          }
+        }
+      >
+        Expiry date
+      </Text>
+      <View
+        accessibilityLabel={undefined}
+        style={
+          Array [
+            Object {
+              "alignSelf": "stretch",
+              "backgroundColor": "#FFFFFF",
+              "borderColor": "#605E71",
+              "borderRadius": 4,
+              "borderWidth": 2,
+              "flexDirection": "row",
+            },
+            Object {
+              "borderColor": "#B9C1C9",
+              "borderWidth": 1,
+            },
+            Object {},
+          ]
+        }
+        testID={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 35,
+              },
+              Object {
+                "alignSelf": "center",
+                "backgroundColor": "transparent",
+                "color": "#B9C1C9",
+                "padding": 5,
+              },
+              Object {
+                "fontFamily": "iservice",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }
+        >
+          
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          defaultValue={undefined}
+          maxLength={7}
+          onChangeText={undefined}
+          placeholder="Date (MM/YYYY)"
+          placeholderTextColor="#B9C1C9"
+          style={
+            Array [
+              Object {
+                "alignSelf": "stretch",
+                "borderRadius": 4,
+                "flex": 1,
+                "fontSize": 16,
+                "paddingHorizontal": 0,
+                "paddingVertical": 10,
+              },
+              Object {},
+            ]
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 1,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#303C46",
+            "fontFamily": "SukhumvitSet-SemiBold",
+            "fontSize": 16,
+            "paddingVertical": 10,
+          }
+        }
+      >
+        Security code
+      </Text>
+      <View
+        accessibilityLabel={undefined}
+        style={
+          Array [
+            Object {
+              "alignSelf": "stretch",
+              "backgroundColor": "#FFFFFF",
+              "borderColor": "#605E71",
+              "borderRadius": 4,
+              "borderWidth": 2,
+              "flexDirection": "row",
+            },
+            Object {
+              "borderColor": "#B9C1C9",
+              "borderWidth": 1,
+            },
+            Object {
+              "flex": 1,
+            },
+          ]
+        }
+        testID={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={false}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "color": undefined,
+                "fontSize": 35,
+              },
+              Object {
+                "alignSelf": "center",
+                "backgroundColor": "transparent",
+                "color": "#B9C1C9",
+                "padding": 5,
+              },
+              Object {
+                "fontFamily": "iservice",
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+              },
+            ]
+          }
+        >
+          
+        </Text>
+        <TextInput
+          allowFontScaling={true}
+          defaultValue={undefined}
+          keyboardType="numeric"
+          maxLength={4}
+          onChangeText={undefined}
+          placeholder="Security Code"
+          placeholderTextColor="#B9C1C9"
+          secureTextEntry={true}
+          style={
+            Array [
+              Object {
+                "alignSelf": "stretch",
+                "borderRadius": 4,
+                "flex": 1,
+                "fontSize": 16,
+                "paddingHorizontal": 0,
+                "paddingVertical": 10,
+              },
+              Object {},
+            ]
+          }
+          underlineColorAndroid="transparent"
+        />
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "flexGrow": 0,
+      }
+    }
+  >
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      hasTVPreferredFocus={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      nativeID={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+          },
+          Object {
+            "paddingRight": 10,
+          },
+        ]
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "borderColor": "#F93E60",
+              "borderRadius": 5,
+              "borderWidth": 2,
+              "padding": 2,
+            }
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={false}
+            ellipsizeMode="tail"
+            style={
+              Array [
+                Object {
+                  "color": undefined,
+                  "fontSize": 12,
+                },
+                Object {
+                  "color": "#B9C1C9",
+                },
+                Object {
+                  "fontFamily": "iservice",
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                },
+              ]
+            }
+          >
+            
+          </Text>
+        </View>
+      </View>
+    </View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "backgroundColor": "transparent",
+          "color": "#303C46",
+          "fontFamily": "SukhumvitSet-SemiBold",
+          "fontSize": 16,
+          "paddingVertical": 10,
+        }
+      }
+    >
+      Save card
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "backgroundColor": "transparent",
+          "color": "#68747E",
+          "fontFamily": "SukhumvitSet-Text",
+          "fontSize": 14,
+          "paddingLeft": 10,
+        }
+      }
+    >
+      (Max 0 cards)
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginHorizontal": 30,
+      }
+    }
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Object {
+          "backgroundColor": "transparent",
+          "color": "#B9C1C9",
+          "fontFamily": "SukhumvitSet-Text",
+          "fontSize": 14,
+          "fontWeight": "600",
+          "marginRight": 10,
+        }
+      }
+    >
+      Secured By
+    </Text>
+    <Image
+      resizeMode="contain"
+      source={
+        Object {
+          "testUri": "../../../app/assets/omise-logo.png",
+        }
+      }
+      style={
+        Object {
+          "flex": 0,
+          "width": 60,
+        }
+      }
+    />
+  </View>
+</View>
+`;

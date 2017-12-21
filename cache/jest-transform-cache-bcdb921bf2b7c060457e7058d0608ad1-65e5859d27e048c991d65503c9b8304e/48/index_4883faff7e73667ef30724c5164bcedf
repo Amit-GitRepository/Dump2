@@ -1,0 +1,11 @@
+
+
+
+
+'use strict';
+
+var _reactNative=require('react-native');var
+
+RNRestart=_reactNative.NativeModules.RNRestart;
+
+module.exports=RNRestart;

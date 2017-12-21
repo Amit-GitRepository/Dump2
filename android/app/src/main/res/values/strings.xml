@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">@string/APP_NAME</string>
+    <string name="trueid_client_id">@string/ANDROID_TRUE_CLIENT_ID</string>
+    <string name="trueid_client_secret">@string/ANDROID_TRUE_CLIENT_SECRET</string>
+    <string name="trueid_client_flow">@string/TRUE_CLIENT_FLOW</string>
+    <string name="trueid_client_scheme_for_sdk">iService</string>
+    <string name="trueid_client_scheme_for_app">TrueAuth</string>
+</resources>

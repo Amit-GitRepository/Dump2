@@ -1,0 +1,24 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_y4muvexl4=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/utils/request.util.js',hash='6218468ad578ceef5b40f3f16795dbe1cd224880',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/utils/request.util.js',statementMap:{'0':{start:{line:3,column:22},end:{line:22,column:1}},'1':{start:{line:4,column:70},end:{line:4,column:79}},'2':{start:{line:5,column:14},end:{line:5,column:28}},'3':{start:{line:6,column:29},end:{line:10,column:21}},'4':{start:{line:12,column:19},end:{line:19,column:4}},'5':{start:{line:13,column:4},end:{line:18,column:55}},'6':{start:{line:14,column:6},end:{line:16,column:7}},'7':{start:{line:15,column:8},end:{line:15,column:43}},'8':{start:{line:17,column:6},end:{line:17,column:31}},'9':{start:{line:18,column:25},end:{line:18,column:53}},'10':{start:{line:20,column:2},end:{line:20,column:51}},'11':{start:{line:20,column:24},end:{line:20,column:50}},'12':{start:{line:21,column:2},end:{line:21,column:17}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:3,column:22},end:{line:3,column:23}},loc:{start:{line:3,column:37},end:{line:22,column:1}},line:3},'1':{name:'(anonymous_1)',decl:{start:{line:12,column:31},end:{line:12,column:32}},loc:{start:{line:12,column:52},end:{line:19,column:3}},line:12},'2':{name:'(anonymous_2)',decl:{start:{line:13,column:27},end:{line:13,column:28}},loc:{start:{line:13,column:48},end:{line:18,column:5}},line:13},'3':{name:'(anonymous_3)',decl:{start:{line:18,column:19},end:{line:18,column:20}},loc:{start:{line:18,column:25},end:{line:18,column:53}},line:18},'4':{name:'(anonymous_4)',decl:{start:{line:20,column:18},end:{line:20,column:19}},loc:{start:{line:20,column:24},end:{line:20,column:50}},line:20}},branchMap:{'0':{loc:{start:{line:4,column:32},end:{line:4,column:44}},type:'default-arg',locations:[{start:{line:4,column:42},end:{line:4,column:44}}],line:4},'1':{loc:{start:{line:14,column:6},end:{line:16,column:7}},type:'if',locations:[{start:{line:14,column:6},end:{line:16,column:7}},{start:{line:14,column:6},end:{line:16,column:7}}],line:14},'2':{loc:{start:{line:15,column:22},end:{line:15,column:41}},type:'binary-expr',locations:[{start:{line:15,column:22},end:{line:15,column:30}},{start:{line:15,column:34},end:{line:15,column:41}}],line:15}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0},b:{'0':[0],'1':[0,0],'2':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _superagent=require('superagent');var _superagent2=_interopRequireDefault(_superagent);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}cov_y4muvexl4.s[0]++;
+
+var createRequest=function createRequest(apiConfig){cov_y4muvexl4.f[0]++;var _ref=(cov_y4muvexl4.s[1]++,
+apiConfig),baseUrl=_ref.baseUrl,path=_ref.path,method=_ref.method,_ref$headers=_ref.headers,headers=_ref$headers===undefined?(cov_y4muvexl4.b[0][0]++,{}):_ref$headers,query=_ref.query,data=_ref.data,timeout=_ref.timeout;
+var url=(cov_y4muvexl4.s[2]++,baseUrl+path);
+var superAgentInstance=(cov_y4muvexl4.s[3]++,_superagent2.default[method.toLowerCase()](url).
+query(query).
+send(data).
+set(headers).
+timeout(timeout));
+
+var promise=(cov_y4muvexl4.s[4]++,new Promise(function(resolve,reject){cov_y4muvexl4.f[1]++;cov_y4muvexl4.s[5]++;
+superAgentInstance.end(function(error,response){cov_y4muvexl4.f[2]++;cov_y4muvexl4.s[6]++;
+if(error){cov_y4muvexl4.b[1][0]++;cov_y4muvexl4.s[7]++;
+return reject((cov_y4muvexl4.b[2][0]++,response)||(cov_y4muvexl4.b[2][1]++,{error:error}));
+}else{cov_y4muvexl4.b[1][1]++;}cov_y4muvexl4.s[8]++;
+return resolve(response);
+}).on('abort',function(){cov_y4muvexl4.f[3]++;cov_y4muvexl4.s[9]++;return reject({message:'ABORTED'});});
+}));cov_y4muvexl4.s[10]++;
+promise.abort=function(){cov_y4muvexl4.f[4]++;cov_y4muvexl4.s[11]++;return superAgentInstance.abort();};cov_y4muvexl4.s[12]++;
+return promise;
+};exports.default=
+
+createRequest;

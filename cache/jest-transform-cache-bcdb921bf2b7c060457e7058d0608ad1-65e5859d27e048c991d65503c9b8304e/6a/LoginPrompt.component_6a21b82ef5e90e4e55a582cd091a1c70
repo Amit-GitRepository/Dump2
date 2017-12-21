@@ -1,0 +1,64 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_kxar8zw1q=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/SideMenu/LoginPrompt.component.js',hash='3b731abb5030fb1390393f2f8173511e20ad979a',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/SideMenu/LoginPrompt.component.js',statementMap:{'0':{start:{line:17,column:4},end:{line:17,column:43}},'1':{start:{line:18,column:4},end:{line:18,column:35}},'2':{start:{line:22,column:4},end:{line:22,column:42}},'3':{start:{line:23,column:4},end:{line:23,column:61}},'4':{start:{line:27,column:4},end:{line:29,column:5}},'5':{start:{line:28,column:6},end:{line:28,column:58}},'6':{start:{line:33,column:25},end:{line:33,column:35}},'7':{start:{line:35,column:4},end:{line:47,column:6}},'8':{start:{line:51,column:0},end:{line:55,column:2}},'9':{start:{line:57,column:0},end:{line:62,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:16,column:21},end:{line:16,column:22}},loc:{start:{line:16,column:27},end:{line:19,column:3}},line:16},'1':{name:'(anonymous_1)',decl:{start:{line:21,column:17},end:{line:21,column:18}},loc:{start:{line:21,column:23},end:{line:24,column:3}},line:21},'2':{name:'(anonymous_2)',decl:{start:{line:26,column:19},end:{line:26,column:20}},loc:{start:{line:26,column:25},end:{line:30,column:3}},line:26},'3':{name:'(anonymous_3)',decl:{start:{line:32,column:2},end:{line:32,column:3}},loc:{start:{line:32,column:12},end:{line:48,column:3}},line:32}},branchMap:{'0':{loc:{start:{line:27,column:4},end:{line:29,column:5}},type:'if',locations:[{start:{line:27,column:4},end:{line:29,column:5}},{start:{line:27,column:4},end:{line:29,column:5}}],line:27}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0},f:{'0':0,'1':0,'2':0,'3':0},b:{'0':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _Button=require('../Shared/Button/Button.component');var _Button2=_interopRequireDefault(_Button);
+var _ISText=require('../Shared/ISText/ISText.component');var _ISText2=_interopRequireDefault(_ISText);
+var _Modal=require('../Shared/Modal/Modal.component');var _Modal2=_interopRequireDefault(_Modal);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _LoginPrompt=require('./LoginPrompt.style');var _LoginPrompt2=_interopRequireDefault(_LoginPrompt);
+var _helper=require('../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+LoginPrompt=function(_Component){_inherits(LoginPrompt,_Component);function LoginPrompt(){var _ref;var _temp,_this,_ret;_classCallCheck(this,LoginPrompt);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=LoginPrompt.__proto__||Object.getPrototypeOf(LoginPrompt)).call.apply(_ref,[this].concat(args))),_this),_this.
+state={
+toRequestLogin:false},_this.
+
+
+closeLoginPrompt=function(){cov_kxar8zw1q.f[0]++;cov_kxar8zw1q.s[0]++;
+_this.setState({toRequestLogin:false});cov_kxar8zw1q.s[1]++;
+_this.props.toggleLoginPrompt();
+},_this.
+
+loginRequest=function(){cov_kxar8zw1q.f[1]++;cov_kxar8zw1q.s[2]++;
+_this.setState({toRequestLogin:true});cov_kxar8zw1q.s[3]++;
+_this.props.toggleLoginPrompt(_this.props.nextLoginAction);
+},_this.
+
+onLoginRequest=function(){cov_kxar8zw1q.f[2]++;cov_kxar8zw1q.s[4]++;
+if(_this.state.toRequestLogin){cov_kxar8zw1q.b[0][0]++;cov_kxar8zw1q.s[5]++;
+_this.props.loginRequest(_this.props.nextLoginAction);
+}else{cov_kxar8zw1q.b[0][1]++;}
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(LoginPrompt,[{key:'render',value:function render()
+
+{cov_kxar8zw1q.f[3]++;var _ref2=(cov_kxar8zw1q.s[6]++,
+this.props),showPrompt=_ref2.showPrompt;cov_kxar8zw1q.s[7]++;
+
+return(
+_react2.default.createElement(_Modal2.default,{isVisible:showPrompt,animationIn:'zoomIn',animationOut:'zoomOut',
+animationInTiming:500,backdropTransitionInTiming:1000,backdropTransitionOutTiming:1000,
+animationOutTiming:500,onModalHide:this.onLoginRequest},
+_react2.default.createElement(_reactNative.View,{style:_LoginPrompt2.default.container},
+_react2.default.createElement(_ISText2.default,null,(0,_helper.translate)('SIDE_MENU__LOGIN_PROMPT_NEED_ACCESS')),
+_react2.default.createElement(_reactNative.View,{style:_LoginPrompt2.default.buttonContainer},
+_react2.default.createElement(_Button2.default,{onPress:this.closeLoginPrompt,text:(0,_helper.translate)('SIDE_MENU__LOGIN_PROMPT_CANCEL')}),
+_react2.default.createElement(_Button2.default,{onPress:this.loginRequest,text:(0,_helper.translate)('SIDE_MENU__LOGIN_PROMPT_LOGIN')})))));
+
+
+
+
+}}]);return LoginPrompt;}(_react.Component);cov_kxar8zw1q.s[8]++;
+
+
+LoginPrompt.defaultProps={
+showPrompt:false,
+toggleLoginPrompt:_noop2.default,
+loginRequest:_noop2.default};cov_kxar8zw1q.s[9]++;
+
+
+LoginPrompt.propTypes={
+showPrompt:_propTypes2.default.bool,
+toggleLoginPrompt:_propTypes2.default.func,
+nextLoginAction:_propTypes2.default.object,
+loginRequest:_propTypes2.default.func};exports.default=
+
+
+LoginPrompt;

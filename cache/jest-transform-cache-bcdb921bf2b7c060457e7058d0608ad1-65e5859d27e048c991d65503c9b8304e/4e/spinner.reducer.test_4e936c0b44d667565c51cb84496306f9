@@ -1,0 +1,33 @@
+var _spinner=require('../spinner.reducer');var _spinner2=_interopRequireDefault(_spinner);
+var _index=require('../../actions/index.actions');var actions=_interopRequireWildcard(_index);function _interopRequireWildcard(obj){if(obj&&obj.__esModule){return obj;}else{var newObj={};if(obj!=null){for(var key in obj){if(Object.prototype.hasOwnProperty.call(obj,key))newObj[key]=obj[key];}}newObj.default=obj;return newObj;}}function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('Show spinner reducer',function(){
+var initialState={count:0};
+
+Object.freeze(initialState);
+it('should have the initial value as 0',function(){
+expect((0,_spinner2.default)(undefined,{})).toEqual(initialState);
+});
+it('should set the value of count spinner as 1',function(){
+var incAction={
+type:actions.SPINNER_SHOW};
+
+var result={count:1};
+expect((0,_spinner2.default)(initialState,incAction)).toEqual(result);
+});
+it('should set the value of count spinner as 0 if initial state has 0',function(){
+var incAction={
+type:actions.SPINNER_HIDE};
+
+var result={count:0};
+expect((0,_spinner2.default)(initialState,incAction)).toEqual(result);
+});
+it('should set the value of count spinner as 0 if initail state has show spinner',function(){
+var incAction={
+type:actions.SPINNER_HIDE};
+
+var initialState={count:1};
+var result={count:0};
+expect((0,_spinner2.default)(initialState,incAction)).toEqual(result);
+});
+});

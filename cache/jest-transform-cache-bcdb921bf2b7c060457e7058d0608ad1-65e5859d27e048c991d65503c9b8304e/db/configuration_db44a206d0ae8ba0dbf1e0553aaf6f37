@@ -1,0 +1,24 @@
+var _object = require("object.assign");
+
+var _object2 = _interopRequireDefault(_object);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var configuration = {};
+
+module.exports = {
+  get: function () {
+    function get() {
+      return (0, _object2["default"])({}, configuration);
+    }
+
+    return get;
+  }(),
+  merge: function () {
+    function merge(extra) {
+      (0, _object2["default"])(configuration, extra);
+    }
+
+    return merge;
+  }()
+};

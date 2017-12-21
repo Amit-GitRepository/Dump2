@@ -1,0 +1,559 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EBillAddItem component renders correctly with EMAIL option 1`] = `
+<View
+  style={
+    Object {
+      "borderTopColor": "#E9E9EA",
+      "borderTopWidth": 1,
+      "flex": 1,
+      "padding": 15,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginBottom": 5,
+      }
+    }
+  >
+    <View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#303C46",
+            "fontFamily": "SukhumvitSet-SemiBold",
+            "fontSize": 18,
+          }
+        }
+      >
+        1234567
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#009FE3",
+            "fontFamily": "SukhumvitSet-Bold",
+          }
+        }
+      >
+        True Online
+      </Text>
+    </View>
+    <View>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hasTVPreferredFocus={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+            },
+            Object {
+              "marginRight": 5,
+              "marginTop": 10,
+            },
+          ]
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "borderColor": "#F93E60",
+                "borderRadius": 5,
+                "borderWidth": 2,
+                "padding": 2,
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={false}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": undefined,
+                    "fontSize": 12,
+                  },
+                  Object {
+                    "color": "#B9C1C9",
+                  },
+                  Object {
+                    "fontFamily": "iservice",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "marginTop": 5,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#303C46",
+            "fontFamily": "SukhumvitSet-SemiBold",
+            "fontSize": 18,
+            "marginRight": 70,
+          }
+        }
+      >
+        Email
+      </Text>
+      <TextInput
+        allowFontScaling={true}
+        autoCorrect={false}
+        editable={true}
+        onChangeText={[Function]}
+        onEndEditing={[Function]}
+        placeholder="Enter email address"
+        placeholderTextColor="#B9C1C9"
+        returnKeyType="done"
+        style={
+          Object {
+            "flex": 1,
+            "fontFamily": "SukhumvitSet-Light",
+            "fontSize": 16,
+          }
+        }
+        underlineColorAndroid="transparent"
+        value=""
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`EBillAddItem component renders correctly with SMS and default msisdn option 1`] = `
+<View
+  style={
+    Object {
+      "borderTopColor": "#E9E9EA",
+      "borderTopWidth": 1,
+      "flex": 1,
+      "padding": 15,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginBottom": 5,
+      }
+    }
+  >
+    <View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#303C46",
+            "fontFamily": "SukhumvitSet-SemiBold",
+            "fontSize": 18,
+          }
+        }
+      >
+        1234567890
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#FBBC1E",
+            "fontFamily": "SukhumvitSet-Bold",
+          }
+        }
+      >
+        TrueMove H Postpaid
+      </Text>
+    </View>
+    <View>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hasTVPreferredFocus={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+            },
+            Object {
+              "marginRight": 5,
+              "marginTop": 10,
+            },
+          ]
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "borderColor": "#F93E60",
+                "borderRadius": 5,
+                "borderWidth": 2,
+                "padding": 2,
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={false}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": undefined,
+                    "fontSize": 12,
+                  },
+                  Object {
+                    "color": "#B9C1C9",
+                  },
+                  Object {
+                    "fontFamily": "iservice",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "marginTop": 5,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#303C46",
+            "fontFamily": "SukhumvitSet-SemiBold",
+            "fontSize": 18,
+            "marginRight": 70,
+          }
+        }
+      >
+        SMS
+      </Text>
+      <TextInput
+        allowFontScaling={true}
+        autoCorrect={false}
+        editable={true}
+        keyboardType="numeric"
+        maxLength={10}
+        onChangeText={[Function]}
+        onEndEditing={[Function]}
+        onFocus={[Function]}
+        placeholder="Enter mobile number"
+        placeholderTextColor="#B9C1C9"
+        returnKeyType="done"
+        style={
+          Object {
+            "flex": 1,
+            "fontFamily": "SukhumvitSet-Light",
+            "fontSize": 16,
+          }
+        }
+        underlineColorAndroid="transparent"
+        value=""
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`EBillAddItem component renders correctly with SMS option 1`] = `
+<View
+  style={
+    Object {
+      "borderTopColor": "#E9E9EA",
+      "borderTopWidth": 1,
+      "flex": 1,
+      "padding": 15,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "marginBottom": 5,
+      }
+    }
+  >
+    <View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#303C46",
+            "fontFamily": "SukhumvitSet-SemiBold",
+            "fontSize": 18,
+          }
+        }
+      >
+        1234567
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#009FE3",
+            "fontFamily": "SukhumvitSet-Bold",
+          }
+        }
+      >
+        True Online
+      </Text>
+    </View>
+    <View>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hasTVPreferredFocus={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+            },
+            Object {
+              "marginRight": 5,
+              "marginTop": 10,
+            },
+          ]
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "borderColor": "#F93E60",
+                "borderRadius": 5,
+                "borderWidth": 2,
+                "padding": 2,
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={false}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": undefined,
+                    "fontSize": 12,
+                  },
+                  Object {
+                    "color": "#B9C1C9",
+                  },
+                  Object {
+                    "fontFamily": "iservice",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "marginTop": 5,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#303C46",
+            "fontFamily": "SukhumvitSet-SemiBold",
+            "fontSize": 18,
+            "marginRight": 70,
+          }
+        }
+      >
+        SMS
+      </Text>
+      <TextInput
+        allowFontScaling={true}
+        autoCorrect={false}
+        editable={true}
+        keyboardType="numeric"
+        maxLength={10}
+        onChangeText={[Function]}
+        onEndEditing={[Function]}
+        onFocus={[Function]}
+        placeholder="Enter mobile number"
+        placeholderTextColor="#B9C1C9"
+        returnKeyType="done"
+        style={
+          Object {
+            "flex": 1,
+            "fontFamily": "SukhumvitSet-Light",
+            "fontSize": 16,
+          }
+        }
+        underlineColorAndroid="transparent"
+        value=""
+      />
+    </View>
+  </View>
+</View>
+`;

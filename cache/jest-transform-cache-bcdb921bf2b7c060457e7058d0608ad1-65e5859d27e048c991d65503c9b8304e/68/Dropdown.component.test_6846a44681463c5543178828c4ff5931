@@ -1,0 +1,43 @@
+var _Dropdown=require('../Dropdown.component');var _Dropdown2=_interopRequireDefault(_Dropdown);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);
+var _enzyme=require('enzyme');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+describe('Dropdown component',function(){
+it('should render correctly',function(){
+var componentTree=_reactTestRenderer2.default.create(_react2.default.createElement(_Dropdown2.default,null)).toJSON();
+expect(componentTree).toMatchSnapshot();
+});
+
+it('should set isVisible in state to true if showModal is called',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_Dropdown2.default,null));
+wrapper.setState({isVisible:false});
+wrapper.instance().showModal();
+expect(wrapper.instance().state).toEqual({isVisible:true});
+});
+
+it('should set isVisible in state to false',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_Dropdown2.default,null));
+wrapper.setState({isVisible:true});
+wrapper.instance().hideModal();
+expect(wrapper.instance().state).toEqual({isVisible:false});
+});
+
+it('should set isVisible in state to false when selectItem is called',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_Dropdown2.default,{onSelect:jest.fn()}));
+wrapper.setState({isVisible:true});
+wrapper.instance().selectItem('test')();
+expect(wrapper.instance().state).toEqual({isVisible:false});
+});
+
+it('should set isVisible in state to false when selectItem is called',function(){
+var onSelect=jest.fn(function(val){return val;});
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_Dropdown2.default,{onSelect:onSelect}));
+wrapper.setState({isVisible:true});
+wrapper.instance().selectItem('test')();
+expect(onSelect).toHaveBeenCalledWith('test');
+});
+});

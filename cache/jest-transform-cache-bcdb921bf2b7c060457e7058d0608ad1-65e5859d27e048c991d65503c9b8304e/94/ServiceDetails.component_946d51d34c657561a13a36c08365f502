@@ -1,0 +1,28 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1y4jkhprhd=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/StoreLocator/ServiceDetails/ServiceDetails.component.js',hash='71e5b0b1b63317b52ae9b438a34ac9c01fc823da',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/StoreLocator/ServiceDetails/ServiceDetails.component.js',statementMap:{'0':{start:{line:12,column:25},end:{line:12,column:35}},'1':{start:{line:13,column:27},end:{line:13,column:65}},'2':{start:{line:14,column:4},end:{line:19,column:15}},'3':{start:{line:22,column:0},end:{line:24,column:2}},'4':{start:{line:25,column:0},end:{line:27,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:11,column:2},end:{line:11,column:3}},loc:{start:{line:11,column:12},end:{line:20,column:3}},line:11}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0},f:{'0':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();
+
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _ServiceDetails=require('./ServiceDetails.style');var _ServiceDetails2=_interopRequireDefault(_ServiceDetails);
+var _Shared=require('../../Shared');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+ServiceDetails=function(_Component){_inherits(ServiceDetails,_Component);function ServiceDetails(){_classCallCheck(this,ServiceDetails);return _possibleConstructorReturn(this,(ServiceDetails.__proto__||Object.getPrototypeOf(ServiceDetails)).apply(this,arguments));}_createClass(ServiceDetails,[{key:'render',value:function render()
+{cov_1y4jkhprhd.f[0]++;var _ref=(cov_1y4jkhprhd.s[0]++,
+this.props),navigation=_ref.navigation;
+var serviceDetails=(cov_1y4jkhprhd.s[1]++,(0,_result2.default)(navigation,'state.params',{}));cov_1y4jkhprhd.s[2]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:_ServiceDetails2.default.container},
+_react2.default.createElement(_Shared.Card,{header:serviceDetails.serviceName+' Service'},
+_react2.default.createElement(_Shared.List,{data:serviceDetails.products}))));
+
+
+}}]);return ServiceDetails;}(_react.Component);cov_1y4jkhprhd.s[3]++;
+
+ServiceDetails.defaultProps={
+navigation:{}};cov_1y4jkhprhd.s[4]++;
+
+ServiceDetails.propTypes={
+navigation:_propTypes2.default.object};exports.default=
+
+ServiceDetails;

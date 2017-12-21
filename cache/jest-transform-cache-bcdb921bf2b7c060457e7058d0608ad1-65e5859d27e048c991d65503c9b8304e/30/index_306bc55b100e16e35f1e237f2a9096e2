@@ -1,0 +1,8 @@
+Object.defineProperty(exports,"__esModule",{value:true});
+
+var RNI18n=require('react-native').NativeModules.RNI18n;
+var I18nJs=require('i18n-js');
+
+I18nJs.locale=RNI18n.languages[0];
+var getLanguages=exports.getLanguages=RNI18n.getLanguages;exports.default=
+I18nJs;

@@ -1,0 +1,74 @@
+var _user=require('../user.reducer');var _user2=_interopRequireDefault(_user);
+var _index=require('../../actions/index.actions');var actions=_interopRequireWildcard(_index);function _interopRequireWildcard(obj){if(obj&&obj.__esModule){return obj;}else{var newObj={};if(obj!=null){for(var key in obj){if(Object.prototype.hasOwnProperty.call(obj,key))newObj[key]=obj[key];}}newObj.default=obj;return newObj;}}function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('User reducer',function(){
+var initialState={language:'th',profile:{},accessToken:null};
+it('Should have the profile object set to {}',function(){
+expect((0,_user2.default)(initialState,{}).profile).toEqual({});
+});
+it('Should have the initial preferred language set to th',function(){
+expect((0,_user2.default)(initialState,{}).language).toEqual('th');
+});
+it('Should set the accessToken when login is valid',function(){
+var setAccessTokenAction={
+type:actions.SET_ACCESS_TOKEN_AND_PROFILE,
+payload:{accessToken:'xyzdjfbvkebvjef',profile:{name:'apurva'}}};
+
+var result={accessToken:'xyzdjfbvkebvjef',language:'th',profile:{name:'apurva'}};
+expect((0,_user2.default)(initialState,setAccessTokenAction)).toEqual(result);
+});
+it('Should change the profile object when login succeed',function(){
+var loginSuccessAction={
+type:actions.LOGIN_SUCCESS,
+payload:{profile:{name:'xyz',email:'xyz@gmail.com'},accessToken:'xyzdjfbvkebvjef'}};
+
+var result={accessToken:'xyzdjfbvkebvjef',language:'th',profile:{name:'xyz',email:'xyz@gmail.com'}};
+expect((0,_user2.default)(initialState,loginSuccessAction)).toEqual(result);
+});
+it('Should change the profile object when login fails',function(){
+var loginFailureAction={
+type:actions.LOGIN_FAILURE};
+
+var result={accessToken:null,language:'th',profile:{}};
+expect((0,_user2.default)(initialState,loginFailureAction)).toEqual(result);
+});
+it('Should change the profile object on register success',function(){
+var registerSuccessAction={
+type:actions.REGISTER_SUCCESS,
+payload:{profile:{name:'xyz',email:'xyz@gmail.com'},accessToken:'xyzdjfbvkebvjef'}};
+
+var result={accessToken:'xyzdjfbvkebvjef',language:'th',profile:{name:'xyz',email:'xyz@gmail.com'}};
+expect((0,_user2.default)(initialState,registerSuccessAction)).toEqual(result);
+});
+it('Should change the profile object on register failure',function(){
+var registerFailureAction={
+type:actions.REGISTER_FAILURE};
+
+var result={accessToken:null,language:'th',profile:{}};
+expect((0,_user2.default)(initialState,registerFailureAction)).toEqual(result);
+});
+it('Should reset the profile and accessToken on logout success',function(){
+var newState={language:'th',profile:{name:'avrupa'},accessToken:'abcd'};
+var logoutSuccessAction={
+type:actions.LOGOUT_SUCCESS};
+
+var result={accessToken:null,language:'th',profile:{}};
+expect((0,_user2.default)(newState,logoutSuccessAction)).toEqual(result);
+});
+it('Should change the language when to a user selected one',function(){
+var changeLanguageAction={
+type:actions.CHANGE_LANGUAGE,
+payload:{language:'en'}};
+
+var result={accessToken:null,language:'en',profile:{}};
+expect((0,_user2.default)(initialState,changeLanguageAction)).toEqual(result);
+});
+it('Should set the language to user default preferred one',function(){
+var setPreferenceAction={
+type:actions.SET_PREFERENCES,
+payload:{language:'en'}};
+
+var result={accessToken:null,language:'en',profile:{}};
+expect((0,_user2.default)(initialState,setPreferenceAction)).toEqual(result);
+});
+});

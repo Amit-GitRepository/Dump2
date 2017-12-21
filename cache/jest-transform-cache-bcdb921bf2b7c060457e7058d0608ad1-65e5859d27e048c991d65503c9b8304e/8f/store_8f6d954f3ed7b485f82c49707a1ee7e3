@@ -1,0 +1,25 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_t34u9sivc=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/store.js',hash='5466d08b5bdfac0e85a12fd3091df915f0da5c89',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/store.js',statementMap:{'0':{start:{line:10,column:25},end:{line:10,column:128}},'1':{start:{line:12,column:23},end:{line:12,column:45}},'2':{start:{line:13,column:17},end:{line:13,column:139}},'3':{start:{line:16,column:16},end:{line:16,column:63}},'4':{start:{line:17,column:2},end:{line:22,column:3}},'5':{start:{line:19,column:4},end:{line:21,column:7}},'6':{start:{line:20,column:6},end:{line:20,column:40}},'7':{start:{line:23,column:2},end:{line:23,column:28}},'8':{start:{line:24,column:2},end:{line:24,column:15}}},fnMap:{'0':{name:'getStore',decl:{start:{line:15,column:24},end:{line:15,column:32}},loc:{start:{line:15,column:52},end:{line:25,column:1}},line:15},'1':{name:'(anonymous_1)',decl:{start:{line:19,column:22},end:{line:19,column:23}},loc:{start:{line:19,column:28},end:{line:21,column:5}},line:19}},branchMap:{'0':{loc:{start:{line:10,column:25},end:{line:10,column:128}},type:'cond-expr',locations:[{start:{line:10,column:71},end:{line:10,column:118}},{start:{line:10,column:121},end:{line:10,column:128}}],line:10},'1':{loc:{start:{line:15,column:34},end:{line:15,column:50}},type:'default-arg',locations:[{start:{line:15,column:48},end:{line:15,column:50}}],line:15},'2':{loc:{start:{line:17,column:2},end:{line:22,column:3}},type:'if',locations:[{start:{line:17,column:2},end:{line:22,column:3}},{start:{line:17,column:2},end:{line:22,column:3}}],line:17}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0},f:{'0':0,'1':0},b:{'0':[0,0],'1':[0],'2':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();exports.default=
+
+
+
+
+
+
+
+
+
+
+
+
+
+getStore;var _reduxSaga=require('redux-saga');var _reduxSaga2=_interopRequireDefault(_reduxSaga);var _index=require('./middlewares/index.middleware');var _index2=_interopRequireDefault(_index);var _reduxPromise=require('redux-promise');var _reduxPromise2=_interopRequireDefault(_reduxPromise);var _index3=require('./reducers/index.reducer');var _index4=_interopRequireDefault(_index3);var _index5=require('./sagas/index.saga');var _index6=_interopRequireDefault(_index5);var _reduxGaScreenTracker=require('redux-ga-screen-tracker');var _reduxGaScreenTracker2=_interopRequireDefault(_reduxGaScreenTracker);var _redux=require('redux');var _analytics=require('../utils/analytics.util');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _toConsumableArray(arr){if(Array.isArray(arr)){for(var i=0,arr2=Array(arr.length);i<arr.length;i++){arr2[i]=arr[i];}return arr2;}else{return Array.from(arr);}}var composeEnhancers=(cov_t34u9sivc.s[0]++,global.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__?(cov_t34u9sivc.b[0][0]++,global.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({})):(cov_t34u9sivc.b[0][1]++,_redux.compose));var sagaMiddleware=(cov_t34u9sivc.s[1]++,(0,_reduxSaga2.default)());var enhancer=(cov_t34u9sivc.s[2]++,composeEnhancers(_redux.applyMiddleware.apply(undefined,[sagaMiddleware,_reduxPromise2.default,(0,_reduxGaScreenTracker2.default)((0,_analytics.getScreenTrackingConfig)())].concat(_toConsumableArray(_index2.default)))));function getStore(){var initalState=arguments.length>0&&arguments[0]!==undefined?arguments[0]:(cov_t34u9sivc.b[1][0]++,{});cov_t34u9sivc.f[0]++;
+var store=(cov_t34u9sivc.s[3]++,(0,_redux.createStore)(_index4.default,initalState,enhancer));cov_t34u9sivc.s[4]++;
+if(module.hot){cov_t34u9sivc.b[2][0]++;cov_t34u9sivc.s[5]++;
+
+module.hot.accept(function(){cov_t34u9sivc.f[1]++;cov_t34u9sivc.s[6]++;
+store.replaceReducer(_index4.default);
+});
+}else{cov_t34u9sivc.b[2][1]++;}cov_t34u9sivc.s[7]++;
+sagaMiddleware.run(_index6.default);cov_t34u9sivc.s[8]++;
+return store;
+}

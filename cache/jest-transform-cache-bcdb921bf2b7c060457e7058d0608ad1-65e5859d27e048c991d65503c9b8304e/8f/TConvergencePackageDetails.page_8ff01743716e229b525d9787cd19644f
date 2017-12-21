@@ -1,0 +1,24 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_19xo2k65wl=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/BillUsage/TConvergencePackageDetails.page.js',hash='2371a0e34f3540a9cdde61396d057c45b859fe32',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/BillUsage/TConvergencePackageDetails.page.js',statementMap:{'0':{start:{line:9,column:92},end:{line:9,column:121}},'1':{start:{line:10,column:4},end:{line:13,column:6}},'2':{start:{line:17,column:0},end:{line:19,column:2}},'3':{start:{line:21,column:0},end:{line:23,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:8,column:2},end:{line:8,column:3}},loc:{start:{line:8,column:12},end:{line:14,column:3}},line:8}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0},f:{'0':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _TConvergencePackageDetails=require('../../components/BillUsage/TConvergencePackageDetails/TConvergencePackageDetails.component');var _TConvergencePackageDetails2=_interopRequireDefault(_TConvergencePackageDetails);
+var _reactRedux=require('react-redux');
+var _mockData=require('../../components/BillUsage/mockData');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+TConvergencePackageDetailPage=function(_Component){_inherits(TConvergencePackageDetailPage,_Component);function TConvergencePackageDetailPage(){_classCallCheck(this,TConvergencePackageDetailPage);return _possibleConstructorReturn(this,(TConvergencePackageDetailPage.__proto__||Object.getPrototypeOf(TConvergencePackageDetailPage)).apply(this,arguments));}_createClass(TConvergencePackageDetailPage,[{key:'render',value:function render()
+{cov_19xo2k65wl.f[0]++;var _ref=(cov_19xo2k65wl.s[0]++,_mockData.TConvergencePackageDetailData),
+TOLPackageDetails=_ref.TOLPackageDetails,TVPackageDetails=_ref.TVPackageDetails,TMPackageDetails=_ref.TMPackageDetails,userDetails=_ref.userDetails,billCycle=_ref.billCycle;cov_19xo2k65wl.s[1]++;
+return(
+_react2.default.createElement(_TConvergencePackageDetails2.default,{TOLPackageDetails:TOLPackageDetails,TVPackageDetails:TVPackageDetails,
+TMPackageDetails:TMPackageDetails,userDetails:userDetails,billCycle:billCycle}));
+
+}}]);return TConvergencePackageDetailPage;}(_react.Component);cov_19xo2k65wl.s[2]++;
+
+
+TConvergencePackageDetailPage.defaultProps={};cov_19xo2k65wl.s[3]++;
+
+
+
+TConvergencePackageDetailPage.propTypes={};exports.default=
+
+
+(0,_reactRedux.connect)(null,null)(TConvergencePackageDetailPage);

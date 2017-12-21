@@ -1,0 +1,45 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1jaj00mwnz=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/utils/localStorage.util.js',hash='275804aef40168de337c28ea61635a8a74e700d0',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/utils/localStorage.util.js',statementMap:{'0':{start:{line:3,column:15},end:{line:3,column:25}},'1':{start:{line:7,column:4},end:{line:9,column:6}},'2':{start:{line:8,column:6},end:{line:8,column:22}},'3':{start:{line:13,column:4},end:{line:13,column:78}},'4':{start:{line:17,column:4},end:{line:17,column:80}},'5':{start:{line:22,column:17},end:{line:22,column:19}},'6':{start:{line:23,column:4},end:{line:25,column:7}},'7':{start:{line:24,column:6},end:{line:24,column:71}},'8':{start:{line:26,column:4},end:{line:26,column:39}},'9':{start:{line:31,column:4},end:{line:33,column:7}},'10':{start:{line:32,column:6},end:{line:32,column:46}},'11':{start:{line:34,column:4},end:{line:39,column:7}},'12':{start:{line:35,column:6},end:{line:37,column:9}},'13':{start:{line:36,column:8},end:{line:36,column:42}},'14':{start:{line:38,column:6},end:{line:38,column:18}},'15':{start:{line:43,column:21},end:{line:43,column:39}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:6,column:2},end:{line:6,column:3}},loc:{start:{line:6,column:19},end:{line:10,column:3}},line:6},'1':{name:'(anonymous_1)',decl:{start:{line:7,column:61},end:{line:7,column:62}},loc:{start:{line:8,column:6},end:{line:8,column:22}},line:8},'2':{name:'(anonymous_2)',decl:{start:{line:12,column:2},end:{line:12,column:3}},loc:{start:{line:12,column:25},end:{line:14,column:3}},line:12},'3':{name:'(anonymous_3)',decl:{start:{line:16,column:2},end:{line:16,column:3}},loc:{start:{line:16,column:28},end:{line:18,column:3}},line:16},'4':{name:'(anonymous_4)',decl:{start:{line:21,column:2},end:{line:21,column:3}},loc:{start:{line:21,column:26},end:{line:27,column:3}},line:21},'5':{name:'(anonymous_5)',decl:{start:{line:23,column:18},end:{line:23,column:19}},loc:{start:{line:23,column:35},end:{line:25,column:5}},line:23},'6':{name:'(anonymous_6)',decl:{start:{line:30,column:2},end:{line:30,column:3}},loc:{start:{line:30,column:25},end:{line:40,column:3}},line:30},'7':{name:'(anonymous_7)',decl:{start:{line:31,column:20},end:{line:31,column:21}},loc:{start:{line:31,column:39},end:{line:33,column:5}},line:31},'8':{name:'(anonymous_8)',decl:{start:{line:34,column:47},end:{line:34,column:48}},loc:{start:{line:34,column:57},end:{line:39,column:5}},line:34},'9':{name:'(anonymous_9)',decl:{start:{line:35,column:19},end:{line:35,column:20}},loc:{start:{line:35,column:36},end:{line:37,column:7}},line:35}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _reactNative=require('react-native');function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}
+
+var dbName=(cov_1jaj00mwnz.s[0]++,'iService');var
+
+LocalStorage=function(){function LocalStorage(){_classCallCheck(this,LocalStorage);}_createClass(LocalStorage,[{key:'getItem',value:function getItem(
+itemID){cov_1jaj00mwnz.f[0]++;cov_1jaj00mwnz.s[1]++;
+return _reactNative.AsyncStorage.getItem('@'+dbName+':'+itemID).then(function(json)
+{cov_1jaj00mwnz.f[1]++;cov_1jaj00mwnz.s[2]++;return JSON.parse(json);});
+
+}},{key:'setItem',value:function setItem(
+
+itemID,item){cov_1jaj00mwnz.f[2]++;cov_1jaj00mwnz.s[3]++;
+return _reactNative.AsyncStorage.setItem('@'+dbName+':'+itemID,JSON.stringify(item));
+}},{key:'updateItem',value:function updateItem(
+
+itemID,item){cov_1jaj00mwnz.f[3]++;cov_1jaj00mwnz.s[4]++;
+return _reactNative.AsyncStorage.mergeItem('@'+dbName+':'+itemID,JSON.stringify(item));
+}},{key:'multiSetItem',value:function multiSetItem()
+
+
+{cov_1jaj00mwnz.f[4]++;
+var data=(cov_1jaj00mwnz.s[5]++,[]);cov_1jaj00mwnz.s[6]++;for(var _len=arguments.length,items=Array(_len),_key=0;_key<_len;_key++){items[_key]=arguments[_key];}
+items.forEach(function(item,index){cov_1jaj00mwnz.f[5]++;cov_1jaj00mwnz.s[7]++;
+data[index]=['@'+dbName+':'+item[0],JSON.stringify(item[1])];
+});cov_1jaj00mwnz.s[8]++;
+return _reactNative.AsyncStorage.multiSet(data);
+}},{key:'multiGetItem',value:function multiGetItem(
+
+
+itemIDs){cov_1jaj00mwnz.f[6]++;cov_1jaj00mwnz.s[9]++;
+itemIDs.forEach(function(itemID,index){cov_1jaj00mwnz.f[7]++;cov_1jaj00mwnz.s[10]++;
+itemIDs[index]='@'+dbName+':'+itemID;
+});cov_1jaj00mwnz.s[11]++;
+return _reactNative.AsyncStorage.multiGet(itemIDs).then(function(data){cov_1jaj00mwnz.f[8]++;cov_1jaj00mwnz.s[12]++;
+data.forEach(function(item,index){cov_1jaj00mwnz.f[9]++;cov_1jaj00mwnz.s[13]++;
+data[index]=JSON.parse(item[1]);
+});cov_1jaj00mwnz.s[14]++;
+return data;
+});
+}}]);return LocalStorage;}();
+
+
+var localStorage=(cov_1jaj00mwnz.s[15]++,new LocalStorage());exports.default=
+
+localStorage;

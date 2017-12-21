@@ -1,0 +1,112 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1uwfdi5f1z=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/TMPackageDetailsExtra/TMExtraPackage.component.js',hash='9656be785e750834f78557ea347a8fba58801ddc',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/TMPackageDetailsExtra/TMExtraPackage.component.js',statementMap:{'0':{start:{line:18,column:51},end:{line:18,column:61}},'1':{start:{line:19,column:34},end:{line:19,column:83}},'2':{start:{line:19,column:68},end:{line:19,column:82}},'3':{start:{line:20,column:32},end:{line:20,column:80}},'4':{start:{line:20,column:65},end:{line:20,column:79}},'5':{start:{line:21,column:23},end:{line:69,column:5}},'6':{start:{line:22,column:89},end:{line:22,column:103}},'7':{start:{line:23,column:20},end:{line:23,column:64}},'8':{start:{line:24,column:23},end:{line:24,column:69}},'9':{start:{line:25,column:29},end:{line:25,column:65}},'10':{start:{line:26,column:27},end:{line:26,column:61}},'11':{start:{line:27,column:26},end:{line:27,column:108}},'12':{start:{line:29,column:20},end:{line:29,column:82}},'13':{start:{line:30,column:19},end:{line:30,column:97}},'14':{start:{line:31,column:30},end:{line:31,column:97}},'15':{start:{line:32,column:32},end:{line:32,column:44}},'16':{start:{line:33,column:25},end:{line:33,column:30}},'17':{start:{line:34,column:24},end:{line:34,column:28}},'18':{start:{line:36,column:6},end:{line:42,column:7}},'19':{start:{line:37,column:33},end:{line:37,column:93}},'20':{start:{line:38,column:8},end:{line:38,column:59}},'21':{start:{line:39,column:33},end:{line:39,column:93}},'22':{start:{line:40,column:8},end:{line:40,column:46}},'23':{start:{line:41,column:8},end:{line:41,column:44}},'24':{start:{line:44,column:6},end:{line:68,column:8}},'25':{start:{line:71,column:37},end:{line:71,column:156}},'26':{start:{line:71,column:91},end:{line:71,column:155}},'27':{start:{line:72,column:38},end:{line:72,column:160}},'28':{start:{line:72,column:94},end:{line:72,column:159}},'29':{start:{line:73,column:39},end:{line:73,column:158}},'30':{start:{line:73,column:93},end:{line:73,column:157}},'31':{start:{line:74,column:40},end:{line:74,column:162}},'32':{start:{line:74,column:96},end:{line:74,column:161}},'33':{start:{line:75,column:4},end:{line:96,column:6}},'34':{start:{line:100,column:0},end:{line:104,column:2}},'35':{start:{line:106,column:0},end:{line:110,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:17,column:2},end:{line:17,column:3}},loc:{start:{line:17,column:12},end:{line:97,column:3}},line:17},'1':{name:'(anonymous_1)',decl:{start:{line:19,column:58},end:{line:19,column:59}},loc:{start:{line:19,column:68},end:{line:19,column:82}},line:19},'2':{name:'(anonymous_2)',decl:{start:{line:20,column:55},end:{line:20,column:56}},loc:{start:{line:20,column:65},end:{line:20,column:79}},line:20},'3':{name:'(anonymous_3)',decl:{start:{line:21,column:23},end:{line:21,column:24}},loc:{start:{line:21,column:63},end:{line:69,column:5}},line:21},'4':{name:'(anonymous_4)',decl:{start:{line:71,column:64},end:{line:71,column:65}},loc:{start:{line:71,column:91},end:{line:71,column:155}},line:71},'5':{name:'(anonymous_5)',decl:{start:{line:72,column:67},end:{line:72,column:68}},loc:{start:{line:72,column:94},end:{line:72,column:159}},line:72},'6':{name:'(anonymous_6)',decl:{start:{line:73,column:66},end:{line:73,column:67}},loc:{start:{line:73,column:93},end:{line:73,column:157}},line:73},'7':{name:'(anonymous_7)',decl:{start:{line:74,column:69},end:{line:74,column:70}},loc:{start:{line:74,column:96},end:{line:74,column:161}},line:74}},branchMap:{'0':{loc:{start:{line:27,column:26},end:{line:27,column:108}},type:'binary-expr',locations:[{start:{line:27,column:26},end:{line:27,column:64}},{start:{line:27,column:68},end:{line:27,column:108}}],line:27},'1':{loc:{start:{line:29,column:20},end:{line:29,column:82}},type:'cond-expr',locations:[{start:{line:29,column:34},end:{line:29,column:48}},{start:{line:29,column:52},end:{line:29,column:81}}],line:29},'2':{loc:{start:{line:30,column:19},end:{line:30,column:97}},type:'cond-expr',locations:[{start:{line:30,column:57},end:{line:30,column:85}},{start:{line:30,column:88},end:{line:30,column:97}}],line:30},'3':{loc:{start:{line:31,column:30},end:{line:31,column:97}},type:'cond-expr',locations:[{start:{line:31,column:63},end:{line:31,column:66}},{start:{line:31,column:69},end:{line:31,column:97}}],line:31},'4':{loc:{start:{line:31,column:31},end:{line:31,column:59}},type:'binary-expr',locations:[{start:{line:31,column:31},end:{line:31,column:42}},{start:{line:31,column:46},end:{line:31,column:59}}],line:31},'5':{loc:{start:{line:36,column:6},end:{line:42,column:7}},type:'if',locations:[{start:{line:36,column:6},end:{line:42,column:7}},{start:{line:36,column:6},end:{line:42,column:7}}],line:36},'6':{loc:{start:{line:36,column:10},end:{line:36,column:55}},type:'binary-expr',locations:[{start:{line:36,column:10},end:{line:36,column:39}},{start:{line:36,column:43},end:{line:36,column:55}}],line:36},'7':{loc:{start:{line:37,column:33},end:{line:37,column:93}},type:'cond-expr',locations:[{start:{line:37,column:50},end:{line:37,column:88}},{start:{line:37,column:91},end:{line:37,column:93}}],line:37},'8':{loc:{start:{line:38,column:30},end:{line:38,column:58}},type:'binary-expr',locations:[{start:{line:38,column:30},end:{line:38,column:52}},{start:{line:38,column:56},end:{line:38,column:58}}],line:38},'9':{loc:{start:{line:39,column:65},end:{line:39,column:92}},type:'binary-expr',locations:[{start:{line:39,column:65},end:{line:39,column:86}},{start:{line:39,column:90},end:{line:39,column:92}}],line:39},'10':{loc:{start:{line:48,column:60},end:{line:48,column:96}},type:'cond-expr',locations:[{start:{line:48,column:68},end:{line:48,column:84}},{start:{line:48,column:87},end:{line:48,column:96}}],line:48},'11':{loc:{start:{line:53,column:41},end:{line:53,column:100}},type:'cond-expr',locations:[{start:{line:53,column:57},end:{line:53,column:77}},{start:{line:53,column:80},end:{line:53,column:100}}],line:53},'12':{loc:{start:{line:53,column:103},end:{line:53,column:169}},type:'cond-expr',locations:[{start:{line:53,column:120},end:{line:53,column:132}},{start:{line:53,column:135},end:{line:53,column:169}}],line:53},'13':{loc:{start:{line:54,column:17},end:{line:54,column:124}},type:'binary-expr',locations:[{start:{line:54,column:18},end:{line:54,column:30}},{start:{line:54,column:34},end:{line:54,column:38}},{start:{line:54,column:43},end:{line:54,column:124}}],line:54},'14':{loc:{start:{line:63,column:15},end:{line:63,column:187}},type:'binary-expr',locations:[{start:{line:63,column:16},end:{line:63,column:28}},{start:{line:63,column:32},end:{line:63,column:36}},{start:{line:63,column:40},end:{line:63,column:52}},{start:{line:63,column:57},end:{line:63,column:187}}],line:63},'15':{loc:{start:{line:66,column:11},end:{line:66,column:177}},type:'cond-expr',locations:[{start:{line:66,column:21},end:{line:66,column:170}},{start:{line:66,column:173},end:{line:66,column:177}}],line:66}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0,'19':0,'20':0,'21':0,'22':0,'23':0,'24':0,'25':0,'26':0,'27':0,'28':0,'29':0,'30':0,'31':0,'32':0,'33':0,'34':0,'35':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0],'4':[0,0],'5':[0,0],'6':[0,0],'7':[0,0],'8':[0,0],'9':[0,0],'10':[0,0],'11':[0,0],'12':[0,0],'13':[0,0,0],'14':[0,0,0,0],'15':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _HeaderWithCaret=require('../BillUsage/BillUsageShared/HeaderWithCaret.component');var _HeaderWithCaret2=_interopRequireDefault(_HeaderWithCaret);
+var _moment=require('../../../utils/moment.util');var _moment2=_interopRequireDefault(_moment);
+var _partition=require('lodash/partition');var _partition2=_interopRequireDefault(_partition);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _TMExtraPackage=require('./TMExtraPackage.style');var _TMExtraPackage2=_interopRequireDefault(_TMExtraPackage);
+var _common=require('../../../utils/common.util');
+var _constants=require('../../../themes/constants.styles');
+var _billUsage=require('../../../config/billUsage.config');
+var _Shared=require('../../Shared');
+var _reactNative=require('react-native');
+var _helper=require('../../../language/i18n/helper');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+TMExtraPackage=function(_Component){_inherits(TMExtraPackage,_Component);function TMExtraPackage(){_classCallCheck(this,TMExtraPackage);return _possibleConstructorReturn(this,(TMExtraPackage.__proto__||Object.getPrototypeOf(TMExtraPackage)).apply(this,arguments));}_createClass(TMExtraPackage,[{key:'render',value:function render()
+
+{cov_1uwfdi5f1z.f[0]++;var _ref=(cov_1uwfdi5f1z.s[0]++,
+this.props),extraPackage=_ref.extraPackage,mainPackage=_ref.mainPackage,isPrepaid=_ref.isPrepaid;
+var filteredExtraPackages=(cov_1uwfdi5f1z.s[1]++,(0,_partition2.default)(extraPackage,function(item){cov_1uwfdi5f1z.f[1]++;cov_1uwfdi5f1z.s[2]++;return!item.isActive;}));
+var filteredMainPackage=(cov_1uwfdi5f1z.s[3]++,(0,_partition2.default)(mainPackage,function(item){cov_1uwfdi5f1z.f[2]++;cov_1uwfdi5f1z.s[4]++;return!item.isActive;}));cov_1uwfdi5f1z.s[5]++;
+var rowContent=function rowContent(packageRowItem,index,packageType){cov_1uwfdi5f1z.f[3]++;var _ref2=(cov_1uwfdi5f1z.s[6]++,
+packageRowItem),quotaType=_ref2.quotaType,packageCode=_ref2.packageCode,remainingQuota=_ref2.remainingQuota,quotaUnit=_ref2.quotaUnit,initialQuota=_ref2.initialQuota,endDate=_ref2.endDate;
+var title=(cov_1uwfdi5f1z.s[7]++,(0,_result2.default)(_billUsage.ICON_MAP[quotaType],'titleText',''));
+var subTitle=(cov_1uwfdi5f1z.s[8]++,' ('+packageType+')'+' : '+packageCode);
+var remainingValue=(cov_1uwfdi5f1z.s[9]++,Math.round(parseInt(remainingQuota)));
+var initialValue=(cov_1uwfdi5f1z.s[10]++,Math.round(parseInt(initialQuota)));
+var isUnlimited=(cov_1uwfdi5f1z.s[11]++,(cov_1uwfdi5f1z.b[0][0]++,initialQuota===_billUsage.QUOTA_VALUE.UNLIMITED)||(cov_1uwfdi5f1z.b[0][1]++,remainingQuota===_billUsage.QUOTA_VALUE.UNLIMITED));
+
+var value=(cov_1uwfdi5f1z.s[12]++,isPrepaid?(cov_1uwfdi5f1z.b[1][0]++,remainingValue):(cov_1uwfdi5f1z.b[1][1]++,initialValue-remainingValue));
+var unit=(cov_1uwfdi5f1z.s[13]++,quotaUnit===_billUsage.QUOTA_VALUE.MINUTES?(cov_1uwfdi5f1z.b[2][0]++,(0,_helper.translate)('BILLS_USAGE_MIN')):(cov_1uwfdi5f1z.b[2][1]++,quotaUnit));
+var percentageValue=(cov_1uwfdi5f1z.s[14]++,(cov_1uwfdi5f1z.b[4][0]++,isUnlimited)||(cov_1uwfdi5f1z.b[4][1]++,!initialQuota)?(cov_1uwfdi5f1z.b[3][0]++,100):(cov_1uwfdi5f1z.b[3][1]++,value*100/initialValue));
+var initialValueDisplay=(cov_1uwfdi5f1z.s[15]++,initialValue);
+var valueDisplay=(cov_1uwfdi5f1z.s[16]++,value);
+var unitDisplay=(cov_1uwfdi5f1z.s[17]++,unit);cov_1uwfdi5f1z.s[18]++;
+
+if((cov_1uwfdi5f1z.b[6][0]++,quotaType===_billUsage.QUOTA_TYPE.DATA)&&(cov_1uwfdi5f1z.b[6][1]++,!isUnlimited)){cov_1uwfdi5f1z.b[5][0]++;
+var intialSizedValue=(cov_1uwfdi5f1z.s[19]++,initialQuota?(cov_1uwfdi5f1z.b[7][0]++,(0,_common.bytesToSize)(initialValueDisplay,unit)):(cov_1uwfdi5f1z.b[7][1]++,{}));cov_1uwfdi5f1z.s[20]++;
+initialValueDisplay=(cov_1uwfdi5f1z.b[8][0]++,intialSizedValue.value)||(cov_1uwfdi5f1z.b[8][1]++,'');
+var valueToBeDisplay=(cov_1uwfdi5f1z.s[21]++,(0,_common.bytesToSize)(valueDisplay,unit,(cov_1uwfdi5f1z.b[9][0]++,intialSizedValue.unit)||(cov_1uwfdi5f1z.b[9][1]++,'')));cov_1uwfdi5f1z.s[22]++;
+valueDisplay=valueToBeDisplay.value;cov_1uwfdi5f1z.s[23]++;
+unitDisplay=valueToBeDisplay.unit;
+}else{cov_1uwfdi5f1z.b[5][1]++;}cov_1uwfdi5f1z.s[24]++;
+
+return(
+_react2.default.createElement(_reactNative.View,{key:index,style:_TMExtraPackage2.default.packageItem},
+_react2.default.createElement(_reactNative.View,{style:_TMExtraPackage2.default.packageItemRow},
+_react2.default.createElement(_reactNative.View,{style:_TMExtraPackage2.default.packageRowLeft},
+_react2.default.createElement(_Shared.ISText,{type:'BOLD',style:_TMExtraPackage2.default.itemTitle},title?(cov_1uwfdi5f1z.b[10][0]++,(0,_helper.translate)(title)):(cov_1uwfdi5f1z.b[10][1]++,quotaType),
+_react2.default.createElement(_Shared.ISText,{type:'BOLD',style:_TMExtraPackage2.default.itemSubtitle},subTitle))),
+
+
+_react2.default.createElement(_reactNative.View,{style:_TMExtraPackage2.default.packageRowRight},
+_react2.default.createElement(_Shared.ISText,{type:'BOLD',style:isUnlimited?(cov_1uwfdi5f1z.b[11][0]++,_TMExtraPackage2.default.unlimitedText):(cov_1uwfdi5f1z.b[11][1]++,_TMExtraPackage2.default.consumedValue)},!isUnlimited?(cov_1uwfdi5f1z.b[12][0]++,valueDisplay):(cov_1uwfdi5f1z.b[12][1]++,(0,_helper.translate)('BILLS_USAGE_UNLIMITED')),
+(cov_1uwfdi5f1z.b[13][0]++,!isUnlimited)&&(cov_1uwfdi5f1z.b[13][1]++,unit)&&(cov_1uwfdi5f1z.b[13][2]++,_react2.default.createElement(_Shared.ISText,{type:'BOLD',style:_TMExtraPackage2.default.consumedValueUnit},' '+unitDisplay))))),
+
+
+
+_react2.default.createElement(_reactNative.View,{style:_TMExtraPackage2.default.packageItemRow},
+_react2.default.createElement(_reactNative.View,{style:_TMExtraPackage2.default.packageRowLeft},
+_react2.default.createElement(_Shared.ProgressBar,{fillColor:_constants.colors.SECONDARY_TMOVE,backgroundColor:_constants.colors.PRIMARY_BG_SEPARATOR,percentage:percentageValue})),
+
+_react2.default.createElement(_reactNative.View,{style:_TMExtraPackage2.default.packageRowRight},
+(cov_1uwfdi5f1z.b[14][0]++,!isUnlimited)&&(cov_1uwfdi5f1z.b[14][1]++,unit)&&(cov_1uwfdi5f1z.b[14][2]++,initialQuota)&&(cov_1uwfdi5f1z.b[14][3]++,_react2.default.createElement(_Shared.ISText,{type:'SEMIBOLD',style:_TMExtraPackage2.default.totalValue},(0,_helper.translate)('BILLS_USAGE_OF')+' '+initialValueDisplay,' ',unitDisplay)))),
+
+
+endDate?(cov_1uwfdi5f1z.b[15][0]++,_react2.default.createElement(_Shared.ISText,{type:'SEMIBOLD',style:_TMExtraPackage2.default.validityText},(0,_helper.translate)('BILLS_USAGE_VALID_UNTIL')+' '+new _moment2.default(endDate).format('DD/MM/YYYY'),' ')):(cov_1uwfdi5f1z.b[15][1]++,null)));
+
+
+};
+
+var activeMainPackageContent=(cov_1uwfdi5f1z.s[25]++,filteredMainPackage[0].map(function(packageRowItem,index){cov_1uwfdi5f1z.f[4]++;cov_1uwfdi5f1z.s[26]++;return rowContent(packageRowItem,index,(0,_helper.translate)('BILLS_USAGE_MAIN'));}));
+var activeExtraPackageContent=(cov_1uwfdi5f1z.s[27]++,filteredExtraPackages[0].map(function(packageRowItem,index){cov_1uwfdi5f1z.f[5]++;cov_1uwfdi5f1z.s[28]++;return rowContent(packageRowItem,index,(0,_helper.translate)('BILLS_USAGE_EXTRA'));}));
+var inactiveMainPackageContent=(cov_1uwfdi5f1z.s[29]++,filteredMainPackage[1].map(function(packageRowItem,index){cov_1uwfdi5f1z.f[6]++;cov_1uwfdi5f1z.s[30]++;return rowContent(packageRowItem,index,(0,_helper.translate)('BILLS_USAGE_MAIN'));}));
+var inactiveExtraPackageContent=(cov_1uwfdi5f1z.s[31]++,filteredExtraPackages[1].map(function(packageRowItem,index){cov_1uwfdi5f1z.f[7]++;cov_1uwfdi5f1z.s[32]++;return rowContent(packageRowItem,index,(0,_helper.translate)('BILLS_USAGE_EXTRA'));}));cov_1uwfdi5f1z.s[33]++;
+return(
+_react2.default.createElement(_reactNative.ScrollView,{style:_TMExtraPackage2.default.scrollContainer,contentContainerStyle:_TMExtraPackage2.default.scrollContentContainer},
+_react2.default.createElement(_Shared.WrapperCard,null,
+_react2.default.createElement(_HeaderWithCaret2.default,{headerColor:_constants.colors.PRIMARY_SUBMENU,caretShadow:true},
+_react2.default.createElement(_Shared.ISText,{type:'BOLD',style:_TMExtraPackage2.default.cardHeaderText},(0,_helper.translate)('EXTRA_PACKAGE_ACTIVE'))),
+
+_react2.default.createElement(_reactNative.View,{style:_TMExtraPackage2.default.cardContent},
+activeMainPackageContent,
+activeExtraPackageContent)),
+
+
+_react2.default.createElement(_Shared.WrapperCard,null,
+_react2.default.createElement(_HeaderWithCaret2.default,{headerColor:_constants.colors.PRIMARY_DISABLED_BG_TEXT,caretShadow:true},
+_react2.default.createElement(_Shared.ISText,{type:'BOLD',style:_TMExtraPackage2.default.cardHeaderText},(0,_helper.translate)('EXTRA_PACKAGE_INACTIVE'))),
+
+_react2.default.createElement(_reactNative.View,{style:_TMExtraPackage2.default.cardContent},
+inactiveMainPackageContent,
+inactiveExtraPackageContent))));
+
+
+
+
+}}]);return TMExtraPackage;}(_react.Component);cov_1uwfdi5f1z.s[34]++;
+
+
+TMExtraPackage.defaultProps={
+extraPackage:[],
+mainPackage:[],
+isPrepaid:false};cov_1uwfdi5f1z.s[35]++;
+
+
+TMExtraPackage.propTypes={
+extraPackage:_propTypes2.default.array,
+mainPackage:_propTypes2.default.array,
+isPrepaid:_propTypes2.default.bool};exports.default=
+
+
+TMExtraPackage;

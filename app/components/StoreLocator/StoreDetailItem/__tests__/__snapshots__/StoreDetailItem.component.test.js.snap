@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StoreDetailItem component StoreDetailItem: renders correctly if heading and label is passed 1`] = `
+<View
+  style={
+    Object {
+      "borderBottomColor": "#E9E9EA",
+      "borderBottomWidth": 1,
+      "flexDirection": "row",
+      "padding": 15,
+    }
+  }
+>
+  <Text
+    accessibilityLabel="_heading"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "color": "#303C46",
+        "flex": 1,
+        "fontFamily": "SukhumvitSet-Text",
+        "fontSize": 18,
+      }
+    }
+    testID="_heading"
+  >
+    heading
+  </Text>
+  <Text
+    accessibilityLabel="_value"
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "color": "#303C46",
+        "flex": 1,
+        "fontFamily": "SukhumvitSet-Text",
+        "fontSize": 18,
+      }
+    }
+    testID="_value"
+  >
+    label
+  </Text>
+</View>
+`;
+
+exports[`StoreDetailItem component StoreDetailItem: return null if heading or label is not passed 1`] = `null`;

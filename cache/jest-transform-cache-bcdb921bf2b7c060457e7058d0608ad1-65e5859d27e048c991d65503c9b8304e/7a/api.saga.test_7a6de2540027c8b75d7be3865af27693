@@ -1,0 +1,150 @@
+jest.mock('react-native-config',function(){return{API_TIMEOUT:'1123'};});
+jest.mock('../../../../config/apiEndpoints.json',function(){return{
+TEST:'test'};});
+
+var _api=require('../api.saga');var _api2=_interopRequireDefault(_api);
+
+var _request=require('../../../../utils/request.util');var _request2=_interopRequireDefault(_request);
+var _reduxSagaTesting=require('redux-saga-testing');var _reduxSagaTesting2=_interopRequireDefault(_reduxSagaTesting);
+var _apiErrorHandler=require('../../../sagas/api/apiErrorHandler.saga');
+var _effects=require('redux-saga/effects');
+var _index=require('../../../actions/index.actions');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('Default payload interceptor: The interceptor adds default api configuration payloads',function(){
+var testApiOptions=function testApiOptions(){return{
+endpoint:'TEST',
+baseUrl:'http://localhost:3000'};};
+
+var expectedApiConfig={
+'baseUrl':'http://localhost:3000',
+'data':{},
+'endpoint':'TEST',
+'headers':{'Accept':'application/json','Content-Type':'application/json','Authorization':'Bearer 1234','icard':'1234','msisdn':'1234'},
+'intercept':true,
+'loader':true,
+'method':'GET',
+'path':'test',
+'query':{},
+'pathParam':'',
+'retryCount':0,
+'timeout':1123};
+
+var it=(0,_reduxSagaTesting2.default)((0,_api.addDefaultApiConfig)(testApiOptions()));
+it('should call the selector on redux store to fetch accessToken',function(result){
+expect(result).toHaveProperty('SELECT');
+return 1234;
+});
+it('should call the selector on redux store to fetch Icard',function(result){
+expect(result).toHaveProperty('SELECT');
+return'1234';
+});
+it('should call the selector on redux store to fetch msisdn',function(result){
+expect(result).toHaveProperty('SELECT');
+return'1234';
+});
+
+it('should add the default api configuration at the end',function(result){
+expect(result).toEqual(expectedApiConfig);
+});
+
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});
+
+describe('api saga: success case: The main api calling saga',function(){
+var testApiOptions=function testApiOptions(){return{
+endpoint:'TEST',
+baseUrl:'http://localhost:3000'};};
+
+var afterDefaultApiConfigOptions={
+'baseUrl':'http://localhost:3000',
+'data':{},
+'endpoint':'TEST',
+'intercept':true,
+'loader':true,
+'method':'GET',
+'path':'test',
+'query':{},
+'retryCount':0,
+'timeout':1123};
+
+var it=(0,_reduxSagaTesting2.default)((0,_api2.default)(testApiOptions()));
+it('should add the default api configuration',function(result){
+expect(result).toEqual((0,_effects.call)(_api.addDefaultApiConfig,testApiOptions()));
+return afterDefaultApiConfigOptions;
+});
+it('should call actions for loaders if loader flag is on (by default its on)',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.showSpinner)()));
+});
+it('should call the api saga with the request',function(result){
+expect(result).toEqual((0,_effects.call)(_request2.default,afterDefaultApiConfigOptions));
+});
+it('should call actions for hiding the loader if loader flag is on (by default its on)',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.hideSpinner)()));
+});
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});
+
+describe('api saga: failure case: The main api calling saga',function(){
+var testApiOptions=function testApiOptions(){return{
+endpoint:'TEST',
+baseUrl:'http://localhost:3000'};};
+
+var afterDefaultApiConfigOptions={
+'endpoint':'TEST',
+'baseUrl':'http://localhost:3000',
+'intercept':true,
+'loader':true,
+'method':'GET',
+'path':'test',
+'query':{},
+'timeout':1123};
+
+var sampleApiError=new Error({message:'Dummy api error'});
+var it=(0,_reduxSagaTesting2.default)((0,_api2.default)(testApiOptions()));
+it('add default config',function(){return afterDefaultApiConfigOptions;});
+it('call the show loader',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.showSpinner)()));
+});
+it('should call the api saga with the request',function(){return sampleApiError;});
+it('call the hide loader',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.hideSpinner)()));
+});
+it('should call the api error handler saga',function(result){
+expect(result).toEqual((0,_effects.call)(_apiErrorHandler.apiErrorHandler,sampleApiError,afterDefaultApiConfigOptions));
+});
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});
+
+describe('api saga: case where loader is turned off',function(){
+var testApiOptions=function testApiOptions(){return{
+endpoint:'TEST',
+baseUrl:'http://localhost:3000',
+loader:false};};
+
+var afterDefaultApiConfigOptions={
+'endpoint':'TEST',
+'baseUrl':'http://localhost:3000',
+'intercept':true,
+'loader':false,
+'method':'GET',
+'path':'test',
+'query':{},
+'timeout':1123};
+
+var it=(0,_reduxSagaTesting2.default)((0,_api2.default)(testApiOptions()));
+it('add default config',function(){return afterDefaultApiConfigOptions;});
+it('should not do anything if loader flag is off',function(){return null;});
+it('should call the api saga with the request',function(result){
+expect(result).toEqual((0,_effects.call)(_request2.default,afterDefaultApiConfigOptions));
+});
+it('should not do anything if loader flag is off',function(){return null;});
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});

@@ -1,0 +1,68 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1fhktdaejo=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Landing/Landing.component.js',hash='cbf74f3ae9846fb889bd23a99667df03225cbc06',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Landing/Landing.component.js',statementMap:{'0':{start:{line:21,column:54},end:{line:21,column:64}},'1':{start:{line:22,column:4},end:{line:50,column:6}},'2':{start:{line:54,column:0},end:{line:59,column:2}},'3':{start:{line:61,column:0},end:{line:66,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:20,column:2},end:{line:20,column:3}},loc:{start:{line:20,column:12},end:{line:51,column:3}},line:20}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0},f:{'0':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _Banner=require('../Shared/Banner/Banner.component');var _Banner2=_interopRequireDefault(_Banner);
+var _home_banner=require('../../assets/home_banner.jpg');var _home_banner2=_interopRequireDefault(_home_banner);
+var _BottomCaretView=require('../Shared/BottomCaretView/BottomCaretView.component');var _BottomCaretView2=_interopRequireDefault(_BottomCaretView);
+var _Button=require('../Shared/Button/Button.component');var _Button2=_interopRequireDefault(_Button);
+var _CircleShadowSeparator=require('../Shared/CircleShadowSeparator/CircleShadowSeparator.component');var _CircleShadowSeparator2=_interopRequireDefault(_CircleShadowSeparator);
+var _IconTextInput=require('../Shared/IconTextInput/IconTextInput.component');var _IconTextInput2=_interopRequireDefault(_IconTextInput);
+var _ISText=require('../Shared/ISText/ISText.component');var _ISText2=_interopRequireDefault(_ISText);
+var _KeyboardScrollView=require('../Shared/KeyboardScollView/KeyboardScrollView.component');var _KeyboardScrollView2=_interopRequireDefault(_KeyboardScrollView);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _Separator=require('../Shared/Separator/Separator.component');var _Separator2=_interopRequireDefault(_Separator);
+var _SquareIconButton=require('../Shared/SquareIconButton/SquareIconButton.component');var _SquareIconButton2=_interopRequireDefault(_SquareIconButton);
+var _Landing=require('./Landing.style');var _Landing2=_interopRequireDefault(_Landing);
+var _constants=require('../../themes/constants.styles');
+var _helper=require('../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+Landing=function(_Component){_inherits(Landing,_Component);function Landing(){_classCallCheck(this,Landing);return _possibleConstructorReturn(this,(Landing.__proto__||Object.getPrototypeOf(Landing)).apply(this,arguments));}_createClass(Landing,[{key:'render',value:function render()
+{cov_1fhktdaejo.f[0]++;var _ref=(cov_1fhktdaejo.s[0]++,
+this.props),onLogin=_ref.onLogin,onRegister=_ref.onRegister,msisdn=_ref.msisdn,onPayPress=_ref.onPayPress;cov_1fhktdaejo.s[1]++;
+return(
+_react2.default.createElement(_KeyboardScrollView2.default,{contentContainerStyle:_Landing2.default.contentContainer},
+_react2.default.createElement(_reactNative.View,null,
+_react2.default.createElement(_Banner2.default,{source:_home_banner2.default}),
+_react2.default.createElement(_BottomCaretView2.default,{iconSize:32,caretColor:_constants.colors.LANDING_TITLE_BG},
+_react2.default.createElement(_ISText2.default,{type:'BOLD',style:_Landing2.default.title,i18nKey:'LANDING__EASY_PAYMENT_TITLE'}))),
+
+
+_react2.default.createElement(_reactNative.View,{style:_Landing2.default.upperBody},
+_react2.default.createElement(_IconTextInput2.default,{multiline:false,style:_Landing2.default.numberInput,containerStyle:_Landing2.default.numberInputContainer,defaultValue:msisdn,iconName:'mobile-phone',placeholder:(0,_helper.translate)('LANDING__EASY_PAYMENT_INPUT_PLACEHOLDER')}),
+_react2.default.createElement(_ISText2.default,{type:'SEMIBOLD',style:_Landing2.default.errorText,i18nKey:'LANDING__EASY_PAYMENT_INPUT_ERROR'}),
+_react2.default.createElement(_Button2.default,{textType:'SEMIBOLD',style:_Landing2.default.payButton,textStyle:_Landing2.default.payButtonText,text:'LANDING__EASY_PAYMENT_BUTTON_TEXT',onPress:onPayPress,accessibilityLabel:'Landing_LoginButton'})),
+
+_react2.default.createElement(_CircleShadowSeparator2.default,{text:'LANDING__OR_SEPARATOR'}),
+_react2.default.createElement(_reactNative.View,{style:_Landing2.default.lowerBody,accessibilityLabel:'Landing_check&buy&pay'},
+_react2.default.createElement(_reactNative.View,{style:_Landing2.default.boxButtonContainer},
+_react2.default.createElement(_SquareIconButton2.default,{iconName:'check-usage',title:'LANDING__CHECK_USAGE_TITLE',subtitle:'LANDING__CHECK_USAGE_SUBTITLE'}),
+_react2.default.createElement(_SquareIconButton2.default,{iconName:'buy-package',title:'LANDING__BUY_EXTRA_TITLE',subtitle:'LANDING__BUY_EXTRA_SUBTITLE'}),
+_react2.default.createElement(_SquareIconButton2.default,{iconName:'pay-other',title:'LANDING__PAY_OTHERS_TITLE',subtitle:'LANDING__PAY_OTHERS_SUBTITLE'})),
+
+_react2.default.createElement(_Separator2.default,{text:'LANDING__FULL_ACCESS_SEPARATOR'}),
+_react2.default.createElement(_Button2.default,{textStyle:_Landing2.default.loginButtonText,style:_Landing2.default.loginButton,text:'LANDING__LOGIN_TRUEID_BUTTON_TEXT',type:'secondary',onPress:onLogin})),
+
+_react2.default.createElement(_reactNative.View,{style:_Landing2.default.footer,accessibilityLabel:'Landing_registerLink'},
+_react2.default.createElement(_ISText2.default,{style:_Landing2.default.dontHaveTrueId,i18nKey:'LANDING__REGISTER_TITLE'}),
+_react2.default.createElement(_Button2.default,{textType:'REGULAR',textStyle:_Landing2.default.registerBtnText,text:'LANDING__REGISTER_SUBTITLE',type:'inline',onPress:onRegister}))));
+
+
+
+}}]);return Landing;}(_react.Component);cov_1fhktdaejo.s[2]++;
+
+
+Landing.defaultProps={
+onLogin:_noop2.default,
+onRegister:_noop2.default,
+onPayPress:_noop2.default,
+msisdn:null};cov_1fhktdaejo.s[3]++;
+
+
+Landing.propTypes={
+onLogin:_propTypes2.default.func,
+onRegister:_propTypes2.default.func,
+onPayPress:_propTypes2.default.func,
+msisdn:_propTypes2.default.string};exports.default=
+
+
+Landing;

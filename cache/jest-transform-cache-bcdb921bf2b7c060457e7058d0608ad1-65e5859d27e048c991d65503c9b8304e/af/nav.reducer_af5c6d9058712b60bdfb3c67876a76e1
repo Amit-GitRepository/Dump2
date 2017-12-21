@@ -1,0 +1,31 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_2vhwdl5vm=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/reducers/nav.reducer.js',hash='ddaa502fb7ab556c53f0a41a7285a40b2a046355',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/reducers/nav.reducer.js',statementMap:{'0':{start:{line:17,column:12},end:{line:29,column:1}},'1':{start:{line:18,column:2},end:{line:27,column:3}},'2':{start:{line:19,column:26},end:{line:19,column:62}},'3':{start:{line:24,column:4},end:{line:26,column:5}},'4':{start:{line:25,column:6},end:{line:25,column:34}},'5':{start:{line:28,column:2},end:{line:28,column:65}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:17,column:12},end:{line:17,column:13}},loc:{start:{line:17,column:31},end:{line:29,column:1}},line:17}},branchMap:{'0':{loc:{start:{line:18,column:2},end:{line:27,column:3}},type:'if',locations:[{start:{line:18,column:2},end:{line:27,column:3}},{start:{line:18,column:2},end:{line:27,column:3}}],line:18},'1':{loc:{start:{line:24,column:4},end:{line:26,column:5}},type:'if',locations:[{start:{line:24,column:4},end:{line:26,column:5}},{start:{line:24,column:4},end:{line:26,column:5}}],line:24},'2':{loc:{start:{line:28,column:9},end:{line:28,column:64}},type:'binary-expr',locations:[{start:{line:28,column:9},end:{line:28,column:55}},{start:{line:28,column:59},end:{line:28,column:64}}],line:28}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0},f:{'0':0},b:{'0':[0,0],'1':[0,0],'2':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _transformer=require('redux-ga-screen-tracker/utils/transformer.utils');var _transformer2=_interopRequireDefault(_transformer);
+var _index=require('../../routes/index.routes');var _index2=_interopRequireDefault(_index);
+var _reactNavigation=require('react-navigation');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}cov_2vhwdl5vm.s[0]++;
+
+
+
+
+
+
+
+
+
+
+
+
+
+var nav=function nav(state,action){cov_2vhwdl5vm.f[0]++;cov_2vhwdl5vm.s[1]++;
+if(action.type===_reactNavigation.NavigationActions.navigate().type){cov_2vhwdl5vm.b[0][0]++;
+var currentScreen=(cov_2vhwdl5vm.s[2]++,(0,_transformer2.default)(state.routes[0]));cov_2vhwdl5vm.s[3]++;
+
+
+
+
+if(currentScreen===action.routeName){cov_2vhwdl5vm.b[1][0]++;cov_2vhwdl5vm.s[4]++;
+return _extends({},state,{index:0});
+}else{cov_2vhwdl5vm.b[1][1]++;}
+}else{cov_2vhwdl5vm.b[0][1]++;}cov_2vhwdl5vm.s[5]++;
+return(cov_2vhwdl5vm.b[2][0]++,_index2.default.router.getStateForAction(action,state))||(cov_2vhwdl5vm.b[2][1]++,state);
+};exports.default=
+
+nav;

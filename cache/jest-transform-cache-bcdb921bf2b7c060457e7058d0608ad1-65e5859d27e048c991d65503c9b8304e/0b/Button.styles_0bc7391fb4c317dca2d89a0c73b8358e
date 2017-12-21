@@ -1,0 +1,59 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.baseStyles=exports.primaryStyles=exports.inlineStyles=exports.secondaryStyles=undefined;var cov_2kmh9kgj0r=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/Button/Button.styles.js',hash='22d23e82d9cfa8634c3ca8f2fd06e03b512b7653',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/Button/Button.styles.js',statementMap:{'0':{start:{line:3,column:31},end:{line:15,column:1}},'1':{start:{line:17,column:28},end:{line:27,column:1}},'2':{start:{line:29,column:29},end:{line:36,column:1}},'3':{start:{line:38,column:26},end:{line:61,column:1}}},fnMap:{},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _constants=require('../../../themes/constants.styles');
+
+var secondaryStyles=exports.secondaryStyles=(cov_2kmh9kgj0r.s[0]++,{
+text:{
+color:_constants.colors.PRIMARY_TEXT_TAB_LABEL},
+
+icon:{
+color:_constants.colors.PRIMARY_ACTIONABLE},
+
+container:{
+backgroundColor:_constants.colors.PRIMARY_BG_TEXT_CONTRAST,
+borderColor:_constants.colors.PRIMARY_TEXT_TAB_LABEL,
+borderWidth:1.5}});
+
+
+
+var inlineStyles=exports.inlineStyles=(cov_2kmh9kgj0r.s[1]++,{
+text:{
+color:_constants.colors.PRIMARY_ACTIONABLE,
+fontSize:_constants.fonts.FONT_SIZE_NORMAL},
+
+container:{
+padding:5,
+borderWidth:0,
+backgroundColor:_constants.colors.TRANSPARENT}});
+
+
+
+var primaryStyles=exports.primaryStyles=(cov_2kmh9kgj0r.s[2]++,{
+container:{
+backgroundColor:_constants.colors.PRIMARY_ACTIONABLE},
+
+text:{
+color:_constants.colors.PRIMARY_BG_TEXT_CONTRAST}});
+
+
+
+var baseStyles=exports.baseStyles=(cov_2kmh9kgj0r.s[3]++,{
+container:{
+alignSelf:'stretch',
+padding:10,
+borderRadius:50},
+
+disabled:{
+opacity:0.7},
+
+wrapper:{
+flexDirection:'row',
+alignSelf:'stretch',
+justifyContent:'center',
+alignItems:'center'},
+
+icon:{
+paddingHorizontal:10,
+fontSize:_constants.fonts.FONT_SIZE_LARGE,
+color:_constants.colors.PRIMARY_BG_TEXT_CONTRAST},
+
+text:{
+fontSize:_constants.fonts.FONT_SIZE_NORMAL}});

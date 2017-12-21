@@ -1,0 +1,72 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.handleAuthErrors=exports.showToast=undefined;var cov_zr1knsog8=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/utils/auth.util.js',hash='988fb0d026d7d62a4eb0d205e0eb7968c5bb3ffe',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/utils/auth.util.js',statementMap:{'0':{start:{line:5,column:19},end:{line:5,column:32}},'1':{start:{line:7,column:25},end:{line:18,column:1}},'2':{start:{line:8,column:26},end:{line:8,column:31}},'3':{start:{line:11,column:2},end:{line:14,column:3}},'4':{start:{line:12,column:20},end:{line:12,column:78}},'5':{start:{line:13,column:4},end:{line:13,column:54}},'6':{start:{line:17,column:2},end:{line:17,column:41}},'7':{start:{line:20,column:32},end:{line:37,column:1}},'8':{start:{line:21,column:17},end:{line:21,column:22}},'9':{start:{line:23,column:2},end:{line:36,column:3}},'10':{start:{line:28,column:4},end:{line:28,column:29}},'11':{start:{line:29,column:4},end:{line:29,column:10}},'12':{start:{line:34,column:4},end:{line:34,column:10}},'13':{start:{line:43,column:4},end:{line:43,column:37}},'14':{start:{line:44,column:4},end:{line:46,column:5}},'15':{start:{line:45,column:6},end:{line:45,column:35}},'16':{start:{line:50,column:4},end:{line:50,column:49}},'17':{start:{line:54,column:4},end:{line:54,column:52}},'18':{start:{line:58,column:4},end:{line:58,column:50}},'19':{start:{line:62,column:4},end:{line:62,column:29}},'20':{start:{line:66,column:4},end:{line:66,column:37}},'21':{start:{line:70,column:13},end:{line:70,column:23}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:7,column:25},end:{line:7,column:26}},loc:{start:{line:7,column:51},end:{line:18,column:1}},line:7},'1':{name:'(anonymous_1)',decl:{start:{line:20,column:32},end:{line:20,column:33}},loc:{start:{line:20,column:51},end:{line:37,column:1}},line:20},'2':{name:'(anonymous_2)',decl:{start:{line:42,column:2},end:{line:42,column:3}},loc:{start:{line:42,column:18},end:{line:47,column:3}},line:42},'3':{name:'(anonymous_3)',decl:{start:{line:49,column:2},end:{line:49,column:3}},loc:{start:{line:49,column:11},end:{line:51,column:3}},line:49},'4':{name:'(anonymous_4)',decl:{start:{line:53,column:2},end:{line:53,column:3}},loc:{start:{line:53,column:14},end:{line:55,column:3}},line:53},'5':{name:'(anonymous_5)',decl:{start:{line:57,column:2},end:{line:57,column:3}},loc:{start:{line:57,column:24},end:{line:59,column:3}},line:57},'6':{name:'(anonymous_6)',decl:{start:{line:61,column:2},end:{line:61,column:3}},loc:{start:{line:61,column:12},end:{line:63,column:3}},line:61},'7':{name:'(anonymous_7)',decl:{start:{line:65,column:2},end:{line:65,column:3}},loc:{start:{line:65,column:28},end:{line:67,column:3}},line:65}},branchMap:{'0':{loc:{start:{line:7,column:33},end:{line:7,column:46}},type:'default-arg',locations:[{start:{line:7,column:42},end:{line:7,column:46}}],line:7},'1':{loc:{start:{line:11,column:2},end:{line:14,column:3}},type:'if',locations:[{start:{line:11,column:2},end:{line:14,column:3}},{start:{line:11,column:2},end:{line:14,column:3}}],line:11},'2':{loc:{start:{line:12,column:20},end:{line:12,column:78}},type:'cond-expr',locations:[{start:{line:12,column:29},end:{line:12,column:57}},{start:{line:12,column:60},end:{line:12,column:78}}],line:12},'3':{loc:{start:{line:23,column:2},end:{line:36,column:3}},type:'switch',locations:[{start:{line:24,column:2},end:{line:24,column:21}},{start:{line:25,column:2},end:{line:25,column:33}},{start:{line:26,column:2},end:{line:26,column:27}},{start:{line:27,column:2},end:{line:30,column:3}},{start:{line:31,column:2},end:{line:31,column:24}},{start:{line:32,column:2},end:{line:35,column:3}}],line:23},'4':{loc:{start:{line:44,column:4},end:{line:46,column:5}},type:'if',locations:[{start:{line:44,column:4},end:{line:46,column:5}},{start:{line:44,column:4},end:{line:46,column:5}}],line:44}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0,'19':0,'20':0,'21':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0},b:{'0':[0],'1':[0,0],'2':[0,0],'3':[0,0,0,0,0,0],'4':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _reactNative=require('react-native');
+var _reactNative2=require('./reactNative.util');
+var _helper=require('../language/i18n/helper');function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}var _ref=(cov_zr1knsog8.s[0]++,_reactNative.NativeModules),
+
+TrueAuth=_ref.TrueAuth;cov_zr1knsog8.s[1]++;
+
+var showToast=exports.showToast=function showToast(error){var method=arguments.length>1&&arguments[1]!==undefined?arguments[1]:(cov_zr1knsog8.b[0][0]++,null);cov_zr1knsog8.f[0]++;var _ref2=(cov_zr1knsog8.s[2]++,
+error),code=_ref2.code,message=_ref2.message;cov_zr1knsog8.s[3]++;
+
+
+if(code===message){cov_zr1knsog8.b[1][0]++;
+var i18nKey=(cov_zr1knsog8.s[4]++,method?(cov_zr1knsog8.b[2][0]++,'AUTH__'+method+'_'+message):(cov_zr1knsog8.b[2][1]++,'AUTH__'+message));cov_zr1knsog8.s[5]++;
+return _reactNative2.Toast.show((0,_helper.translate)(i18nKey),_reactNative2.Toast.LONG);
+}else{cov_zr1knsog8.b[1][1]++;}cov_zr1knsog8.s[6]++;
+
+
+return _reactNative2.Toast.show(message,_reactNative2.Toast.LONG);
+};cov_zr1knsog8.s[7]++;
+
+var handleAuthErrors=exports.handleAuthErrors=function handleAuthErrors(error,method){cov_zr1knsog8.f[1]++;var _ref3=(cov_zr1knsog8.s[8]++,
+error),code=_ref3.code;cov_zr1knsog8.s[9]++;
+
+switch(code){
+case'AUTH_FAILED':cov_zr1knsog8.b[3][0]++;
+case'GET_ACCESS_TOKEN_FAILED':cov_zr1knsog8.b[3][1]++;
+case'JSON_PARSE_FAILED':cov_zr1knsog8.b[3][2]++;
+case'LOGOUT_FAILED':cov_zr1knsog8.b[3][3]++;{cov_zr1knsog8.s[10]++;
+showToast(error,method);cov_zr1knsog8.s[11]++;
+break;
+}
+case'AUTH_CANCELLED':cov_zr1knsog8.b[3][4]++;
+case'CHECK_EXISTING_LOGIN_FAILED':cov_zr1knsog8.b[3][5]++;{cov_zr1knsog8.s[12]++;
+
+break;
+}}
+
+};var
+
+Auth=function(){function Auth(){_classCallCheck(this,Auth);}_createClass(Auth,[{key:'init',value:function init(
+
+
+language){cov_zr1knsog8.f[2]++;cov_zr1knsog8.s[13]++;
+this.selectedLanguage=language;cov_zr1knsog8.s[14]++;
+if(_reactNative.Platform.OS==='ios'){cov_zr1knsog8.b[4][0]++;cov_zr1knsog8.s[15]++;
+return TrueAuth.initialize();
+}else{cov_zr1knsog8.b[4][1]++;}
+}},{key:'login',value:function login()
+
+{cov_zr1knsog8.f[3]++;cov_zr1knsog8.s[16]++;
+return TrueAuth.login(this.selectedLanguage);
+}},{key:'register',value:function register()
+
+{cov_zr1knsog8.f[4]++;cov_zr1knsog8.s[17]++;
+return TrueAuth.register(this.selectedLanguage);
+}},{key:'checkExistingLogin',value:function checkExistingLogin()
+
+{cov_zr1knsog8.f[5]++;cov_zr1knsog8.s[18]++;
+return TrueAuth.checkLoginAndGetAccessToken();
+}},{key:'logout',value:function logout()
+
+{cov_zr1knsog8.f[6]++;cov_zr1knsog8.s[19]++;
+return TrueAuth.logout();
+}},{key:'updateLanguage',value:function updateLanguage(
+
+language){cov_zr1knsog8.f[7]++;cov_zr1knsog8.s[20]++;
+this.selectedLanguage=language;
+}}]);return Auth;}();
+
+
+var auth=(cov_zr1knsog8.s[21]++,new Auth());exports.default=
+
+auth;

@@ -1,0 +1,50 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.mapDispatchToProps=exports.mapStateToProps=undefined;var cov_yjldd4oa2=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/BillUsage/BillUsage.page.js',hash='bc1a31ed2e89654d7cd3790550985cb175856588',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/BillUsage/BillUsage.page.js',statementMap:{'0':{start:{line:12,column:4},end:{line:12,column:32}},'1':{start:{line:15,column:141},end:{line:15,column:151}},'2':{start:{line:16,column:4},end:{line:19,column:6}},'3':{start:{line:23,column:0},end:{line:32,column:2}},'4':{start:{line:34,column:31},end:{line:39,column:2}},'5':{start:{line:34,column:43},end:{line:39,column:1}},'6':{start:{line:42,column:34},end:{line:48,column:2}},'7':{start:{line:42,column:49},end:{line:48,column:1}},'8':{start:{line:43,column:43},end:{line:43,column:112}},'9':{start:{line:44,column:24},end:{line:44,column:67}},'10':{start:{line:45,column:56},end:{line:45,column:132}},'11':{start:{line:46,column:53},end:{line:46,column:133}},'12':{start:{line:47,column:56},end:{line:47,column:139}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:11,column:2},end:{line:11,column:3}},loc:{start:{line:11,column:23},end:{line:13,column:3}},line:11},'1':{name:'(anonymous_1)',decl:{start:{line:14,column:2},end:{line:14,column:3}},loc:{start:{line:14,column:19},end:{line:20,column:3}},line:14},'2':{name:'(anonymous_2)',decl:{start:{line:34,column:31},end:{line:34,column:32}},loc:{start:{line:34,column:43},end:{line:39,column:1}},line:34},'3':{name:'(anonymous_3)',decl:{start:{line:42,column:34},end:{line:42,column:35}},loc:{start:{line:42,column:49},end:{line:48,column:1}},line:42},'4':{name:'(anonymous_4)',decl:{start:{line:43,column:14},end:{line:43,column:15}},loc:{start:{line:43,column:43},end:{line:43,column:112}},line:43},'5':{name:'(anonymous_5)',decl:{start:{line:44,column:18},end:{line:44,column:19}},loc:{start:{line:44,column:24},end:{line:44,column:67}},line:44},'6':{name:'(anonymous_6)',decl:{start:{line:45,column:25},end:{line:45,column:26}},loc:{start:{line:45,column:56},end:{line:45,column:132}},line:45},'7':{name:'(anonymous_7)',decl:{start:{line:46,column:22},end:{line:46,column:23}},loc:{start:{line:46,column:53},end:{line:46,column:133}},line:46},'8':{name:'(anonymous_8)',decl:{start:{line:47,column:25},end:{line:47,column:26}},loc:{start:{line:47,column:56},end:{line:47,column:139}},line:47}},branchMap:{'0':{loc:{start:{line:43,column:27},end:{line:43,column:38}},type:'default-arg',locations:[{start:{line:43,column:36},end:{line:43,column:38}}],line:43}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0},b:{'0':[0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _BillUsage=require('../../components/BillUsage/BillUsage/BillUsage.component');var _BillUsage2=_interopRequireDefault(_BillUsage);
+var _ComponentWithTab2=require('../../components/ComponentWithTab/ComponentWithTab.component');var _ComponentWithTab3=_interopRequireDefault(_ComponentWithTab2);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _reactRedux=require('react-redux');
+var _reactNavigation=require('react-navigation');
+var _index=require('../../redux/actions/index.actions');var actions=_interopRequireWildcard(_index);function _interopRequireWildcard(obj){if(obj&&obj.__esModule){return obj;}else{var newObj={};if(obj!=null){for(var key in obj){if(Object.prototype.hasOwnProperty.call(obj,key))newObj[key]=obj[key];}}newObj.default=obj;return newObj;}}function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+BillUsagePage=function(_ComponentWithTab){_inherits(BillUsagePage,_ComponentWithTab);function BillUsagePage(){_classCallCheck(this,BillUsagePage);return _possibleConstructorReturn(this,(BillUsagePage.__proto__||Object.getPrototypeOf(BillUsagePage)).apply(this,arguments));}_createClass(BillUsagePage,[{key:'componentDidMount',value:function componentDidMount()
+{cov_yjldd4oa2.f[0]++;cov_yjldd4oa2.s[0]++;
+this.props.getProductList();
+}},{key:'renderWithTab',value:function renderWithTab()
+{cov_yjldd4oa2.f[1]++;var _ref=(cov_yjldd4oa2.s[1]++,
+this.props),username=_ref.username,productList=_ref.productList,productDetail=_ref.productDetail,billDetail=_ref.billDetail,getProductBillDetails=_ref.getProductBillDetails,goToScreen=_ref.goToScreen,toggleProductCheck=_ref.toggleProductCheck,toggleProductCollapse=_ref.toggleProductCollapse;cov_yjldd4oa2.s[2]++;
+return(
+_react2.default.createElement(_BillUsage2.default,{productList:productList,productDetail:productDetail,billDetail:billDetail,username:username,goToScreen:goToScreen,
+toggleProductCheck:toggleProductCheck,toggleProductCollapse:toggleProductCollapse,getProductBillDetails:getProductBillDetails}));
+
+}}]);return BillUsagePage;}(_ComponentWithTab3.default);cov_yjldd4oa2.s[3]++;
+
+
+BillUsagePage.propTypes={
+username:_propTypes2.default.string,
+goToScreen:_propTypes2.default.func,
+productList:_propTypes2.default.object,
+productDetail:_propTypes2.default.object,
+billDetail:_propTypes2.default.object,
+getProductList:_propTypes2.default.func,
+toggleProductCheck:_propTypes2.default.func,
+toggleProductCollapse:_propTypes2.default.func};cov_yjldd4oa2.s[4]++;
+
+
+var mapStateToProps=exports.mapStateToProps=function mapStateToProps(state){cov_yjldd4oa2.f[2]++;cov_yjldd4oa2.s[5]++;return{
+username:(0,_result2.default)(state,'user.profile.first_name','')+(0,_result2.default)(state,'user.profile.last_name',''),
+productList:(0,_result2.default)(state,'billUsage.productList',{}),
+productDetail:(0,_result2.default)(state,'billUsage.productDetail',{}),
+billDetail:(0,_result2.default)(state,'billUsage.billDetail',{})};
+};cov_yjldd4oa2.s[6]++;
+
+
+var mapDispatchToProps=exports.mapDispatchToProps=function mapDispatchToProps(dispatch){cov_yjldd4oa2.f[3]++;cov_yjldd4oa2.s[7]++;return{
+goToScreen:function goToScreen(screenName){var params=arguments.length>1&&arguments[1]!==undefined?arguments[1]:(cov_yjldd4oa2.b[0][0]++,{});cov_yjldd4oa2.f[4]++;cov_yjldd4oa2.s[8]++;return dispatch(_reactNavigation.NavigationActions.navigate({routeName:screenName,params:params}));},
+getProductList:function getProductList(){cov_yjldd4oa2.f[5]++;cov_yjldd4oa2.s[9]++;return dispatch(actions.getBillUsageProductList());},
+getProductBillDetails:function getProductBillDetails(productType,subscriberId){cov_yjldd4oa2.f[6]++;cov_yjldd4oa2.s[10]++;return dispatch(actions.getBillUsageProductBillDetail({productType:productType,subscriberId:subscriberId}));},
+toggleProductCheck:function toggleProductCheck(productType,subscriberId){cov_yjldd4oa2.f[7]++;cov_yjldd4oa2.s[11]++;return dispatch(actions.toggleBillUsageProductCheckStatus({productType:productType,subscriberId:subscriberId}));},
+toggleProductCollapse:function toggleProductCollapse(productType,subscriberId){cov_yjldd4oa2.f[8]++;cov_yjldd4oa2.s[12]++;return dispatch(actions.toggleBillUsageProductCollapseStatus({productType:productType,subscriberId:subscriberId}));}};
+};exports.default=
+
+(0,_reactRedux.connect)(mapStateToProps,mapDispatchToProps)(BillUsagePage);

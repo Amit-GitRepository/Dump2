@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/components/BillingMethods/EBillAdd/EBillAdd.component.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../index.html">All files</a> / <a href="index.html">iservice-app/app/components/BillingMethods/EBillAdd</a> EBillAdd.component.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">33.33% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>17/51</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">7.69% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>2/26</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">64.29% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>9/14</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">32% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>16/50</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">11x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">39x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">39x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* EbillAdd: show all the available paper bill items which user want to apply ebill for*/
+&nbsp;
+import _ from 'lodash';
+import EBillAddItem from '../EBillAddItem/EBillAddItem.component';
+import PropTypes from 'prop-types';
+import React, {Component} from 'react';
+import styles from './EBillAdd.style';
+import {accountTypeMap, ebillFormatOptions} from '../../../config/ebill.config';
+import {APPLY_FOR_EBILL} from '../../../redux/actions/index.actions';
+import {Button, Card, ISText, RadioButton} from '../../Shared';
+import {ScrollView, View} from 'react-native';
+import {translate} from '../../../language/i18n/helper';
+&nbsp;
+class EbillAdd extends Component {
+  state = {
+    selectedEbillOption: 'SMS',
+    accounts: []
+  }
+&nbsp;
+  componentWillMount () {
+    const accounts = [];
+    _.map(this.props.paperBillContent, (val) =&gt; {
+      const obj = _.assign({}, val);
+      obj.isSelected = true;
+      obj.ebillFormat = this.state.selectedEbillOption,
+      obj.emailToRegister = '',
+      obj.msisdnToRegister = val.accountType === 'tmhPostpaid' ? <span class="branch-0 cbranch-no" title="branch not covered" >val.productId </span>: '';
+      accounts.push(obj);
+    });
+    this.setState({accounts});
+  }
+&nbsp;
+  onRadioSelect = () =&gt; <span class="fstat-no" title="function not covered" >(e</span>billOption) =&gt; {
+<span class="cstat-no" title="statement not covered" >    this.setState({selectedEbillOption: ebillOption});</span>
+  }
+&nbsp;
+  generateEbillFormatItems = () =&gt; {
+    const {selectedEbillOption} = this.state;
+    return _.map(ebillFormatOptions, (option, index) =&gt;
+      &lt;View style={styles.ebillFormatItem} key={option.id}&gt;
+        &lt;RadioButton
+          isSelected= {option.id === selectedEbillOption}
+          onRadioSelect={this.onRadioSelect(option.id)}
+          key={`${option.id}-${index}`}
+          value={option.id}
+          style={styles.radioButton} /&gt;
+        &lt;ISText type='SEMIBOLD' style={styles.ebillFormat}&gt;{translate(`BILLING_METHODS__ADD_VIA_${option.id}`)}&lt;/ISText&gt;
+      &lt;/View&gt;
+    );
+  }
+&nbsp;
+  updateAccountValue = <span class="fstat-no" title="function not covered" >(a</span>ccountID, value) =&gt; {
+    const index = <span class="cstat-no" title="statement not covered" >_.findIndex(this.state.accounts, {accountID: accountID});</span>
+<span class="cstat-no" title="statement not covered" >    if (index !== -1) {</span>
+      const accounts = <span class="cstat-no" title="statement not covered" >this.state.accounts;</span>
+<span class="cstat-no" title="statement not covered" >      accounts[index].emailToRegister = this.state.selectedEbillOption === 'EMAIL' ? value : '';</span>
+<span class="cstat-no" title="statement not covered" >      accounts[index].msisdnToRegister = this.state.selectedEbillOption === 'SMS' ? value : '';</span>
+<span class="cstat-no" title="statement not covered" >      this.setState({accounts});</span>
+    }
+  }
+&nbsp;
+  toggleSelection = <span class="fstat-no" title="function not covered" >(a</span>ccountID, isSelected) =&gt; {
+    const index = <span class="cstat-no" title="statement not covered" >_.findIndex(this.state.accounts, {accountID: `${accountID}`});</span>
+<span class="cstat-no" title="statement not covered" >    if (index !== -1) {</span>
+      const accounts = <span class="cstat-no" title="statement not covered" >this.state.accounts;</span>
+<span class="cstat-no" title="statement not covered" >      accounts[index].isSelected = isSelected;</span>
+<span class="cstat-no" title="statement not covered" >      this.setState({accounts});</span>
+    }
+  }
+&nbsp;
+  generateServiceListItems = () =&gt; _.map(this.state.accounts, (obj, index) =&gt; (&lt;EBillAddItem
+    key={`E-Bill-Add-Item-${index}`}
+    accountID={obj.accountID}
+    accountType={accountTypeMap[obj.accountType]}
+    serviceID={obj.productId}
+    defaultMSISDN={obj.accountType === 'tmhPostpaid' ? <span class="branch-0 cbranch-no" title="branch not covered" >obj.productId </span>: ''}
+    ebillFormat={this.state.selectedEbillOption}
+    onValueUpdate={this.updateAccountValue}
+    onToggleSelection={this.toggleSelection}
+    isSelected={obj.isSelected}
+  /&gt;))
+&nbsp;
+  preparePayloadForEbillApply = () =&gt; <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+    const emailRegex = <span class="cstat-no" title="statement not covered" >/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;</span> // eslint-disable-line no-useless-escape
+    const msisdnRegex = <span class="cstat-no" title="statement not covered" >/^\d{10}$/;</span>
+    let shouldCallApplyForEBill = <span class="cstat-no" title="statement not covered" >true;</span>
+    const accounts = <span class="cstat-no" title="statement not covered" >[];</span>
+    const filteredAccount = <span class="cstat-no" title="statement not covered" >_.filter(this.state.accounts, {isSelected: true});</span>
+<span class="cstat-no" title="statement not covered" >    _.map(filteredAccount, <span class="fstat-no" title="function not covered" >(v</span>al) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >      if (shouldCallApplyForEBill) {</span>
+        const obj = <span class="cstat-no" title="statement not covered" >_.pick(val, ['accountID', 'accountType', 'ebillFormat', 'emailToRegister', 'msisdnToRegister']);</span>
+<span class="cstat-no" title="statement not covered" >        obj.ebillFormat = this.state.selectedEbillOption.toLowerCase();</span>
+<span class="cstat-no" title="statement not covered" >        if (obj.ebillFormat === 'email') {</span>
+<span class="cstat-no" title="statement not covered" >          if (!emailRegex.test(obj.emailToRegister) || obj.emailToRegister === '') {</span>
+<span class="cstat-no" title="statement not covered" >            shouldCallApplyForEBill = false;</span>
+<span class="cstat-no" title="statement not covered" >            return;</span>
+          }
+<span class="cstat-no" title="statement not covered" >          obj.msisdnToRegister = '';</span>
+        } else {
+<span class="cstat-no" title="statement not covered" >          if (!msisdnRegex.test(obj.msisdnToRegister) || obj.msisdnToRegister === '') {</span>
+<span class="cstat-no" title="statement not covered" >            shouldCallApplyForEBill = false;</span>
+<span class="cstat-no" title="statement not covered" >            return;</span>
+          }
+<span class="cstat-no" title="statement not covered" >          obj.emailToRegister = '';</span>
+        }
+<span class="cstat-no" title="statement not covered" >        accounts.push(obj);</span>
+      }
+    });
+<span class="cstat-no" title="statement not covered" >    if (shouldCallApplyForEBill) {</span>
+      const message = <span class="cstat-no" title="statement not covered" >{</span>
+        title: translate('BILLING_METHODS__ADD_GO_PAPERLESS'),
+        body: translate('BILLING_METHODS__ADD_BODY_PAPERLESS'),
+        buttons: [
+          {
+            title: translate('BILLING_METHODS__ADD_CANCEL')
+          },
+          {
+            title: translate('BILLING_METHODS__ADD_CONFIRM'),
+            actionType: APPLY_FOR_EBILL,
+            nextAction: accounts
+          }
+        ]
+      };
+<span class="cstat-no" title="statement not covered" >      this.props.showPopup(message);</span>
+    }
+  }
+&nbsp;
+  render () {
+    return (
+      &lt;View style={styles.container}&gt;
+        &lt;ScrollView
+          showsVerticalScrollIndicator={false}
+          style={styles.cardContainer}
+          contentContainerStyle={styles.scrollContainer}
+        &gt;
+          &lt;Card header={translate('BILLING_METHODS__ADD_HEADER')}&gt;
+            &lt;View style={styles.ebillFormatContainer}&gt;
+              {this.generateEbillFormatItems()}
+            &lt;/View&gt;
+            &lt;View style={styles.serviceListHeaderContainer}&gt;
+              &lt;ISText type='SEMIBOLD' style={styles.serviceListHeader}&gt;{translate('BILLING_METHODS__ADD_SERVICE_LIST')}&lt;/ISText&gt;
+            &lt;/View&gt;
+            &lt;View style={styles.serviceListContainer}&gt;
+              {this.generateServiceListItems()}
+            &lt;/View&gt;
+          &lt;/Card&gt;
+        &lt;/ScrollView&gt;
+        &lt;View style={styles.buttonContainer}&gt;
+          &lt;Button text={translate('BILLING_METHODS__ADD_APPLY')} onPress={this.preparePayloadForEbillApply()} /&gt;
+        &lt;/View&gt;
+      &lt;/View&gt;);
+  }
+}
+EbillAdd.defaultProps = {
+  paperBillContent: [],
+  showPopup: _.noop
+};
+EbillAdd.propTypes = {
+  paperBillContent: PropTypes.array,
+  showPopup: PropTypes.func
+};
+export default EbillAdd;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../sorter.js"></script>
+</body>
+</html>

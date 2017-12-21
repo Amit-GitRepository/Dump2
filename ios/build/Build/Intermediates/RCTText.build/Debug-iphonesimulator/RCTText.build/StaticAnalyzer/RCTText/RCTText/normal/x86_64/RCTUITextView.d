@@ -1,0 +1,13 @@
+dependencies: \
+  /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native/Libraries/Text/RCTUITextView.m \
+  /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native/Libraries/Text/RCTUITextView.h \
+  /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native/Libraries/Text/RCTBackedTextInputViewProtocol.h \
+  /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native/Libraries/Text/RCTBackedTextInputDelegate.h \
+  /Users/amitkumar/iTrueService/DevCode/iservice-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/amitkumar/iTrueService/DevCode/iservice-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/amitkumar/iTrueService/DevCode/iservice-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/amitkumar/iTrueService/DevCode/iservice-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/UIView+React.h \
+  /Users/amitkumar/iTrueService/DevCode/iservice-app/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTComponent.h \
+  /Users/amitkumar/iTrueService/DevCode/iservice-app/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/amitkumar/iTrueService/DevCode/iservice-app/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native/Libraries/Text/RCTBackedTextInputDelegateAdapter.h

@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+jest.mock('redux-ga-screen-tracker/utils/transformer.utils',function(){return jest.fn(function(){return'Landing';});});var _App=require('../App.container');var _App2=_interopRequireDefault(_App);var _react=require('react');var _react2=_interopRequireDefault(_react);var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);var _enzyme=require('enzyme');var _redux=require('redux');var _reactRedux=require('react-redux');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+var store=(0,_redux.createStore)(function(){return{spinner:{},nav:{},user:{language:'en'},sideMenu:{},isUpdateAlertVisible:false};});
+
+describe('AppContainer page',function(){
+var pageComponent=null;
+var instance=null;
+beforeEach(function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_App2.default,{store:store}));
+pageComponent=wrapper.find('App').shallow();
+instance=pageComponent.instance();
+});
+it('should render',function(){
+var wrapper=(0,_enzyme.shallow)(
+_react2.default.createElement(_reactRedux.Provider,{store:store},
+_react2.default.createElement(_App2.default,null)));
+
+expect(wrapper).toBeDefined();
+});
+xit('componentWillMount: should add BackHandler.addEventListener',function(){
+instance.componentWillMount();
+
+});
+});

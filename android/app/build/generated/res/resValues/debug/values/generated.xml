@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Automatically generated file. DO NOT MODIFY -->
+
+    <!-- Values from default config. -->
+    <string name="ANDROID_APP_ID" translatable="false">"com.truemoveent.iservice.dev'"</string>
+    <string name="ANDROID_KEYSTORE_FILE" translatable="false">"dev_release.keystore'"</string>
+    <string name="ANDROID_KEY_ALIAS" translatable="false">"dev-alias'"</string>
+    <string name="ANDROID_TRUE_CLIENT_ID" translatable="false">"331"</string>
+    <string name="ANDROID_TRUE_CLIENT_SECRET" translatable="false">"d95d7eddd570b77c23c3bbe17d7477f4"</string>
+    <string name="API_MAX_RETRIES" translatable="false">"3"</string>
+    <string name="API_TIMEOUT" translatable="false">"20000"</string>
+    <string name="APP_DEEPLINK_URL" translatable="false">"p4p7p.app.goo.gl"</string>
+    <string name="APP_NAME" translatable="false">"iService-Dev"</string>
+    <string name="BROADCAST_TOPIC" translatable="false">"alldev"</string>
+    <string name="CONTENT_ENDPOINT" translatable="false">"http://dmpapi-dev.trueid.net/iservice-content-dev"</string>
+    <string name="DEEPLINK_BASE_URL" translatable="false">"iservice.truecorp.co.th/"</string>
+    <string name="ENV_NAME" translatable="false">"DEV'"</string>
+    <string name="GA_TRACKER_ID_ANDROID" translatable="false">"UA-105977172-1"</string>
+    <string name="GA_TRACKER_ID_IOS" translatable="false">"UA-106011966-1"</string>
+    <string name="GA_TRACKER_INTERVAL" translatable="false">"20"</string>
+    <string name="GOOGLESERVICE_INFO_PLIST" translatable="false">"GoogleService-Info-dev.plist.enc'"</string>
+    <string name="GOOGLE_MAPS_API_KEY" translatable="false">"AIzaSyBHhAvORpoGoJ9ldXzPanRWrx0BXoQyv7A"</string>
+    <string name="IOS_APP_ID" translatable="false">"com.truemoveent.iservice.dev'"</string>
+    <string name="IOS_CERTIFICATE" translatable="false">"True_Certificate_Distribution.p12'"</string>
+    <string name="IOS_CONFIGURATION" translatable="false">"RELEASE'"</string>
+    <string name="IOS_EXPORT_OPTIONS_PLIST" translatable="false">"exportOptions-dev.plist'"</string>
+    <string name="IOS_PROVISION_PROFILE" translatable="false">"True_iService_V2_Dev_Distribution.mobileprovision'"</string>
+    <string name="IOS_SCHEME" translatable="false">"iService-Dev'"</string>
+    <string name="IOS_TRUE_CLIENT_ID" translatable="false">"332"</string>
+    <string name="IOS_TRUE_CLIENT_SECRET" translatable="false">"9c06c97728cb1daa7978768023d6d46a"</string>
+    <string name="ISERVICE_AUTH_TOKEN" translatable="false">"59a3b924233eaa10411635f4d182a204bce64f615edc68ecb304bb82"</string>
+    <string name="NOTIFICATION_ENDPOINT" translatable="false">"http://dmpapi-dev.trueid.net/iservice-notifications-dev"</string>
+    <string name="OMISE_PUBLIC_KEY_ENCRYPTED" translatable="false">"cGtleV90ZXN0XzU5aHYyOWMzM2FhanR6NjVtZ28='"</string>
+    <string name="OMISE_VAULT_URL" translatable="false">"https://vault.omise.co"</string>
+    <string name="OTP_ENDPOINT" translatable="false">"http://widget3.truecorp.co.th/msisdn_service/rest/"</string>
+    <string name="PAYMENT_ENDPOINT" translatable="false">"http://dmpapi-dev.trueid.net/iservice-payment-dev"</string>
+    <string name="SERVER_URL" translatable="false">"http://dmpapi-dev.trueid.net"</string>
+    <string name="SUBSCRIBER_ENDPOINT" translatable="false">"http://dmpapi-dev.trueid.net/iservice-subscriber-dev"</string>
+    <string name="TESTFAIRY_APP_TOKEN" translatable="false">"50e7e413925fa7690bf1aa7d675420b43f680981'"</string>
+    <string name="TRUE_CLIENT_FLOW" translatable="false">"A"</string>
+    <string name="USER_ENDPOINT" translatable="false">"http://dmpapi-dev.trueid.net/iservice-user-dev"</string>
+    <string name="build_config_package" translatable="false">com.iservice</string>
+
+</resources>

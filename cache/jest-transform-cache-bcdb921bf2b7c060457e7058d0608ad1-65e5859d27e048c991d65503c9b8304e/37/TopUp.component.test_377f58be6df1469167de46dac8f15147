@@ -1,0 +1,31 @@
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);
+var _TopUp=require('../TopUp.component');var _TopUp2=_interopRequireDefault(_TopUp);
+var _enzyme=require('enzyme');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+describe('TopUp component',function(){
+it('renders correctly',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_TopUp2.default,null));
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_TopUp2.default,null)).toJSON();
+expect(component).toMatchSnapshot();
+expect(wrapper).toBeDefined();
+});
+it('should have initial state for amount and selectedPhoneNumber ',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_TopUp2.default,null));
+expect(wrapper.state().msisdn).toBe(null);
+expect(wrapper.state().value).toBe(null);
+});
+it('should update the state on setTopUpMsisdn ',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_TopUp2.default,null));
+wrapper.instance().setTopUpMsisdn('9999');
+expect(wrapper.state().msisdn).toBe('9999');
+});
+it('should update the state on setTopUpValue ',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_TopUp2.default,null));
+wrapper.instance().setTopUpValue('123');
+expect(wrapper.state().value).toBe(123);
+});
+});

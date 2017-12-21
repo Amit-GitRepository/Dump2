@@ -1,0 +1,136 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+jest.mock('../../../utils/location.util');var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _this=this;var _store=require('../../../redux/store');var _store2=_interopRequireDefault(_store);var _react=require('react');var _react2=_interopRequireDefault(_react);var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);var _StoreLocatorMap=require('../StoreLocatorMap.page');var _StoreLocatorMap2=_interopRequireDefault(_StoreLocatorMap);var _index=require('../../../redux/actions/index.actions');var _enzyme=require('enzyme');var _location=require('../../../utils/location.util');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}var store=(0,_store2.default)({storeLocator:{radiusKM:50,allStores:{data:[]}},user:{currentLocation:null}});
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+describe('StoreLocatorMap Page',function(){
+var wrapper=void 0;
+var page=void 0;
+beforeEach(function(){
+wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_StoreLocatorMap2.default,{currentLocation:{},store:store}));
+page=wrapper.find('StoreLocatorMapPage').shallow();
+});
+it('renders ',function(){
+expect(wrapper).toBeDefined();
+});
+
+it('it has mapStateToProps : props defined',function(){
+var props=(0,_StoreLocatorMap.mapStateToProps)(store.getState());
+expect(props.currentLocation).toBeDefined();
+});
+
+it('it has mapDispatchToProps functions',function(){
+var mockDispatch=function mockDispatch(action){return action;};
+var props=(0,_StoreLocatorMap.mapDispatchToProps)(mockDispatch);
+expect(props.changeCurrentLocation({latitude:1.8978,longitude:2.7568})).toEqual((0,_index.changeCurrentLocation)({latitude:1.8978,longitude:2.7568}));
+});
+
+it('componentWillMount: should call getCurrentPosition',function(){
+page.setState({initialRegion:null});
+page.instance().componentWillMount();
+expect(_location.getCurrentPosition).toBeCalled();
+});
+it('componentWillMount: should call getCurrentPosition',function _callee(){var updateMapSpy;return regeneratorRuntime.async(function _callee$(_context){while(1){switch(_context.prev=_context.next){case 0:
+page.setState({initialRegion:{latitude:1.8978,longitude:2.7568}});
+_location.getCurrentPosition.mockImplementation(function(){return Promise.reject();});
+updateMapSpy=jest.spyOn(page.instance(),'updateMap');_context.next=5;return regeneratorRuntime.awrap(
+page.instance().componentWillMount());case 5:
+expect(_location.getCurrentPosition).toBeCalled();
+expect(updateMapSpy).toBeCalledWith({latitude:1.8978,longitude:2.7568},true);case 7:case'end':return _context.stop();}}},null,_this);});
+
+it('componentWillMount: should updateMap if props.selectedProvince is passed',function(){
+page.setProps({selectedProvince:{lat:10,long:100}});
+var updateMapSpy=jest.spyOn(page.instance(),'updateMap');
+page.instance().componentWillMount();
+expect(updateMapSpy).toBeCalled();
+});
+it('showSearchModal: should showSearchModal',function(){
+page.setState({searchModalVisibility:false});
+page.instance().showSearchModal();
+expect(page.instance().state.searchModalVisibility).toEqual(true);
+});
+it('hideSearchModal: should hideSearchModal',function(){
+page.setState({searchModalVisibility:true});
+page.instance().hideSearchModal();
+expect(page.instance().state.searchModalVisibility).toEqual(false);
+});
+it('onSearchTextChange: should call props.changeSearchText with input and language',function(){
+var props={changeSearchText:jest.fn(),language:'th'};
+page.setProps(props);
+page.instance().onSearchTextChange('Pattaya');
+expect(props.changeSearchText).toBeCalledWith({input:'Pattaya',language:'th'});
+});
+it('addStoreMarker: should return if lat or long is not there',function(){
+var store={latitude:null};
+expect(page.instance().addStoreMarker(store)).toBeUndefined();
+});
+it('addStoreMarker: should add marker and updateNearByStores',function(){
+var store={latitude:12,longitude:100};
+var props={updateNearByStores:jest.fn(),clearFilteredStores:jest.fn()};
+var hideSearchModalSpy=jest.spyOn(page.instance(),'hideSearchModal');
+
+_location.sortByDistance.mockImplementation(function(obj){return[_extends({},obj,{distance:1.0})];});
+page.setProps(props);
+page.setState({initialRegion:{latitude:12,longitude:100}});
+page.instance().addStoreMarker(store);
+expect(props.updateNearByStores).toBeCalledWith([_extends({},store,{distance:1})]);
+expect(props.clearFilteredStores).toBeCalled();
+expect(hideSearchModalSpy).toBeCalled();
+expect(page.instance().state.initialRegion.latitude).toEqual(12);
+expect(page.instance().state.initialRegion.longitude).toEqual(100);
+});
+
+it('updateMap: should call updateNearByStores when the coordinates are passed',function(){
+page.setProps({updateNearByStores:jest.fn()});
+page.setState({initialRegion:null});
+page.instance().updateMap({'latitude':13.752725,
+'longitude':100.502518});
+expect(page.instance().props.updateNearByStores).toBeCalled();
+});
+
+it('onPressCurrLocation: should call updateKMRadius if the radius value is different',function(){
+page.setProps({updateKMRadius:jest.fn()});
+page.setState({initialRegion:null});
+page.instance().onPressCurrLocation();
+expect(page.instance().props.updateKMRadius).toBeCalled();
+});
+it('showSearchModal: should show modal',function(){
+page.setProps({updateKMRadius:jest.fn()});
+page.setState({initialRegion:null});
+page.instance().onPressCurrLocation();
+expect(page.instance().props.updateKMRadius).toBeCalled();
+});
+it('componentWillReceiveProps: should not updateMap when selectedProvince prop is not changed',function(){
+var props={
+selectedProvince:{'latitude':19,'longitude':56}};
+
+page.setProps(props);
+var updateMapSpy=jest.spyOn(page.instance(),'updateMap');
+page.instance().componentWillReceiveProps(props);
+expect(updateMapSpy).not.toBeCalled();
+});
+it('componentWillReceiveProps: should updateMap when selectedProvince prop is changed',function(){
+var newProps={
+selectedProvince:{'latitude':19,'longitude':56}};
+
+var updateMapSpy=jest.spyOn(page.instance(),'updateMap');
+page.instance().componentWillReceiveProps(newProps);
+expect(updateMapSpy).toBeCalledWith(newProps.selectedProvince);
+});
+});

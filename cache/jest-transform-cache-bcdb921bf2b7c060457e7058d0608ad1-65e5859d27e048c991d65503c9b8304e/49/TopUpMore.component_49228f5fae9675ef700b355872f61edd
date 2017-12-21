@@ -1,0 +1,70 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1hasksnke5=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/TopUp/TopUpMore/TopUpMore.component.js',hash='57706b11da93c88d155190d766107ffa79ff5bcd',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/TopUp/TopUpMore/TopUpMore.component.js',statementMap:{'0':{start:{line:17,column:4},end:{line:17,column:34}},'1':{start:{line:21,column:16},end:{line:21,column:31}},'2':{start:{line:22,column:4},end:{line:26,column:5}},'3':{start:{line:23,column:6},end:{line:23,column:45}},'4':{start:{line:25,column:6},end:{line:25,column:46}},'5':{start:{line:27,column:4},end:{line:27,column:39}},'6':{start:{line:31,column:56},end:{line:31,column:66}},'7':{start:{line:32,column:24},end:{line:32,column:61}},'8':{start:{line:33,column:4},end:{line:33,column:109}},'9':{start:{line:34,column:4},end:{line:34,column:26}},'10':{start:{line:38,column:27},end:{line:38,column:37}},'11':{start:{line:39,column:42},end:{line:39,column:52}},'12':{start:{line:40,column:24},end:{line:40,column:61}},'13':{start:{line:41,column:4},end:{line:54,column:6}},'14':{start:{line:58,column:0},end:{line:62,column:2}},'15':{start:{line:64,column:0},end:{line:68,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:16,column:17},end:{line:16,column:18}},loc:{start:{line:16,column:27},end:{line:18,column:3}},line:16},'1':{name:'(anonymous_1)',decl:{start:{line:20,column:2},end:{line:20,column:3}},loc:{start:{line:20,column:29},end:{line:28,column:3}},line:20},'2':{name:'(anonymous_2)',decl:{start:{line:30,column:10},end:{line:30,column:11}},loc:{start:{line:30,column:16},end:{line:35,column:3}},line:30},'3':{name:'(anonymous_3)',decl:{start:{line:37,column:2},end:{line:37,column:3}},loc:{start:{line:37,column:12},end:{line:55,column:3}},line:37}},branchMap:{'0':{loc:{start:{line:22,column:4},end:{line:26,column:5}},type:'if',locations:[{start:{line:22,column:4},end:{line:26,column:5}},{start:{line:22,column:4},end:{line:26,column:5}}],line:22},'1':{loc:{start:{line:22,column:8},end:{line:22,column:48}},type:'binary-expr',locations:[{start:{line:22,column:8},end:{line:22,column:16}},{start:{line:22,column:20},end:{line:22,column:34}},{start:{line:22,column:38},end:{line:22,column:48}}],line:22},'2':{loc:{start:{line:47,column:13},end:{line:47,column:113}},type:'cond-expr',locations:[{start:{line:47,column:31},end:{line:47,column:106}},{start:{line:47,column:109},end:{line:47,column:113}}],line:47},'3':{loc:{start:{line:50,column:86},end:{line:50,column:116}},type:'binary-expr',locations:[{start:{line:50,column:86},end:{line:50,column:101}},{start:{line:50,column:105},end:{line:50,column:116}}],line:50}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0},f:{'0':0,'1':0,'2':0,'3':0},b:{'0':[0,0],'1':[0,0,0],'2':[0,0],'3':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _TopUpMore=require('./TopUpMore.style');var _TopUpMore2=_interopRequireDefault(_TopUpMore);
+var _Shared=require('../../Shared');
+var _helper=require('../../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+TopUpMore=function(_Component){_inherits(TopUpMore,_Component);function TopUpMore(){var _ref;var _temp,_this,_ret;_classCallCheck(this,TopUpMore);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=TopUpMore.__proto__||Object.getPrototypeOf(TopUpMore)).call.apply(_ref,[this].concat(args))),_this),_this.
+state={
+errorTopUpValue:false,
+topUpValue:0},_this.
+
+
+onChangeText=function(text){cov_1hasksnke5.f[0]++;cov_1hasksnke5.s[0]++;
+_this.validateTopUpValue(text);
+},_this.
+
+
+
+
+
+
+
+
+
+
+
+topUp=function(){cov_1hasksnke5.f[2]++;var _ref2=(cov_1hasksnke5.s[6]++,
+_this.props),setPaymentItems=_ref2.setPaymentItems,goToScreen=_ref2.goToScreen,paymentItems=_ref2.paymentItems;
+var topUpMsisdn=(cov_1hasksnke5.s[7]++,(0,_result2.default)(paymentItems[0],'msisdn',''));cov_1hasksnke5.s[8]++;
+setPaymentItems([{amount:parseInt(_this.state.topUpValue),msisdn:topUpMsisdn,service:'tmhPrepaid'}]);cov_1hasksnke5.s[9]++;
+goToScreen('Payment');
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(TopUpMore,[{key:'validateTopUpValue',value:function validateTopUpValue(value){cov_1hasksnke5.f[1]++;var num=(cov_1hasksnke5.s[1]++,parseInt(value));cov_1hasksnke5.s[2]++;if((cov_1hasksnke5.b[1][0]++,num<20)||(cov_1hasksnke5.b[1][1]++,num%10!==0)||(cov_1hasksnke5.b[1][2]++,num>1000)){cov_1hasksnke5.b[0][0]++;cov_1hasksnke5.s[3]++;this.setState({errorTopUpValue:true});}else{cov_1hasksnke5.b[0][1]++;cov_1hasksnke5.s[4]++;this.setState({errorTopUpValue:false});}cov_1hasksnke5.s[5]++;this.setState({topUpValue:value});}},{key:'render',value:function render()
+
+{cov_1hasksnke5.f[3]++;var _ref3=(cov_1hasksnke5.s[10]++,
+this.props),paymentItems=_ref3.paymentItems;var _ref4=(cov_1hasksnke5.s[11]++,
+this.state),errorTopUpValue=_ref4.errorTopUpValue,topUpValue=_ref4.topUpValue;
+var topUpMsisdn=(cov_1hasksnke5.s[12]++,(0,_result2.default)(paymentItems[0],'msisdn',''));cov_1hasksnke5.s[13]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:_TopUpMore2.default.mainContainer},
+_react2.default.createElement(_Shared.Card,{header:(0,_helper.translate)('TOP_UP_MORE__CARD_HEADER')+' '+topUpMsisdn,containerStyles:{flex:0}},
+_react2.default.createElement(_reactNative.View,{style:_TopUpMore2.default.topContainer},
+_react2.default.createElement(_Shared.ISText,null,(0,_helper.translate)('TOP_UP_MORE__ENTER_AMOUNT')),
+_react2.default.createElement(_Shared.IconTextInput,{type:'SECONDARY',containerStyle:_TopUpMore2.default.input,placeholder:'20-1000',keyboardType:'numeric',onChangeText:this.onChangeText}),
+errorTopUpValue?(cov_1hasksnke5.b[2][0]++,_react2.default.createElement(_Shared.ISText,{style:_TopUpMore2.default.errorText},(0,_helper.translate)('TOP_UP_MORE__ERROR'))):(cov_1hasksnke5.b[2][1]++,null)),
+
+_react2.default.createElement(_reactNative.View,{style:_TopUpMore2.default.bottomContainer},
+_react2.default.createElement(_Shared.Button,{text:(0,_helper.translate)('TOP_UP__BUTTON'),onPress:this.topUp,disabled:(cov_1hasksnke5.b[3][0]++,errorTopUpValue)||(cov_1hasksnke5.b[3][1]++,!topUpValue)})))));
+
+
+
+
+}}]);return TopUpMore;}(_react.Component);cov_1hasksnke5.s[14]++;
+
+
+TopUpMore.defaultProps={
+setPaymentItems:_noop2.default,
+goToScreen:_noop2.default,
+paymentItems:[]};cov_1hasksnke5.s[15]++;
+
+
+TopUpMore.propTypes={
+paymentItems:_propTypes2.default.array,
+setPaymentItems:_propTypes2.default.func,
+goToScreen:_propTypes2.default.func};exports.default=
+
+
+TopUpMore;

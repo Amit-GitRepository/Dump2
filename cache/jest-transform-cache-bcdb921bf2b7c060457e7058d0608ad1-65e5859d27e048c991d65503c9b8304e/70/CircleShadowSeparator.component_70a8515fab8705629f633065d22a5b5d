@@ -1,0 +1,27 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1eboh6lcod=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/CircleShadowSeparator/CircleShadowSeparator.component.js',hash='5e9d149d1e233d1b246f0533cdfb13b863d794cb',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/CircleShadowSeparator/CircleShadowSeparator.component.js',statementMap:{'0':{start:{line:9,column:4},end:{line:15,column:6}},'1':{start:{line:19,column:0},end:{line:21,column:2}},'2':{start:{line:23,column:0},end:{line:25,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:8,column:2},end:{line:8,column:3}},loc:{start:{line:8,column:12},end:{line:16,column:3}},line:8}},branchMap:{},s:{'0':0,'1':0,'2':0},f:{'0':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _CircleShadowSeparator=require('./CircleShadowSeparator.styles');var _CircleShadowSeparator2=_interopRequireDefault(_CircleShadowSeparator);
+var _Shared=require('../../Shared');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+CircleShadowSeparator=function(_Component){_inherits(CircleShadowSeparator,_Component);function CircleShadowSeparator(){_classCallCheck(this,CircleShadowSeparator);return _possibleConstructorReturn(this,(CircleShadowSeparator.__proto__||Object.getPrototypeOf(CircleShadowSeparator)).apply(this,arguments));}_createClass(CircleShadowSeparator,[{key:'render',value:function render()
+{cov_1eboh6lcod.f[0]++;cov_1eboh6lcod.s[0]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:_CircleShadowSeparator2.default.container},
+_react2.default.createElement(_reactNative.View,{style:_CircleShadowSeparator2.default.topHalf}),
+_react2.default.createElement(_reactNative.View,{style:_CircleShadowSeparator2.default.bottomHalf}),
+_react2.default.createElement(_reactNative.View,{style:_CircleShadowSeparator2.default.semiCircle},_react2.default.createElement(_Shared.ISText,{type:'BOLD',style:_CircleShadowSeparator2.default.text},this.props.text))));
+
+
+}}]);return CircleShadowSeparator;}(_react.Component);cov_1eboh6lcod.s[1]++;
+
+
+CircleShadowSeparator.defaultProps={
+text:''};cov_1eboh6lcod.s[2]++;
+
+
+CircleShadowSeparator.propTypes={
+text:_propTypes2.default.string};exports.default=
+
+
+CircleShadowSeparator;

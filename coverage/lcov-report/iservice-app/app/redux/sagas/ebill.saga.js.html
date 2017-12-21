@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/redux/sagas/ebill.saga.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">iservice-app/app/redux/sagas</a> ebill.saga.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>39/78</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">25% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>4/16</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">52.38% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>11/21</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">53.42% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>39/73</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">23x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">23x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">23x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">23x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">23x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import _ from 'lodash';
+import api from './api/api.saga';
+import {billPreferences, registerEbill} from './api/apiHelper';
+import {call, put, select, takeEvery} from 'redux-saga/effects';
+import {getSelector} from '../../utils/common.util';
+import {NavigationActions} from 'react-navigation';
+import {translate} from '../../language/i18n/helper';
+import * as actions from '../actions/index.actions';
+&nbsp;
+const formatProductList = (productList) =&gt; {
+  const formattedRes = {};
+  _.forEach(productList, (array, key) =&gt; {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (key === 'tmhPrepaid') {
+<span class="cstat-no" title="statement not covered" >      return;</span>
+    }
+&nbsp;
+    if (key === 'conv') {
+      // so for convergence account - All the accounts for which
+      // convergenceCode is same &amp;&amp; isBillConsolidated
+      // then use any one of the accountIds
+      // otherwise use all the accountIds individually
+      _.map(array, <span class="fstat-no" title="function not covered" >(v</span>al) =&gt; {
+        const productList = <span class="cstat-no" title="statement not covered" >_.result(val, 'products', []);</span>
+<span class="cstat-no" title="statement not covered" >        if (_.every(productList, <span class="fstat-no" title="function not covered" >(i</span>tem) =&gt; <span class="cstat-no" title="statement not covered" >item.isBillConsolidated)</span>) {</span>
+          const obj = <span class="cstat-no" title="statement not covered" >_.assign({}, productList[0]);</span>
+<span class="cstat-no" title="statement not covered" >          obj.accountType = key;</span>
+<span class="cstat-no" title="statement not covered" >          formattedRes[productList[0].accountId] = obj;</span>
+        } else {
+<span class="cstat-no" title="statement not covered" >          _.map(productList, <span class="fstat-no" title="function not covered" >(v</span>al) =&gt; {</span>
+            const obj = <span class="cstat-no" title="statement not covered" >_.assign({}, val);</span>
+<span class="cstat-no" title="statement not covered" >            obj.accountType = key;</span>
+<span class="cstat-no" title="statement not covered" >            formattedRes[val.accountId] = obj;</span>
+          });
+        }
+      });
+    } else {
+      _.map(array, (val) =&gt; {
+        const obj = _.assign({}, val);
+        obj.accountType = key;
+        formattedRes[val.accountId] = obj;
+      });
+    }
+  });
+&nbsp;
+  return formattedRes;
+};
+&nbsp;
+const mergeProductListAndBillPreference = (productList, billPreferences) =&gt; {
+  const result = {};
+  _.forEach(billPreferences, (array, key) =&gt; {
+    const res = _.map(array, (obj) =&gt; {
+      const productListData = productList[obj.accountID];
+      return _.assign({}, obj, productListData);
+    });
+    result[key] = res;
+  });
+  return result;
+};
+&nbsp;
+const mapAccountType = <span class="fstat-no" title="function not covered" >(t</span>ype) =&gt; {
+  const camelCasedType = <span class="cstat-no" title="statement not covered" >_.camelCase(type);</span>
+  let accountType = <span class="cstat-no" title="statement not covered" >'';</span>
+<span class="cstat-no" title="statement not covered" >  switch (camelCasedType) {</span>
+  case 'trueMoveH': {
+<span class="cstat-no" title="statement not covered" >    accountType = 'tmhPostpaid';</span>
+<span class="cstat-no" title="statement not covered" >    break;</span>
+  }
+  case 'trueVision': {
+<span class="cstat-no" title="statement not covered" >    accountType = 'tvs';</span>
+<span class="cstat-no" title="statement not covered" >    break;</span>
+  }
+  case 'trueOnline': {
+<span class="cstat-no" title="statement not covered" >    accountType = 'tol';</span>
+<span class="cstat-no" title="statement not covered" >    break;</span>
+  }
+  default:
+      // do nothing
+  }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >  return accountType;</span>
+};
+&nbsp;
+const addConvergenceAccountIDsToRegisterEbillPayload = (payload, convList) =&gt; {
+  const formattedPayload = payload;
+  _.map(formattedPayload, (item) =&gt; {
+    <span class="missing-if-branch" title="if path not taken" >I</span>if (item.accountType === 'conv') {
+      let bundleID = <span class="cstat-no" title="statement not covered" >null;</span>
+      let accountInPayload = <span class="cstat-no" title="statement not covered" >{};</span>
+      // search for bundle id for which the accountID belong to and has isBillConsolidated is true
+<span class="cstat-no" title="statement not covered" >      _.map(convList, <span class="fstat-no" title="function not covered" >(c</span>onvItem) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        accountInPayload = _.find(convItem.products, <span class="fstat-no" title="function not covered" >(c</span>onvInnerItem) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >          if ((convInnerItem.accountId === item.accountID) &amp;&amp; (convInnerItem.isBillConsolidated)) {</span>
+<span class="cstat-no" title="statement not covered" >            item.accountType = mapAccountType(convInnerItem.productType);</span>
+<span class="cstat-no" title="statement not covered" >            return convInnerItem.convergenceCode;</span>
+          }
+        });
+<span class="cstat-no" title="statement not covered" >        bundleID = accountInPayload.convergenceCode;</span>
+      });
+&nbsp;
+      // get all the accountIDs for the corresponding bundle id
+      const accountsInBundleID = <span class="cstat-no" title="statement not covered" >_.find(convList, <span class="fstat-no" title="function not covered" >(c</span>onvItem) =&gt; <span class="cstat-no" title="statement not covered" >convItem.bundle === bundleID)</span>;</span>
+&nbsp;
+      // remove the accountID already existing in the payload
+      const accountsToAdd = <span class="cstat-no" title="statement not covered" >_.reject(accountsInBundleID.products, accountInPayload);</span>
+&nbsp;
+      // extract only accountIDs from the product list
+      const accountsToAddIDs = <span class="cstat-no" title="statement not covered" >_.map(accountsToAdd, <span class="fstat-no" title="function not covered" >(a</span>ccount) =&gt; (<span class="cstat-no" title="statement not covered" >{accountID: account.accountId, accountType: account.productType})</span>);</span>
+&nbsp;
+      // form the payload for the accountIDs - which needs to be added
+      const payloadToAdd = <span class="cstat-no" title="statement not covered" >_.map(accountsToAddIDs, <span class="fstat-no" title="function not covered" >(v</span>al) =&gt; (<span class="cstat-no" title="statement not covered" >{...item, ...{accountID: val.accountID, accountType: mapAccountType(val.accountType)}})</span>);</span>
+&nbsp;
+      // push each object to formatted payload
+<span class="cstat-no" title="statement not covered" >      _.each(payloadToAdd, <span class="fstat-no" title="function not covered" >(i</span>tem) =&gt; <span class="cstat-no" title="statement not covered" >formattedPayload.push(item))</span>;</span>
+    }
+  });
+&nbsp;
+  return formattedPayload;
+};
+&nbsp;
+export const productListSelector = getSelector('billUsage.productList');
+&nbsp;
+export function* fetchBillingPreference ({payload}) {
+  try {
+    const billPreferencesRes = yield call(api, billPreferences(payload));
+    const productList = yield select(productListSelector);
+    const mergedPayload = mergeProductListAndBillPreference(formatProductList(productList), billPreferencesRes.body);
+    yield put(actions.setBillingPreferences(mergedPayload));
+  } catch (err) {
+    // console.log(err);
+  }
+}
+&nbsp;
+export function* applyForEBill ({payload}) {
+  try {
+    const productList = yield select(productListSelector);
+    const convList = _.result(productList, 'conv', []);
+&nbsp;
+    const formattedPayload = addConvergenceAccountIDsToRegisterEbillPayload(payload, convList);
+&nbsp;
+    yield call(api, registerEbill(formattedPayload));
+    yield put(NavigationActions.navigate({routeName: 'BillingMethods'}));
+  } catch (err) {
+<span class="cstat-no" title="statement not covered" >    yield put(actions.showPopup({</span>
+      title: translate('BILLING_METHODS__ADD_BAD_REQUEST'),
+      body: translate('BILLING_METHODS__ADD__BAD_REQUEST_BODY'),
+      buttons: [
+        {
+          title: translate('BUTTON__OK'),
+          actionType: 'Navigation/NAVIGATE',
+          nextAction: {routeName: 'BillingMethods'}
+        }
+      ]
+    }));
+  }
+}
+&nbsp;
+export default function* ebillSaga () {
+  yield takeEvery(actions.GET_BILL_PREFERENCES, fetchBillingPreference);
+  yield takeEvery(actions.APPLY_FOR_EBILL, applyForEBill);
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

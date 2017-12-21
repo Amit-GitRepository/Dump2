@@ -1,0 +1,141 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.mapDispatchToProps=exports.mapStateToProps=undefined;var cov_t0orb2ps4=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/App.container.js',hash='faf7bdf3bdf80899a72f407210c3222d18203626',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/App.container.js',statementMap:{'0':{start:{line:28,column:4},end:{line:28,column:24}},'1':{start:{line:29,column:4},end:{line:32,column:6}},'2':{start:{line:33,column:4},end:{line:33,column:68}},'3':{start:{line:34,column:4},end:{line:34,column:51}},'4':{start:{line:35,column:4},end:{line:38,column:7}},'5':{start:{line:36,column:6},end:{line:37,column:38}},'6':{start:{line:37,column:8},end:{line:37,column:38}},'7':{start:{line:42,column:4},end:{line:42,column:93}},'8':{start:{line:43,column:4},end:{line:43,column:71}},'9':{start:{line:44,column:4},end:{line:44,column:30}},'10':{start:{line:48,column:4},end:{line:50,column:5}},'11':{start:{line:49,column:6},end:{line:49,column:40}},'12':{start:{line:54,column:4},end:{line:59,column:5}},'13':{start:{line:55,column:6},end:{line:57,column:7}},'14':{start:{line:56,column:8},end:{line:56,column:97}},'15':{start:{line:56,column:73},end:{line:56,column:95}},'16':{start:{line:58,column:6},end:{line:58,column:68}},'17':{start:{line:60,column:4},end:{line:60,column:41}},'18':{start:{line:65,column:23},end:{line:65,column:25}},'19':{start:{line:66,column:4},end:{line:75,column:7}},'20':{start:{line:67,column:6},end:{line:74,column:9}},'21':{start:{line:68,column:8},end:{line:68,column:37}},'22':{start:{line:69,column:8},end:{line:73,column:9}},'23':{start:{line:70,column:10},end:{line:72,column:13}},'24':{start:{line:71,column:12},end:{line:71,column:44}},'25':{start:{line:76,column:4},end:{line:76,column:28}},'26':{start:{line:80,column:130},end:{line:80,column:140}},'27':{start:{line:81,column:4},end:{line:92,column:6}},'28':{start:{line:96,column:0},end:{line:101,column:2}},'29':{start:{line:102,column:0},end:{line:118,column:2}},'30':{start:{line:120,column:31},end:{line:128,column:2}},'31':{start:{line:120,column:81},end:{line:128,column:1}},'32':{start:{line:130,column:34},end:{line:139,column:2}},'33':{start:{line:130,column:49},end:{line:139,column:1}},'34':{start:{line:132,column:19},end:{line:132,column:48}},'35':{start:{line:133,column:37},end:{line:133,column:76}},'36':{start:{line:134,column:34},end:{line:134,column:70}},'37':{start:{line:135,column:30},end:{line:135,column:62}},'38':{start:{line:136,column:16},end:{line:136,column:50}},'39':{start:{line:137,column:28},end:{line:137,column:58}},'40':{start:{line:138,column:26},end:{line:138,column:54}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:27,column:2},end:{line:27,column:3}},loc:{start:{line:27,column:24},end:{line:39,column:3}},line:27},'1':{name:'(anonymous_1)',decl:{start:{line:35,column:40},end:{line:35,column:41}},loc:{start:{line:35,column:46},end:{line:38,column:5}},line:35},'2':{name:'(anonymous_2)',decl:{start:{line:41,column:2},end:{line:41,column:3}},loc:{start:{line:41,column:26},end:{line:45,column:3}},line:41},'3':{name:'(anonymous_3)',decl:{start:{line:47,column:24},end:{line:47,column:25}},loc:{start:{line:47,column:34},end:{line:51,column:3}},line:47},'4':{name:'(anonymous_4)',decl:{start:{line:53,column:26},end:{line:53,column:27}},loc:{start:{line:53,column:44},end:{line:61,column:3}},line:53},'5':{name:'(anonymous_5)',decl:{start:{line:56,column:67},end:{line:56,column:68}},loc:{start:{line:56,column:73},end:{line:56,column:95}},line:56},'6':{name:'(anonymous_6)',decl:{start:{line:64,column:19},end:{line:64,column:20}},loc:{start:{line:64,column:25},end:{line:77,column:3}},line:64},'7':{name:'(anonymous_7)',decl:{start:{line:66,column:19},end:{line:66,column:20}},loc:{start:{line:66,column:34},end:{line:75,column:5}},line:66},'8':{name:'(anonymous_8)',decl:{start:{line:67,column:26},end:{line:67,column:27}},loc:{start:{line:67,column:36},end:{line:74,column:7}},line:67},'9':{name:'(anonymous_9)',decl:{start:{line:70,column:25},end:{line:70,column:26}},loc:{start:{line:70,column:38},end:{line:72,column:11}},line:70},'10':{name:'(anonymous_10)',decl:{start:{line:79,column:2},end:{line:79,column:3}},loc:{start:{line:79,column:12},end:{line:93,column:3}},line:79},'11':{name:'(anonymous_11)',decl:{start:{line:120,column:31},end:{line:120,column:32}},loc:{start:{line:120,column:81},end:{line:128,column:1}},line:120},'12':{name:'(anonymous_12)',decl:{start:{line:130,column:34},end:{line:130,column:35}},loc:{start:{line:130,column:49},end:{line:139,column:1}},line:130},'13':{name:'(anonymous_13)',decl:{start:{line:132,column:13},end:{line:132,column:14}},loc:{start:{line:132,column:19},end:{line:132,column:48}},line:132},'14':{name:'(anonymous_14)',decl:{start:{line:133,column:20},end:{line:133,column:21}},loc:{start:{line:133,column:37},end:{line:133,column:76}},line:133},'15':{name:'(anonymous_15)',decl:{start:{line:134,column:21},end:{line:134,column:22}},loc:{start:{line:134,column:34},end:{line:134,column:70}},line:134},'16':{name:'(anonymous_16)',decl:{start:{line:135,column:20},end:{line:135,column:21}},loc:{start:{line:135,column:30},end:{line:135,column:62}},line:135},'17':{name:'(anonymous_17)',decl:{start:{line:136,column:10},end:{line:136,column:11}},loc:{start:{line:136,column:16},end:{line:136,column:50}},line:136},'18':{name:'(anonymous_18)',decl:{start:{line:137,column:16},end:{line:137,column:17}},loc:{start:{line:137,column:28},end:{line:137,column:58}},line:137},'19':{name:'(anonymous_19)',decl:{start:{line:138,column:20},end:{line:138,column:21}},loc:{start:{line:138,column:26},end:{line:138,column:54}},line:138}},branchMap:{'0':{loc:{start:{line:36,column:6},end:{line:37,column:38}},type:'if',locations:[{start:{line:36,column:6},end:{line:37,column:38}},{start:{line:36,column:6},end:{line:37,column:38}}],line:36},'1':{loc:{start:{line:48,column:4},end:{line:50,column:5}},type:'if',locations:[{start:{line:48,column:4},end:{line:50,column:5}},{start:{line:48,column:4},end:{line:50,column:5}}],line:48},'2':{loc:{start:{line:54,column:4},end:{line:59,column:5}},type:'if',locations:[{start:{line:54,column:4},end:{line:59,column:5}},{start:{line:54,column:4},end:{line:59,column:5}}],line:54},'3':{loc:{start:{line:55,column:6},end:{line:57,column:7}},type:'if',locations:[{start:{line:55,column:6},end:{line:57,column:7}},{start:{line:55,column:6},end:{line:57,column:7}}],line:55},'4':{loc:{start:{line:55,column:10},end:{line:55,column:171}},type:'binary-expr',locations:[{start:{line:55,column:11},end:{line:55,column:47}},{start:{line:55,column:51},end:{line:55,column:89}},{start:{line:55,column:94},end:{line:55,column:138}},{start:{line:55,column:142},end:{line:55,column:171}}],line:55},'5':{loc:{start:{line:69,column:8},end:{line:73,column:9}},type:'if',locations:[{start:{line:69,column:8},end:{line:73,column:9}},{start:{line:69,column:8},end:{line:73,column:9}}],line:69},'6':{loc:{start:{line:84,column:42},end:{line:86,column:33}},type:'cond-expr',locations:[{start:{line:85,column:12},end:{line:85,column:23}},{start:{line:86,column:12},end:{line:86,column:33}}],line:84}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0,'19':0,'20':0,'21':0,'22':0,'23':0,'24':0,'25':0,'26':0,'27':0,'28':0,'29':0,'30':0,'31':0,'32':0,'33':0,'34':0,'35':0,'36':0,'37':0,'38':0,'39':0,'40':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0,'19':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0],'4':[0,0,0,0],'5':[0,0],'6':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _deeplink=require('./utils/deeplink.util');var _deeplink2=_interopRequireDefault(_deeplink);
+var _exitOnDoubleBack=require('exit-on-double-back');var _exitOnDoubleBack2=_interopRequireDefault(_exitOnDoubleBack);
+var _firebase=require('./utils/firebase.util');var _firebase2=_interopRequireDefault(_firebase);
+var _isEmpty=require('lodash/isEmpty');var _isEmpty2=_interopRequireDefault(_isEmpty);
+var _LoginPrompt=require('./components/SideMenu/LoginPrompt.component');var _LoginPrompt2=_interopRequireDefault(_LoginPrompt);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _index=require('./routes/index.routes');var _index2=_interopRequireDefault(_index);
+var _reactNativeSplashScreen=require('react-native-splash-screen');var _reactNativeSplashScreen2=_interopRequireDefault(_reactNativeSplashScreen);
+var _uniq=require('lodash/uniq');var _uniq2=_interopRequireDefault(_uniq);
+var _reactNavigation=require('react-navigation');
+var _application=require('./themes/application.styles');
+var _reactNative=require('react-native');
+var _reactRedux=require('react-redux');
+var _index3=require('./redux/actions/index.actions');
+var _forceUpdate=require('./utils/forceUpdate.util');
+var _sideMenu=require('./config/sideMenu.config');
+var _Shared=require('./components/Shared');
+var _helper=require('./language/i18n/helper');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+App=function(_Component){_inherits(App,_Component);function App(){var _ref;var _temp,_this,_ret;_classCallCheck(this,App);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=App.__proto__||Object.getPrototypeOf(App)).call.apply(_ref,[this].concat(args))),_this),_this.
+
+previousAppState=_reactNative.AppState.currentState,_this.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_handleLinkReceived=function(link){cov_t0orb2ps4.f[3]++;cov_t0orb2ps4.s[10]++;
+if(link){cov_t0orb2ps4.b[1][0]++;cov_t0orb2ps4.s[11]++;
+_this.props.deeplinkReceived(link);
+}else{cov_t0orb2ps4.b[1][1]++;}
+},_this.
+
+_handleAppStateChange=function(nextAppState){cov_t0orb2ps4.f[4]++;cov_t0orb2ps4.s[12]++;
+if(nextAppState==='active'){cov_t0orb2ps4.b[2][0]++;cov_t0orb2ps4.s[13]++;
+if(((cov_t0orb2ps4.b[4][0]++,_this.previousAppState==='inactive')||(cov_t0orb2ps4.b[4][1]++,_this.previousAppState==='background'))&&(cov_t0orb2ps4.b[4][2]++,!_this.props.forceUpdate.isUpdateAlertVisible)&&(cov_t0orb2ps4.b[4][3]++,_this.props.forceUpdate.forced)){cov_t0orb2ps4.b[3][0]++;cov_t0orb2ps4.s[14]++;
+(0,_forceUpdate.getAlertConfig)(_this.props.forceUpdate.appLinks,true).then(function(){cov_t0orb2ps4.f[5]++;cov_t0orb2ps4.s[15]++;return _this.props.hideAlert();});
+}else{cov_t0orb2ps4.b[3][1]++;}cov_t0orb2ps4.s[16]++;
+_reactNative.NetInfo.isConnected.fetch().then(_this.props.setNetworkStatus);
+}else{cov_t0orb2ps4.b[2][1]++;}cov_t0orb2ps4.s[17]++;
+_this.previousAppState=nextAppState;
+},_this.
+
+
+_getScreenList=function(){cov_t0orb2ps4.f[6]++;
+var screenList=(cov_t0orb2ps4.s[18]++,[]);cov_t0orb2ps4.s[19]++;
+_sideMenu.menuConfig.map(function(itemGroup){cov_t0orb2ps4.f[7]++;cov_t0orb2ps4.s[20]++;
+itemGroup.nodes.map(function(item){cov_t0orb2ps4.f[8]++;cov_t0orb2ps4.s[21]++;
+screenList.push(item.screen);cov_t0orb2ps4.s[22]++;
+if(item.nodes){cov_t0orb2ps4.b[5][0]++;cov_t0orb2ps4.s[23]++;
+item.nodes.map(function(subItem){cov_t0orb2ps4.f[9]++;cov_t0orb2ps4.s[24]++;
+screenList.push(subItem.screen);
+});
+}else{cov_t0orb2ps4.b[5][1]++;}
+});
+});cov_t0orb2ps4.s[25]++;
+return(0,_uniq2.default)(screenList);
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(App,[{key:'componentWillMount',value:function componentWillMount(){var _this2=this;cov_t0orb2ps4.f[0]++;cov_t0orb2ps4.s[0]++;_reactNativeSplashScreen2.default.hide();cov_t0orb2ps4.s[1]++;_reactNative.NetInfo.isConnected.addEventListener('connectionChange',this.props.setNetworkStatus);cov_t0orb2ps4.s[2]++;_reactNative.AppState.addEventListener('change',this._handleAppStateChange);cov_t0orb2ps4.s[3]++;_deeplink2.default.addListener(this._handleLinkReceived);cov_t0orb2ps4.s[4]++;_firebase2.default.messaging().onTokenRefresh(function(){cov_t0orb2ps4.f[1]++;cov_t0orb2ps4.s[5]++;if(!(0,_isEmpty2.default)(_this2.props.profile)){cov_t0orb2ps4.b[0][0]++;cov_t0orb2ps4.s[6]++;_this2.props.registerFCMToken();}else{cov_t0orb2ps4.b[0][1]++;}});}},{key:'componentWillUnmount',value:function componentWillUnmount(){cov_t0orb2ps4.f[2]++;cov_t0orb2ps4.s[7]++;_reactNative.NetInfo.isConnected.removeEventListener('connectionChange',this.props.setNetworkStatus);cov_t0orb2ps4.s[8]++;_reactNative.AppState.removeEventListener('change',this._handleAppStateChange);cov_t0orb2ps4.s[9]++;_deeplink2.default.removeListener();}},{key:'render',value:function render()
+
+{cov_t0orb2ps4.f[10]++;var _ref2=(cov_t0orb2ps4.s[26]++,
+this.props),showSpinner=_ref2.showSpinner,dispatch=_ref2.dispatch,nav=_ref2.nav,language=_ref2.language,profile=_ref2.profile,showPrompt=_ref2.showPrompt,toggleLoginPrompt=_ref2.toggleLoginPrompt,goBack=_ref2.goBack,nextLoginAction=_ref2.nextLoginAction,loginRequest=_ref2.loginRequest;cov_t0orb2ps4.s[27]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:_application.appContainerStyle},
+_react2.default.createElement(_reactNative.StatusBar,_application.statusBarStyle),
+_react2.default.createElement(_exitOnDoubleBack2.default,{exitableRoutes:(0,_isEmpty2.default)(profile)?(cov_t0orb2ps4.b[6][0]++,
+['Landing']):(cov_t0orb2ps4.b[6][1]++,
+this._getScreenList()),toastMessage:(0,_helper.translate)('EXIT_APP_CONFIRMATION'),doubleBackInterval:3000,backHandler:goBack,nav:nav},
+_react2.default.createElement(_index2.default,{screenProps:language,navigation:(0,_reactNavigation.addNavigationHelpers)({dispatch:dispatch,state:nav})})),
+
+_react2.default.createElement(_LoginPrompt2.default,{showPrompt:showPrompt,toggleLoginPrompt:toggleLoginPrompt,nextLoginAction:nextLoginAction,loginRequest:loginRequest}),
+_react2.default.createElement(_Shared.OverlaySpinner,{showSpinner:showSpinner})));
+
+
+}}]);return App;}(_react.Component);cov_t0orb2ps4.s[28]++;
+
+
+App.defaultProps={
+hideAlert:_noop2.default,
+toggleLoginPrompt:_noop2.default,
+deeplinkReceived:_noop2.default,
+goBack:_noop2.default};cov_t0orb2ps4.s[29]++;
+
+App.propTypes={
+showSpinner:_propTypes2.default.number.isRequired,
+forceUpdate:_propTypes2.default.object,
+setNetworkStatus:_propTypes2.default.func.isRequired,
+dispatch:_propTypes2.default.func.isRequired,
+nav:_propTypes2.default.object.isRequired,
+language:_propTypes2.default.string.isRequired,
+profile:_propTypes2.default.object,
+showPrompt:_propTypes2.default.bool,
+hideAlert:_propTypes2.default.func,
+toggleLoginPrompt:_propTypes2.default.func,
+deeplinkReceived:_propTypes2.default.func,
+goBack:_propTypes2.default.func,
+loginRequest:_propTypes2.default.func,
+nextLoginAction:_propTypes2.default.object,
+registerFCMToken:_propTypes2.default.func};cov_t0orb2ps4.s[30]++;
+
+
+var mapStateToProps=exports.mapStateToProps=function mapStateToProps(_ref3){var spinner=_ref3.spinner,nav=_ref3.nav,user=_ref3.user,sideMenu=_ref3.sideMenu,forceUpdate=_ref3.forceUpdate;cov_t0orb2ps4.f[11]++;cov_t0orb2ps4.s[31]++;return{
+showSpinner:(0,_result2.default)(spinner,'count',0),
+nav:nav,
+forceUpdate:forceUpdate,
+language:user.language,
+profile:user.profile,
+showPrompt:(0,_result2.default)(sideMenu,'showPrompt',false),
+nextLoginAction:(0,_result2.default)(sideMenu,'nextLoginAction')};
+};cov_t0orb2ps4.s[32]++;
+
+var mapDispatchToProps=exports.mapDispatchToProps=function mapDispatchToProps(dispatch){cov_t0orb2ps4.f[12]++;cov_t0orb2ps4.s[33]++;return{
+dispatch:dispatch,
+hideAlert:function hideAlert(){cov_t0orb2ps4.f[13]++;cov_t0orb2ps4.s[34]++;return dispatch((0,_index3.notifyAlertHidden)());},
+setNetworkStatus:function setNetworkStatus(isConnected){cov_t0orb2ps4.f[14]++;cov_t0orb2ps4.s[35]++;return dispatch((0,_index3.setNetworkStatus)(isConnected));},
+toggleLoginPrompt:function toggleLoginPrompt(payload){cov_t0orb2ps4.f[15]++;cov_t0orb2ps4.s[36]++;return dispatch((0,_index3.toggleLoginPrompt)(payload));},
+deeplinkReceived:function deeplinkReceived(link){cov_t0orb2ps4.f[16]++;cov_t0orb2ps4.s[37]++;return dispatch((0,_index3.deeplinkReceived)(link));},
+goBack:function goBack(){cov_t0orb2ps4.f[17]++;cov_t0orb2ps4.s[38]++;return dispatch(_reactNavigation.NavigationActions.back());},
+loginRequest:function loginRequest(action){cov_t0orb2ps4.f[18]++;cov_t0orb2ps4.s[39]++;return dispatch((0,_index3.loginRequest)(action));},
+registerFCMToken:function registerFCMToken(){cov_t0orb2ps4.f[19]++;cov_t0orb2ps4.s[40]++;return dispatch((0,_index3.registerFCMToken)());}};
+};exports.default=
+
+(0,_reactRedux.connect)(mapStateToProps,mapDispatchToProps)(App);

@@ -1,0 +1,39 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1g7e30prk6=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Payment/PayOthersCard/PayOthersCard.component.js',hash='069bf9b27a7d9acaf364ecb13034884400ac3233',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Payment/PayOthersCard/PayOthersCard.component.js',statementMap:{'0':{start:{line:12,column:35},end:{line:12,column:64}},'1':{start:{line:15,column:4},end:{line:15,column:23}},'2':{start:{line:16,column:4},end:{line:17,column:54}},'3':{start:{line:17,column:6},end:{line:17,column:54}},'4':{start:{line:21,column:4},end:{line:21,column:26}},'5':{start:{line:25,column:4},end:{line:33,column:6}},'6':{start:{line:36,column:0},end:{line:38,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:12,column:17},end:{line:12,column:18}},loc:{start:{line:12,column:35},end:{line:12,column:64}},line:12},'1':{name:'(anonymous_1)',decl:{start:{line:14,column:13},end:{line:14,column:14}},loc:{start:{line:14,column:19},end:{line:18,column:3}},line:14},'2':{name:'(anonymous_2)',decl:{start:{line:20,column:22},end:{line:20,column:23}},loc:{start:{line:20,column:32},end:{line:22,column:3}},line:20},'3':{name:'(anonymous_3)',decl:{start:{line:24,column:2},end:{line:24,column:3}},loc:{start:{line:24,column:12},end:{line:34,column:3}},line:24}},branchMap:{'0':{loc:{start:{line:16,column:4},end:{line:17,column:54}},type:'if',locations:[{start:{line:16,column:4},end:{line:17,column:54}},{start:{line:16,column:4},end:{line:17,column:54}}],line:16}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0},f:{'0':0,'1':0,'2':0,'3':0},b:{'0':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _Button=require('../../Shared/Button/Button.component');var _Button2=_interopRequireDefault(_Button);
+var _IconTextInput=require('../../Shared/IconTextInput/IconTextInput.component');var _IconTextInput2=_interopRequireDefault(_IconTextInput);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _index=require('../../Shared/index');
+var _reactNative=require('react-native');
+var _PayOthersCard=require('./PayOthersCard.style');
+var _helper=require('../../../language/i18n/helper');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+PayOthersCard=function(_Component){_inherits(PayOthersCard,_Component);function PayOthersCard(){var _ref;var _temp,_this,_ret;_classCallCheck(this,PayOthersCard);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=PayOthersCard.__proto__||Object.getPrototypeOf(PayOthersCard)).call.apply(_ref,[this].concat(args))),_this),_this.
+
+setServiceNo=function(newServiceNo){cov_1g7e30prk6.f[0]++;cov_1g7e30prk6.s[0]++;return _this.serviceNo=newServiceNo;},_this.
+
+navigate=function(){cov_1g7e30prk6.f[1]++;cov_1g7e30prk6.s[1]++;
+_reactNative.Keyboard.dismiss();cov_1g7e30prk6.s[2]++;
+if(_this.serviceNo)
+{cov_1g7e30prk6.b[0][0]++;cov_1g7e30prk6.s[3]++;_this.props.fetchPaymentProducts(_this.serviceNo);}else{cov_1g7e30prk6.b[0][1]++;}
+},_this.
+
+onTextInputChange=function(text){cov_1g7e30prk6.f[2]++;cov_1g7e30prk6.s[4]++;
+_this.serviceNo=text;
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(PayOthersCard,[{key:'render',value:function render()
+
+{cov_1g7e30prk6.f[3]++;cov_1g7e30prk6.s[5]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:_PayOthersCard.styles.container},
+_react2.default.createElement(_reactNative.View,{style:_PayOthersCard.styles.card},
+_react2.default.createElement(_index.ISText,{style:_PayOthersCard.styles.headerText,type:'SEMIBOLD'},(0,_helper.translate)('PAYMENT_OTHERS_ENTER_PROMPT')),
+_react2.default.createElement(_IconTextInput2.default,{containerStyle:_PayOthersCard.styles.inputBox,placeholder:(0,_helper.translate)('PAYMENT_OTHERS_PLACEHOLDER'),onChangeText:this.onTextInputChange}),
+_react2.default.createElement(_Button2.default,{style:_PayOthersCard.styles.button,text:'Next',onPress:this.navigate}))));
+
+
+
+}}]);return PayOthersCard;}(_react.Component);cov_1g7e30prk6.s[6]++;
+
+PayOthersCard.propTypes={
+fetchPaymentProducts:_propTypes2.default.func};exports.default=
+
+PayOthersCard;

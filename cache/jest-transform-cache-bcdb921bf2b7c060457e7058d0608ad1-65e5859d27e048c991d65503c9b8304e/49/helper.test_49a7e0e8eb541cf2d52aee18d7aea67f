@@ -1,0 +1,37 @@
+var _helper=require('../helper');
+
+describe('Language Helper',function(){
+it('should get the correct translated value for given key',function(){
+expect((0,_helper.translate)('LANGUAGE_EN')).toEqual('English');
+});
+
+it('should get the return response for given key',function(){
+expect((0,_helper.translate)('APURVA')).toEqual('[missing "en.APURVA" translation]');
+});
+
+it('should get the correct translated value for given key with a variable',function(){
+expect((0,_helper.translate)('REMAINING_BALANCE',{balance:100})).toEqual('$100');
+});
+
+it('should change the locale value',function(){
+
+expect((0,_helper.changeLocale)('th')).toEqual(null);
+expect((0,_helper.translate)('LANGUAGE_EN')).toEqual('อังกฤษ');
+});
+
+it('should not change the locale value',function(){
+expect((0,_helper.changeLocale)()).toEqual(null);
+expect((0,_helper.translate)('LANGUAGE_EN')).toEqual('อังกฤษ');
+});
+});
+
+describe('currenyFormatter Helper',function(){
+it('should format the currency numbers',function(){
+var result='1,000,000.00';
+expect((0,_helper.currenyFormatter)(1000000.00)).toEqual(result);
+});
+it('should round-off precision and format the currency numbers',function(){
+var result='1,000,000.68';
+expect((0,_helper.currenyFormatter)(1000000.6798)).toEqual(result);
+});
+});

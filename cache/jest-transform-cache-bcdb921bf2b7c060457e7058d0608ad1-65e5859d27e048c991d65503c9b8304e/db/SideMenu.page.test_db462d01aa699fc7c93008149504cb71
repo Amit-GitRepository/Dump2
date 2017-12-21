@@ -1,0 +1,69 @@
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _SideMenu=require('../SideMenu.page');var _SideMenu2=_interopRequireDefault(_SideMenu);
+var _index=require('../../../redux/actions/index.actions');
+var _enzyme=require('enzyme');
+var _redux=require('redux');
+var _reactNavigation=require('react-navigation');
+var _reactRedux=require('react-redux');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+var store=(0,_redux.createStore)(function(){return{
+user:{
+language:'en',
+profile:{}},
+
+nav:{
+index:0}};});
+
+
+var dispatch=jest.fn();
+
+describe('SideMenu page',function(){
+it('renders ',function(){
+var wrapper=(0,_enzyme.shallow)(
+_react2.default.createElement(_reactRedux.Provider,{store:store},
+_react2.default.createElement(_SideMenu2.default,null)));
+
+expect(wrapper).toBeDefined();
+});
+});
+
+
+describe('SideMenu mapStateToProps',function(){
+it('it has language defined as props',function(){
+var props=(0,_SideMenu.mapStateToProps)(store.getState());
+expect(props.language).toBeDefined();
+});
+it('it has profile defined as props',function(){
+var props=(0,_SideMenu.mapStateToProps)(store.getState());
+expect(props.profile).toBeDefined();
+});
+it('it has navIndex defined as props',function(){
+var props=(0,_SideMenu.mapStateToProps)(store.getState());
+expect(props.navIndex).toBeDefined();
+});
+});
+
+
+describe('SideMenu Page mapDispatchToProps',function(){
+it('it has goToScreen defined as a props',function(){
+var props=(0,_SideMenu.mapDispatchToProps)(dispatch);
+expect(props.goToScreen).toBeDefined();
+});
+it('goToScreen calls NavigationActions.navigate action  ',function(){
+var props=(0,_SideMenu.mapDispatchToProps)(dispatch);
+props.goToScreen();
+expect(dispatch).toHaveBeenCalledWith(_reactNavigation.NavigationActions.navigate());
+});
+it('it has changeLanguage defined as a props',function(){
+var props=(0,_SideMenu.mapDispatchToProps)(dispatch);
+expect(props.changeLanguage).toBeDefined();
+});
+it('changeLanguage calls changeLanguage action  ',function(){
+var props=(0,_SideMenu.mapDispatchToProps)(dispatch);
+props.changeLanguage('en');
+expect(dispatch).toHaveBeenCalledWith((0,_index.changeLanguage)({language:'en'}));
+});
+});

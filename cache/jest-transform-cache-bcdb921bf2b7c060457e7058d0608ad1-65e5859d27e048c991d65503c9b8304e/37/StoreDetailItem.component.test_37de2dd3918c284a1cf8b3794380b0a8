@@ -1,0 +1,14 @@
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);
+var _StoreDetailItem=require('../StoreDetailItem.component');var _StoreDetailItem2=_interopRequireDefault(_StoreDetailItem);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('StoreDetailItem component',function(){
+it('StoreDetailItem: return null if heading or label is not passed',function(){
+var tree=_reactTestRenderer2.default.create(_react2.default.createElement(_StoreDetailItem2.default,null)).toJSON();
+expect(tree).toMatchSnapshot();
+});
+it('StoreDetailItem: renders correctly if heading and label is passed',function(){
+var tree=_reactTestRenderer2.default.create(_react2.default.createElement(_StoreDetailItem2.default,{heading:'heading',label:'label'})).toJSON();
+expect(tree).toMatchSnapshot();
+});
+});

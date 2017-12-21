@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/pages/StoreLocator/StoreLocatorTabs.page.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">iservice-app/app/pages/StoreLocator</a> StoreLocatorTabs.page.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">61.29% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>19/31</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">12.5% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>1/8</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>6/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">57.14% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>16/28</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">37x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">37x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">37x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">37x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import filter from 'lodash/filter';
+import mapConfig from '../../config/map.config';
+import noop from 'lodash/noop';
+import PropTypes from 'prop-types';
+import React, {Component} from 'react';
+import result from 'lodash/result';
+import storeInfo from '../../config/storeInfo.config';
+import StoreLocatorTab from '../../components/StoreLocator/StoreLocatorTab/StoreLocatorTab.component';
+import {connect} from 'react-redux';
+import {NavigationActions} from 'react-navigation';
+import {setProvince, setService} from '../../redux/actions/index.actions';
+import {sortByDistance} from '../../utils/location.util';
+&nbsp;
+class StoreLocatorTabsPage extends Component {
+&nbsp;
+    selectProvince = (province) =&gt; {
+      const {selectProvince, language} = this.props;
+      const selectedProvince = storeInfo.provinces.find((item) =&gt; item.name[language] === province);
+      selectedProvince.longitude = selectedProvince.long,
+      selectedProvince.latitude = selectedProvince.lat;
+      const nearByStores = sortByDistance(selectedProvince, storeInfo.data, mapConfig.distanceLimit.province);
+      selectProvince(selectedProvince, nearByStores);
+    }
+&nbsp;
+    selectService = (service) =&gt; {
+      const {selectService, selectedProvince, radiusKM, currentLocation} = this.props;
+      const nearByStores = sortByDistance((selectedProvince ? selectedProvince : <span class="branch-1 cbranch-no" title="branch not covered" >currentLocation)</span>, storeInfo.data, radiusKM);
+      const filteredStores = filter(nearByStores, <span class="fstat-no" title="function not covered" >fu</span>nction (store) {
+<span class="cstat-no" title="statement not covered" >        if (store.service) {</span>
+          const serviceList = <span class="cstat-no" title="statement not covered" >Object.keys(store.service);</span>
+<span class="cstat-no" title="statement not covered" >          if (serviceList.indexOf(service) !== -1) {</span>
+<span class="cstat-no" title="statement not covered" >            return true;</span>
+          } else {
+<span class="cstat-no" title="statement not covered" >            serviceList.every(<span class="fstat-no" title="function not covered" >fu</span>nction (obj) {</span>
+<span class="cstat-no" title="statement not covered" >              if (obj.indexOf(service) !== -1) {</span>
+<span class="cstat-no" title="statement not covered" >                return true;</span>
+              }
+            });
+          }
+        }
+<span class="cstat-no" title="statement not covered" >        return false;</span>
+      });
+      selectService(service, filteredStores);
+    }
+&nbsp;
+    render () {
+      const {radiusKM, onMapClick, onListClick, language, selectedProvince, selectedService} = this.props;
+      const activeTabIndex = result(this.props, 'navigationState.index', 0);
+      return (
+        &lt;StoreLocatorTab activeTabIndex={activeTabIndex} radiusKM={radiusKM} onMapClick={onMapClick} onListClick={onListClick}
+          language={language} selectedProvince={result(selectedProvince, `name.${language}`, '')} selectedService={selectedService} selectProvince={this.selectProvince}
+          selectService={this.selectService}/&gt;
+      );
+    }
+}
+&nbsp;
+StoreLocatorTabsPage.defaultProps = {
+  onListClick: noop,
+  onMapClick: noop,
+  selectProvince: noop,
+  language: 'th',
+  selectedProvince: null
+};
+StoreLocatorTabsPage.propTypes = {
+  onListClick: PropTypes.func,
+  onMapClick: PropTypes.func,
+  selectProvince: PropTypes.func,
+  selectService: PropTypes.func,
+  selectedProvince: PropTypes.object,
+  selectedService: PropTypes.string,
+  currentLocation: PropTypes.object,
+  radiusKM: PropTypes.number,
+  language: PropTypes.string
+  // nearByStores: PropTypes.array //TODO Check if this is useful otherwise remove
+};
+&nbsp;
+export const mapStateToProps = (state) =&gt; ({
+  radiusKM: result(state, 'storeLocator.radiusKM', null),
+  language: result(state, 'user.language', null),
+  // nearByStores: result(state, 'storeLocator.nearByStores', null), //TODO Check if this is useful otherwise remove
+  currentLocation: result(state, 'user.currentLocation', null),
+  selectedProvince: result(state, 'storeLocator.selectedProvince', null),
+  selectedService: result(state, 'storeLocator.selectedService', null)
+});
+&nbsp;
+export const mapDispatchToProps = (dispatch) =&gt; ({
+  onMapClick: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >dispatch(NavigationActions.back()),</span>
+  onListClick: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >dispatch(NavigationActions.navigate({routeName: 'StoreLocatorList'})),</span>
+  selectProvince: <span class="fstat-no" title="function not covered" >(p</span>rovince, nearByStores) =&gt; <span class="cstat-no" title="statement not covered" >dispatch(setProvince({province: province, 'nearByStores': nearByStores})),</span>
+  selectService: <span class="fstat-no" title="function not covered" >(s</span>ervice, nearByStores) =&gt; <span class="cstat-no" title="statement not covered" >dispatch(setService({service: service, 'nearByStores': nearByStores}))</span>
+});
+&nbsp;
+export default connect(mapStateToProps, mapDispatchToProps)(StoreLocatorTabsPage);
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

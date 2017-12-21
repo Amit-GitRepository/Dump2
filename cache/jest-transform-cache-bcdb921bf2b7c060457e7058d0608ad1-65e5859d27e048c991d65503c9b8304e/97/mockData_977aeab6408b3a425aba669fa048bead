@@ -1,0 +1,273 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.TConvergencePackageDetailData=exports.packageDetailExtra=exports.billDetail=exports.prepaidData=exports.postpaidData=exports.availablePackage=undefined;var cov_ipkjip2p2=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/mockData.js',hash='ffe96338920d9af138252b75458907bf3d98167b',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/mockData.js',statementMap:{'0':{start:{line:6,column:32},end:{line:18,column:2}},'1':{start:{line:20,column:28},end:{line:87,column:2}},'2':{start:{line:89,column:27},end:{line:101,column:2}},'3':{start:{line:103,column:26},end:{line:118,column:1}},'4':{start:{line:120,column:34},end:{line:191,column:1}},'5':{start:{line:193,column:45},end:{line:275,column:1}}},fnMap:{},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();
+
+
+var _constants=require('../../themes/constants.styles');
+
+var availablePackage=exports.availablePackage=(cov_ipkjip2p2.s[0]++,[{
+label:'20',
+value:'20'},
+{
+label:'50',
+value:'50'},
+{
+label:'100',
+value:'100'},
+{
+label:'',
+value:'more'}]);
+
+
+var postpaidData=exports.postpaidData=(cov_ipkjip2p2.s[1]++,[{
+iconSectionColor:_constants.colors.SECONDARY_TMOVE,
+leftTitleText:'081-257-7887',
+leftDetailText:'True Mobile',
+amountText:3000,
+dueBills:[
+{
+'bill_date':'2017-10-03',
+'bill_due_date':'2017-11-03',
+'bill_amount':1000.123},
+
+{
+'bill_date':'2017-11-03',
+'bill_due_date':'2017-09-03',
+'bill_amount':2000}]},
+
+
+{
+iconSectionColor:_constants.colors.SECONDARY_TONLINE,
+leftTitleText:'081-257-7887',
+leftDetailText:'True Mobile',
+amountText:1500,
+currentUsage:[{
+usage:50,
+unit:'MB',
+type:'Download'},
+{
+usage:5,
+unit:'MB',
+type:'Upload'}],
+
+dueBills:[
+{
+'bill_date':'2017-10-03',
+'bill_due_date':'2017-09-03',
+'bill_amount':1000},
+
+{
+'bill_date':'2017-11-03',
+'bill_due_date':'2017-09-03',
+'bill_amount':500}]},
+
+
+{
+iconSectionColor:_constants.colors.SECONDARY_TVISION,
+leftTitleText:'081-257-7887',
+leftDetailText:'True Mobile',
+amountText:799,
+currentUsage:[{
+usage:64,
+type:'HD Channels'},
+{
+usage:170,
+type:'Channels'}],
+
+dueBills:[
+{
+'bill_date':'2017-10-03',
+'bill_due_date':'2017-09-03',
+'bill_amount':1000},
+
+{
+'bill_date':'2017-11-03',
+'bill_due_date':'2017-09-03',
+'bill_amount':500}]}]);
+
+
+
+
+var prepaidData=exports.prepaidData=(cov_ipkjip2p2.s[2]++,[{
+iconSectionColor:_constants.colors.SECONDARY_TMOVE,
+leftTitleText:'081-257-7887',
+leftDetailText:'True Mobile',
+rightTitleText:'value',
+amountText:5},
+{
+iconSectionColor:_constants.colors.SECONDARY_TMOVE,
+leftTitleText:'081-257-7887',
+leftDetailText:'True Mobile',
+rightTitleText:'value',
+amountText:15}]);
+
+
+var billDetail=exports.billDetail=(cov_ipkjip2p2.s[3]++,{
+invoiceNumber:'0000-0000-0000',
+total:1250,
+creditLimit:2500,
+exceedUsage:40.35,
+voice:{
+consumedValue:250,
+unit:'min',
+subtext:'of 300 min'},
+
+data:{
+consumedValue:10,
+unit:'GB',
+subtext:'of 30 GB'}});
+
+
+
+var packageDetailExtra=exports.packageDetailExtra=(cov_ipkjip2p2.s[4]++,{
+phoneNumber:'081-257-7887',
+packageDetail:{
+productType:'ทรูมูฟเอช',
+phoneNumber:'0812577887',
+endMonth:'ทุกวันที่',
+endDate:'2017-12-15T00:00:00.000+07:00',
+title:'Postpaid: 4G Super Smart 599',
+subtitle:'รับส่วนลดค่าบริการ 50%  12 รอบบิล (ก.ย.59 - ส.ค.60)',
+creditLimit:'2,500',
+exceedUsage:'40.35',
+items:{
+voice:{
+consumedValue:'300',
+subtext:'Over charge 1.50 B/min',
+unit:'min'},
+
+data:{
+consumedValue:'10',
+subtext:'300 Mbps max speed',
+unit:'GB'},
+
+wifi:{
+consumedValue:'Unlimited',
+subtext:'',
+unit:''},
+
+sms:{
+consumedValue:'3',
+subtext:'Per message',
+unit:'Baht'}}},
+
+
+
+extraPackage:[{
+title:'Voice',
+subtitle:'(Main)1',
+consumedValue:'100',
+totalValue:'300',
+expiryDate:'2018-10-05T01:43:47.421Z',
+unit:'min',
+isActive:true},
+{
+title:'Voice',
+subtitle:'(Main)2',
+consumedValue:'240',
+totalValue:'300',
+unit:'min',
+isActive:true},
+{
+title:'Voice',
+subtitle:'(Main)3',
+consumedValue:'0',
+totalValue:'300',
+expiryDate:'2019-10-05T01:43:47.421Z',
+unit:'min',
+isActive:false},
+{
+title:'Voice',
+subtitle:'(Main)4',
+consumedValue:'0',
+totalValue:'300',
+expiryDate:'2019-10-05T01:43:47.421Z',
+unit:'min',
+isActive:false}],
+
+autoRenew:{
+isEnabled:'true',
+paymentMode:'CC',
+paymentDetail:'4522 XXXX XXXX 1867'}});
+
+
+
+var TConvergencePackageDetailData=exports.TConvergencePackageDetailData=(cov_ipkjip2p2.s[5]++,{
+TOLPackageDetails:{
+endMonth:'may',
+endDate:'2017-12-15T00:00:00.000+07:00',
+planOverView:'Ultra hi-speed Internet 50M  2,799',
+planOffer:'รับส่วนลดค่าบริการ 50%  12 รอบบิล (ก.ย.59 - ส.ค.60)',
+download:{
+consumedValue:'50',unit:'MB'},
+upload:{
+consumedValue:'5',unit:'MB'},
+wifi:{
+consumedValue:'30',subtext:'hrs / month'},
+
+wifiRouter:{
+subtext:'12 months contract'}},
+
+
+TMPackageDetails:{
+phoneNumber:'081-257-7887',
+packageDetail:{
+productType:'ทรูมูฟเอช',
+phoneNumber:'0812577887',
+endMonth:'ทุกวันที่',
+endDate:'2017-12-15T00:00:00.000+07:00',
+title:'Postpaid: 4G Super Smart 599',
+subtitle:'รับส่วนลดค่าบริการ 50%  12 รอบบิล (ก.ย.59 - ส.ค.60)',
+creditLimit:'2,500',
+exceedUsage:'40.35',
+items:{
+voice:{
+consumedValue:'300',
+subtext:'Over charge 1.50 B/min',
+unit:'min'},
+
+data:{
+consumedValue:'10',
+subtext:'300 Mbps max speed',
+unit:'GB'},
+
+wifi:{
+consumedValue:'Unlimited',
+subtext:'',
+unit:''},
+
+sms:{
+consumedValue:'3',
+subtext:'Per message',
+unit:'Baht'}}}},
+
+
+
+
+TVPackageDetails:{
+endMonth:'may',
+endDate:'2017-12-15T00:00:00.000+07:00',
+planOverView:'Gold',
+planOffer:'รับส่วนลดค่าบริการ 50%  12 รอบบิล (ก.ย.59 - ส.ค.60)',
+hdChannel:{
+consumedValue:'64'},
+
+channel:{
+consumedValue:'170'},
+
+additionalOffers:[
+{
+titleText:'FREE! Super Soccer',
+consumedValue:2,
+subtext:'Seasons'},
+
+{
+titleText:'FREE Installation',
+subtext:'12 Months contract'}]},
+
+
+
+userDetails:{
+name:'test',
+phoneNumber:'9629770174'},
+
+billCycle:{
+code:'10'}});

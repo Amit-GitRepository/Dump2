@@ -1,0 +1,31 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.styles=undefined;var cov_175lykb4x7=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/WrapperCard/WrapperCard.style.js',hash='b90b80cc5acf15803a02f07819eed882d5376416',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/WrapperCard/WrapperCard.style.js',statementMap:{'0':{start:{line:4,column:22},end:{line:33,column:1}}},fnMap:{},branchMap:{},s:{'0':0},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _constants=require('../../../themes/constants.styles');
+var _application=require('../../../themes/application.styles');
+
+var styles=exports.styles=(cov_175lykb4x7.s[0]++,{
+wrapper:{
+margin:10},
+
+container:_extends({
+alignItems:'stretch',
+borderRadius:10,
+backgroundColor:_constants.colors.PRIMARY_BG_TEXT_CONTRAST,
+borderWidth:1,
+borderColor:_constants.colors.PRIMARY_DISABLED_BG_TEXT,
+shadowColor:_constants.colors.SHADOW},_application.shadowActiveStyle),
+
+
+header:_extends({
+position:'absolute',
+backgroundColor:_constants.colors.PRIMARY_TEXT_TAB_LABEL,
+paddingVertical:2,
+paddingHorizontal:15,
+alignSelf:'center',
+alignItems:'center',
+justifyContent:'center',
+borderRadius:10,
+marginTop:-15},_application.shadowActiveStyle),
+
+
+headerText:{
+fontSize:_constants.fonts.FONT_SIZE_NORMAL,
+color:_constants.colors.PRIMARY_BG_TEXT_CONTRAST}});

@@ -1,0 +1,67 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_2ptgprkp2r=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/TopLevelCards/PrepaidWrapper/PrepaidWrapper.component.js',hash='bbb59c83899ffcf1af3488ab8a0c0c3bb1f5db65',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/TopLevelCards/PrepaidWrapper/PrepaidWrapper.component.js',statementMap:{'0':{start:{line:22,column:35},end:{line:24,column:3}},'1':{start:{line:23,column:4},end:{line:23,column:54}},'2':{start:{line:27,column:94},end:{line:27,column:104}},'3':{start:{line:28,column:34},end:{line:28,column:44}},'4':{start:{line:29,column:27},end:{line:29,column:53}},'5':{start:{line:30,column:25},end:{line:30,column:36}},'6':{start:{line:32,column:32},end:{line:39,column:6}},'7':{start:{line:33,column:20},end:{line:33,column:71}},'8':{start:{line:34,column:29},end:{line:34,column:40}},'9':{start:{line:35,column:36},end:{line:35,column:91}},'10':{start:{line:36,column:38},end:{line:36,column:93}},'11':{start:{line:36,column:44},end:{line:36,column:93}},'12':{start:{line:38,column:6},end:{line:38,column:413}},'13':{start:{line:41,column:4},end:{line:50,column:6}},'14':{start:{line:53,column:0},end:{line:59,column:2}},'15':{start:{line:60,column:0},end:{line:66,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:22,column:18},end:{line:22,column:19}},loc:{start:{line:22,column:35},end:{line:24,column:3}},line:22},'1':{name:'(anonymous_1)',decl:{start:{line:22,column:35},end:{line:22,column:36}},loc:{start:{line:22,column:41},end:{line:24,column:3}},line:22},'2':{name:'(anonymous_2)',decl:{start:{line:26,column:2},end:{line:26,column:3}},loc:{start:{line:26,column:12},end:{line:51,column:3}},line:26},'3':{name:'(anonymous_3)',decl:{start:{line:32,column:48},end:{line:32,column:49}},loc:{start:{line:32,column:72},end:{line:39,column:5}},line:32},'4':{name:'(anonymous_4)',decl:{start:{line:36,column:38},end:{line:36,column:39}},loc:{start:{line:36,column:44},end:{line:36,column:93}},line:36}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();
+
+var _Button=require('../../../../Shared/Button/Button.component');var _Button2=_interopRequireDefault(_Button);
+var _ISText=require('../../../../Shared/ISText/ISText.component');var _ISText2=_interopRequireDefault(_ISText);
+var _map=require('lodash/map');var _map2=_interopRequireDefault(_map);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _PrepaidCard=require('../../ProductCards/PrepaidCard/PrepaidCard.component');var _PrepaidCard2=_interopRequireDefault(_PrepaidCard);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _RadioGroup=require('../../BillUsageShared/RadioGroup.component');var _RadioGroup2=_interopRequireDefault(_RadioGroup);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _PrepaidWrapper=require('./PrepaidWrapper.style');var _PrepaidWrapper2=_interopRequireDefault(_PrepaidWrapper);
+var _WrapperCard=require('../../BillUsageShared/WrapperCard.component');var _WrapperCard2=_interopRequireDefault(_WrapperCard);
+var _common=require('../../../../../utils/common.util');
+var _helper=require('../../../../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+PrepaidWrapper=function(_Component){_inherits(PrepaidWrapper,_Component);function PrepaidWrapper(){var _ref;var _temp,_this,_ret;_classCallCheck(this,PrepaidWrapper);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=PrepaidWrapper.__proto__||Object.getPrototypeOf(PrepaidWrapper)).call.apply(_ref,[this].concat(args))),_this),_this.
+state={
+selectedPhoneNumber:''},_this.
+
+onRadioSelect=function(phoneNumber){cov_2ptgprkp2r.f[0]++;cov_2ptgprkp2r.s[0]++;return function(){cov_2ptgprkp2r.f[1]++;cov_2ptgprkp2r.s[1]++;
+_this.setState({selectedPhoneNumber:phoneNumber});
+};},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(PrepaidWrapper,[{key:'render',value:function render()
+
+{var _this2=this;cov_2ptgprkp2r.f[2]++;var _ref2=(cov_2ptgprkp2r.s[2]++,
+this.props),productList=_ref2.productList,productDetail=_ref2.productDetail,avaliablePackage=_ref2.avaliablePackage,toggleProductCollapse=_ref2.toggleProductCollapse,goToScreen=_ref2.goToScreen;var _ref3=(cov_2ptgprkp2r.s[3]++,
+this.state),selectedPhoneNumber=_ref3.selectedPhoneNumber;
+var showTopUpValue=(cov_2ptgprkp2r.s[4]++,selectedPhoneNumber!=='');var _ref4=(cov_2ptgprkp2r.s[5]++,
+productList),prepayList=_ref4.prepayList;
+
+var prepaidSubscription=(cov_2ptgprkp2r.s[6]++,(0,_map2.default)(prepayList,function(prepaidInfo,index){cov_2ptgprkp2r.f[3]++;
+var phone=(cov_2ptgprkp2r.s[7]++,(0,_common.phoneNumberFormatter)(prepaidInfo.primResourceValue));var _ref5=(cov_2ptgprkp2r.s[8]++,
+prepaidInfo),subscriberId=_ref5.subscriberId;
+var prepaidProductDetail=(cov_2ptgprkp2r.s[9]++,(0,_result2.default)(productDetail,'prepayList.'+subscriberId,{}));cov_2ptgprkp2r.s[10]++;
+var onPrepaidToggleCollapse=function onPrepaidToggleCollapse(){cov_2ptgprkp2r.f[4]++;cov_2ptgprkp2r.s[11]++;return toggleProductCollapse('prepayList',subscriberId);};cov_2ptgprkp2r.s[12]++;
+
+return _react2.default.createElement(_PrepaidCard2.default,{PrepaidCard:true,key:index,goToScreen:goToScreen,isSelected:phone===selectedPhoneNumber,onRadioSelect:_this2.onRadioSelect(phone),index:index,phone:phone,amount:Number(prepaidInfo.arBalance),remainingDays:prepaidInfo.expiryDate,status:prepaidInfo.state,onCollapseToggle:onPrepaidToggleCollapse,isCollapsed:prepaidInfo.isCollapsed,productDetail:prepaidProductDetail});
+}));cov_2ptgprkp2r.s[13]++;
+
+return(
+_react2.default.createElement(_WrapperCard2.default,{header:(0,_helper.translate)('BILLS_USAGE_PREPAID_NUMBERS'),style:_PrepaidWrapper2.default.container,contentContainerStyles:_PrepaidWrapper2.default.contentContainer},
+_react2.default.createElement(_ISText2.default,{style:_PrepaidWrapper2.default.prepaidTitleText,type:'BOLD'},(0,_helper.translate)('BILLS_USAGE_PREPAID_CHOOSE')),
+_react2.default.createElement(_reactNative.View,{style:_PrepaidWrapper2.default.radioGroupSection},
+_react2.default.createElement(_RadioGroup2.default,{radioGroupData:avaliablePackage,style:_PrepaidWrapper2.default.radioGroupStyles,showDefaultValue:showTopUpValue}),
+_react2.default.createElement(_Button2.default,{text:(0,_helper.translate)('BILLS_USAGE_TOP_UP'),style:_PrepaidWrapper2.default.buttonStyle,disabled:!showTopUpValue})),
+
+prepaidSubscription));
+
+
+}}]);return PrepaidWrapper;}(_react.Component);cov_2ptgprkp2r.s[14]++;
+
+PrepaidWrapper.defaultProps={
+productList:{},
+avaliablePackage:[],
+goToScreen:_noop2.default,
+productDetail:{},
+toggleProductCollapse:_noop2.default};cov_2ptgprkp2r.s[15]++;
+
+PrepaidWrapper.propTypes={
+productList:_propTypes2.default.object,
+avaliablePackage:_propTypes2.default.array,
+goToScreen:_propTypes2.default.func,
+productDetail:_propTypes2.default.object,
+toggleProductCollapse:_propTypes2.default.func};exports.default=
+
+PrepaidWrapper;

@@ -1,0 +1,53 @@
+var _reactNativeConfig=require('react-native-config');var _reactNativeConfig2=_interopRequireDefault(_reactNativeConfig);
+var _deeplink=require('../deeplink.saga');var _deeplink2=_interopRequireDefault(_deeplink);
+var _index=require('../../../routes/index.routes');var _index2=_interopRequireDefault(_index);
+var _reduxSagaTesting=require('redux-saga-testing');var _reduxSagaTesting2=_interopRequireDefault(_reduxSagaTesting);
+var _effects=require('redux-saga/effects');
+var _index3=require('../../actions/index.actions');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('deeplinkSaga: Testing the root saga',function(){
+var mockStartupCompletedAction={
+type:_index3.STARTUP_SAGA_COMPLETE,
+payload:null};
+
+var mockDeepLinkReceivedAction={
+type:_index3.DEEP_LINK_RECEIVED,
+payload:''};
+
+var it=(0,_reduxSagaTesting2.default)((0,_deeplink2.default)());
+it('Should take the startupSaga completed and deeplink received actions',function(result){
+expect(result).toEqual((0,_effects.all)([(0,_effects.take)(_index3.STARTUP_SAGA_COMPLETE),(0,_effects.take)(_index3.DEEP_LINK_RECEIVED)]));
+return[mockStartupCompletedAction,mockDeepLinkReceivedAction];
+});
+it('Should call the deeplink handler with the pending deeplink action',function(result){
+expect(result).toEqual((0,_effects.call)(_deeplink.handleDeepLink,mockDeepLinkReceivedAction));
+});
+it('Should watch for incoming deeplinks',function(result){
+expect(result).toEqual((0,_effects.takeEvery)(_index3.DEEP_LINK_RECEIVED,_deeplink.handleDeepLink));
+});
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});
+
+describe('handleDeepLink: Testing the handle deep link saga',function(){
+var path='billusage';
+var mockDeepLinkReceivedAction={
+type:_index3.DEEP_LINK_RECEIVED,
+payload:'http://'+_reactNativeConfig2.default.DEEPLINK_BASE_URL+path};
+
+var it=(0,_reduxSagaTesting2.default)((0,_deeplink.handleDeepLink)(mockDeepLinkReceivedAction));
+it('Should show the spinner',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index3.showSpinner)()));
+});
+it('Should dispacth an action for navigating to Bill and usage screen',function(result){
+var routeAction=_index2.default.router.getActionForPathAndParams(path);
+expect(result).toEqual((0,_effects.put)(routeAction));
+});
+it('Should show the hide the spinner after route transition',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index3.hideSpinner)()));
+});
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});

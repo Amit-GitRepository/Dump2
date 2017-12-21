@@ -1,0 +1,24 @@
+var _sideMenu=require('../sideMenu.reducer');var _sideMenu2=_interopRequireDefault(_sideMenu);
+var _index=require('../../actions/index.actions');var actions=_interopRequireWildcard(_index);function _interopRequireWildcard(obj){if(obj&&obj.__esModule){return obj;}else{var newObj={};if(obj!=null){for(var key in obj){if(Object.prototype.hasOwnProperty.call(obj,key))newObj[key]=obj[key];}}newObj.default=obj;return newObj;}}function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('SideMenu reducer',function(){
+var initialState={
+showPrompt:false,
+nextLoginAction:null};
+
+
+Object.freeze(initialState);
+it('should have the initial value as showPrompt: false and nextLoginAction: null',function(){
+expect((0,_sideMenu2.default)(undefined,{})).toEqual(initialState);
+});
+it('should set the value of showPrompt, nextLoginAction',function(){
+var togglePrompt={
+type:actions.TOGGLE_LOGIN_PROMPT,
+payload:{
+route:'test'}};
+
+
+var result={showPrompt:true,nextLoginAction:{route:'test'}};
+expect((0,_sideMenu2.default)(initialState,togglePrompt)).toEqual(result);
+});
+});

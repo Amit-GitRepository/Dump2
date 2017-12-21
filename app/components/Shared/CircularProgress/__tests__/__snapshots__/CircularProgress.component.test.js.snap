@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CircularProgress component renders correctly 1`] = `
+<View
+  style={undefined}
+>
+  <View
+    height={130}
+    width={130}
+  >
+    <View
+      originX={65}
+      originY={65}
+      rotation={-90}
+    >
+      <View
+        d={
+          Array [
+            0,
+            127.5,
+            65,
+            4,
+            65,
+            65,
+            62.5,
+            0,
+            6.282556988648868,
+            1,
+          ]
+        }
+        stroke="#E9E9EA"
+        strokeWidth={5}
+      />
+      <View
+        d={
+          Array [
+            0,
+            127.5,
+            65,
+            4,
+            65,
+            65,
+            62.5,
+            0,
+            0,
+            1,
+          ]
+        }
+        stroke="#F93E60"
+        strokeCap="butt"
+        strokeWidth={5}
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`CircularProgress component renders correctly 2`] = `
+<View
+  style={undefined}
+>
+  <View
+    height={130}
+    width={130}
+  >
+    <View
+      originX={65}
+      originY={65}
+      rotation={-90}
+    >
+      <View
+        d={
+          Array [
+            0,
+            127.5,
+            65,
+            4,
+            65,
+            65,
+            62.5,
+            0,
+            6.282556988648868,
+            1,
+          ]
+        }
+        stroke="#E9E9EA"
+        strokeWidth={5}
+      />
+      <View
+        d={
+          Array [
+            0,
+            127.5,
+            65,
+            4,
+            65,
+            65,
+            62.5,
+            0,
+            0,
+            1,
+          ]
+        }
+        stroke="#F93E60"
+        strokeCap="butt"
+        strokeWidth={5}
+      />
+    </View>
+  </View>
+</View>
+`;

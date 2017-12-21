@@ -1,0 +1,19 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_2pr0g88opa=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillingMethods/BillingMethods/BillingMethods.style.js',hash='f0e7899d4350c52def2a444e87f820410f698171',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillingMethods/BillingMethods/BillingMethods.style.js',statementMap:{},fnMap:{},branchMap:{},s:{},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();exports.default={
+container:{
+padding:5,
+flex:1,
+justifyContent:'space-between'},
+
+cardContainer:{
+marginBottom:10,
+paddingHorizontal:12,
+paddingTop:5},
+
+scrollContainer:{
+paddingBottom:20},
+
+ebillCard:{
+marginBottom:20},
+
+buttonContainer:{
+paddingHorizontal:10}};

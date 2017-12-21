@@ -1,0 +1,98 @@
+var _api=require('../api/api.saga');var _api2=_interopRequireDefault(_api);
+var _billUsage=require('../../reducers/billUsage.reducer');var _billUsage2=_interopRequireDefault(_billUsage);
+var _ebill=require('../ebill.saga');var _ebill2=_interopRequireDefault(_ebill);
+var _reduxSagaTesting=require('redux-saga-testing');var _reduxSagaTesting2=_interopRequireDefault(_reduxSagaTesting);
+var _index=require('../../actions/index.actions');
+var _apiHelper=require('../api/apiHelper');
+var _effects=require('redux-saga/effects');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+var productList={
+'tmhPostpaid':[{
+'productId':'0968730313',
+'subscriberId':'193591',
+'accountId':'10101029',
+'balance':'0.0',
+'subscriptionType':'POSTPAID',
+'statusCode':'ACTIVE',
+'productType':'TrueMoveH'}],
+
+'tvs':[],
+'tol':[],
+'conv':[]};
+
+
+describe('ebillSaga: Testing the root Saga',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_ebill2.default)());
+it('Should take the every GET_BILL_PREFERENCES actions and call fetchBillingPreference saga',function(result){
+expect(result).toEqual((0,_effects.takeEvery)(_index.GET_BILL_PREFERENCES,_ebill.fetchBillingPreference));
+});
+it('Should take the every APPLY_FOR_EBILL actions and call fetchBillingPreference saga',function(result){
+expect(result).toEqual((0,_effects.takeEvery)(_index.APPLY_FOR_EBILL,_ebill.applyForEBill));
+});
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});
+
+describe('ebillSaga: fetchBillingPreference saga',function(){
+(0,_billUsage2.default)({productList:productList},{});
+var it=(0,_reduxSagaTesting2.default)((0,_ebill.fetchBillingPreference)({payload:{accountIds:'10100949,10101029'}}));
+it('Should call api billPreferences',function(result){
+expect(result).toEqual((0,_effects.call)(_api2.default,(0,_apiHelper.billPreferences)({accountIds:'10100949,10101029'})));
+return{
+body:{
+'sms':[{
+'accountID':'10101029',
+'billingFormat':'sms',
+'billingValue':'0855469856'}]}};
+
+
+
+});
+
+it('Should select product list',function(result){
+expect(result).toEqual((0,_effects.select)(_ebill.productListSelector));
+return productList;
+});
+
+it('Should dispatch action to setBillPreferences',function(result){
+expect(result).toEqual((0,_effects.put)((0,_index.setBillingPreferences)({
+'sms':[{
+'accountID':'10101029',
+'billingFormat':'sms',
+'billingValue':'0855469856',
+'productId':'0968730313',
+'subscriberId':'193591',
+'accountId':'10101029',
+'balance':'0.0',
+'subscriptionType':'POSTPAID',
+'statusCode':'ACTIVE',
+'productType':'TrueMoveH',
+'accountType':'tmhPostpaid'}]})));
+
+
+});
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});
+
+describe('ebillSaga: applyForEBill saga',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_ebill.applyForEBill)({payload:[{'accountID':'10100949','accountType':'tmhPostpaid','ebillFormat':'sms','emailToRegister':'','msisdnToRegister':'0968730312'}]}));
+it('Should select product list',function(result){
+expect(result).toEqual((0,_effects.select)(_ebill.productListSelector));
+return productList;
+});
+it('Should call api registerEbill',function(result){
+expect(result).toEqual((0,_effects.call)(_api2.default,(0,_apiHelper.registerEbill)([{'accountID':'10100949','accountType':'tmhPostpaid','ebillFormat':'sms','emailToRegister':'','msisdnToRegister':'0968730312'}])));
+return{
+body:'Order submitted successfully in OMX'};
+
+});
+it('Should navigate to bill methods route',function(result){
+expect(result).toEqual((0,_effects.put)({'routeName':'BillingMethods','type':'Navigation/NAVIGATE'}));
+});
+it('and then nothing',function(result){
+expect(result).toBeUndefined();
+});
+});

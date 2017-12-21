@@ -1,0 +1,33 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.mapDispatchToProps=undefined;var cov_15c6nx99t0=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/BillingMethods/EBillAdd.page.js',hash='4132a351be70d1330f9f0ec5011d6479ad97f5a9',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/BillingMethods/EBillAdd.page.js',statementMap:{'0':{start:{line:10,column:41},end:{line:10,column:51}},'1':{start:{line:11,column:4},end:{line:16,column:6}},'2':{start:{line:20,column:0},end:{line:23,column:2}},'3':{start:{line:25,column:24},end:{line:27,column:2}},'4':{start:{line:25,column:36},end:{line:27,column:1}},'5':{start:{line:29,column:34},end:{line:31,column:2}},'6':{start:{line:29,column:49},end:{line:31,column:1}},'7':{start:{line:30,column:24},end:{line:30,column:58}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:9,column:2},end:{line:9,column:3}},loc:{start:{line:9,column:12},end:{line:17,column:3}},line:9},'1':{name:'(anonymous_1)',decl:{start:{line:25,column:24},end:{line:25,column:25}},loc:{start:{line:25,column:36},end:{line:27,column:1}},line:25},'2':{name:'(anonymous_2)',decl:{start:{line:29,column:34},end:{line:29,column:35}},loc:{start:{line:29,column:49},end:{line:31,column:1}},line:29},'3':{name:'(anonymous_3)',decl:{start:{line:30,column:13},end:{line:30,column:14}},loc:{start:{line:30,column:24},end:{line:30,column:58}},line:30}},branchMap:{'0':{loc:{start:{line:13,column:26},end:{line:13,column:53}},type:'binary-expr',locations:[{start:{line:13,column:26},end:{line:13,column:47}},{start:{line:13,column:51},end:{line:13,column:53}}],line:13}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0},f:{'0':0,'1':0,'2':0,'3':0},b:{'0':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _EBillAdd=require('../../components/BillingMethods/EBillAdd/EBillAdd.component');var _EBillAdd2=_interopRequireDefault(_EBillAdd);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _reactRedux=require('react-redux');
+var _index=require('../../redux/actions/index.actions');var actions=_interopRequireWildcard(_index);function _interopRequireWildcard(obj){if(obj&&obj.__esModule){return obj;}else{var newObj={};if(obj!=null){for(var key in obj){if(Object.prototype.hasOwnProperty.call(obj,key))newObj[key]=obj[key];}}newObj.default=obj;return newObj;}}function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+EBillAddPage=function(_Component){_inherits(EBillAddPage,_Component);function EBillAddPage(){_classCallCheck(this,EBillAddPage);return _possibleConstructorReturn(this,(EBillAddPage.__proto__||Object.getPrototypeOf(EBillAddPage)).apply(this,arguments));}_createClass(EBillAddPage,[{key:'render',value:function render()
+{cov_15c6nx99t0.f[0]++;var _ref=(cov_15c6nx99t0.s[0]++,
+this.props),billPreferences=_ref.billPreferences,showPopup=_ref.showPopup;cov_15c6nx99t0.s[1]++;
+return(
+_react2.default.createElement(_EBillAdd2.default,{
+paperBillContent:(cov_15c6nx99t0.b[0][0]++,billPreferences.paper)||(cov_15c6nx99t0.b[0][1]++,[]),
+showPopup:showPopup}));
+
+
+}}]);return EBillAddPage;}(_react.Component);cov_15c6nx99t0.s[2]++;
+
+
+EBillAddPage.propTypes={
+billPreferences:_propTypes2.default.object,
+showPopup:_propTypes2.default.func};cov_15c6nx99t0.s[3]++;
+
+
+var mapStateToProps=function mapStateToProps(state){cov_15c6nx99t0.f[1]++;cov_15c6nx99t0.s[4]++;return{
+billPreferences:(0,_result2.default)(state,'ebill.billPreferences',{})};
+};cov_15c6nx99t0.s[5]++;
+
+var mapDispatchToProps=exports.mapDispatchToProps=function mapDispatchToProps(dispatch){cov_15c6nx99t0.f[2]++;cov_15c6nx99t0.s[6]++;return{
+showPopup:function showPopup(value){cov_15c6nx99t0.f[3]++;cov_15c6nx99t0.s[7]++;return dispatch(actions.showPopup(value));}};
+};exports.default=
+
+(0,_reactRedux.connect)(mapStateToProps,mapDispatchToProps)(EBillAddPage);

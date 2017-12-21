@@ -1,0 +1,69 @@
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);
+var _TSmartChoiceCard=require('../TSmartChoiceCard.component');var _TSmartChoiceCard2=_interopRequireDefault(_TSmartChoiceCard);
+var _enzyme=require('enzyme');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+var dueBills=[{
+'invoiceNo':'070720182800041696',
+'dueDate':'2018-08-21T00:00:00.000+07:00',
+'billAmount':747.93,
+'unpaidAmount':747.93,
+'invoiceStatus':'O',
+'invoiceCycle':'28/7/2018'},
+{
+'invoiceNo':'070620182800038302',
+'dueDate':'2018-07-22T00:00:00.000+07:00',
+'billAmount':747.93,
+'unpaidAmount':747.93,
+'invoiceStatus':'O',
+'invoiceCycle':'28/6/2018'},
+{
+'invoiceNo':'150720182800044786',
+'dueDate':'2018-08-21T00:00:00.000+07:00',
+'billAmount':897,
+'unpaidAmount':299,
+'invoiceStatus':'O',
+'invoiceCycle':'28/7/2018'},
+{
+'invoiceNo':'150620182800040680',
+'dueDate':'2018-07-22T00:00:00.000+07:00',
+'billAmount':897,
+'unpaidAmount':299,
+'invoiceStatus':'O',
+'invoiceCycle':'28/6/2018'}];
+
+
+var totalDueBills=[{
+'billAmount':1644.93,
+'dueDate':'2018-08-21T00:00:00.000+07:00',
+'invoiceCycle':'28/7/2018',
+'invoiceNo':'070720182800041696',
+'invoiceStatus':'O',
+'unpaidAmount':1046.93},
+{
+'billAmount':1644.93,
+'dueDate':'2018-07-22T00:00:00.000+07:00',
+'invoiceCycle':'28/6/2018',
+'invoiceNo':'070620182800038302',
+'invoiceStatus':'O',
+'unpaidAmount':1046.93}];
+
+
+describe('TSmartChoiceCard component',function(){
+it('renders correctly',function(){
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_TSmartChoiceCard2.default,null)).toJSON();
+expect(component).toMatchSnapshot();
+});
+it('should shallow render with default props',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_TSmartChoiceCard2.default,null));
+expect(wrapper).toBeDefined();
+});
+it('should calculate the due bills accordingy',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_TSmartChoiceCard2.default,{dueBills:dueBills}));
+var bills=wrapper.instance().calculateDueBills(dueBills);
+expect(bills).toEqual(totalDueBills);
+});
+});

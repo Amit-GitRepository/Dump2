@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PackageOverview component renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "paddingHorizontal": 5,
+      "paddingTop": 2,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "color": "#000000",
+        "fontFamily": "SukhumvitSet-Bold",
+        "fontSize": 16,
+        "textAlign": "center",
+      }
+    }
+  >
+    title
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "color": "#68747E",
+        "fontFamily": "SukhumvitSet-Text",
+        "fontSize": 14,
+        "textAlign": "center",
+      }
+    }
+  >
+    sub title
+  </Text>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#E9E9EA",
+        "borderBottomWidth": 1,
+        "marginTop": 10,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`PackageOverview component renders correctly without props 1`] = `
+<View
+  style={
+    Object {
+      "paddingHorizontal": 5,
+      "paddingTop": 2,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "backgroundColor": "transparent",
+        "color": "#000000",
+        "fontFamily": "SukhumvitSet-Bold",
+        "fontSize": 16,
+        "textAlign": "center",
+      }
+    }
+  >
+    
+  </Text>
+  <View
+    style={
+      Object {
+        "borderBottomColor": "#E9E9EA",
+        "borderBottomWidth": 1,
+        "marginTop": 10,
+      }
+    }
+  />
+</View>
+`;

@@ -1,0 +1,21 @@
+var _popup=require('../popup.saga');var _popup2=_interopRequireDefault(_popup);
+var _reduxSagaTesting=require('redux-saga-testing');var _reduxSagaTesting2=_interopRequireDefault(_reduxSagaTesting);
+var _index=require('../../actions/index.actions');
+var _effects=require('redux-saga/effects');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('Testing the root saga',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_popup2.default)());
+it('should take POPUP_PUT_ACTION action',function(result){
+expect(result).toEqual((0,_effects.takeLatest)(_index.POPUP_PUT_ACTION,_popup.putAction));
+});
+it('should call nothing after this',function(result){
+expect(result).toBeUndefined();
+});
+});
+
+describe('putAction with xaction to fire in payload',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_popup.putAction)({payload:{type:'HELLO'}}));
+it('On success, dispatchs xaction',function(result){
+expect(result).toEqual((0,_effects.put)({type:'HELLO'}));
+});
+});

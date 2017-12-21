@@ -1,0 +1,51 @@
+jest.mock('../localStorage.util.js',function(){return{
+getItem:jest.fn(function(){return null;}),
+setItem:jest.fn(),
+updateItem:jest.fn()};});var _this=this;
+
+
+var _localStorage=require('../localStorage.util');var _localStorage2=_interopRequireDefault(_localStorage);
+var _versionControl=require('../../config/versionControl.config');var _versionControl2=_interopRequireDefault(_versionControl);
+var _forceUpdate=require('../forceUpdate.util');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('update notification retries',function(){
+it('should call the setItem with notificationRetries argument and currentVersion arg when notificationRetries is null',function _callee(){return regeneratorRuntime.async(function _callee$(_context){while(1){switch(_context.prev=_context.next){case 0:_context.next=2;return regeneratorRuntime.awrap(
+(0,_forceUpdate.updateNotificationRetries)());case 2:
+expect(_localStorage2.default.setItem).toHaveBeenCalledWith('currentVersion','1.5.6');
+expect(_localStorage2.default.setItem).toHaveBeenCalledWith('notificationRetries',0);case 4:case'end':return _context.stop();}}},null,_this);});
+
+
+it('should set the notfication retries only if currentVersion is not null',function _callee2(){return regeneratorRuntime.async(function _callee2$(_context2){while(1){switch(_context2.prev=_context2.next){case 0:
+_localStorage2.default.getItem.mockImplementation(function(key){
+switch(key){
+case'currentVersion':
+return'1.5.6';
+case'notificationRetries':
+return null;}
+
+});_context2.next=3;return regeneratorRuntime.awrap(
+(0,_forceUpdate.updateNotificationRetries)());case 3:
+expect(_localStorage2.default.setItem).toBeCalledWith('notificationRetries',0);case 4:case'end':return _context2.stop();}}},null,_this);});
+
+
+it('should set notificationretries to 0 when current Item is not equal to current version on device',function _callee3(){return regeneratorRuntime.async(function _callee3$(_context3){while(1){switch(_context3.prev=_context3.next){case 0:
+_localStorage2.default.getItem.mockImplementation(function(key){
+switch(key){
+case'currentVersion':
+return'1.0.0';
+case'notificationRetries':
+return 0;}
+
+});_context3.next=3;return regeneratorRuntime.awrap(
+(0,_forceUpdate.updateNotificationRetries)());case 3:
+expect(_localStorage2.default.setItem).toHaveBeenCalledWith('notificationRetries',0);
+expect(_localStorage2.default.setItem).toHaveBeenCalledWith('currentVersion','1.5.6');case 5:case'end':return _context3.stop();}}},null,_this);});
+
+});
+
+describe('getAlertConfig',function(){
+it('should return a promise',function(){
+var result=(0,_forceUpdate.getAlertConfig)(_versionControl2.default,true);
+expect(result).resolves;
+});
+});

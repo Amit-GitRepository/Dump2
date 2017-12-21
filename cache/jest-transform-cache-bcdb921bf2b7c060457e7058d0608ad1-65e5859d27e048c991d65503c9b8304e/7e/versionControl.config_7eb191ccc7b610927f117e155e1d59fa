@@ -1,0 +1,9 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_25yl8k2y6l=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/config/versionControl.config.js',hash='33fb95b9062b8a977d8fdcaa497054c40ddbbf9f',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/config/versionControl.config.js',statementMap:{'0':{start:{line:1,column:36},end:{line:10,column:1}}},fnMap:{},branchMap:{},s:{'0':0},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var versionControlConfig=exports.versionControlConfig=(cov_25yl8k2y6l.s[0]++,{
+FORCE_UPDATE_MIN_VERSION:0.0,
+FORCE_UPDATE_BLACKLIST_VERSIONS:'',
+FORCE_UPDATE_CURRENT_VERSION:0.0,
+FORCE_UPDATE_PLAY_STORE_URL:
+'https://play.google.com/store/apps/details?id=com.truelife.mobile.android.trueiservice',
+FORCE_UPDATE_APP_STORE_URL:
+'https://itunes.apple.com/in/app/true-iservice/id394602822?mt=8',
+FORCE_UPDATE_NOTIFICATION_RETRY:1});

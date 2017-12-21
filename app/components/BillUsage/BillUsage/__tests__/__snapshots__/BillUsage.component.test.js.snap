@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BillUsage component renders correctly 1`] = `
+<RCTScrollView
+  accessibilityLabel="Bills&Usage_container"
+  contentContainerStyle={
+    Object {
+      "alignItems": "stretch",
+      "backgroundColor": "#EBECEB",
+      "flex": 1,
+      "marginBottom": 20,
+    }
+  }
+>
+  <View>
+    <View
+      style={Object {}}
+    >
+      <Image
+        getSize={[Function]}
+        isBackground={false}
+        onLayout={[Function]}
+        resizeMode="contain"
+        source={
+          Object {
+            "testUri": "../../../app/assets/bill_usage_banner.jpg",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
+            Object {
+              "height": undefined,
+              "width": undefined,
+            },
+            undefined,
+          ]
+        }
+      />
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#FFFFFF",
+            "fontFamily": "SukhumvitSet-Bold",
+            "fontSize": 14,
+            "marginBottom": -5,
+          }
+        }
+      >
+        Welcome,
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "color": "#FFFFFF",
+            "fontFamily": "SukhumvitSet-Bold",
+            "fontSize": 24,
+            "marginBottom": -10,
+          }
+        }
+      >
+        
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "marginTop": -50,
+        }
+      }
+    />
+  </View>
+</RCTScrollView>
+`;

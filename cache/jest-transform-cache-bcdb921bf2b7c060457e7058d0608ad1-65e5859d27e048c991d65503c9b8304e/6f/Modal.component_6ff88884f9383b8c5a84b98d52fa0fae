@@ -1,0 +1,25 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1y2sdfsol5=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/Modal/Modal.component.js',hash='88b4a56c21edc1f3ea511fe8cd5e366186578022',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/Modal/Modal.component.js',statementMap:{'0':{start:{line:5,column:20},end:{line:5,column:114}},'1':{start:{line:5,column:36},end:{line:5,column:114}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:5,column:20},end:{line:5,column:21}},loc:{start:{line:5,column:36},end:{line:5,column:114}},line:5}},branchMap:{},s:{'0':0,'1':0},f:{'0':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _reactNativeModal=require('react-native-modal');var _reactNativeModal2=_interopRequireDefault(_reactNativeModal);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _constants=require('../../../themes/constants.styles');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _objectWithoutProperties(obj,keys){var target={};for(var i in obj){if(keys.indexOf(i)>=0)continue;if(!Object.prototype.hasOwnProperty.call(obj,i))continue;target[i]=obj[i];}return target;}cov_1y2sdfsol5.s[0]++;
+
+var CustomModal=function CustomModal(_ref){var props=_objectWithoutProperties(_ref,[]);cov_1y2sdfsol5.f[0]++;cov_1y2sdfsol5.s[1]++;return _react2.default.createElement(_reactNativeModal2.default,_extends({backdropColor:_constants.colors.BACKDROP_COLOR,backdropOpacity:1},props));};exports.default=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CustomModal;

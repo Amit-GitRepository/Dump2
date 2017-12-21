@@ -1,0 +1,27 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.landingRouteConfig=undefined;var cov_ayhptekfz=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/routes/landing.routes.js',hash='cfc080d4e95b59254d9360665cf8dcfe2ae135d0',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/routes/landing.routes.js',statementMap:{'0':{start:{line:7,column:34},end:{line:25,column:1}}},fnMap:{},branchMap:{},s:{'0':0},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _Landing=require('../pages/Landing/Landing.page');var _Landing2=_interopRequireDefault(_Landing);
+var _Launch=require('../pages/Launch/Launch.page');var _Launch2=_interopRequireDefault(_Launch);
+var _payment=require('./payment.routes');var _payment2=_interopRequireDefault(_payment);
+var _route=require('./helpers/route.helper');
+var _reactNavigation=require('react-navigation');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+var landingRouteConfig=exports.landingRouteConfig=(cov_ayhptekfz.s[0]++,{
+LaunchPage:{
+screen:_Launch2.default,
+requireLogin:false,
+gaScreenName:'Launch Page'},
+
+Landing:{
+screen:_Landing2.default,
+navigationOptions:_route.getStackNavOption,
+requireLogin:false,
+showIcon:true,
+showHamburger:true,
+gaScreenName:'Landing Page'},
+
+Payment:{
+screen:_payment2.default,
+navigationOptions:{header:null}}});exports.default=
+
+
+
+(0,_reactNavigation.StackNavigator)(landingRouteConfig,{headerMode:'screen'});

@@ -1,0 +1,28 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.mapStateToProps=undefined;var cov_lg2syy6tx=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/Payment/PaymentStatusDetails.page.js',hash='64966cfe310081ed252fd812b74b6ba75b4bb553',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/Payment/PaymentStatusDetails.page.js',statementMap:{'0':{start:{line:11,column:29},end:{line:11,column:39}},'1':{start:{line:12,column:4},end:{line:12,column:61}},'2':{start:{line:16,column:0},end:{line:18,column:2}},'3':{start:{line:20,column:0},end:{line:22,column:2}},'4':{start:{line:24,column:31},end:{line:26,column:2}},'5':{start:{line:24,column:47},end:{line:26,column:1}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:10,column:2},end:{line:10,column:3}},loc:{start:{line:10,column:12},end:{line:13,column:3}},line:10},'1':{name:'(anonymous_1)',decl:{start:{line:24,column:31},end:{line:24,column:32}},loc:{start:{line:24,column:47},end:{line:26,column:1}},line:24}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0},f:{'0':0,'1':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();
+var _PaymentStatusDetails=require('../../components/Payment/PaymentStatusDetails/PaymentStatusDetails.component');var _PaymentStatusDetails2=_interopRequireDefault(_PaymentStatusDetails);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _reactRedux=require('react-redux');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+PaymentStatusDetailsPage=function(_Component){_inherits(PaymentStatusDetailsPage,_Component);function PaymentStatusDetailsPage(){_classCallCheck(this,PaymentStatusDetailsPage);return _possibleConstructorReturn(this,(PaymentStatusDetailsPage.__proto__||Object.getPrototypeOf(PaymentStatusDetailsPage)).apply(this,arguments));}_createClass(PaymentStatusDetailsPage,[{key:'render',value:function render()
+
+{cov_lg2syy6tx.f[0]++;var _ref=(cov_lg2syy6tx.s[0]++,
+this.props),paymentDetails=_ref.paymentDetails;cov_lg2syy6tx.s[1]++;
+return _react2.default.createElement(_PaymentStatusDetails2.default,{details:paymentDetails});
+}}]);return PaymentStatusDetailsPage;}(_react.Component);cov_lg2syy6tx.s[2]++;
+
+
+PaymentStatusDetailsPage.defaultProps={
+paymentDetails:{}};cov_lg2syy6tx.s[3]++;
+
+
+PaymentStatusDetailsPage.propTypes={
+paymentDetails:_propTypes2.default.object};cov_lg2syy6tx.s[4]++;
+
+
+var mapStateToProps=exports.mapStateToProps=function mapStateToProps(_ref2){var payment=_ref2.payment;cov_lg2syy6tx.f[1]++;cov_lg2syy6tx.s[5]++;return{
+paymentDetails:(0,_result2.default)(payment,'paymentStatus.details',{})};
+};exports.default=
+
+(0,_reactRedux.connect)(mapStateToProps)(PaymentStatusDetailsPage);

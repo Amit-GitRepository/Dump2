@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/CurrentUsageTConv/TConvProductBaseCard.component.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../../../index.html">All files</a> / <a href="index.html">iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/CurrentUsageTConv</a> TConvProductBaseCard.component.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">72% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>18/25</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>7/14</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>3/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">72% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>18/25</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">48x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import Collapsible from 'react-native-collapsible';
+import Proptypes from 'prop-types';
+import React, {Component} from 'react';
+import styles from './TConvProductBaseCard.style';
+import {colors} from '../../../../../themes/constants.styles';
+import {Icon, ISText, Touchable} from '../../../../Shared';
+import {noop} from 'lodash';
+import {phoneNumberFormatter} from '../../../../../utils/common.util';
+import {translate} from '../../../../../language/i18n/helper';
+import {View} from 'react-native';
+import * as Animatable from 'react-native-animatable';
+&nbsp;
+const getTypeDetails = (type, productId) =&gt; {
+  const typeMap = {
+    TrueMoveH: {
+      sectionColor: colors.SECONDARY_TMOVE,
+      titleText: phoneNumberFormatter(productId),
+      titleDescText: translate('BILLS_USAGE_TRUEMOVE')
+    },
+    TrueOnline: {
+      sectionColor: colors.SECONDARY_TONLINE,
+      titleText: productId,
+      titleDescText: translate('BILLS_USAGE_TRUEONLINE')
+    },
+    TrueVision: {
+      sectionColor: colors.SECONDARY_TVISION,
+      titleText: productId,
+      titleDescText: translate('BILLS_USAGE_TRUEVISIONS')
+    }
+  };
+  return typeMap[type] || {};
+};
+&nbsp;
+const getStatusTextAndColors = (statusCode, sectionColor) =&gt; {
+  let iconSectionColor = colors.PRIMARY_DISABLED_BG_TEXT;
+  let statusText = '';
+&nbsp;
+  switch (statusCode) {
+  case 'ACTIVE': {
+<span class="cstat-no" title="statement not covered" >    iconSectionColor = sectionColor;</span>
+<span class="cstat-no" title="statement not covered" >    break;</span>
+  } case 'SUSPEND': {
+<span class="cstat-no" title="statement not covered" >    iconSectionColor = colors.PRIMARY_DISABLED_BG_TEXT;</span>
+<span class="cstat-no" title="statement not covered" >    statusText = translate('BILLS_USAGE_SUSPENDED');</span>
+<span class="cstat-no" title="statement not covered" >    break;</span>
+  } case 'CANCEL': {
+<span class="cstat-no" title="statement not covered" >    statusText = translate('BILLS_USAGE_CANCELLED');</span>
+<span class="cstat-no" title="statement not covered" >    break;</span>
+  }
+  }
+  return {
+    iconSectionColor,
+    statusText
+  };
+};
+&nbsp;
+const AnimatableIcon = Animatable.createAnimatableComponent(Icon);
+&nbsp;
+class TConvProductBaseCard extends Component {
+&nbsp;
+  state ={
+    isCollapsed: true
+  }
+&nbsp;
+  render () {
+    const {children, product, onCollapseToggle, isLast} = this.props;
+    const {productId, productType, statusCode, isCollapsed} = product;
+    const {sectionColor, titleText, titleDescText} = getTypeDetails(productType, productId);
+    const {statusText, iconSectionColor} = getStatusTextAndColors(statusCode, sectionColor);
+    const leftDetailStyle = [styles.detailText, {color: iconSectionColor}];
+    const arrowStyle = !isCollapsed ? [styles.collapsedArrowStyle, styles.arrowStyle] : <span class="branch-1 cbranch-no" title="branch not covered" >styles.arrowStyle;</span>
+    return (
+      &lt;View key={productId} style={[styles.container, !isCollapsed &amp;&amp; styles.activeShadow]}&gt;
+        &lt;Touchable onPress={onCollapseToggle}&gt;
+          &lt;View style={[styles.subContainer, isCollapsed &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >!isLast </span>&amp;&amp; <span class="branch-2 cbranch-no" title="branch not covered" >styles.separator]</span>}&gt;
+            {statusText ? <span class="branch-0 cbranch-no" title="branch not covered" >&lt;ISText style={styles.statusText} type='BOLD'&gt;{statusText}&lt;/ISText&gt; </span>: null}
+            &lt;View style={{flexGrow: 1, flexDirection: 'row', justifyContent: 'space-between'}}&gt;
+              &lt;ISText style={styles.leftTitleText} type='BOLD'&gt;{titleText}&lt;/ISText&gt;
+              &lt;AnimatableIcon name={'chevron-down'} style={arrowStyle} transition='rotate' useNativeDriver/&gt;
+            &lt;/View&gt;
+            &lt;ISText style={leftDetailStyle} type='BOLD'&gt;{titleDescText}&lt;/ISText&gt;
+          &lt;/View&gt;
+        &lt;/Touchable&gt;
+        &lt;Collapsible style={styles.childContainer} collapsed={isCollapsed}&gt;
+          {children}
+        &lt;/Collapsible&gt;
+      &lt;/View&gt;);
+  }
+}
+&nbsp;
+TConvProductBaseCard.defaultProps = {
+  product: {},
+  onCollapseToggle: noop,
+  isLast: false
+};
+&nbsp;
+TConvProductBaseCard.propTypes = {
+  isLast: Proptypes.bool,
+  product: Proptypes.object,
+  children: Proptypes.node,
+  onCollapseToggle: Proptypes.func
+};
+export default TConvProductBaseCard;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../../../sorter.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1ealmwuogk=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Payment/PaymentOptions/PaymentOptions.component.js',hash='1f9fe44568577cbb9552cfaf123c6f00f1aaceed',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Payment/PaymentOptions/PaymentOptions.component.js',statementMap:{'0':{start:{line:17,column:29},end:{line:19,column:3}},'1':{start:{line:18,column:4},end:{line:18,column:42}},'2':{start:{line:22,column:28},end:{line:22,column:38}},'3':{start:{line:23,column:4},end:{line:25,column:5}},'4':{start:{line:24,column:6},end:{line:24,column:43}},'5':{start:{line:29,column:27},end:{line:29,column:37}},'6':{start:{line:30,column:27},end:{line:43,column:5}},'7':{start:{line:44,column:27},end:{line:51,column:5}},'8':{start:{line:45,column:6},end:{line:50,column:13}},'9':{start:{line:52,column:24},end:{line:52,column:66}},'10':{start:{line:52,column:54},end:{line:52,column:65}},'11':{start:{line:53,column:4},end:{line:67,column:6}},'12':{start:{line:71,column:0},end:{line:74,column:2}},'13':{start:{line:76,column:0},end:{line:79,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:17,column:18},end:{line:17,column:19}},loc:{start:{line:17,column:29},end:{line:19,column:3}},line:17},'1':{name:'(anonymous_1)',decl:{start:{line:17,column:29},end:{line:17,column:30}},loc:{start:{line:17,column:35},end:{line:19,column:3}},line:17},'2':{name:'(anonymous_2)',decl:{start:{line:21,column:22},end:{line:21,column:23}},loc:{start:{line:21,column:28},end:{line:26,column:3}},line:21},'3':{name:'(anonymous_3)',decl:{start:{line:28,column:2},end:{line:28,column:3}},loc:{start:{line:28,column:12},end:{line:68,column:3}},line:28},'4':{name:'(anonymous_4)',decl:{start:{line:44,column:46},end:{line:44,column:47}},loc:{start:{line:45,column:6},end:{line:50,column:13}},line:45},'5':{name:'(anonymous_5)',decl:{start:{line:52,column:44},end:{line:52,column:45}},loc:{start:{line:52,column:54},end:{line:52,column:65}},line:52}},branchMap:{'0':{loc:{start:{line:23,column:4},end:{line:25,column:5}},type:'if',locations:[{start:{line:23,column:4},end:{line:25,column:5}},{start:{line:23,column:4},end:{line:25,column:5}}],line:23},'1':{loc:{start:{line:48,column:9},end:{line:48,column:54}},type:'cond-expr',locations:[{start:{line:48,column:35},end:{line:48,column:47}},{start:{line:48,column:50},end:{line:48,column:54}}],line:48},'2':{loc:{start:{line:49,column:9},end:{line:49,column:63}},type:'cond-expr',locations:[{start:{line:49,column:35},end:{line:49,column:56}},{start:{line:49,column:59},end:{line:49,column:63}}],line:49}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0},b:{'0':[0,0],'1':[0,0],'2':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _CardTypes=require('../CardTypes/CardTypes.component');var _CardTypes2=_interopRequireDefault(_CardTypes);
+var _jcb=require('../../../assets/jcb.png');var _jcb2=_interopRequireDefault(_jcb);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _PaymentOptions=require('./PaymentOptions.style');var _PaymentOptions2=_interopRequireDefault(_PaymentOptions);
+var _sumBy=require('lodash/sumBy');var _sumBy2=_interopRequireDefault(_sumBy);
+var _Shared=require('../../Shared');
+var _reactNative=require('react-native');
+var _helper=require('../../../language/i18n/helper');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+PaymentOptions=function(_Component){_inherits(PaymentOptions,_Component);function PaymentOptions(){var _ref;var _temp,_this,_ret;_classCallCheck(this,PaymentOptions);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=PaymentOptions.__proto__||Object.getPrototypeOf(PaymentOptions)).call.apply(_ref,[this].concat(args))),_this),_this.
+state={
+paymentMethod:'card'},_this.
+
+
+onRadioSelect=function(value){cov_1ealmwuogk.f[0]++;cov_1ealmwuogk.s[0]++;return function(){cov_1ealmwuogk.f[1]++;cov_1ealmwuogk.s[1]++;
+_this.setState({paymentMethod:value});
+};},_this.
+
+navigateToPayment=function(){cov_1ealmwuogk.f[2]++;var _ref2=(cov_1ealmwuogk.s[2]++,
+_this.state),paymentMethod=_ref2.paymentMethod;cov_1ealmwuogk.s[3]++;
+if(paymentMethod==='card'){cov_1ealmwuogk.b[0][0]++;cov_1ealmwuogk.s[4]++;
+_this.props.goToScreen('CardDetails');
+}else{cov_1ealmwuogk.b[0][1]++;}
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(PaymentOptions,[{key:'render',value:function render()
+
+{var _this2=this;cov_1ealmwuogk.f[3]++;var _ref3=(cov_1ealmwuogk.s[5]++,
+this.props),paymentItems=_ref3.paymentItems;
+var paymentOptions=(cov_1ealmwuogk.s[6]++,[
+{
+title:(0,_helper.translate)('PAYMENT__CC'),
+value:'card',
+available:true,
+isSelected:true},
+
+{
+title:(0,_helper.translate)('PAYMENT__TRUE_SHOP'),
+value:'shop',
+available:true,
+isSelected:false}]);
+
+
+var paymentSection=(cov_1ealmwuogk.s[7]++,paymentOptions.map(function(option,index)
+{cov_1ealmwuogk.f[4]++;cov_1ealmwuogk.s[8]++;return _react2.default.createElement(_reactNative.View,{key:index,style:_PaymentOptions2.default.paymentOptionRow},
+_react2.default.createElement(_Shared.RadioButton,{style:_PaymentOptions2.default.radioButton,onRadioSelect:_this2.onRadioSelect(option.value),isSelected:_this2.state.paymentMethod===option.value}),
+_react2.default.createElement(_Shared.ISText,{type:'SEMIBOLD',style:_PaymentOptions2.default.paymentOptionRowTitle},option.title),
+option.value==='card'?(cov_1ealmwuogk.b[1][0]++,_react2.default.createElement(_CardTypes2.default,null)):(cov_1ealmwuogk.b[1][1]++,null),
+option.value==='shop'?(cov_1ealmwuogk.b[2][0]++,_react2.default.createElement(_reactNative.Image,{source:_jcb2.default})):(cov_1ealmwuogk.b[2][1]++,null));
+}));
+
+var amountToPay=(cov_1ealmwuogk.s[9]++,(0,_sumBy2.default)(paymentItems,function(item){cov_1ealmwuogk.f[5]++;cov_1ealmwuogk.s[10]++;return item.amount;}));cov_1ealmwuogk.s[11]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:_PaymentOptions2.default.mainContainer},
+_react2.default.createElement(_Shared.WrapperCard,null,
+_react2.default.createElement(_reactNative.View,{style:_PaymentOptions2.default.topSection},
+_react2.default.createElement(_Shared.ISText,{type:'BOLD',style:_PaymentOptions2.default.amountText},(0,_helper.translate)('PAYMENT__AMOUNT')),
+_react2.default.createElement(_Shared.AmountText,{isTotalText:true,value:amountToPay})),
+
+_react2.default.createElement(_reactNative.View,{style:_PaymentOptions2.default.textBar},
+_react2.default.createElement(_Shared.ISText,{type:'SEMIBOLD',style:_PaymentOptions2.default.textBarTitle},(0,_helper.translate)('PAYMENT__CHOOSE_METHOD'))),
+
+paymentSection),
+
+_react2.default.createElement(_Shared.Button,{text:(0,_helper.translate)('PAYMENT__CONFIRM'),touchableStyle:_PaymentOptions2.default.confirmButton,textStyle:_PaymentOptions2.default.buttonTextStyle,onPress:this.navigateToPayment})));
+
+
+}}]);return PaymentOptions;}(_react.Component);cov_1ealmwuogk.s[12]++;
+
+
+PaymentOptions.defaultProps={
+goToScreen:_noop2.default,
+paymentItems:[]};cov_1ealmwuogk.s[13]++;
+
+
+PaymentOptions.propTypes={
+goToScreen:_propTypes2.default.func,
+paymentItems:_propTypes2.default.array};exports.default=
+
+
+PaymentOptions;

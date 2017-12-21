@@ -1,0 +1,31 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.addAttributesToBillDetails=exports.addAttributesToConvergenceProducts=exports.addAttributesToProducts=undefined;var cov_221pd1zhbd=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/utils/storeList.util.js',hash='926adfdf5a0c837f8bc0f981f4eab75acfe88f76',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/utils/storeList.util.js',statementMap:{'0':{start:{line:3,column:39},end:{line:12,column:1}},'1':{start:{line:4,column:15},end:{line:10,column:5}},'2':{start:{line:4,column:49},end:{line:10,column:3}},'3':{start:{line:11,column:2},end:{line:11,column:14}},'4':{start:{line:14,column:50},end:{line:23,column:1}},'5':{start:{line:15,column:15},end:{line:21,column:5}},'6':{start:{line:15,column:49},end:{line:21,column:3}},'7':{start:{line:22,column:2},end:{line:22,column:14}},'8':{start:{line:25,column:42},end:{line:31,column:1}},'9':{start:{line:26,column:15},end:{line:29,column:5}},'10':{start:{line:26,column:42},end:{line:29,column:3}},'11':{start:{line:30,column:2},end:{line:30,column:14}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:3,column:39},end:{line:3,column:40}},loc:{start:{line:3,column:56},end:{line:12,column:1}},line:3},'1':{name:'(anonymous_1)',decl:{start:{line:4,column:31},end:{line:4,column:32}},loc:{start:{line:4,column:49},end:{line:10,column:3}},line:4},'2':{name:'(anonymous_2)',decl:{start:{line:14,column:50},end:{line:14,column:51}},loc:{start:{line:14,column:67},end:{line:23,column:1}},line:14},'3':{name:'(anonymous_3)',decl:{start:{line:15,column:31},end:{line:15,column:32}},loc:{start:{line:15,column:49},end:{line:21,column:3}},line:15},'4':{name:'(anonymous_4)',decl:{start:{line:25,column:42},end:{line:25,column:43}},loc:{start:{line:25,column:59},end:{line:31,column:1}},line:25},'5':{name:'(anonymous_5)',decl:{start:{line:26,column:31},end:{line:26,column:32}},loc:{start:{line:26,column:42},end:{line:29,column:3}},line:26}},branchMap:{'0':{loc:{start:{line:6,column:13},end:{line:6,column:51}},type:'binary-expr',locations:[{start:{line:6,column:13},end:{line:6,column:44}},{start:{line:6,column:48},end:{line:6,column:51}}],line:6},'1':{loc:{start:{line:9,column:20},end:{line:9,column:58}},type:'binary-expr',locations:[{start:{line:9,column:20},end:{line:9,column:51}},{start:{line:9,column:55},end:{line:9,column:58}}],line:9},'2':{loc:{start:{line:17,column:13},end:{line:17,column:51}},type:'binary-expr',locations:[{start:{line:17,column:13},end:{line:17,column:44}},{start:{line:17,column:48},end:{line:17,column:51}}],line:17},'3':{loc:{start:{line:20,column:20},end:{line:20,column:58}},type:'binary-expr',locations:[{start:{line:20,column:20},end:{line:20,column:51}},{start:{line:20,column:55},end:{line:20,column:58}}],line:20}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}cov_221pd1zhbd.s[0]++;
+
+var addAttributesToProducts=exports.addAttributesToProducts=function addAttributesToProducts(productList){cov_221pd1zhbd.f[0]++;
+var list=(cov_221pd1zhbd.s[1]++,productList.map(function(eachProduct){cov_221pd1zhbd.f[1]++;cov_221pd1zhbd.s[2]++;return _extends({},
+eachProduct,{
+balance:(cov_221pd1zhbd.b[0][0]++,parseFloat(eachProduct.balance))||(cov_221pd1zhbd.b[0][1]++,0.0),
+isChecked:!!parseFloat(eachProduct.balance),
+isCollapsed:true,
+checkedBillSum:(cov_221pd1zhbd.b[1][0]++,parseFloat(eachProduct.balance))||(cov_221pd1zhbd.b[1][1]++,0.0)});
+}));cov_221pd1zhbd.s[3]++;
+return list;
+};cov_221pd1zhbd.s[4]++;
+
+var addAttributesToConvergenceProducts=exports.addAttributesToConvergenceProducts=function addAttributesToConvergenceProducts(productList){cov_221pd1zhbd.f[2]++;
+var list=(cov_221pd1zhbd.s[5]++,productList.map(function(eachProduct){cov_221pd1zhbd.f[3]++;cov_221pd1zhbd.s[6]++;return _extends({},
+eachProduct,{
+balance:(cov_221pd1zhbd.b[2][0]++,parseFloat(eachProduct.balance))||(cov_221pd1zhbd.b[2][1]++,0.0),
+isChecked:!!parseFloat(eachProduct.balance),
+products:addAttributesToProducts((0,_result2.default)(eachProduct,'products',[])),
+checkedBillSum:(cov_221pd1zhbd.b[3][0]++,parseFloat(eachProduct.balance))||(cov_221pd1zhbd.b[3][1]++,0.0)});
+}));cov_221pd1zhbd.s[7]++;
+return list;
+};cov_221pd1zhbd.s[8]++;
+
+var addAttributesToBillDetails=exports.addAttributesToBillDetails=function addAttributesToBillDetails(billDetails){cov_221pd1zhbd.f[4]++;
+var list=(cov_221pd1zhbd.s[9]++,billDetails.map(function(bill){cov_221pd1zhbd.f[5]++;cov_221pd1zhbd.s[10]++;return _extends({},
+bill,{
+isChecked:true});
+}));cov_221pd1zhbd.s[11]++;
+return list;
+};

@@ -1,0 +1,27 @@
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);
+var _TVisionProductCard=require('../TVisionProductCard.component');var _TVisionProductCard2=_interopRequireDefault(_TVisionProductCard);
+var _enzyme=require('enzyme');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+describe('TVisionProductCard component',function(){
+it('renders correctly',function(){
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_TVisionProductCard2.default,null)).toJSON();
+expect(component).toMatchSnapshot();
+});
+it('should shallow render with default props',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_TVisionProductCard2.default,null));
+expect(wrapper).toBeDefined();
+});
+});
+
+describe('navigateToPackageDetails function',function(){
+it('should call the goToScreen function with TVPackageDetail argument',function(){
+var goToScreenMock=jest.fn();
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_TVisionProductCard2.default,{goToScreen:goToScreenMock}));
+wrapper.instance().navigateToPackageDetails();
+expect(goToScreenMock).toHaveBeenCalledWith('TVPackageDetail');
+});
+});

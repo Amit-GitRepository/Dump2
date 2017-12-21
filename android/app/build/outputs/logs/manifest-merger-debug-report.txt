@@ -1,0 +1,571 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:1:1-100:12
+	package
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:2:5-27
+		INJECTED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:4:5-30
+		INJECTED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:3:5-28
+	xmlns:android
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:6:5-67
+MERGED from [iService:react-native-google-analytics-bridge:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-google-analytics-bridge/android/build/intermediates/bundles/default/AndroidManifest.xml:11:5-67
+MERGED from [iService:react-native-testfairy:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-testfairy/android/build/intermediates/bundles/default/AndroidManifest.xml:11:5-67
+MERGED from [testfairy:testfairy-android-sdk:1.5.3] /Users/amitkumar/.android/build-cache/9562fc63654e2b77cb9d93a326e2ad67e83c9d10/output/AndroidManifest.xml:8:5-67
+MERGED from [iService:react-native-firebase:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-firebase/android/build/intermediates/bundles/default/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-crash:11.4.2] /Users/amitkumar/.android/build-cache/9e3284d412edfaa1d21ab902cd33cd00a083700b/output/AndroidManifest.xml:18:5-66
+MERGED from [com.google.android.gms:play-services-appinvite:11.4.2] /Users/amitkumar/.android/build-cache/78c726dff95d091e4ce59f9788756d1cdf5bee47/output/AndroidManifest.xml:18:5-66
+MERGED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.2] /Users/amitkumar/.android/build-cache/cbeb08421b83506e15feb32c493456bc188eaa8e/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:20:5-66
+MERGED from [com.eggdigital:TrueID-dev:3.4.4] /Users/amitkumar/.android/build-cache/69347a2bcdbe11a9ace5cd418042b00fc58fa4b0/output/AndroidManifest.xml:7:5-67
+MERGED from [iService:react-native-maps:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-maps/lib/android/build/intermediates/bundles/default/AndroidManifest.xml:9:5-67
+MERGED from [com.google.android.gms:play-services-maps:11.4.2] /Users/amitkumar/.android/build-cache/8ea5e7b1c99121b1e374710f66bb35ba54059bd3/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics:11.4.2] /Users/amitkumar/.android/build-cache/99a3c9414ec9bba96a421621d54e5c6e273438e4/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.2] /Users/amitkumar/.android/build-cache/8eaf85993fcf96451ae9714f521fe0ad2e7f31f5/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-gcm:11.4.2] /Users/amitkumar/.android/build-cache/bacb29355d4f9e9ca44905759e69b508792da56d/output/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-iid:11.4.2] /Users/amitkumar/.android/build-cache/53076178eac197565b5cfdceaf6068f6daf12e94/output/AndroidManifest.xml:21:5-66
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:7:5-81
+MERGED from [testfairy:testfairy-android-sdk:1.5.3] /Users/amitkumar/.android/build-cache/9562fc63654e2b77cb9d93a326e2ad67e83c9d10/output/AndroidManifest.xml:15:5-81
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:7:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:8:7-82
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:8:24-79
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:9:5-77
+MERGED from [com.facebook.react:react-native:0.50.3] /Users/amitkumar/.android/build-cache/0a3acf094f36dd8ec61f44d73103b3711d136def/output/AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:9:22-75
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:10:5-80
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:10:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:11:5-66
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:11:22-63
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:12:5-79
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:12:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:13:5-81
+MERGED from [iService:react-native-maps:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-maps/lib/android/build/intermediates/bundles/default/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:13:22-78
+uses-sdk
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:15:5-17:41
+MERGED from [iService:react-native-fetch-blob:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-fetch-blob/android/build/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
+MERGED from [iService:react-native-linear-gradient:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-linear-gradient/android/build/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
+MERGED from [iService:react-native-vector-icons:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-vector-icons/android/build/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
+MERGED from [iService:react-native-restart:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-restart/android/build/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
+MERGED from [iService:react-native-exception-handler:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-exception-handler/android/build/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
+MERGED from [iService:react-native-version-number:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-version-number/android/build/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
+MERGED from [iService:react-native-device-info:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-device-info/android/build/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
+MERGED from [iService:react-native-google-analytics-bridge:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-google-analytics-bridge/android/build/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
+MERGED from [iService:react-native-splash-screen:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-splash-screen/android/build/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
+MERGED from [iService:react-native-i18n:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-i18n/android/build/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
+MERGED from [iService:react-native-config:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-config/android/build/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
+MERGED from [iService:react-native-testfairy:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-testfairy/android/build/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
+MERGED from [testfairy:testfairy-android-sdk:1.5.3] /Users/amitkumar/.android/build-cache/9562fc63654e2b77cb9d93a326e2ad67e83c9d10/output/AndroidManifest.xml:5:5-44
+MERGED from [com.facebook.react:react-native:0.50.3] /Users/amitkumar/.android/build-cache/0a3acf094f36dd8ec61f44d73103b3711d136def/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:25.2.0] /Users/amitkumar/.android/build-cache/0ef00a90abcf9e20e36833c0983a3c43f72ef5cf/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/amitkumar/.android/build-cache/ac970c61f4457ee04bfb962851a7f87b32c3d86e/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/amitkumar/.android/build-cache/45916b6efed9c763a3e3496e550b48334e73788b/output/AndroidManifest.xml:21:5-43
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/amitkumar/.android/build-cache/cb9afaf60ade82cbf08ac1af6c7af1c76659ce64/output/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/amitkumar/.android/build-cache/66053fbe5d9f6f81e11f6e14947c3cd5f994572c/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/amitkumar/.android/build-cache/dc2fd1c34d71e43902449ee241bd2d648fa119ea/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/amitkumar/.android/build-cache/cb792c7f1e88de18b7c0df894188875f0fbb64c6/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/amitkumar/.android/build-cache/98d3e53c6f3e148c7d1c90f84e05215dc8f2ea83/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/amitkumar/.android/build-cache/8daed70a8d398be48903db796caf714fa26dad09/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/amitkumar/.android/build-cache/3bd68dd3800222136f8b4d5d1da519b6447b082c/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/amitkumar/.android/build-cache/cc185ca96025ad313b79254dc6727bca0ee56b71/output/AndroidManifest.xml:2:3-70
+MERGED from [iService:react-native-firebase:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-firebase/android/build/intermediates/bundles/default/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-core:11.4.2] /Users/amitkumar/.android/build-cache/941310a1656a8ef7a0363eb0c458b8057c52ee31/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-auth:11.4.2] /Users/amitkumar/.android/build-cache/b249d1000738d561ca12a8042282c7a05b1bbd98/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-auth-license:11.4.2] /Users/amitkumar/.android/build-cache/0cc1d612c99839674bbb05761baf5c0700b21d07/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-crash:11.4.2] /Users/amitkumar/.android/build-cache/9e3284d412edfaa1d21ab902cd33cd00a083700b/output/AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-config:11.4.2] /Users/amitkumar/.android/build-cache/06647e511cc199f549f595f64565fb2f78ec3427/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-config-license:11.4.2] /Users/amitkumar/.android/build-cache/832277973e545213f1416b5a69601d07b16589c6/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-database:11.4.2] /Users/amitkumar/.android/build-cache/d936407d70672152ddd463ee6fa563b2f0527fe8/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database-connection:11.4.2] /Users/amitkumar/.android/build-cache/d7e122b1e9eef035899887ff4bc2b8a825bda72c/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-database-connection-license:11.4.2] /Users/amitkumar/.android/build-cache/38410f75be452bda5d82be67a9d7ac05c8e4d714/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-database-license:11.4.2] /Users/amitkumar/.android/build-cache/41b732fcc94da5ef9f993b96c09d7c66872961d4/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-messaging:11.4.2] /Users/amitkumar/.android/build-cache/66d13c95f368746ee06e64022a47d7c353fda792/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-messaging-license:11.4.2] /Users/amitkumar/.android/build-cache/d9bf97abebb07de8e8d1b2d678c977cee109010a/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-invites:11.4.2] /Users/amitkumar/.android/build-cache/f14a6f7ec44149c0b2e571d0b74874b7ae387c7b/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-appinvite:11.4.2] /Users/amitkumar/.android/build-cache/78c726dff95d091e4ce59f9788756d1cdf5bee47/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-dynamic-links:11.4.2] /Users/amitkumar/.android/build-cache/d94f7259bb4ba654e6919a261c170e4e6e2e66ae/output/AndroidManifest.xml:3:3-41
+MERGED from [com.google.firebase:firebase-dynamic-links-license:11.4.2] /Users/amitkumar/.android/build-cache/4f840c427ce087b3ec4df061feb8b35ff8071ff3/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-appinvite-license:11.4.2] /Users/amitkumar/.android/build-cache/26f4d75da8d85b82f688ae8716f1fa7c6998cea5/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.2] /Users/amitkumar/.android/build-cache/cbeb08421b83506e15feb32c493456bc188eaa8e/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-iid-license:11.4.2] /Users/amitkumar/.android/build-cache/9f7a38e6a76bf4de31c5daa622f8b3458a076679/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-common:11.4.2] /Users/amitkumar/.android/build-cache/822e04dfae0c6f054c9e13e21317c79665ba65b5/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.firebase:firebase-common-license:11.4.2] /Users/amitkumar/.android/build-cache/9dcf31b907710519e8f864b97ef7ef2faba10f41/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.4.2] /Users/amitkumar/.android/build-cache/2482937ba1e56680090561c363588aed83dfd6e8/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-analytics-license:11.4.2] /Users/amitkumar/.android/build-cache/10be7649e12f5d51800e81b49f0845b41fae78b0/output/AndroidManifest.xml:4:5-43
+MERGED from [com.eggdigital:TrueID-dev:3.4.4] /Users/amitkumar/.android/build-cache/69347a2bcdbe11a9ace5cd418042b00fc58fa4b0/output/AndroidManifest.xml:5:5-43
+MERGED from [se.simbio.encryption:library:1.2.0] /Users/amitkumar/.android/build-cache/7aa75eb71eb669c1c1d00bea7904c39e13e802d4/output/AndroidManifest.xml:8:5-10:41
+MERGED from [iService:react-native-maps:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-maps/lib/android/build/intermediates/bundles/default/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-maps:11.4.2] /Users/amitkumar/.android/build-cache/8ea5e7b1c99121b1e374710f66bb35ba54059bd3/output/AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-maps-license:11.4.2] /Users/amitkumar/.android/build-cache/1baff40b419dca2406a7e35a7bccfe7188c210ef/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-analytics:11.4.2] /Users/amitkumar/.android/build-cache/99a3c9414ec9bba96a421621d54e5c6e273438e4/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.4.2] /Users/amitkumar/.android/build-cache/ceace5c0cc688fc1eed6a8b977efcfd19b5a9c1b/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.2] /Users/amitkumar/.android/build-cache/8eaf85993fcf96451ae9714f521fe0ad2e7f31f5/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-analytics-impl-license:11.4.2] /Users/amitkumar/.android/build-cache/5de1b564bdb42ed787fd1c68abc332de18c24b9a/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl-license:11.4.2] /Users/amitkumar/.android/build-cache/4c02e79924a6ed505ac3f52e0a980206810e0cf6/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-analytics-license:11.4.2] /Users/amitkumar/.android/build-cache/729d1cac2e8e9794e54176137b7cace276bcdff1/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-gcm:11.4.2] /Users/amitkumar/.android/build-cache/bacb29355d4f9e9ca44905759e69b508792da56d/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-iid:11.4.2] /Users/amitkumar/.android/build-cache/53076178eac197565b5cfdceaf6068f6daf12e94/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.4.2] /Users/amitkumar/.android/build-cache/ed54b264f39fc14869b264eac28e76ae388ee9ea/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.4.2] /Users/amitkumar/.android/build-cache/621fe603f0e844d788e210e7748336a61d2d3e05/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks-license:11.4.2] /Users/amitkumar/.android/build-cache/6d0be95f65a8ab1d316940c67ff14cefa5ce9e85/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-base-license:11.4.2] /Users/amitkumar/.android/build-cache/15a6db8ec3a80314617a20ea6dfda99504af917f/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.4.2] /Users/amitkumar/.android/build-cache/7077b7ef21c875a48c5d5836648622a4c8475767/output/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:25.2.0] /Users/amitkumar/.android/build-cache/1a5e1c8f6a97dbfc46cf6c8f9d7a7abc10f6ebb2/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.2.0] /Users/amitkumar/.android/build-cache/96e55e0a088c4708213547d932a0444aedc899a1/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/amitkumar/.android/build-cache/2db8ae1802dd19503391a214c077b7900daee8b3/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.2.0] /Users/amitkumar/.android/build-cache/a809a5065dc9be3bf44bc94f1d8e8e4457cf2ff1/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.2.0] /Users/amitkumar/.android/build-cache/ec212d9f6238d5f41677c1c7b54a0993ea25100e/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.2.0] /Users/amitkumar/.android/build-cache/e0580ce0f404484a4dd767ef56218c62c7f7d098/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.google.android.gms:play-services-basement-license:11.4.2] /Users/amitkumar/.android/build-cache/bd55cd78ee2257cf2f952bc1547150df3c1be5cb/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-iid-license:11.4.2] /Users/amitkumar/.android/build-cache/bda8e2d1a3217b4277a4279e88baa9d371a67b18/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-gcm-license:11.4.2] /Users/amitkumar/.android/build-cache/f0fa58faaca95759e799ef6f0301c23a77549874/output/AndroidManifest.xml:4:5-43
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:25.2.0] /Users/amitkumar/.android/build-cache/0ef00a90abcf9e20e36833c0983a3c43f72ef5cf/output/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:17:9-38
+		INJECTED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:16:9-35
+		INJECTED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml
+application
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:19:5-98:19
+MERGED from [iService:react-native-fetch-blob:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-fetch-blob/android/build/intermediates/bundles/default/AndroidManifest.xml:11:5-12:19
+MERGED from [iService:react-native-exception-handler:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-exception-handler/android/build/intermediates/bundles/default/AndroidManifest.xml:11:5-14:19
+MERGED from [iService:react-native-splash-screen:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-splash-screen/android/build/intermediates/bundles/default/AndroidManifest.xml:11:5-15:19
+MERGED from [testfairy:testfairy-android-sdk:1.5.3] /Users/amitkumar/.android/build-cache/9562fc63654e2b77cb9d93a326e2ad67e83c9d10/output/AndroidManifest.xml:17:5-25:19
+MERGED from [com.facebook.react:react-native:0.50.3] /Users/amitkumar/.android/build-cache/0a3acf094f36dd8ec61f44d73103b3711d136def/output/AndroidManifest.xml:13:5-20
+MERGED from [com.android.support:appcompat-v7:25.2.0] /Users/amitkumar/.android/build-cache/0ef00a90abcf9e20e36833c0983a3c43f72ef5cf/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/amitkumar/.android/build-cache/ac970c61f4457ee04bfb962851a7f87b32c3d86e/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/amitkumar/.android/build-cache/45916b6efed9c763a3e3496e550b48334e73788b/output/AndroidManifest.xml:23:5-20
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/amitkumar/.android/build-cache/cc185ca96025ad313b79254dc6727bca0ee56b71/output/AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/amitkumar/.android/build-cache/1626f918a79b1105b5e7e0f4840cf4a566e8b074/output/AndroidManifest.xml:2:3-17
+MERGED from [com.google.firebase:firebase-core:11.4.2] /Users/amitkumar/.android/build-cache/941310a1656a8ef7a0363eb0c458b8057c52ee31/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-auth:11.4.2] /Users/amitkumar/.android/build-cache/b249d1000738d561ca12a8042282c7a05b1bbd98/output/AndroidManifest.xml:19:5-20:19
+MERGED from [com.google.firebase:firebase-auth-license:11.4.2] /Users/amitkumar/.android/build-cache/0cc1d612c99839674bbb05761baf5c0700b21d07/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-crash:11.4.2] /Users/amitkumar/.android/build-cache/9e3284d412edfaa1d21ab902cd33cd00a083700b/output/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-config:11.4.2] /Users/amitkumar/.android/build-cache/06647e511cc199f549f595f64565fb2f78ec3427/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.firebase:firebase-config-license:11.4.2] /Users/amitkumar/.android/build-cache/832277973e545213f1416b5a69601d07b16589c6/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-database-connection-license:11.4.2] /Users/amitkumar/.android/build-cache/38410f75be452bda5d82be67a9d7ac05c8e4d714/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-database-license:11.4.2] /Users/amitkumar/.android/build-cache/41b732fcc94da5ef9f993b96c09d7c66872961d4/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-messaging:11.4.2] /Users/amitkumar/.android/build-cache/66d13c95f368746ee06e64022a47d7c353fda792/output/AndroidManifest.xml:19:5-29:19
+MERGED from [com.google.firebase:firebase-messaging-license:11.4.2] /Users/amitkumar/.android/build-cache/d9bf97abebb07de8e8d1b2d678c977cee109010a/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-invites:11.4.2] /Users/amitkumar/.android/build-cache/f14a6f7ec44149c0b2e571d0b74874b7ae387c7b/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-appinvite:11.4.2] /Users/amitkumar/.android/build-cache/78c726dff95d091e4ce59f9788756d1cdf5bee47/output/AndroidManifest.xml:19:5-26:19
+MERGED from [com.google.firebase:firebase-dynamic-links:11.4.2] /Users/amitkumar/.android/build-cache/d94f7259bb4ba654e6919a261c170e4e6e2e66ae/output/AndroidManifest.xml:5:3-17
+MERGED from [com.google.firebase:firebase-dynamic-links-license:11.4.2] /Users/amitkumar/.android/build-cache/4f840c427ce087b3ec4df061feb8b35ff8071ff3/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-appinvite-license:11.4.2] /Users/amitkumar/.android/build-cache/26f4d75da8d85b82f688ae8716f1fa7c6998cea5/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:24:5-34:19
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.2] /Users/amitkumar/.android/build-cache/cbeb08421b83506e15feb32c493456bc188eaa8e/output/AndroidManifest.xml:24:5-28:19
+MERGED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:28:5-49:19
+MERGED from [com.google.firebase:firebase-iid-license:11.4.2] /Users/amitkumar/.android/build-cache/9f7a38e6a76bf4de31c5daa622f8b3458a076679/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-common:11.4.2] /Users/amitkumar/.android/build-cache/822e04dfae0c6f054c9e13e21317c79665ba65b5/output/AndroidManifest.xml:4:5-7:19
+MERGED from [com.google.firebase:firebase-common-license:11.4.2] /Users/amitkumar/.android/build-cache/9dcf31b907710519e8f864b97ef7ef2faba10f41/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-impl-license:11.4.2] /Users/amitkumar/.android/build-cache/2482937ba1e56680090561c363588aed83dfd6e8/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-analytics-license:11.4.2] /Users/amitkumar/.android/build-cache/10be7649e12f5d51800e81b49f0845b41fae78b0/output/AndroidManifest.xml:5:5-20
+MERGED from [com.eggdigital:TrueID-dev:3.4.4] /Users/amitkumar/.android/build-cache/69347a2bcdbe11a9ace5cd418042b00fc58fa4b0/output/AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.android.gms:play-services-maps:11.4.2] /Users/amitkumar/.android/build-cache/8ea5e7b1c99121b1e374710f66bb35ba54059bd3/output/AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-maps-license:11.4.2] /Users/amitkumar/.android/build-cache/1baff40b419dca2406a7e35a7bccfe7188c210ef/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-analytics:11.4.2] /Users/amitkumar/.android/build-cache/99a3c9414ec9bba96a421621d54e5c6e273438e4/output/AndroidManifest.xml:26:5-31:19
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl:11.4.2] /Users/amitkumar/.android/build-cache/ceace5c0cc688fc1eed6a8b977efcfd19b5a9c1b/output/AndroidManifest.xml:19:5-19
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.2] /Users/amitkumar/.android/build-cache/8eaf85993fcf96451ae9714f521fe0ad2e7f31f5/output/AndroidManifest.xml:26:5-19
+MERGED from [com.google.android.gms:play-services-analytics-impl-license:11.4.2] /Users/amitkumar/.android/build-cache/5de1b564bdb42ed787fd1c68abc332de18c24b9a/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tagmanager-v4-impl-license:11.4.2] /Users/amitkumar/.android/build-cache/4c02e79924a6ed505ac3f52e0a980206810e0cf6/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-analytics-license:11.4.2] /Users/amitkumar/.android/build-cache/729d1cac2e8e9794e54176137b7cace276bcdff1/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-gcm:11.4.2] /Users/amitkumar/.android/build-cache/bacb29355d4f9e9ca44905759e69b508792da56d/output/AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-iid:11.4.2] /Users/amitkumar/.android/build-cache/53076178eac197565b5cfdceaf6068f6daf12e94/output/AndroidManifest.xml:23:5-19
+MERGED from [com.google.android.gms:play-services-base:11.4.2] /Users/amitkumar/.android/build-cache/ed54b264f39fc14869b264eac28e76ae388ee9ea/output/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:11.4.2] /Users/amitkumar/.android/build-cache/621fe603f0e844d788e210e7748336a61d2d3e05/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks-license:11.4.2] /Users/amitkumar/.android/build-cache/6d0be95f65a8ab1d316940c67ff14cefa5ce9e85/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-base-license:11.4.2] /Users/amitkumar/.android/build-cache/15a6db8ec3a80314617a20ea6dfda99504af917f/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:11.4.2] /Users/amitkumar/.android/build-cache/7077b7ef21c875a48c5d5836648622a4c8475767/output/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.2.0] /Users/amitkumar/.android/build-cache/1a5e1c8f6a97dbfc46cf6c8f9d7a7abc10f6ebb2/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] /Users/amitkumar/.android/build-cache/96e55e0a088c4708213547d932a0444aedc899a1/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/amitkumar/.android/build-cache/2db8ae1802dd19503391a214c077b7900daee8b3/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] /Users/amitkumar/.android/build-cache/a809a5065dc9be3bf44bc94f1d8e8e4457cf2ff1/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] /Users/amitkumar/.android/build-cache/ec212d9f6238d5f41677c1c7b54a0993ea25100e/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] /Users/amitkumar/.android/build-cache/e0580ce0f404484a4dd767ef56218c62c7f7d098/output/AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.4.2] /Users/amitkumar/.android/build-cache/bd55cd78ee2257cf2f952bc1547150df3c1be5cb/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-iid-license:11.4.2] /Users/amitkumar/.android/build-cache/bda8e2d1a3217b4277a4279e88baa9d371a67b18/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-gcm-license:11.4.2] /Users/amitkumar/.android/build-cache/f0fa58faaca95759e799ef6f0301c23a77549874/output/AndroidManifest.xml:5:5-20
+	android:label
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:22:7-39
+	android:supportsRtl
+		ADDED from [iService:react-native-splash-screen:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-splash-screen/android/build/intermediates/bundles/default/AndroidManifest.xml:14:9-35
+	android:launchMode
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:25:7-37
+	android:allowBackup
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:21:7-33
+	android:icon
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:23:7-41
+	android:theme
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:24:7-38
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:20:7-38
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:26:7-28:52
+	android:value
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:28:7-50
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:27:7-52
+activity#com.iservice.MainActivity
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:29:7-48:18
+	android:screenOrientation
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:33:9-45
+	android:label
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:32:9-41
+	android:launchMode
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:31:9-40
+	android:windowSoftInputMode
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:35:9-51
+	android:configChanges
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:34:9-79
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:30:9-37
+intent-filter#android.intent.action.DOWNLOAD_COMPLETE+android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:36:9-40:25
+action#android.intent.action.MAIN
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:37:13-65
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:37:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:38:13-73
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:38:23-70
+action#android.intent.action.DOWNLOAD_COMPLETE
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:39:6-70
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:39:14-68
+intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:41:9-47:25
+action#android.intent.action.VIEW
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:42:13-64
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:42:21-62
+category#android.intent.category.DEFAULT
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:43:13-71
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:43:23-69
+category#android.intent.category.BROWSABLE
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:44:13-73
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:44:23-71
+data
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:45:13-82
+	android:host
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:45:19-58
+	android:scheme
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:45:59-80
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:49:7-84
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:49:17-81
+activity#com.tdcm.truelifelogin.activities.AuthActivity
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:50:7-62:18
+	android:configChanges
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:52:11-94
+	android:theme
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:53:11-70
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:51:11-72
+activity#com.iservice.trueauth.TrueSDK
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:63:7-75:18
+	android:screenOrientation
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:65:11-47
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:64:11-55
+service#io.invertase.firebase.messaging.MessagingService
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:76:7-83:17
+	android:enabled
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:78:9-31
+	android:exported
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:79:9-32
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:77:9-72
+intent-filter#com.google.firebase.MESSAGING_EVENT
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:80:11-82:27
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:81:13-74
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:81:21-71
+service#io.invertase.firebase.messaging.InstanceIdService
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:84:7-88:17
+	android:exported
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:84:81-105
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:84:16-80
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:85:9-87:25
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:86:11-73
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:86:19-71
+receiver#io.invertase.firebase.messaging.RNFirebaseLocalMessagingPublisher
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:89:7-99
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:89:17-97
+receiver#io.invertase.firebase.messaging.RNFirebaseSystemBootEventReceiver
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:90:7-97:18
+	android:enabled
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:90:17-39
+	android:exported
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:90:40-63
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:90:64-144
+intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.action.QUICKBOOT_POWERON+android.intent.category.DEFAULT+com.htc.intent.action.QUICKBOOT_POWERON
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:91:9-96:25
+action#android.intent.action.BOOT_COMPLETED
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:92:11-72
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:92:19-70
+action#android.intent.action.QUICKBOOT_POWERON
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:93:11-75
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:93:19-73
+action#com.htc.intent.action.QUICKBOOT_POWERON
+ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:94:11-75
+	android:name
+		ADDED from /Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/src/main/AndroidManifest.xml:94:19-73
+activity#com.masteratul.exceptionhandler.DefaultErrorScreen
+ADDED from [iService:react-native-exception-handler:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-exception-handler/android/build/intermediates/bundles/default/AndroidManifest.xml:12:9-13:20
+	android:name
+		ADDED from [iService:react-native-exception-handler:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-exception-handler/android/build/intermediates/bundles/default/AndroidManifest.xml:12:19-84
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [iService:react-native-google-analytics-bridge:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-google-analytics-bridge/android/build/intermediates/bundles/default/AndroidManifest.xml:12:5-79
+MERGED from [testfairy:testfairy-android-sdk:1.5.3] /Users/amitkumar/.android/build-cache/9562fc63654e2b77cb9d93a326e2ad67e83c9d10/output/AndroidManifest.xml:11:5-79
+MERGED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.2] /Users/amitkumar/.android/build-cache/cbeb08421b83506e15feb32c493456bc188eaa8e/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:19:5-78
+MERGED from [com.google.android.gms:play-services-maps:11.4.2] /Users/amitkumar/.android/build-cache/8ea5e7b1c99121b1e374710f66bb35ba54059bd3/output/AndroidManifest.xml:19:5-78
+MERGED from [com.google.android.gms:play-services-analytics:11.4.2] /Users/amitkumar/.android/build-cache/99a3c9414ec9bba96a421621d54e5c6e273438e4/output/AndroidManifest.xml:21:5-78
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.2] /Users/amitkumar/.android/build-cache/8eaf85993fcf96451ae9714f521fe0ad2e7f31f5/output/AndroidManifest.xml:21:5-78
+	android:name
+		ADDED from [iService:react-native-google-analytics-bridge:unspecified] /Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-google-analytics-bridge/android/build/intermediates/bundles/default/AndroidManifest.xml:12:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from [testfairy:testfairy-android-sdk:1.5.3] /Users/amitkumar/.android/build-cache/9562fc63654e2b77cb9d93a326e2ad67e83c9d10/output/AndroidManifest.xml:12:5-75
+	android:name
+		ADDED from [testfairy:testfairy-android-sdk:1.5.3] /Users/amitkumar/.android/build-cache/9562fc63654e2b77cb9d93a326e2ad67e83c9d10/output/AndroidManifest.xml:12:22-72
+activity#com.testfairy.activities.ProvideFeedbackActivity
+ADDED from [testfairy:testfairy-android-sdk:1.5.3] /Users/amitkumar/.android/build-cache/9562fc63654e2b77cb9d93a326e2ad67e83c9d10/output/AndroidManifest.xml:18:9-21:63
+	android:configChanges
+		ADDED from [testfairy:testfairy-android-sdk:1.5.3] /Users/amitkumar/.android/build-cache/9562fc63654e2b77cb9d93a326e2ad67e83c9d10/output/AndroidManifest.xml:20:13-59
+	android:theme
+		ADDED from [testfairy:testfairy-android-sdk:1.5.3] /Users/amitkumar/.android/build-cache/9562fc63654e2b77cb9d93a326e2ad67e83c9d10/output/AndroidManifest.xml:21:13-60
+	android:name
+		ADDED from [testfairy:testfairy-android-sdk:1.5.3] /Users/amitkumar/.android/build-cache/9562fc63654e2b77cb9d93a326e2ad67e83c9d10/output/AndroidManifest.xml:19:13-76
+activity#com.testfairy.activities.AutoUpdateActivity
+ADDED from [testfairy:testfairy-android-sdk:1.5.3] /Users/amitkumar/.android/build-cache/9562fc63654e2b77cb9d93a326e2ad67e83c9d10/output/AndroidManifest.xml:22:9-24:62
+	android:configChanges
+		ADDED from [testfairy:testfairy-android-sdk:1.5.3] /Users/amitkumar/.android/build-cache/9562fc63654e2b77cb9d93a326e2ad67e83c9d10/output/AndroidManifest.xml:24:13-59
+	android:name
+		ADDED from [testfairy:testfairy-android-sdk:1.5.3] /Users/amitkumar/.android/build-cache/9562fc63654e2b77cb9d93a326e2ad67e83c9d10/output/AndroidManifest.xml:23:13-71
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:11.4.2] /Users/amitkumar/.android/build-cache/66d13c95f368746ee06e64022a47d7c353fda792/output/AndroidManifest.xml:23:9-27:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:11.4.2] /Users/amitkumar/.android/build-cache/66d13c95f368746ee06e64022a47d7c353fda792/output/AndroidManifest.xml:23:88-111
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:11.4.2] /Users/amitkumar/.android/build-cache/66d13c95f368746ee06e64022a47d7c353fda792/output/AndroidManifest.xml:23:18-87
+activity#com.google.android.gms.appinvite.PreviewActivity
+ADDED from [com.google.android.gms:play-services-appinvite:11.4.2] /Users/amitkumar/.android/build-cache/78c726dff95d091e4ce59f9788756d1cdf5bee47/output/AndroidManifest.xml:20:9-25:20
+	android:exported
+		ADDED from [com.google.android.gms:play-services-appinvite:11.4.2] /Users/amitkumar/.android/build-cache/78c726dff95d091e4ce59f9788756d1cdf5bee47/output/AndroidManifest.xml:20:51-74
+	android:theme
+		ADDED from [com.google.android.gms:play-services-appinvite:11.4.2] /Users/amitkumar/.android/build-cache/78c726dff95d091e4ce59f9788756d1cdf5bee47/output/AndroidManifest.xml:20:75-121
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:11.4.2] /Users/amitkumar/.android/build-cache/78c726dff95d091e4ce59f9788756d1cdf5bee47/output/AndroidManifest.xml:20:19-50
+intent-filter#android.intent.category.DEFAULT+com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:11.4.2] /Users/amitkumar/.android/build-cache/78c726dff95d091e4ce59f9788756d1cdf5bee47/output/AndroidManifest.xml:21:13-24:29
+action#com.google.android.gms.appinvite.ACTION_PREVIEW
+ADDED from [com.google.android.gms:play-services-appinvite:11.4.2] /Users/amitkumar/.android/build-cache/78c726dff95d091e4ce59f9788756d1cdf5bee47/output/AndroidManifest.xml:22:17-89
+	android:name
+		ADDED from [com.google.android.gms:play-services-appinvite:11.4.2] /Users/amitkumar/.android/build-cache/78c726dff95d091e4ce59f9788756d1cdf5bee47/output/AndroidManifest.xml:22:25-87
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.2] /Users/amitkumar/.android/build-cache/cbeb08421b83506e15feb32c493456bc188eaa8e/output/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-analytics:11.4.2] /Users/amitkumar/.android/build-cache/99a3c9414ec9bba96a421621d54e5c6e273438e4/output/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:11.4.2] /Users/amitkumar/.android/build-cache/8eaf85993fcf96451ae9714f521fe0ad2e7f31f5/output/AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:22:22-65
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:25:7-26:18
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.2] /Users/amitkumar/.android/build-cache/cbeb08421b83506e15feb32c493456bc188eaa8e/output/AndroidManifest.xml:25:7-26:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:25:90-112
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:25:113-137
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:25:17-89
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:27:7-31:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:27:162-184
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:27:185-208
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:27:105-161
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:27:17-104
+intent-filter#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:28:11-30:27
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:29:15-76
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:29:23-74
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:32:7-137
+MERGED from [com.google.firebase:firebase-analytics-impl:11.4.2] /Users/amitkumar/.android/build-cache/cbeb08421b83506e15feb32c493456bc188eaa8e/output/AndroidManifest.xml:27:7-137
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:32:88-110
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:32:111-135
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:32:16-87
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:33:7-197
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:33:148-170
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:33:171-195
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:33:91-147
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:11.4.2] /Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/AndroidManifest.xml:33:16-90
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:22:5-81
+MERGED from [com.google.android.gms:play-services-gcm:11.4.2] /Users/amitkumar/.android/build-cache/bacb29355d4f9e9ca44905759e69b508792da56d/output/AndroidManifest.xml:20:5-81
+MERGED from [com.google.android.gms:play-services-iid:11.4.2] /Users/amitkumar/.android/build-cache/53076178eac197565b5cfdceaf6068f6daf12e94/output/AndroidManifest.xml:20:5-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:22:22-79
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:24:5-109
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:24:72-107
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:24:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:26:5-78
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:26:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:30:9-35:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:30:85-108
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:30:109-169
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:30:19-84
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:31:13-34:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:32:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:32:25-78
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:33:17-60
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:33:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:39:9-119
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:39:93-117
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:39:19-92
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:43:9-47:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:43:83-106
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:11.4.2] /Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/AndroidManifest.xml:43:18-82
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:11.4.2] /Users/amitkumar/.android/build-cache/822e04dfae0c6f054c9e13e21317c79665ba65b5/output/AndroidManifest.xml:6:9-194
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:11.4.2] /Users/amitkumar/.android/build-cache/822e04dfae0c6f054c9e13e21317c79665ba65b5/output/AndroidManifest.xml:6:19-78
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:11.4.2] /Users/amitkumar/.android/build-cache/822e04dfae0c6f054c9e13e21317c79665ba65b5/output/AndroidManifest.xml:6:144-168
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:11.4.2] /Users/amitkumar/.android/build-cache/822e04dfae0c6f054c9e13e21317c79665ba65b5/output/AndroidManifest.xml:6:169-192
+	android:name
+		ADDED from [com.google.firebase:firebase-common:11.4.2] /Users/amitkumar/.android/build-cache/822e04dfae0c6f054c9e13e21317c79665ba65b5/output/AndroidManifest.xml:6:79-143
+service#org.OpenUDID.OpenUDID_service
+ADDED from [com.eggdigital:TrueID-dev:3.4.4] /Users/amitkumar/.android/build-cache/69347a2bcdbe11a9ace5cd418042b00fc58fa4b0/output/AndroidManifest.xml:10:9-14:19
+	android:name
+		ADDED from [com.eggdigital:TrueID-dev:3.4.4] /Users/amitkumar/.android/build-cache/69347a2bcdbe11a9ace5cd418042b00fc58fa4b0/output/AndroidManifest.xml:10:18-62
+intent-filter#org.OpenUDID.GETUDID
+ADDED from [com.eggdigital:TrueID-dev:3.4.4] /Users/amitkumar/.android/build-cache/69347a2bcdbe11a9ace5cd418042b00fc58fa4b0/output/AndroidManifest.xml:11:13-13:29
+action#org.OpenUDID.GETUDID
+ADDED from [com.eggdigital:TrueID-dev:3.4.4] /Users/amitkumar/.android/build-cache/69347a2bcdbe11a9ace5cd418042b00fc58fa4b0/output/AndroidManifest.xml:12:17-63
+	android:name
+		ADDED from [com.eggdigital:TrueID-dev:3.4.4] /Users/amitkumar/.android/build-cache/69347a2bcdbe11a9ace5cd418042b00fc58fa4b0/output/AndroidManifest.xml:12:25-60
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:11.4.2] /Users/amitkumar/.android/build-cache/8ea5e7b1c99121b1e374710f66bb35ba54059bd3/output/AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:11.4.2] /Users/amitkumar/.android/build-cache/8ea5e7b1c99121b1e374710f66bb35ba54059bd3/output/AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:11.4.2] /Users/amitkumar/.android/build-cache/8ea5e7b1c99121b1e374710f66bb35ba54059bd3/output/AndroidManifest.xml:21:52-75
+receiver#com.google.android.gms.analytics.AnalyticsReceiver
+ADDED from [com.google.android.gms:play-services-analytics:11.4.2] /Users/amitkumar/.android/build-cache/99a3c9414ec9bba96a421621d54e5c6e273438e4/output/AndroidManifest.xml:27:9-28:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.2] /Users/amitkumar/.android/build-cache/99a3c9414ec9bba96a421621d54e5c6e273438e4/output/AndroidManifest.xml:27:85-107
+	android:exported
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.2] /Users/amitkumar/.android/build-cache/99a3c9414ec9bba96a421621d54e5c6e273438e4/output/AndroidManifest.xml:27:108-132
+	android:name
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.2] /Users/amitkumar/.android/build-cache/99a3c9414ec9bba96a421621d54e5c6e273438e4/output/AndroidManifest.xml:27:19-84
+service#com.google.android.gms.analytics.AnalyticsService
+ADDED from [com.google.android.gms:play-services-analytics:11.4.2] /Users/amitkumar/.android/build-cache/99a3c9414ec9bba96a421621d54e5c6e273438e4/output/AndroidManifest.xml:29:9-132
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.2] /Users/amitkumar/.android/build-cache/99a3c9414ec9bba96a421621d54e5c6e273438e4/output/AndroidManifest.xml:29:83-105
+	android:exported
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.2] /Users/amitkumar/.android/build-cache/99a3c9414ec9bba96a421621d54e5c6e273438e4/output/AndroidManifest.xml:29:106-130
+	android:name
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.2] /Users/amitkumar/.android/build-cache/99a3c9414ec9bba96a421621d54e5c6e273438e4/output/AndroidManifest.xml:29:18-82
+service#com.google.android.gms.analytics.AnalyticsJobService
+ADDED from [com.google.android.gms:play-services-analytics:11.4.2] /Users/amitkumar/.android/build-cache/99a3c9414ec9bba96a421621d54e5c6e273438e4/output/AndroidManifest.xml:30:9-192
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.2] /Users/amitkumar/.android/build-cache/99a3c9414ec9bba96a421621d54e5c6e273438e4/output/AndroidManifest.xml:30:143-165
+	android:exported
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.2] /Users/amitkumar/.android/build-cache/99a3c9414ec9bba96a421621d54e5c6e273438e4/output/AndroidManifest.xml:30:166-190
+	android:permission
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.2] /Users/amitkumar/.android/build-cache/99a3c9414ec9bba96a421621d54e5c6e273438e4/output/AndroidManifest.xml:30:86-142
+	android:name
+		ADDED from [com.google.android.gms:play-services-analytics:11.4.2] /Users/amitkumar/.android/build-cache/99a3c9414ec9bba96a421621d54e5c6e273438e4/output/AndroidManifest.xml:30:18-85
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.4.2] /Users/amitkumar/.android/build-cache/ed54b264f39fc14869b264eac28e76ae388ee9ea/output/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.4.2] /Users/amitkumar/.android/build-cache/ed54b264f39fc14869b264eac28e76ae388ee9ea/output/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.4.2] /Users/amitkumar/.android/build-cache/ed54b264f39fc14869b264eac28e76ae388ee9ea/output/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.4.2] /Users/amitkumar/.android/build-cache/ed54b264f39fc14869b264eac28e76ae388ee9ea/output/AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.4.2] /Users/amitkumar/.android/build-cache/7077b7ef21c875a48c5d5836648622a4c8475767/output/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.4.2] /Users/amitkumar/.android/build-cache/7077b7ef21c875a48c5d5836648622a4c8475767/output/AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.4.2] /Users/amitkumar/.android/build-cache/7077b7ef21c875a48c5d5836648622a4c8475767/output/AndroidManifest.xml:20:20-65

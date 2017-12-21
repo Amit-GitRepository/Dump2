@@ -1,0 +1,17 @@
+{
+  "LABEL__PAGEHEADER": "trueShopListView_label_pageHeader",
+  "TAB__MAP_VIEW": "trueShopListView_tab_mapView",
+  "TAB__LIST_VIEW": "trueShopListView_tab_listView",
+  "DROPDOWN__SELECTAREA": "trueShopListView_dropdown_selectArea",
+  "DROPDOWN__SELECTAREA_POPUP_HEADER": "trueShopListView_dropdown_selectArea_popUp_header",
+  "DROPDOWN__SELECTAREA_POPUP_AREANAME": "trueShopListView_dropdown_selectArea_popUp_areaName",
+  "DROPDOWN__SELECTAREA_POPUP_BUTTON_CANCEL": "trueShopListView_dropdown_selectArea_popUp_buttonCancel",
+  "DROPDOWN__SELECTSERVICE": "trueShopListView_dropdown_selectService",
+  "DROPDOWN__SELECTSERVICE_POPUP_HEADER": "trueShopListView_dropdown_selectService_popUp_header",
+  "DROPDOWN__SELECTSERVICE_POPUP_SERVICENAME": "trueShopListView_dropdown_selectService_popUp_serviceName",
+  "DROPDOWN__SELECTSERVICE_POPUP_BUTTON_CANCEL": "trueShopListView_dropdown_selectService_popUp_buttonCancel",
+  "LABEL__COVERAGETEXT": "trueShopListView_label_coverageText",
+  "LABEL__SHOPNAME": "trueShopListView_label_shopName",
+  "LABEL__DISTANCE": "trueShopListView_label_distance",
+  "ICON__CHEVRON": "trueShopListView_icon_chevron"
+}

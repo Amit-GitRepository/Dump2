@@ -1,0 +1,25 @@
+var cov_1x4iesue1z=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/config/payment.config.js',hash='708e965e181d92e2113b566b3b6758e969d0304c',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/config/payment.config.js',statementMap:{'0':{start:{line:1,column:22},end:{line:22,column:1}},'1':{start:{line:24,column:0},end:{line:26,column:2}}},fnMap:{},branchMap:{},s:{'0':0,'1':0},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var paymentConfig=(cov_1x4iesue1z.s[0]++,{
+CARD_TYPE:{
+SAVED:'Saved',
+OTHER:'Other'},
+
+MAXIMUM_SAVE_CARD_COUNT:3,
+PAYMENT_STATUS:{
+FAIL:'FAIL',
+SUCCESS:'SUCCESS'},
+
+TRANSACTION_STATUS:{
+pending:'Pending',
+success:'Success'},
+
+TRANSACTION_PRODUCT_TYPE:{
+tmhPostpaid:'TrueMove H Post paid',
+tmhPrepaid:'TrueMove H Pre paid',
+tol:'True Online',
+tvs:'True Vision',
+conv:'True Smart Choice'}});cov_1x4iesue1z.s[1]++;
+
+
+
+module.exports=_extends({},
+paymentConfig);

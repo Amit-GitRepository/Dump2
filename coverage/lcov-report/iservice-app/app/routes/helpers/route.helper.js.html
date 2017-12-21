@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/routes/helpers/route.helper.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../index.html">All files</a> / <a href="index.html">iservice-app/app/routes/helpers</a> route.helper.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">76% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>19/25</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>7/14</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>5/10</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">79.17% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>19/24</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">37x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">37x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">37x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">37x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">37x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">37x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import logo from '../../assets/logo.png';
+import React from 'react';
+import result from 'lodash/result';
+import sharedTestIDs from '../../config/testid/sharedPage';
+import {colors, fonts} from '../../themes/constants.styles';
+import {Icon, ISHeader, ISText, Touchable} from '../../components/Shared';
+import {Image, Keyboard} from 'react-native';
+import {Platform} from '../../utils/reactNative.util.js';
+import {routeConfig} from '../index.routes';
+import {translate} from '../../language/i18n/helper';
+&nbsp;
+export const generateDrawerHamburger = (currentNav, iconName) =&gt; {
+  const onPress = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >    Keyboard.dismiss();</span>
+<span class="cstat-no" title="statement not covered" >    currentNav.navigation.navigate('DrawerOpen');</span>
+  };
+  return (
+    &lt;Touchable onPress={onPress} style={{paddingRight: 10}}&gt;
+      &lt;Icon name={iconName} size={22} color={colors.SECONDARY_BG_TEXT_CONTRAST} accessibilityLabel={sharedTestIDs.ICON__HAMBURGER} testID={sharedTestIDs.ICON__HAMBURGER}/&gt;
+    &lt;/Touchable&gt;
+  );
+};
+&nbsp;
+export const generateBackButton = (currentNav) =&gt; {
+  const onPress = <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >currentNav.navigation.goBack();</span>
+  return (
+    &lt;Touchable onPress={onPress} style={{paddingRight: 10}}&gt;
+      &lt;Icon name='back_arrow' size={fonts.FONT_SIZE_LARGE} color={colors.PRIMARY_ACTIONABLE} accessibilityLabel={sharedTestIDs.ICON__BACKBUTTON} testID={sharedTestIDs.ICON__BACKBUTTON}/&gt;
+    &lt;/Touchable&gt;
+  );
+};
+&nbsp;
+export const generateCloseButton = (currentNav) =&gt; {
+  const onPress = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >    currentNav.screenProps.dismiss();</span>
+  };
+  return (
+    &lt;Touchable onPress={onPress} style={{paddingRight: 10}}&gt;
+      &lt;ISText type='BOLD'&gt;{translate('PAYMENT__CLOSE')}&lt;/ISText&gt;
+    &lt;/Touchable&gt;
+  );
+};
+&nbsp;
+const headerIconstyle = {
+  ios: {width: '60%', alignSelf: 'center'},
+  android: {width: '50%', alignSelf: 'center', marginLeft: -35}
+};
+&nbsp;
+// All screens except those in side menu list should have their titleKeys passed as param, otherwise will attempt to find in sidemenu config
+export const getStackNavOption = (current) =&gt; {
+  const titleKey = result(routeConfig[current.navigation.state.routeName], 'title', null);
+  const showHamburger = result(routeConfig[current.navigation.state.routeName], 'showHamburger', false);
+  const showIcon = result(routeConfig[current.navigation.state.routeName], 'showIcon', false);
+  return {
+    header: <span class="fstat-no" title="function not covered" >(p</span>rops) =&gt; <span class="cstat-no" title="statement not covered" >&lt;ISHeader {...props} /&gt;,</span> // eslint-disable-line react/display-name
+    headerTitleStyle: {
+      alignSelf: 'center',
+      color: colors.SHADOW,
+      fontSize: fonts.FONT_SIZE_MEDIUM,
+      fontFamily: fonts.FONT_FAMILY_BOLD,
+      fontWeight: 'bold',
+      marginLeft: Platform.OS === 'ios' ? 0 : <span class="branch-1 cbranch-no" title="branch not covered" >-30 </span>    // to remove the shifting of center aligned text by Hamburger icon in Android
+    },
+    headerTitle: (showIcon ? <span class="branch-0 cbranch-no" title="branch not covered" >&lt;Image source={logo} resizeMode='contain' style={headerIconstyle[Platform.OS]}/&gt; </span>: null),
+    headerStyle: {
+      backgroundColor: colors.TRANSPARENT,
+      borderBottomWidth: 0,
+      elevation: 0,
+      paddingHorizontal: 10
+    },
+    headerLeft: showHamburger ? generateDrawerHamburger(current, 'menu') : <span class="branch-1 cbranch-no" title="branch not covered" >generateBackButton(current),</span>
+    title: titleKey ? translate(titleKey) : <span class="branch-1 cbranch-no" title="branch not covered" >result(current.navigation.state, 'params.title', '')</span>
+  };
+};
+&nbsp;
+export const getPaymentStatusHeader = (current) =&gt; {
+  const titleKey = result(routeConfig[current.navigation.state.routeName], 'title', null);
+  const showBack = result(routeConfig[current.navigation.state.routeName], 'showBack', true);
+  return {
+    header: <span class="fstat-no" title="function not covered" >(p</span>rops) =&gt; <span class="cstat-no" title="statement not covered" >&lt;ISHeader {...props} /&gt;,</span> // eslint-disable-line react/display-name
+    headerTitleStyle: {
+      alignSelf: 'center',
+      color: colors.SHADOW,
+      fontSize: fonts.FONT_SIZE_MEDIUM,
+      fontFamily: fonts.FONT_FAMILY_BOLD,
+      fontWeight: 'bold',
+      marginLeft: Platform.OS === 'ios' ? 0 : <span class="branch-1 cbranch-no" title="branch not covered" >-30 </span>    // to remove the shifting of center aligned text by Hamburger icon in Android
+    },
+    headerStyle: {
+      backgroundColor: colors.TRANSPARENT,
+      borderBottomWidth: 0,
+      elevation: 0,
+      paddingHorizontal: 10
+    },
+    title: titleKey ? translate(titleKey) : <span class="branch-1 cbranch-no" title="branch not covered" >result(current.navigation.state, 'params.title', ''),</span>
+    headerLeft: showBack ? generateBackButton(current) : <span class="branch-1 cbranch-no" title="branch not covered" >null,</span>
+    headerRight: generateCloseButton(current),
+    gesturesEnabled: showBack
+  };
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../sorter.js"></script>
+</body>
+</html>

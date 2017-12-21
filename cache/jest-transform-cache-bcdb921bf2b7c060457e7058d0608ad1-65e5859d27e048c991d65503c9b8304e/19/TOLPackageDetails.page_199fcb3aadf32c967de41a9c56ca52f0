@@ -1,0 +1,31 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.mapStateToProps=undefined;var cov_1wqs7cjw94=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/BillUsage/TOLPackageDetails.page.js',hash='2ecd088f4d5aac522101986fd86fee56883b2a96',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/BillUsage/TOLPackageDetails.page.js',statementMap:{'0':{start:{line:9,column:40},end:{line:9,column:74}},'1':{start:{line:10,column:27},end:{line:10,column:97}},'2':{start:{line:11,column:4},end:{line:14,column:6}},'3':{start:{line:18,column:0},end:{line:21,column:2}},'4':{start:{line:22,column:0},end:{line:25,column:2}},'5':{start:{line:27,column:31},end:{line:29,column:2}},'6':{start:{line:27,column:43},end:{line:29,column:1}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:8,column:2},end:{line:8,column:3}},loc:{start:{line:8,column:12},end:{line:15,column:3}},line:8},'1':{name:'(anonymous_1)',decl:{start:{line:27,column:31},end:{line:27,column:32}},loc:{start:{line:27,column:43},end:{line:29,column:1}},line:27}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0},f:{'0':0,'1':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _TOLPackageDetails=require('../../components/BillUsage/TOLPackageDetails/TOLPackageDetails.component');var _TOLPackageDetails2=_interopRequireDefault(_TOLPackageDetails);
+var _reactRedux=require('react-redux');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+TOLPackageDetailsPage=function(_Component){_inherits(TOLPackageDetailsPage,_Component);function TOLPackageDetailsPage(){_classCallCheck(this,TOLPackageDetailsPage);return _possibleConstructorReturn(this,(TOLPackageDetailsPage.__proto__||Object.getPrototypeOf(TOLPackageDetailsPage)).apply(this,arguments));}_createClass(TOLPackageDetailsPage,[{key:'render',value:function render()
+{cov_1wqs7cjw94.f[0]++;var _ref=(cov_1wqs7cjw94.s[0]++,
+this.props.navigation.state.params),subscriberId=_ref.subscriberId,productType=_ref.productType;
+var productDetail=(cov_1wqs7cjw94.s[1]++,(0,_result2.default)(this.props.productDetail,productType+'.'+subscriberId,{}));cov_1wqs7cjw94.s[2]++;
+return(
+_react2.default.createElement(_TOLPackageDetails2.default,{packageDetails:(0,_result2.default)(productDetail,'TOL_SPEEDS.pricePlanDetails',{}),
+packageInfo:(0,_result2.default)(productDetail,'PRICE_PLAN_INFO',{})}));
+
+}}]);return TOLPackageDetailsPage;}(_react.Component);cov_1wqs7cjw94.s[3]++;
+
+
+TOLPackageDetailsPage.defaultProps={
+navigation:{},
+productDetail:{}};cov_1wqs7cjw94.s[4]++;
+
+TOLPackageDetailsPage.propTypes={
+navigation:_propTypes2.default.object,
+productDetail:_propTypes2.default.object};cov_1wqs7cjw94.s[5]++;
+
+
+var mapStateToProps=exports.mapStateToProps=function mapStateToProps(state){cov_1wqs7cjw94.f[1]++;cov_1wqs7cjw94.s[6]++;return{
+productDetail:(0,_result2.default)(state,'billUsage.productDetail',{})};
+};exports.default=
+
+(0,_reactRedux.connect)(mapStateToProps)(TOLPackageDetailsPage);

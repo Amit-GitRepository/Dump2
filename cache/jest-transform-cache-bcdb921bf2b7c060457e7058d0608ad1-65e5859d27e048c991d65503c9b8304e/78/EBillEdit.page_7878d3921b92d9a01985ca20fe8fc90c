@@ -1,0 +1,21 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.mapDispatchToProps=undefined;var cov_wcaqvng8x=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/BillingMethods/EBillEdit.page.js',hash='c2582e4cf4e6fc45eee067bbb920252fcaf72463',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/BillingMethods/EBillEdit.page.js',statementMap:{'0':{start:{line:8,column:4},end:{line:10,column:6}},'1':{start:{line:14,column:0},end:{line:14,column:29}},'2':{start:{line:16,column:24},end:{line:16,column:34}},'3':{start:{line:16,column:31},end:{line:16,column:33}},'4':{start:{line:18,column:34},end:{line:19,column:2}},'5':{start:{line:18,column:41},end:{line:19,column:1}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:6,column:2},end:{line:6,column:3}},loc:{start:{line:6,column:12},end:{line:11,column:3}},line:6},'1':{name:'(anonymous_1)',decl:{start:{line:16,column:24},end:{line:16,column:25}},loc:{start:{line:16,column:31},end:{line:16,column:33}},line:16},'2':{name:'(anonymous_2)',decl:{start:{line:18,column:34},end:{line:18,column:35}},loc:{start:{line:18,column:41},end:{line:19,column:1}},line:18}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0},f:{'0':0,'1':0,'2':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _ISText=require('../../components/Shared/ISText/ISText.component');var _ISText2=_interopRequireDefault(_ISText);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _reactRedux=require('react-redux');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+EBillEditPage=function(_Component){_inherits(EBillEditPage,_Component);function EBillEditPage(){_classCallCheck(this,EBillEditPage);return _possibleConstructorReturn(this,(EBillEditPage.__proto__||Object.getPrototypeOf(EBillEditPage)).apply(this,arguments));}_createClass(EBillEditPage,[{key:'render',value:function render()
+{cov_wcaqvng8x.f[0]++;cov_wcaqvng8x.s[0]++;
+
+return(
+_react2.default.createElement(_ISText2.default,null,'EDIT_EBILL_PAGE'));
+
+}}]);return EBillEditPage;}(_react.Component);cov_wcaqvng8x.s[1]++;
+
+
+EBillEditPage.propTypes={};cov_wcaqvng8x.s[2]++;
+
+var mapStateToProps=function mapStateToProps(){cov_wcaqvng8x.f[1]++;cov_wcaqvng8x.s[3]++;return{};};cov_wcaqvng8x.s[4]++;
+
+var mapDispatchToProps=exports.mapDispatchToProps=function mapDispatchToProps(){cov_wcaqvng8x.f[2]++;cov_wcaqvng8x.s[5]++;return{};
+};exports.default=
+
+(0,_reactRedux.connect)(mapStateToProps,mapDispatchToProps)(EBillEditPage);

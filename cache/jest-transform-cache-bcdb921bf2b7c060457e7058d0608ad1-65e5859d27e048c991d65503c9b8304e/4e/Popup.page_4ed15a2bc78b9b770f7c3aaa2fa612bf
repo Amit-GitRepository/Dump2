@@ -1,0 +1,71 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.mapDispatchToProps=exports.mapStateToProps=undefined;var cov_q3e3vdl2s=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/Popup/Popup.page.js',hash='ca2e1f3cda0caf7f50a2beedf7b198707797b19d',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/Popup/Popup.page.js',statementMap:{'0':{start:{line:41,column:57},end:{line:41,column:67}},'1':{start:{line:43,column:4},end:{line:50,column:6}},'2':{start:{line:54,column:0},end:{line:59,column:2}},'3':{start:{line:61,column:31},end:{line:64,column:2}},'4':{start:{line:61,column:43},end:{line:64,column:1}},'5':{start:{line:66,column:34},end:{line:69,column:2}},'6':{start:{line:66,column:49},end:{line:69,column:1}},'7':{start:{line:67,column:19},end:{line:67,column:40}},'8':{start:{line:68,column:29},end:{line:68,column:60}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:40,column:2},end:{line:40,column:3}},loc:{start:{line:40,column:12},end:{line:51,column:3}},line:40},'1':{name:'(anonymous_1)',decl:{start:{line:61,column:31},end:{line:61,column:32}},loc:{start:{line:61,column:43},end:{line:64,column:1}},line:61},'2':{name:'(anonymous_2)',decl:{start:{line:66,column:34},end:{line:66,column:35}},loc:{start:{line:66,column:49},end:{line:69,column:1}},line:66},'3':{name:'(anonymous_3)',decl:{start:{line:67,column:13},end:{line:67,column:14}},loc:{start:{line:67,column:19},end:{line:67,column:40}},line:67},'4':{name:'(anonymous_4)',decl:{start:{line:68,column:18},end:{line:68,column:19}},loc:{start:{line:68,column:29},end:{line:68,column:60}},line:68}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var _Popup=require('../../components/Shared/Popup/Popup.component');var _Popup2=_interopRequireDefault(_Popup);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _reactRedux=require('react-redux');
+var _index=require('../../redux/actions/index.actions');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+Popup=function(_Component){_inherits(Popup,_Component);function Popup(){_classCallCheck(this,Popup);return _possibleConstructorReturn(this,(Popup.__proto__||Object.getPrototypeOf(Popup)).apply(this,arguments));}_createClass(Popup,[{key:'render',value:function render()
+{cov_q3e3vdl2s.f[0]++;var _ref=(cov_q3e3vdl2s.s[0]++,
+this.props),isOpen=_ref.isOpen,message=_ref.message,hidePopup=_ref.hidePopup,popupPutAction=_ref.popupPutAction;cov_q3e3vdl2s.s[1]++;
+
+return(
+_react2.default.createElement(_Popup2.default,{
+showPrompt:isOpen,
+message:message,
+hidePopup:hidePopup,
+popupPutAction:popupPutAction}));
+
+
+}}]);return Popup;}(_react.Component);cov_q3e3vdl2s.s[2]++;
+
+
+Popup.propTypes={
+hidePopup:_propTypes2.default.func,
+message:_propTypes2.default.object,
+isOpen:_propTypes2.default.bool,
+popupPutAction:_propTypes2.default.func};cov_q3e3vdl2s.s[3]++;
+
+
+var mapStateToProps=exports.mapStateToProps=function mapStateToProps(state){cov_q3e3vdl2s.f[1]++;cov_q3e3vdl2s.s[4]++;return{
+message:(0,_result2.default)(state,'popup.message'),
+isOpen:(0,_result2.default)(state,'popup.isOpen')};
+};cov_q3e3vdl2s.s[5]++;
+
+var mapDispatchToProps=exports.mapDispatchToProps=function mapDispatchToProps(dispatch){cov_q3e3vdl2s.f[2]++;cov_q3e3vdl2s.s[6]++;return{
+hidePopup:function hidePopup(){cov_q3e3vdl2s.f[3]++;cov_q3e3vdl2s.s[7]++;return dispatch((0,_index.hidePopup)());},
+popupPutAction:function popupPutAction(value){cov_q3e3vdl2s.f[4]++;cov_q3e3vdl2s.s[8]++;return dispatch((0,_index.popupPutAction)(value));}};
+};exports.default=
+
+(0,_reactRedux.connect)(mapStateToProps,mapDispatchToProps)(Popup);

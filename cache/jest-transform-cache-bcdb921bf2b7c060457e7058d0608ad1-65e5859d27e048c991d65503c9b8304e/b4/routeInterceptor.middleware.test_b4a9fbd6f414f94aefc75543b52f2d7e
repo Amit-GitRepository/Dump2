@@ -1,0 +1,62 @@
+var _store=require('../../../redux/store');var _store2=_interopRequireDefault(_store);
+var _routeInterceptor=require('../routeInterceptor.middleware');var _routeInterceptor2=_interopRequireDefault(_routeInterceptor);
+var _index=require('../../actions/index.actions');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+var next=jest.fn(function(action){return action;});
+
+var mockStoreLocatorAction={
+type:'Navigation/NAVIGATE',
+routeName:'StoreLocator'};
+
+
+var mockBillUsageAction={
+type:'Navigation/NAVIGATE',
+routeName:'BillUsage'};
+
+
+var mockNestedNavigationAction={
+type:'Navigation/NAVIGATE',
+routeName:'Landing',
+action:{
+type:'Navigation/NAVIGATE',
+routeName:'BillUsage'}};
+
+
+
+var mockIllegalNavigationAction={
+type:'Navigation/NAVIGATE',
+routeName:'ABCXYZ'};
+
+
+describe('Route Interceptor: User not logged in case',function(){
+var userNotLoggedInStore=(0,_store2.default)({user:{accessToken:null,profile:{}}});
+var interceptor=(0,_routeInterceptor2.default)(userNotLoggedInStore)(next);
+it('Should bypass the inteceptor for Store locator navigation action',function(){
+expect(interceptor(mockStoreLocatorAction)).toEqual(next(mockStoreLocatorAction));
+});
+it('Should trigger a login action when trying to navigate to bill usage',function(){
+expect(interceptor(mockBillUsageAction)).toEqual(userNotLoggedInStore.dispatch((0,_index.showPopup)((0,_routeInterceptor.generateLoginPopupMessage)(mockBillUsageAction))));
+});
+it('Should trigger a login action when nested navigation requires login access',function(){
+expect(interceptor(mockNestedNavigationAction)).toEqual(userNotLoggedInStore.dispatch((0,_index.showPopup)((0,_routeInterceptor.generateLoginPopupMessage)(mockNestedNavigationAction))));
+});
+});
+
+describe('Route Interceptor: User logged in case',function(){
+var userLoggedInStore=(0,_store2.default)({user:{accessToken:'1234',profile:{name:'abc'}}});
+var interceptor=(0,_routeInterceptor2.default)(userLoggedInStore)(next);
+it('Should bypass the inteceptor for Store locator navigation action',function(){
+expect(interceptor(mockStoreLocatorAction)).toEqual(next(mockStoreLocatorAction));
+});
+it('Should bypass the inteceptor for bill usage navigation action',function(){
+expect(interceptor(mockBillUsageAction)).toEqual(next(mockBillUsageAction));
+});
+});
+
+describe('Route Interceptor: User logged in but route does not exist',function(){
+var userLoggedInStore=(0,_store2.default)({user:{accessToken:'1234',profile:{name:'abc'}}});
+var interceptor=(0,_routeInterceptor2.default)(userLoggedInStore)(next);
+it('Should not perform the route transition when the user is not authorized to navigate to route',function(){
+expect(interceptor(mockIllegalNavigationAction)).toEqual(null);
+});
+});

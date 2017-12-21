@@ -1,0 +1,8 @@
+{
+  "LABEL__DISTANCE": "trueShopStoreDetails_label_distance",
+  "LABEL__ADDRESS": "trueShopStoreDetails_label_address",
+  "LABEL__LANDMARK": "trueShopStoreDetails_label_landmark",
+  "LABEL__CONTACT": "trueShopStoreDetails_label_contact",
+  "BTN__CALL": "trueShopStoreDetails_button_call",
+  "BTN__GET_DIRECTION": "trueShopStoreDetails_button_get_direction"
+}

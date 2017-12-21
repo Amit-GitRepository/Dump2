@@ -1,0 +1,26 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.runtimeErrorHandler=undefined;var cov_5b758fyli=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/utils/error.util.js',hash='a417137ae4a49bcdfcce78d8dc5835c42af66828',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/utils/error.util.js',statementMap:{'0':{start:{line:6,column:35},end:{line:14,column:1}},'1':{start:{line:7,column:2},end:{line:9,column:5}},'2':{start:{line:8,column:4},end:{line:8,column:30}},'3':{start:{line:10,column:2},end:{line:13,column:5}},'4':{start:{line:16,column:27},end:{line:26,column:1}},'5':{start:{line:17,column:2},end:{line:25,column:25}},'6':{start:{line:22,column:8},end:{line:22,column:28}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:6,column:35},end:{line:6,column:36}},loc:{start:{line:6,column:41},end:{line:14,column:1}},line:6},'1':{name:'(anonymous_1)',decl:{start:{line:7,column:24},end:{line:7,column:25}},loc:{start:{line:7,column:35},end:{line:9,column:3}},line:7},'2':{name:'(anonymous_2)',decl:{start:{line:10,column:28},end:{line:10,column:29}},loc:{start:{line:10,column:45},end:{line:13,column:3}},line:10},'3':{name:'(anonymous_3)',decl:{start:{line:16,column:27},end:{line:16,column:28}},loc:{start:{line:16,column:43},end:{line:26,column:1}},line:16},'4':{name:'(anonymous_4)',decl:{start:{line:20,column:54},end:{line:20,column:55}},loc:{start:{line:20,column:60},end:{line:23,column:7}},line:20}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _reactNativeRestart=require('react-native-restart');var _reactNativeRestart2=_interopRequireDefault(_reactNativeRestart);
+var _reactNative=require('./reactNative.util');
+var _reactNativeExceptionHandler=require('react-native-exception-handler');
+var _helper=require('../language/i18n/helper');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}cov_5b758fyli.s[0]++;
+
+var runtimeErrorHandler=exports.runtimeErrorHandler=function runtimeErrorHandler(){cov_5b758fyli.f[0]++;cov_5b758fyli.s[1]++;
+(0,_reactNativeExceptionHandler.setJSExceptionHandler)(function(error){cov_5b758fyli.f[1]++;cov_5b758fyli.s[2]++;
+recoverableErrorUI(error);
+});cov_5b758fyli.s[3]++;
+(0,_reactNativeExceptionHandler.setNativeExceptionHandler)(function(){cov_5b758fyli.f[2]++;
+
+
+});
+};cov_5b758fyli.s[4]++;
+
+var recoverableErrorUI=function recoverableErrorUI(){cov_5b758fyli.f[3]++;cov_5b758fyli.s[5]++;
+_reactNative.Alert.alert((0,_helper.translate)('ERROR_TITLE_RECOVERABLE'),(0,_helper.translate)('ERROR_NOTE_RECOVERABLE'),
+[
+{text:(0,_helper.translate)('ERROR_IGNORE_BUTTON')},
+{text:(0,_helper.translate)('ERROR_RESTART_APP'),onPress:function onPress(){cov_5b758fyli.f[4]++;cov_5b758fyli.s[6]++;
+
+_reactNativeRestart2.default.Restart();
+},style:'cancel'}],
+
+{cancelable:false});
+};

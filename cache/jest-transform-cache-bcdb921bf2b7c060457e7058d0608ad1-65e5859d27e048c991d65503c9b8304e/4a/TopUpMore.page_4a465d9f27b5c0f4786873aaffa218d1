@@ -1,0 +1,40 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.mapDispatchToProps=exports.mapStateToProps=undefined;var cov_zalrcg8d9=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/TopUp/TopUpMore.page.js',hash='2f39b9231cb4e0659b880993758be7ffa57b876f',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/TopUp/TopUpMore.page.js',statementMap:{'0':{start:{line:12,column:56},end:{line:12,column:66}},'1':{start:{line:13,column:4},end:{line:15,column:6}},'2':{start:{line:19,column:0},end:{line:23,column:2}},'3':{start:{line:25,column:0},end:{line:29,column:2}},'4':{start:{line:31,column:31},end:{line:33,column:2}},'5':{start:{line:31,column:43},end:{line:33,column:1}},'6':{start:{line:35,column:34},end:{line:38,column:2}},'7':{start:{line:35,column:49},end:{line:38,column:1}},'8':{start:{line:36,column:30},end:{line:36,column:62}},'9':{start:{line:37,column:26},end:{line:37,column:83}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:11,column:2},end:{line:11,column:3}},loc:{start:{line:11,column:12},end:{line:16,column:3}},line:11},'1':{name:'(anonymous_1)',decl:{start:{line:31,column:31},end:{line:31,column:32}},loc:{start:{line:31,column:43},end:{line:33,column:1}},line:31},'2':{name:'(anonymous_2)',decl:{start:{line:35,column:34},end:{line:35,column:35}},loc:{start:{line:35,column:49},end:{line:38,column:1}},line:35},'3':{name:'(anonymous_3)',decl:{start:{line:36,column:19},end:{line:36,column:20}},loc:{start:{line:36,column:30},end:{line:36,column:62}},line:36},'4':{name:'(anonymous_4)',decl:{start:{line:37,column:14},end:{line:37,column:15}},loc:{start:{line:37,column:26},end:{line:37,column:83}},line:37}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _TopUpMore=require('../../components/TopUp/TopUpMore/TopUpMore.component');var _TopUpMore2=_interopRequireDefault(_TopUpMore);
+var _reactRedux=require('react-redux');
+var _reactNavigation=require('react-navigation');
+var _index=require('../../redux/actions/index.actions');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+TopUpMorePage=function(_Component){_inherits(TopUpMorePage,_Component);function TopUpMorePage(){_classCallCheck(this,TopUpMorePage);return _possibleConstructorReturn(this,(TopUpMorePage.__proto__||Object.getPrototypeOf(TopUpMorePage)).apply(this,arguments));}_createClass(TopUpMorePage,[{key:'render',value:function render()
+{cov_zalrcg8d9.f[0]++;var _ref=(cov_zalrcg8d9.s[0]++,
+this.props),paymentItems=_ref.paymentItems,setPaymentItems=_ref.setPaymentItems,goToScreen=_ref.goToScreen;cov_zalrcg8d9.s[1]++;
+return(
+_react2.default.createElement(_TopUpMore2.default,{paymentItems:paymentItems,setPaymentItems:setPaymentItems,goToScreen:goToScreen}));
+
+}}]);return TopUpMorePage;}(_react.Component);cov_zalrcg8d9.s[2]++;
+
+
+TopUpMorePage.defaultProps={
+paymentItems:[],
+goToScreen:_noop2.default,
+setPaymentItems:_noop2.default};cov_zalrcg8d9.s[3]++;
+
+
+TopUpMorePage.propTypes={
+setPaymentItems:_propTypes2.default.func,
+paymentItems:_propTypes2.default.array,
+goToScreen:_propTypes2.default.func};cov_zalrcg8d9.s[4]++;
+
+
+var mapStateToProps=exports.mapStateToProps=function mapStateToProps(state){cov_zalrcg8d9.f[1]++;cov_zalrcg8d9.s[5]++;return{
+paymentItems:(0,_result2.default)(state,'payment.paymentItems',[])};
+};cov_zalrcg8d9.s[6]++;
+
+var mapDispatchToProps=exports.mapDispatchToProps=function mapDispatchToProps(dispatch){cov_zalrcg8d9.f[2]++;cov_zalrcg8d9.s[7]++;return{
+setPaymentItems:function setPaymentItems(items){cov_zalrcg8d9.f[3]++;cov_zalrcg8d9.s[8]++;return dispatch((0,_index.setPaymentItems)(items));},
+goToScreen:function goToScreen(screen){cov_zalrcg8d9.f[4]++;cov_zalrcg8d9.s[9]++;return dispatch(_reactNavigation.NavigationActions.navigate({routeName:screen}));}};
+};exports.default=
+
+(0,_reactRedux.connect)(mapStateToProps,mapDispatchToProps)(TopUpMorePage);

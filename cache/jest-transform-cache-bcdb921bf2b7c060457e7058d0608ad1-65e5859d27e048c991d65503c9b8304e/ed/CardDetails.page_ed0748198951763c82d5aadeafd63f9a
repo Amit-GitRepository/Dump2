@@ -1,0 +1,73 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.mapDispatchToProps=exports.mapStateToProps=undefined;var cov_26yry7yn45=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/Payment/CardDetails.page.js',hash='122ce68fb99115eb55e8ebaf4cc3e0b5b53d0fd2',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/Payment/CardDetails.page.js',statementMap:{'0':{start:{line:15,column:31},end:{line:17,column:4}},'1':{start:{line:20,column:46},end:{line:20,column:56}},'2':{start:{line:21,column:4},end:{line:23,column:5}},'3':{start:{line:22,column:6},end:{line:22,column:27}},'4':{start:{line:27,column:123},end:{line:27,column:133}},'5':{start:{line:28,column:4},end:{line:30,column:6}},'6':{start:{line:34,column:0},end:{line:45,column:2}},'7':{start:{line:47,column:0},end:{line:57,column:2}},'8':{start:{line:59,column:31},end:{line:63,column:2}},'9':{start:{line:59,column:53},end:{line:63,column:1}},'10':{start:{line:65,column:34},end:{line:72,column:2}},'11':{start:{line:65,column:49},end:{line:72,column:1}},'12':{start:{line:70,column:26},end:{line:70,column:54}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:15,column:17},end:{line:15,column:18}},loc:{start:{line:15,column:31},end:{line:17,column:4}},line:15},'1':{name:'(anonymous_1)',decl:{start:{line:19,column:2},end:{line:19,column:3}},loc:{start:{line:19,column:24},end:{line:24,column:3}},line:19},'2':{name:'(anonymous_2)',decl:{start:{line:26,column:2},end:{line:26,column:3}},loc:{start:{line:26,column:12},end:{line:31,column:3}},line:26},'3':{name:'(anonymous_3)',decl:{start:{line:59,column:31},end:{line:59,column:32}},loc:{start:{line:59,column:53},end:{line:63,column:1}},line:59},'4':{name:'(anonymous_4)',decl:{start:{line:65,column:34},end:{line:65,column:35}},loc:{start:{line:65,column:49},end:{line:72,column:1}},line:65},'5':{name:'(anonymous_5)',decl:{start:{line:70,column:13},end:{line:70,column:14}},loc:{start:{line:70,column:26},end:{line:70,column:54}},line:70}},branchMap:{'0':{loc:{start:{line:21,column:4},end:{line:23,column:5}},type:'if',locations:[{start:{line:21,column:4},end:{line:23,column:5}},{start:{line:21,column:4},end:{line:23,column:5}}],line:21}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0},b:{'0':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();
+
+
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _PaymentCard=require('../../components/Payment/PaymentCard/PaymentCard.component');var _PaymentCard2=_interopRequireDefault(_PaymentCard);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _redux=require('redux');
+var _reactRedux=require('react-redux');
+var _lodash=require('lodash');
+var _index=require('../../redux/actions/index.actions');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+CardDetails=function(_Component){_inherits(CardDetails,_Component);function CardDetails(){var _ref;var _temp,_this,_ret;_classCallCheck(this,CardDetails);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=CardDetails.__proto__||Object.getPrototypeOf(CardDetails)).call.apply(_ref,[this].concat(args))),_this),_this.
+
+onFormSubmit=function(formData){cov_26yry7yn45.f[0]++;cov_26yry7yn45.s[0]++;return _this.props.addCard(_extends({},
+formData,{amount:(0,_lodash.result)(_this.props,'paymentItems[0].amount',0)}));
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(CardDetails,[{key:'componentWillMount',value:function componentWillMount()
+
+{cov_26yry7yn45.f[1]++;var _ref2=(cov_26yry7yn45.s[1]++,
+this.props),userProfile=_ref2.userProfile,showPaymentMethods=_ref2.showPaymentMethods;cov_26yry7yn45.s[2]++;
+if(!(0,_lodash.isEmpty)(userProfile)){cov_26yry7yn45.b[0][0]++;cov_26yry7yn45.s[3]++;
+showPaymentMethods();
+}else{cov_26yry7yn45.b[0][1]++;}
+}},{key:'render',value:function render()
+
+{cov_26yry7yn45.f[2]++;var _ref3=(cov_26yry7yn45.s[4]++,
+this.props),userProfile=_ref3.userProfile,paymentItems=_ref3.paymentItems,savedCards=_ref3.savedCards,payForNewCustomer=_ref3.payForNewCustomer,payForExistingCustomer=_ref3.payForExistingCustomer,preLoginPayment=_ref3.preLoginPayment,showPopup=_ref3.showPopup;cov_26yry7yn45.s[5]++;
+return(
+_react2.default.createElement(_PaymentCard2.default,{showPopup:showPopup,paymentItems:paymentItems,preLoginPayment:preLoginPayment,userProfile:userProfile,onFormSubmit:this.onFormSubmit,cardLimit:3,payForNewCustomer:payForNewCustomer,payForExistingCustomer:payForExistingCustomer,savedCards:savedCards}));
+
+}}]);return CardDetails;}(_react.Component);cov_26yry7yn45.s[6]++;
+
+
+CardDetails.defaultProps={
+addCard:_noop2.default,
+deleteCard:_noop2.default,
+showPopup:_noop2.default,
+payForExistingCustomer:_noop2.default,
+payForNewCustomer:_noop2.default,
+preLoginPayment:_noop2.default,
+paymentItems:[],
+showPaymentMethods:_noop2.default,
+savedCards:{},
+userProfile:{}};cov_26yry7yn45.s[7]++;
+
+
+CardDetails.propTypes={
+addCard:_propTypes2.default.func,
+showPopup:_propTypes2.default.func,
+payForExistingCustomer:_propTypes2.default.func,
+payForNewCustomer:_propTypes2.default.func,
+preLoginPayment:_propTypes2.default.func,
+paymentItems:_propTypes2.default.array,
+showPaymentMethods:_propTypes2.default.func,
+savedCards:_propTypes2.default.object,
+userProfile:_propTypes2.default.object};cov_26yry7yn45.s[8]++;
+
+
+var mapStateToProps=exports.mapStateToProps=function mapStateToProps(_ref4){var payment=_ref4.payment,user=_ref4.user;cov_26yry7yn45.f[3]++;cov_26yry7yn45.s[9]++;return{
+paymentItems:payment.paymentItems,
+savedCards:payment.savedCards,
+userProfile:user.profile};
+};cov_26yry7yn45.s[10]++;
+
+var mapDispatchToProps=exports.mapDispatchToProps=function mapDispatchToProps(dispatch){cov_26yry7yn45.f[4]++;cov_26yry7yn45.s[11]++;return{
+addCard:(0,_redux.bindActionCreators)(_index.payNewCustomer,dispatch),
+payForExistingCustomer:(0,_redux.bindActionCreators)(_index.payForExistingCustomer,dispatch),
+payForNewCustomer:(0,_redux.bindActionCreators)(_index.payNewCustomer,dispatch),
+preLoginPayment:(0,_redux.bindActionCreators)(_index.preLoginPayment,dispatch),
+showPopup:function showPopup(message){cov_26yry7yn45.f[5]++;cov_26yry7yn45.s[12]++;return dispatch((0,_index.showPopup)(message));},
+showPaymentMethods:(0,_redux.bindActionCreators)(_index.showPaymentMethods,dispatch)};
+};exports.default=
+(0,_reactRedux.connect)(mapStateToProps,mapDispatchToProps)(CardDetails);

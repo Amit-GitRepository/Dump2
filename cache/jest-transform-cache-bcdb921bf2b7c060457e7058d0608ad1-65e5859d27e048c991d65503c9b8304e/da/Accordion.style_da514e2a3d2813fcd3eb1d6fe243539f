@@ -1,0 +1,17 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_2amri4v9xn=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/Accordion/Accordion.style.js',hash='18e0848f1725ef6ba2dfe4928c65780759afd52f',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/Accordion/Accordion.style.js',statementMap:{},fnMap:{},branchMap:{},s:{},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _constants=require('../../../themes/constants.styles');exports.default=
+
+{
+touchableContainer:{
+zIndex:2,
+paddingRight:15},
+
+unCollapsedArrowStyle:{
+transform:[{rotate:'180deg'}]},
+
+headerContainer:{
+flexDirection:'row',
+alignItems:'center'},
+
+arrowStyleDefault:{
+color:_constants.colors.PRIMARY_ACTIONABLE,
+marginLeft:'auto'}};

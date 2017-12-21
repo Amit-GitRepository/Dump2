@@ -1,0 +1,38 @@
+var _storeLocator=require('../storeLocator.reducer');var _storeLocator2=_interopRequireDefault(_storeLocator);
+var _helper=require('../../../language/i18n/helper');
+var _index=require('../../actions/index.actions');var actions=_interopRequireWildcard(_index);function _interopRequireWildcard(obj){if(obj&&obj.__esModule){return obj;}else{var newObj={};if(obj!=null){for(var key in obj){if(Object.prototype.hasOwnProperty.call(obj,key))newObj[key]=obj[key];}}newObj.default=obj;return newObj;}}function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('storeLocator reducer',function(){
+it('should have the initial value as false',function(){
+var initialState=(0,_storeLocator2.default)(undefined,{});
+expect(initialState).toHaveProperty('selectedProvince');
+expect(initialState).toHaveProperty('selectedService');
+expect(initialState).toHaveProperty('nearByStores');
+expect(initialState).toHaveProperty('filteredStores');
+expect(initialState).toHaveProperty('radiusKM');
+expect(initialState).toHaveProperty('allStores');
+});
+it('CHANGE_SEARCH_TEXT: should return filteredStores on text change',function(){
+var initialState={allStores:{data:[
+{address:{th:'Pat'}},
+{address:{th:'patt'}},
+{address:{th:'Bangkok'}}]},
+
+filteredStores:[]};
+var action=actions.changeSearchText({language:'th',input:'pa'});
+var expected=[{address:{th:'Pat'}},
+{address:{th:'patt'}}];
+expect((0,_storeLocator2.default)(initialState,action).filteredStores).toEqual(expected);
+});
+it('CHANGE_SEARCH_TEXT: should return error if store not found',function(){
+var initialState={allStores:{data:[]},filteredStores:[]};
+var action=actions.changeSearchText({language:'th',input:'pa'});
+var expected=[{storeName:(0,_helper.translate)('STORE_LOCATOR_STORE_NOT_FOUND')}];
+expect((0,_storeLocator2.default)(initialState,action).filteredStores).toEqual(expected);
+});
+it('CLEAR_FILTERED_STORES: should clear filteredStores key in the store',function(){
+var initialState={allStores:{data:[]},filteredStores:[{'someKey':'someVal'}]};
+var action=actions.clearFilteredStores();
+expect((0,_storeLocator2.default)(initialState,action).filteredStores).toEqual([]);
+});
+});

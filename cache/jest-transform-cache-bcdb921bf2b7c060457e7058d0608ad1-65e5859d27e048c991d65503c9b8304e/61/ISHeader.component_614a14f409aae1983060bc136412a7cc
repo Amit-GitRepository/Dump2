@@ -1,0 +1,13 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_26fyt6eude=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/ISHeader/ISHeader.component.js',hash='cb4bbb8a8fc86bb88fb55864649c4fcc0f2c9cef',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/ISHeader/ISHeader.component.js',statementMap:{'0':{start:{line:7,column:17},end:{line:11,column:1}},'1':{start:{line:8,column:2},end:{line:10,column:19}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:7,column:17},end:{line:7,column:18}},loc:{start:{line:8,column:2},end:{line:10,column:19}},line:8}},branchMap:{},s:{'0':0,'1':0},f:{'0':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _reactNativeLinearGradient=require('react-native-linear-gradient');var _reactNativeLinearGradient2=_interopRequireDefault(_reactNativeLinearGradient);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ISHeader=require('./ISHeader.style');var _ISHeader2=_interopRequireDefault(_ISHeader);
+var _constants=require('../../../themes/constants.styles');
+var _reactNavigation=require('react-navigation');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}cov_26fyt6eude.s[0]++;
+
+var ISHeader=function ISHeader(props)
+{cov_26fyt6eude.f[0]++;cov_26fyt6eude.s[1]++;return _react2.default.createElement(_reactNativeLinearGradient2.default,{elevation:4,colors:[_constants.colors.PRIMARY_HEADER_BG_START,_constants.colors.PRIMARY_HEADER_BG_END],style:_ISHeader2.default.container},
+_react2.default.createElement(_reactNavigation.Header,_extends({},props,{style:_ISHeader2.default.header})));
+};exports.default=
+
+
+ISHeader;

@@ -1,0 +1,29 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_febmaig00=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/index.js',hash='b92e6e0708bdb45a7beea38a1daa28ea47393f49',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/index.js',statementMap:{'0':{start:{line:9,column:0},end:{line:11,column:24}},'1':{start:{line:12,column:0},end:{line:14,column:18}},'2':{start:{line:16,column:14},end:{line:16,column:24}},'3':{start:{line:17,column:0},end:{line:17,column:22}},'4':{start:{line:21,column:4},end:{line:25,column:6}},'5':{start:{line:29,column:0},end:{line:29,column:58}},'6':{start:{line:29,column:48},end:{line:29,column:56}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:20,column:2},end:{line:20,column:3}},loc:{start:{line:20,column:12},end:{line:26,column:3}},line:20},'1':{name:'(anonymous_1)',decl:{start:{line:29,column:42},end:{line:29,column:43}},loc:{start:{line:29,column:48},end:{line:29,column:56}},line:29}},branchMap:{'0':{loc:{start:{line:9,column:24},end:{line:11,column:23}},type:'cond-expr',locations:[{start:{line:10,column:2},end:{line:10,column:31}},{start:{line:11,column:2},end:{line:11,column:23}}],line:9},'1':{loc:{start:{line:12,column:18},end:{line:14,column:17}},type:'cond-expr',locations:[{start:{line:13,column:2},end:{line:13,column:25}},{start:{line:14,column:2},end:{line:14,column:17}}],line:12}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0},f:{'0':0,'1':0},b:{'0':[0,0],'1':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _App=require('./App.container');var _App2=_interopRequireDefault(_App);
+var _store=require('./redux/store');var _store2=_interopRequireDefault(_store);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _reactNative=require('react-native');
+require('./utils/testfairy.util');
+var _reactRedux=require('react-redux');
+var _error=require('./utils/error.util');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}cov_febmaig00.s[0]++;
+
+global.XMLHttpRequest=global.originalXMLHttpRequest?(cov_febmaig00.b[0][0]++,
+global.originalXMLHttpRequest):(cov_febmaig00.b[0][1]++,
+global.XMLHttpRequest);cov_febmaig00.s[1]++;
+global.FormData=global.originalFormData?(cov_febmaig00.b[1][0]++,
+global.originalFormData):(cov_febmaig00.b[1][1]++,
+global.FormData);
+
+var store=(cov_febmaig00.s[2]++,(0,_store2.default)());cov_febmaig00.s[3]++;
+(0,_error.runtimeErrorHandler)();var
+
+iService=function(_Component){_inherits(iService,_Component);function iService(){_classCallCheck(this,iService);return _possibleConstructorReturn(this,(iService.__proto__||Object.getPrototypeOf(iService)).apply(this,arguments));}_createClass(iService,[{key:'render',value:function render()
+{cov_febmaig00.f[0]++;cov_febmaig00.s[4]++;
+return(
+_react2.default.createElement(_reactRedux.Provider,{store:store},
+_react2.default.createElement(_App2.default,null)));
+
+
+}}]);return iService;}(_react.Component);exports.default=iService;cov_febmaig00.s[5]++;
+
+
+_reactNative.AppRegistry.registerComponent('iService',function(){cov_febmaig00.f[1]++;cov_febmaig00.s[6]++;return iService;});

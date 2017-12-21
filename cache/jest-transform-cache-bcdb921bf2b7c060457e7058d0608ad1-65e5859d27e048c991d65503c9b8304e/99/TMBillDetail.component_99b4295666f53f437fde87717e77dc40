@@ -1,0 +1,62 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_5p1xrcqzm=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillDetails/TMBillDetail.component.js',hash='b0700aa92c9f0988caf7e97e2c33c14d6011d577',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillDetails/TMBillDetail.component.js',statementMap:{'0':{start:{line:18,column:29},end:{line:18,column:39}},'1':{start:{line:19,column:4},end:{line:53,column:22}},'2':{start:{line:56,column:0},end:{line:58,column:2}},'3':{start:{line:59,column:0},end:{line:61,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:17,column:2},end:{line:17,column:3}},loc:{start:{line:17,column:12},end:{line:54,column:3}},line:17}},branchMap:{'0':{loc:{start:{line:37,column:9},end:{line:37,column:93}},type:'binary-expr',locations:[{start:{line:37,column:9},end:{line:37,column:29}},{start:{line:37,column:33},end:{line:37,column:93}}],line:37},'1':{loc:{start:{line:38,column:9},end:{line:38,column:90}},type:'binary-expr',locations:[{start:{line:38,column:9},end:{line:38,column:28}},{start:{line:38,column:32},end:{line:38,column:90}}],line:38},'2':{loc:{start:{line:39,column:9},end:{line:39,column:114}},type:'binary-expr',locations:[{start:{line:39,column:9},end:{line:39,column:36}},{start:{line:39,column:40},end:{line:39,column:114}}],line:39},'3':{loc:{start:{line:40,column:9},end:{line:40,column:87}},type:'binary-expr',locations:[{start:{line:40,column:9},end:{line:40,column:27}},{start:{line:40,column:31},end:{line:40,column:87}}],line:40},'4':{loc:{start:{line:41,column:9},end:{line:41,column:93}},type:'binary-expr',locations:[{start:{line:41,column:9},end:{line:41,column:29}},{start:{line:41,column:33},end:{line:41,column:93}}],line:41}},s:{'0':0,'1':0,'2':0,'3':0},f:{'0':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0],'4':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();
+
+var _AmountText=require('../../Shared/AmountText/AmountText.component');var _AmountText2=_interopRequireDefault(_AmountText);
+var _DetailCardRow=require('../BillUsage/BillUsageShared/DetailCardRow.component');var _DetailCardRow2=_interopRequireDefault(_DetailCardRow);
+var _HeaderWithCaret=require('../BillUsage/BillUsageShared/HeaderWithCaret.component');var _HeaderWithCaret2=_interopRequireDefault(_HeaderWithCaret);
+var _Icon=require('../../Shared/Icon/Icon.component');var _Icon2=_interopRequireDefault(_Icon);
+var _ISText=require('../../Shared/ISText/ISText.component');var _ISText2=_interopRequireDefault(_ISText);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _TMBillDetails=require('./TMBillDetails.style');var _TMBillDetails2=_interopRequireDefault(_TMBillDetails);
+var _WrapperCard=require('../BillUsage/BillUsageShared/WrapperCard.component');var _WrapperCard2=_interopRequireDefault(_WrapperCard);
+var _constants=require('../../../themes/constants.styles');
+var _helper=require('../../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+TMBillDetail=function(_Component){_inherits(TMBillDetail,_Component);function TMBillDetail(){_classCallCheck(this,TMBillDetail);return _possibleConstructorReturn(this,(TMBillDetail.__proto__||Object.getPrototypeOf(TMBillDetail)).apply(this,arguments));}_createClass(TMBillDetail,[{key:'render',value:function render()
+{cov_5p1xrcqzm.f[0]++;var _ref=(cov_5p1xrcqzm.s[0]++,
+this.props),billDetailInfo=_ref.billDetailInfo;cov_5p1xrcqzm.s[1]++;
+return(
+_react2.default.createElement(_WrapperCard2.default,null,
+_react2.default.createElement(_HeaderWithCaret2.default,{style:_TMBillDetails2.default.headerContainer},
+
+_react2.default.createElement(_reactNative.View,{style:_TMBillDetails2.default.invoiceSection},
+_react2.default.createElement(_ISText2.default,{style:_TMBillDetails2.default.headerTitle,type:'BOLD'},(0,_helper.translate)('BILLS_USAGE_INVOICE_NUMBER')),
+_react2.default.createElement(_ISText2.default,{style:_TMBillDetails2.default.headerSubtitle,type:'BOLD'},billDetailInfo.invoiceNumber)),
+
+_react2.default.createElement(_reactNative.View,{style:_TMBillDetails2.default.iconSection},
+_react2.default.createElement(_reactNative.View,{style:_TMBillDetails2.default.verticalLine}),
+_react2.default.createElement(_Icon2.default,{size:30,color:_constants.colors.PRIMARY_BG_TEXT_CONTRAST,name:'icon_pdf',style:_TMBillDetails2.default.iconStyle}))),
+
+
+_react2.default.createElement(_reactNative.View,{style:_TMBillDetails2.default.totalSection},
+_react2.default.createElement(_ISText2.default,{style:_TMBillDetails2.default.totalText,type:'BOLD'},(0,_helper.translate)('BILLS_USAGE_TOTAL')),
+_react2.default.createElement(_AmountText2.default,{value:billDetailInfo.total})),
+
+_react2.default.createElement(_ISText2.default,{style:_TMBillDetails2.default.usageSection,type:'BOLD'},(0,_helper.translate)('BILLS_USAGE_USAGE_DETAIL')),
+(cov_5p1xrcqzm.b[0][0]++,billDetailInfo.voice)&&(cov_5p1xrcqzm.b[0][1]++,_react2.default.createElement(_DetailCardRow2.default,{rowData:billDetailInfo.voice,type:'voice'})),
+(cov_5p1xrcqzm.b[1][0]++,billDetailInfo.data)&&(cov_5p1xrcqzm.b[1][1]++,_react2.default.createElement(_DetailCardRow2.default,{rowData:billDetailInfo.data,type:'data'})),
+(cov_5p1xrcqzm.b[2][0]++,billDetailInfo.extraPackage)&&(cov_5p1xrcqzm.b[2][1]++,_react2.default.createElement(_DetailCardRow2.default,{rowData:billDetailInfo.extraPackage,type:'extraPackage'})),
+(cov_5p1xrcqzm.b[3][0]++,billDetailInfo.sms)&&(cov_5p1xrcqzm.b[3][1]++,_react2.default.createElement(_DetailCardRow2.default,{rowData:billDetailInfo.sms,type:'sms'})),
+(cov_5p1xrcqzm.b[4][0]++,billDetailInfo.other)&&(cov_5p1xrcqzm.b[4][1]++,_react2.default.createElement(_DetailCardRow2.default,{rowData:billDetailInfo.other,type:'other'})),
+_react2.default.createElement(_reactNative.View,{style:_TMBillDetails2.default.footerSection},
+_react2.default.createElement(_reactNative.View,{style:_TMBillDetails2.default.limitSection},
+_react2.default.createElement(_ISText2.default,{style:_TMBillDetails2.default.footerText,type:'BOLD'},(0,_helper.translate)('BILLS_USAGE_CREDIT_LIMIT')),
+_react2.default.createElement(_AmountText2.default,{value:billDetailInfo.creditLimit,displayPrecision:false})),
+
+_react2.default.createElement(_reactNative.View,{style:_TMBillDetails2.default.verticalLineFooter}),
+_react2.default.createElement(_reactNative.View,{style:_TMBillDetails2.default.limitSection},
+_react2.default.createElement(_ISText2.default,{style:_TMBillDetails2.default.footerText,type:'BOLD'},(0,_helper.translate)('BILLS_USAGE_EXCEED_USAGE')),
+_react2.default.createElement(_AmountText2.default,{value:billDetailInfo.exceedUsage,precisionStyle:_TMBillDetails2.default.precisionText})))));
+
+
+
+}}]);return TMBillDetail;}(_react.Component);cov_5p1xrcqzm.s[2]++;
+
+TMBillDetail.defaultProps={
+billDetailInfo:{}};cov_5p1xrcqzm.s[3]++;
+
+TMBillDetail.propTypes={
+billDetailInfo:_propTypes2.default.object};exports.default=
+
+TMBillDetail;

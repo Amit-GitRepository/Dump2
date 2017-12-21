@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_custom.xml",
+        "source": "/Users/amitkumar/.android/build-cache/0ef00a90abcf9e20e36833c0983a3c43f72ef5cf/output/res/layout-v11/notification_template_big_media_custom.xml"
+    },
+    {
+        "merged": "/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/res/merged/debug/layout-v11/notification_media_cancel_action.xml",
+        "source": "/Users/amitkumar/.android/build-cache/0ef00a90abcf9e20e36833c0983a3c43f72ef5cf/output/res/layout-v11/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_narrow.xml",
+        "source": "/Users/amitkumar/.android/build-cache/0ef00a90abcf9e20e36833c0983a3c43f72ef5cf/output/res/layout-v11/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media.xml",
+        "source": "/Users/amitkumar/.android/build-cache/0ef00a90abcf9e20e36833c0983a3c43f72ef5cf/output/res/layout-v11/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/res/merged/debug/layout-v11/notification_media_action.xml",
+        "source": "/Users/amitkumar/.android/build-cache/0ef00a90abcf9e20e36833c0983a3c43f72ef5cf/output/res/layout-v11/notification_media_action.xml"
+    },
+    {
+        "merged": "/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/res/merged/debug/layout-v11/notification_template_big_media_narrow_custom.xml",
+        "source": "/Users/amitkumar/.android/build-cache/0ef00a90abcf9e20e36833c0983a3c43f72ef5cf/output/res/layout-v11/notification_template_big_media_narrow_custom.xml"
+    }
+]

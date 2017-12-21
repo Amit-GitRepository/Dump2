@@ -1,0 +1,32 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_2qq4yddzbt=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/Map/Map.style.js',hash='987d798e89c3a3a88b97debcd23f9fde1b17eed1',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/Map/Map.style.js',statementMap:{},fnMap:{},branchMap:{},s:{},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _constants=require('../../../themes/constants.styles');
+var _application=require('../../../themes/application.styles');exports.default=
+
+{
+container:{
+flex:1},
+
+map:{
+flex:1},
+
+marker:{
+width:30,
+height:40},
+
+buttonList:{
+position:'absolute',
+bottom:35,
+right:5},
+
+buttonWrapper:_extends({
+backgroundColor:_constants.colors.PRIMARY_ACTIONABLE,
+borderRadius:100,
+borderWidth:2,
+borderColor:_constants.colors.PRIMARY_BG_TEXT_CONTRAST,
+margin:5},_application.shadowActiveStyle),
+
+
+button:{
+fontSize:55,
+borderRadius:55,
+overflow:'hidden',
+color:_constants.colors.PRIMARY_BG_TEXT_CONTRAST}};

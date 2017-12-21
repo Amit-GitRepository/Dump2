@@ -1,0 +1,59 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.mapDispatchToProps=exports.mapStateToProps=undefined;var cov_yjldd4oa2=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/BillUsage/BillUsage.page.js',hash='c36426bea6edd5939e80778b7927dcd8e5fae336',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/BillUsage/BillUsage.page.js',statementMap:{'0':{start:{line:12,column:225},end:{line:12,column:235}},'1':{start:{line:13,column:4},end:{line:18,column:6}},'2':{start:{line:22,column:0},end:{line:33,column:2}},'3':{start:{line:35,column:31},end:{line:41,column:2}},'4':{start:{line:35,column:43},end:{line:41,column:1}},'5':{start:{line:44,column:34},end:{line:57,column:2}},'6':{start:{line:44,column:49},end:{line:57,column:1}},'7':{start:{line:45,column:43},end:{line:45,column:112}},'8':{start:{line:46,column:122},end:{line:46,column:259}},'9':{start:{line:47,column:51},end:{line:47,column:125}},'10':{start:{line:48,column:48},end:{line:48,column:126}},'11':{start:{line:49,column:51},end:{line:52,column:3}},'12':{start:{line:50,column:16},end:{line:50,column:80}},'13':{start:{line:51,column:4},end:{line:51,column:55}},'14':{start:{line:54,column:4},end:{line:54,column:182}},'15':{start:{line:55,column:30},end:{line:55,column:70}},'16':{start:{line:56,column:37},end:{line:56,column:79}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:11,column:2},end:{line:11,column:3}},loc:{start:{line:11,column:19},end:{line:19,column:3}},line:11},'1':{name:'(anonymous_1)',decl:{start:{line:35,column:31},end:{line:35,column:32}},loc:{start:{line:35,column:43},end:{line:41,column:1}},line:35},'2':{name:'(anonymous_2)',decl:{start:{line:44,column:34},end:{line:44,column:35}},loc:{start:{line:44,column:49},end:{line:57,column:1}},line:44},'3':{name:'(anonymous_3)',decl:{start:{line:45,column:14},end:{line:45,column:15}},loc:{start:{line:45,column:43},end:{line:45,column:112}},line:45},'4':{name:'(anonymous_4)',decl:{start:{line:46,column:26},end:{line:46,column:27}},loc:{start:{line:46,column:122},end:{line:46,column:259}},line:46},'5':{name:'(anonymous_5)',decl:{start:{line:47,column:25},end:{line:47,column:26}},loc:{start:{line:47,column:51},end:{line:47,column:125}},line:47},'6':{name:'(anonymous_6)',decl:{start:{line:48,column:22},end:{line:48,column:23}},loc:{start:{line:48,column:48},end:{line:48,column:126}},line:48},'7':{name:'(anonymous_7)',decl:{start:{line:49,column:25},end:{line:49,column:26}},loc:{start:{line:49,column:51},end:{line:52,column:3}},line:49},'8':{name:'(anonymous_8)',decl:{start:{line:49,column:51},end:{line:49,column:52}},loc:{start:{line:49,column:94},end:{line:52,column:3}},line:49},'9':{name:'(anonymous_9)',decl:{start:{line:53,column:25},end:{line:53,column:26}},loc:{start:{line:54,column:4},end:{line:54,column:182}},line:54},'10':{name:'(anonymous_10)',decl:{start:{line:55,column:19},end:{line:55,column:20}},loc:{start:{line:55,column:30},end:{line:55,column:70}},line:55},'11':{name:'(anonymous_11)',decl:{start:{line:56,column:22},end:{line:56,column:23}},loc:{start:{line:56,column:37},end:{line:56,column:79}},line:56}},branchMap:{'0':{loc:{start:{line:36,column:12},end:{line:37,column:96}},type:'binary-expr',locations:[{start:{line:36,column:12},end:{line:36,column:102}},{start:{line:37,column:7},end:{line:37,column:53}},{start:{line:37,column:58},end:{line:37,column:96}}],line:36},'1':{loc:{start:{line:45,column:27},end:{line:45,column:38}},type:'default-arg',locations:[{start:{line:45,column:36},end:{line:45,column:38}}],line:45}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0},b:{'0':[0,0,0],'1':[0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _BillUsage=require('../../components/BillUsage/BillUsage/BillUsage.component');var _BillUsage2=_interopRequireDefault(_BillUsage);
+var _ComponentWithTab2=require('../../components/ComponentWithTab/ComponentWithTab.component');var _ComponentWithTab3=_interopRequireDefault(_ComponentWithTab2);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _reactRedux=require('react-redux');
+var _reactNavigation=require('react-navigation');
+var _index=require('../../redux/actions/index.actions');var actions=_interopRequireWildcard(_index);function _interopRequireWildcard(obj){if(obj&&obj.__esModule){return obj;}else{var newObj={};if(obj!=null){for(var key in obj){if(Object.prototype.hasOwnProperty.call(obj,key))newObj[key]=obj[key];}}newObj.default=obj;return newObj;}}function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+BillUsagePage=function(_ComponentWithTab){_inherits(BillUsagePage,_ComponentWithTab);function BillUsagePage(){_classCallCheck(this,BillUsagePage);return _possibleConstructorReturn(this,(BillUsagePage.__proto__||Object.getPrototypeOf(BillUsagePage)).apply(this,arguments));}_createClass(BillUsagePage,[{key:'renderWithTab',value:function renderWithTab()
+{cov_yjldd4oa2.f[0]++;var _ref=(cov_yjldd4oa2.s[0]++,
+this.props),username=_ref.username,productList=_ref.productList,toggleBillDetailCheck=_ref.toggleBillDetailCheck,productDetail=_ref.productDetail,billDetail=_ref.billDetail,getProductBillDetails=_ref.getProductBillDetails,goToScreen=_ref.goToScreen,toggleProductCheck=_ref.toggleProductCheck,toggleProductCollapse=_ref.toggleProductCollapse,setPaymentItems=_ref.setPaymentItems,onBillDetailsClick=_ref.onBillDetailsClick,getProductCurrentUsage=_ref.getProductCurrentUsage;cov_yjldd4oa2.s[1]++;
+return(
+_react2.default.createElement(_BillUsage2.default,{productList:productList,productDetail:productDetail,billDetail:billDetail,username:username,goToScreen:goToScreen,
+toggleProductCheck:toggleProductCheck,toggleProductCollapse:toggleProductCollapse,getProductBillDetails:getProductBillDetails,toggleBillDetailCheck:toggleBillDetailCheck,
+setPaymentItems:setPaymentItems,onBillDetailsClick:onBillDetailsClick,getProductCurrentUsage:getProductCurrentUsage}));
+
+
+}}]);return BillUsagePage;}(_ComponentWithTab3.default);cov_yjldd4oa2.s[2]++;
+
+
+BillUsagePage.propTypes={
+username:_propTypes2.default.string,
+goToScreen:_propTypes2.default.func,
+productList:_propTypes2.default.object,
+productDetail:_propTypes2.default.object,
+billDetail:_propTypes2.default.object,
+toggleProductCheck:_propTypes2.default.func,
+toggleProductCollapse:_propTypes2.default.func,
+toggleBillDetailCheck:_propTypes2.default.func,
+setPaymentItems:_propTypes2.default.func,
+getProductCurrentUsage:_propTypes2.default.func};cov_yjldd4oa2.s[3]++;
+
+
+var mapStateToProps=exports.mapStateToProps=function mapStateToProps(state){cov_yjldd4oa2.f[1]++;cov_yjldd4oa2.s[4]++;return{
+username:(cov_yjldd4oa2.b[0][0]++,(0,_result2.default)(state,'user.profile.first_name','')+(0,_result2.default)(state,'user.profile.last_name',''))||(cov_yjldd4oa2.b[0][1]++,
+(0,_result2.default)(state,'user.profile.display_name',''))||(cov_yjldd4oa2.b[0][2]++,(0,_result2.default)(state,'user.profile.name','')),
+productList:(0,_result2.default)(state,'billUsage.productList',{}),
+productDetail:(0,_result2.default)(state,'billUsage.productDetail',{}),
+billDetail:(0,_result2.default)(state,'billUsage.billDetail',{})};
+};cov_yjldd4oa2.s[5]++;
+
+
+var mapDispatchToProps=exports.mapDispatchToProps=function mapDispatchToProps(dispatch){cov_yjldd4oa2.f[2]++;cov_yjldd4oa2.s[6]++;return{
+goToScreen:function goToScreen(screenName){var params=arguments.length>1&&arguments[1]!==undefined?arguments[1]:(cov_yjldd4oa2.b[1][0]++,{});cov_yjldd4oa2.f[3]++;cov_yjldd4oa2.s[7]++;return dispatch(_reactNavigation.NavigationActions.navigate({routeName:screenName,params:params}));},
+getProductCurrentUsage:function getProductCurrentUsage(productType,subscriberId,convBundleName,productId,productTypePayload,subscriptionType){cov_yjldd4oa2.f[4]++;cov_yjldd4oa2.s[8]++;return dispatch(actions.getBillUsageProductDetail({subscriberId:subscriberId,productType:productType,productTypePayload:productTypePayload,subscriptionType:subscriptionType,productId:productId,convBundleName:convBundleName}));},
+getProductBillDetails:function getProductBillDetails(productType,payload){cov_yjldd4oa2.f[5]++;cov_yjldd4oa2.s[9]++;return dispatch(actions.getBillUsageProductBillDetail(_extends({productType:productType},payload)));},
+toggleProductCheck:function toggleProductCheck(productType,payload){cov_yjldd4oa2.f[6]++;cov_yjldd4oa2.s[10]++;return dispatch(actions.toggleBillUsageProductCheckStatus(_extends({productType:productType},payload)));},
+toggleBillDetailCheck:function toggleBillDetailCheck(productType,payload){cov_yjldd4oa2.f[7]++;cov_yjldd4oa2.s[11]++;return function(invoiceNos,isChecked,checkedBillSum){cov_yjldd4oa2.f[8]++;
+var obj=(cov_yjldd4oa2.s[12]++,_extends({productType:productType,invoiceNos:invoiceNos,isChecked:isChecked,checkedBillSum:checkedBillSum},payload));cov_yjldd4oa2.s[13]++;
+dispatch(actions.toggleBillDetailCheckStatus(obj));
+};},
+toggleProductCollapse:function toggleProductCollapse(productType,subscriberId,convBundleName,productId,productTypePayload,subscriptionType,accountId,selectedTabNumber)
+{cov_yjldd4oa2.f[9]++;cov_yjldd4oa2.s[14]++;return dispatch(actions.toggleBillUsageProductCollapseStatus({productType:productType,subscriberId:subscriberId,convBundleName:convBundleName,productId:productId,productTypePayload:productTypePayload,subscriptionType:subscriptionType,accountId:accountId,selectedTabNumber:selectedTabNumber}));},
+setPaymentItems:function setPaymentItems(items){cov_yjldd4oa2.f[10]++;cov_yjldd4oa2.s[15]++;return dispatch(actions.setPaymentItems(items));},
+onBillDetailsClick:function onBillDetailsClick(invoiceNo){cov_yjldd4oa2.f[11]++;cov_yjldd4oa2.s[16]++;return dispatch(actions.getInvoicePdf(invoiceNo));}};
+};exports.default=
+
+(0,_reactRedux.connect)(mapStateToProps,mapDispatchToProps)(BillUsagePage);

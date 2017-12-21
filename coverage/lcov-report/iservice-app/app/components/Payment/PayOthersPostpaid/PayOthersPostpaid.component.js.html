@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for iservice-app/app/components/Payment/PayOthersPostpaid/PayOthersPostpaid.component.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../../../prettify.css" />
+    <link rel="stylesheet" href="../../../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../../../index.html">All files</a> / <a href="index.html">iservice-app/app/components/Payment/PayOthersPostpaid</a> PayOthersPostpaid.component.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">52.17% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>12/23</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">14.29% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>1/7</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">40% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>2/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">57.14% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>12/21</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">38x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">38x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import Proptypes from 'prop-types';
+import React, {Component} from 'react';
+import typeMap from '../../../config/productTypeMap.config';
+import WrapperCard from '../../Shared/WrapperCard/WrapperCard.component';
+import {AmountText, Button, ISText} from '../../Shared';
+import {noop, result} from 'lodash';
+import {phoneNumberFormatter} from '../../../utils/common.util';
+import {ScrollView, View} from 'react-native';
+import {styles} from './PayOthersPostpaid.style';
+import {TMPostpaidProductCard, TOnlineProductCard, TVisionProductCard} from '../../BillUsage/BillUsage/ProductCards';
+import {translate} from '../../../language/i18n/helper';
+&nbsp;
+class PayOthersPostpaid extends Component {
+  getProductCard = () =&gt; {
+    const {product, dueBills, toggleProductCheck, toggleProductCollapse, onBillDetailsClick, toggleBillDetailCheck} = this.props;
+    const {productId, productType, accountId, isCollapsed, balance, statusCode, isChecked} = product;
+    const phoneNumber = phoneNumberFormatter(productId);
+    const dueBillsForProduct = result(dueBills, `${accountId}`);
+    const oncheckToggle = <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >toggleProductCheck();</span>
+    const onCollapseToggle = <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >toggleProductCollapse(!isCollapsed, accountId);</span>
+    switch (productType) {
+    case 'TrueMoveH' : {
+<span class="cstat-no" title="statement not covered" >      return (&lt;TMPostpaidProductCard phone={phoneNumber} amount={balance} statusCode={statusCode} dueBills={dueBillsForProduct} isCollapsed={isCollapsed}</span>
+        onCollapseToggle={onCollapseToggle} onChecked={oncheckToggle} isChecked={isChecked} onBillDetailsClick={onBillDetailsClick} toggleBillDetailCheck={toggleBillDetailCheck(accountId)} isOthers={true}/&gt;);
+    }
+    case 'TrueOnline': {
+<span class="cstat-no" title="statement not covered" >      return (&lt;TOnlineProductCard phone={phoneNumber} amount={balance} statusCode={statusCode} dueBills={dueBillsForProduct} isCollapsed={isCollapsed}</span>
+        onCollapseToggle={onCollapseToggle} onChecked={oncheckToggle} isChecked={isChecked} onBillDetailsClick={onBillDetailsClick} toggleBillDetailCheck={toggleBillDetailCheck(accountId)} isOthers={true}/&gt;);
+    }
+    case 'TrueVision': {
+<span class="cstat-no" title="statement not covered" >      return (&lt;TVisionProductCard phone={phoneNumber} amount={balance} statusCode={statusCode} dueBills={dueBillsForProduct} isCollapsed={isCollapsed}</span>
+        onCollapseToggle={onCollapseToggle} onChecked={oncheckToggle} isChecked={isChecked} onBillDetailsClick={onBillDetailsClick} toggleBillDetailCheck={toggleBillDetailCheck(accountId)} isOthers={true}/&gt;);
+    }
+    }
+  }
+&nbsp;
+  navigateToPayments = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+    const {product: {productType, accountId, isChecked, checkedBillSum}, goToScreen, setPaymentItems} = <span class="cstat-no" title="statement not covered" >this.props;</span>
+    const accountNumber = <span class="cstat-no" title="statement not covered" >accountId;</span>
+<span class="cstat-no" title="statement not covered" >    if (isChecked) {</span>
+      const productToPay = <span class="cstat-no" title="statement not covered" >[{</span>
+        service: typeMap[productType],
+        amount: checkedBillSum,
+        accountNumber
+      }];
+<span class="cstat-no" title="statement not covered" >      setPaymentItems(productToPay);</span>
+<span class="cstat-no" title="statement not covered" >      goToScreen('Payment');</span>
+    }
+  }
+&nbsp;
+  render () {
+    const {product} = this.props;
+    const totalAmount = product.isChecked ? <span class="branch-0 cbranch-no" title="branch not covered" >product.checkedBillSum </span>: 0;
+    return (
+      &lt;ScrollView contentContainerStyle={styles.container}&gt;
+        &lt;WrapperCard style={styles.wrapperCard} contentContainerStyles={styles.contentContainer}&gt;
+          &lt;View style={styles.totalBillSection}&gt;
+            &lt;View&gt;
+              &lt;ISText style={styles.postpaidTitleText}&gt;{translate('BILLS_USAGE_TOTAL')}&lt;/ISText&gt;
+              &lt;AmountText style={styles.totalAmount} value={totalAmount} isTotalText/&gt;
+            &lt;/View&gt;
+            &lt;Button text={translate('BILLS_USAGE_PAY')} disabled={!totalAmount} textStyle={styles.buttonText} style={styles.buttonStyle} onPress={this.navigateToPayments}/&gt;
+          &lt;/View&gt;
+          {this.getProductCard()}
+        &lt;/WrapperCard&gt; 
+      &lt;/ScrollView&gt;
+    );
+  }
+}
+PayOthersPostpaid.defaultProps = {
+  dueBills: {},
+  product: {},
+  toggleProductCheck: noop,
+  goToScreen: noop,
+  setPaymentItems: noop
+};
+PayOthersPostpaid.propTypes = {
+  product: Proptypes.object.isRequired,
+  dueBills: Proptypes.object,
+  toggleProductCheck: Proptypes.func,
+  toggleProductCollapse: Proptypes.func,
+  toggleBillDetailCheck: Proptypes.func,
+  onBillDetailsClick: Proptypes.func,
+  setPaymentItems: Proptypes.func,
+  goToScreen: Proptypes.func
+};
+export default PayOthersPostpaid;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun Dec 03 2017 16:14:06 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../../../sorter.js"></script>
+</body>
+</html>

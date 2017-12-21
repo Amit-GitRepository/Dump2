@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/8eaf85993fcf96451ae9714f521fe0ad2e7f31f5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="18da012dae25653123d00a4231b24a41ad4e0fa3">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_b17d9d0869c278b27d9747617617f895dfad0b24.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/cc185ca96025ad313b79254dc6727bca0ee56b71/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_39e7494727a21bd0ee25ffaa0170a41b0fc463c9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/9562fc63654e2b77cb9d93a326e2ad67e83c9d10/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="17fa9f5dc37e02396df44e6486e180a568e7a678">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_794130e0e6fb66f6357ecfda3cc65be85734d224.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-google-analytics-bridge/android/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="793bbddf152bfcd25ce35c8528e1d2d1e20b8166">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_c47051831c7cc0494f273756ddc4b765e9475400.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_4aefc071921638ae50cc4abd242a3e17d297ea46.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_fc3509a64ece05b7f503ecc43946e68cfe759f8c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/cbeb08421b83506e15feb32c493456bc188eaa8e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="20d6aa9a18ea9833cd2bee95dff7cd303cdb80e4">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_2be5eee37287078e2062bf28ba1fb58a7eedf0e0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-exception-handler/android/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c4b0ac7231b9ecfd6138fb52c1c8431d7d2f6603">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_c8b2777402ce6b94e33cf01a0f0ab4e07223079c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/b249d1000738d561ca12a8042282c7a05b1bbd98/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="52339832d252da4328c5ffcacbc205268346362a">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_48808a0c3a52cc49fe6ce4c402fe37060b6d286f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/ed54b264f39fc14869b264eac28e76ae388ee9ea/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2d45b277afdf55bcfdc005c03c0c2f1733aaa1b0">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_b3c312b12a92e42150cd94a0098675315d244b2f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/96e55e0a088c4708213547d932a0444aedc899a1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_abbfd8d124407c9e6354d7e78caeac617e52162e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/66053fbe5d9f6f81e11f6e14947c3cd5f994572c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_0daa88b4c91347a369f04d74f9a0923c832d30cd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-i18n/android/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="89075ff9a907af843ffb29e0c882230eb331739d">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_56ceb07e697620983cd4d05900aebba14bd7de54.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/98d3e53c6f3e148c7d1c90f84e05215dc8f2ea83/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_057d8a067410b182abe9d674f218fee42ef3bdd7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/d94f7259bb4ba654e6919a261c170e4e6e2e66ae/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2c4a5fe00c1a8c2f64d175cd055140b133ca6700">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_08a8e824ec837bbde8c66bf2366c67f415935fe2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/ac970c61f4457ee04bfb962851a7f87b32c3d86e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_d5bd1d9d2dbaefad403d4e79fe2f9942d67fedb3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/0a3acf094f36dd8ec61f44d73103b3711d136def/output/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_ed7c0da68088dfc11b4b92b93bf51a96363676da.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-fetch-blob/android/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5aca1188aec5f45a7580589b8537e9a8a4d9a86f">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_f54be848b88a70833d9f75a8cf49f5716ddf2269.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_e74e16d055f38c813caca45cba44e04e8dd673e2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/okio-1.13.0_fc3509a64ece05b7f503ecc43946e68cfe759f8c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_4aefc071921638ae50cc4abd242a3e17d297ea46.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/7077b7ef21c875a48c5d5836648622a4c8475767/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8040d53ecd4bd895360eafdc25e1c1cc9479e6aa">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_a0a9a4c8b81d3171a06b99feab1f8a77c7bdd94c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-config/android/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d6390ebf644a8579ec0d799807b6aff9677bf1a7">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_8968ae499ed08bbc54541575bbcac720aa050aff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/8daed70a8d398be48903db796caf714fa26dad09/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_548969ffb6362fbb89ad7b1a9df9c9ff6556d534.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/support-annotations-25.2.0_6fb1515cbefbb37b7ff2904d3177af31d8c04db7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/ec212d9f6238d5f41677c1c7b54a0993ea25100e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_885383bd812ac099cebf2a044e8a507590f6f16f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-version-number/android/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5a72de1bb1beab805c298882eefdade6e1725425">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_c3379476629154d403b78e3225e90c15767adefb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_c4e58565ce6149511c08753348039fbb36e65cfb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-splash-screen/android/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="42a9c4bbafd1cb478e1a8f540fc3609c83745df8">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_683711958baea3b4d2dc47715d8370fde56aada9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/cb792c7f1e88de18b7c0df894188875f0fbb64c6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_caa30b255ebe75376ea161490a411ccbe8564d1b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-vector-icons/android/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f2cf527de8d0bd35d72088fafea02395ba4a9eec">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_10b65b538ad9dd11c97ba69cb839429581057e66.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/7aa75eb71eb669c1c1d00bea7904c39e13e802d4/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f7d9191c1b60474d0e5a2deae89e3b8ba1f5cbfe">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_01ad132e9a464050c546a5dc98a9afd3948f7cc7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/53076178eac197565b5cfdceaf6068f6daf12e94/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2e36f9efacfe41041bd2570e285ed2c49c96ba9c">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_159bbb1b7881aff63f4dc6d480a22f014591c647.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/bd81421ffa3376ec1fbc6bdf8d8b5954e3b6efd5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bed98ea7af8c5c4202820875e856dd3eb296e22d">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_512e49de71f90589cee659f46235caae88534f66.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/0a3acf094f36dd8ec61f44d73103b3711d136def/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="24303e5ddb2c1210dd7e8db9dbab018f50313e48">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_1308ca166864860f25dd755c263ec402350da534.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/ceace5c0cc688fc1eed6a8b977efcfd19b5a9c1b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e57811edcf98c8efc8db63a03f7e07116abfde1a">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_55ae86561c133c93ceaa545eaa35f228ce8d37fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/45916b6efed9c763a3e3496e550b48334e73788b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_83adbffc13d3d2be8680fe83b61d789ac0713e37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/d936407d70672152ddd463ee6fa563b2f0527fe8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="73c80b05a390e8319d1ef7a236739cd610c8f774">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_b8c7f44f0459fd5ad82946663839b48d05aaa123.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_c4e58565ce6149511c08753348039fbb36e65cfb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/9e3284d412edfaa1d21ab902cd33cd00a083700b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="003f59e51b07a10a2a7a0bd33c9eb0393c33b502">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_8a3188ca4eb4557e67d0effa204f4e590fceb27b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/d7e122b1e9eef035899887ff4bc2b8a825bda72c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c2cadea4d8a1a5b5c4e5f0dc99a99a43774f5e6e">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_38d0898434f089e3b7c079cb665b23fa7640be7e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/8ea5e7b1c99121b1e374710f66bb35ba54059bd3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2f552156e824f318819b664ab932f61d12cfa2f4">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_0b5c9201172359f051f2bee815cecb0b040227ab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-restart/android/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a9aed5b8b8aa0ee96e5d90b4b447d67a407cac54">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_c8c74cacbebc9118a2ed1c9af412c20042c67870.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/a809a5065dc9be3bf44bc94f1d8e8e4457cf2ff1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_ec5e1981294cbf43edf194eb9a5876b01c603892.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_215341acf22cebd7b16ccb70df7a801134bfe91c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_cb7f2872eff31a2defe1c9741a668f8baf24fc2c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/javax.inject-1_cb7f2872eff31a2defe1c9741a668f8baf24fc2c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/69347a2bcdbe11a9ace5cd418042b00fc58fa4b0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1fe407e2c2c171ea85e119168c680c1ded76c84f">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_79dc64f0b42e05a9693d44bdde678f0a955fc84d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_c3f77641faf9f5909fd2f2b1255b436d2433995b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-maps/lib/android/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5ab151698a7278176c9e6a60b6e18dbb4bebdf9f">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_c2f76527121b0748702b033354bfe3030133b441.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/3bd68dd3800222136f8b4d5d1da519b6447b082c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_51f5e87c0f7bfe4bd86117c031aa390865d183f7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/0ef00a90abcf9e20e36833c0983a3c43f72ef5cf/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_0081d7586a16ba414927997da2cbdd23f4ac9d13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/78c726dff95d091e4ce59f9788756d1cdf5bee47/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c7e735784c9853573e457db7a841ab4a35c41ee7">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_864e7d53c656644ecf92e17f3455a3634b19eeba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_215341acf22cebd7b16ccb70df7a801134bfe91c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-linear-gradient/android/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b1de8f75805268154da5e88bb6195760b9d8966f">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_2c8dd6d0033b78ef564079c3badbcf922f11e326.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-firebase/android/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="91e15e11d5e6968655745ec33e4e7a4cf875da5c">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_d8fac8b5d38ea894e5f3104b2c54b5386f384f3c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/cb9afaf60ade82cbf08ac1af6c7af1c76659ce64/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_11a0c38a4e51d97ba205314c176823f9335446e0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/dc2fd1c34d71e43902449ee241bd2d648fa119ea/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_1f719d87a6a2dc96a5552f61504b6d1cf8293813.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.0/5871fb60dc68d67da54a663c3fd636a10a532948/jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/jsr305-3.0.0_c3f77641faf9f5909fd2f2b1255b436d2433995b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/bacb29355d4f9e9ca44905759e69b508792da56d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f1aed7a5811b8700106be0286ac8e440e07ceeeb">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_8c50c7786102c50481c8452390ce8c1e675633fd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/54ba27da6c001929ed9396cf5788b3452791d3e8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6e6b94b72d7912a627fb1629c310b2bca9261f06">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_9a8273a13cd4d9168dfb7b368d31a5a05284feca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/2db8ae1802dd19503391a214c077b7900daee8b3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_ae90974885524ec6dcbb81300920f98b5a9dbd4a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-testfairy/android/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ac501c3251edbd2e089fbb106a132133f04d5838">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_828684700a89d32e1850f7d114e69f96ee94d28e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/iTrueService/DevCode/iservice-app/node_modules/react-native-device-info/android/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2e4336ffc2b7653868134d7f6f8b28523ef54645">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_62fde03bf526e8da08f967987f583070f70364d7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/99a3c9414ec9bba96a421621d54e5c6e273438e4/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5f1054add84f2844e5a809ef162c2a1a3fe81718">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_ef6d3b520afadc49803527399ac9610ef000715c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/621fe603f0e844d788e210e7748336a61d2d3e05/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="643a2fd3bd06c44be5d20efc0ba4ca02036d2c8a">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_11b1374882c9622c36c1c59b58be7d98e7f9e35b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.gradle/caches/modules-2/files-2.1/com.facebook.fbui.textlayoutbuilder/staticlayout-proxy/1.0/f162442a19fff13995fbd51ba414d9ee05579080/staticlayout-proxy-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/staticlayout-proxy-1.0_e74e16d055f38c813caca45cba44e04e8dd673e2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/66d13c95f368746ee06e64022a47d7c353fda792/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6555c483abcdcc71ef5f1d47bb1ff3fee35ef1b2">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_80e8ae018752cb64f8cd8fc700003bb9de9265d3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/e0580ce0f404484a4dd767ef56218c62c7f7d098/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_c614b05db4e291d422fae78d38eeba430432812a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/822e04dfae0c6f054c9e13e21317c79665ba65b5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5f519b8c692038a47ee404b6ea6b847f6402000c">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_663d0212d78544424897b7d28793d98b57178e99.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/06647e511cc199f549f595f64565fb2f78ec3427/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="48fe715b1ee9f4c8c7899d0eddcfa8d27f7287e5">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_7e359a9395289e2500c827189696dc203d7012c9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/support-annotations-25.2.0_6fb1515cbefbb37b7ff2904d3177af31d8c04db7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/amitkumar/.android/build-cache/1a5e1c8f6a97dbfc46cf6c8f9d7a7abc10f6ebb2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/amitkumar/iTrueService/DevCode/iservice-app/android/app/build/intermediates/pre-dexed/debug/classes_e553ab47a4ac1b0d7dcfc0fef38d49465f4fd1b7.jar" />
+    </item>
+
+</items>

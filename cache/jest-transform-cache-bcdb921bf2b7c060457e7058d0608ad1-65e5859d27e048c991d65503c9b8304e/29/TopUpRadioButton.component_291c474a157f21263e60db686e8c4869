@@ -1,0 +1,38 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_284h18gy19=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/TopUpRadioButton.component.js',hash='36ffaaa27c2f4c30da0f4bf8d59230a8be8ad423',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/TopUpRadioButton.component.js',statementMap:{'0':{start:{line:11,column:33},end:{line:11,column:43}},'1':{start:{line:12,column:4},end:{line:12,column:23}},'2':{start:{line:15,column:28},end:{line:15,column:38}},'3':{start:{line:16,column:34},end:{line:16,column:74}},'4':{start:{line:17,column:29},end:{line:17,column:77}},'5':{start:{line:18,column:4},end:{line:23,column:20}},'6':{start:{line:26,column:0},end:{line:31,column:2}},'7':{start:{line:32,column:0},end:{line:37,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:10,column:13},end:{line:10,column:14}},loc:{start:{line:10,column:19},end:{line:13,column:3}},line:10},'1':{name:'(anonymous_1)',decl:{start:{line:14,column:2},end:{line:14,column:3}},loc:{start:{line:14,column:12},end:{line:24,column:3}},line:14}},branchMap:{'0':{loc:{start:{line:16,column:34},end:{line:16,column:74}},type:'cond-expr',locations:[{start:{line:16,column:43},end:{line:16,column:56}},{start:{line:16,column:59},end:{line:16,column:74}}],line:16},'1':{loc:{start:{line:17,column:29},end:{line:17,column:77}},type:'cond-expr',locations:[{start:{line:17,column:38},end:{line:17,column:55}},{start:{line:17,column:58},end:{line:17,column:77}}],line:17},'2':{loc:{start:{line:21,column:24},end:{line:21,column:50}},type:'cond-expr',locations:[{start:{line:21,column:33},end:{line:21,column:39}},{start:{line:21,column:42},end:{line:21,column:50}}],line:21}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0},f:{'0':0,'1':0},b:{'0':[0,0],'1':[0,0],'2':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _ISText=require('../../../Shared/ISText/ISText.component');var _ISText2=_interopRequireDefault(_ISText);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _TopUpRadioButton=require('./TopUpRadioButton.style');var _TopUpRadioButton2=_interopRequireDefault(_TopUpRadioButton);
+var _Touchable=require('../../../Shared/Touchable/Touchable.component');var _Touchable2=_interopRequireDefault(_Touchable);
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+TopUpRadioButton=function(_Component){_inherits(TopUpRadioButton,_Component);function TopUpRadioButton(){var _ref;var _temp,_this,_ret;_classCallCheck(this,TopUpRadioButton);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=TopUpRadioButton.__proto__||Object.getPrototypeOf(TopUpRadioButton)).call.apply(_ref,[this].concat(args))),_this),_this.
+onToggle=function(){cov_284h18gy19.f[0]++;var _ref2=(cov_284h18gy19.s[0]++,
+_this.props),radioSelect=_ref2.radioSelect,value=_ref2.value;cov_284h18gy19.s[1]++;
+radioSelect(value);
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(TopUpRadioButton,[{key:'render',value:function render()
+{cov_284h18gy19.f[1]++;var _ref3=(cov_284h18gy19.s[2]++,
+this.props),active=_ref3.active,label=_ref3.label;
+var activeContainerStyles=(cov_284h18gy19.s[3]++,active?(cov_284h18gy19.b[0][0]++,_TopUpRadioButton2.default.active):(cov_284h18gy19.b[0][1]++,_TopUpRadioButton2.default.inactive));
+var activeTextStyles=(cov_284h18gy19.s[4]++,active?(cov_284h18gy19.b[1][0]++,_TopUpRadioButton2.default.activeText):(cov_284h18gy19.b[1][1]++,_TopUpRadioButton2.default.inactiveText));cov_284h18gy19.s[5]++;
+return(
+_react2.default.createElement(_Touchable2.default,{onPress:this.onToggle,style:_TopUpRadioButton2.default.clickableBox},
+_react2.default.createElement(_reactNative.View,{style:[_TopUpRadioButton2.default.container,activeContainerStyles]},
+_react2.default.createElement(_ISText2.default,{type:active?(cov_284h18gy19.b[2][0]++,'BOLD'):(cov_284h18gy19.b[2][1]++,'MEDIUM'),style:[_TopUpRadioButton2.default.text,activeTextStyles]},label))));
+
+
+}}]);return TopUpRadioButton;}(_react.Component);cov_284h18gy19.s[6]++;
+
+TopUpRadioButton.defaultProps={
+active:false,
+label:'',
+value:'',
+radioSelect:_noop2.default};cov_284h18gy19.s[7]++;
+
+TopUpRadioButton.propTypes={
+active:_propTypes2.default.bool,
+label:_propTypes2.default.string,
+value:_propTypes2.default.string,
+radioSelect:_propTypes2.default.func};exports.default=
+
+TopUpRadioButton;

@@ -1,0 +1,49 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1th59psrt6=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/Button/Button.component.js',hash='f5d0d00c0176fa5f05aa2bc1cf65f3772a7e1e98',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/Shared/Button/Button.component.js',statementMap:{'0':{start:{line:11,column:15},end:{line:24,column:1}},'1':{start:{line:12,column:17},end:{line:12,column:82}},'2':{start:{line:13,column:25},end:{line:13,column:106}},'3':{start:{line:14,column:2},end:{line:23,column:4}},'4':{start:{line:26,column:0},end:{line:35,column:2}},'5':{start:{line:37,column:0},end:{line:47,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:11,column:15},end:{line:11,column:16}},loc:{start:{line:11,column:101},end:{line:24,column:1}},line:11}},branchMap:{'0':{loc:{start:{line:13,column:25},end:{line:13,column:106}},type:'cond-expr',locations:[{start:{line:13,column:36},end:{line:13,column:78}},{start:{line:13,column:81},end:{line:13,column:106}}],line:13},'1':{loc:{start:{line:15,column:44},end:{line:15,column:69}},type:'cond-expr',locations:[{start:{line:15,column:55},end:{line:15,column:59}},{start:{line:15,column:62},end:{line:15,column:69}}],line:15},'2':{loc:{start:{line:18,column:11},end:{line:18,column:86}},type:'cond-expr',locations:[{start:{line:18,column:22},end:{line:18,column:79}},{start:{line:18,column:82},end:{line:18,column:86}}],line:18}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0},f:{'0':0},b:{'0':[0,0],'1':[0,0],'2':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _Icon=require('../Icon/Icon.component');var _Icon2=_interopRequireDefault(_Icon);
+var _ISText=require('../ISText/ISText.component');var _ISText2=_interopRequireDefault(_ISText);
+var _merge=require('lodash/merge');var _merge2=_interopRequireDefault(_merge);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _Touchable=require('../Touchable/Touchable.component');var _Touchable2=_interopRequireDefault(_Touchable);
+var _reactNative=require('react-native');
+var _Button=require('./Button.styles');var ButtonStyles=_interopRequireWildcard(_Button);function _interopRequireWildcard(obj){if(obj&&obj.__esModule){return obj;}else{var newObj={};if(obj!=null){for(var key in obj){if(Object.prototype.hasOwnProperty.call(obj,key))newObj[key]=obj[key];}}newObj.default=obj;return newObj;}}function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}cov_1th59psrt6.s[0]++;
+
+var Button=function Button(_ref){var text=_ref.text,type=_ref.type,iconName=_ref.iconName,style=_ref.style,disabled=_ref.disabled,iconStyle=_ref.iconStyle,textStyle=_ref.textStyle,textType=_ref.textType,onPress=_ref.onPress;cov_1th59psrt6.f[0]++;
+var styles=(cov_1th59psrt6.s[1]++,(0,_merge2.default)({},ButtonStyles.baseStyles,ButtonStyles[type+'Styles']));
+var touchableStyle=(cov_1th59psrt6.s[2]++,disabled?(cov_1th59psrt6.b[0][0]++,[styles.container,style,styles.disabled]):(cov_1th59psrt6.b[0][1]++,[styles.container,style]));cov_1th59psrt6.s[3]++;
+return(
+_react2.default.createElement(_Touchable2.default,{disabled:disabled,onPress:disabled?(cov_1th59psrt6.b[1][0]++,_noop2.default):(cov_1th59psrt6.b[1][1]++,onPress)},
+_react2.default.createElement(_reactNative.View,{style:touchableStyle},
+_react2.default.createElement(_reactNative.View,{style:styles.wrapper},
+iconName?(cov_1th59psrt6.b[2][0]++,_react2.default.createElement(_Icon2.default,{style:[styles.icon,iconStyle],name:iconName})):(cov_1th59psrt6.b[2][1]++,null),
+_react2.default.createElement(_ISText2.default,{type:textType,style:[styles.text,textStyle]},text)))));
+
+
+
+
+};cov_1th59psrt6.s[4]++;
+
+Button.defaultProps={
+style:{},
+iconStyle:{},
+textStyle:{},
+textType:'BOLD',
+text:'',
+iconName:null,
+onPress:_noop2.default,
+type:'primary'};cov_1th59psrt6.s[5]++;
+
+
+Button.propTypes={
+style:_propTypes2.default.object,
+iconStyle:_propTypes2.default.object,
+textStyle:_propTypes2.default.object,
+text:_propTypes2.default.string,
+iconName:_propTypes2.default.string,
+type:_propTypes2.default.oneOf(['primary','secondary','inline']),
+disabled:_propTypes2.default.bool,
+onPress:_propTypes2.default.func,
+textType:_propTypes2.default.oneOf(['REGULAR','BOLD','LIGHT','MEDIUM','SEMIBOLD','THIN'])};exports.default=
+
+
+Button;

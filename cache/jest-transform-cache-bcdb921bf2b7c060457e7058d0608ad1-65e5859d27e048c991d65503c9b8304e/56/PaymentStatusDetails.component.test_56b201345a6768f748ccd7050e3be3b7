@@ -1,0 +1,19 @@
+
+
+
+
+
+
+jest.mock('../../../../utils/moment.util',function(){
+var m=require('moment');
+return function(){return m('2017-11-25');};
+});var _PaymentStatusDetails=require('../PaymentStatusDetails.component');var _PaymentStatusDetails2=_interopRequireDefault(_PaymentStatusDetails);var _react=require('react');var _react2=_interopRequireDefault(_react);var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);var _enzyme=require('enzyme');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+describe('PaymentStatusDetails component',function(){
+it('renders correctly',function(){
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_PaymentStatusDetails2.default,{onFormSubmit:jest.fn})).toJSON();
+expect(component).toMatchSnapshot();
+});
+});

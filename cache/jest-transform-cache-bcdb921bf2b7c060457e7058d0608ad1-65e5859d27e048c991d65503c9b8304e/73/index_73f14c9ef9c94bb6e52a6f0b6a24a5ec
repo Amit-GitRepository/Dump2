@@ -1,0 +1,1 @@
+Object.defineProperty(exports,"__esModule",{value:true});var _ExitOnDoubleBack=require('./src/ExitOnDoubleBack.component');var _ExitOnDoubleBack2=_interopRequireDefault(_ExitOnDoubleBack);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}exports.default=_ExitOnDoubleBack2.default;

@@ -1,0 +1,51 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.shadowInactiveStyle=exports.shadowActiveStyle=exports.statusBarStyle=exports.appContainerStyle=exports.errorTextStyle=exports.contentContainerStyle=exports.container=undefined;var cov_2405j9n08y=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/themes/application.styles.js',hash='0c4e7592e638734fa413dd63ff2bd1d18eb09a28',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/themes/application.styles.js',statementMap:{'0':{start:{line:5,column:25},end:{line:10,column:1}},'1':{start:{line:12,column:37},end:{line:16,column:1}},'2':{start:{line:18,column:30},end:{line:24,column:1}},'3':{start:{line:26,column:33},end:{line:28,column:1}},'4':{start:{line:30,column:30},end:{line:33,column:1}},'5':{start:{line:35,column:33},end:{line:43,column:1}},'6':{start:{line:45,column:35},end:{line:53,column:1}}},fnMap:{},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0},f:{},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _constants=require('./constants.styles');
+
+
+
+var container=exports.container=(cov_2405j9n08y.s[0]++,{
+flex:1,
+justifyContent:'center',
+alignItems:'center',
+backgroundColor:_constants.colors.GRAY_NURSE});
+
+
+var contentContainerStyle=exports.contentContainerStyle=(cov_2405j9n08y.s[1]++,{
+flexGrow:1,
+flexDirection:'column',
+justifyContent:'space-between'});
+
+
+var errorTextStyle=exports.errorTextStyle=(cov_2405j9n08y.s[2]++,{
+color:_constants.colors.PRIMARY_ACTIONABLE,
+textAlign:'center',
+paddingVertical:5,
+paddingBottom:10,
+fontSize:_constants.fonts.FONT_SIZE_SMALL});
+
+
+var appContainerStyle=exports.appContainerStyle=(cov_2405j9n08y.s[3]++,{
+flexGrow:1});
+
+
+var statusBarStyle=exports.statusBarStyle=(cov_2405j9n08y.s[4]++,{
+backgroundColor:_constants.colors.GRAY_NURSE,
+barStyle:'dark-content'});
+
+
+var shadowActiveStyle=exports.shadowActiveStyle=(cov_2405j9n08y.s[5]++,{
+shadowColor:_constants.colors.SHADOW,
+shadowOpacity:0.4,
+shadowRadius:4,
+shadowOffset:{
+width:1,
+height:2}});
+
+
+
+var shadowInactiveStyle=exports.shadowInactiveStyle=(cov_2405j9n08y.s[6]++,{
+shadowColor:_constants.colors.SHADOW,
+shadowOpacity:0.4,
+shadowRadius:3,
+shadowOffset:{
+width:1,
+height:2}});

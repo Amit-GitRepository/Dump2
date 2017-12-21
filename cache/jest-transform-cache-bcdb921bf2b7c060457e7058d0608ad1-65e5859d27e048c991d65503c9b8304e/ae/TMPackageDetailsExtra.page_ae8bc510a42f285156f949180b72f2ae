@@ -1,0 +1,34 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.mapStateToProps=undefined;var cov_15kjpbznp5=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/BillUsage/TMPackageDetailsExtra.page.js',hash='3058dceeab2634914937b15ca96b6e30c8471ae8',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/BillUsage/TMPackageDetailsExtra.page.js',statementMap:{'0':{start:{line:10,column:66},end:{line:10,column:100}},'1':{start:{line:11,column:27},end:{line:11,column:97}},'2':{start:{line:12,column:4},end:{line:17,column:6}},'3':{start:{line:21,column:0},end:{line:24,column:2}},'4':{start:{line:25,column:0},end:{line:28,column:2}},'5':{start:{line:30,column:31},end:{line:32,column:2}},'6':{start:{line:30,column:43},end:{line:32,column:1}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:9,column:2},end:{line:9,column:3}},loc:{start:{line:9,column:12},end:{line:18,column:3}},line:9},'1':{name:'(anonymous_1)',decl:{start:{line:30,column:31},end:{line:30,column:32}},loc:{start:{line:30,column:43},end:{line:32,column:1}},line:30}},branchMap:{'0':{loc:{start:{line:10,column:11},end:{line:10,column:28}},type:'default-arg',locations:[{start:{line:10,column:23},end:{line:10,column:28}}],line:10}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0},f:{'0':0,'1':0},b:{'0':[0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _TMPackageDetailsExtra=require('../../components/BillUsage/TMPackageDetailsExtra/TMPackageDetailsExtra.component');var _TMPackageDetailsExtra2=_interopRequireDefault(_TMPackageDetailsExtra);
+var _reactRedux=require('react-redux');
+var _common=require('../../utils/common.util');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+TMPackageDetailsExtraPage=function(_Component){_inherits(TMPackageDetailsExtraPage,_Component);function TMPackageDetailsExtraPage(){_classCallCheck(this,TMPackageDetailsExtraPage);return _possibleConstructorReturn(this,(TMPackageDetailsExtraPage.__proto__||Object.getPrototypeOf(TMPackageDetailsExtraPage)).apply(this,arguments));}_createClass(TMPackageDetailsExtraPage,[{key:'render',value:function render()
+{cov_15kjpbznp5.f[0]++;var _ref=(cov_15kjpbznp5.s[0]++,
+this.props.navigation.state.params),_ref$isPrepaid=_ref.isPrepaid,isPrepaid=_ref$isPrepaid===undefined?(cov_15kjpbznp5.b[0][0]++,false):_ref$isPrepaid,subscriberId=_ref.subscriberId,productType=_ref.productType,title=_ref.title;
+var productDetail=(cov_15kjpbznp5.s[1]++,(0,_result2.default)(this.props.productDetail,productType+'.'+subscriberId,{}));cov_15kjpbznp5.s[2]++;
+return(
+_react2.default.createElement(_TMPackageDetailsExtra2.default,{pricePlanInfo:(0,_result2.default)(productDetail,'PRICE_PLAN_INFO',{}),isPrepaid:isPrepaid,
+mainPackage:(0,_result2.default)(productDetail,'BUNDLE_USAGE.MAIN_PACKAGE',[]),extraPackage:(0,_result2.default)(productDetail,'BUNDLE_USAGE.EXTRA_PACKAGE',[]),
+billCycle:(0,_result2.default)(productDetail,'BUNDLE_USAGE.BILL_CYCLE',{}),creditLimit:(0,_result2.default)(productDetail,'BUNDLE_USAGE.CREDIT_LIMIT',''),
+offerDesc:(0,_result2.default)(productDetail,'BUNDLE_USAGE.OFFER_DESC',''),phoneNumber:(0,_common.unformatPhoneNumber)(title)}));
+
+}}]);return TMPackageDetailsExtraPage;}(_react.Component);cov_15kjpbznp5.s[3]++;
+
+
+TMPackageDetailsExtraPage.defaultProps={
+navigation:{},
+productDetail:{}};cov_15kjpbznp5.s[4]++;
+
+TMPackageDetailsExtraPage.propTypes={
+navigation:_propTypes2.default.object,
+productDetail:_propTypes2.default.object};cov_15kjpbznp5.s[5]++;
+
+
+var mapStateToProps=exports.mapStateToProps=function mapStateToProps(state){cov_15kjpbznp5.f[1]++;cov_15kjpbznp5.s[6]++;return{
+productDetail:(0,_result2.default)(state,'billUsage.productDetail',{})};
+};exports.default=
+
+(0,_reactRedux.connect)(mapStateToProps)(TMPackageDetailsExtraPage);

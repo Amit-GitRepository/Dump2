@@ -1,0 +1,11 @@
+var _reduxSagaTesting=require('redux-saga-testing');var _reduxSagaTesting2=_interopRequireDefault(_reduxSagaTesting);
+var _effects=require('redux-saga/effects');
+var _firebase=require('../firebase.saga');
+var _firebase2=require('../../../utils/firebase.util');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('Firebase Saga: Testing the firebase Saga',function(){
+var it=(0,_reduxSagaTesting2.default)((0,_firebase.initializeFirebase)());
+it('Should setup firebase',function(result){
+expect(result).toEqual((0,_effects.call)(_firebase2.setupFirebase));
+});
+});

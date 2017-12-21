@@ -1,0 +1,29 @@
+var _PrepaidCard=require('../PrepaidCard.component');var _PrepaidCard2=_interopRequireDefault(_PrepaidCard);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);
+var _enzyme=require('enzyme');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+describe('PrepaidCard component',function(){
+it('renders correctly',function(){
+Date.now=jest.fn(function(){return 1482363367071;});
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_PrepaidCard2.default,null)).toJSON();
+expect(component).toMatchSnapshot();
+});
+it('should shallow render with default props',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_PrepaidCard2.default,null));
+expect(wrapper).toBeDefined();
+});
+it('should navigate to extra package detail screen',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_PrepaidCard2.default,{goToScreen:jest.fn()}));
+wrapper.instance().navigateToExtraPackage();
+expect(wrapper.instance().props.goToScreen).toHaveBeenCalled();
+});
+it('navigateToExtraPackage should callback to goToScreen with routeName',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_PrepaidCard2.default,{goToScreen:jest.fn(),phone:'0812577887'}));
+wrapper.instance().navigateToExtraPackage();
+expect(wrapper.instance().props.goToScreen).toHaveBeenLastCalledWith('TMPackageDetailsExtra',{'title':'081-257-7887'});
+});
+});

@@ -1,0 +1,11 @@
+var _PackageDetailHeader=require('../PackageDetailHeader.component');var _PackageDetailHeader2=_interopRequireDefault(_PackageDetailHeader);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('PackageDetailHeader component',function(){
+it('renders correctly',function(){
+var mockData={name:'pulkit',phoneNumber:'9629770174',endDate:'12',endMonth:'may'};
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_PackageDetailHeader2.default,{phoneNumber:mockData.phoneNumber,endDate:mockData.endDate,name:mockData.name,endMonth:mockData.endMonth}));
+expect(component).toMatchSnapshot();
+});
+});

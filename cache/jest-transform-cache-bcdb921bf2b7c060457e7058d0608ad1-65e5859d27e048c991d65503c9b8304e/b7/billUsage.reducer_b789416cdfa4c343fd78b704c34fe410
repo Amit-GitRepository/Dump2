@@ -1,0 +1,99 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1nus7du4la=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/reducers/billUsage.reducer.js',hash='10ae3769a1c2b6c94e4985febe20ea403ef17964',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/reducers/billUsage.reducer.js',statementMap:{'0':{start:{line:4,column:21},end:{line:25,column:1}},'1':{start:{line:27,column:32},end:{line:35,column:1}},'2':{start:{line:28,column:15},end:{line:33,column:5}},'3':{start:{line:28,column:49},end:{line:33,column:3}},'4':{start:{line:34,column:2},end:{line:34,column:14}},'5':{start:{line:38,column:2},end:{line:98,column:3}},'6':{start:{line:40,column:24},end:{line:40,column:90}},'7':{start:{line:41,column:16},end:{line:41,column:74}},'8':{start:{line:42,column:16},end:{line:42,column:74}},'9':{start:{line:43,column:17},end:{line:43,column:76}},'10':{start:{line:44,column:23},end:{line:44,column:88}},'11':{start:{line:45,column:4},end:{line:54,column:6}},'12':{start:{line:58,column:53},end:{line:58,column:67}},'13':{start:{line:59,column:29},end:{line:59,column:65}},'14':{start:{line:60,column:36},end:{line:65,column:6}},'15':{start:{line:61,column:6},end:{line:63,column:7}},'16':{start:{line:62,column:8},end:{line:62,column:45}},'17':{start:{line:64,column:6},end:{line:64,column:25}},'18':{start:{line:66,column:4},end:{line:66,column:99}},'19':{start:{line:70,column:40},end:{line:70,column:54}},'20':{start:{line:71,column:29},end:{line:71,column:65}},'21':{start:{line:72,column:36},end:{line:80,column:6}},'22':{start:{line:73,column:6},end:{line:75,column:7}},'23':{start:{line:74,column:8},end:{line:74,column:38}},'24':{start:{line:76,column:6},end:{line:78,column:7}},'25':{start:{line:77,column:8},end:{line:77,column:55}},'26':{start:{line:79,column:6},end:{line:79,column:30}},'27':{start:{line:81,column:4},end:{line:81,column:99}},'28':{start:{line:85,column:46},end:{line:85,column:60}},'29':{start:{line:86,column:25},end:{line:86,column:63}},'30':{start:{line:87,column:4},end:{line:87,column:38}},'31':{start:{line:88,column:4},end:{line:88,column:92}},'32':{start:{line:92,column:32},end:{line:92,column:46}},'33':{start:{line:93,column:25},end:{line:93,column:60}},'34':{start:{line:94,column:4},end:{line:94,column:107}},'35':{start:{line:97,column:4},end:{line:97,column:17}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:27,column:32},end:{line:27,column:33}},loc:{start:{line:27,column:49},end:{line:35,column:1}},line:27},'1':{name:'(anonymous_1)',decl:{start:{line:28,column:31},end:{line:28,column:32}},loc:{start:{line:28,column:49},end:{line:33,column:3}},line:28},'2':{name:'billUsage',decl:{start:{line:37,column:24},end:{line:37,column:33}},loc:{start:{line:37,column:65},end:{line:99,column:1}},line:37},'3':{name:'(anonymous_3)',decl:{start:{line:60,column:57},end:{line:60,column:58}},loc:{start:{line:60,column:74},end:{line:65,column:5}},line:60},'4':{name:'(anonymous_4)',decl:{start:{line:72,column:57},end:{line:72,column:58}},loc:{start:{line:72,column:74},end:{line:80,column:5}},line:72}},branchMap:{'0':{loc:{start:{line:30,column:13},end:{line:30,column:51}},type:'binary-expr',locations:[{start:{line:30,column:13},end:{line:30,column:44}},{start:{line:30,column:48},end:{line:30,column:51}}],line:30},'1':{loc:{start:{line:37,column:35},end:{line:37,column:55}},type:'default-arg',locations:[{start:{line:37,column:43},end:{line:37,column:55}}],line:37},'2':{loc:{start:{line:38,column:2},end:{line:98,column:3}},type:'switch',locations:[{start:{line:39,column:2},end:{line:55,column:3}},{start:{line:57,column:2},end:{line:67,column:3}},{start:{line:69,column:2},end:{line:82,column:3}},{start:{line:84,column:2},end:{line:89,column:3}},{start:{line:91,column:2},end:{line:95,column:3}},{start:{line:96,column:2},end:{line:97,column:17}}],line:38},'3':{loc:{start:{line:59,column:29},end:{line:59,column:65}},type:'binary-expr',locations:[{start:{line:59,column:29},end:{line:59,column:59}},{start:{line:59,column:63},end:{line:59,column:65}}],line:59},'4':{loc:{start:{line:61,column:6},end:{line:63,column:7}},type:'if',locations:[{start:{line:61,column:6},end:{line:63,column:7}},{start:{line:61,column:6},end:{line:63,column:7}}],line:61},'5':{loc:{start:{line:71,column:29},end:{line:71,column:65}},type:'binary-expr',locations:[{start:{line:71,column:29},end:{line:71,column:59}},{start:{line:71,column:63},end:{line:71,column:65}}],line:71},'6':{loc:{start:{line:73,column:6},end:{line:75,column:7}},type:'if',locations:[{start:{line:73,column:6},end:{line:75,column:7}},{start:{line:73,column:6},end:{line:75,column:7}}],line:73},'7':{loc:{start:{line:76,column:6},end:{line:78,column:7}},type:'if',locations:[{start:{line:76,column:6},end:{line:78,column:7}},{start:{line:76,column:6},end:{line:78,column:7}}],line:76},'8':{loc:{start:{line:86,column:25},end:{line:86,column:63}},type:'binary-expr',locations:[{start:{line:86,column:25},end:{line:86,column:57}},{start:{line:86,column:61},end:{line:86,column:63}}],line:86},'9':{loc:{start:{line:93,column:25},end:{line:93,column:60}},type:'binary-expr',locations:[{start:{line:93,column:25},end:{line:93,column:54}},{start:{line:93,column:58},end:{line:93,column:60}}],line:93}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0,'19':0,'20':0,'21':0,'22':0,'23':0,'24':0,'25':0,'26':0,'27':0,'28':0,'29':0,'30':0,'31':0,'32':0,'33':0,'34':0,'35':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0},b:{'0':[0,0],'1':[0],'2':[0,0,0,0,0,0],'3':[0,0],'4':[0,0],'5':[0,0],'6':[0,0],'7':[0,0],'8':[0,0],'9':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};exports.default=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+billUsage;var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);var _index=require('../actions/index.actions');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _defineProperty(obj,key,value){if(key in obj){Object.defineProperty(obj,key,{value:value,enumerable:true,configurable:true,writable:true});}else{obj[key]=value;}return obj;}var initialState=(cov_1nus7du4la.s[0]++,{productList:{'tmhPostpaid':[],'tol':[],'tvs':[],'conv':[],'tmhPrepaid':[]},productDetail:{'tmhPostpaid':{},'tol':{},'tvs':{},'tmhPrepaid':{}},billDetail:{'tmhPostpaid':{},'tol':{},'tvs':{},'tmhPrepaid':{},'conv':{}}});cov_1nus7du4la.s[1]++;var addAttributesToProducts=function addAttributesToProducts(productList){cov_1nus7du4la.f[0]++;var list=(cov_1nus7du4la.s[2]++,productList.map(function(eachProduct){cov_1nus7du4la.f[1]++;cov_1nus7du4la.s[3]++;return _extends({},eachProduct,{balance:(cov_1nus7du4la.b[0][0]++,parseFloat(eachProduct.balance))||(cov_1nus7du4la.b[0][1]++,0.0),isChecked:false,isCollapsed:true});}));cov_1nus7du4la.s[4]++;return list;};function billUsage(){var state=arguments.length>0&&arguments[0]!==undefined?arguments[0]:(cov_1nus7du4la.b[1][0]++,initialState);var action=arguments[1];cov_1nus7du4la.f[2]++;cov_1nus7du4la.s[5]++;
+switch(action.type){
+case _index.SET_BILL_USAGE_PRODUCT_LIST:cov_1nus7du4la.b[2][0]++;{
+var tmhPostpaid=(cov_1nus7du4la.s[6]++,addAttributesToProducts((0,_result2.default)(action,'payload.tmhPostpaid',[])));
+var tol=(cov_1nus7du4la.s[7]++,addAttributesToProducts((0,_result2.default)(action,'payload.tol',[])));
+var tvs=(cov_1nus7du4la.s[8]++,addAttributesToProducts((0,_result2.default)(action,'payload.tvs',[])));
+var conv=(cov_1nus7du4la.s[9]++,addAttributesToProducts((0,_result2.default)(action,'payload.conv',[])));
+var tmhPrepaid=(cov_1nus7du4la.s[10]++,addAttributesToProducts((0,_result2.default)(action,'payload.tmhPrepaid',[])));cov_1nus7du4la.s[11]++;
+return _extends({},
+state,{
+productList:{
+'tmhPostpaid':tmhPostpaid,
+'tol':tol,
+'tvs':tvs,
+'conv':conv,
+'tmhPrepaid':tmhPrepaid}});
+
+
+}
+
+case _index.SET_BILL_USAGE_PRODUCT_COLLAPSE_STATUS:cov_1nus7du4la.b[2][1]++;{var _ref=(cov_1nus7du4la.s[12]++,
+action.payload),productType=_ref.productType,subscriberId=_ref.subscriberId,isCollapsed=_ref.isCollapsed;
+var productGroupList=(cov_1nus7du4la.s[13]++,(cov_1nus7du4la.b[3][0]++,state.productList[productType])||(cov_1nus7du4la.b[3][1]++,[]));
+var updatedProductGroupList=(cov_1nus7du4la.s[14]++,productGroupList.map(function(eachProduct){cov_1nus7du4la.f[3]++;cov_1nus7du4la.s[15]++;
+if(eachProduct.subscriberId===subscriberId){cov_1nus7du4la.b[4][0]++;cov_1nus7du4la.s[16]++;
+return _extends({},eachProduct,{isCollapsed:isCollapsed});
+}else{cov_1nus7du4la.b[4][1]++;}cov_1nus7du4la.s[17]++;
+return eachProduct;
+}));cov_1nus7du4la.s[18]++;
+return _extends({},state,{productList:_extends({},state.productList,_defineProperty({},productType,updatedProductGroupList))});
+}
+
+case _index.TOGGLE_BILL_USAGE_PRODUCT_CHECK_STATUS:cov_1nus7du4la.b[2][2]++;{var _ref2=(cov_1nus7du4la.s[19]++,
+action.payload),_productType=_ref2.productType,_subscriberId=_ref2.subscriberId;
+var _productGroupList=(cov_1nus7du4la.s[20]++,(cov_1nus7du4la.b[5][0]++,state.productList[_productType])||(cov_1nus7du4la.b[5][1]++,[]));
+var _updatedProductGroupList=(cov_1nus7du4la.s[21]++,_productGroupList.map(function(eachProduct){cov_1nus7du4la.f[4]++;cov_1nus7du4la.s[22]++;
+if(_productType==='tmhPrepaid'){cov_1nus7du4la.b[6][0]++;cov_1nus7du4la.s[23]++;
+eachProduct.isChecked=false;
+}else{cov_1nus7du4la.b[6][1]++;}cov_1nus7du4la.s[24]++;
+if(eachProduct.subscriberId===_subscriberId){cov_1nus7du4la.b[7][0]++;cov_1nus7du4la.s[25]++;
+eachProduct.isChecked=!eachProduct.isChecked;
+}else{cov_1nus7du4la.b[7][1]++;}cov_1nus7du4la.s[26]++;
+return _extends({},eachProduct);
+}));cov_1nus7du4la.s[27]++;
+return _extends({},state,{productList:_extends({},state.productList,_defineProperty({},_productType,_updatedProductGroupList))});
+}
+
+case _index.SET_BILL_USAGE_PRODUCT_DETAIL:cov_1nus7du4la.b[2][3]++;{var _ref3=(cov_1nus7du4la.s[28]++,
+action.payload),_productType2=_ref3.productType,_subscriberId2=_ref3.subscriberId,data=_ref3.data;
+var productGroup=(cov_1nus7du4la.s[29]++,(cov_1nus7du4la.b[8][0]++,state.productDetail[_productType2])||(cov_1nus7du4la.b[8][1]++,{}));cov_1nus7du4la.s[30]++;
+productGroup[_subscriberId2]=data;cov_1nus7du4la.s[31]++;
+return _extends({},state,{productDetail:_extends({},state.productDetail,_defineProperty({},_productType2,productGroup))});
+}
+
+case _index.SET_BILL_USAGE_PRODUCT_BILL_DETAIL:cov_1nus7du4la.b[2][4]++;{var _ref4=(cov_1nus7du4la.s[32]++,
+action.payload),_productType3=_ref4.productType,_data=_ref4.data;
+var _productGroup=(cov_1nus7du4la.s[33]++,(cov_1nus7du4la.b[9][0]++,state.billDetail[_productType3])||(cov_1nus7du4la.b[9][1]++,{}));cov_1nus7du4la.s[34]++;
+return _extends({},state,{billDetail:_extends({},state.billDetail,_defineProperty({},_productType3,_extends(_productGroup,_data)))});
+}
+default:cov_1nus7du4la.b[2][5]++;cov_1nus7du4la.s[35]++;
+return state;}
+
+}

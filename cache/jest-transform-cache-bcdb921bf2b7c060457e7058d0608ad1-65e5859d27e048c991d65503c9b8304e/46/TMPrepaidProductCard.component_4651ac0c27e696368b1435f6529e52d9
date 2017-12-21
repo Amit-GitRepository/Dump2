@@ -1,0 +1,93 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_26me1yafrk=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/ProductCards/TMPrepaidProductCard/TMPrepaidProductCard.component.js',hash='8adb5bf8566dd35e1f3e06b39855fcfe8a88950c',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/ProductCards/TMPrepaidProductCard/TMPrepaidProductCard.component.js',statementMap:{'0':{start:{line:17,column:35},end:{line:19,column:3}},'1':{start:{line:18,column:4},end:{line:18,column:51}},'2':{start:{line:21,column:4},end:{line:23,column:5}},'3':{start:{line:22,column:6},end:{line:22,column:36}},'4':{start:{line:26,column:156},end:{line:26,column:166}},'5':{start:{line:27,column:24},end:{line:27,column:32}},'6':{start:{line:28,column:29},end:{line:28,column:47}},'7':{start:{line:29,column:21},end:{line:29,column:63}},'8':{start:{line:30,column:26},end:{line:30,column:53}},'9':{start:{line:31,column:30},end:{line:31,column:92}},'10':{start:{line:32,column:25},end:{line:32,column:143}},'11':{start:{line:33,column:26},end:{line:33,column:88}},'12':{start:{line:34,column:21},end:{line:34,column:65}},'13':{start:{line:35,column:21},end:{line:35,column:92}},'14':{start:{line:36,column:20},end:{line:36,column:124}},'15':{start:{line:37,column:31},end:{line:37,column:113}},'16':{start:{line:38,column:4},end:{line:59,column:6}},'17':{start:{line:63,column:0},end:{line:76,column:2}},'18':{start:{line:78,column:0},end:{line:91,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:17,column:25},end:{line:17,column:26}},loc:{start:{line:17,column:35},end:{line:19,column:3}},line:17},'1':{name:'(anonymous_1)',decl:{start:{line:17,column:35},end:{line:17,column:36}},loc:{start:{line:17,column:41},end:{line:19,column:3}},line:17},'2':{name:'(anonymous_2)',decl:{start:{line:20,column:30},end:{line:20,column:31}},loc:{start:{line:20,column:36},end:{line:24,column:3}},line:20},'3':{name:'(anonymous_3)',decl:{start:{line:25,column:2},end:{line:25,column:3}},loc:{start:{line:25,column:12},end:{line:60,column:3}},line:25}},branchMap:{'0':{loc:{start:{line:21,column:4},end:{line:23,column:5}},type:'if',locations:[{start:{line:21,column:4},end:{line:23,column:5}},{start:{line:21,column:4},end:{line:23,column:5}}],line:21},'1':{loc:{start:{line:21,column:8},end:{line:21,column:73}},type:'binary-expr',locations:[{start:{line:21,column:8},end:{line:21,column:36}},{start:{line:21,column:40},end:{line:21,column:73}}],line:21},'2':{loc:{start:{line:30,column:26},end:{line:30,column:53}},type:'cond-expr',locations:[{start:{line:30,column:41},end:{line:30,column:49}},{start:{line:30,column:52},end:{line:30,column:53}}],line:30},'3':{loc:{start:{line:32,column:34},end:{line:32,column:142}},type:'binary-expr',locations:[{start:{line:32,column:34},end:{line:32,column:80}},{start:{line:32,column:85},end:{line:32,column:142}}],line:32},'4':{loc:{start:{line:33,column:26},end:{line:33,column:88}},type:'cond-expr',locations:[{start:{line:33,column:39},end:{line:33,column:83}},{start:{line:33,column:86},end:{line:33,column:88}}],line:33},'5':{loc:{start:{line:35,column:21},end:{line:35,column:92}},type:'cond-expr',locations:[{start:{line:35,column:46},end:{line:35,column:85}},{start:{line:35,column:88},end:{line:35,column:92}}],line:35},'6':{loc:{start:{line:36,column:20},end:{line:36,column:124}},type:'cond-expr',locations:[{start:{line:36,column:37},end:{line:36,column:45}},{start:{line:36,column:48},end:{line:36,column:124}}],line:36},'7':{loc:{start:{line:37,column:31},end:{line:37,column:113}},type:'cond-expr',locations:[{start:{line:37,column:83},end:{line:37,column:85}},{start:{line:37,column:88},end:{line:37,column:113}}],line:37},'8':{loc:{start:{line:49,column:13},end:{line:53,column:26}},type:'cond-expr',locations:[{start:{line:49,column:30},end:{line:53,column:19}},{start:{line:53,column:22},end:{line:53,column:26}}],line:49},'9':{loc:{start:{line:54,column:13},end:{line:54,column:129}},type:'cond-expr',locations:[{start:{line:54,column:27},end:{line:54,column:122}},{start:{line:54,column:125},end:{line:54,column:129}}],line:54}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0},f:{'0':0,'1':0,'2':0,'3':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0],'4':[0,0],'5':[0,0],'6':[0,0],'7':[0,0],'8':[0,0],'9':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _BaseProductCollapsibleBar=require('../BaseProductCollapsibleBar/BaseProductCollapsibleBar.component');var _BaseProductCollapsibleBar2=_interopRequireDefault(_BaseProductCollapsibleBar);
+var _CurrentUsageTM=require('../../../BillUsage/BillUsageShared/CurrentUsageTM/CurrentUsageTM.component');var _CurrentUsageTM2=_interopRequireDefault(_CurrentUsageTM);
+var _isEmpty=require('lodash/isEmpty');var _isEmpty2=_interopRequireDefault(_isEmpty);
+var _moment=require('../../../../../utils/moment.util');var _moment2=_interopRequireDefault(_moment);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _ProductCardTitle=require('../../BillUsageShared/ProductCardTitle/ProductCardTitle.component');var _ProductCardTitle2=_interopRequireDefault(_ProductCardTitle);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _TMPrepaidProductCard=require('./TMPrepaidProductCard.style');var _TMPrepaidProductCard2=_interopRequireDefault(_TMPrepaidProductCard);
+var _Shared=require('../../../../Shared');
+var _billUsage=require('../../../../../config/billUsage.config');
+var _helper=require('../../../../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+TMPrepaidProductCard=function(_Component){_inherits(TMPrepaidProductCard,_Component);function TMPrepaidProductCard(){var _ref;var _temp,_this,_ret;_classCallCheck(this,TMPrepaidProductCard);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=TMPrepaidProductCard.__proto__||Object.getPrototypeOf(TMPrepaidProductCard)).call.apply(_ref,[this].concat(args))),_this),_this.
+navigateToBillDetail=function(bill){cov_26me1yafrk.f[0]++;cov_26me1yafrk.s[0]++;return function(){cov_26me1yafrk.f[1]++;cov_26me1yafrk.s[1]++;
+_this.props.goToScreen('TMoveBillDetail',bill);
+};},_this.
+componentWillReceiveProps=function(){cov_26me1yafrk.f[2]++;cov_26me1yafrk.s[2]++;
+if((cov_26me1yafrk.b[1][0]++,_this.props.validateOTPStatus)&&(cov_26me1yafrk.b[1][1]++,(0,_isEmpty2.default)(_this.props.productDetail))){cov_26me1yafrk.b[0][0]++;cov_26me1yafrk.s[3]++;
+_this.props.onCollapseToggle();
+}else{cov_26me1yafrk.b[0][1]++;}
+},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(TMPrepaidProductCard,[{key:'render',value:function render()
+{cov_26me1yafrk.f[3]++;var _ref2=(cov_26me1yafrk.s[4]++,
+this.props),phone=_ref2.phone,amount=_ref2.amount,expiryDate=_ref2.expiryDate,onRadioSelect=_ref2.onRadioSelect,isSelected=_ref2.isSelected,isCollapsed=_ref2.isCollapsed,onCollapseToggle=_ref2.onCollapseToggle,productDetail=_ref2.productDetail,status=_ref2.status,onTrueMoveHNavigatetoExtraPackage=_ref2.onTrueMoveHNavigatetoExtraPackage;
+var currentDate=(cov_26me1yafrk.s[5]++,(0,_moment2.default)());
+var expiryDateMoment=(cov_26me1yafrk.s[6]++,(0,_moment2.default)(expiryDate));
+var daysDiff=(cov_26me1yafrk.s[7]++,expiryDateMoment.diff(currentDate,'days'));
+var remainingDays=(cov_26me1yafrk.s[8]++,daysDiff>0?(cov_26me1yafrk.b[2][0]++,daysDiff):(cov_26me1yafrk.b[2][1]++,0));
+var noOfExtraPackages=(cov_26me1yafrk.s[9]++,(0,_result2.default)(productDetail,'BUNDLE_USAGE.EXTRA_PACKAGE',[]).length);
+var hasPackages=(cov_26me1yafrk.s[10]++,!(0,_isEmpty2.default)((cov_26me1yafrk.b[3][0]++,(0,_result2.default)(productDetail,'extraPackage.data',{}))||(cov_26me1yafrk.b[3][1]++,!(0,_isEmpty2.default)((0,_result2.default)(productDetail,'extraPackage.voice',{})))));
+var simExpiryDate=(cov_26me1yafrk.s[11]++,expiryDate?(cov_26me1yafrk.b[4][0]++,new _moment2.default(expiryDate).format('DD MMM YYYY')):(cov_26me1yafrk.b[4][1]++,''));
+var planInfo=(cov_26me1yafrk.s[12]++,(0,_result2.default)(productDetail,'PRICE_PLAN_INFO',{}));
+var subtitle=(cov_26me1yafrk.s[13]++,noOfExtraPackages>0?(cov_26me1yafrk.b[5][0]++,'('+noOfExtraPackages+' Extra Packages)'):(cov_26me1yafrk.b[5][1]++,null));
+var subText=(cov_26me1yafrk.s[14]++,status==='S'?(cov_26me1yafrk.b[6][0]++,subtitle):(cov_26me1yafrk.b[6][1]++,(0,_helper.translate)('BILLS_USAGE_ACTIVE_UNTIL')+' '+simExpiryDate+' '+subtitle));
+var leftTitleTextStyle=(cov_26me1yafrk.s[15]++,remainingDays>_billUsage.PREPAID_CONFIG.MINIMUM_DAYS_ALERT?(cov_26me1yafrk.b[7][0]++,{}):(cov_26me1yafrk.b[7][1]++,_TMPrepaidProductCard2.default.leftTitleTextStyle));cov_26me1yafrk.s[16]++;
+return(
+_react2.default.createElement(_BaseProductCollapsibleBar2.default,{type:'PREPAID',status:status,leftTitleText:phone,
+leftDetailText:''+(0,_helper.translate)('BILLS_USAGE_TIME_REMAINING_DAYS',{count:remainingDays,days:remainingDays}),
+rightTitleText:(0,_helper.translate)('BILLS_USAGE_AVAILABLE_BALANCE'),amountText:amount,
+onChecked:onRadioSelect,isCollapsed:isCollapsed,onCollapseToggle:onCollapseToggle,isChecked:isSelected,value:phone,
+leftTitleTextStyle:leftTitleTextStyle},
+_react2.default.createElement(_reactNative.View,{style:_TMPrepaidProductCard2.default.container},
+_react2.default.createElement(_reactNative.View,{style:_TMPrepaidProductCard2.default.productTitle},
+_react2.default.createElement(_ProductCardTitle2.default,{text:planInfo.name,subtext:subText,navigate:onTrueMoveHNavigatetoExtraPackage,isPrepaid:true})),
+
+_react2.default.createElement(_reactNative.View,{elevation:2,style:_TMPrepaidProductCard2.default.subContainer},
+status==='S'?(cov_26me1yafrk.b[8][0]++,_react2.default.createElement(_reactNative.View,null,
+_react2.default.createElement(_Shared.ISText,{style:_TMPrepaidProductCard2.default.title,type:'BOLD'},(0,_helper.translate)('BILLS_USAGE_PREPAID_SUSPEND_MESSAGE')+' '+simExpiryDate),
+_react2.default.createElement(_Shared.Button,{text:(0,_helper.translate)('BILLS_USAGE_TOP_UP'),style:_TMPrepaidProductCard2.default.buttonStyle}),
+_react2.default.createElement(_reactNative.View,{style:_TMPrepaidProductCard2.default.horizontalLine}))):(cov_26me1yafrk.b[8][1]++,
+null),
+hasPackages?(cov_26me1yafrk.b[9][0]++,_react2.default.createElement(_Shared.ISText,{style:_TMPrepaidProductCard2.default.title,type:'BOLD'},(0,_helper.translate)('BILLS_USAGE_EXTRA_PACKAGE_DEAL'))):(cov_26me1yafrk.b[9][1]++,null),
+_react2.default.createElement(_CurrentUsageTM2.default,{usageData:productDetail.BUNDLE_USAGE,navigateToBuyExtraPackage:this.navigateToBuyExtraPackage,goToBillDetail:this.navigateToBillDetail(productDetail.invoice_id)})))));
+
+
+
+
+}}]);return TMPrepaidProductCard;}(_react.Component);cov_26me1yafrk.s[17]++;
+
+
+TMPrepaidProductCard.defaultProps={
+phone:'',
+expiryDate:'',
+amount:0,
+goToScreen:_noop2.default,
+onRadioSelect:_noop2.default,
+isSelected:false,
+status:'',
+onCollapseToggle:_noop2.default,
+isCollapsed:_noop2.default,
+productDetail:{},
+onTrueMoveHNavigatetoExtraPackage:_noop2.default,
+validateOTPStatus:false};cov_26me1yafrk.s[18]++;
+
+
+TMPrepaidProductCard.propTypes={
+phone:_propTypes2.default.string,
+expiryDate:_propTypes2.default.string,
+amount:_propTypes2.default.number,
+goToScreen:_propTypes2.default.func,
+productDetail:_propTypes2.default.object,
+onRadioSelect:_propTypes2.default.func,
+isSelected:_propTypes2.default.bool,
+status:_propTypes2.default.string,
+onCollapseToggle:_propTypes2.default.func,
+isCollapsed:_propTypes2.default.bool,
+onTrueMoveHNavigatetoExtraPackage:_propTypes2.default.func,
+validateOTPStatus:_propTypes2.default.bool};exports.default=
+
+
+TMPrepaidProductCard;

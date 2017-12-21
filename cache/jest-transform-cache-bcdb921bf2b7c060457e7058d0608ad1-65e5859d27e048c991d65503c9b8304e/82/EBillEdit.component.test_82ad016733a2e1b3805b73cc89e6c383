@@ -1,0 +1,46 @@
+var _EBillEdit=require('../EBillEdit.component');var _EBillEdit2=_interopRequireDefault(_EBillEdit);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('EBillEdit component',function(){
+it('renders correctly sms tmhPostpaid account',function(){
+var component=_reactTestRenderer2.default.create(
+_react2.default.createElement(_EBillEdit2.default,{
+serviceID:'9876543210',
+defaultMSISDN:'9876543210',
+billingFormat:'sms',
+accountType:'tmhPostpaid'})).
+toJSON();
+expect(component).toMatchSnapshot();
+});
+it('renders correctly email tmhPostpaid account',function(){
+var component=_reactTestRenderer2.default.create(
+_react2.default.createElement(_EBillEdit2.default,{
+serviceID:'9876543210',
+defaultMSISDN:'abc@gmail.com',
+billingFormat:'email',
+accountType:'tmhPostpaid'})).
+toJSON();
+expect(component).toMatchSnapshot();
+});
+it('renders correctly email tol account',function(){
+var component=_reactTestRenderer2.default.create(
+_react2.default.createElement(_EBillEdit2.default,{
+serviceID:'9876543210',
+defaultMSISDN:'abc@gmail.com',
+billingFormat:'email',
+accountType:'tol'})).
+toJSON();
+expect(component).toMatchSnapshot();
+});
+it('renders correctly sms tol account',function(){
+var component=_reactTestRenderer2.default.create(
+_react2.default.createElement(_EBillEdit2.default,{
+serviceID:'9876543210',
+defaultMSISDN:'abc@gmail.com',
+billingFormat:'email',
+accountType:'tol'})).
+toJSON();
+expect(component).toMatchSnapshot();
+});
+});

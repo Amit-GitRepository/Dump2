@@ -1,0 +1,67 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_6dqu3epko=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/BillHistoryList/BillHistoryList.component.js',hash='ab82ab10fe00b15fdc077eec910a1243170ba9ee',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/BillUsageShared/BillHistoryList/BillHistoryList.component.js',statementMap:{'0':{start:{line:12,column:35},end:{line:12,column:81}},'1':{start:{line:12,column:41},end:{line:12,column:81}},'2':{start:{line:15,column:80},end:{line:15,column:90}},'3':{start:{line:16,column:24},end:{line:16,column:32}},'4':{start:{line:17,column:4},end:{line:45,column:6}},'5':{start:{line:23,column:29},end:{line:23,column:72}},'6':{start:{line:24,column:32},end:{line:24,column:56}},'7':{start:{line:25,column:32},end:{line:25,column:69}},'8':{start:{line:26,column:12},end:{line:40,column:14}},'9':{start:{line:49,column:0},end:{line:56,column:2}},'10':{start:{line:58,column:0},end:{line:65,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:12,column:20},end:{line:12,column:21}},loc:{start:{line:12,column:35},end:{line:12,column:81}},line:12},'1':{name:'(anonymous_1)',decl:{start:{line:12,column:35},end:{line:12,column:36}},loc:{start:{line:12,column:41},end:{line:12,column:81}},line:12},'2':{name:'(anonymous_2)',decl:{start:{line:14,column:2},end:{line:14,column:3}},loc:{start:{line:14,column:12},end:{line:46,column:3}},line:14},'3':{name:'(anonymous_3)',decl:{start:{line:22,column:23},end:{line:22,column:24}},loc:{start:{line:22,column:40},end:{line:41,column:11}},line:22}},branchMap:{'0':{loc:{start:{line:19,column:9},end:{line:20,column:15}},type:'binary-expr',locations:[{start:{line:19,column:9},end:{line:19,column:20}},{start:{line:19,column:24},end:{line:20,column:15}}],line:19},'1':{loc:{start:{line:21,column:9},end:{line:41,column:134}},type:'cond-expr',locations:[{start:{line:22,column:10},end:{line:41,column:12}},{start:{line:41,column:15},end:{line:41,column:134}}],line:21},'2':{loc:{start:{line:21,column:9},end:{line:21,column:40}},type:'binary-expr',locations:[{start:{line:21,column:9},end:{line:21,column:17}},{start:{line:21,column:21},end:{line:21,column:40}}],line:21},'3':{loc:{start:{line:30,column:66},end:{line:30,column:241}},type:'cond-expr',locations:[{start:{line:30,column:86},end:{line:30,column:164}},{start:{line:30,column:167},end:{line:30,column:241}}],line:30}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0},f:{'0':0,'1':0,'2':0,'3':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _moment=require('../../../../../utils/moment.util');var _moment2=_interopRequireDefault(_moment);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _BillHistoryList=require('./BillHistoryList.style');var _BillHistoryList2=_interopRequireDefault(_BillHistoryList);
+var _Shared=require('../../../../Shared');
+var _helper=require('../../../../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+BillHistoryList=function(_Component){_inherits(BillHistoryList,_Component);function BillHistoryList(){var _ref;var _temp,_this,_ret;_classCallCheck(this,BillHistoryList);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=BillHistoryList.__proto__||Object.getPrototypeOf(BillHistoryList)).call.apply(_ref,[this].concat(args))),_this),_this.
+
+billDetailClick=function(invoiceNo){cov_6dqu3epko.f[0]++;cov_6dqu3epko.s[0]++;return function(){cov_6dqu3epko.f[1]++;cov_6dqu3epko.s[1]++;return _this.props.onBillDetailsClick(invoiceNo);};},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(BillHistoryList,[{key:'render',value:function render()
+
+{var _this2=this;cov_6dqu3epko.f[2]++;var _ref2=(cov_6dqu3epko.s[2]++,
+this.props),dueBills=_ref2.dueBills,style=_ref2.style,onPaymentHistoryClick=_ref2.onPaymentHistoryClick,onBillToggle=_ref2.onBillToggle,isCancelled=_ref2.isCancelled;
+var currentDate=(cov_6dqu3epko.s[3]++,(0,_moment2.default)());cov_6dqu3epko.s[4]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:[_BillHistoryList2.default.container,style]},
+(cov_6dqu3epko.b[0][0]++,isCancelled)&&(cov_6dqu3epko.b[0][1]++,_react2.default.createElement(_reactNative.View,{style:_BillHistoryList2.default.titleContainer},_react2.default.createElement(_Shared.ISText,{type:'BOLD',style:_BillHistoryList2.default.title},(0,_helper.translate)('BILLS_USAGE_BILL_DETAILS')))),
+
+(cov_6dqu3epko.b[2][0]++,dueBills)&&(cov_6dqu3epko.b[2][1]++,dueBills.length>0)?(cov_6dqu3epko.b[1][0]++,
+dueBills.map(function(bill,index){cov_6dqu3epko.f[3]++;
+var billDate=(cov_6dqu3epko.s[5]++,new _moment2.default(bill.invoiceCycle,'DD/MM/YYYY'));
+var billDueDate=(cov_6dqu3epko.s[6]++,new _moment2.default(bill.dueDate));
+var overDueDays=(cov_6dqu3epko.s[7]++,currentDate.diff(billDueDate,'days'));cov_6dqu3epko.s[8]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:_BillHistoryList2.default.cardContainer,key:'billingCard_'+index},
+_react2.default.createElement(_reactNative.View,{style:_BillHistoryList2.default.leftSection},
+_react2.default.createElement(_Shared.ISText,{type:'BOLD',style:_BillHistoryList2.default.billMonthText},billDate.format('MMMM')),
+_react2.default.createElement(_Shared.ISText,{type:'BOLD',style:_BillHistoryList2.default.dueDateText},overDueDays>0?(cov_6dqu3epko.b[3][0]++,''+(0,_helper.translate)('BILLS_USAGE_OVERDUE',{count:overDueDays,days:overDueDays})):(cov_6dqu3epko.b[3][1]++,(0,_helper.translate)('BILLS_USAGE_DUE_DATE')+': '+billDueDate.format('DD MMM YY')))),
+
+_react2.default.createElement(_reactNative.View,{style:_BillHistoryList2.default.rightSection},
+_react2.default.createElement(_reactNative.View,{style:_BillHistoryList2.default.amountSection},
+_react2.default.createElement(_Shared.AmountText,{value:bill.unpaidAmount,isTotalText:false}),
+_react2.default.createElement(_Shared.Checkbox,{style:_BillHistoryList2.default.checkbox,onChange:onBillToggle(bill),isChecked:bill.isChecked})),
+
+_react2.default.createElement(_Shared.Button,{type:'inline',text:(0,_helper.translate)('BILLS_USAGE_DETAILS'),style:_BillHistoryList2.default.billDetailButton,textStyle:_BillHistoryList2.default.billDetailText,onPress:_this2.billDetailClick({invoiceNo:bill.invoiceNo})}))));
+
+
+
+})):(cov_6dqu3epko.b[1][1]++,_react2.default.createElement(_Shared.ISText,{type:'BOLD',style:_BillHistoryList2.default.noBillPlaceHolderText},(0,_helper.translate)('BILLS_USAGE_BILL_DETAILS_PLACEHOLDER'))),
+
+_react2.default.createElement(_Shared.Button,{type:'inline',text:(0,_helper.translate)('BILLS_USAGE_PAYMENT_HISTORY'),textStyle:_BillHistoryList2.default.otherButton,onPress:onPaymentHistoryClick})));
+
+
+}}]);return BillHistoryList;}(_react.Component);cov_6dqu3epko.s[9]++;
+
+
+BillHistoryList.defaultProps={
+dueBills:[],
+onBillDetailsClick:_noop2.default,
+onPaymentHistoryClick:_noop2.default,
+onBillToggle:_noop2.default,
+isCancelled:false,
+style:{}};cov_6dqu3epko.s[10]++;
+
+
+BillHistoryList.propTypes={
+dueBills:_propTypes2.default.array,
+onBillDetailsClick:_propTypes2.default.func,
+onPaymentHistoryClick:_propTypes2.default.func,
+style:_propTypes2.default.object,
+onBillToggle:_propTypes2.default.func,
+isCancelled:_propTypes2.default.bool};exports.default=
+
+
+BillHistoryList;

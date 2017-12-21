@@ -1,0 +1,15 @@
+var _EBillItem=require('../EBillItem.component');var _EBillItem2=_interopRequireDefault(_EBillItem);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+describe('EBillItem component',function(){
+it('renders correctly with sms option',function(){
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_EBillItem2.default,{
+accountType:'True Vision',
+serviceID:'9876543210',
+ebillFormat:'SMS',
+ebillValue:'9876543210'})).
+toJSON();
+expect(component).toMatchSnapshot();
+});
+});

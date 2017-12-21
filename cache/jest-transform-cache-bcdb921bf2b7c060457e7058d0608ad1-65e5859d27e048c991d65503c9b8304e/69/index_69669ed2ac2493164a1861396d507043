@@ -1,0 +1,113 @@
+Object.defineProperty(exports,"__esModule",{value:true});var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();
+
+
+
+
+
+
+
+
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _reactNative=require('react-native');
+
+
+
+
+
+
+
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+
+CheckBox=function(_Component){_inherits(CheckBox,_Component);function CheckBox(){_classCallCheck(this,CheckBox);return _possibleConstructorReturn(this,(CheckBox.__proto__||Object.getPrototypeOf(CheckBox)).apply(this,arguments));}_createClass(CheckBox,[{key:'_renderLeft',value:function _renderLeft()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+if(this.props.leftTextView)return this.props.leftTextView;
+if(!this.props.leftText)return null;
+return(
+_react2.default.createElement(_reactNative.Text,{style:[styles.leftText,this.props.leftTextStyle]},this.props.leftText));
+
+}},{key:'_renderRight',value:function _renderRight()
+{
+if(this.props.rightTextView)return this.props.rightTextView;
+if(!this.props.rightText)return null;
+return(
+_react2.default.createElement(_reactNative.Text,{style:[styles.rightText,this.props.rightTextStyle]},this.props.rightText));
+
+}},{key:'_renderImage',value:function _renderImage()
+
+{
+if(this.props.isIndeterminate){
+return this.props.indeterminateImage?this.props.indeterminateImage:this.genCheckedImage();
+}
+if(this.props.isChecked){
+return this.props.checkedImage?this.props.checkedImage:this.genCheckedImage();
+}else{
+return this.props.unCheckedImage?this.props.unCheckedImage:this.genCheckedImage();
+}
+}},{key:'genCheckedImage',value:function genCheckedImage()
+
+{
+var source;
+if(this.props.isIndeterminate){
+source=require('./img/ic_indeterminate_check_box.png');
+}else
+{
+source=this.props.isChecked?require('./img/ic_check_box.png'):require('./img/ic_check_box_outline_blank.png');
+}
+
+return(
+_react2.default.createElement(_reactNative.Image,{source:source,style:{tintColor:this.props.checkBoxColor}}));
+
+}},{key:'render',value:function render()
+
+{
+return(
+_react2.default.createElement(_reactNative.TouchableHighlight,{
+style:this.props.style,
+onPress:this.props.onClick,
+underlayColor:'transparent',
+disabled:this.props.disabled},
+
+_react2.default.createElement(_reactNative.View,{style:styles.container},
+this._renderLeft(),
+this._renderImage(),
+this._renderRight())));
+
+
+
+}}]);return CheckBox;}(_react.Component);CheckBox.propTypes=_extends({},_reactNative.ViewPropTypes||_reactNative.View.PropTypes,{leftText:_propTypes2.default.string,leftTextView:_propTypes2.default.element,rightText:_propTypes2.default.string,leftTextStyle:_propTypes2.default.object,rightTextView:_propTypes2.default.element,rightTextStyle:_propTypes2.default.object,checkedImage:_propTypes2.default.element,unCheckedImage:_propTypes2.default.element,onClick:_propTypes2.default.func.isRequired,isChecked:_propTypes2.default.bool.isRequired,isIndeterminate:_propTypes2.default.bool.isRequired,checkBoxColor:_propTypes2.default.string,disabled:_propTypes2.default.bool});CheckBox.defaultProps={isChecked:false,isIndeterminate:false,leftTextStyle:{},rightTextStyle:{}};exports.default=CheckBox;
+
+var styles=_reactNative.StyleSheet.create({
+container:{
+flexDirection:'row',
+alignItems:'center'},
+
+leftText:{
+flex:1},
+
+rightText:{
+flex:1,
+marginLeft:10}});

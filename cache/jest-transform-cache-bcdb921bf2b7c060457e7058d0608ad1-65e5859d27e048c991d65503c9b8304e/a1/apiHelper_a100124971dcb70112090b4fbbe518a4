@@ -1,0 +1,175 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.validateOTPRequest=exports.sendOTPRequest=exports.getProductFromServiceNo=exports.deregisterFCMToken=exports.registerFCMToken=exports.billUsageProductBillDetail=exports.billUsageProductDetail=exports.preLoginProduct=exports.billUsageProductList=exports.tokeniseCard=exports.getSavedCards=exports.deleteCard=exports.payForNonLoginUser=exports.payForNewCustomer=exports.payForExistingCustomer=exports.registerEbill=exports.billPreferences=exports.getTranslations=exports.msisdnRequest=undefined;var cov_cw5z5y1fl=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/sagas/api/apiHelper.js',hash='01034110771be39673a5567881f092e5ac84199e',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/sagas/api/apiHelper.js',statementMap:{'0':{start:{line:4,column:29},end:{line:7,column:2}},'1':{start:{line:4,column:36},end:{line:7,column:1}},'2':{start:{line:9,column:32},end:{line:13,column:2}},'3':{start:{line:9,column:39},end:{line:13,column:1}},'4':{start:{line:15,column:31},end:{line:22,column:2}},'5':{start:{line:15,column:48},end:{line:22,column:1}},'6':{start:{line:24,column:29},end:{line:29,column:2}},'7':{start:{line:24,column:44},end:{line:29,column:1}},'8':{start:{line:31,column:38},end:{line:42,column:1}},'9':{start:{line:32,column:18},end:{line:34,column:3}},'10':{start:{line:35,column:2},end:{line:41,column:4}},'11':{start:{line:44,column:33},end:{line:55,column:1}},'12':{start:{line:45,column:18},end:{line:47,column:3}},'13':{start:{line:48,column:2},end:{line:54,column:4}},'14':{start:{line:57,column:34},end:{line:62,column:2}},'15':{start:{line:57,column:45},end:{line:62,column:1}},'16':{start:{line:64,column:26},end:{line:75,column:1}},'17':{start:{line:65,column:18},end:{line:67,column:3}},'18':{start:{line:68,column:2},end:{line:74,column:4}},'19':{start:{line:77,column:29},end:{line:87,column:1}},'20':{start:{line:78,column:18},end:{line:80,column:3}},'21':{start:{line:81,column:2},end:{line:86,column:4}},'22':{start:{line:89,column:28},end:{line:99,column:1}},'23':{start:{line:90,column:17},end:{line:90,column:50}},'24':{start:{line:91,column:18},end:{line:91,column:54}},'25':{start:{line:92,column:2},end:{line:98,column:4}},'26':{start:{line:101,column:37},end:{line:106,column:2}},'27':{start:{line:101,column:60},end:{line:106,column:1}},'28':{start:{line:108,column:32},end:{line:113,column:2}},'29':{start:{line:108,column:41},end:{line:113,column:1}},'30':{start:{line:115,column:39},end:{line:125,column:2}},'31':{start:{line:115,column:100},end:{line:125,column:1}},'32':{start:{line:128,column:43},end:{line:133,column:2}},'33':{start:{line:128,column:75},end:{line:133,column:1}},'34':{start:{line:135,column:32},end:{line:144,column:2}},'35':{start:{line:135,column:51},end:{line:144,column:1}},'36':{start:{line:146,column:34},end:{line:154,column:2}},'37':{start:{line:146,column:46},end:{line:154,column:1}},'38':{start:{line:156,column:39},end:{line:161,column:2}},'39':{start:{line:156,column:55},end:{line:161,column:1}},'40':{start:{line:163,column:31},end:{line:168,column:4}},'41':{start:{line:164,column:3},end:{line:168,column:3}},'42':{start:{line:170,column:35},end:{line:175,column:4}},'43':{start:{line:171,column:3},end:{line:175,column:3}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:4,column:29},end:{line:4,column:30}},loc:{start:{line:4,column:36},end:{line:7,column:1}},line:4},'1':{name:'(anonymous_1)',decl:{start:{line:9,column:32},end:{line:9,column:33}},loc:{start:{line:9,column:39},end:{line:13,column:1}},line:9},'2':{name:'(anonymous_2)',decl:{start:{line:15,column:31},end:{line:15,column:32}},loc:{start:{line:15,column:48},end:{line:22,column:1}},line:15},'3':{name:'(anonymous_3)',decl:{start:{line:24,column:29},end:{line:24,column:30}},loc:{start:{line:24,column:44},end:{line:29,column:1}},line:24},'4':{name:'(anonymous_4)',decl:{start:{line:31,column:38},end:{line:31,column:39}},loc:{start:{line:31,column:55},end:{line:42,column:1}},line:31},'5':{name:'(anonymous_5)',decl:{start:{line:44,column:33},end:{line:44,column:34}},loc:{start:{line:44,column:50},end:{line:55,column:1}},line:44},'6':{name:'(anonymous_6)',decl:{start:{line:57,column:34},end:{line:57,column:35}},loc:{start:{line:57,column:45},end:{line:62,column:1}},line:57},'7':{name:'(anonymous_7)',decl:{start:{line:64,column:26},end:{line:64,column:27}},loc:{start:{line:64,column:45},end:{line:75,column:1}},line:64},'8':{name:'(anonymous_8)',decl:{start:{line:77,column:29},end:{line:77,column:30}},loc:{start:{line:77,column:40},end:{line:87,column:1}},line:77},'9':{name:'(anonymous_9)',decl:{start:{line:89,column:28},end:{line:89,column:29}},loc:{start:{line:89,column:38},end:{line:99,column:1}},line:89},'10':{name:'(anonymous_10)',decl:{start:{line:101,column:37},end:{line:101,column:38}},loc:{start:{line:101,column:60},end:{line:106,column:1}},line:101},'11':{name:'(anonymous_11)',decl:{start:{line:108,column:32},end:{line:108,column:33}},loc:{start:{line:108,column:41},end:{line:113,column:1}},line:108},'12':{name:'(anonymous_12)',decl:{start:{line:115,column:39},end:{line:115,column:40}},loc:{start:{line:115,column:100},end:{line:125,column:1}},line:115},'13':{name:'(anonymous_13)',decl:{start:{line:128,column:43},end:{line:128,column:44}},loc:{start:{line:128,column:75},end:{line:133,column:1}},line:128},'14':{name:'(anonymous_14)',decl:{start:{line:135,column:32},end:{line:135,column:33}},loc:{start:{line:135,column:51},end:{line:144,column:1}},line:135},'15':{name:'(anonymous_15)',decl:{start:{line:146,column:34},end:{line:146,column:35}},loc:{start:{line:146,column:46},end:{line:154,column:1}},line:146},'16':{name:'(anonymous_16)',decl:{start:{line:156,column:39},end:{line:156,column:40}},loc:{start:{line:156,column:55},end:{line:161,column:1}},line:156},'17':{name:'(anonymous_17)',decl:{start:{line:163,column:31},end:{line:163,column:32}},loc:{start:{line:164,column:3},end:{line:168,column:3}},line:164},'18':{name:'(anonymous_18)',decl:{start:{line:170,column:35},end:{line:170,column:36}},loc:{start:{line:171,column:3},end:{line:175,column:3}},line:171}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0,'19':0,'20':0,'21':0,'22':0,'23':0,'24':0,'25':0,'26':0,'27':0,'28':0,'29':0,'30':0,'31':0,'32':0,'33':0,'34':0,'35':0,'36':0,'37':0,'38':0,'39':0,'40':0,'41':0,'42':0,'43':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _base=require('base-64');var _base2=_interopRequireDefault(_base);
+var _reactNativeConfig=require('react-native-config');var _reactNativeConfig2=_interopRequireDefault(_reactNativeConfig);function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}cov_cw5z5y1fl.s[0]++;
+
+var msisdnRequest=exports.msisdnRequest=function msisdnRequest(){cov_cw5z5y1fl.f[0]++;cov_cw5z5y1fl.s[1]++;return{
+endpoint:'MSISDN',
+baseUrl:_reactNativeConfig2.default.USER_ENDPOINT};
+};cov_cw5z5y1fl.s[2]++;
+
+var getTranslations=exports.getTranslations=function getTranslations(){cov_cw5z5y1fl.f[1]++;cov_cw5z5y1fl.s[3]++;return{
+endpoint:'TRANSLATIONS',
+baseUrl:_reactNativeConfig2.default.CONTENT_ENDPOINT,
+query:{platform:'mobile'}};
+};cov_cw5z5y1fl.s[4]++;
+
+var billPreferences=exports.billPreferences=function billPreferences(accountIds){cov_cw5z5y1fl.f[2]++;cov_cw5z5y1fl.s[5]++;return{
+endpoint:'BILL_PREFERENCES',
+method:'GET',
+baseUrl:_reactNativeConfig2.default.SUBSCRIBER_ENDPOINT,
+query:{
+accountIDs:accountIds}};
+
+};cov_cw5z5y1fl.s[6]++;
+
+var registerEbill=exports.registerEbill=function registerEbill(accounts){cov_cw5z5y1fl.f[3]++;cov_cw5z5y1fl.s[7]++;return{
+endpoint:'REGISTER_EBILL',
+method:'POST',
+baseUrl:_reactNativeConfig2.default.SUBSCRIBER_ENDPOINT,
+data:accounts};
+};cov_cw5z5y1fl.s[8]++;
+
+var payForExistingCustomer=exports.payForExistingCustomer=function payForExistingCustomer(ssoId,data){cov_cw5z5y1fl.f[4]++;
+var headers=(cov_cw5z5y1fl.s[9]++,{
+'ssoid':_base2.default.encode(ssoId)});cov_cw5z5y1fl.s[10]++;
+
+return{
+endpoint:'PAY_EXISTING_CUSTOMER',
+baseUrl:_reactNativeConfig2.default.PAYMENT_ENDPOINT,
+headers:headers,
+method:'POST',
+data:data};
+
+};cov_cw5z5y1fl.s[11]++;
+
+var payForNewCustomer=exports.payForNewCustomer=function payForNewCustomer(ssoId,data){cov_cw5z5y1fl.f[5]++;
+var headers=(cov_cw5z5y1fl.s[12]++,{
+'ssoid':_base2.default.encode(ssoId)});cov_cw5z5y1fl.s[13]++;
+
+return{
+endpoint:'PAY_NEW_CUSTOMER',
+baseUrl:_reactNativeConfig2.default.PAYMENT_ENDPOINT,
+headers:headers,
+method:'POST',
+data:data};
+
+};cov_cw5z5y1fl.s[14]++;
+
+var payForNonLoginUser=exports.payForNonLoginUser=function payForNonLoginUser(data){cov_cw5z5y1fl.f[6]++;cov_cw5z5y1fl.s[15]++;return{
+endpoint:'PAY_NON_LOGIN_USER',
+baseUrl:_reactNativeConfig2.default.PAYMENT_ENDPOINT,
+method:'POST',
+data:data};
+};cov_cw5z5y1fl.s[16]++;
+
+var deleteCard=exports.deleteCard=function deleteCard(ssoId,cardID){cov_cw5z5y1fl.f[7]++;
+var headers=(cov_cw5z5y1fl.s[17]++,{
+'ssoid':_base2.default.encode(ssoId)});cov_cw5z5y1fl.s[18]++;
+
+return{
+endpoint:'CARD',
+baseUrl:_reactNativeConfig2.default.PAYMENT_ENDPOINT,
+pathParam:'/'+cardID,
+method:'DELETE',
+headers:headers};
+
+};cov_cw5z5y1fl.s[19]++;
+
+var getSavedCards=exports.getSavedCards=function getSavedCards(ssoId){cov_cw5z5y1fl.f[8]++;
+var headers=(cov_cw5z5y1fl.s[20]++,{
+'ssoid':_base2.default.encode(ssoId)});cov_cw5z5y1fl.s[21]++;
+
+return{
+endpoint:'CARD',
+baseUrl:_reactNativeConfig2.default.PAYMENT_ENDPOINT,
+method:'GET',
+headers:headers};
+
+};cov_cw5z5y1fl.s[22]++;
+
+var tokeniseCard=exports.tokeniseCard=function tokeniseCard(data){cov_cw5z5y1fl.f[9]++;
+var pubKey=(cov_cw5z5y1fl.s[23]++,_reactNativeConfig2.default.OMISE_PUBLIC_KEY_ENCRYPTED);
+var headers=(cov_cw5z5y1fl.s[24]++,{'Authorization':'Basic '+pubKey});cov_cw5z5y1fl.s[25]++;
+return{
+endpoint:'TOKENISE_CARD',
+baseUrl:_reactNativeConfig2.default.OMISE_VAULT_URL,
+headers:headers,
+method:'POST',
+data:data};
+
+};cov_cw5z5y1fl.s[26]++;
+
+var billUsageProductList=exports.billUsageProductList=function billUsageProductList(_ref){var msisdn=_ref.msisdn,idCard=_ref.idCard;cov_cw5z5y1fl.f[10]++;cov_cw5z5y1fl.s[27]++;return{
+endpoint:'BILL_USAGE_PRODUCT_LIST',
+baseUrl:_reactNativeConfig2.default.SUBSCRIBER_ENDPOINT,
+data:{msisdn:msisdn,idCard:idCard},
+method:'POST'};
+};cov_cw5z5y1fl.s[28]++;
+
+var preLoginProduct=exports.preLoginProduct=function preLoginProduct(id){cov_cw5z5y1fl.f[11]++;cov_cw5z5y1fl.s[29]++;return{
+endpoint:'PRE_LOGIN_PRODUCT',
+baseUrl:_reactNativeConfig2.default.SUBSCRIBER_ENDPOINT,
+pathParam:'/'+id,
+method:'GET'};
+};cov_cw5z5y1fl.s[30]++;
+
+var billUsageProductDetail=exports.billUsageProductDetail=function billUsageProductDetail(productId,productType,subscriberId,subscriptionType){cov_cw5z5y1fl.f[12]++;cov_cw5z5y1fl.s[31]++;return{
+endpoint:'BILL_USAGE_PRODUCT_DETAIL',
+baseUrl:_reactNativeConfig2.default.SUBSCRIBER_ENDPOINT,
+data:{
+productId:productId,
+productType:productType,
+subscriberId:subscriberId,
+subscriptionType:subscriptionType},
+
+method:'POST'};
+};cov_cw5z5y1fl.s[32]++;
+
+
+var billUsageProductBillDetail=exports.billUsageProductBillDetail=function billUsageProductBillDetail(accountIds,isConvergence){cov_cw5z5y1fl.f[13]++;cov_cw5z5y1fl.s[33]++;return{
+endpoint:'BILL_USAGE_PRODUCT_BILL_DETAIL',
+baseUrl:_reactNativeConfig2.default.SUBSCRIBER_ENDPOINT,
+method:'GET',
+query:{'accountNo':accountIds,isConvergence:isConvergence}};
+};cov_cw5z5y1fl.s[34]++;
+
+var registerFCMToken=exports.registerFCMToken=function registerFCMToken(ssoid,token){cov_cw5z5y1fl.f[14]++;cov_cw5z5y1fl.s[35]++;return{
+endpoint:'REGISTER_FCM_TOKEN',
+baseUrl:_reactNativeConfig2.default.NOTIFICATION_ENDPOINT,
+method:'POST',
+data:{
+ssoid:ssoid,
+token:token},
+
+loader:false};
+};cov_cw5z5y1fl.s[36]++;
+
+var deregisterFCMToken=exports.deregisterFCMToken=function deregisterFCMToken(token){cov_cw5z5y1fl.f[15]++;cov_cw5z5y1fl.s[37]++;return{
+endpoint:'DEREGISTER_FCM_TOKEN',
+baseUrl:_reactNativeConfig2.default.NOTIFICATION_ENDPOINT,
+method:'POST',
+data:{
+tokenList:[token]},
+
+loader:false};
+};cov_cw5z5y1fl.s[38]++;
+
+var getProductFromServiceNo=exports.getProductFromServiceNo=function getProductFromServiceNo(serviceNo){cov_cw5z5y1fl.f[16]++;cov_cw5z5y1fl.s[39]++;return{
+endpoint:'PAY_OTHERS_GET_PRODUCT',
+baseUrl:_reactNativeConfig2.default.SUBSCRIBER_ENDPOINT,
+method:'GET',
+pathParam:'/'+serviceNo};
+};cov_cw5z5y1fl.s[40]++;
+
+var sendOTPRequest=exports.sendOTPRequest=function sendOTPRequest(msisdn)
+{cov_cw5z5y1fl.f[17]++;cov_cw5z5y1fl.s[41]++;return{
+baseUrl:_reactNativeConfig2.default.OTP_ENDPOINT,
+method:'GET',
+query:{'method':'request_otp','project':'iservice','app_id':20,'secret':'453d1a20c3acf2ca0d4e','otp_sender':'iservice','type':'sync','ln':'en','msisdn':msisdn,'channel':'web','format':'json'}};
+};cov_cw5z5y1fl.s[42]++;
+
+var validateOTPRequest=exports.validateOTPRequest=function validateOTPRequest(msisdn,otp)
+{cov_cw5z5y1fl.f[18]++;cov_cw5z5y1fl.s[43]++;return{
+baseUrl:_reactNativeConfig2.default.OTP_ENDPOINT,
+method:'GET',
+query:{'method':'validate_otp','project':'iservice','app_id':20,'secret':'453d1a20c3acf2ca0d4e','otp_sender':'iservice','type':'sync','ln':'en','msisdn':msisdn,'channel':'web','otp':otp,'format':'json'}};
+};

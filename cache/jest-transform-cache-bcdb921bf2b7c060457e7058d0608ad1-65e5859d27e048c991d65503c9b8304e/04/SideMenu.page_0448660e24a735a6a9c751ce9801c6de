@@ -1,0 +1,20 @@
+Object.defineProperty(exports,"__esModule",{value:true});exports.mapDispatchToProps=exports.mapStateToProps=undefined;var cov_2iyy2ez7p4=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/SideMenu/SideMenu.page.js',hash='2561f5fd08eb262b61c13c8c9f118c87edf6d5fe',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/pages/SideMenu/SideMenu.page.js',statementMap:{'0':{start:{line:8,column:31},end:{line:12,column:2}},'1':{start:{line:8,column:49},end:{line:12,column:1}},'2':{start:{line:14,column:34},end:{line:18,column:2}},'3':{start:{line:14,column:49},end:{line:18,column:1}},'4':{start:{line:15,column:26},end:{line:15,column:83}},'5':{start:{line:16,column:32},end:{line:16,column:68}},'6':{start:{line:17,column:18},end:{line:17,column:43}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:8,column:31},end:{line:8,column:32}},loc:{start:{line:8,column:49},end:{line:12,column:1}},line:8},'1':{name:'(anonymous_1)',decl:{start:{line:14,column:34},end:{line:14,column:35}},loc:{start:{line:14,column:49},end:{line:18,column:1}},line:14},'2':{name:'(anonymous_2)',decl:{start:{line:15,column:14},end:{line:15,column:15}},loc:{start:{line:15,column:26},end:{line:15,column:83}},line:15},'3':{name:'(anonymous_3)',decl:{start:{line:16,column:18},end:{line:16,column:19}},loc:{start:{line:16,column:32},end:{line:16,column:68}},line:16},'4':{name:'(anonymous_4)',decl:{start:{line:17,column:12},end:{line:17,column:13}},loc:{start:{line:17,column:18},end:{line:17,column:43}},line:17}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _SideMenu=require('../../components/SideMenu/SideMenu.component');var _SideMenu2=_interopRequireDefault(_SideMenu);
+var _index=require('../../redux/actions/index.actions');
+var _reactRedux=require('react-redux');
+var _reactNavigation=require('react-navigation');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}cov_2iyy2ez7p4.s[0]++;
+
+var mapStateToProps=exports.mapStateToProps=function mapStateToProps(_ref){var user=_ref.user,nav=_ref.nav;cov_2iyy2ez7p4.f[0]++;cov_2iyy2ez7p4.s[1]++;return{
+language:(0,_result2.default)(user,'language'),
+profile:(0,_result2.default)(user,'profile'),
+navIndex:(0,_result2.default)(nav,'index')};
+};cov_2iyy2ez7p4.s[2]++;
+
+var mapDispatchToProps=exports.mapDispatchToProps=function mapDispatchToProps(dispatch){cov_2iyy2ez7p4.f[1]++;cov_2iyy2ez7p4.s[3]++;return{
+goToScreen:function goToScreen(screen){cov_2iyy2ez7p4.f[2]++;cov_2iyy2ez7p4.s[4]++;return dispatch(_reactNavigation.NavigationActions.navigate({routeName:screen}));},
+changeLanguage:function changeLanguage(language){cov_2iyy2ez7p4.f[3]++;cov_2iyy2ez7p4.s[5]++;return dispatch((0,_index.changeLanguage)({language:language}));},
+onLogout:function onLogout(){cov_2iyy2ez7p4.f[4]++;cov_2iyy2ez7p4.s[6]++;return dispatch((0,_index.logoutRequest)());}};
+};exports.default=
+
+(0,_reactRedux.connect)(mapStateToProps,mapDispatchToProps)(_SideMenu2.default);

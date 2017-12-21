@@ -1,0 +1,51 @@
+var _BillSummaryWrapper=require('../BillSummaryWrapper.component');var _BillSummaryWrapper2=_interopRequireDefault(_BillSummaryWrapper);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _ReactSixteenAdapter=require('enzyme/build/adapters/ReactSixteenAdapter');var _ReactSixteenAdapter2=_interopRequireDefault(_ReactSixteenAdapter);
+var _reactTestRenderer=require('react-test-renderer');var _reactTestRenderer2=_interopRequireDefault(_reactTestRenderer);
+var _enzyme=require('enzyme');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}
+
+(0,_enzyme.configure)({adapter:new _ReactSixteenAdapter2.default()});
+
+var productList={
+'ccbsList':[
+{
+'accountId':'10100949',
+'arBalance':20.0,
+'primResourceValue':'0968730312',
+'statusCode':'A',
+'isChecked':true}],
+
+
+'trueList':[
+{
+'accountId':'10100940',
+'primResourceValue':'Speed50M',
+'arBalance':1500.0,
+'statusCode':'A',
+'isChecked':false}],
+
+
+'iccList':[
+{
+'accountId':'10100941',
+'primResourceValue':'Gold',
+'arBalance':700.0,
+'statusCode':'A',
+'isChecked':true}]};
+
+
+
+
+describe('BillSummaryWrapper component',function(){
+it('renders correctly',function(){
+var component=_reactTestRenderer2.default.create(_react2.default.createElement(_BillSummaryWrapper2.default,{productList:productList})).toJSON();
+expect(component).toMatchSnapshot();
+});
+});
+describe('calculateTotalAmount',function(){
+it('should calculateTotalAmount properly ',function(){
+var wrapper=(0,_enzyme.shallow)(_react2.default.createElement(_BillSummaryWrapper2.default,{productList:productList}));
+var totalValue=wrapper.instance().calculateTotalAmount();
+expect(totalValue).toBe(720.0);
+});
+});

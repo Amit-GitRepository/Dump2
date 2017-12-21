@@ -1,0 +1,106 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_20n4ihgc2=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/ProductCards/TMPostpaidProductCard/TMPostpaidProductCard.component.js',hash='bf77dc767b9474b5b4ec873b0f894545ee8e24ae',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillUsage/BillUsage/ProductCards/TMPostpaidProductCard/TMPostpaidProductCard.component.js',statementMap:{'0':{start:{line:20,column:4},end:{line:22,column:5}},'1':{start:{line:21,column:6},end:{line:21,column:31}},'2':{start:{line:23,column:4},end:{line:23,column:38}},'3':{start:{line:25,column:40},end:{line:27,column:3}},'4':{start:{line:26,column:4},end:{line:26,column:56}},'5':{start:{line:29,column:4},end:{line:29,column:100}},'6':{start:{line:37,column:38},end:{line:39,column:3}},'7':{start:{line:42,column:143},end:{line:42,column:153}},'8':{start:{line:43,column:23},end:{line:43,column:118}},'9':{start:{line:44,column:30},end:{line:44,column:85}},'10':{start:{line:46,column:4},end:{line:68,column:6}},'11':{start:{line:72,column:0},end:{line:87,column:2}},'12':{start:{line:89,column:0},end:{line:104,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:19,column:15},end:{line:19,column:16}},loc:{start:{line:19,column:37},end:{line:24,column:3}},line:19},'1':{name:'(anonymous_1)',decl:{start:{line:25,column:25},end:{line:25,column:26}},loc:{start:{line:25,column:40},end:{line:27,column:3}},line:25},'2':{name:'(anonymous_2)',decl:{start:{line:25,column:40},end:{line:25,column:41}},loc:{start:{line:25,column:46},end:{line:27,column:3}},line:25},'3':{name:'(anonymous_3)',decl:{start:{line:28,column:27},end:{line:28,column:28}},loc:{start:{line:28,column:33},end:{line:30,column:3}},line:28},'4':{name:'(anonymous_4)',decl:{start:{line:31,column:30},end:{line:31,column:31}},loc:{start:{line:31,column:36},end:{line:33,column:3}},line:31},'5':{name:'(anonymous_5)',decl:{start:{line:34,column:29},end:{line:34,column:30}},loc:{start:{line:34,column:35},end:{line:36,column:3}},line:34},'6':{name:'(anonymous_6)',decl:{start:{line:37,column:17},end:{line:37,column:18}},loc:{start:{line:37,column:38},end:{line:39,column:3}},line:37},'7':{name:'(anonymous_7)',decl:{start:{line:37,column:38},end:{line:37,column:39}},loc:{start:{line:37,column:44},end:{line:39,column:3}},line:37},'8':{name:'(anonymous_8)',decl:{start:{line:41,column:2},end:{line:41,column:3}},loc:{start:{line:41,column:12},end:{line:69,column:3}},line:41}},branchMap:{'0':{loc:{start:{line:20,column:4},end:{line:22,column:5}},type:'if',locations:[{start:{line:20,column:4},end:{line:22,column:5}},{start:{line:20,column:4},end:{line:22,column:5}}],line:20},'1':{loc:{start:{line:20,column:8},end:{line:20,column:54}},type:'binary-expr',locations:[{start:{line:20,column:8},end:{line:20,column:30}},{start:{line:20,column:34},end:{line:20,column:54}}],line:20},'2':{loc:{start:{line:44,column:30},end:{line:44,column:85}},type:'cond-expr',locations:[{start:{line:44,column:80},end:{line:44,column:81}},{start:{line:44,column:84},end:{line:44,column:85}}],line:44},'3':{loc:{start:{line:44,column:31},end:{line:44,column:76}},type:'binary-expr',locations:[{start:{line:44,column:31},end:{line:44,column:64}},{start:{line:44,column:68},end:{line:44,column:76}}],line:44},'4':{loc:{start:{line:54,column:14},end:{line:56,column:22}},type:'cond-expr',locations:[{start:{line:55,column:16},end:{line:55,column:403}},{start:{line:56,column:18},end:{line:56,column:22}}],line:54},'5':{loc:{start:{line:60,column:14},end:{line:62,column:22}},type:'cond-expr',locations:[{start:{line:61,column:16},end:{line:61,column:188}},{start:{line:62,column:18},end:{line:62,column:22}}],line:60}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0},b:{'0':[0,0],'1':[0,0],'2':[0,0],'3':[0,0],'4':[0,0],'5':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();var _BaseProductCollapsibleBar=require('../BaseProductCollapsibleBar/BaseProductCollapsibleBar.component');var _BaseProductCollapsibleBar2=_interopRequireDefault(_BaseProductCollapsibleBar);
+var _BillHistoryList=require('../../BillUsageShared/BillHistoryList.component');var _BillHistoryList2=_interopRequireDefault(_BillHistoryList);
+var _CaretTabs=require('../../../../../components/Shared/CaretTabs/CaretTabs.component');var _CaretTabs2=_interopRequireDefault(_CaretTabs);
+var _CurrentUsageTM=require('../../../BillUsage/BillUsageShared/CurrentUsageTM/CurrentUsageTM.component');var _CurrentUsageTM2=_interopRequireDefault(_CurrentUsageTM);
+var _noop=require('lodash/noop');var _noop2=_interopRequireDefault(_noop);
+var _ProductCardTitle=require('../../BillUsageShared/ProductCardTitle/ProductCardTitle.component');var _ProductCardTitle2=_interopRequireDefault(_ProductCardTitle);
+var _propTypes=require('prop-types');var _propTypes2=_interopRequireDefault(_propTypes);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);
+var _TMPostpaidProductCardStyle=require('./TMPostpaidProductCard.style.js');var _TMPostpaidProductCardStyle2=_interopRequireDefault(_TMPostpaidProductCardStyle);
+var _common=require('../../../../../utils/common.util');
+var _helper=require('../../../../../language/i18n/helper');
+var _reactNative=require('react-native');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}var
+
+TMPostpaidProductCard=function(_Component){_inherits(TMPostpaidProductCard,_Component);function TMPostpaidProductCard(){var _ref;var _temp,_this,_ret;_classCallCheck(this,TMPostpaidProductCard);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=TMPostpaidProductCard.__proto__||Object.getPrototypeOf(TMPostpaidProductCard)).call.apply(_ref,[this].concat(args))),_this),_this.
+state={
+selectedTabIndex:0},_this.
+
+onTabPress=function(selectedTabIndex){cov_20n4ihgc2.f[0]++;cov_20n4ihgc2.s[0]++;
+if((cov_20n4ihgc2.b[1][0]++,selectedTabIndex===1)&&(cov_20n4ihgc2.b[1][1]++,!_this.props.dueBills)){cov_20n4ihgc2.b[0][0]++;cov_20n4ihgc2.s[1]++;
+_this.props.getDueBills();
+}else{cov_20n4ihgc2.b[0][1]++;}cov_20n4ihgc2.s[2]++;
+_this.setState({selectedTabIndex:selectedTabIndex});
+},_this.
+navigateToBillDetail=function(invoiceId){cov_20n4ihgc2.f[1]++;cov_20n4ihgc2.s[3]++;return function(){cov_20n4ihgc2.f[2]++;cov_20n4ihgc2.s[4]++;
+_this.props.goToScreen('TMoveBillDetail',invoiceId);
+};},_this.
+navigateToExtraPackage=function(){cov_20n4ihgc2.f[3]++;cov_20n4ihgc2.s[5]++;
+_this.props.goToScreen('TMPackageDetailsExtra',{title:(0,_common.phoneNumberFormatter)(_this.props.phone)});
+},_this.
+navigateToBuyExtraPackage=function(){cov_20n4ihgc2.f[4]++;
+
+},_this.
+navigateToPaymentHistory=function(){cov_20n4ihgc2.f[5]++;
+
+},_this.
+onBillToggle=function(){cov_20n4ihgc2.f[6]++;cov_20n4ihgc2.s[6]++;return function(){cov_20n4ihgc2.f[7]++;
+
+};},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(TMPostpaidProductCard,[{key:'render',value:function render()
+
+{cov_20n4ihgc2.f[8]++;var _ref2=(cov_20n4ihgc2.s[7]++,
+this.props),phone=_ref2.phone,amount=_ref2.amount,status=_ref2.status,title=_ref2.title,subtitle=_ref2.subtitle,sharedWith=_ref2.sharedWith,productDetail=_ref2.productDetail,dueBills=_ref2.dueBills,isCollapsed=_ref2.isCollapsed,onCollapseToggle=_ref2.onCollapseToggle,onChecked=_ref2.onChecked,isChecked=_ref2.isChecked;
+var headerList=(cov_20n4ihgc2.s[8]++,[{text:(0,_helper.translate)('BILLS_USAGE_CURRENT_USAGE')},{text:(0,_helper.translate)('BILLS_USAGE_BILL_DETAILS')}]);
+var selectedTabNumber=(cov_20n4ihgc2.s[9]++,(cov_20n4ihgc2.b[3][0]++,this.state.selectedTabIndex===1)&&(cov_20n4ihgc2.b[3][1]++,dueBills)?(cov_20n4ihgc2.b[2][0]++,1):(cov_20n4ihgc2.b[2][1]++,0));cov_20n4ihgc2.s[10]++;
+
+return(
+_react2.default.createElement(_BaseProductCollapsibleBar2.default,{status:status,type:'POSTPAID',leftTitleText:phone,leftDetailText:(0,_helper.translate)('BILLS_USAGE_TRUEMOVE'),amountText:amount,isCollapsed:isCollapsed,onCollapseToggle:onCollapseToggle,onChecked:onChecked,isChecked:isChecked},
+_react2.default.createElement(_reactNative.View,{style:_TMPostpaidProductCardStyle2.default.container},
+_react2.default.createElement(_reactNative.View,{style:_TMPostpaidProductCardStyle2.default.productTitle},
+_react2.default.createElement(_ProductCardTitle2.default,{text:title,subtext:subtitle,navigate:this.navigateToExtraPackage})),
+
+_react2.default.createElement(_CaretTabs2.default,{onTabPress:this.onTabPress,selectedIndex:selectedTabNumber,headerList:headerList},
+
+selectedTabNumber===0?(cov_20n4ihgc2.b[4][0]++,
+_react2.default.createElement(_CurrentUsageTM2.default,{data:(0,_result2.default)(productDetail,'currentUsage.data',{}),voice:(0,_result2.default)(productDetail,'currentUsage.voice',{}),hotExtraPackage:(0,_result2.default)(productDetail,'currentUsage.hotExtraPackage',{}),navigateToBuyExtraPackage:this.navigateToBuyExtraPackage,sharedWith:sharedWith,goToBillDetail:this.navigateToBillDetail((0,_result2.default)(productDetail,'currentUsage.invoice_id',null))})):(cov_20n4ihgc2.b[4][1]++,
+null),
+
+
+
+selectedTabNumber===1?(cov_20n4ihgc2.b[5][0]++,
+_react2.default.createElement(_BillHistoryList2.default,{onBillDetailsClick:this.navigateToBillDetail,dueBills:dueBills,onPaymentHistoryClick:this.navigateToPaymentHistory,onBillToggle:this.onBillToggle})):(cov_20n4ihgc2.b[5][1]++,
+null)))));
+
+
+
+
+
+
+}}]);return TMPostpaidProductCard;}(_react.Component);cov_20n4ihgc2.s[11]++;
+
+
+TMPostpaidProductCard.defaultProps={
+phone:'',
+amount:0,
+title:'',
+subtitle:'',
+goToScreen:_noop2.default,
+status:'A',
+sharedWith:null,
+productDetail:null,
+dueBills:null,
+isCollapsed:true,
+onCollapseToggle:_noop2.default,
+onChecked:_noop2.default,
+isChecked:false,
+getDueBills:_noop2.default};cov_20n4ihgc2.s[12]++;
+
+
+TMPostpaidProductCard.propTypes={
+phone:_propTypes2.default.string,
+amount:_propTypes2.default.number,
+title:_propTypes2.default.string,
+subtitle:_propTypes2.default.string,
+goToScreen:_propTypes2.default.func,
+dueBills:_propTypes2.default.array,
+productDetail:_propTypes2.default.object,
+status:_propTypes2.default.string,
+sharedWith:_propTypes2.default.number,
+onCollapseToggle:_propTypes2.default.func,
+isCollapsed:_propTypes2.default.bool,
+onChecked:_propTypes2.default.func,
+isChecked:_propTypes2.default.bool,
+getDueBills:_propTypes2.default.func};exports.default=
+
+
+TMPostpaidProductCard;

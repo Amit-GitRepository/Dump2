@@ -1,0 +1,112 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1daf00wr4h=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillingMethods/EBillAdd/EBillAdd.component.js',hash='92216de780bdbe16c175278363c1166479951fb0',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/components/BillingMethods/EBillAdd/EBillAdd.component.js',statementMap:{'0':{start:{line:14,column:27},end:{line:22,column:1}},'1':{start:{line:29,column:24},end:{line:31,column:3}},'2':{start:{line:30,column:4},end:{line:30,column:54}},'3':{start:{line:34,column:34},end:{line:34,column:44}},'4':{start:{line:35,column:4},end:{line:45,column:6}},'5':{start:{line:36,column:6},end:{line:44,column:13}},'6':{start:{line:50,column:4},end:{line:50,column:58}},'7':{start:{line:54,column:4},end:{line:105,column:15}},'8':{start:{line:108,column:0},end:{line:109,column:2}},'9':{start:{line:110,column:0},end:{line:111,column:2}}},fnMap:{'0':{name:'(anonymous_0)',decl:{start:{line:29,column:18},end:{line:29,column:19}},loc:{start:{line:29,column:24},end:{line:31,column:3}},line:29},'1':{name:'(anonymous_1)',decl:{start:{line:29,column:24},end:{line:29,column:25}},loc:{start:{line:29,column:41},end:{line:31,column:3}},line:29},'2':{name:'(anonymous_2)',decl:{start:{line:33,column:29},end:{line:33,column:30}},loc:{start:{line:33,column:35},end:{line:46,column:3}},line:33},'3':{name:'(anonymous_3)',decl:{start:{line:35,column:35},end:{line:35,column:36}},loc:{start:{line:36,column:6},end:{line:44,column:13}},line:36},'4':{name:'(anonymous_4)',decl:{start:{line:49,column:29},end:{line:49,column:30}},loc:{start:{line:50,column:4},end:{line:50,column:58}},line:50},'5':{name:'(anonymous_5)',decl:{start:{line:53,column:2},end:{line:53,column:3}},loc:{start:{line:53,column:12},end:{line:106,column:3}},line:53}},branchMap:{},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0},b:{},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}return function(Constructor,protoProps,staticProps){if(protoProps)defineProperties(Constructor.prototype,protoProps);if(staticProps)defineProperties(Constructor,staticProps);return Constructor;};}();
+
+var _Button=require('../../Shared/Button/Button.component');var _Button2=_interopRequireDefault(_Button);
+var _Card=require('../../Shared/Card/Card.component');var _Card2=_interopRequireDefault(_Card);
+var _EBillAddItem=require('../EBillAddItem/EBillAddItem.component');var _EBillAddItem2=_interopRequireDefault(_EBillAddItem);
+var _ISText=require('../../Shared/ISText/ISText.component');var _ISText2=_interopRequireDefault(_ISText);
+var _map=require('lodash/map');var _map2=_interopRequireDefault(_map);
+var _RadioButton=require('../../Shared/RadioButton/RadioButton.component');var _RadioButton2=_interopRequireDefault(_RadioButton);
+var _react=require('react');var _react2=_interopRequireDefault(_react);
+var _EBillAdd=require('./EBillAdd.style');var _EBillAdd2=_interopRequireDefault(_EBillAdd);
+var _reactNative=require('react-native');
+var _helper=require('../../../language/i18n/helper');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(!self){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return call&&(typeof call==="object"||typeof call==="function")?call:self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function, not "+typeof superClass);}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,enumerable:false,writable:true,configurable:true}});if(superClass)Object.setPrototypeOf?Object.setPrototypeOf(subClass,superClass):subClass.__proto__=superClass;}
+
+var ebillFormatOptions=(cov_1daf00wr4h.s[0]++,[
+{
+id:'SMS',
+name:'SMS'},
+{
+id:'EMAIL',
+name:'Email'}]);var
+
+
+
+EbillAdd=function(_Component){_inherits(EbillAdd,_Component);function EbillAdd(){var _ref;var _temp,_this,_ret;_classCallCheck(this,EbillAdd);for(var _len=arguments.length,args=Array(_len),_key=0;_key<_len;_key++){args[_key]=arguments[_key];}return _ret=(_temp=(_this=_possibleConstructorReturn(this,(_ref=EbillAdd.__proto__||Object.getPrototypeOf(EbillAdd)).call.apply(_ref,[this].concat(args))),_this),_this.
+state={
+selectedEbillOption:'SMS'},_this.
+
+
+onRadioSelect=function(){cov_1daf00wr4h.f[0]++;cov_1daf00wr4h.s[1]++;return function(ebillOption){cov_1daf00wr4h.f[1]++;cov_1daf00wr4h.s[2]++;
+_this.setState({selectedEbillOption:ebillOption});
+};},_this.
+
+generateEbillFormatItems=function(){cov_1daf00wr4h.f[2]++;var _ref2=(cov_1daf00wr4h.s[3]++,
+_this.state),selectedEbillOption=_ref2.selectedEbillOption;cov_1daf00wr4h.s[4]++;
+return(0,_map2.default)(ebillFormatOptions,function(option,index)
+{cov_1daf00wr4h.f[3]++;cov_1daf00wr4h.s[5]++;return _react2.default.createElement(_reactNative.View,{style:_EBillAdd2.default.ebillFormatItem,key:option.id},
+_react2.default.createElement(_RadioButton2.default,{
+isSelected:option.id===selectedEbillOption,
+onRadioSelect:_this.onRadioSelect(option.id),
+key:option.id+'-'+index,
+value:option.id,
+style:_EBillAdd2.default.radioButton}),
+_react2.default.createElement(_ISText2.default,{type:'SEMIBOLD',style:_EBillAdd2.default.ebillFormat},(0,_helper.translate)('BILLING_METHODS__ADD_VIA_'+option.id)));
+});
+
+},_this.
+
+
+generateServiceListItems=function()
+{cov_1daf00wr4h.f[4]++;cov_1daf00wr4h.s[6]++;return _react2.default.createElement(_EBillAddItem2.default,{type:_this.state.selectedEbillOption});},_temp),_possibleConstructorReturn(_this,_ret);}_createClass(EbillAdd,[{key:'render',value:function render()
+
+
+{cov_1daf00wr4h.f[5]++;cov_1daf00wr4h.s[7]++;
+return(
+_react2.default.createElement(_reactNative.View,{style:_EBillAdd2.default.container},
+_react2.default.createElement(_reactNative.ScrollView,{
+showsVerticalScrollIndicator:false,
+keyboardDismissMode:'on-drag',
+style:_EBillAdd2.default.cardContainer,
+contentContainerStyle:_EBillAdd2.default.scrollContainer},
+
+_react2.default.createElement(_Card2.default,{header:(0,_helper.translate)('BILLING_METHODS__ADD_HEADER')},
+_react2.default.createElement(_reactNative.View,{style:_EBillAdd2.default.ebillFormatContainer},
+this.generateEbillFormatItems()),
+
+_react2.default.createElement(_reactNative.View,{style:_EBillAdd2.default.serviceListHeaderContainer},
+_react2.default.createElement(_ISText2.default,{type:'SEMIBOLD',style:_EBillAdd2.default.serviceListHeader},(0,_helper.translate)('BILLING_METHODS__ADD_SERVICE_LIST'))),
+
+_react2.default.createElement(_reactNative.View,{style:_EBillAdd2.default.serviceListContainer},
+
+_react2.default.createElement(_EBillAddItem2.default,{
+accountType:'TrueMove H Postpaid',
+serviceID:'8123456790',
+defaultMSISDN:'8123456790',
+ebillFormat:this.state.selectedEbillOption}),
+
+_react2.default.createElement(_EBillAddItem2.default,{
+accountType:'TrueMove H Prepaid',
+serviceID:'8147628904',
+defaultMSISDN:'8147628904',
+ebillFormat:this.state.selectedEbillOption}),
+
+_react2.default.createElement(_EBillAddItem2.default,{
+accountType:'True Vision',
+serviceID:'321654987',
+ebillFormat:this.state.selectedEbillOption}),
+
+_react2.default.createElement(_EBillAddItem2.default,{
+accountType:'True Online',
+serviceID:'1234567',
+ebillFormat:this.state.selectedEbillOption}),
+
+_react2.default.createElement(_EBillAddItem2.default,{
+accountType:'TrueMove H Postpaid',
+serviceID:'8123456790',
+defaultMSISDN:'8123456790',
+ebillFormat:this.state.selectedEbillOption})))),
+
+
+
+
+_react2.default.createElement(_reactNative.View,{style:_EBillAdd2.default.buttonContainer},
+_react2.default.createElement(_Button2.default,{text:(0,_helper.translate)('BILLING_METHODS__ADD_APPLY')}))));
+
+
+}}]);return EbillAdd;}(_react.Component);cov_1daf00wr4h.s[8]++;
+
+EbillAdd.defaultProps={};cov_1daf00wr4h.s[9]++;
+
+EbillAdd.propTypes={};exports.default=
+
+EbillAdd;

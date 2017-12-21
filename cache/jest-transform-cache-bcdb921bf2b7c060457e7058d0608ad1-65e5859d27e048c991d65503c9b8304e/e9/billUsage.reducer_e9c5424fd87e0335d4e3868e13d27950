@@ -1,0 +1,147 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_1nus7du4la=function(){var path='/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/reducers/billUsage.reducer.js',hash='3828d243f4dee0272b21247d2e153abbfb36aefc',global=new Function('return this')(),gcv='__coverage__',coverageData={path:'/Users/amitkumar/iTrueService/DevCode/iservice-app/app/redux/reducers/billUsage.reducer.js',statementMap:{'0':{start:{line:9,column:21},end:{line:31,column:1}},'1':{start:{line:34,column:2},end:{line:146,column:3}},'2':{start:{line:36,column:24},end:{line:36,column:90}},'3':{start:{line:37,column:16},end:{line:37,column:74}},'4':{start:{line:38,column:16},end:{line:38,column:74}},'5':{start:{line:39,column:17},end:{line:39,column:87}},'6':{start:{line:40,column:23},end:{line:40,column:88}},'7':{start:{line:41,column:4},end:{line:50,column:6}},'8':{start:{line:54,column:69},end:{line:54,column:83}},'9':{start:{line:55,column:23},end:{line:55,column:60}},'10':{start:{line:56,column:29},end:{line:56,column:64}},'11':{start:{line:57,column:36},end:{line:71,column:6}},'12':{start:{line:58,column:6},end:{line:69,column:7}},'13':{start:{line:59,column:25},end:{line:65,column:10}},'14':{start:{line:60,column:10},end:{line:64,column:11}},'15':{start:{line:61,column:12},end:{line:61,column:49}},'16':{start:{line:63,column:12},end:{line:63,column:31}},'17':{start:{line:66,column:8},end:{line:66,column:42}},'18':{start:{line:67,column:13},end:{line:69,column:7}},'19':{start:{line:68,column:8},end:{line:68,column:45}},'20':{start:{line:70,column:6},end:{line:70,column:25}},'21':{start:{line:72,column:4},end:{line:72,column:98}},'22':{start:{line:76,column:48},end:{line:76,column:62}},'23':{start:{line:77,column:29},end:{line:77,column:65}},'24':{start:{line:78,column:36},end:{line:87,column:6}},'25':{start:{line:79,column:6},end:{line:85,column:7}},'26':{start:{line:80,column:8},end:{line:80,column:38}},'27':{start:{line:81,column:13},end:{line:85,column:7}},'28':{start:{line:82,column:8},end:{line:82,column:55}},'29':{start:{line:83,column:13},end:{line:85,column:7}},'30':{start:{line:84,column:8},end:{line:84,column:55}},'31':{start:{line:86,column:6},end:{line:86,column:30}},'32':{start:{line:88,column:4},end:{line:88,column:99}},'33':{start:{line:92,column:71},end:{line:92,column:85}},'34':{start:{line:93,column:23},end:{line:93,column:81}},'35':{start:{line:94,column:24},end:{line:94,column:99}},'36':{start:{line:95,column:24},end:{line:95,column:86}},'37':{start:{line:96,column:32},end:{line:103,column:6}},'38':{start:{line:97,column:6},end:{line:101,column:7}},'39':{start:{line:98,column:8},end:{line:98,column:48}},'40':{start:{line:99,column:13},end:{line:101,column:7}},'41':{start:{line:100,column:8},end:{line:100,column:48}},'42':{start:{line:102,column:6},end:{line:102,column:21}},'43':{start:{line:104,column:32},end:{line:109,column:6}},'44':{start:{line:105,column:6},end:{line:107,column:7}},'45':{start:{line:106,column:8},end:{line:106,column:35}},'46':{start:{line:108,column:6},end:{line:108,column:18}},'47':{start:{line:110,column:4},end:{line:118,column:6}},'48':{start:{line:121,column:46},end:{line:121,column:60}},'49':{start:{line:122,column:25},end:{line:122,column:63}},'50':{start:{line:123,column:4},end:{line:123,column:38}},'51':{start:{line:124,column:4},end:{line:124,column:92}},'52':{start:{line:128,column:40},end:{line:128,column:54}},'53':{start:{line:129,column:22},end:{line:129,column:39}},'54':{start:{line:130,column:25},end:{line:130,column:60}},'55':{start:{line:131,column:23},end:{line:131,column:50}},'56':{start:{line:132,column:4},end:{line:132,column:75}},'57':{start:{line:133,column:4},end:{line:133,column:86}},'58':{start:{line:137,column:4},end:{line:137,column:24}},'59':{start:{line:141,column:4},end:{line:141,column:24}},'60':{start:{line:145,column:4},end:{line:145,column:17}}},fnMap:{'0':{name:'billUsage',decl:{start:{line:33,column:24},end:{line:33,column:33}},loc:{start:{line:33,column:65},end:{line:147,column:1}},line:33},'1':{name:'(anonymous_1)',decl:{start:{line:57,column:57},end:{line:57,column:58}},loc:{start:{line:57,column:74},end:{line:71,column:5}},line:57},'2':{name:'(anonymous_2)',decl:{start:{line:59,column:50},end:{line:59,column:51}},loc:{start:{line:59,column:67},end:{line:65,column:9}},line:59},'3':{name:'(anonymous_3)',decl:{start:{line:78,column:57},end:{line:78,column:58}},loc:{start:{line:78,column:74},end:{line:87,column:5}},line:78},'4':{name:'(anonymous_4)',decl:{start:{line:96,column:48},end:{line:96,column:49}},loc:{start:{line:96,column:61},end:{line:103,column:5}},line:96},'5':{name:'(anonymous_5)',decl:{start:{line:104,column:48},end:{line:104,column:49}},loc:{start:{line:104,column:58},end:{line:109,column:5}},line:104}},branchMap:{'0':{loc:{start:{line:33,column:35},end:{line:33,column:55}},type:'default-arg',locations:[{start:{line:33,column:43},end:{line:33,column:55}}],line:33},'1':{loc:{start:{line:34,column:2},end:{line:146,column:3}},type:'switch',locations:[{start:{line:35,column:2},end:{line:51,column:3}},{start:{line:53,column:2},end:{line:73,column:3}},{start:{line:75,column:2},end:{line:89,column:3}},{start:{line:91,column:2},end:{line:119,column:3}},{start:{line:120,column:2},end:{line:125,column:3}},{start:{line:127,column:2},end:{line:134,column:3}},{start:{line:136,column:2},end:{line:138,column:3}},{start:{line:140,column:2},end:{line:142,column:3}},{start:{line:144,column:2},end:{line:145,column:17}}],line:34},'2':{loc:{start:{line:55,column:23},end:{line:55,column:60}},type:'cond-expr',locations:[{start:{line:55,column:40},end:{line:55,column:46}},{start:{line:55,column:49},end:{line:55,column:60}}],line:55},'3':{loc:{start:{line:56,column:29},end:{line:56,column:64}},type:'binary-expr',locations:[{start:{line:56,column:29},end:{line:56,column:58}},{start:{line:56,column:62},end:{line:56,column:64}}],line:56},'4':{loc:{start:{line:58,column:6},end:{line:69,column:7}},type:'if',locations:[{start:{line:58,column:6},end:{line:69,column:7}},{start:{line:58,column:6},end:{line:69,column:7}}],line:58},'5':{loc:{start:{line:58,column:10},end:{line:58,column:65}},type:'binary-expr',locations:[{start:{line:58,column:10},end:{line:58,column:24}},{start:{line:58,column:28},end:{line:58,column:65}}],line:58},'6':{loc:{start:{line:60,column:10},end:{line:64,column:11}},type:'if',locations:[{start:{line:60,column:10},end:{line:64,column:11}},{start:{line:60,column:10},end:{line:64,column:11}}],line:60},'7':{loc:{start:{line:67,column:13},end:{line:69,column:7}},type:'if',locations:[{start:{line:67,column:13},end:{line:69,column:7}},{start:{line:67,column:13},end:{line:69,column:7}}],line:67},'8':{loc:{start:{line:77,column:29},end:{line:77,column:65}},type:'binary-expr',locations:[{start:{line:77,column:29},end:{line:77,column:59}},{start:{line:77,column:63},end:{line:77,column:65}}],line:77},'9':{loc:{start:{line:79,column:6},end:{line:85,column:7}},type:'if',locations:[{start:{line:79,column:6},end:{line:85,column:7}},{start:{line:79,column:6},end:{line:85,column:7}}],line:79},'10':{loc:{start:{line:81,column:13},end:{line:85,column:7}},type:'if',locations:[{start:{line:81,column:13},end:{line:85,column:7}},{start:{line:81,column:13},end:{line:85,column:7}}],line:81},'11':{loc:{start:{line:81,column:17},end:{line:81,column:72}},type:'binary-expr',locations:[{start:{line:81,column:17},end:{line:81,column:39}},{start:{line:81,column:43},end:{line:81,column:72}}],line:81},'12':{loc:{start:{line:83,column:13},end:{line:85,column:7}},type:'if',locations:[{start:{line:83,column:13},end:{line:85,column:7}},{start:{line:83,column:13},end:{line:85,column:7}}],line:83},'13':{loc:{start:{line:93,column:23},end:{line:93,column:81}},type:'cond-expr',locations:[{start:{line:93,column:63},end:{line:93,column:69}},{start:{line:93,column:72},end:{line:93,column:81}}],line:93},'14':{loc:{start:{line:97,column:6},end:{line:101,column:7}},type:'if',locations:[{start:{line:97,column:6},end:{line:101,column:7}},{start:{line:97,column:6},end:{line:101,column:7}}],line:97},'15':{loc:{start:{line:97,column:10},end:{line:97,column:76}},type:'binary-expr',locations:[{start:{line:97,column:10},end:{line:97,column:47}},{start:{line:97,column:51},end:{line:97,column:76}}],line:97},'16':{loc:{start:{line:99,column:13},end:{line:101,column:7}},type:'if',locations:[{start:{line:99,column:13},end:{line:101,column:7}},{start:{line:99,column:13},end:{line:101,column:7}}],line:99},'17':{loc:{start:{line:105,column:6},end:{line:107,column:7}},type:'if',locations:[{start:{line:105,column:6},end:{line:107,column:7}},{start:{line:105,column:6},end:{line:107,column:7}}],line:105},'18':{loc:{start:{line:122,column:25},end:{line:122,column:63}},type:'binary-expr',locations:[{start:{line:122,column:25},end:{line:122,column:57}},{start:{line:122,column:61},end:{line:122,column:63}}],line:122},'19':{loc:{start:{line:130,column:25},end:{line:130,column:60}},type:'binary-expr',locations:[{start:{line:130,column:25},end:{line:130,column:54}},{start:{line:130,column:58},end:{line:130,column:60}}],line:130},'20':{loc:{start:{line:131,column:23},end:{line:131,column:50}},type:'cond-expr',locations:[{start:{line:131,column:32},end:{line:131,column:38}},{start:{line:131,column:41},end:{line:131,column:50}}],line:131}},s:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0,'6':0,'7':0,'8':0,'9':0,'10':0,'11':0,'12':0,'13':0,'14':0,'15':0,'16':0,'17':0,'18':0,'19':0,'20':0,'21':0,'22':0,'23':0,'24':0,'25':0,'26':0,'27':0,'28':0,'29':0,'30':0,'31':0,'32':0,'33':0,'34':0,'35':0,'36':0,'37':0,'38':0,'39':0,'40':0,'41':0,'42':0,'43':0,'44':0,'45':0,'46':0,'47':0,'48':0,'49':0,'50':0,'51':0,'52':0,'53':0,'54':0,'55':0,'56':0,'57':0,'58':0,'59':0,'60':0},f:{'0':0,'1':0,'2':0,'3':0,'4':0,'5':0},b:{'0':[0],'1':[0,0,0,0,0,0,0,0,0],'2':[0,0],'3':[0,0],'4':[0,0],'5':[0,0],'6':[0,0],'7':[0,0],'8':[0,0],'9':[0,0],'10':[0,0],'11':[0,0],'12':[0,0],'13':[0,0],'14':[0,0],'15':[0,0],'16':[0,0],'17':[0,0],'18':[0,0],'19':[0,0],'20':[0,0]},_coverageSchema:'332fd63041d2c1bcb487cc26dd0d5f7d97098a6c'},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();var _extends=Object.assign||function(target){for(var i=1;i<arguments.length;i++){var source=arguments[i];for(var key in source){if(Object.prototype.hasOwnProperty.call(source,key)){target[key]=source[key];}}}return target;};exports.default=
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+billUsage;var _result=require('lodash/result');var _result2=_interopRequireDefault(_result);var _storeList=require('../../utils/storeList.util');var _index=require('../actions/index.actions');function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{default:obj};}function _defineProperty(obj,key,value){if(key in obj){Object.defineProperty(obj,key,{value:value,enumerable:true,configurable:true,writable:true});}else{obj[key]=value;}return obj;}var initialState=(cov_1nus7du4la.s[0]++,{productList:{'tmhPostpaid':[],'tol':[],'tvs':[],'conv':[],'tmhPrepaid':[]},productDetail:{'tmhPostpaid':{},'tol':{},'tvs':{},'tmhPrepaid':{},'conv':{}},billDetail:{'tmhPostpaid':{},'tol':{},'tvs':{},'tmhPrepaid':{},'conv':{}}});function billUsage(){var state=arguments.length>0&&arguments[0]!==undefined?arguments[0]:(cov_1nus7du4la.b[0][0]++,initialState);var action=arguments[1];cov_1nus7du4la.f[0]++;cov_1nus7du4la.s[1]++;
+switch(action.type){
+case _index.SET_BILL_USAGE_PRODUCT_LIST:cov_1nus7du4la.b[1][0]++;{
+var tmhPostpaid=(cov_1nus7du4la.s[2]++,(0,_storeList.addAttributesToProducts)((0,_result2.default)(action,'payload.tmhPostpaid',[])));
+var tol=(cov_1nus7du4la.s[3]++,(0,_storeList.addAttributesToProducts)((0,_result2.default)(action,'payload.tol',[])));
+var tvs=(cov_1nus7du4la.s[4]++,(0,_storeList.addAttributesToProducts)((0,_result2.default)(action,'payload.tvs',[])));
+var conv=(cov_1nus7du4la.s[5]++,(0,_storeList.addAttributesToConvergenceProducts)((0,_result2.default)(action,'payload.conv',[])));
+var tmhPrepaid=(cov_1nus7du4la.s[6]++,(0,_storeList.addAttributesToProducts)((0,_result2.default)(action,'payload.tmhPrepaid',[])));cov_1nus7du4la.s[7]++;
+return _extends({},
+state,{
+productList:{
+'tmhPostpaid':tmhPostpaid,
+'tol':tol,
+'tvs':tvs,
+'conv':conv,
+'tmhPrepaid':tmhPrepaid}});
+
+
+}
+
+case _index.SET_BILL_USAGE_PRODUCT_COLLAPSE_STATUS:cov_1nus7du4la.b[1][1]++;{var _ref=(cov_1nus7du4la.s[8]++,
+action.payload),productType=_ref.productType,subscriberId=_ref.subscriberId,isCollapsed=_ref.isCollapsed,convBundleName=_ref.convBundleName;
+var productKey=(cov_1nus7du4la.s[9]++,convBundleName?(cov_1nus7du4la.b[2][0]++,'conv'):(cov_1nus7du4la.b[2][1]++,productType));
+var productGroupList=(cov_1nus7du4la.s[10]++,(cov_1nus7du4la.b[3][0]++,state.productList[productKey])||(cov_1nus7du4la.b[3][1]++,[]));
+var updatedProductGroupList=(cov_1nus7du4la.s[11]++,productGroupList.map(function(eachProduct){cov_1nus7du4la.f[1]++;cov_1nus7du4la.s[12]++;
+if((cov_1nus7du4la.b[5][0]++,convBundleName)&&(cov_1nus7du4la.b[5][1]++,eachProduct.bundle===convBundleName)){cov_1nus7du4la.b[4][0]++;
+var products=(cov_1nus7du4la.s[13]++,eachProduct.products.map(function(convProduct){cov_1nus7du4la.f[2]++;cov_1nus7du4la.s[14]++;
+if(convProduct.subscriberId===subscriberId){cov_1nus7du4la.b[6][0]++;cov_1nus7du4la.s[15]++;
+return _extends({},convProduct,{isCollapsed:isCollapsed});
+}else{cov_1nus7du4la.b[6][1]++;cov_1nus7du4la.s[16]++;
+return convProduct;
+}
+}));cov_1nus7du4la.s[17]++;
+return _extends({},eachProduct,{products:products});
+}else{cov_1nus7du4la.b[4][1]++;cov_1nus7du4la.s[18]++;if(eachProduct.subscriberId===subscriberId){cov_1nus7du4la.b[7][0]++;cov_1nus7du4la.s[19]++;
+return _extends({},eachProduct,{isCollapsed:isCollapsed});
+}else{cov_1nus7du4la.b[7][1]++;}}cov_1nus7du4la.s[20]++;
+return eachProduct;
+}));cov_1nus7du4la.s[21]++;
+return _extends({},state,{productList:_extends({},state.productList,_defineProperty({},productKey,updatedProductGroupList))});
+}
+
+case _index.TOGGLE_BILL_USAGE_PRODUCT_CHECK_STATUS:cov_1nus7du4la.b[1][2]++;{var _ref2=(cov_1nus7du4la.s[22]++,
+action.payload),_productType=_ref2.productType,_subscriberId=_ref2.subscriberId,bundle=_ref2.bundle;
+var _productGroupList=(cov_1nus7du4la.s[23]++,(cov_1nus7du4la.b[8][0]++,state.productList[_productType])||(cov_1nus7du4la.b[8][1]++,[]));
+var _updatedProductGroupList=(cov_1nus7du4la.s[24]++,_productGroupList.map(function(eachProduct){cov_1nus7du4la.f[3]++;cov_1nus7du4la.s[25]++;
+if(_productType==='tmhPrepaid'){cov_1nus7du4la.b[9][0]++;cov_1nus7du4la.s[26]++;
+eachProduct.isChecked=false;
+}else{cov_1nus7du4la.b[9][1]++;cov_1nus7du4la.s[27]++;if((cov_1nus7du4la.b[11][0]++,_productType==='conv')&&(cov_1nus7du4la.b[11][1]++,eachProduct.bundle===bundle)){cov_1nus7du4la.b[10][0]++;cov_1nus7du4la.s[28]++;
+eachProduct.isChecked=!eachProduct.isChecked;
+}else{cov_1nus7du4la.b[10][1]++;cov_1nus7du4la.s[29]++;if(eachProduct.subscriberId===_subscriberId){cov_1nus7du4la.b[12][0]++;cov_1nus7du4la.s[30]++;
+eachProduct.isChecked=!eachProduct.isChecked;
+}else{cov_1nus7du4la.b[12][1]++;}}}cov_1nus7du4la.s[31]++;
+return _extends({},eachProduct);
+}));cov_1nus7du4la.s[32]++;
+return _extends({},state,{productList:_extends({},state.productList,_defineProperty({},_productType,_updatedProductGroupList))});
+}
+
+case _index.TOGGLE_BILL_DETAIL_CHECK_STATUS:cov_1nus7du4la.b[1][3]++;{var _ref3=(cov_1nus7du4la.s[33]++,
+action.payload),accountId=_ref3.accountId,invoiceNos=_ref3.invoiceNos,isChecked=_ref3.isChecked,checkedBillSum=_ref3.checkedBillSum,_bundle=_ref3.bundle;
+var _productKey=(cov_1nus7du4la.s[34]++,action.payload.productType==='conv'?(cov_1nus7du4la.b[13][0]++,_bundle):(cov_1nus7du4la.b[13][1]++,accountId));
+var billDetails=(cov_1nus7du4la.s[35]++,(0,_result2.default)(state.billDetail,action.payload.productType+'.'+_productKey,[]));
+var productList=(cov_1nus7du4la.s[36]++,(0,_result2.default)(state.productList,''+action.payload.productType,[]));
+var productListModified=(cov_1nus7du4la.s[37]++,productList.map(function(product){cov_1nus7du4la.f[4]++;cov_1nus7du4la.s[38]++;
+if((cov_1nus7du4la.b[15][0]++,action.payload.productType==='conv')&&(cov_1nus7du4la.b[15][1]++,product.bundle===_bundle)){cov_1nus7du4la.b[14][0]++;cov_1nus7du4la.s[39]++;
+product.checkedBillSum=checkedBillSum;
+}else{cov_1nus7du4la.b[14][1]++;cov_1nus7du4la.s[40]++;if(product.accountId===accountId){cov_1nus7du4la.b[16][0]++;cov_1nus7du4la.s[41]++;
+product.checkedBillSum=checkedBillSum;
+}else{cov_1nus7du4la.b[16][1]++;}}cov_1nus7du4la.s[42]++;
+return product;
+}));
+var billDetailsModified=(cov_1nus7du4la.s[43]++,billDetails.map(function(bill){cov_1nus7du4la.f[5]++;cov_1nus7du4la.s[44]++;
+if(invoiceNos.includes(bill.invoiceNo)){cov_1nus7du4la.b[17][0]++;cov_1nus7du4la.s[45]++;
+bill.isChecked=isChecked;
+}else{cov_1nus7du4la.b[17][1]++;}cov_1nus7du4la.s[46]++;
+return bill;
+}));cov_1nus7du4la.s[47]++;
+return _extends({},
+state,{billDetail:_extends({},
+state.billDetail,_defineProperty({},action.payload.productType,_extends({},
+state.billDetail[action.payload.productType],_defineProperty({},_productKey,billDetailsModified)))),
+
+productList:_extends({},
+state.productList,_defineProperty({},action.payload.productType,productListModified))});
+
+
+}
+case _index.SET_BILL_USAGE_PRODUCT_DETAIL:cov_1nus7du4la.b[1][4]++;{var _ref4=(cov_1nus7du4la.s[48]++,
+action.payload),_productType2=_ref4.productType,_subscriberId2=_ref4.subscriberId,data=_ref4.data;
+var productGroup=(cov_1nus7du4la.s[49]++,(cov_1nus7du4la.b[18][0]++,state.productDetail[_productType2])||(cov_1nus7du4la.b[18][1]++,{}));cov_1nus7du4la.s[50]++;
+productGroup[_subscriberId2]=data;cov_1nus7du4la.s[51]++;
+return _extends({},state,{productDetail:_extends({},state.productDetail,_defineProperty({},_productType2,productGroup))});
+}
+
+case _index.SET_BILL_USAGE_PRODUCT_BILL_DETAIL:cov_1nus7du4la.b[1][5]++;{var _ref5=(cov_1nus7du4la.s[52]++,
+action.payload),_productType3=_ref5.productType,_data=_ref5.data,_bundle2=_ref5.bundle;
+var _accountId=(cov_1nus7du4la.s[53]++,Object.keys(_data));
+var _productGroup=(cov_1nus7du4la.s[54]++,(cov_1nus7du4la.b[19][0]++,state.billDetail[_productType3])||(cov_1nus7du4la.b[19][1]++,{}));
+var _productKey2=(cov_1nus7du4la.s[55]++,_bundle2?(cov_1nus7du4la.b[20][0]++,_bundle2):(cov_1nus7du4la.b[20][1]++,_accountId));cov_1nus7du4la.s[56]++;
+_productGroup[_productKey2]=(0,_storeList.addAttributesToBillDetails)(_data[_accountId]);cov_1nus7du4la.s[57]++;
+return _extends({},state,{billDetail:_extends({},state.billDetail,_defineProperty({},_productType3,_productGroup))});
+}
+
+case _index.LOGOUT_SUCCESS:cov_1nus7du4la.b[1][6]++;{cov_1nus7du4la.s[58]++;
+return initialState;
+}
+
+case _index.RESET_PREPAY:cov_1nus7du4la.b[1][7]++;{cov_1nus7du4la.s[59]++;
+return initialState;
+}
+
+default:cov_1nus7du4la.b[1][8]++;cov_1nus7du4la.s[60]++;
+return state;}
+
+}

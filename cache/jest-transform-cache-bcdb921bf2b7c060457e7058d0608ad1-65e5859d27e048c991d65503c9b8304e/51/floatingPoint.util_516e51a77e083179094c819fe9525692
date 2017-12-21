@@ -1,0 +1,10 @@
+Object.defineProperty(exports,"__esModule",{value:true});var cov_26liozpwg9=function(){var path="/Users/amitkumar/iTrueService/DevCode/iservice-app/app/utils/floatingPoint.util.js",hash="20f2e05dbb51624ff7afe0c461cfd3c50c6703b7",global=new Function('return this')(),gcv="__coverage__",coverageData={path:"/Users/amitkumar/iTrueService/DevCode/iservice-app/app/utils/floatingPoint.util.js",statementMap:{"0":{start:{line:2,column:19},end:{line:5,column:1}},"1":{start:{line:3,column:14},end:{line:3,column:41}},"2":{start:{line:4,column:2},end:{line:4,column:19}},"3":{start:{line:7,column:24},end:{line:10,column:1}},"4":{start:{line:8,column:21},end:{line:8,column:48}},"5":{start:{line:9,column:2},end:{line:9,column:26}}},fnMap:{"0":{name:"(anonymous_0)",decl:{start:{line:2,column:19},end:{line:2,column:20}},loc:{start:{line:2,column:39},end:{line:5,column:1}},line:2},"1":{name:"(anonymous_1)",decl:{start:{line:7,column:24},end:{line:7,column:25}},loc:{start:{line:7,column:44},end:{line:10,column:1}},line:7}},branchMap:{},s:{"0":0,"1":0,"2":0,"3":0,"4":0,"5":0},f:{"0":0,"1":0},b:{},_coverageSchema:"332fd63041d2c1bcb487cc26dd0d5f7d97098a6c"},coverage=global[gcv]||(global[gcv]={});if(coverage[path]&&coverage[path].hash===hash){return coverage[path];}coverageData.hash=hash;return coverage[path]=coverageData;}();cov_26liozpwg9.s[0]++;
+var add=exports.add=function add(float1,float2){cov_26liozpwg9.f[0]++;
+var sum=(cov_26liozpwg9.s[1]++,float1*100+float2*100);cov_26liozpwg9.s[2]++;
+return sum/100;
+};cov_26liozpwg9.s[3]++;
+
+var subtract=exports.subtract=function subtract(float1,float2){cov_26liozpwg9.f[1]++;
+var difference=(cov_26liozpwg9.s[4]++,float1*100-float2*100);cov_26liozpwg9.s[5]++;
+return difference/100;
+};
